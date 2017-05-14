@@ -53,10 +53,11 @@ class Range {
   }
 
   equals(other: Range): bool {
-    return
+    return (
       this.source == other.source &&
       this.start == other.start &&
-      this.end == other.end;
+      this.end == other.end
+    );
   }
 
   enclosingLine(): Range {
@@ -207,6 +208,7 @@ class Log {
       if (diagnostic.kind == DiagnosticKind.ERROR) {
         return true;
       }
+      assert(diagnostic != diagnostic.next);
       diagnostic = diagnostic.next;
     }
 

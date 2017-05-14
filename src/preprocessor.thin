@@ -281,8 +281,8 @@ class Preprocessor {
       }
 
       else {
-        var isTrue = this.isDefined(name);
-        return isTrue ? PreprocessorValue.TRUE : PreprocessorValue.FALSE;
+        var isDefined = this.isDefined(name);
+        return isDefined ? PreprocessorValue.TRUE : PreprocessorValue.FALSE;
       }
     }
 

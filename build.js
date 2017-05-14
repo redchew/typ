@@ -5,7 +5,7 @@ eval(fs.readFileSync('./out/common.js', 'utf8'));
 
 // Always build all targets to catch errors in other targets
 function compile(compiler, sources) {
-  var compiled = compileJavaScript(compiler);
+  var compiled = compileJavaScript(compiler/* , [ 'WASM_TRACE' ] */);
 
   var compiledC = compiled(sources, 'C', 'compiled');
   if (compiledC.stdout) process.stdout.write(compiledC.stdout);
@@ -87,14 +87,20 @@ function compileNativeWindows() {
 var sourceDir = __dirname + '/src';
 var sources = [];
 
-fs.readdirSync(sourceDir).forEach(function(entry) {
-  if (/\.thin$/.test(entry)) {
-    sources.push({
-      name: entry,
-      contents: fs.readFileSync(sourceDir + '/' + entry, 'utf8').replace(/\r\n/g, '\n'),
-    });
-  }
-});
+(function recurse(sourceDir) {
+  fs.readdirSync(sourceDir).forEach(function(entry) {
+    entry = sourceDir + '/' + entry;
+    var stat = fs.statSync(entry);
+    if (stat.isDirectory()) {
+      recurse(entry);
+    } else if (/\.thin$/.test(entry)) {
+      sources.push({
+        name: entry,
+        contents: fs.readFileSync(entry, 'utf8').replace(/\r\n/g, '\n'),
+      });
+    }
+  });
+})(sourceDir);
 
 var compiled = fs.readFileSync(__dirname + '/out/compiled.js', 'utf8');
 

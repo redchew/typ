@@ -60,6 +60,11 @@ function StringBuilder_appendQuoted(sb: StringBuilder, text: string): void {
       return this;
     }
 
+    appendInt(i: int): StringBuilder {
+      this._text = StringBuilder_append(this._text, i.toString());
+      return this;
+    }
+
     append(text: string): StringBuilder {
       this._text = StringBuilder_append(this._text, text);
       return this;
@@ -92,6 +97,11 @@ function StringBuilder_appendQuoted(sb: StringBuilder, text: string): void {
     appendChar(c: ushort): StringBuilder {
       this._bytes.append(c as byte);
       this._bytes.append((c >> 8) as byte);
+      return this;
+    }
+
+    appendInt(i: int): StringBuilder {
+      this.append(i.toString());
       return this;
     }
 
@@ -131,6 +141,7 @@ function StringBuilder_appendQuoted(sb: StringBuilder, text: string): void {
     next: StringBuilder;
     clear(): void;
     appendChar(c: ushort): StringBuilder;
+    appendInt(i: int): StringBuilder;
     appendSlice(text: string, start: int, end: int): StringBuilder;
     append(text: string): StringBuilder;
     finish(): string;

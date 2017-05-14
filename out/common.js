@@ -148,55 +148,71 @@ function loadWebAssembly(callback) {
   });
 }
 
-function compileWebAssembly(code) {
+function compileWebAssembly(code, callback) {
   var stdlib = loadStdlibForWebAssembly();
-  var module = Wasm.instantiateModule(code, {global: stdlib});
-  var exports = module.exports;
-  var memory = exports.memory;
-  stdlib.exports = exports;
-  stdlib.bytes = new Uint8Array(memory);
-  stdlib.chars = new Uint16Array(memory);
-  stdlib.ints = new Int32Array(memory);
+  WebAssembly.instantiate(code, { global: stdlib })
+    .then(function(module) {
+      var exports = module.instance.exports;
+      console.log(module);
+      var memory = exports.memory;
+      stdlib.exports = exports;
+      stdlib.bytes = new Uint8Array(memory.buffer);
+      stdlib.chars = new Uint16Array(memory.buffer);
+      stdlib.ints = new Int32Array(memory.buffer);
 
-  return function(sources, target, name) {
-    var output = name;
-    switch (target) {
-      case 'C': output += '.c'; break;
-      case 'JavaScript': output += '.js'; break;
-      case 'WebAssembly': output += '.wasm'; break;
-      default: throw new Error('Invalid target: ' + target);
-    }
+      callback(function(sources, target, name) {
+        var output = name;
+        switch (target) {
+          case 'C': output += '.c'; break;
+          case 'JavaScript': output += '.js'; break;
+          case 'WebAssembly': output += '.wasm'; break;
+          default: throw new Error('Invalid target: ' + target);
+        }
 
-    console.log('compiling to ' + target + ' using WebAssembly');
-    var before = now();
+        console.log('compiling to ' + target + ' using WebAssembly');
+        var before = now();
 
-    stdlib.reset();
-    exports.main_reset();
+        stdlib.reset();
+        exports.main_reset();
 
-    sources.forEach(function(source) {
-      stdlib.fs[source.name] = source.contents;
-      exports.main_addArgument(stdlib.createLengthPrefixedString(source.name));
+        sources.forEach(function(source) {
+          stdlib.fs[source.name] = source.contents;
+          exports.main_addArgument(stdlib.createLengthPrefixedString(source.name));
+        });
+
+        exports.main_addArgument(stdlib.createLengthPrefixedString('--out'));
+        exports.main_addArgument(stdlib.createLengthPrefixedString(output));
+
+        // EUSAGE = 1
+        // EARGUMENTS = 2
+        // EINPUT = 3
+        // EOUTPUT = 4
+        // ETARGET = 5
+        // EREAD = 6
+        // EWRITE = 7
+
+        var returnCode = exports.main_entry();
+        var success = returnCode === 0;
+        if (!success) {
+          console.log("exited with code " + returnCode);
+        }
+        var after = now();
+        var totalTime = Math.round(after - before);
+        console.log('total time: ' + totalTime + 'ms');
+
+        return {
+          secondaryOutput: success && name + '.h' in stdlib.fs ? stdlib.fs[name + '.h'] : null,
+          output: success ? stdlib.fs[output] : null,
+          totalTime: totalTime,
+          stdout: stdlib.stdout,
+          returnCode: returnCode,
+          success: success,
+        };
+      });
     });
-
-    exports.main_addArgument(stdlib.createLengthPrefixedString('--out'));
-    exports.main_addArgument(stdlib.createLengthPrefixedString(output));
-
-    var success = exports.main_entry() === 0;
-    var after = now();
-    var totalTime = Math.round(after - before);
-    console.log('total time: ' + totalTime + 'ms');
-
-    return {
-      secondaryOutput: success && name + '.h' in stdlib.fs ? stdlib.fs[name + '.h'] : null,
-      output: success ? stdlib.fs[output] : null,
-      totalTime: totalTime,
-      stdout: stdlib.stdout,
-      success: success,
-    };
-  };
 }
 
-function compileJavaScript(code) {
+function compileJavaScript(code, defines) {
   var stdlib = loadStdlibForJavaScript();
   var exports = {};
   new Function('global', 'exports', code)(stdlib, exports);
@@ -224,7 +240,19 @@ function compileJavaScript(code) {
     exports.main_addArgument('--out');
     exports.main_addArgument(output);
 
+    if (defines) {
+      defines.forEach(function(key) {
+        exports.main_addArgument('--define');
+        exports.main_addArgument(key);
+      });
+    }
+
+    var returnCode = exports.main_entry();
+    var success = returnCode === 0;
     var success = exports.main_entry() === 0;
+      if (!success) {
+        console.log("exited with code " + returnCode);
+      }
     var after = now();
     var totalTime = Math.round(after - before);
     console.log('total time: ' + totalTime + 'ms');
@@ -234,6 +262,7 @@ function compileJavaScript(code) {
       output: success ? stdlib.fs[output] : null,
       totalTime: totalTime,
       stdout: stdlib.stdout,
+      returnCode: returnCode,
       success: success,
     };
   };

@@ -172,7 +172,7 @@
 
   <p>
     <b>Compile using:</b>
-    <label><input type="radio" name="backend" id="backend-js"> JavaScript</label>
+    <label><input type="radio" name="backend" id="backend-js" checked> JavaScript</label>
     <label><input type="radio" name="backend" id="backend-wasm"> <span class="wasm-backend-text">WebAssembly<span class="not-supported-warning-text"> (not supported by your browser)</span></span></label>
     <br>
     <b>Compile to:</b>
@@ -416,11 +416,18 @@
             '      console.log(extractLengthPrefixedString(ptr));',
             '    },',
             '  };',
-            '  var exports = Wasm.instantiateModule(compiled, {global: global}).exports;',
-            '  var chars = new Uint16Array(exports.memory);',
-            '  var ints = new Int32Array(exports.memory);',
-            '  var result = exports.demo();',
-            '  console.log("result:", result);',
+            '  var exports;',
+            '  var chars;',
+            '  var ints;',
+            '  var result;',
+            '  WebAssembly.instantiate(compiled, { global: global })',
+            '    .then(function(module) {',
+            '      exports = module.instance.exports;',
+            '      chars = new Uint16Array(exports.memory);',
+            '      ints = new Uint32Array(exports.memory);',
+            '      result = exports.demo();',
+            '      console.log("result:", result);',
+            '    });',
             '}',
             '',
             'compileAndRunWebAssembly(new Uint8Array([' + Array.prototype.slice.call(compiled.output).join(', ') + ']));',
@@ -491,7 +498,7 @@
   }
 
   function supportsWebAssembly() {
-    return typeof Wasm !== 'undefined';
+    return typeof WebAssembly !== 'undefined' && WebAssembly && typeof WebAssembly.instantiate === "function";
   }
 
   function main() {
@@ -511,19 +518,23 @@
         compiledJavaScript = compileJavaScript(js);
 
         if (supportsWebAssembly()) {
-          compiledWebAssembly = compileWebAssembly(wasm);
-          backendWebAssembly.checked = true;
+          compileWebAssembly(wasm, function(compiled) {
+            compiledWebAssembly = compiled;
+            finish();
+          });
         }
 
         else {
-          backendJavaScript.checked = true;
           backendWebAssembly.disabled = true;
           document.body.className = 'wasm-unavailable';
+          finish();
         }
 
-        input.value = example;
-        input.selectionStart = input.selectionEnd = 0;
-        compile();
+        function finish() {
+          input.value = example;
+          input.selectionStart = input.selectionEnd = 0;
+          compile();
+        }
       });
     });
   }

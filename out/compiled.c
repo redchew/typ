@@ -12,627 +12,454 @@ static const uint32_t __string_0_2147483648[] = {11, S('-', '2'), S('1', '4'), S
 static const uint32_t __string_1_0[] = {1, S('0', 0)};
 static const uint32_t __string_2_1[] = {2, S('-', '1')};
 static const uint32_t __string_3_1[] = {1, S('1', 0)};
-static const uint32_t __string_4[] = {2, S(' ', ' ')};
-static const uint32_t __string_5[] = {2, S('{', '\n')};
-static const uint32_t __string_6[] = {2, S(',', ' ')};
-static const uint32_t __string_7_NULL[] = {4, S('N', 'U'), S('L', 'L')};
-static const uint32_t __string_8___string_[] = {9, S('_', '_'), S('s', 't'), S('r', 'i'), S('n', 'g'), S('_', 0)};
-static const uint32_t __string_9_ifdef_THINSCRIPT_BIG_ENDIAN[] = {120, S('\n', '#'), S('i', 'f'), S('d', 'e'), S('f', ' '), S('T', 'H'), S('I', 'N'), S('S', 'C'), S('R', 'I'), S('P', 'T'), S('_', 'B'), S('I',
-  'G'), S('_', 'E'), S('N', 'D'), S('I', 'A'), S('N', '\n'), S(' ', ' '), S('#', 'd'), S('e', 'f'), S('i', 'n'), S('e', ' '), S('S', '('), S('a', ','), S(' ', 'b'), S(')', ' '), S('(', '('), S('(', 'a'), S(')',
-  ' '), S('<', '<'), S(' ', '1'), S('6', ')'), S(' ', '|'), S(' ', '('), S('b', ')'), S(')', '\n'), S('#', 'e'), S('l', 's'), S('e', '\n'), S(' ', ' '), S('#', 'd'), S('e', 'f'), S('i', 'n'), S('e', ' '), S('S',
-  '('), S('a', ','), S(' ', 'b'), S(')', ' '), S('(', '('), S('a', ')'), S(' ', '|'), S(' ', '('), S('(', 'b'), S(')', ' '), S('<', '<'), S(' ', '1'), S('6', ')'), S(')', '\n'), S('#', 'e'), S('n', 'd'), S('i',
-  'f'), S('\n', '\n')};
-static const uint32_t __string_10_static_const_uint32_t[] = {22, S('s', 't'), S('a', 't'), S('i', 'c'), S(' ', 'c'), S('o', 'n'), S('s', 't'), S(' ', 'u'), S('i', 'n'), S('t', '3'), S('2', '_'), S('t',
-  ' ')};
-static const uint32_t __string_11[] = {6, S('[', ']'), S(' ', '='), S(' ', '{')};
-static const uint32_t __string_12_S[] = {4, S(',', ' '), S('S', '(')};
-static const uint32_t __string_13[] = {4, S(',', '\n'), S(' ', ' ')};
-static const uint32_t __string_14[] = {2, S(',', ' ')};
-static const uint32_t __string_15_0[] = {4, S(',', ' '), S('0', ')')};
-static const uint32_t __string_16[] = {3, S('}', ';'), S('\n', 0)};
-static const uint32_t __string_17_const_uint16_t[] = {18, S('(', 'c'), S('o', 'n'), S('s', 't'), S(' ', 'u'), S('i', 'n'), S('t', '1'), S('6', '_'), S('t', ' '), S('*', ')')};
-static const uint32_t __string_18[] = {2, S('-', '>')};
-static const uint32_t __string_19[] = {1, S('.', 0)};
-static const uint32_t __string_20[] = {3, S(' ', '?'), S(' ', 0)};
-static const uint32_t __string_21[] = {3, S(' ', ':'), S(' ', 0)};
-static const uint32_t __string_22[] = {2, S(',', ' ')};
-static const uint32_t __string_23_calloc_1_sizeof[] = {17, S('c', 'a'), S('l', 'l'), S('o', 'c'), S('(', '1'), S(',', ' '), S('s', 'i'), S('z', 'e'), S('o', 'f'), S('(', 0)};
-static const uint32_t __string_24[] = {2, S(')', ')')};
-static const uint32_t __string_25[] = {1, S('~', 0)};
-static const uint32_t __string_26[] = {1, S('*', 0)};
-static const uint32_t __string_27[] = {1, S('-', 0)};
-static const uint32_t __string_28[] = {1, S('!', 0)};
-static const uint32_t __string_29[] = {1, S('+', 0)};
-static const uint32_t __string_30[] = {2, S('-', '-')};
-static const uint32_t __string_31[] = {2, S('+', '+')};
-static const uint32_t __string_32[] = {2, S('-', '-')};
-static const uint32_t __string_33[] = {2, S('+', '+')};
-static const uint32_t __string_34[] = {3, S(' ', '+'), S(' ', 0)};
-static const uint32_t __string_35[] = {3, S(' ', '='), S(' ', 0)};
-static const uint32_t __string_36[] = {3, S(' ', '&'), S(' ', 0)};
-static const uint32_t __string_37[] = {3, S(' ', '|'), S(' ', 0)};
-static const uint32_t __string_38[] = {3, S(' ', '^'), S(' ', 0)};
-static const uint32_t __string_39[] = {3, S(' ', '/'), S(' ', 0)};
-static const uint32_t __string_40[] = {4, S(' ', '='), S('=', ' ')};
-static const uint32_t __string_41[] = {3, S(' ', '>'), S(' ', 0)};
-static const uint32_t __string_42[] = {4, S(' ', '>'), S('=', ' ')};
-static const uint32_t __string_43[] = {3, S(' ', '<'), S(' ', 0)};
-static const uint32_t __string_44[] = {4, S(' ', '<'), S('=', ' ')};
-static const uint32_t __string_45[] = {4, S(' ', '&'), S('&', ' ')};
-static const uint32_t __string_46[] = {4, S(' ', '|'), S('|', ' ')};
-static const uint32_t __string_47[] = {3, S(' ', '*'), S(' ', 0)};
-static const uint32_t __string_48[] = {4, S(' ', '!'), S('=', ' ')};
-static const uint32_t __string_49[] = {3, S(' ', '%'), S(' ', 0)};
-static const uint32_t __string_50[] = {4, S(' ', '<'), S('<', ' ')};
-static const uint32_t __string_51[] = {4, S(' ', '>'), S('>', ' ')};
-static const uint32_t __string_52[] = {3, S(' ', '-'), S(' ', 0)};
-static const uint32_t __string_53_struct[] = {7, S('s', 't'), S('r', 'u'), S('c', 't'), S(' ', 0)};
-static const uint32_t __string_54_uint8_t[] = {7, S('u', 'i'), S('n', 't'), S('8', '_'), S('t', 0)};
-static const uint32_t __string_55_int8_t[] = {6, S('i', 'n'), S('t', '8'), S('_', 't')};
-static const uint32_t __string_56_int32_t[] = {7, S('i', 'n'), S('t', '3'), S('2', '_'), S('t', 0)};
-static const uint32_t __string_57_int16_t[] = {7, S('i', 'n'), S('t', '1'), S('6', '_'), S('t', 0)};
-static const uint32_t __string_58_const_uint16_t[] = {14, S('c', 'o'), S('n', 's'), S('t', ' '), S('u', 'i'), S('n', 't'), S('1', '6'), S('_', 't')};
-static const uint32_t __string_59_uint32_t[] = {8, S('u', 'i'), S('n', 't'), S('3', '2'), S('_', 't')};
-static const uint32_t __string_60_uint16_t[] = {8, S('u', 'i'), S('n', 't'), S('1', '6'), S('_', 't')};
-static const uint32_t __string_61[] = {2, S(' ', '*')};
-static const uint32_t __string_62_if[] = {4, S('i', 'f'), S(' ', '(')};
-static const uint32_t __string_63[] = {2, S(')', ' ')};
-static const uint32_t __string_64[] = {2, S('\n', '\n')};
-static const uint32_t __string_65_else[] = {5, S('e', 'l'), S('s', 'e'), S(' ', 0)};
-static const uint32_t __string_66_while[] = {7, S('w', 'h'), S('i', 'l'), S('e', ' '), S('(', 0)};
-static const uint32_t __string_67[] = {2, S(')', ' ')};
-static const uint32_t __string_68_break[] = {7, S('b', 'r'), S('e', 'a'), S('k', ';'), S('\n', 0)};
-static const uint32_t __string_69_continue[] = {10, S('c', 'o'), S('n', 't'), S('i', 'n'), S('u', 'e'), S(';', '\n')};
-static const uint32_t __string_70[] = {2, S(';', '\n')};
-static const uint32_t __string_71_return[] = {7, S('r', 'e'), S('t', 'u'), S('r', 'n'), S(' ', 0)};
-static const uint32_t __string_72[] = {2, S(';', '\n')};
-static const uint32_t __string_73_return[] = {8, S('r', 'e'), S('t', 'u'), S('r', 'n'), S(';', '\n')};
-static const uint32_t __string_74[] = {3, S(' ', '='), S(' ', 0)};
-static const uint32_t __string_75[] = {2, S(';', '\n')};
-static const uint32_t __string_76_include_stdint_h[] = {20, S('#', 'i'), S('n', 'c'), S('l', 'u'), S('d', 'e'), S(' ', '<'), S('s', 't'), S('d', 'i'), S('n', 't'), S('.', 'h'), S('>', '\n')};
-static const uint32_t __string_77_include[] = {10, S('#', 'i'), S('n', 'c'), S('l', 'u'), S('d', 'e'), S(' ', '"')};
-static const uint32_t __string_78[] = {2, S('"', '\n')};
-static const uint32_t __string_79_include_stdlib_h[] = {20, S('#', 'i'), S('n', 'c'), S('l', 'u'), S('d', 'e'), S(' ', '<'), S('s', 't'), S('d', 'l'), S('i', 'b'), S('.', 'h'), S('>', '\n')};
-static const uint32_t __string_80_include_string_h[] = {20, S('#', 'i'), S('n', 'c'), S('l', 'u'), S('d', 'e'), S(' ', '<'), S('s', 't'), S('r', 'i'), S('n', 'g'), S('.', 'h'), S('>', '\n')};
-static const uint32_t __string_81_struct[] = {7, S('s', 't'), S('r', 'u'), S('c', 't'), S(' ', 0)};
-static const uint32_t __string_82[] = {2, S(';', '\n')};
-static const uint32_t __string_83_struct[] = {7, S('s', 't'), S('r', 'u'), S('c', 't'), S(' ', 0)};
-static const uint32_t __string_84[] = {3, S(' ', '{'), S('\n', 0)};
-static const uint32_t __string_85[] = {2, S(';', '\n')};
-static const uint32_t __string_86[] = {3, S('}', ';'), S('\n', 0)};
-static const uint32_t __string_87_enum[] = {7, S('e', 'n'), S('u', 'm'), S(' ', '{'), S('\n', 0)};
-static const uint32_t __string_88__[] = {1, S('_', 0)};
-static const uint32_t __string_89[] = {3, S(' ', '='), S(' ', 0)};
-static const uint32_t __string_90[] = {2, S(',', '\n')};
-static const uint32_t __string_91[] = {1, S('\n', 0)};
-static const uint32_t __string_92[] = {3, S('}', ';'), S('\n', 0)};
-static const uint32_t __string_93_malloc[] = {6, S('m', 'a'), S('l', 'l'), S('o', 'c')};
-static const uint32_t __string_94_memcpy[] = {6, S('m', 'e'), S('m', 'c'), S('p', 'y')};
-static const uint32_t __string_95_memcmp[] = {6, S('m', 'e'), S('m', 'c'), S('m', 'p')};
-static const uint32_t __string_96_static[] = {7, S('s', 't'), S('a', 't'), S('i', 'c'), S(' ', 0)};
-static const uint32_t __string_97___this[] = {6, S('_', '_'), S('t', 'h'), S('i', 's')};
-static const uint32_t __string_98[] = {2, S(',', ' ')};
-static const uint32_t __string_99[] = {3, S(')', ';'), S('\n', 0)};
-static const uint32_t __string_100_static[] = {7, S('s', 't'), S('a', 't'), S('i', 'c'), S(' ', 0)};
-static const uint32_t __string_101[] = {3, S(' ', '='), S(' ', 0)};
-static const uint32_t __string_102[] = {2, S(';', '\n')};
-static const uint32_t __string_103_static[] = {7, S('s', 't'), S('a', 't'), S('i', 'c'), S(' ', 0)};
-static const uint32_t __string_104[] = {2, S(',', ' ')};
-static const uint32_t __string_105[] = {2, S(')', ' ')};
-static const uint32_t __string_106_undef_S[] = {10, S('\n', '#'), S('u', 'n'), S('d', 'e'), S('f', ' '), S('S', '\n')};
-static const uint32_t __string_107_0[] = {4, S('\'', '\\'), S('0', '\'')};
-static const uint32_t __string_108_r[] = {4, S('\'', '\\'), S('r', '\'')};
-static const uint32_t __string_109_n[] = {4, S('\'', '\\'), S('n', '\'')};
-static const uint32_t __string_110_t[] = {4, S('\'', '\\'), S('t', '\'')};
-static const uint32_t __string_111_h[] = {2, S('.', 'h')};
-static const uint32_t __string_112_This_statement_is_not_allowed_he[] = {34, S('T', 'h'), S('i', 's'), S(' ', 's'), S('t', 'a'), S('t', 'e'), S('m', 'e'), S('n', 't'), S(' ', 'i'), S('s', ' '), S('n', 'o'), S('t',
+static const uint32_t __string_4_error[] = {7, S('e', 'r'), S('r', 'o'), S('r', ':'), S(' ', 0)};
+static const uint32_t __string_5[] = {1, S('\n', 0)};
+static const uint32_t __string_6_Usage_thinc_FLAGS_INPUTS[] = {412, S('\n', 'U'), S('s', 'a'), S('g', 'e'), S(':', ' '), S('t', 'h'), S('i', 'n'), S('c', ' '), S('[', 'F'), S('L', 'A'), S('G', 'S'), S(']',
+  ' '), S('[', 'I'), S('N', 'P'), S('U', 'T'), S('S', ']'), S('\n', '\n'), S(' ', ' '), S('-', '-'), S('h', 'e'), S('l', 'p'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ',
+  ' '), S('P', 'r'), S('i', 'n'), S('t', ' '), S('t', 'h'), S('i', 's'), S(' ', 'm'), S('e', 's'), S('s', 'a'), S('g', 'e'), S('.', '\n'), S(' ', ' '), S('-', '-'), S('o', 'u'), S('t', ' '), S('[', 'P'), S('A',
+  'T'), S('H', ']'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('E', 'm'), S('i', 't'), S(' ', 'c'), S('o', 'd'), S('e', ' '), S('t', 'o'), S(' ', 'P'), S('A', 'T'), S('H', ' '), S('(', 't'), S('h',
+  'e'), S(' ', 't'), S('a', 'r'), S('g', 'e'), S('t', ' '), S('f', 'o'), S('r', 'm'), S('a', 't'), S(' ', 'i'), S('s', ' '), S('t', 'h'), S('e', ' '), S('f', 'i'), S('l', 'e'), S(' ', 'e'), S('x', 't'), S('e',
+  'n'), S('s', 'i'), S('o', 'n'), S(')', '.'), S('\n', ' '), S(' ', '-'), S('-', 'd'), S('e', 'f'), S('i', 'n'), S('e', ' '), S('[', 'N'), S('A', 'M'), S('E', ']'), S(' ', ' '), S(' ', ' '), S(' ', 'D'), S('e',
+  'f'), S('i', 'n'), S('e', ' '), S('t', 'h'), S('e', ' '), S('f', 'l'), S('a', 'g'), S(' ', 'N'), S('A', 'M'), S('E', ' '), S('i', 'n'), S(' ', 'a'), S('l', 'l'), S(' ', 'i'), S('n', 'p'), S('u', 't'), S(' ',
+  'f'), S('i', 'l'), S('e', 's'), S('.', '\n'), S(' ', ' '), S('-', '-'), S('c', ','), S(' ', '-'), S('-', 'j'), S('s', ','), S(' ', '-'), S('-', 'w'), S('a', 's'), S('m', ' '), S(' ', ' '), S('E', 'x'), S('p',
+  'l'), S('i', 'c'), S('i', 't'), S('l', 'y'), S(' ', 's'), S('e', 't'), S('s', ' '), S('t', 'h'), S('e', ' '), S('t', 'a'), S('r', 'g'), S('e', 't'), S(' ', 'f'), S('o', 'r'), S('m', 'a'), S('t', '.'), S('\n',
+  '\n'), S('E', 'x'), S('a', 'm'), S('p', 'l'), S('e', 's'), S(':', '\n'), S('\n', ' '), S(' ', 't'), S('h', 'i'), S('n', 'c'), S(' ', 'm'), S('a', 'i'), S('n', '.'), S('t', 'h'), S('i', 'n'), S(' ', '-'), S('-',
+  'o'), S('u', 't'), S(' ', 'm'), S('a', 'i'), S('n', '.'), S('j', 's'), S('\n', ' '), S(' ', 't'), S('h', 'i'), S('n', 'c'), S(' ', 's'), S('r', 'c'), S('/', '*'), S('.', 't'), S('h', 'i'), S('n', ' '), S('-',
+  '-'), S('o', 'u'), S('t', ' '), S('m', 'a'), S('i', 'n'), S('.', 'w'), S('a', 's'), S('m', '\n'), S(' ', ' '), S('t', 'h'), S('i', 'n'), S('c', ' '), S('n', 'a'), S('t', 'i'), S('v', 'e'), S('.', 't'), S('h',
+  'i'), S('n', ' '), S('-', '-'), S('o', 'u'), S('t', ' '), S('m', 'a'), S('i', 'n'), S('.', 'c'), S(' ', '-'), S('-', 'd'), S('e', 'f'), S('i', 'n'), S('e', ' '), S('E', 'N'), S('A', 'B'), S('L', 'E'), S('_',
+  'T'), S('E', 'S'), S('T', 'S'), S('\n', '\n')};
+static const uint32_t __string_7[] = {1, S('-', 0)};
+static const uint32_t __string_8_h[] = {2, S('-', 'h')};
+static const uint32_t __string_9_help[] = {5, S('-', 'h'), S('e', 'l'), S('p', 0)};
+static const uint32_t __string_10_help[] = {6, S('-', '-'), S('h', 'e'), S('l', 'p')};
+static const uint32_t __string_11[] = {2, S('/', '?')};
+static const uint32_t __string_12_c[] = {3, S('-', '-'), S('c', 0)};
+static const uint32_t __string_13_js[] = {4, S('-', '-'), S('j', 's')};
+static const uint32_t __string_14_wasm[] = {6, S('-', '-'), S('w', 'a'), S('s', 'm')};
+static const uint32_t __string_15_define[] = {8, S('-', '-'), S('d', 'e'), S('f', 'i'), S('n', 'e')};
+static const uint32_t __string_16_out[] = {5, S('-', '-'), S('o', 'u'), S('t', 0)};
+static const uint32_t __string_17_Invalid_flag[] = {14, S('I', 'n'), S('v', 'a'), S('l', 'i'), S('d', ' '), S('f', 'l'), S('a', 'g'), S(':', ' ')};
+static const uint32_t __string_18_No_input_files[] = {14, S('N', 'o'), S(' ', 'i'), S('n', 'p'), S('u', 't'), S(' ', 'f'), S('i', 'l'), S('e', 's')};
+static const uint32_t __string_19_Missing_an_output_file_use_the[] = {43, S('M', 'i'), S('s', 's'), S('i', 'n'), S('g', ' '), S('a', 'n'), S(' ', 'o'), S('u', 't'), S('p', 'u'), S('t', ' '), S('f', 'i'), S('l',
+  'e'), S(' ', '('), S('u', 's'), S('e', ' '), S('t', 'h'), S('e', 160), S('-', '-'), S('o', 'u'), S('t', ' '), S('f', 'l'), S('a', 'g'), S(')', 0)};
+static const uint32_t __string_20_c[] = {2, S('.', 'c')};
+static const uint32_t __string_21_js[] = {3, S('.', 'j'), S('s', 0)};
+static const uint32_t __string_22_wasm[] = {5, S('.', 'w'), S('a', 's'), S('m', 0)};
+static const uint32_t __string_23_Missing_a_target_use_either_c[] = {50, S('M', 'i'), S('s', 's'), S('i', 'n'), S('g', ' '), S('a', ' '), S('t', 'a'), S('r', 'g'), S('e', 't'), S(' ', '('), S('u', 's'), S('e',
+  ' '), S('e', 'i'), S('t', 'h'), S('e', 'r'), S(' ', '-'), S('-', 'c'), S(',', ' '), S('-', '-'), S('j', 's'), S(',', ' '), S('o', 'r'), S(' ', '-'), S('-', 'w'), S('a', 's'), S('m', ')')};
+static const uint32_t __string_24_define[] = {8, S('-', '-'), S('d', 'e'), S('f', 'i'), S('n', 'e')};
+static const uint32_t __string_25_out[] = {5, S('-', '-'), S('o', 'u'), S('t', 0)};
+static const uint32_t __string_26[] = {1, S('-', 0)};
+static const uint32_t __string_27_Cannot_read_from[] = {17, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'r'), S('e', 'a'), S('d', ' '), S('f', 'r'), S('o', 'm'), S(' ', 0)};
+static const uint32_t __string_28_h[] = {2, S('.', 'h')};
+static const uint32_t __string_29_Cannot_write_to[] = {16, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'w'), S('r', 'i'), S('t', 'e'), S(' ', 't'), S('o', ' ')};
+static const uint32_t __string_30_This_statement_is_not_allowed_he[] = {34, S('T', 'h'), S('i', 's'), S(' ', 's'), S('t', 'a'), S('t', 'e'), S('m', 'e'), S('n', 't'), S(' ', 'i'), S('s', ' '), S('n', 'o'), S('t',
   ' '), S('a', 'l'), S('l', 'o'), S('w', 'e'), S('d', ' '), S('h', 'e'), S('r', 'e')};
-static const uint32_t __string_113[] = {1, S('+', 0)};
-static const uint32_t __string_114[] = {1, S('-', 0)};
-static const uint32_t __string_115[] = {1, S('+', 0)};
-static const uint32_t __string_116_op_positive[] = {11, S('o', 'p'), S('_', 'p'), S('o', 's'), S('i', 't'), S('i', 'v'), S('e', 0)};
-static const uint32_t __string_117_op_negative[] = {11, S('o', 'p'), S('_', 'n'), S('e', 'g'), S('a', 't'), S('i', 'v'), S('e', 0)};
-static const uint32_t __string_118[] = {1, S('+', 0)};
-static const uint32_t __string_119_op_add[] = {6, S('o', 'p'), S('_', 'a'), S('d', 'd')};
-static const uint32_t __string_120_op_subtract[] = {11, S('o', 'p'), S('_', 's'), S('u', 'b'), S('t', 'r'), S('a', 'c'), S('t', 0)};
-static const uint32_t __string_121[] = {1, S('%', 0)};
-static const uint32_t __string_122_op_remainder[] = {12, S('o', 'p'), S('_', 'r'), S('e', 'm'), S('a', 'i'), S('n', 'd'), S('e', 'r')};
-static const uint32_t __string_123[] = {1, S('&', 0)};
-static const uint32_t __string_124_op_and[] = {6, S('o', 'p'), S('_', 'a'), S('n', 'd')};
-static const uint32_t __string_125[] = {1, S('*', 0)};
-static const uint32_t __string_126_op_multiply[] = {11, S('o', 'p'), S('_', 'm'), S('u', 'l'), S('t', 'i'), S('p', 'l'), S('y', 0)};
-static const uint32_t __string_127[] = {2, S('*', '*')};
-static const uint32_t __string_128_op_exponent[] = {11, S('o', 'p'), S('_', 'e'), S('x', 'p'), S('o', 'n'), S('e', 'n'), S('t', 0)};
-static const uint32_t __string_129[] = {2, S('+', '+')};
-static const uint32_t __string_130_op_increment[] = {12, S('o', 'p'), S('_', 'i'), S('n', 'c'), S('r', 'e'), S('m', 'e'), S('n', 't')};
-static const uint32_t __string_131[] = {2, S('-', '-')};
-static const uint32_t __string_132_op_decrement[] = {12, S('o', 'p'), S('_', 'd'), S('e', 'c'), S('r', 'e'), S('m', 'e'), S('n', 't')};
-static const uint32_t __string_133[] = {1, S('/', 0)};
-static const uint32_t __string_134_op_divide[] = {9, S('o', 'p'), S('_', 'd'), S('i', 'v'), S('i', 'd'), S('e', 0)};
-static const uint32_t __string_135[] = {1, S('<', 0)};
-static const uint32_t __string_136_op_lessThan[] = {11, S('o', 'p'), S('_', 'l'), S('e', 's'), S('s', 'T'), S('h', 'a'), S('n', 0)};
-static const uint32_t __string_137[] = {2, S('<', '<')};
-static const uint32_t __string_138_op_shiftLeft[] = {12, S('o', 'p'), S('_', 's'), S('h', 'i'), S('f', 't'), S('L', 'e'), S('f', 't')};
-static const uint32_t __string_139[] = {2, S('=', '=')};
-static const uint32_t __string_140_op_equals[] = {9, S('o', 'p'), S('_', 'e'), S('q', 'u'), S('a', 'l'), S('s', 0)};
-static const uint32_t __string_141[] = {1, S('>', 0)};
-static const uint32_t __string_142_op_greaterThan[] = {14, S('o', 'p'), S('_', 'g'), S('r', 'e'), S('a', 't'), S('e', 'r'), S('T', 'h'), S('a', 'n')};
-static const uint32_t __string_143[] = {2, S('>', '>')};
-static const uint32_t __string_144_op_shiftRight[] = {13, S('o', 'p'), S('_', 's'), S('h', 'i'), S('f', 't'), S('R', 'i'), S('g', 'h'), S('t', 0)};
-static const uint32_t __string_145[] = {2, S('[', ']')};
-static const uint32_t __string_146_op_get[] = {6, S('o', 'p'), S('_', 'g'), S('e', 't')};
-static const uint32_t __string_147[] = {3, S('[', ']'), S('=', 0)};
-static const uint32_t __string_148_op_set[] = {6, S('o', 'p'), S('_', 's'), S('e', 't')};
-static const uint32_t __string_149[] = {1, S('^', 0)};
-static const uint32_t __string_150_op_xor[] = {6, S('o', 'p'), S('_', 'x'), S('o', 'r')};
-static const uint32_t __string_151[] = {1, S('|', 0)};
-static const uint32_t __string_152_op_or[] = {5, S('o', 'p'), S('_', 'o'), S('r', 0)};
-static const uint32_t __string_153[] = {1, S('~', 0)};
-static const uint32_t __string_154_op_complement[] = {13, S('o', 'p'), S('_', 'c'), S('o', 'm'), S('p', 'l'), S('e', 'm'), S('e', 'n'), S('t', 0)};
-static const uint32_t __string_155_this[] = {4, S('t', 'h'), S('i', 's')};
-static const uint32_t __string_156_bool[] = {4, S('b', 'o'), S('o', 'l')};
-static const uint32_t __string_157_byte[] = {4, S('b', 'y'), S('t', 'e')};
-static const uint32_t __string_158_int[] = {3, S('i', 'n'), S('t', 0)};
-static const uint32_t __string_159_sbyte[] = {5, S('s', 'b'), S('y', 't'), S('e', 0)};
-static const uint32_t __string_160_short[] = {5, S('s', 'h'), S('o', 'r'), S('t', 0)};
-static const uint32_t __string_161_string[] = {6, S('s', 't'), S('r', 'i'), S('n', 'g')};
-static const uint32_t __string_162_uint[] = {4, S('u', 'i'), S('n', 't')};
-static const uint32_t __string_163_ushort[] = {6, S('u', 's'), S('h', 'o'), S('r', 't')};
-static const uint32_t __string_164_Unsupported_flag_export[] = {25, S('U', 'n'), S('s', 'u'), S('p', 'p'), S('o', 'r'), S('t', 'e'), S('d', ' '), S('f', 'l'), S('a', 'g'), S(' ', '\''), S('e', 'x'), S('p',
+static const uint32_t __string_31[] = {1, S('+', 0)};
+static const uint32_t __string_32[] = {1, S('-', 0)};
+static const uint32_t __string_33[] = {1, S('+', 0)};
+static const uint32_t __string_34_op_positive[] = {11, S('o', 'p'), S('_', 'p'), S('o', 's'), S('i', 't'), S('i', 'v'), S('e', 0)};
+static const uint32_t __string_35_op_negative[] = {11, S('o', 'p'), S('_', 'n'), S('e', 'g'), S('a', 't'), S('i', 'v'), S('e', 0)};
+static const uint32_t __string_36[] = {1, S('+', 0)};
+static const uint32_t __string_37_op_add[] = {6, S('o', 'p'), S('_', 'a'), S('d', 'd')};
+static const uint32_t __string_38_op_subtract[] = {11, S('o', 'p'), S('_', 's'), S('u', 'b'), S('t', 'r'), S('a', 'c'), S('t', 0)};
+static const uint32_t __string_39[] = {1, S('%', 0)};
+static const uint32_t __string_40_op_remainder[] = {12, S('o', 'p'), S('_', 'r'), S('e', 'm'), S('a', 'i'), S('n', 'd'), S('e', 'r')};
+static const uint32_t __string_41[] = {1, S('&', 0)};
+static const uint32_t __string_42_op_and[] = {6, S('o', 'p'), S('_', 'a'), S('n', 'd')};
+static const uint32_t __string_43[] = {1, S('*', 0)};
+static const uint32_t __string_44_op_multiply[] = {11, S('o', 'p'), S('_', 'm'), S('u', 'l'), S('t', 'i'), S('p', 'l'), S('y', 0)};
+static const uint32_t __string_45[] = {2, S('*', '*')};
+static const uint32_t __string_46_op_exponent[] = {11, S('o', 'p'), S('_', 'e'), S('x', 'p'), S('o', 'n'), S('e', 'n'), S('t', 0)};
+static const uint32_t __string_47[] = {2, S('+', '+')};
+static const uint32_t __string_48_op_increment[] = {12, S('o', 'p'), S('_', 'i'), S('n', 'c'), S('r', 'e'), S('m', 'e'), S('n', 't')};
+static const uint32_t __string_49[] = {2, S('-', '-')};
+static const uint32_t __string_50_op_decrement[] = {12, S('o', 'p'), S('_', 'd'), S('e', 'c'), S('r', 'e'), S('m', 'e'), S('n', 't')};
+static const uint32_t __string_51[] = {1, S('/', 0)};
+static const uint32_t __string_52_op_divide[] = {9, S('o', 'p'), S('_', 'd'), S('i', 'v'), S('i', 'd'), S('e', 0)};
+static const uint32_t __string_53[] = {1, S('<', 0)};
+static const uint32_t __string_54_op_lessThan[] = {11, S('o', 'p'), S('_', 'l'), S('e', 's'), S('s', 'T'), S('h', 'a'), S('n', 0)};
+static const uint32_t __string_55[] = {2, S('<', '<')};
+static const uint32_t __string_56_op_shiftLeft[] = {12, S('o', 'p'), S('_', 's'), S('h', 'i'), S('f', 't'), S('L', 'e'), S('f', 't')};
+static const uint32_t __string_57[] = {2, S('=', '=')};
+static const uint32_t __string_58_op_equals[] = {9, S('o', 'p'), S('_', 'e'), S('q', 'u'), S('a', 'l'), S('s', 0)};
+static const uint32_t __string_59[] = {1, S('>', 0)};
+static const uint32_t __string_60_op_greaterThan[] = {14, S('o', 'p'), S('_', 'g'), S('r', 'e'), S('a', 't'), S('e', 'r'), S('T', 'h'), S('a', 'n')};
+static const uint32_t __string_61[] = {2, S('>', '>')};
+static const uint32_t __string_62_op_shiftRight[] = {13, S('o', 'p'), S('_', 's'), S('h', 'i'), S('f', 't'), S('R', 'i'), S('g', 'h'), S('t', 0)};
+static const uint32_t __string_63[] = {2, S('[', ']')};
+static const uint32_t __string_64_op_get[] = {6, S('o', 'p'), S('_', 'g'), S('e', 't')};
+static const uint32_t __string_65[] = {3, S('[', ']'), S('=', 0)};
+static const uint32_t __string_66_op_set[] = {6, S('o', 'p'), S('_', 's'), S('e', 't')};
+static const uint32_t __string_67[] = {1, S('^', 0)};
+static const uint32_t __string_68_op_xor[] = {6, S('o', 'p'), S('_', 'x'), S('o', 'r')};
+static const uint32_t __string_69[] = {1, S('|', 0)};
+static const uint32_t __string_70_op_or[] = {5, S('o', 'p'), S('_', 'o'), S('r', 0)};
+static const uint32_t __string_71[] = {1, S('~', 0)};
+static const uint32_t __string_72_op_complement[] = {13, S('o', 'p'), S('_', 'c'), S('o', 'm'), S('p', 'l'), S('e', 'm'), S('e', 'n'), S('t', 0)};
+static const uint32_t __string_73_this[] = {4, S('t', 'h'), S('i', 's')};
+static const uint32_t __string_74_bool[] = {4, S('b', 'o'), S('o', 'l')};
+static const uint32_t __string_75_byte[] = {4, S('b', 'y'), S('t', 'e')};
+static const uint32_t __string_76_int[] = {3, S('i', 'n'), S('t', 0)};
+static const uint32_t __string_77_sbyte[] = {5, S('s', 'b'), S('y', 't'), S('e', 0)};
+static const uint32_t __string_78_short[] = {5, S('s', 'h'), S('o', 'r'), S('t', 0)};
+static const uint32_t __string_79_string[] = {6, S('s', 't'), S('r', 'i'), S('n', 'g')};
+static const uint32_t __string_80_uint[] = {4, S('u', 'i'), S('n', 't')};
+static const uint32_t __string_81_ushort[] = {6, S('u', 's'), S('h', 'o'), S('r', 't')};
+static const uint32_t __string_82_Unsupported_flag_export[] = {25, S('U', 'n'), S('s', 'u'), S('p', 'p'), S('o', 'r'), S('t', 'e'), S('d', ' '), S('f', 'l'), S('a', 'g'), S(' ', '\''), S('e', 'x'), S('p',
   'o'), S('r', 't'), S('\'', 0)};
-static const uint32_t __string_165_Unsupported_flag_protected[] = {28, S('U', 'n'), S('s', 'u'), S('p', 'p'), S('o', 'r'), S('t', 'e'), S('d', ' '), S('f', 'l'), S('a', 'g'), S(' ', '\''), S('p', 'r'), S('o',
+static const uint32_t __string_83_Unsupported_flag_protected[] = {28, S('U', 'n'), S('s', 'u'), S('p', 'p'), S('o', 'r'), S('t', 'e'), S('d', ' '), S('f', 'l'), S('a', 'g'), S(' ', '\''), S('p', 'r'), S('o',
   't'), S('e', 'c'), S('t', 'e'), S('d', '\'')};
-static const uint32_t __string_166_Unsupported_flag_static[] = {25, S('U', 'n'), S('s', 'u'), S('p', 'p'), S('o', 'r'), S('t', 'e'), S('d', ' '), S('f', 'l'), S('a', 'g'), S(' ', '\''), S('s', 't'), S('a',
+static const uint32_t __string_84_Unsupported_flag_static[] = {25, S('U', 'n'), S('s', 'u'), S('p', 'p'), S('o', 'r'), S('t', 'e'), S('d', ' '), S('f', 'l'), S('a', 'g'), S(' ', '\''), S('s', 't'), S('a',
   't'), S('i', 'c'), S('\'', 0)};
-static const uint32_t __string_167_Cannot_use_get_on_a_class[] = {27, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('g', 'e'), S('t', '\''), S(' ', 'o'), S('n', ' '), S('a',
+static const uint32_t __string_85_Cannot_use_get_on_a_class[] = {27, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('g', 'e'), S('t', '\''), S(' ', 'o'), S('n', ' '), S('a',
   ' '), S('c', 'l'), S('a', 's'), S('s', 0)};
-static const uint32_t __string_168_Cannot_use_set_on_a_class[] = {27, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('s', 'e'), S('t', '\''), S(' ', 'o'), S('n', ' '), S('a',
+static const uint32_t __string_86_Cannot_use_set_on_a_class[] = {27, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('s', 'e'), S('t', '\''), S(' ', 'o'), S('n', ' '), S('a',
   ' '), S('c', 'l'), S('a', 's'), S('s', 0)};
-static const uint32_t __string_169_Cannot_use_public_on_a_class[] = {30, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('p', 'u'), S('b', 'l'), S('i', 'c'), S('\'', ' '), S('o',
+static const uint32_t __string_87_Cannot_use_public_on_a_class[] = {30, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('p', 'u'), S('b', 'l'), S('i', 'c'), S('\'', ' '), S('o',
   'n'), S(' ', 'a'), S(' ', 'c'), S('l', 'a'), S('s', 's')};
-static const uint32_t __string_170_Cannot_use_private_on_a_class[] = {31, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('p', 'r'), S('i', 'v'), S('a', 't'), S('e', '\''), S(' ',
+static const uint32_t __string_88_Cannot_use_private_on_a_class[] = {31, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('p', 'r'), S('i', 'v'), S('a', 't'), S('e', '\''), S(' ',
   'o'), S('n', ' '), S('a', ' '), S('c', 'l'), S('a', 's'), S('s', 0)};
-static const uint32_t __string_171_Cannot_use_get_on_an_enum[] = {27, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('g', 'e'), S('t', '\''), S(' ', 'o'), S('n', ' '), S('a',
+static const uint32_t __string_89_Cannot_use_get_on_an_enum[] = {27, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('g', 'e'), S('t', '\''), S(' ', 'o'), S('n', ' '), S('a',
   'n'), S(' ', 'e'), S('n', 'u'), S('m', 0)};
-static const uint32_t __string_172_Cannot_use_set_on_an_enum[] = {27, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('s', 'e'), S('t', '\''), S(' ', 'o'), S('n', ' '), S('a',
+static const uint32_t __string_90_Cannot_use_set_on_an_enum[] = {27, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('s', 'e'), S('t', '\''), S(' ', 'o'), S('n', ' '), S('a',
   'n'), S(' ', 'e'), S('n', 'u'), S('m', 0)};
-static const uint32_t __string_173_Cannot_use_public_on_an_enum[] = {30, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('p', 'u'), S('b', 'l'), S('i', 'c'), S('\'', ' '), S('o',
+static const uint32_t __string_91_Cannot_use_public_on_an_enum[] = {30, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('p', 'u'), S('b', 'l'), S('i', 'c'), S('\'', ' '), S('o',
   'n'), S(' ', 'a'), S('n', ' '), S('e', 'n'), S('u', 'm')};
-static const uint32_t __string_174_Cannot_use_private_on_an_enum[] = {31, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('p', 'r'), S('i', 'v'), S('a', 't'), S('e', '\''), S(' ',
+static const uint32_t __string_92_Cannot_use_private_on_an_enum[] = {31, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('p', 'r'), S('i', 'v'), S('a', 't'), S('e', '\''), S(' ',
   'o'), S('n', ' '), S('a', 'n'), S(' ', 'e'), S('n', 'u'), S('m', 0)};
-static const uint32_t __string_175_Cannot_use_get_here[] = {21, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('g', 'e'), S('t', '\''), S(' ', 'h'), S('e', 'r'), S('e', 0)};
-static const uint32_t __string_176_Cannot_use_set_here[] = {21, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('s', 'e'), S('t', '\''), S(' ', 'h'), S('e', 'r'), S('e', 0)};
-static const uint32_t __string_177_Cannot_use_public_here[] = {24, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('p', 'u'), S('b', 'l'), S('i', 'c'), S('\'', ' '), S('h',
+static const uint32_t __string_93_Cannot_use_get_here[] = {21, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('g', 'e'), S('t', '\''), S(' ', 'h'), S('e', 'r'), S('e', 0)};
+static const uint32_t __string_94_Cannot_use_set_here[] = {21, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('s', 'e'), S('t', '\''), S(' ', 'h'), S('e', 'r'), S('e', 0)};
+static const uint32_t __string_95_Cannot_use_public_here[] = {24, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('p', 'u'), S('b', 'l'), S('i', 'c'), S('\'', ' '), S('h',
   'e'), S('r', 'e')};
-static const uint32_t __string_178_Cannot_use_private_here[] = {25, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('p', 'r'), S('i', 'v'), S('a', 't'), S('e', '\''), S(' ',
+static const uint32_t __string_96_Cannot_use_private_here[] = {25, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('p', 'r'), S('i', 'v'), S('a', 't'), S('e', '\''), S(' ',
   'h'), S('e', 'r'), S('e', 0)};
-static const uint32_t __string_179_Cannot_use_both_get_and_set[] = {31, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', 'b'), S('o', 't'), S('h', ' '), S('\'', 'g'), S('e', 't'), S('\'',
+static const uint32_t __string_97_Cannot_use_both_get_and_set[] = {31, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', 'b'), S('o', 't'), S('h', ' '), S('\'', 'g'), S('e', 't'), S('\'',
   ' '), S('a', 'n'), S('d', ' '), S('\'', 's'), S('e', 't'), S('\'', 0)};
-static const uint32_t __string_180_Getters_must_not_have_any_argume[] = {35, S('G', 'e'), S('t', 't'), S('e', 'r'), S('s', ' '), S('m', 'u'), S('s', 't'), S(' ', 'n'), S('o', 't'), S(' ', 'h'), S('a', 'v'), S('e',
+static const uint32_t __string_98_Getters_must_not_have_any_argume[] = {35, S('G', 'e'), S('t', 't'), S('e', 'r'), S('s', ' '), S('m', 'u'), S('s', 't'), S(' ', 'n'), S('o', 't'), S(' ', 'h'), S('a', 'v'), S('e',
   ' '), S('a', 'n'), S('y', ' '), S('a', 'r'), S('g', 'u'), S('m', 'e'), S('n', 't'), S('s', 0)};
-static const uint32_t __string_181_set_[] = {4, S('s', 'e'), S('t', '_')};
-static const uint32_t __string_182_Setters_must_have_exactly_one_ar[] = {38, S('S', 'e'), S('t', 't'), S('e', 'r'), S('s', ' '), S('m', 'u'), S('s', 't'), S(' ', 'h'), S('a', 'v'), S('e', ' '), S('e', 'x'), S('a',
+static const uint32_t __string_99_set_[] = {4, S('s', 'e'), S('t', '_')};
+static const uint32_t __string_100_Setters_must_have_exactly_one_ar[] = {38, S('S', 'e'), S('t', 't'), S('e', 'r'), S('s', ' '), S('m', 'u'), S('s', 't'), S(' ', 'h'), S('a', 'v'), S('e', ' '), S('e', 'x'), S('a',
   'c'), S('t', 'l'), S('y', ' '), S('o', 'n'), S('e', ' '), S('a', 'r'), S('g', 'u'), S('m', 'e'), S('n', 't')};
-static const uint32_t __string_183[] = {1, S('~', 0)};
-static const uint32_t __string_184[] = {2, S('+', '+')};
-static const uint32_t __string_185[] = {2, S('-', '-')};
-static const uint32_t __string_186_Operator[] = {10, S('O', 'p'), S('e', 'r'), S('a', 't'), S('o', 'r'), S(' ', '\'')};
-static const uint32_t __string_187_must_not_have_any_arguments[] = {29, S('\'', ' '), S('m', 'u'), S('s', 't'), S(' ', 'n'), S('o', 't'), S(' ', 'h'), S('a', 'v'), S('e', ' '), S('a', 'n'), S('y', ' '), S('a',
+static const uint32_t __string_101[] = {1, S('~', 0)};
+static const uint32_t __string_102[] = {2, S('+', '+')};
+static const uint32_t __string_103[] = {2, S('-', '-')};
+static const uint32_t __string_104_Operator[] = {10, S('O', 'p'), S('e', 'r'), S('a', 't'), S('o', 'r'), S(' ', '\'')};
+static const uint32_t __string_105_must_not_have_any_arguments[] = {29, S('\'', ' '), S('m', 'u'), S('s', 't'), S(' ', 'n'), S('o', 't'), S(' ', 'h'), S('a', 'v'), S('e', ' '), S('a', 'n'), S('y', ' '), S('a',
   'r'), S('g', 'u'), S('m', 'e'), S('n', 't'), S('s', 0)};
-static const uint32_t __string_188[] = {1, S('+', 0)};
-static const uint32_t __string_189[] = {1, S('-', 0)};
-static const uint32_t __string_190_Operator[] = {10, S('O', 'p'), S('e', 'r'), S('a', 't'), S('o', 'r'), S(' ', '\'')};
-static const uint32_t __string_191_must_have_at_most_one_argument[] = {32, S('\'', ' '), S('m', 'u'), S('s', 't'), S(' ', 'h'), S('a', 'v'), S('e', ' '), S('a', 't'), S(' ', 'm'), S('o', 's'), S('t', ' '), S('o',
+static const uint32_t __string_106[] = {1, S('+', 0)};
+static const uint32_t __string_107[] = {1, S('-', 0)};
+static const uint32_t __string_108_Operator[] = {10, S('O', 'p'), S('e', 'r'), S('a', 't'), S('o', 'r'), S(' ', '\'')};
+static const uint32_t __string_109_must_have_at_most_one_argument[] = {32, S('\'', ' '), S('m', 'u'), S('s', 't'), S(' ', 'h'), S('a', 'v'), S('e', ' '), S('a', 't'), S(' ', 'm'), S('o', 's'), S('t', ' '), S('o',
   'n'), S('e', ' '), S('a', 'r'), S('g', 'u'), S('m', 'e'), S('n', 't')};
-static const uint32_t __string_192[] = {3, S('[', ']'), S('=', 0)};
-static const uint32_t __string_193_Operator_must_have_at_leas[] = {46, S('O', 'p'), S('e', 'r'), S('a', 't'), S('o', 'r'), S(' ', '\''), S('[', ']'), S('=', '\''), S(' ', 'm'), S('u', 's'), S('t', ' '), S('h',
+static const uint32_t __string_110[] = {3, S('[', ']'), S('=', 0)};
+static const uint32_t __string_111_Operator_must_have_at_leas[] = {46, S('O', 'p'), S('e', 'r'), S('a', 't'), S('o', 'r'), S(' ', '\''), S('[', ']'), S('=', '\''), S(' ', 'm'), S('u', 's'), S('t', ' '), S('h',
   'a'), S('v', 'e'), S(' ', 'a'), S('t', ' '), S('l', 'e'), S('a', 's'), S('t', ' '), S('o', 'n'), S('e', ' '), S('a', 'r'), S('g', 'u'), S('m', 'e'), S('n', 't')};
-static const uint32_t __string_194_Operator[] = {10, S('O', 'p'), S('e', 'r'), S('a', 't'), S('o', 'r'), S(' ', '\'')};
-static const uint32_t __string_195_must_have_exactly_one_argument[] = {32, S('\'', ' '), S('m', 'u'), S('s', 't'), S(' ', 'h'), S('a', 'v'), S('e', ' '), S('e', 'x'), S('a', 'c'), S('t', 'l'), S('y', ' '), S('o',
+static const uint32_t __string_112_Operator[] = {10, S('O', 'p'), S('e', 'r'), S('a', 't'), S('o', 'r'), S(' ', '\'')};
+static const uint32_t __string_113_must_have_exactly_one_argument[] = {32, S('\'', ' '), S('m', 'u'), S('s', 't'), S(' ', 'h'), S('a', 'v'), S('e', ' '), S('e', 'x'), S('a', 'c'), S('t', 'l'), S('y', ' '), S('o',
   'n'), S('e', ' '), S('a', 'r'), S('g', 'u'), S('m', 'e'), S('n', 't')};
-static const uint32_t __string_196_Cannot_use_extern_on_an_instan[] = {43, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('e', 'x'), S('t', 'e'), S('r', 'n'), S('\'', ' '), S('o',
+static const uint32_t __string_114_Cannot_use_extern_on_an_instan[] = {43, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('e', 'x'), S('t', 'e'), S('r', 'n'), S('\'', ' '), S('o',
   'n'), S(' ', 'a'), S('n', ' '), S('i', 'n'), S('s', 't'), S('a', 'n'), S('c', 'e'), S(' ', 'f'), S('u', 'n'), S('c', 't'), S('i', 'o'), S('n', 0)};
-static const uint32_t __string_197_Cannot_use_declare_on_an_insta[] = {44, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('d', 'e'), S('c', 'l'), S('a', 'r'), S('e', '\''), S(' ',
+static const uint32_t __string_115_Cannot_use_declare_on_an_insta[] = {44, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('d', 'e'), S('c', 'l'), S('a', 'r'), S('e', '\''), S(' ',
   'o'), S('n', ' '), S('a', 'n'), S(' ', 'i'), S('n', 's'), S('t', 'a'), S('n', 'c'), S('e', ' '), S('f', 'u'), S('n', 'c'), S('t', 'i'), S('o', 'n')};
-static const uint32_t __string_198_Must_implement_this_function[] = {28, S('M', 'u'), S('s', 't'), S(' ', 'i'), S('m', 'p'), S('l', 'e'), S('m', 'e'), S('n', 't'), S(' ', 't'), S('h', 'i'), S('s', ' '), S('f',
+static const uint32_t __string_116_Must_implement_this_function[] = {28, S('M', 'u'), S('s', 't'), S(' ', 'i'), S('m', 'p'), S('l', 'e'), S('m', 'e'), S('n', 't'), S(' ', 't'), S('h', 'i'), S('s', ' '), S('f',
   'u'), S('n', 'c'), S('t', 'i'), S('o', 'n')};
-static const uint32_t __string_199_this[] = {4, S('t', 'h'), S('i', 's')};
-static const uint32_t __string_200___this[] = {6, S('_', '_'), S('t', 'h'), S('i', 's')};
-static const uint32_t __string_201_Cannot_use_extern_on_an_unimpl[] = {48, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('e', 'x'), S('t', 'e'), S('r', 'n'), S('\'', ' '), S('o',
+static const uint32_t __string_117_this[] = {4, S('t', 'h'), S('i', 's')};
+static const uint32_t __string_118___this[] = {6, S('_', '_'), S('t', 'h'), S('i', 's')};
+static const uint32_t __string_119_Cannot_use_extern_on_an_unimpl[] = {48, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('e', 'x'), S('t', 'e'), S('r', 'n'), S('\'', ' '), S('o',
   'n'), S(' ', 'a'), S('n', ' '), S('u', 'n'), S('i', 'm'), S('p', 'l'), S('e', 'm'), S('e', 'n'), S('t', 'e'), S('d', ' '), S('f', 'u'), S('n', 'c'), S('t', 'i'), S('o', 'n')};
-static const uint32_t __string_202_Declared_functions_must_be_prefi[] = {50, S('D', 'e'), S('c', 'l'), S('a', 'r'), S('e', 'd'), S(' ', 'f'), S('u', 'n'), S('c', 't'), S('i', 'o'), S('n', 's'), S(' ', 'm'), S('u',
+static const uint32_t __string_120_Declared_functions_must_be_prefi[] = {50, S('D', 'e'), S('c', 'l'), S('a', 'r'), S('e', 'd'), S(' ', 'f'), S('u', 'n'), S('c', 't'), S('i', 'o'), S('n', 's'), S(' ', 'm'), S('u',
   's'), S('t', ' '), S('b', 'e'), S(' ', 'p'), S('r', 'e'), S('f', 'i'), S('x', 'e'), S('d', ' '), S('w', 'i'), S('t', 'h'), S(' ', '\''), S('d', 'e'), S('c', 'l'), S('a', 'r'), S('e', '\'')};
-static const uint32_t __string_203_Cannot_use_declare_on_a_functi[] = {57, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('d', 'e'), S('c', 'l'), S('a', 'r'), S('e', '\''), S(' ',
+static const uint32_t __string_121_Cannot_use_declare_on_a_functi[] = {57, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('d', 'e'), S('c', 'l'), S('a', 'r'), S('e', '\''), S(' ',
   'o'), S('n', ' '), S('a', ' '), S('f', 'u'), S('n', 'c'), S('t', 'i'), S('o', 'n'), S(' ', 'w'), S('i', 't'), S('h', ' '), S('a', 'n'), S(' ', 'i'), S('m', 'p'), S('l', 'e'), S('m', 'e'), S('n', 't'), S('a',
   't'), S('i', 'o'), S('n', 0)};
-static const uint32_t __string_204_Cannot_use_get_on_a_variable[] = {30, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('g', 'e'), S('t', '\''), S(' ', 'o'), S('n', ' '), S('a',
+static const uint32_t __string_122_Cannot_use_get_on_a_variable[] = {30, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('g', 'e'), S('t', '\''), S(' ', 'o'), S('n', ' '), S('a',
   ' '), S('v', 'a'), S('r', 'i'), S('a', 'b'), S('l', 'e')};
-static const uint32_t __string_205_Cannot_use_set_on_a_variable[] = {30, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('s', 'e'), S('t', '\''), S(' ', 'o'), S('n', ' '), S('a',
+static const uint32_t __string_123_Cannot_use_set_on_a_variable[] = {30, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('s', 'e'), S('t', '\''), S(' ', 'o'), S('n', ' '), S('a',
   ' '), S('v', 'a'), S('r', 'i'), S('a', 'b'), S('l', 'e')};
-static const uint32_t __string_206_Cannot_use_public_here[] = {24, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('p', 'u'), S('b', 'l'), S('i', 'c'), S('\'', ' '), S('h',
+static const uint32_t __string_124_Cannot_use_public_here[] = {24, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('p', 'u'), S('b', 'l'), S('i', 'c'), S('\'', ' '), S('h',
   'e'), S('r', 'e')};
-static const uint32_t __string_207_Cannot_use_private_here[] = {25, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('p', 'r'), S('i', 'v'), S('a', 't'), S('e', '\''), S(' ',
+static const uint32_t __string_125_Cannot_use_private_here[] = {25, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('p', 'r'), S('i', 'v'), S('a', 't'), S('e', '\''), S(' ',
   'h'), S('e', 'r'), S('e', 0)};
-static const uint32_t __string_208_Cannot_create_untyped_variables[] = {31, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'c'), S('r', 'e'), S('a', 't'), S('e', ' '), S('u', 'n'), S('t', 'y'), S('p', 'e'), S('d',
+static const uint32_t __string_126_Cannot_create_untyped_variables[] = {31, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'c'), S('r', 'e'), S('a', 't'), S('e', ' '), S('u', 'n'), S('t', 'y'), S('p', 'e'), S('d',
   ' '), S('v', 'a'), S('r', 'i'), S('a', 'b'), S('l', 'e'), S('s', 0)};
-static const uint32_t __string_209_Cannot_create_a_variable_with_ty[] = {36, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'c'), S('r', 'e'), S('a', 't'), S('e', ' '), S('a', ' '), S('v', 'a'), S('r', 'i'), S('a',
+static const uint32_t __string_127_Cannot_create_a_variable_with_ty[] = {36, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'c'), S('r', 'e'), S('a', 't'), S('e', ' '), S('a', ' '), S('v', 'a'), S('r', 'i'), S('a',
   'b'), S('l', 'e'), S(' ', 'w'), S('i', 't'), S('h', ' '), S('t', 'y'), S('p', 'e'), S(' ', '\'')};
-static const uint32_t __string_210_Invalid_constant_initializer[] = {28, S('I', 'n'), S('v', 'a'), S('l', 'i'), S('d', ' '), S('c', 'o'), S('n', 's'), S('t', 'a'), S('n', 't'), S(' ', 'i'), S('n', 'i'), S('t',
+static const uint32_t __string_128_Invalid_constant_initializer[] = {28, S('I', 'n'), S('v', 'a'), S('l', 'i'), S('d', ' '), S('c', 'o'), S('n', 's'), S('t', 'a'), S('n', 't'), S(' ', 'i'), S('n', 'i'), S('t',
   'i'), S('a', 'l'), S('i', 'z'), S('e', 'r')};
-static const uint32_t __string_211_Constants_must_be_initialized[] = {29, S('C', 'o'), S('n', 's'), S('t', 'a'), S('n', 't'), S('s', ' '), S('m', 'u'), S('s', 't'), S(' ', 'b'), S('e', ' '), S('i', 'n'), S('i',
+static const uint32_t __string_129_Constants_must_be_initialized[] = {29, S('C', 'o'), S('n', 's'), S('t', 'a'), S('n', 't'), S('s', ' '), S('m', 'u'), S('s', 't'), S(' ', 'b'), S('e', ' '), S('i', 'n'), S('i',
   't'), S('i', 'a'), S('l', 'i'), S('z', 'e'), S('d', 0)};
-static const uint32_t __string_212_The_symbol[] = {12, S('T', 'h'), S('e', ' '), S('s', 'y'), S('m', 'b'), S('o', 'l'), S(' ', '\'')};
-static const uint32_t __string_213_shadows_another_symbol_with_th[] = {61, S('\'', ' '), S('s', 'h'), S('a', 'd'), S('o', 'w'), S('s', ' '), S('a', 'n'), S('o', 't'), S('h', 'e'), S('r', ' '), S('s', 'y'), S('m',
+static const uint32_t __string_130_The_symbol[] = {12, S('T', 'h'), S('e', ' '), S('s', 'y'), S('m', 'b'), S('o', 'l'), S(' ', '\'')};
+static const uint32_t __string_131_shadows_another_symbol_with_th[] = {61, S('\'', ' '), S('s', 'h'), S('a', 'd'), S('o', 'w'), S('s', ' '), S('a', 'n'), S('o', 't'), S('h', 'e'), S('r', ' '), S('s', 'y'), S('m',
   'b'), S('o', 'l'), S(' ', 'w'), S('i', 't'), S('h', ' '), S('t', 'h'), S('e', ' '), S('s', 'a'), S('m', 'e'), S(' ', 'n'), S('a', 'm'), S('e', ' '), S('i', 'n'), S(' ', 'a'), S(' ', 'p'), S('a', 'r'), S('e',
   'n'), S('t', ' '), S('s', 'c'), S('o', 'p'), S('e', 0)};
-static const uint32_t __string_214_Expected_expression_but_found_ty[] = {34, S('E', 'x'), S('p', 'e'), S('c', 't'), S('e', 'd'), S(' ', 'e'), S('x', 'p'), S('r', 'e'), S('s', 's'), S('i', 'o'), S('n', ' '), S('b',
+static const uint32_t __string_132_Expected_expression_but_found_ty[] = {34, S('E', 'x'), S('p', 'e'), S('c', 't'), S('e', 'd'), S(' ', 'e'), S('x', 'p'), S('r', 'e'), S('s', 's'), S('i', 'o'), S('n', ' '), S('b',
   'u'), S('t', ' '), S('f', 'o'), S('u', 'n'), S('d', ' '), S('t', 'y'), S('p', 'e')};
-static const uint32_t __string_215_This_expression_does_not_return[] = {39, S('T', 'h'), S('i', 's'), S(' ', 'e'), S('x', 'p'), S('r', 'e'), S('s', 's'), S('i', 'o'), S('n', ' '), S('d', 'o'), S('e', 's'), S(' ',
+static const uint32_t __string_133_This_expression_does_not_return[] = {39, S('T', 'h'), S('i', 's'), S(' ', 'e'), S('x', 'p'), S('r', 'e'), S('s', 's'), S('i', 'o'), S('n', ' '), S('d', 'o'), S('e', 's'), S(' ',
   'n'), S('o', 't'), S(' ', 'r'), S('e', 't'), S('u', 'r'), S('n', ' '), S('a', ' '), S('v', 'a'), S('l', 'u'), S('e', 0)};
-static const uint32_t __string_216_Expected_type_but_found_expressi[] = {34, S('E', 'x'), S('p', 'e'), S('c', 't'), S('e', 'd'), S(' ', 't'), S('y', 'p'), S('e', ' '), S('b', 'u'), S('t', ' '), S('f', 'o'), S('u',
+static const uint32_t __string_134_Expected_type_but_found_expressi[] = {34, S('E', 'x'), S('p', 'e'), S('c', 't'), S('e', 'd'), S(' ', 't'), S('y', 'p'), S('e', ' '), S('b', 'u'), S('t', ' '), S('f', 'o'), S('u',
   'n'), S('d', ' '), S('e', 'x'), S('p', 'r'), S('e', 's'), S('s', 'i'), S('o', 'n')};
-static const uint32_t __string_217_Cannot_convert_from_type[] = {26, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'c'), S('o', 'n'), S('v', 'e'), S('r', 't'), S(' ', 'f'), S('r', 'o'), S('m', ' '), S('t',
+static const uint32_t __string_135_Cannot_convert_from_type[] = {26, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'c'), S('o', 'n'), S('v', 'e'), S('r', 't'), S(' ', 'f'), S('r', 'o'), S('m', ' '), S('t',
   'y'), S('p', 'e'), S(' ', '\'')};
-static const uint32_t __string_218_to_type[] = {11, S('\'', ' '), S('t', 'o'), S(' ', 't'), S('y', 'p'), S('e', ' '), S('\'', 0)};
-static const uint32_t __string_219_without_a_cast[] = {16, S('\'', ' '), S('w', 'i'), S('t', 'h'), S('o', 'u'), S('t', ' '), S('a', ' '), S('c', 'a'), S('s', 't')};
-static const uint32_t __string_220[] = {1, S('\'', 0)};
-static const uint32_t __string_221_Cannot_store_to_this_location[] = {29, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 's'), S('t', 'o'), S('r', 'e'), S(' ', 't'), S('o', ' '), S('t', 'h'), S('i', 's'), S(' ',
+static const uint32_t __string_136_to_type[] = {11, S('\'', ' '), S('t', 'o'), S(' ', 't'), S('y', 'p'), S('e', ' '), S('\'', 0)};
+static const uint32_t __string_137_without_a_cast[] = {16, S('\'', ' '), S('w', 'i'), S('t', 'h'), S('o', 'u'), S('t', ' '), S('a', ' '), S('c', 'a'), S('s', 't')};
+static const uint32_t __string_138[] = {1, S('\'', 0)};
+static const uint32_t __string_139_Cannot_store_to_this_location[] = {29, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 's'), S('t', 'o'), S('r', 'e'), S(' ', 't'), S('o', ' '), S('t', 'h'), S('i', 's'), S(' ',
   'l'), S('o', 'c'), S('a', 't'), S('i', 'o'), S('n', 0)};
-static const uint32_t __string_222_Cannot_use_symbol[] = {19, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', 's'), S('y', 'm'), S('b', 'o'), S('l', ' '), S('\'', 0)};
-static const uint32_t __string_223_outside_an_unsafe_block[] = {27, S('\'', ' '), S('o', 'u'), S('t', 's'), S('i', 'd'), S('e', ' '), S('a', 'n'), S(' ', '\''), S('u', 'n'), S('s', 'a'), S('f', 'e'), S('\'',
+static const uint32_t __string_140_Cannot_use_symbol[] = {19, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', 's'), S('y', 'm'), S('b', 'o'), S('l', ' '), S('\'', 0)};
+static const uint32_t __string_141_outside_an_unsafe_block[] = {27, S('\'', ' '), S('o', 'u'), S('t', 's'), S('i', 'd'), S('e', ' '), S('a', 'n'), S(' ', '\''), S('u', 'n'), S('s', 'a'), S('f', 'e'), S('\'',
   ' '), S('b', 'l'), S('o', 'c'), S('k', 0)};
-static const uint32_t __string_224_Cannot_access_private_symbol[] = {30, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'a'), S('c', 'c'), S('e', 's'), S('s', ' '), S('p', 'r'), S('i', 'v'), S('a', 't'), S('e',
+static const uint32_t __string_142_Cannot_access_private_symbol[] = {30, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'a'), S('c', 'c'), S('e', 's'), S('s', ' '), S('p', 'r'), S('i', 'v'), S('a', 't'), S('e',
   ' '), S('s', 'y'), S('m', 'b'), S('o', 'l'), S(' ', '\'')};
-static const uint32_t __string_225_here[] = {6, S('\'', ' '), S('h', 'e'), S('r', 'e')};
-static const uint32_t __string_226_Cannot_use_setter[] = {19, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', 's'), S('e', 't'), S('t', 'e'), S('r', ' '), S('\'', 0)};
-static const uint32_t __string_227_here[] = {6, S('\'', ' '), S('h', 'e'), S('r', 'e')};
-static const uint32_t __string_228_Must_call_function[] = {20, S('M', 'u'), S('s', 't'), S(' ', 'c'), S('a', 'l'), S('l', ' '), S('f', 'u'), S('n', 'c'), S('t', 'i'), S('o', 'n'), S(' ', '\'')};
-static const uint32_t __string_229_Global_initializers_must_be_comp[] = {50, S('G', 'l'), S('o', 'b'), S('a', 'l'), S(' ', 'i'), S('n', 'i'), S('t', 'i'), S('a', 'l'), S('i', 'z'), S('e', 'r'), S('s', ' '), S('m',
+static const uint32_t __string_143_here[] = {6, S('\'', ' '), S('h', 'e'), S('r', 'e')};
+static const uint32_t __string_144_Cannot_use_setter[] = {19, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', 's'), S('e', 't'), S('t', 'e'), S('r', ' '), S('\'', 0)};
+static const uint32_t __string_145_here[] = {6, S('\'', ' '), S('h', 'e'), S('r', 'e')};
+static const uint32_t __string_146_Must_call_function[] = {20, S('M', 'u'), S('s', 't'), S(' ', 'c'), S('a', 'l'), S('l', ' '), S('f', 'u'), S('n', 'c'), S('t', 'i'), S('o', 'n'), S(' ', '\'')};
+static const uint32_t __string_147_Global_initializers_must_be_comp[] = {50, S('G', 'l'), S('o', 'b'), S('a', 'l'), S(' ', 'i'), S('n', 'i'), S('t', 'i'), S('a', 'l'), S('i', 'z'), S('e', 'r'), S('s', ' '), S('m',
   'u'), S('s', 't'), S(' ', 'b'), S('e', ' '), S('c', 'o'), S('m', 'p'), S('i', 'l'), S('e', '-'), S('t', 'i'), S('m', 'e'), S(' ', 'c'), S('o', 'n'), S('s', 't'), S('a', 'n'), S('t', 's')};
-static const uint32_t __string_230_Cannot_use_this_statement_outsid[] = {43, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', 't'), S('h', 'i'), S('s', ' '), S('s', 't'), S('a', 't'), S('e',
+static const uint32_t __string_148_Cannot_use_this_statement_outsid[] = {43, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', 't'), S('h', 'i'), S('s', ' '), S('s', 't'), S('a', 't'), S('e',
   'm'), S('e', 'n'), S('t', ' '), S('o', 'u'), S('t', 's'), S('i', 'd'), S('e', ' '), S('o', 'f'), S(' ', 'a'), S(' ', 'l'), S('o', 'o'), S('p', 0)};
-static const uint32_t __string_231[] = {2, S('[', ']')};
-static const uint32_t __string_232_Cannot_index_into_type[] = {24, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'i'), S('n', 'd'), S('e', 'x'), S(' ', 'i'), S('n', 't'), S('o', ' '), S('t', 'y'), S('p',
+static const uint32_t __string_149[] = {2, S('[', ']')};
+static const uint32_t __string_150_Cannot_index_into_type[] = {24, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'i'), S('n', 'd'), S('e', 'x'), S(' ', 'i'), S('n', 't'), S('o', ' '), S('t', 'y'), S('p',
   'e'), S(' ', '\'')};
-static const uint32_t __string_233_this[] = {4, S('t', 'h'), S('i', 's')};
-static const uint32_t __string_234_Cannot_use_this_here[] = {22, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('t', 'h'), S('i', 's'), S('\'', ' '), S('h', 'e'), S('r',
+static const uint32_t __string_151_this[] = {4, S('t', 'h'), S('i', 's')};
+static const uint32_t __string_152_Cannot_use_this_here[] = {22, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('t', 'h'), S('i', 's'), S('\'', ' '), S('h', 'e'), S('r',
   'e')};
-static const uint32_t __string_235_No_symbol_named[] = {17, S('N', 'o'), S(' ', 's'), S('y', 'm'), S('b', 'o'), S('l', ' '), S('n', 'a'), S('m', 'e'), S('d', ' '), S('\'', 0)};
-static const uint32_t __string_236_here[] = {6, S('\'', ' '), S('h', 'e'), S('r', 'e')};
-static const uint32_t __string_237_did_you_mean_this[] = {21, S(',', ' '), S('d', 'i'), S('d', ' '), S('y', 'o'), S('u', ' '), S('m', 'e'), S('a', 'n'), S(' ', '\''), S('t', 'h'), S('i', 's'), S('.', 0)};
-static const uint32_t __string_238[] = {2, S('\'', '?')};
-static const uint32_t __string_239_number[] = {6, S('n', 'u'), S('m', 'b'), S('e', 'r')};
-static const uint32_t __string_240_did_you_mean_int[] = {21, S(',', ' '), S('d', 'i'), S('d', ' '), S('y', 'o'), S('u', ' '), S('m', 'e'), S('a', 'n'), S(' ', '\''), S('i', 'n'), S('t', '\''), S('?', 0)};
-static const uint32_t __string_241_boolean[] = {7, S('b', 'o'), S('o', 'l'), S('e', 'a'), S('n', 0)};
-static const uint32_t __string_242_did_you_mean_bool[] = {22, S(',', ' '), S('d', 'i'), S('d', ' '), S('y', 'o'), S('u', ' '), S('m', 'e'), S('a', 'n'), S(' ', '\''), S('b', 'o'), S('o', 'l'), S('\'',
+static const uint32_t __string_153_No_symbol_named[] = {17, S('N', 'o'), S(' ', 's'), S('y', 'm'), S('b', 'o'), S('l', ' '), S('n', 'a'), S('m', 'e'), S('d', ' '), S('\'', 0)};
+static const uint32_t __string_154_here[] = {6, S('\'', ' '), S('h', 'e'), S('r', 'e')};
+static const uint32_t __string_155_did_you_mean_this[] = {21, S(',', ' '), S('d', 'i'), S('d', ' '), S('y', 'o'), S('u', ' '), S('m', 'e'), S('a', 'n'), S(' ', '\''), S('t', 'h'), S('i', 's'), S('.', 0)};
+static const uint32_t __string_156[] = {2, S('\'', '?')};
+static const uint32_t __string_157_number[] = {6, S('n', 'u'), S('m', 'b'), S('e', 'r')};
+static const uint32_t __string_158_did_you_mean_int[] = {21, S(',', ' '), S('d', 'i'), S('d', ' '), S('y', 'o'), S('u', ' '), S('m', 'e'), S('a', 'n'), S(' ', '\''), S('i', 'n'), S('t', '\''), S('?', 0)};
+static const uint32_t __string_159_boolean[] = {7, S('b', 'o'), S('o', 'l'), S('e', 'a'), S('n', 0)};
+static const uint32_t __string_160_did_you_mean_bool[] = {22, S(',', ' '), S('d', 'i'), S('d', ' '), S('y', 'o'), S('u', ' '), S('m', 'e'), S('a', 'n'), S(' ', '\''), S('b', 'o'), S('o', 'l'), S('\'',
   '?')};
-static const uint32_t __string_243_Cyclic_reference_to_symbol[] = {28, S('C', 'y'), S('c', 'l'), S('i', 'c'), S(' ', 'r'), S('e', 'f'), S('e', 'r'), S('e', 'n'), S('c', 'e'), S(' ', 't'), S('o', ' '), S('s',
+static const uint32_t __string_161_Cyclic_reference_to_symbol[] = {28, S('C', 'y'), S('c', 'l'), S('i', 'c'), S(' ', 'r'), S('e', 'f'), S('e', 'r'), S('e', 'n'), S('c', 'e'), S(' ', 't'), S('o', ' '), S('s',
   'y'), S('m', 'b'), S('o', 'l'), S(' ', '\'')};
-static const uint32_t __string_244_here[] = {6, S('\'', ' '), S('h', 'e'), S('r', 'e')};
-static const uint32_t __string_245_No_member_named[] = {17, S('N', 'o'), S(' ', 'm'), S('e', 'm'), S('b', 'e'), S('r', ' '), S('n', 'a'), S('m', 'e'), S('d', ' '), S('\'', 0)};
-static const uint32_t __string_246_on_type[] = {11, S('\'', ' '), S('o', 'n'), S(' ', 't'), S('y', 'p'), S('e', ' '), S('\'', 0)};
-static const uint32_t __string_247_The_type[] = {10, S('T', 'h'), S('e', ' '), S('t', 'y'), S('p', 'e'), S(' ', '\'')};
-static const uint32_t __string_248_has_no_members[] = {16, S('\'', ' '), S('h', 'a'), S('s', ' '), S('n', 'o'), S(' ', 'm'), S('e', 'm'), S('b', 'e'), S('r', 's')};
-static const uint32_t __string_249_Cannot_call_value_of_type[] = {27, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'c'), S('a', 'l'), S('l', ' '), S('v', 'a'), S('l', 'u'), S('e', ' '), S('o', 'f'), S(' ',
+static const uint32_t __string_162_here[] = {6, S('\'', ' '), S('h', 'e'), S('r', 'e')};
+static const uint32_t __string_163_No_member_named[] = {17, S('N', 'o'), S(' ', 'm'), S('e', 'm'), S('b', 'e'), S('r', ' '), S('n', 'a'), S('m', 'e'), S('d', ' '), S('\'', 0)};
+static const uint32_t __string_164_on_type[] = {11, S('\'', ' '), S('o', 'n'), S(' ', 't'), S('y', 'p'), S('e', ' '), S('\'', 0)};
+static const uint32_t __string_165_The_type[] = {10, S('T', 'h'), S('e', ' '), S('t', 'y'), S('p', 'e'), S(' ', '\'')};
+static const uint32_t __string_166_has_no_members[] = {16, S('\'', ' '), S('h', 'a'), S('s', ' '), S('n', 'o'), S(' ', 'm'), S('e', 'm'), S('b', 'e'), S('r', 's')};
+static const uint32_t __string_167_Cannot_call_value_of_type[] = {27, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'c'), S('a', 'l'), S('l', ' '), S('v', 'a'), S('l', 'u'), S('e', ' '), S('o', 'f'), S(' ',
   't'), S('y', 'p'), S('e', ' '), S('\'', 0)};
-static const uint32_t __string_250_Not_enough_arguments_for_functio[] = {35, S('N', 'o'), S('t', ' '), S('e', 'n'), S('o', 'u'), S('g', 'h'), S(' ', 'a'), S('r', 'g'), S('u', 'm'), S('e', 'n'), S('t', 's'), S(' ',
+static const uint32_t __string_168_Not_enough_arguments_for_functio[] = {35, S('N', 'o'), S('t', ' '), S('e', 'n'), S('o', 'u'), S('g', 'h'), S(' ', 'a'), S('r', 'g'), S('u', 'm'), S('e', 'n'), S('t', 's'), S(' ',
   'f'), S('o', 'r'), S(' ', 'f'), S('u', 'n'), S('c', 't'), S('i', 'o'), S('n', ' '), S('\'', 0)};
-static const uint32_t __string_251_Too_many_arguments_for_function[] = {33, S('T', 'o'), S('o', ' '), S('m', 'a'), S('n', 'y'), S(' ', 'a'), S('r', 'g'), S('u', 'm'), S('e', 'n'), S('t', 's'), S(' ', 'f'), S('o',
+static const uint32_t __string_169_Too_many_arguments_for_function[] = {33, S('T', 'o'), S('o', ' '), S('m', 'a'), S('n', 'y'), S(' ', 'a'), S('r', 'g'), S('u', 'm'), S('e', 'n'), S('t', 's'), S(' ', 'f'), S('o',
   'r'), S(' ', 'f'), S('u', 'n'), S('c', 't'), S('i', 'o'), S('n', ' '), S('\'', 0)};
-static const uint32_t __string_252_Unexpected_return_value_in_funct[] = {52, S('U', 'n'), S('e', 'x'), S('p', 'e'), S('c', 't'), S('e', 'd'), S(' ', 'r'), S('e', 't'), S('u', 'r'), S('n', ' '), S('v', 'a'), S('l',
+static const uint32_t __string_170_Unexpected_return_value_in_funct[] = {52, S('U', 'n'), S('e', 'x'), S('p', 'e'), S('c', 't'), S('e', 'd'), S(' ', 'r'), S('e', 't'), S('u', 'r'), S('n', ' '), S('v', 'a'), S('l',
   'u'), S('e', ' '), S('i', 'n'), S(' ', 'f'), S('u', 'n'), S('c', 't'), S('i', 'o'), S('n', ' '), S('r', 'e'), S('t', 'u'), S('r', 'n'), S('i', 'n'), S('g', ' '), S('\'', 'v'), S('o', 'i'), S('d', '\'')};
-static const uint32_t __string_253_Expected_return_value_in_functio[] = {45, S('E', 'x'), S('p', 'e'), S('c', 't'), S('e', 'd'), S(' ', 'r'), S('e', 't'), S('u', 'r'), S('n', ' '), S('v', 'a'), S('l', 'u'), S('e',
+static const uint32_t __string_171_Expected_return_value_in_functio[] = {45, S('E', 'x'), S('p', 'e'), S('c', 't'), S('e', 'd'), S(' ', 'r'), S('e', 't'), S('u', 'r'), S('n', ' '), S('v', 'a'), S('l', 'u'), S('e',
   ' '), S('i', 'n'), S(' ', 'f'), S('u', 'n'), S('c', 't'), S('i', 'o'), S('n', ' '), S('r', 'e'), S('t', 'u'), S('r', 'n'), S('i', 'n'), S('g', ' '), S('\'', 0)};
-static const uint32_t __string_254_Generics_are_not_implemented_yet[] = {32, S('G', 'e'), S('n', 'e'), S('r', 'i'), S('c', 's'), S(' ', 'a'), S('r', 'e'), S(' ', 'n'), S('o', 't'), S(' ', 'i'), S('m', 'p'), S('l',
+static const uint32_t __string_172_Generics_are_not_implemented_yet[] = {32, S('G', 'e'), S('n', 'e'), S('r', 'i'), S('c', 's'), S(' ', 'a'), S('r', 'e'), S(' ', 'n'), S('o', 't'), S(' ', 'i'), S('m', 'p'), S('l',
   'e'), S('m', 'e'), S('n', 't'), S('e', 'd'), S(' ', 'y'), S('e', 't')};
-static const uint32_t __string_255_Subclassing_is_not_implemented_y[] = {34, S('S', 'u'), S('b', 'c'), S('l', 'a'), S('s', 's'), S('i', 'n'), S('g', ' '), S('i', 's'), S(' ', 'n'), S('o', 't'), S(' ', 'i'), S('m',
+static const uint32_t __string_173_Subclassing_is_not_implemented_y[] = {34, S('S', 'u'), S('b', 'c'), S('l', 'a'), S('s', 's'), S('i', 'n'), S('g', ' '), S('i', 's'), S(' ', 'n'), S('o', 't'), S(' ', 'i'), S('m',
   'p'), S('l', 'e'), S('m', 'e'), S('n', 't'), S('e', 'd'), S(' ', 'y'), S('e', 't')};
-static const uint32_t __string_256_Interfaces_are_not_implemented_y[] = {34, S('I', 'n'), S('t', 'e'), S('r', 'f'), S('a', 'c'), S('e', 's'), S(' ', 'a'), S('r', 'e'), S(' ', 'n'), S('o', 't'), S(' ', 'i'), S('m',
+static const uint32_t __string_174_Interfaces_are_not_implemented_y[] = {34, S('I', 'n'), S('t', 'e'), S('r', 'f'), S('a', 'c'), S('e', 's'), S(' ', 'a'), S('r', 'e'), S(' ', 'n'), S('o', 't'), S(' ', 'i'), S('m',
   'p'), S('l', 'e'), S('m', 'e'), S('n', 't'), S('e', 'd'), S(' ', 'y'), S('e', 't')};
-static const uint32_t __string_257_Type[] = {6, S('T', 'y'), S('p', 'e'), S(' ', '\'')};
-static const uint32_t __string_258_is_not_the_same_as_type[] = {27, S('\'', ' '), S('i', 's'), S(' ', 'n'), S('o', 't'), S(' ', 't'), S('h', 'e'), S(' ', 's'), S('a', 'm'), S('e', ' '), S('a', 's'), S(' ',
+static const uint32_t __string_175_Type[] = {6, S('T', 'y'), S('p', 'e'), S(' ', '\'')};
+static const uint32_t __string_176_is_not_the_same_as_type[] = {27, S('\'', ' '), S('i', 's'), S(' ', 'n'), S('o', 't'), S(' ', 't'), S('h', 'e'), S(' ', 's'), S('a', 'm'), S('e', ' '), S('a', 's'), S(' ',
   't'), S('y', 'p'), S('e', ' '), S('\'', 0)};
-static const uint32_t __string_259[] = {3, S('[', ']'), S('=', 0)};
-static const uint32_t __string_260_Cannot_index_into_type[] = {24, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'i'), S('n', 'd'), S('e', 'x'), S(' ', 'i'), S('n', 't'), S('o', ' '), S('t', 'y'), S('p',
+static const uint32_t __string_177[] = {3, S('[', ']'), S('=', 0)};
+static const uint32_t __string_178_Cannot_index_into_type[] = {24, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'i'), S('n', 'd'), S('e', 'x'), S(' ', 'i'), S('n', 't'), S('o', ' '), S('t', 'y'), S('p',
   'e'), S(' ', '\'')};
-static const uint32_t __string_261_Cannot_construct_type[] = {23, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'c'), S('o', 'n'), S('s', 't'), S('r', 'u'), S('c', 't'), S(' ', 't'), S('y', 'p'), S('e',
+static const uint32_t __string_179_Cannot_construct_type[] = {23, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'c'), S('o', 'n'), S('s', 't'), S('r', 'u'), S('c', 't'), S(' ', 't'), S('y', 'p'), S('e',
   ' '), S('\'', 0)};
-static const uint32_t __string_262_Constructors_with_arguments_are[] = {49, S('C', 'o'), S('n', 's'), S('t', 'r'), S('u', 'c'), S('t', 'o'), S('r', 's'), S(' ', 'w'), S('i', 't'), S('h', ' '), S('a', 'r'), S('g',
+static const uint32_t __string_180_Constructors_with_arguments_are[] = {49, S('C', 'o'), S('n', 's'), S('t', 'r'), S('u', 'c'), S('t', 'o'), S('r', 's'), S(' ', 'w'), S('i', 't'), S('h', ' '), S('a', 'r'), S('g',
   'u'), S('m', 'e'), S('n', 't'), S('s', ' '), S('a', 'r'), S('e', ' '), S('n', 'o'), S('t', ' '), S('s', 'u'), S('p', 'p'), S('o', 'r'), S('t', 'e'), S('d', ' '), S('y', 'e'), S('t', 0)};
-static const uint32_t __string_263_Cannot_use_pointers_when_compili[] = {48, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', 'p'), S('o', 'i'), S('n', 't'), S('e', 'r'), S('s', ' '), S('w',
+static const uint32_t __string_181_Cannot_use_pointers_when_compili[] = {48, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', 'p'), S('o', 'i'), S('n', 't'), S('e', 'r'), S('s', ' '), S('w',
   'h'), S('e', 'n'), S(' ', 'c'), S('o', 'm'), S('p', 'i'), S('l', 'i'), S('n', 'g'), S(' ', 't'), S('o', ' '), S('J', 'a'), S('v', 'a'), S('S', 'c'), S('r', 'i'), S('p', 't')};
-static const uint32_t __string_264_Cannot_use_pointers_outside_an[] = {45, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', 'p'), S('o', 'i'), S('n', 't'), S('e', 'r'), S('s', ' '), S('o',
+static const uint32_t __string_182_Cannot_use_pointers_outside_an[] = {45, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', 'p'), S('o', 'i'), S('n', 't'), S('e', 'r'), S('s', ' '), S('o',
   'u'), S('t', 's'), S('i', 'd'), S('e', ' '), S('a', 'n'), S(' ', '\''), S('u', 'n'), S('s', 'a'), S('f', 'e'), S('\'', ' '), S('b', 'l'), S('o', 'c'), S('k', 0)};
-static const uint32_t __string_265_Cannot_create_a_pointer_to_non_i[] = {45, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'c'), S('r', 'e'), S('a', 't'), S('e', ' '), S('a', ' '), S('p', 'o'), S('i', 'n'), S('t',
+static const uint32_t __string_183_Cannot_create_a_pointer_to_non_i[] = {45, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'c'), S('r', 'e'), S('a', 't'), S('e', ' '), S('a', ' '), S('p', 'o'), S('i', 'n'), S('t',
   'e'), S('r', ' '), S('t', 'o'), S(' ', 'n'), S('o', 'n'), S('-', 'i'), S('n', 't'), S('e', 'g'), S('e', 'r'), S(' ', 't'), S('y', 'p'), S('e', ' '), S('\'', 0)};
-static const uint32_t __string_266_Cannot_dereference_type[] = {25, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'd'), S('e', 'r'), S('e', 'f'), S('e', 'r'), S('e', 'n'), S('c', 'e'), S(' ', 't'), S('y',
+static const uint32_t __string_184_Cannot_dereference_type[] = {25, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'd'), S('e', 'r'), S('e', 'f'), S('e', 'r'), S('e', 'n'), S('c', 'e'), S(' ', 't'), S('y',
   'p'), S('e', ' '), S('\'', 0)};
-static const uint32_t __string_267_The_address_of_operator_is_not_s[] = {40, S('T', 'h'), S('e', ' '), S('a', 'd'), S('d', 'r'), S('e', 's'), S('s', '-'), S('o', 'f'), S(' ', 'o'), S('p', 'e'), S('r', 'a'), S('t',
+static const uint32_t __string_185_The_address_of_operator_is_not_s[] = {40, S('T', 'h'), S('e', ' '), S('a', 'd'), S('d', 'r'), S('e', 's'), S('s', '-'), S('o', 'f'), S(' ', 'o'), S('p', 'e'), S('r', 'a'), S('t',
   'o'), S('r', ' '), S('i', 's'), S(' ', 'n'), S('o', 't'), S(' ', 's'), S('u', 'p'), S('p', 'o'), S('r', 't'), S('e', 'd')};
-static const uint32_t __string_268_Cannot_use_unary_operator[] = {27, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', 'u'), S('n', 'a'), S('r', 'y'), S(' ', 'o'), S('p', 'e'), S('r',
+static const uint32_t __string_186_Cannot_use_unary_operator[] = {27, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', 'u'), S('n', 'a'), S('r', 'y'), S(' ', 'o'), S('p', 'e'), S('r',
   'a'), S('t', 'o'), S('r', ' '), S('\'', 0)};
-static const uint32_t __string_269_with_type[] = {13, S('\'', ' '), S('w', 'i'), S('t', 'h'), S(' ', 't'), S('y', 'p'), S('e', ' '), S('\'', 0)};
-static const uint32_t __string_270_Cannot_compare_type[] = {21, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'c'), S('o', 'm'), S('p', 'a'), S('r', 'e'), S(' ', 't'), S('y', 'p'), S('e', ' '), S('\'', 0)};
-static const uint32_t __string_271_with_type[] = {13, S('\'', ' '), S('w', 'i'), S('t', 'h'), S(' ', 't'), S('y', 'p'), S('e', ' '), S('\'', 0)};
-static const uint32_t __string_272_This_operator_is_not_currently_s[] = {40, S('T', 'h'), S('i', 's'), S(' ', 'o'), S('p', 'e'), S('r', 'a'), S('t', 'o'), S('r', ' '), S('i', 's'), S(' ', 'n'), S('o', 't'), S(' ',
+static const uint32_t __string_187_with_type[] = {13, S('\'', ' '), S('w', 'i'), S('t', 'h'), S(' ', 't'), S('y', 'p'), S('e', ' '), S('\'', 0)};
+static const uint32_t __string_188_Cannot_compare_type[] = {21, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'c'), S('o', 'm'), S('p', 'a'), S('r', 'e'), S(' ', 't'), S('y', 'p'), S('e', ' '), S('\'', 0)};
+static const uint32_t __string_189_with_type[] = {13, S('\'', ' '), S('w', 'i'), S('t', 'h'), S(' ', 't'), S('y', 'p'), S('e', ' '), S('\'', 0)};
+static const uint32_t __string_190_This_operator_is_not_currently_s[] = {40, S('T', 'h'), S('i', 's'), S(' ', 'o'), S('p', 'e'), S('r', 'a'), S('t', 'o'), S('r', ' '), S('i', 's'), S(' ', 'n'), S('o', 't'), S(' ',
   'c'), S('u', 'r'), S('r', 'e'), S('n', 't'), S('l', 'y'), S(' ', 's'), S('u', 'p'), S('p', 'o'), S('r', 't'), S('e', 'd')};
-static const uint32_t __string_273[] = {2, S('=', '=')};
-static const uint32_t __string_274[] = {1, S('>', 0)};
-static const uint32_t __string_275[] = {1, S('<', 0)};
-static const uint32_t __string_276_Cannot_compare_type[] = {21, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'c'), S('o', 'm'), S('p', 'a'), S('r', 'e'), S(' ', 't'), S('y', 'p'), S('e', ' '), S('\'', 0)};
-static const uint32_t __string_277_with_type[] = {13, S('\'', ' '), S('w', 'i'), S('t', 'h'), S(' ', 't'), S('y', 'p'), S('e', ' '), S('\'', 0)};
-static const uint32_t __string_278_Cannot_use_binary_operator[] = {28, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', 'b'), S('i', 'n'), S('a', 'r'), S('y', ' '), S('o', 'p'), S('e',
+static const uint32_t __string_191[] = {2, S('=', '=')};
+static const uint32_t __string_192[] = {1, S('>', 0)};
+static const uint32_t __string_193[] = {1, S('<', 0)};
+static const uint32_t __string_194_Cannot_compare_type[] = {21, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'c'), S('o', 'm'), S('p', 'a'), S('r', 'e'), S(' ', 't'), S('y', 'p'), S('e', ' '), S('\'', 0)};
+static const uint32_t __string_195_with_type[] = {13, S('\'', ' '), S('w', 'i'), S('t', 'h'), S(' ', 't'), S('y', 'p'), S('e', ' '), S('\'', 0)};
+static const uint32_t __string_196_Cannot_use_binary_operator[] = {28, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', 'b'), S('i', 'n'), S('a', 'r'), S('y', ' '), S('o', 'p'), S('e',
   'r'), S('a', 't'), S('o', 'r'), S(' ', '\'')};
-static const uint32_t __string_279_with_type[] = {13, S('\'', ' '), S('w', 'i'), S('t', 'h'), S(' ', 't'), S('y', 'p'), S('e', ' '), S('\'', 0)};
-static const uint32_t __string_280_native[] = {8, S('<', 'n'), S('a', 't'), S('i', 'v'), S('e', '>')};
-static const uint32_t __string_281_C[] = {1, S('C', 0)};
-static const uint32_t __string_282_JS[] = {2, S('J', 'S')};
-static const uint32_t __string_283_WASM[] = {4, S('W', 'A'), S('S', 'M')};
-static const uint32_t __string_284_error[] = {7, S('<', 'e'), S('r', 'r'), S('o', 'r'), S('>', 0)};
-static const uint32_t __string_285_null[] = {4, S('n', 'u'), S('l', 'l')};
-static const uint32_t __string_286_void[] = {4, S('v', 'o'), S('i', 'd')};
-static const uint32_t __string_287_lexing[] = {6, S('l', 'e'), S('x', 'i'), S('n', 'g')};
-static const uint32_t __string_288_preprocessing[] = {13, S('p', 'r'), S('e', 'p'), S('r', 'o'), S('c', 'e'), S('s', 's'), S('i', 'n'), S('g', 0)};
-static const uint32_t __string_289_parsing[] = {7, S('p', 'a'), S('r', 's'), S('i', 'n'), S('g', 0)};
-static const uint32_t __string_290_checking[] = {8, S('c', 'h'), S('e', 'c'), S('k', 'i'), S('n', 'g')};
-static const uint32_t __string_291_shaking[] = {7, S('s', 'h'), S('a', 'k'), S('i', 'n'), S('g', 0)};
-static const uint32_t __string_292_emitting[] = {8, S('e', 'm'), S('i', 't'), S('t', 'i'), S('n', 'g')};
-static const uint32_t __string_293[] = {1, S('.', 0)};
-static const uint32_t __string_294[] = {1, S('/', 0)};
-static const uint32_t __string_295[] = {1, S('\\', 0)};
-static const uint32_t __string_296[] = {2, S(' ', ' ')};
-static const uint32_t __string_297[] = {2, S('{', '\n')};
-static const uint32_t __string_298_0[] = {6, S(' ', '>'), S('>', '>'), S(' ', '0')};
-static const uint32_t __string_299_0[] = {4, S(' ', '|'), S(' ', '0')};
-static const uint32_t __string_300_0[] = {6, S(' ', '>'), S('>', '>'), S(' ', '0')};
-static const uint32_t __string_301_0[] = {4, S(' ', '|'), S(' ', '0')};
-static const uint32_t __string_302[] = {2, S(',', ' ')};
-static const uint32_t __string_303___declare[] = {10, S('_', '_'), S('d', 'e'), S('c', 'l'), S('a', 'r'), S('e', '.')};
-static const uint32_t __string_304_null[] = {4, S('n', 'u'), S('l', 'l')};
+static const uint32_t __string_197_with_type[] = {13, S('\'', ' '), S('w', 'i'), S('t', 'h'), S(' ', 't'), S('y', 'p'), S('e', ' '), S('\'', 0)};
+static const uint32_t __string_198_native[] = {8, S('<', 'n'), S('a', 't'), S('i', 'v'), S('e', '>')};
+static const uint32_t __string_199_C[] = {1, S('C', 0)};
+static const uint32_t __string_200_JS[] = {2, S('J', 'S')};
+static const uint32_t __string_201_WASM[] = {4, S('W', 'A'), S('S', 'M')};
+static const uint32_t __string_202_error[] = {7, S('<', 'e'), S('r', 'r'), S('o', 'r'), S('>', 0)};
+static const uint32_t __string_203_null[] = {4, S('n', 'u'), S('l', 'l')};
+static const uint32_t __string_204_void[] = {4, S('v', 'o'), S('i', 'd')};
+static const uint32_t __string_205_lexing[] = {6, S('l', 'e'), S('x', 'i'), S('n', 'g')};
+static const uint32_t __string_206_preprocessing[] = {13, S('p', 'r'), S('e', 'p'), S('r', 'o'), S('c', 'e'), S('s', 's'), S('i', 'n'), S('g', 0)};
+static const uint32_t __string_207_parsing[] = {7, S('p', 'a'), S('r', 's'), S('i', 'n'), S('g', 0)};
+static const uint32_t __string_208_checking[] = {8, S('c', 'h'), S('e', 'c'), S('k', 'i'), S('n', 'g')};
+static const uint32_t __string_209_shaking[] = {7, S('s', 'h'), S('a', 'k'), S('i', 'n'), S('g', 0)};
+static const uint32_t __string_210_emitting[] = {8, S('e', 'm'), S('i', 't'), S('t', 'i'), S('n', 'g')};
+static const uint32_t __string_211[] = {1, S('.', 0)};
+static const uint32_t __string_212[] = {1, S('/', 0)};
+static const uint32_t __string_213[] = {1, S('\\', 0)};
+static const uint32_t __string_214_end_of_file[] = {11, S('e', 'n'), S('d', ' '), S('o', 'f'), S(' ', 'f'), S('i', 'l'), S('e', 0)};
+static const uint32_t __string_215_character_literal[] = {17, S('c', 'h'), S('a', 'r'), S('a', 'c'), S('t', 'e'), S('r', ' '), S('l', 'i'), S('t', 'e'), S('r', 'a'), S('l', 0)};
+static const uint32_t __string_216_identifier[] = {10, S('i', 'd'), S('e', 'n'), S('t', 'i'), S('f', 'i'), S('e', 'r')};
+static const uint32_t __string_217_integer_literal[] = {15, S('i', 'n'), S('t', 'e'), S('g', 'e'), S('r', ' '), S('l', 'i'), S('t', 'e'), S('r', 'a'), S('l', 0)};
+static const uint32_t __string_218_string_literal[] = {14, S('s', 't'), S('r', 'i'), S('n', 'g'), S(' ', 'l'), S('i', 't'), S('e', 'r'), S('a', 'l')};
+static const uint32_t __string_219[] = {3, S('\'', '='), S('\'', 0)};
+static const uint32_t __string_220[] = {3, S('\'', '&'), S('\'', 0)};
+static const uint32_t __string_221[] = {3, S('\'', '|'), S('\'', 0)};
+static const uint32_t __string_222[] = {3, S('\'', '^'), S('\'', 0)};
+static const uint32_t __string_223[] = {3, S('\'', ':'), S('\'', 0)};
+static const uint32_t __string_224[] = {3, S('\'', ','), S('\'', 0)};
+static const uint32_t __string_225[] = {3, S('\'', '~'), S('\'', 0)};
+static const uint32_t __string_226[] = {3, S('\'', '/'), S('\'', 0)};
+static const uint32_t __string_227[] = {3, S('\'', '.'), S('\'', 0)};
+static const uint32_t __string_228[] = {4, S('\'', '='), S('=', '\'')};
+static const uint32_t __string_229[] = {4, S('\'', '*'), S('*', '\'')};
+static const uint32_t __string_230[] = {3, S('\'', '>'), S('\'', 0)};
+static const uint32_t __string_231[] = {4, S('\'', '>'), S('=', '\'')};
+static const uint32_t __string_232[] = {3, S('\'', '{'), S('\'', 0)};
+static const uint32_t __string_233[] = {3, S('\'', '['), S('\'', 0)};
+static const uint32_t __string_234[] = {3, S('\'', '('), S('\'', 0)};
+static const uint32_t __string_235[] = {3, S('\'', '<'), S('\'', 0)};
+static const uint32_t __string_236[] = {4, S('\'', '<'), S('=', '\'')};
+static const uint32_t __string_237[] = {4, S('\'', '&'), S('&', '\'')};
+static const uint32_t __string_238[] = {4, S('\'', '|'), S('|', '\'')};
+static const uint32_t __string_239[] = {3, S('\'', '-'), S('\'', 0)};
+static const uint32_t __string_240[] = {4, S('\'', '-'), S('-', '\'')};
+static const uint32_t __string_241[] = {3, S('\'', '*'), S('\'', 0)};
+static const uint32_t __string_242[] = {3, S('\'', '!'), S('\'', 0)};
+static const uint32_t __string_243[] = {4, S('\'', '!'), S('=', '\'')};
+static const uint32_t __string_244[] = {3, S('\'', '+'), S('\'', 0)};
+static const uint32_t __string_245[] = {4, S('\'', '+'), S('+', '\'')};
+static const uint32_t __string_246[] = {3, S('\'', '?'), S('\'', 0)};
+static const uint32_t __string_247[] = {3, S('\'', '%'), S('\'', 0)};
+static const uint32_t __string_248[] = {3, S('\'', '}'), S('\'', 0)};
+static const uint32_t __string_249[] = {3, S('\'', ']'), S('\'', 0)};
+static const uint32_t __string_250[] = {3, S('\'', ')'), S('\'', 0)};
+static const uint32_t __string_251[] = {3, S('\'', ';'), S('\'', 0)};
+static const uint32_t __string_252[] = {4, S('\'', '<'), S('<', '\'')};
+static const uint32_t __string_253[] = {4, S('\'', '>'), S('>', '\'')};
+static const uint32_t __string_254_alignof[] = {9, S('\'', 'a'), S('l', 'i'), S('g', 'n'), S('o', 'f'), S('\'', 0)};
+static const uint32_t __string_255_as[] = {4, S('\'', 'a'), S('s', '\'')};
+static const uint32_t __string_256_break[] = {7, S('\'', 'b'), S('r', 'e'), S('a', 'k'), S('\'', 0)};
+static const uint32_t __string_257_class[] = {7, S('\'', 'c'), S('l', 'a'), S('s', 's'), S('\'', 0)};
+static const uint32_t __string_258_const[] = {7, S('\'', 'c'), S('o', 'n'), S('s', 't'), S('\'', 0)};
+static const uint32_t __string_259_continue[] = {10, S('\'', 'c'), S('o', 'n'), S('t', 'i'), S('n', 'u'), S('e', '\'')};
+static const uint32_t __string_260_declare[] = {9, S('\'', 'd'), S('e', 'c'), S('l', 'a'), S('r', 'e'), S('\'', 0)};
+static const uint32_t __string_261_else[] = {6, S('\'', 'e'), S('l', 's'), S('e', '\'')};
+static const uint32_t __string_262_enum[] = {6, S('\'', 'e'), S('n', 'u'), S('m', '\'')};
+static const uint32_t __string_263_export[] = {8, S('\'', 'e'), S('x', 'p'), S('o', 'r'), S('t', '\'')};
+static const uint32_t __string_264_extends[] = {9, S('\'', 'e'), S('x', 't'), S('e', 'n'), S('d', 's'), S('\'', 0)};
+static const uint32_t __string_265_extern[] = {8, S('\'', 'e'), S('x', 't'), S('e', 'r'), S('n', '\'')};
+static const uint32_t __string_266_false[] = {7, S('\'', 'f'), S('a', 'l'), S('s', 'e'), S('\'', 0)};
+static const uint32_t __string_267_function[] = {10, S('\'', 'f'), S('u', 'n'), S('c', 't'), S('i', 'o'), S('n', '\'')};
+static const uint32_t __string_268_if[] = {4, S('\'', 'i'), S('f', '\'')};
+static const uint32_t __string_269_implements[] = {12, S('\'', 'i'), S('m', 'p'), S('l', 'e'), S('m', 'e'), S('n', 't'), S('s', '\'')};
+static const uint32_t __string_270_import[] = {8, S('\'', 'i'), S('m', 'p'), S('o', 'r'), S('t', '\'')};
+static const uint32_t __string_271_interface[] = {11, S('\'', 'i'), S('n', 't'), S('e', 'r'), S('f', 'a'), S('c', 'e'), S('\'', 0)};
+static const uint32_t __string_272_let[] = {5, S('\'', 'l'), S('e', 't'), S('\'', 0)};
+static const uint32_t __string_273_new[] = {5, S('\'', 'n'), S('e', 'w'), S('\'', 0)};
+static const uint32_t __string_274_null[] = {6, S('\'', 'n'), S('u', 'l'), S('l', '\'')};
+static const uint32_t __string_275_operator[] = {10, S('\'', 'o'), S('p', 'e'), S('r', 'a'), S('t', 'o'), S('r', '\'')};
+static const uint32_t __string_276_private[] = {9, S('\'', 'p'), S('r', 'i'), S('v', 'a'), S('t', 'e'), S('\'', 0)};
+static const uint32_t __string_277_protected[] = {11, S('\'', 'p'), S('r', 'o'), S('t', 'e'), S('c', 't'), S('e', 'd'), S('\'', 0)};
+static const uint32_t __string_278_public[] = {8, S('\'', 'p'), S('u', 'b'), S('l', 'i'), S('c', '\'')};
+static const uint32_t __string_279_return[] = {8, S('\'', 'r'), S('e', 't'), S('u', 'r'), S('n', '\'')};
+static const uint32_t __string_280_sizeof[] = {8, S('\'', 's'), S('i', 'z'), S('e', 'o'), S('f', '\'')};
+static const uint32_t __string_281_static[] = {8, S('\'', 's'), S('t', 'a'), S('t', 'i'), S('c', '\'')};
+static const uint32_t __string_282_this[] = {6, S('\'', 't'), S('h', 'i'), S('s', '\'')};
+static const uint32_t __string_283_true[] = {6, S('\'', 't'), S('r', 'u'), S('e', '\'')};
+static const uint32_t __string_284_unsafe[] = {8, S('\'', 'u'), S('n', 's'), S('a', 'f'), S('e', '\'')};
+static const uint32_t __string_285_var[] = {5, S('\'', 'v'), S('a', 'r'), S('\'', 0)};
+static const uint32_t __string_286_while[] = {7, S('\'', 'w'), S('h', 'i'), S('l', 'e'), S('\'', 0)};
+static const uint32_t __string_287_define[] = {9, S('\'', '#'), S('d', 'e'), S('f', 'i'), S('n', 'e'), S('\'', 0)};
+static const uint32_t __string_288_elif[] = {7, S('\'', '#'), S('e', 'l'), S('i', 'f'), S('\'', 0)};
+static const uint32_t __string_289_else[] = {7, S('\'', '#'), S('e', 'l'), S('s', 'e'), S('\'', 0)};
+static const uint32_t __string_290_endif[] = {8, S('\'', '#'), S('e', 'n'), S('d', 'i'), S('f', '\'')};
+static const uint32_t __string_291_error[] = {8, S('\'', '#'), S('e', 'r'), S('r', 'o'), S('r', '\'')};
+static const uint32_t __string_292_if[] = {5, S('\'', '#'), S('i', 'f'), S('\'', 0)};
+static const uint32_t __string_293_newline[] = {7, S('n', 'e'), S('w', 'l'), S('i', 'n'), S('e', 0)};
+static const uint32_t __string_294_undef[] = {8, S('\'', '#'), S('u', 'n'), S('d', 'e'), S('f', '\'')};
+static const uint32_t __string_295_warning[] = {10, S('\'', '#'), S('w', 'a'), S('r', 'n'), S('i', 'n'), S('g', '\'')};
+static const uint32_t __string_296_as[] = {2, S('a', 's')};
+static const uint32_t __string_297_if[] = {2, S('i', 'f')};
+static const uint32_t __string_298_let[] = {3, S('l', 'e'), S('t', 0)};
+static const uint32_t __string_299_new[] = {3, S('n', 'e'), S('w', 0)};
+static const uint32_t __string_300_var[] = {3, S('v', 'a'), S('r', 0)};
+static const uint32_t __string_301_else[] = {4, S('e', 'l'), S('s', 'e')};
+static const uint32_t __string_302_enum[] = {4, S('e', 'n'), S('u', 'm')};
+static const uint32_t __string_303_null[] = {4, S('n', 'u'), S('l', 'l')};
+static const uint32_t __string_304_this[] = {4, S('t', 'h'), S('i', 's')};
 static const uint32_t __string_305_true[] = {4, S('t', 'r'), S('u', 'e')};
-static const uint32_t __string_306_false[] = {5, S('f', 'a'), S('l', 's'), S('e', 0)};
-static const uint32_t __string_307[] = {4, S(' ', '<'), S('<', ' ')};
-static const uint32_t __string_308[] = {4, S(' ', '>'), S('>', ' ')};
-static const uint32_t __string_309[] = {3, S(' ', '&'), S(' ', 0)};
-static const uint32_t __string_310_0[] = {4, S(' ', '|'), S(' ', '0')};
-static const uint32_t __string_311_0[] = {6, S(' ', '>'), S('>', '>'), S(' ', '0')};
-static const uint32_t __string_312[] = {3, S(' ', '?'), S(' ', 0)};
-static const uint32_t __string_313[] = {3, S(' ', ':'), S(' ', 0)};
-static const uint32_t __string_314_new[] = {4, S('n', 'e'), S('w', ' ')};
-static const uint32_t __string_315[] = {2, S('(', ')')};
-static const uint32_t __string_316[] = {1, S('!', 0)};
-static const uint32_t __string_317[] = {1, S('~', 0)};
-static const uint32_t __string_318[] = {1, S('-', 0)};
-static const uint32_t __string_319[] = {1, S('+', 0)};
-static const uint32_t __string_320[] = {2, S('+', '+')};
-static const uint32_t __string_321[] = {2, S('-', '-')};
-static const uint32_t __string_322[] = {2, S('+', '+')};
-static const uint32_t __string_323[] = {2, S('-', '-')};
-static const uint32_t __string_324[] = {3, S(' ', '+'), S(' ', 0)};
-static const uint32_t __string_325[] = {3, S(' ', '='), S(' ', 0)};
-static const uint32_t __string_326[] = {3, S(' ', '&'), S(' ', 0)};
-static const uint32_t __string_327[] = {3, S(' ', '|'), S(' ', 0)};
-static const uint32_t __string_328[] = {3, S(' ', '^'), S(' ', 0)};
-static const uint32_t __string_329[] = {3, S(' ', '/'), S(' ', 0)};
-static const uint32_t __string_330[] = {5, S(' ', '='), S('=', '='), S(' ', 0)};
-static const uint32_t __string_331[] = {3, S(' ', '>'), S(' ', 0)};
-static const uint32_t __string_332[] = {4, S(' ', '>'), S('=', ' ')};
-static const uint32_t __string_333[] = {3, S(' ', '<'), S(' ', 0)};
-static const uint32_t __string_334[] = {4, S(' ', '<'), S('=', ' ')};
-static const uint32_t __string_335[] = {4, S(' ', '&'), S('&', ' ')};
-static const uint32_t __string_336[] = {4, S(' ', '|'), S('|', ' ')};
-static const uint32_t __string_337[] = {5, S(' ', '!'), S('=', '='), S(' ', 0)};
-static const uint32_t __string_338[] = {3, S(' ', '%'), S(' ', 0)};
-static const uint32_t __string_339[] = {4, S(' ', '<'), S('<', ' ')};
-static const uint32_t __string_340[] = {5, S(' ', '>'), S('>', '>'), S(' ', 0)};
-static const uint32_t __string_341[] = {4, S(' ', '>'), S('>', ' ')};
-static const uint32_t __string_342[] = {3, S(' ', '-'), S(' ', 0)};
-static const uint32_t __string_343___imul[] = {7, S('_', '_'), S('i', 'm'), S('u', 'l'), S('(', 0)};
-static const uint32_t __string_344[] = {2, S(',', ' ')};
-static const uint32_t __string_345_0[] = {6, S(' ', '>'), S('>', '>'), S(' ', '0')};
-static const uint32_t __string_346_prototype[] = {11, S('.', 'p'), S('r', 'o'), S('t', 'o'), S('t', 'y'), S('p', 'e'), S('.', 0)};
-static const uint32_t __string_347_function[] = {11, S(' ', '='), S(' ', 'f'), S('u', 'n'), S('c', 't'), S('i', 'o'), S('n', 0)};
-static const uint32_t __string_348_var[] = {4, S('v', 'a'), S('r', ' ')};
-static const uint32_t __string_349___extern[] = {12, S(' ', '='), S(' ', '_'), S('_', 'e'), S('x', 't'), S('e', 'r'), S('n', '.')};
-static const uint32_t __string_350_function[] = {11, S(' ', '='), S(' ', 'f'), S('u', 'n'), S('c', 't'), S('i', 'o'), S('n', 0)};
-static const uint32_t __string_351_function[] = {9, S('f', 'u'), S('n', 'c'), S('t', 'i'), S('o', 'n'), S(' ', 0)};
-static const uint32_t __string_352[] = {2, S(',', ' ')};
-static const uint32_t __string_353[] = {2, S(')', ' ')};
-static const uint32_t __string_354[] = {2, S(';', '\n')};
-static const uint32_t __string_355[] = {1, S('\n', 0)};
-static const uint32_t __string_356_if[] = {4, S('i', 'f'), S(' ', '(')};
-static const uint32_t __string_357[] = {2, S(')', ' ')};
-static const uint32_t __string_358[] = {2, S('\n', '\n')};
-static const uint32_t __string_359_else[] = {5, S('e', 'l'), S('s', 'e'), S(' ', 0)};
-static const uint32_t __string_360_while[] = {7, S('w', 'h'), S('i', 'l'), S('e', ' '), S('(', 0)};
-static const uint32_t __string_361[] = {2, S(')', ' ')};
-static const uint32_t __string_362_break[] = {7, S('b', 'r'), S('e', 'a'), S('k', ';'), S('\n', 0)};
-static const uint32_t __string_363_continue[] = {10, S('c', 'o'), S('n', 't'), S('i', 'n'), S('u', 'e'), S(';', '\n')};
-static const uint32_t __string_364[] = {2, S(';', '\n')};
-static const uint32_t __string_365_return[] = {7, S('r', 'e'), S('t', 'u'), S('r', 'n'), S(' ', 0)};
-static const uint32_t __string_366[] = {2, S(';', '\n')};
-static const uint32_t __string_367_return[] = {8, S('r', 'e'), S('t', 'u'), S('r', 'n'), S(';', '\n')};
-static const uint32_t __string_368_var[] = {4, S('v', 'a'), S('r', ' ')};
-static const uint32_t __string_369[] = {2, S(',', ' ')};
-static const uint32_t __string_370[] = {3, S(' ', '='), S(' ', 0)};
-static const uint32_t __string_371[] = {2, S(';', '\n')};
-static const uint32_t __string_372_function[] = {9, S('f', 'u'), S('n', 'c'), S('t', 'i'), S('o', 'n'), S(' ', 0)};
-static const uint32_t __string_373[] = {5, S('(', ')'), S(' ', '{'), S('\n', 0)};
-static const uint32_t __string_374_this[] = {5, S('t', 'h'), S('i', 's'), S('.', 0)};
-static const uint32_t __string_375[] = {3, S(' ', '='), S(' ', 0)};
-static const uint32_t __string_376[] = {2, S(';', '\n')};
-static const uint32_t __string_377[] = {2, S('}', '\n')};
-static const uint32_t __string_378___extern[] = {9, S('_', '_'), S('e', 'x'), S('t', 'e'), S('r', 'n'), S('.', 0)};
-static const uint32_t __string_379[] = {5, S(' ', '='), S(' ', '{'), S('\n', 0)};
-static const uint32_t __string_380[] = {2, S(':', ' ')};
-static const uint32_t __string_381[] = {2, S(',', '\n')};
-static const uint32_t __string_382[] = {1, S('\n', 0)};
-static const uint32_t __string_383[] = {3, S('}', ';'), S('\n', 0)};
-static const uint32_t __string_384_function___declare___extern[] = {33, S('(', 'f'), S('u', 'n'), S('c', 't'), S('i', 'o'), S('n', '('), S('_', '_'), S('d', 'e'), S('c', 'l'), S('a', 'r'), S('e', ','), S(' ',
-  '_'), S('_', 'e'), S('x', 't'), S('e', 'r'), S('n', ')'), S(' ', '{'), S('\n', 0)};
-static const uint32_t __string_385_var___imul_Math_imul_functi[] = {43, S('v', 'a'), S('r', ' '), S('_', '_'), S('i', 'm'), S('u', 'l'), S(' ', '='), S(' ', 'M'), S('a', 't'), S('h', '.'), S('i', 'm'), S('u',
-  'l'), S(' ', '|'), S('|', ' '), S('f', 'u'), S('n', 'c'), S('t', 'i'), S('o', 'n'), S('(', 'a'), S(',', ' '), S('b', ')'), S(' ', '{'), S('\n', 0)};
-static const uint32_t __string_386_return_a_b_16_16[] = {53, S('r', 'e'), S('t', 'u'), S('r', 'n'), S(' ', '('), S('a', ' '), S('*', ' '), S('(', 'b'), S(' ', '>'), S('>', '>'), S(' ', '1'), S('6',
-  ')'), S(' ', '<'), S('<', ' '), S('1', '6'), S(')', ' '), S('+', ' '), S('a', ' '), S('*', ' '), S('(', 'b'), S(' ', '&'), S(' ', '6'), S('5', '5'), S('3', '5'), S(')', ' '), S('|', ' '), S('0', ';'), S('\n', 0)};
-static const uint32_t __string_387[] = {3, S('}', ';'), S('\n', 0)};
-static const uint32_t __string_388[] = {3, S('}', '('), S('\n', 0)};
-static const uint32_t __string_389_typeof_global_undefined[] = {47, S('t', 'y'), S('p', 'e'), S('o', 'f'), S(' ', 'g'), S('l', 'o'), S('b', 'a'), S('l', ' '), S('!', '='), S('=', ' '), S('\'', 'u'), S('n',
-  'd'), S('e', 'f'), S('i', 'n'), S('e', 'd'), S('\'', ' '), S('?', ' '), S('g', 'l'), S('o', 'b'), S('a', 'l'), S(' ', ':'), S(' ', 't'), S('h', 'i'), S('s', ','), S('\n', 0)};
-static const uint32_t __string_390_typeof_exports_undefined[] = {48, S('t', 'y'), S('p', 'e'), S('o', 'f'), S(' ', 'e'), S('x', 'p'), S('o', 'r'), S('t', 's'), S(' ', '!'), S('=', '='), S(' ', '\''), S('u',
-  'n'), S('d', 'e'), S('f', 'i'), S('n', 'e'), S('d', '\''), S(' ', '?'), S(' ', 'e'), S('x', 'p'), S('o', 'r'), S('t', 's'), S(' ', ':'), S(' ', 't'), S('h', 'i'), S('s', '\n')};
-static const uint32_t __string_391[] = {4, S(')', ')'), S(';', '\n')};
-static const uint32_t __string_392_end_of_file[] = {11, S('e', 'n'), S('d', ' '), S('o', 'f'), S(' ', 'f'), S('i', 'l'), S('e', 0)};
-static const uint32_t __string_393_character_literal[] = {17, S('c', 'h'), S('a', 'r'), S('a', 'c'), S('t', 'e'), S('r', ' '), S('l', 'i'), S('t', 'e'), S('r', 'a'), S('l', 0)};
-static const uint32_t __string_394_identifier[] = {10, S('i', 'd'), S('e', 'n'), S('t', 'i'), S('f', 'i'), S('e', 'r')};
-static const uint32_t __string_395_integer_literal[] = {15, S('i', 'n'), S('t', 'e'), S('g', 'e'), S('r', ' '), S('l', 'i'), S('t', 'e'), S('r', 'a'), S('l', 0)};
-static const uint32_t __string_396_string_literal[] = {14, S('s', 't'), S('r', 'i'), S('n', 'g'), S(' ', 'l'), S('i', 't'), S('e', 'r'), S('a', 'l')};
-static const uint32_t __string_397[] = {3, S('\'', '='), S('\'', 0)};
-static const uint32_t __string_398[] = {3, S('\'', '&'), S('\'', 0)};
-static const uint32_t __string_399[] = {3, S('\'', '|'), S('\'', 0)};
-static const uint32_t __string_400[] = {3, S('\'', '^'), S('\'', 0)};
-static const uint32_t __string_401[] = {3, S('\'', ':'), S('\'', 0)};
-static const uint32_t __string_402[] = {3, S('\'', ','), S('\'', 0)};
-static const uint32_t __string_403[] = {3, S('\'', '~'), S('\'', 0)};
-static const uint32_t __string_404[] = {3, S('\'', '/'), S('\'', 0)};
-static const uint32_t __string_405[] = {3, S('\'', '.'), S('\'', 0)};
-static const uint32_t __string_406[] = {4, S('\'', '='), S('=', '\'')};
-static const uint32_t __string_407[] = {4, S('\'', '*'), S('*', '\'')};
-static const uint32_t __string_408[] = {3, S('\'', '>'), S('\'', 0)};
-static const uint32_t __string_409[] = {4, S('\'', '>'), S('=', '\'')};
-static const uint32_t __string_410[] = {3, S('\'', '{'), S('\'', 0)};
-static const uint32_t __string_411[] = {3, S('\'', '['), S('\'', 0)};
-static const uint32_t __string_412[] = {3, S('\'', '('), S('\'', 0)};
-static const uint32_t __string_413[] = {3, S('\'', '<'), S('\'', 0)};
-static const uint32_t __string_414[] = {4, S('\'', '<'), S('=', '\'')};
-static const uint32_t __string_415[] = {4, S('\'', '&'), S('&', '\'')};
-static const uint32_t __string_416[] = {4, S('\'', '|'), S('|', '\'')};
-static const uint32_t __string_417[] = {3, S('\'', '-'), S('\'', 0)};
-static const uint32_t __string_418[] = {4, S('\'', '-'), S('-', '\'')};
-static const uint32_t __string_419[] = {3, S('\'', '*'), S('\'', 0)};
-static const uint32_t __string_420[] = {3, S('\'', '!'), S('\'', 0)};
-static const uint32_t __string_421[] = {4, S('\'', '!'), S('=', '\'')};
-static const uint32_t __string_422[] = {3, S('\'', '+'), S('\'', 0)};
-static const uint32_t __string_423[] = {4, S('\'', '+'), S('+', '\'')};
-static const uint32_t __string_424[] = {3, S('\'', '?'), S('\'', 0)};
-static const uint32_t __string_425[] = {3, S('\'', '%'), S('\'', 0)};
-static const uint32_t __string_426[] = {3, S('\'', '}'), S('\'', 0)};
-static const uint32_t __string_427[] = {3, S('\'', ']'), S('\'', 0)};
-static const uint32_t __string_428[] = {3, S('\'', ')'), S('\'', 0)};
-static const uint32_t __string_429[] = {3, S('\'', ';'), S('\'', 0)};
-static const uint32_t __string_430[] = {4, S('\'', '<'), S('<', '\'')};
-static const uint32_t __string_431[] = {4, S('\'', '>'), S('>', '\'')};
-static const uint32_t __string_432_alignof[] = {9, S('\'', 'a'), S('l', 'i'), S('g', 'n'), S('o', 'f'), S('\'', 0)};
-static const uint32_t __string_433_as[] = {4, S('\'', 'a'), S('s', '\'')};
-static const uint32_t __string_434_break[] = {7, S('\'', 'b'), S('r', 'e'), S('a', 'k'), S('\'', 0)};
-static const uint32_t __string_435_class[] = {7, S('\'', 'c'), S('l', 'a'), S('s', 's'), S('\'', 0)};
-static const uint32_t __string_436_const[] = {7, S('\'', 'c'), S('o', 'n'), S('s', 't'), S('\'', 0)};
-static const uint32_t __string_437_continue[] = {10, S('\'', 'c'), S('o', 'n'), S('t', 'i'), S('n', 'u'), S('e', '\'')};
-static const uint32_t __string_438_declare[] = {9, S('\'', 'd'), S('e', 'c'), S('l', 'a'), S('r', 'e'), S('\'', 0)};
-static const uint32_t __string_439_else[] = {6, S('\'', 'e'), S('l', 's'), S('e', '\'')};
-static const uint32_t __string_440_enum[] = {6, S('\'', 'e'), S('n', 'u'), S('m', '\'')};
-static const uint32_t __string_441_export[] = {8, S('\'', 'e'), S('x', 'p'), S('o', 'r'), S('t', '\'')};
-static const uint32_t __string_442_extends[] = {9, S('\'', 'e'), S('x', 't'), S('e', 'n'), S('d', 's'), S('\'', 0)};
-static const uint32_t __string_443_extern[] = {8, S('\'', 'e'), S('x', 't'), S('e', 'r'), S('n', '\'')};
-static const uint32_t __string_444_false[] = {7, S('\'', 'f'), S('a', 'l'), S('s', 'e'), S('\'', 0)};
-static const uint32_t __string_445_function[] = {10, S('\'', 'f'), S('u', 'n'), S('c', 't'), S('i', 'o'), S('n', '\'')};
-static const uint32_t __string_446_if[] = {4, S('\'', 'i'), S('f', '\'')};
-static const uint32_t __string_447_implements[] = {12, S('\'', 'i'), S('m', 'p'), S('l', 'e'), S('m', 'e'), S('n', 't'), S('s', '\'')};
-static const uint32_t __string_448_import[] = {8, S('\'', 'i'), S('m', 'p'), S('o', 'r'), S('t', '\'')};
-static const uint32_t __string_449_interface[] = {11, S('\'', 'i'), S('n', 't'), S('e', 'r'), S('f', 'a'), S('c', 'e'), S('\'', 0)};
-static const uint32_t __string_450_let[] = {5, S('\'', 'l'), S('e', 't'), S('\'', 0)};
-static const uint32_t __string_451_new[] = {5, S('\'', 'n'), S('e', 'w'), S('\'', 0)};
-static const uint32_t __string_452_null[] = {6, S('\'', 'n'), S('u', 'l'), S('l', '\'')};
-static const uint32_t __string_453_operator[] = {10, S('\'', 'o'), S('p', 'e'), S('r', 'a'), S('t', 'o'), S('r', '\'')};
-static const uint32_t __string_454_private[] = {9, S('\'', 'p'), S('r', 'i'), S('v', 'a'), S('t', 'e'), S('\'', 0)};
-static const uint32_t __string_455_protected[] = {11, S('\'', 'p'), S('r', 'o'), S('t', 'e'), S('c', 't'), S('e', 'd'), S('\'', 0)};
-static const uint32_t __string_456_public[] = {8, S('\'', 'p'), S('u', 'b'), S('l', 'i'), S('c', '\'')};
-static const uint32_t __string_457_return[] = {8, S('\'', 'r'), S('e', 't'), S('u', 'r'), S('n', '\'')};
-static const uint32_t __string_458_sizeof[] = {8, S('\'', 's'), S('i', 'z'), S('e', 'o'), S('f', '\'')};
-static const uint32_t __string_459_static[] = {8, S('\'', 's'), S('t', 'a'), S('t', 'i'), S('c', '\'')};
-static const uint32_t __string_460_this[] = {6, S('\'', 't'), S('h', 'i'), S('s', '\'')};
-static const uint32_t __string_461_true[] = {6, S('\'', 't'), S('r', 'u'), S('e', '\'')};
-static const uint32_t __string_462_unsafe[] = {8, S('\'', 'u'), S('n', 's'), S('a', 'f'), S('e', '\'')};
-static const uint32_t __string_463_var[] = {5, S('\'', 'v'), S('a', 'r'), S('\'', 0)};
-static const uint32_t __string_464_while[] = {7, S('\'', 'w'), S('h', 'i'), S('l', 'e'), S('\'', 0)};
-static const uint32_t __string_465_define[] = {9, S('\'', '#'), S('d', 'e'), S('f', 'i'), S('n', 'e'), S('\'', 0)};
-static const uint32_t __string_466_elif[] = {7, S('\'', '#'), S('e', 'l'), S('i', 'f'), S('\'', 0)};
-static const uint32_t __string_467_else[] = {7, S('\'', '#'), S('e', 'l'), S('s', 'e'), S('\'', 0)};
-static const uint32_t __string_468_endif[] = {8, S('\'', '#'), S('e', 'n'), S('d', 'i'), S('f', '\'')};
-static const uint32_t __string_469_error[] = {8, S('\'', '#'), S('e', 'r'), S('r', 'o'), S('r', '\'')};
-static const uint32_t __string_470_if[] = {5, S('\'', '#'), S('i', 'f'), S('\'', 0)};
-static const uint32_t __string_471_newline[] = {7, S('n', 'e'), S('w', 'l'), S('i', 'n'), S('e', 0)};
-static const uint32_t __string_472_undef[] = {8, S('\'', '#'), S('u', 'n'), S('d', 'e'), S('f', '\'')};
-static const uint32_t __string_473_warning[] = {10, S('\'', '#'), S('w', 'a'), S('r', 'n'), S('i', 'n'), S('g', '\'')};
-static const uint32_t __string_474_as[] = {2, S('a', 's')};
-static const uint32_t __string_475_if[] = {2, S('i', 'f')};
-static const uint32_t __string_476_let[] = {3, S('l', 'e'), S('t', 0)};
-static const uint32_t __string_477_new[] = {3, S('n', 'e'), S('w', 0)};
-static const uint32_t __string_478_var[] = {3, S('v', 'a'), S('r', 0)};
-static const uint32_t __string_479_else[] = {4, S('e', 'l'), S('s', 'e')};
-static const uint32_t __string_480_enum[] = {4, S('e', 'n'), S('u', 'm')};
-static const uint32_t __string_481_null[] = {4, S('n', 'u'), S('l', 'l')};
-static const uint32_t __string_482_this[] = {4, S('t', 'h'), S('i', 's')};
-static const uint32_t __string_483_true[] = {4, S('t', 'r'), S('u', 'e')};
-static const uint32_t __string_484_break[] = {5, S('b', 'r'), S('e', 'a'), S('k', 0)};
-static const uint32_t __string_485_class[] = {5, S('c', 'l'), S('a', 's'), S('s', 0)};
-static const uint32_t __string_486_const[] = {5, S('c', 'o'), S('n', 's'), S('t', 0)};
-static const uint32_t __string_487_false[] = {5, S('f', 'a'), S('l', 's'), S('e', 0)};
-static const uint32_t __string_488_while[] = {5, S('w', 'h'), S('i', 'l'), S('e', 0)};
-static const uint32_t __string_489_export[] = {6, S('e', 'x'), S('p', 'o'), S('r', 't')};
-static const uint32_t __string_490_extern[] = {6, S('e', 'x'), S('t', 'e'), S('r', 'n')};
-static const uint32_t __string_491_import[] = {6, S('i', 'm'), S('p', 'o'), S('r', 't')};
-static const uint32_t __string_492_public[] = {6, S('p', 'u'), S('b', 'l'), S('i', 'c')};
-static const uint32_t __string_493_return[] = {6, S('r', 'e'), S('t', 'u'), S('r', 'n')};
-static const uint32_t __string_494_sizeof[] = {6, S('s', 'i'), S('z', 'e'), S('o', 'f')};
-static const uint32_t __string_495_static[] = {6, S('s', 't'), S('a', 't'), S('i', 'c')};
-static const uint32_t __string_496_unsafe[] = {6, S('u', 'n'), S('s', 'a'), S('f', 'e')};
-static const uint32_t __string_497_alignof[] = {7, S('a', 'l'), S('i', 'g'), S('n', 'o'), S('f', 0)};
-static const uint32_t __string_498_declare[] = {7, S('d', 'e'), S('c', 'l'), S('a', 'r'), S('e', 0)};
-static const uint32_t __string_499_extends[] = {7, S('e', 'x'), S('t', 'e'), S('n', 'd'), S('s', 0)};
-static const uint32_t __string_500_private[] = {7, S('p', 'r'), S('i', 'v'), S('a', 't'), S('e', 0)};
-static const uint32_t __string_501_continue[] = {8, S('c', 'o'), S('n', 't'), S('i', 'n'), S('u', 'e')};
-static const uint32_t __string_502_function[] = {8, S('f', 'u'), S('n', 'c'), S('t', 'i'), S('o', 'n')};
-static const uint32_t __string_503_implements[] = {10, S('i', 'm'), S('p', 'l'), S('e', 'm'), S('e', 'n'), S('t', 's')};
-static const uint32_t __string_504_interface[] = {9, S('i', 'n'), S('t', 'e'), S('r', 'f'), S('a', 'c'), S('e', 0)};
-static const uint32_t __string_505_protected[] = {9, S('p', 'r'), S('o', 't'), S('e', 'c'), S('t', 'e'), S('d', 0)};
-static const uint32_t __string_506_Invalid_integer_literal[] = {26, S('I', 'n'), S('v', 'a'), S('l', 'i'), S('d', ' '), S('i', 'n'), S('t', 'e'), S('g', 'e'), S('r', ' '), S('l', 'i'), S('t', 'e'), S('r',
+static const uint32_t __string_306_break[] = {5, S('b', 'r'), S('e', 'a'), S('k', 0)};
+static const uint32_t __string_307_class[] = {5, S('c', 'l'), S('a', 's'), S('s', 0)};
+static const uint32_t __string_308_const[] = {5, S('c', 'o'), S('n', 's'), S('t', 0)};
+static const uint32_t __string_309_false[] = {5, S('f', 'a'), S('l', 's'), S('e', 0)};
+static const uint32_t __string_310_while[] = {5, S('w', 'h'), S('i', 'l'), S('e', 0)};
+static const uint32_t __string_311_export[] = {6, S('e', 'x'), S('p', 'o'), S('r', 't')};
+static const uint32_t __string_312_extern[] = {6, S('e', 'x'), S('t', 'e'), S('r', 'n')};
+static const uint32_t __string_313_import[] = {6, S('i', 'm'), S('p', 'o'), S('r', 't')};
+static const uint32_t __string_314_public[] = {6, S('p', 'u'), S('b', 'l'), S('i', 'c')};
+static const uint32_t __string_315_return[] = {6, S('r', 'e'), S('t', 'u'), S('r', 'n')};
+static const uint32_t __string_316_sizeof[] = {6, S('s', 'i'), S('z', 'e'), S('o', 'f')};
+static const uint32_t __string_317_static[] = {6, S('s', 't'), S('a', 't'), S('i', 'c')};
+static const uint32_t __string_318_unsafe[] = {6, S('u', 'n'), S('s', 'a'), S('f', 'e')};
+static const uint32_t __string_319_alignof[] = {7, S('a', 'l'), S('i', 'g'), S('n', 'o'), S('f', 0)};
+static const uint32_t __string_320_declare[] = {7, S('d', 'e'), S('c', 'l'), S('a', 'r'), S('e', 0)};
+static const uint32_t __string_321_extends[] = {7, S('e', 'x'), S('t', 'e'), S('n', 'd'), S('s', 0)};
+static const uint32_t __string_322_private[] = {7, S('p', 'r'), S('i', 'v'), S('a', 't'), S('e', 0)};
+static const uint32_t __string_323_continue[] = {8, S('c', 'o'), S('n', 't'), S('i', 'n'), S('u', 'e')};
+static const uint32_t __string_324_function[] = {8, S('f', 'u'), S('n', 'c'), S('t', 'i'), S('o', 'n')};
+static const uint32_t __string_325_implements[] = {10, S('i', 'm'), S('p', 'l'), S('e', 'm'), S('e', 'n'), S('t', 's')};
+static const uint32_t __string_326_interface[] = {9, S('i', 'n'), S('t', 'e'), S('r', 'f'), S('a', 'c'), S('e', 0)};
+static const uint32_t __string_327_protected[] = {9, S('p', 'r'), S('o', 't'), S('e', 'c'), S('t', 'e'), S('d', 0)};
+static const uint32_t __string_328_Invalid_integer_literal[] = {26, S('I', 'n'), S('v', 'a'), S('l', 'i'), S('d', ' '), S('i', 'n'), S('t', 'e'), S('g', 'e'), S('r', ' '), S('l', 'i'), S('t', 'e'), S('r',
   'a'), S('l', ':'), S(' ', '\'')};
-static const uint32_t __string_507_Unterminated_character_literal[] = {30, S('U', 'n'), S('t', 'e'), S('r', 'm'), S('i', 'n'), S('a', 't'), S('e', 'd'), S(' ', 'c'), S('h', 'a'), S('r', 'a'), S('c', 't'), S('e',
+static const uint32_t __string_329_Unterminated_character_literal[] = {30, S('U', 'n'), S('t', 'e'), S('r', 'm'), S('i', 'n'), S('a', 't'), S('e', 'd'), S(' ', 'c'), S('h', 'a'), S('r', 'a'), S('c', 't'), S('e',
   'r'), S(' ', 'l'), S('i', 't'), S('e', 'r'), S('a', 'l')};
-static const uint32_t __string_508_Unterminated_template_literal[] = {29, S('U', 'n'), S('t', 'e'), S('r', 'm'), S('i', 'n'), S('a', 't'), S('e', 'd'), S(' ', 't'), S('e', 'm'), S('p', 'l'), S('a', 't'), S('e',
+static const uint32_t __string_330_Unterminated_template_literal[] = {29, S('U', 'n'), S('t', 'e'), S('r', 'm'), S('i', 'n'), S('a', 't'), S('e', 'd'), S(' ', 't'), S('e', 'm'), S('p', 'l'), S('a', 't'), S('e',
   ' '), S('l', 'i'), S('t', 'e'), S('r', 'a'), S('l', 0)};
-static const uint32_t __string_509_Unterminated_string_literal[] = {27, S('U', 'n'), S('t', 'e'), S('r', 'm'), S('i', 'n'), S('a', 't'), S('e', 'd'), S(' ', 's'), S('t', 'r'), S('i', 'n'), S('g', ' '), S('l',
+static const uint32_t __string_331_Unterminated_string_literal[] = {27, S('U', 'n'), S('t', 'e'), S('r', 'm'), S('i', 'n'), S('a', 't'), S('e', 'd'), S(' ', 's'), S('t', 'r'), S('i', 'n'), S('g', ' '), S('l',
   'i'), S('t', 'e'), S('r', 'a'), S('l', 0)};
-static const uint32_t __string_510_Unterminated_multi_line_comment[] = {31, S('U', 'n'), S('t', 'e'), S('r', 'm'), S('i', 'n'), S('a', 't'), S('e', 'd'), S(' ', 'm'), S('u', 'l'), S('t', 'i'), S('-', 'l'), S('i',
+static const uint32_t __string_332_Unterminated_multi_line_comment[] = {31, S('U', 'n'), S('t', 'e'), S('r', 'm'), S('i', 'n'), S('a', 't'), S('e', 'd'), S(' ', 'm'), S('u', 'l'), S('t', 'i'), S('-', 'l'), S('i',
   'n'), S('e', ' '), S('c', 'o'), S('m', 'm'), S('e', 'n'), S('t', 0)};
-static const uint32_t __string_511_Use_instead_of[] = {25, S('U', 's'), S('e', ' '), S('\'', '!'), S('=', '\''), S(' ', 'i'), S('n', 's'), S('t', 'e'), S('a', 'd'), S(' ', 'o'), S('f', ' '), S('\'',
+static const uint32_t __string_333_Use_instead_of[] = {25, S('U', 's'), S('e', ' '), S('\'', '!'), S('=', '\''), S(' ', 'i'), S('n', 's'), S('t', 'e'), S('a', 'd'), S(' ', 'o'), S('f', ' '), S('\'',
   '!'), S('=', '='), S('\'', 0)};
-static const uint32_t __string_512_Use_instead_of[] = {25, S('U', 's'), S('e', ' '), S('\'', '='), S('=', '\''), S(' ', 'i'), S('n', 's'), S('t', 'e'), S('a', 'd'), S(' ', 'o'), S('f', ' '), S('\'',
+static const uint32_t __string_334_Use_instead_of[] = {25, S('U', 's'), S('e', ' '), S('\'', '='), S('=', '\''), S(' ', 'i'), S('n', 's'), S('t', 'e'), S('a', 'd'), S(' ', 'o'), S('f', ' '), S('\'',
   '='), S('=', '='), S('\'', 0)};
-static const uint32_t __string_513_define[] = {7, S('#', 'd'), S('e', 'f'), S('i', 'n'), S('e', 0)};
-static const uint32_t __string_514_elif[] = {5, S('#', 'e'), S('l', 'i'), S('f', 0)};
-static const uint32_t __string_515_else[] = {5, S('#', 'e'), S('l', 's'), S('e', 0)};
-static const uint32_t __string_516_endif[] = {6, S('#', 'e'), S('n', 'd'), S('i', 'f')};
-static const uint32_t __string_517_error[] = {6, S('#', 'e'), S('r', 'r'), S('o', 'r')};
-static const uint32_t __string_518_if[] = {3, S('#', 'i'), S('f', 0)};
-static const uint32_t __string_519_undef[] = {6, S('#', 'u'), S('n', 'd'), S('e', 'f')};
-static const uint32_t __string_520_warning[] = {8, S('#', 'w'), S('a', 'r'), S('n', 'i'), S('n', 'g')};
-static const uint32_t __string_521[] = {1, S('#', 0)};
-static const uint32_t __string_522_Invalid_preprocessor_token[] = {28, S('I', 'n'), S('v', 'a'), S('l', 'i'), S('d', ' '), S('p', 'r'), S('e', 'p'), S('r', 'o'), S('c', 'e'), S('s', 's'), S('o', 'r'), S(' ',
+static const uint32_t __string_335_define[] = {7, S('#', 'd'), S('e', 'f'), S('i', 'n'), S('e', 0)};
+static const uint32_t __string_336_elif[] = {5, S('#', 'e'), S('l', 'i'), S('f', 0)};
+static const uint32_t __string_337_else[] = {5, S('#', 'e'), S('l', 's'), S('e', 0)};
+static const uint32_t __string_338_endif[] = {6, S('#', 'e'), S('n', 'd'), S('i', 'f')};
+static const uint32_t __string_339_error[] = {6, S('#', 'e'), S('r', 'r'), S('o', 'r')};
+static const uint32_t __string_340_if[] = {3, S('#', 'i'), S('f', 0)};
+static const uint32_t __string_341_undef[] = {6, S('#', 'u'), S('n', 'd'), S('e', 'f')};
+static const uint32_t __string_342_warning[] = {8, S('#', 'w'), S('a', 'r'), S('n', 'i'), S('n', 'g')};
+static const uint32_t __string_343[] = {1, S('#', 0)};
+static const uint32_t __string_344_Invalid_preprocessor_token[] = {28, S('I', 'n'), S('v', 'a'), S('l', 'i'), S('d', ' '), S('p', 'r'), S('e', 'p'), S('r', 'o'), S('c', 'e'), S('s', 's'), S('o', 'r'), S(' ',
   't'), S('o', 'k'), S('e', 'n'), S(' ', '\'')};
-static const uint32_t __string_523_ifdef[] = {6, S('#', 'i'), S('f', 'd'), S('e', 'f')};
-static const uint32_t __string_524_did_you_mean_if[] = {21, S(',', ' '), S('d', 'i'), S('d', ' '), S('y', 'o'), S('u', ' '), S('m', 'e'), S('a', 'n'), S(' ', '\''), S('#', 'i'), S('f', '\''), S('?', 0)};
-static const uint32_t __string_525_elsif[] = {6, S('#', 'e'), S('l', 's'), S('i', 'f')};
-static const uint32_t __string_526_elseif[] = {7, S('#', 'e'), S('l', 's'), S('e', 'i'), S('f', 0)};
-static const uint32_t __string_527_did_you_mean_elif[] = {23, S(',', ' '), S('d', 'i'), S('d', ' '), S('y', 'o'), S('u', ' '), S('m', 'e'), S('a', 'n'), S(' ', '\''), S('#', 'e'), S('l', 'i'), S('f',
+static const uint32_t __string_345_ifdef[] = {6, S('#', 'i'), S('f', 'd'), S('e', 'f')};
+static const uint32_t __string_346_did_you_mean_if[] = {21, S(',', ' '), S('d', 'i'), S('d', ' '), S('y', 'o'), S('u', ' '), S('m', 'e'), S('a', 'n'), S(' ', '\''), S('#', 'i'), S('f', '\''), S('?', 0)};
+static const uint32_t __string_347_elsif[] = {6, S('#', 'e'), S('l', 's'), S('i', 'f')};
+static const uint32_t __string_348_elseif[] = {7, S('#', 'e'), S('l', 's'), S('e', 'i'), S('f', 0)};
+static const uint32_t __string_349_did_you_mean_elif[] = {23, S(',', ' '), S('d', 'i'), S('d', ' '), S('y', 'o'), S('u', ' '), S('m', 'e'), S('a', 'n'), S(' ', '\''), S('#', 'e'), S('l', 'i'), S('f',
   '\''), S('?', 0)};
-static const uint32_t __string_528_end[] = {4, S('#', 'e'), S('n', 'd')};
-static const uint32_t __string_529_did_you_mean_endif[] = {24, S(',', ' '), S('d', 'i'), S('d', ' '), S('y', 'o'), S('u', ' '), S('m', 'e'), S('a', 'n'), S(' ', '\''), S('#', 'e'), S('n', 'd'), S('i',
+static const uint32_t __string_350_end[] = {4, S('#', 'e'), S('n', 'd')};
+static const uint32_t __string_351_did_you_mean_endif[] = {24, S(',', ' '), S('d', 'i'), S('d', ' '), S('y', 'o'), S('u', ' '), S('m', 'e'), S('a', 'n'), S(' ', '\''), S('#', 'e'), S('n', 'd'), S('i',
   'f'), S('\'', '?')};
-static const uint32_t __string_530_Expected_newline_before[] = {24, S('E', 'x'), S('p', 'e'), S('c', 't'), S('e', 'd'), S(' ', 'n'), S('e', 'w'), S('l', 'i'), S('n', 'e'), S(' ', 'b'), S('e', 'f'), S('o',
+static const uint32_t __string_352_Expected_newline_before[] = {24, S('E', 'x'), S('p', 'e'), S('c', 't'), S('e', 'd'), S(' ', 'n'), S('e', 'w'), S('l', 'i'), S('n', 'e'), S(' ', 'b'), S('e', 'f'), S('o',
   'r'), S('e', ' ')};
-static const uint32_t __string_531_Syntax_error[] = {15, S('S', 'y'), S('n', 't'), S('a', 'x'), S(' ', 'e'), S('r', 'r'), S('o', 'r'), S(':', ' '), S('\'', 0)};
-static const uint32_t __string_532_if_WASM_These_will_be_fi[] = {12490, S('\n', '#'), S('i', 'f'), S(' ', 'W'), S('A', 'S'), S('M', '\n'), S('\n', ' '), S(' ', '/'), S('/', ' '), S('T', 'h'), S('e', 's'), S('e',
+static const uint32_t __string_353_Syntax_error[] = {15, S('S', 'y'), S('n', 't'), S('a', 'x'), S(' ', 'e'), S('r', 'r'), S('o', 'r'), S(':', ' '), S('\'', 0)};
+static const uint32_t __string_354_if_WASM_These_will_be_fi[] = {12604, S('\n', '#'), S('i', 'f'), S(' ', 'W'), S('A', 'S'), S('M', '\n'), S('\n', ' '), S(' ', '/'), S('/', ' '), S('T', 'h'), S('e', 's'), S('e',
   ' '), S('w', 'i'), S('l', 'l'), S(' ', 'b'), S('e', ' '), S('f', 'i'), S('l', 'l'), S('e', 'd'), S(' ', 'i'), S('n', ' '), S('b', 'y'), S(' ', 't'), S('h', 'e'), S(' ', 'W'), S('e', 'b'), S('A', 's'), S('s',
   'e'), S('m', 'b'), S('l', 'y'), S(' ', 'c'), S('o', 'd'), S('e', ' '), S('g', 'e'), S('n', 'e'), S('r', 'a'), S('t', 'o'), S('r', '\n'), S(' ', ' '), S('u', 'n'), S('s', 'a'), S('f', 'e'), S(' ', 'v'), S('a',
   'r'), S(' ', 'c'), S('u', 'r'), S('r', 'e'), S('n', 't'), S('H', 'e'), S('a', 'p'), S('P', 'o'), S('i', 'n'), S('t', 'e'), S('r', ':'), S(' ', '*'), S('b', 'y'), S('t', 'e'), S(' ', '='), S(' ', 'n'), S('u',
@@ -653,6 +480,8 @@ static const uint32_t __string_532_if_WASM_These_will_be_fi[] = {12490, S('\n', 
   'i'), S('l', 'e'), S(' ', '('), S('p', 't'), S('r', ' '), S('<', ' '), S('l', 'i'), S('m', 'i'), S('t', ')'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', '*'), S('(', 'p'), S('t', 'r'), S(' ',
   'a'), S('s', ' '), S('*', 'i'), S('n', 't'), S(')', ' '), S('=', ' '), S('0', ';'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'p'), S('t', 'r'), S(' ', '='), S(' ', 'p'), S('t', 'r'), S(' ', '+'), S(' ',
   '4'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S('}', '\n'), S('\n', ' '), S(' ', ' '), S(' ', 'r'), S('e', 't'), S('u', 'r'), S('n', ' '), S('o', 'f'), S('f', 's'), S('e', 't'), S(';', '\n'), S(' ', ' '), S('}',
+  '\n'), S('\n', ' '), S(' ', 'e'), S('x', 't'), S('e', 'r'), S('n', ' '), S('u', 'n'), S('s', 'a'), S('f', 'e'), S(' ', 'f'), S('u', 'n'), S('c', 't'), S('i', 'o'), S('n', ' '), S('f', 'r'), S('e', 'e'), S('(',
+  'p'), S('t', 'r'), S(':', ' '), S('*', 'b'), S('y', 't'), S('e', ')'), S(':', ' '), S('v', 'o'), S('i', 'd'), S(' ', '{'), S(' ', '/'), S('*', ' '), S('T', 'O'), S('D', 'O'), S(' ', '*'), S('/', ' '), S('}',
   '\n'), S('\n', ' '), S(' ', 'u'), S('n', 's'), S('a', 'f'), S('e', ' '), S('f', 'u'), S('n', 'c'), S('t', 'i'), S('o', 'n'), S(' ', 'm'), S('e', 'm'), S('c', 'p'), S('y', '('), S('t', 'a'), S('r', 'g'), S('e',
   't'), S(':', ' '), S('*', 'b'), S('y', 't'), S('e', ','), S(' ', 's'), S('o', 'u'), S('r', 'c'), S('e', ':'), S(' ', '*'), S('b', 'y'), S('t', 'e'), S(',', ' '), S('l', 'e'), S('n', 'g'), S('t', 'h'), S(':',
   ' '), S('u', 'i'), S('n', 't'), S(')', ':'), S(' ', 'v'), S('o', 'i'), S('d', ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S('/', '/'), S(' ', 'N'), S('o', '-'), S('o', 'p'), S(' ', 'i'), S('f', ' '), S('e',
@@ -702,471 +531,645 @@ static const uint32_t __string_532_if_WASM_These_will_be_fi[] = {12490, S('\n', 
   ' '), S('i', 'd'), S('e', 'n'), S('t', 'i'), S('c', 'a'), S('l', '\n'), S(' ', ' '), S(' ', ' '), S('r', 'e'), S('t', 'u'), S('r', 'n'), S(' ', '0'), S(';', '\n'), S(' ', ' '), S('}', '\n'), S('\n', '#'), S('e',
   'l'), S('i', 'f'), S(' ', 'C'), S('\n', '\n'), S(' ', ' '), S('d', 'e'), S('c', 'l'), S('a', 'r'), S('e', ' '), S('u', 'n'), S('s', 'a'), S('f', 'e'), S(' ', 'f'), S('u', 'n'), S('c', 't'), S('i', 'o'), S('n',
   ' '), S('m', 'a'), S('l', 'l'), S('o', 'c'), S('(', 's'), S('i', 'z'), S('e', 'O'), S('f', ':'), S(' ', 'u'), S('i', 'n'), S('t', ')'), S(':', ' '), S('*', 'b'), S('y', 't'), S('e', ';'), S('\n', ' '), S(' ',
-  'd'), S('e', 'c'), S('l', 'a'), S('r', 'e'), S(' ', 'u'), S('n', 's'), S('a', 'f'), S('e', ' '), S('f', 'u'), S('n', 'c'), S('t', 'i'), S('o', 'n'), S(' ', 'm'), S('e', 'm'), S('c', 'p'), S('y', '('), S('t',
-  'a'), S('r', 'g'), S('e', 't'), S(':', ' '), S('*', 'b'), S('y', 't'), S('e', ','), S(' ', 's'), S('o', 'u'), S('r', 'c'), S('e', ':'), S(' ', '*'), S('b', 'y'), S('t', 'e'), S(',', ' '), S('l', 'e'), S('n',
-  'g'), S('t', 'h'), S(':', ' '), S('u', 'i'), S('n', 't'), S(')', ':'), S(' ', 'v'), S('o', 'i'), S('d', ';'), S('\n', ' '), S(' ', 'd'), S('e', 'c'), S('l', 'a'), S('r', 'e'), S(' ', 'u'), S('n', 's'), S('a',
-  'f'), S('e', ' '), S('f', 'u'), S('n', 'c'), S('t', 'i'), S('o', 'n'), S(' ', 'm'), S('e', 'm'), S('c', 'm'), S('p', '('), S('a', ':'), S(' ', '*'), S('b', 'y'), S('t', 'e'), S(',', ' '), S('b', ':'), S(' ',
-  '*'), S('b', 'y'), S('t', 'e'), S(',', ' '), S('l', 'e'), S('n', 'g'), S('t', 'h'), S(':', ' '), S('u', 'i'), S('n', 't'), S(')', ':'), S(' ', 'i'), S('n', 't'), S(';', '\n'), S('\n', '#'), S('e', 'n'), S('d',
-  'i'), S('f', '\n'), S('\n', '#'), S('i', 'f'), S(' ', 'W'), S('A', 'S'), S('M', ' '), S('|', '|'), S(' ', 'C'), S('\n', '\n'), S(' ', ' '), S('d', 'e'), S('c', 'l'), S('a', 'r'), S('e', ' '), S('c', 'l'), S('a',
-  's'), S('s', ' '), S('b', 'o'), S('o', 'l'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ', 't'), S('o', 'S'), S('t', 'r'), S('i', 'n'), S('g', '('), S(')', ':'), S(' ', 's'), S('t', 'r'), S('i', 'n'), S('g',
-  ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('r', 'e'), S('t', 'u'), S('r', 'n'), S(' ', 't'), S('h', 'i'), S('s', ' '), S('?', ' '), S('"', 't'), S('r', 'u'), S('e', '"'), S(' ', ':'), S(' ',
-  '"'), S('f', 'a'), S('l', 's'), S('e', '"'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S('}', '\n'), S(' ', ' '), S('}', '\n'), S('\n', ' '), S(' ', 'd'), S('e', 'c'), S('l', 'a'), S('r', 'e'), S(' ', 'c'), S('l',
-  'a'), S('s', 's'), S(' ', 's'), S('b', 'y'), S('t', 'e'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ', 't'), S('o', 'S'), S('t', 'r'), S('i', 'n'), S('g', '('), S(')', ':'), S(' ', 's'), S('t', 'r'), S('i',
-  'n'), S('g', ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('r', 'e'), S('t', 'u'), S('r', 'n'), S(' ', '('), S('t', 'h'), S('i', 's'), S(' ', 'a'), S('s', ' '), S('i', 'n'), S('t', ')'), S('.',
-  't'), S('o', 'S'), S('t', 'r'), S('i', 'n'), S('g', '('), S(')', ';'), S('\n', ' '), S(' ', ' '), S(' ', '}'), S('\n', ' '), S(' ', '}'), S('\n', '\n'), S(' ', ' '), S('d', 'e'), S('c', 'l'), S('a', 'r'), S('e',
-  ' '), S('c', 'l'), S('a', 's'), S('s', ' '), S('b', 'y'), S('t', 'e'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ', 't'), S('o', 'S'), S('t', 'r'), S('i', 'n'), S('g', '('), S(')', ':'), S(' ', 's'), S('t',
-  'r'), S('i', 'n'), S('g', ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('r', 'e'), S('t', 'u'), S('r', 'n'), S(' ', '('), S('t', 'h'), S('i', 's'), S(' ', 'a'), S('s', ' '), S('u', 'i'), S('n',
-  't'), S(')', '.'), S('t', 'o'), S('S', 't'), S('r', 'i'), S('n', 'g'), S('(', ')'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S('}', '\n'), S(' ', ' '), S('}', '\n'), S('\n', ' '), S(' ', 'd'), S('e', 'c'), S('l',
-  'a'), S('r', 'e'), S(' ', 'c'), S('l', 'a'), S('s', 's'), S(' ', 's'), S('h', 'o'), S('r', 't'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ', 't'), S('o', 'S'), S('t', 'r'), S('i', 'n'), S('g', '('), S(')',
-  ':'), S(' ', 's'), S('t', 'r'), S('i', 'n'), S('g', ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('r', 'e'), S('t', 'u'), S('r', 'n'), S(' ', '('), S('t', 'h'), S('i', 's'), S(' ', 'a'), S('s',
-  ' '), S('i', 'n'), S('t', ')'), S('.', 't'), S('o', 'S'), S('t', 'r'), S('i', 'n'), S('g', '('), S(')', ';'), S('\n', ' '), S(' ', ' '), S(' ', '}'), S('\n', ' '), S(' ', '}'), S('\n', '\n'), S(' ', ' '), S('d',
-  'e'), S('c', 'l'), S('a', 'r'), S('e', ' '), S('c', 'l'), S('a', 's'), S('s', ' '), S('u', 's'), S('h', 'o'), S('r', 't'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ', 't'), S('o', 'S'), S('t', 'r'), S('i',
-  'n'), S('g', '('), S(')', ':'), S(' ', 's'), S('t', 'r'), S('i', 'n'), S('g', ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('r', 'e'), S('t', 'u'), S('r', 'n'), S(' ', '('), S('t', 'h'), S('i',
-  's'), S(' ', 'a'), S('s', ' '), S('u', 'i'), S('n', 't'), S(')', '.'), S('t', 'o'), S('S', 't'), S('r', 'i'), S('n', 'g'), S('(', ')'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S('}', '\n'), S(' ', ' '), S('}',
-  '\n'), S('\n', ' '), S(' ', 'd'), S('e', 'c'), S('l', 'a'), S('r', 'e'), S(' ', 'c'), S('l', 'a'), S('s', 's'), S(' ', 'i'), S('n', 't'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ', 't'), S('o', 'S'), S('t',
-  'r'), S('i', 'n'), S('g', '('), S(')', ':'), S(' ', 's'), S('t', 'r'), S('i', 'n'), S('g', ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('/', '/'), S(' ', 'S'), S('p', 'e'), S('c', 'i'), S('a',
-  'l'), S('-', 'c'), S('a', 's'), S('e', ' '), S('t', 'h'), S('i', 's'), S(' ', 't'), S('o', ' '), S('k', 'e'), S('e', 'p'), S(' ', 't'), S('h', 'e'), S(' ', 'r'), S('e', 's'), S('t', ' '), S('o', 'f'), S(' ',
-  't'), S('h', 'e'), S(' ', 'c'), S('o', 'd'), S('e', ' '), S('s', 'i'), S('m', 'p'), S('l', 'e'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'i'), S('f', ' '), S('(', 't'), S('h', 'i'), S('s', ' '), S('=',
-  '='), S(' ', '-'), S('2', '1'), S('4', '7'), S('4', '8'), S('3', '6'), S('4', '8'), S(')', ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('r', 'e'), S('t', 'u'), S('r', 'n'), S(' ',
-  '"'), S('-', '2'), S('1', '4'), S('7', '4'), S('8', '3'), S('6', '4'), S('8', '"'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('}', '\n'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', '/'), S('/',
-  ' '), S('T', 'r'), S('e', 'a'), S('t', ' '), S('t', 'h'), S('i', 's'), S(' ', 'l'), S('i', 'k'), S('e', ' '), S('a', 'n'), S(' ', 'u'), S('n', 's'), S('i', 'g'), S('n', 'e'), S('d', ' '), S('i', 'n'), S('t',
-  'e'), S('g', 'e'), S('r', ' '), S('p', 'r'), S('e', 'f'), S('i', 'x'), S('e', 'd'), S(' ', 'b'), S('y', ' '), S('\'', '-'), S('\'', ' '), S('i', 'f'), S(' ', 'i'), S('t', '\''), S('s', ' '), S('n', 'e'), S('g',
-  'a'), S('t', 'i'), S('v', 'e'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'r'), S('e', 't'), S('u', 'r'), S('n', ' '), S('i', 'n'), S('t', 'e'), S('r', 'n'), S('a', 'l'), S('I', 'n'), S('t', 'T'), S('o',
-  'S'), S('t', 'r'), S('i', 'n'), S('g', '('), S('(', 't'), S('h', 'i'), S('s', ' '), S('<', ' '), S('0', ' '), S('?', ' '), S('-', 't'), S('h', 'i'), S('s', ' '), S(':', ' '), S('t', 'h'), S('i', 's'), S(')',
-  ' '), S('a', 's'), S(' ', 'u'), S('i', 'n'), S('t', ','), S(' ', 't'), S('h', 'i'), S('s', ' '), S('<', ' '), S('0', ')'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S('}', '\n'), S(' ', ' '), S('}', '\n'), S('\n',
-  ' '), S(' ', 'd'), S('e', 'c'), S('l', 'a'), S('r', 'e'), S(' ', 'c'), S('l', 'a'), S('s', 's'), S(' ', 'u'), S('i', 'n'), S('t', ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S('t', 'o'), S('S', 't'), S('r',
-  'i'), S('n', 'g'), S('(', ')'), S(':', ' '), S('s', 't'), S('r', 'i'), S('n', 'g'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'r'), S('e', 't'), S('u', 'r'), S('n', ' '), S('i', 'n'), S('t',
-  'e'), S('r', 'n'), S('a', 'l'), S('I', 'n'), S('t', 'T'), S('o', 'S'), S('t', 'r'), S('i', 'n'), S('g', '('), S('t', 'h'), S('i', 's'), S(',', ' '), S('f', 'a'), S('l', 's'), S('e', ')'), S(';', '\n'), S(' ',
-  ' '), S(' ', ' '), S('}', '\n'), S(' ', ' '), S('}', '\n'), S('\n', ' '), S(' ', 'f'), S('u', 'n'), S('c', 't'), S('i', 'o'), S('n', ' '), S('i', 'n'), S('t', 'e'), S('r', 'n'), S('a', 'l'), S('I', 'n'), S('t',
-  'T'), S('o', 'S'), S('t', 'r'), S('i', 'n'), S('g', '('), S('v', 'a'), S('l', 'u'), S('e', ':'), S(' ', 'u'), S('i', 'n'), S('t', ','), S(' ', 's'), S('i', 'g'), S('n', ':'), S(' ', 'b'), S('o', 'o'), S('l',
-  ')'), S(':', ' '), S('s', 't'), S('r', 'i'), S('n', 'g'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ', '/'), S('/', ' '), S('A', 'v'), S('o', 'i'), S('d', ' '), S('a', 'l'), S('l', 'o'), S('c', 'a'), S('t',
-  'i'), S('o', 'n'), S(' ', 'f'), S('o', 'r'), S(' ', 'c'), S('o', 'm'), S('m', 'o'), S('n', ' '), S('c', 'a'), S('s', 'e'), S('s', '\n'), S(' ', ' '), S(' ', ' '), S('i', 'f'), S(' ', '('), S('v', 'a'), S('l',
-  'u'), S('e', ' '), S('=', '='), S(' ', '0'), S(')', ' '), S('r', 'e'), S('t', 'u'), S('r', 'n'), S(' ', '"'), S('0', '"'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S('i', 'f'), S(' ', '('), S('v', 'a'), S('l',
-  'u'), S('e', ' '), S('=', '='), S(' ', '1'), S(')', ' '), S('r', 'e'), S('t', 'u'), S('r', 'n'), S(' ', 's'), S('i', 'g'), S('n', ' '), S('?', ' '), S('"', '-'), S('1', '"'), S(' ', ':'), S(' ', '"'), S('1',
-  '"'), S(';', '\n'), S('\n', ' '), S(' ', ' '), S(' ', 'u'), S('n', 's'), S('a', 'f'), S('e', ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('/', '/'), S(' ', 'D'), S('e', 't'), S('e', 'r'), S('m',
-  'i'), S('n', 'e'), S(' ', 'h'), S('o', 'w'), S(' ', 'm'), S('a', 'n'), S('y', ' '), S('d', 'i'), S('g', 'i'), S('t', 's'), S(' ', 'w'), S('e', ' '), S('n', 'e'), S('e', 'd'), S('\n', ' '), S(' ', ' '), S(' ',
-  ' '), S(' ', 'v'), S('a', 'r'), S(' ', 'l'), S('e', 'n'), S('g', 't'), S('h', ' '), S('=', ' '), S('(', '('), S('s', 'i'), S('g', 'n'), S(' ', '?'), S(' ', '1'), S(' ', ':'), S(' ', '0'), S(')', ' '), S('+',
-  ' '), S('(', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('v', 'a'), S('l', 'u'), S('e', ' '), S('>', '='), S(' ', '1'), S('0', '0'), S('0', '0'), S('0', '0'), S('0', '0'), S(' ', '?'), S('\n',
-  ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'v'), S('a', 'l'), S('u', 'e'), S(' ', '>'), S('=', ' '), S('1', '0'), S('0', '0'), S('0', '0'), S('0', '0'), S('0', '0'), S(' ', '?'), S(' ',
-  '1'), S('0', ' '), S(':', ' '), S('9', ' '), S(':', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('v', 'a'), S('l', 'u'), S('e', ' '), S('>', '='), S(' ', '1'), S('0', '0'), S('0', '0'), S(' ',
-  '?'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'v'), S('a', 'l'), S('u', 'e'), S(' ', '>'), S('=', ' '), S('1', '0'), S('0', '0'), S('0', '0'), S('0', ' '), S('?', '\n'), S(' ',
-  ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('v', 'a'), S('l', 'u'), S('e', ' '), S('>', '='), S(' ', '1'), S('0', '0'), S('0', '0'), S('0', '0'), S('0', ' '), S('?', ' '), S('8',
-  ' '), S(':', ' '), S('7', ' '), S(':', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('v', 'a'), S('l', 'u'), S('e', ' '), S('>', '='), S(' ', '1'), S('0', '0'), S('0',
-  '0'), S('0', ' '), S('?', ' '), S('6', ' '), S(':', ' '), S('5', ' '), S(':', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('v', 'a'), S('l', 'u'), S('e', ' '), S('>', '='), S(' ',
-  '1'), S('0', '0'), S(' ', '?'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'v'), S('a', 'l'), S('u', 'e'), S(' ', '>'), S('=', ' '), S('1', '0'), S('0', '0'), S(' ',
-  '?'), S(' ', '4'), S(' ', ':'), S(' ', '3'), S(' ', ':'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'v'), S('a', 'l'), S('u', 'e'), S(' ', '>'), S('=', ' '), S('1',
-  '0'), S(' ', '?'), S(' ', '2'), S(' ', ':'), S(' ', '1'), S(')', ')'), S(' ', 'a'), S('s', ' '), S('u', 'i'), S('n', 't'), S(';', '\n'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'v'), S('a', 'r'), S(' ',
-  'p'), S('t', 'r'), S(' ', '='), S(' ', 's'), S('t', 'r'), S('i', 'n'), S('g', '_'), S('n', 'e'), S('w', '('), S('l', 'e'), S('n', 'g'), S('t', 'h'), S(')', ' '), S('a', 's'), S(' ', '*'), S('b', 'y'), S('t',
-  'e'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('v', 'a'), S('r', ' '), S('e', 'n'), S('d', ' '), S('=', ' '), S('p', 't'), S('r', ' '), S('+', ' '), S('4', ' '), S('+', ' '), S('l', 'e'), S('n',
-  'g'), S('t', 'h'), S(' ', '*'), S(' ', '2'), S(';', '\n'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'i'), S('f', ' '), S('(', 's'), S('i', 'g'), S('n', ')'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ',
-  ' '), S(' ', ' '), S(' ', '*'), S('(', '('), S('p', 't'), S('r', ' '), S('+', ' '), S('4', ')'), S(' ', 'a'), S('s', ' '), S('*', 'u'), S('s', 'h'), S('o', 'r'), S('t', ')'), S(' ', '='), S(' ', '\''), S('-',
-  '\''), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('}', '\n'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'w'), S('h', 'i'), S('l', 'e'), S(' ', '('), S('v', 'a'), S('l', 'u'), S('e', ' '), S('!',
-  '='), S(' ', '0'), S(')', ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('e', 'n'), S('d', ' '), S('=', ' '), S('e', 'n'), S('d', ' '), S('+', ' '), S('-', '2'), S(';', '\n'), S(' ',
-  ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('*', '('), S('e', 'n'), S('d', ' '), S('a', 's'), S(' ', '*'), S('u', 's'), S('h', 'o'), S('r', 't'), S(')', ' '), S('=', ' '), S('(', 'v'), S('a', 'l'), S('u',
-  'e'), S(' ', '%'), S(' ', '1'), S('0', ' '), S('+', ' '), S('\'', '0'), S('\'', ')'), S(' ', 'a'), S('s', ' '), S('u', 's'), S('h', 'o'), S('r', 't'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ',
-  ' '), S('v', 'a'), S('l', 'u'), S('e', ' '), S('=', ' '), S('v', 'a'), S('l', 'u'), S('e', ' '), S('/', ' '), S('1', '0'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('}', '\n'), S('\n', ' '), S(' ',
-  ' '), S(' ', ' '), S(' ', 'r'), S('e', 't'), S('u', 'r'), S('n', ' '), S('p', 't'), S('r', ' '), S('a', 's'), S(' ', 's'), S('t', 'r'), S('i', 'n'), S('g', ';'), S('\n', ' '), S(' ', ' '), S(' ', '}'), S('\n',
-  ' '), S(' ', '}'), S('\n', '\n'), S(' ', ' '), S('f', 'u'), S('n', 'c'), S('t', 'i'), S('o', 'n'), S(' ', 's'), S('t', 'r'), S('i', 'n'), S('g', '_'), S('n', 'e'), S('w', '('), S('l', 'e'), S('n', 'g'), S('t',
-  'h'), S(':', ' '), S('u', 'i'), S('n', 't'), S(')', ':'), S(' ', 's'), S('t', 'r'), S('i', 'n'), S('g', ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S('u', 'n'), S('s', 'a'), S('f', 'e'), S(' ', '{'), S('\n',
-  ' '), S(' ', ' '), S(' ', ' '), S(' ', 'v'), S('a', 'r'), S(' ', 'p'), S('t', 'r'), S(' ', '='), S(' ', 'm'), S('a', 'l'), S('l', 'o'), S('c', '('), S('4', ' '), S('+', ' '), S('l', 'e'), S('n', 'g'), S('t',
-  'h'), S(' ', '*'), S(' ', '2'), S(')', ';'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', '*'), S('(', 'p'), S('t', 'r'), S(' ', 'a'), S('s', ' '), S('*', 'u'), S('i', 'n'), S('t', ')'), S(' ', '='), S(' ',
-  'l'), S('e', 'n'), S('g', 't'), S('h', ';'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'r'), S('e', 't'), S('u', 'r'), S('n', ' '), S('p', 't'), S('r', ' '), S('a', 's'), S(' ', 's'), S('t', 'r'), S('i',
-  'n'), S('g', ';'), S('\n', ' '), S(' ', ' '), S(' ', '}'), S('\n', ' '), S(' ', '}'), S('\n', '\n'), S(' ', ' '), S('d', 'e'), S('c', 'l'), S('a', 'r'), S('e', ' '), S('c', 'l'), S('a', 's'), S('s', ' '), S('s',
-  't'), S('r', 'i'), S('n', 'g'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ', 'c'), S('h', 'a'), S('r', 'A'), S('t', '('), S('i', 'n'), S('d', 'e'), S('x', ':'), S(' ', 'i'), S('n', 't'), S(')', ':'), S(' ',
-  's'), S('t', 'r'), S('i', 'n'), S('g', ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('r', 'e'), S('t', 'u'), S('r', 'n'), S(' ', 't'), S('h', 'i'), S('s', '.'), S('s', 'l'), S('i', 'c'), S('e',
-  '('), S('i', 'n'), S('d', 'e'), S('x', ','), S(' ', 'i'), S('n', 'd'), S('e', 'x'), S(' ', '+'), S(' ', '1'), S(')', ';'), S('\n', ' '), S(' ', ' '), S(' ', '}'), S('\n', '\n'), S(' ', ' '), S(' ', ' '), S('c',
-  'h'), S('a', 'r'), S('C', 'o'), S('d', 'e'), S('A', 't'), S('(', 'i'), S('n', 'd'), S('e', 'x'), S(':', ' '), S('i', 'n'), S('t', ')'), S(':', ' '), S('u', 's'), S('h', 'o'), S('r', 't'), S(' ', '{'), S('\n',
-  ' '), S(' ', ' '), S(' ', ' '), S(' ', 'r'), S('e', 't'), S('u', 'r'), S('n', ' '), S('t', 'h'), S('i', 's'), S('[', 'i'), S('n', 'd'), S('e', 'x'), S(']', ';'), S('\n', ' '), S(' ', ' '), S(' ', '}'), S('\n',
-  '\n'), S(' ', ' '), S(' ', ' '), S('g', 'e'), S('t', ' '), S('l', 'e'), S('n', 'g'), S('t', 'h'), S('(', ')'), S(':', ' '), S('i', 'n'), S('t', ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('u',
-  'n'), S('s', 'a'), S('f', 'e'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'r'), S('e', 't'), S('u', 'r'), S('n', ' '), S('*', '('), S('t', 'h'), S('i', 's'), S(' ', 'a'), S('s',
-  ' '), S('*', 'i'), S('n', 't'), S(')', ';'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', '}'), S('\n', ' '), S(' ', ' '), S(' ', '}'), S('\n', '\n'), S(' ', ' '), S(' ', ' '), S('o', 'p'), S('e', 'r'), S('a',
-  't'), S('o', 'r'), S(' ', '['), S(']', ' '), S('(', 'i'), S('n', 'd'), S('e', 'x'), S(':', ' '), S('i', 'n'), S('t', ')'), S(':', ' '), S('u', 's'), S('h', 'o'), S('r', 't'), S(' ', '{'), S('\n', ' '), S(' ',
-  ' '), S(' ', ' '), S(' ', 'i'), S('f', ' '), S('(', 'i'), S('n', 'd'), S('e', 'x'), S(' ', 'a'), S('s', ' '), S('u', 'i'), S('n', 't'), S(' ', '<'), S(' ', 't'), S('h', 'i'), S('s', '.'), S('l', 'e'), S('n',
-  'g'), S('t', 'h'), S(' ', 'a'), S('s', ' '), S('u', 'i'), S('n', 't'), S(')', ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('u', 'n'), S('s', 'a'), S('f', 'e'), S(' ', '{'), S('\n',
-  ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'r'), S('e', 't'), S('u', 'r'), S('n', ' '), S('*', '('), S('(', 't'), S('h', 'i'), S('s', ' '), S('a', 's'), S(' ', '*'), S('b', 'y'), S('t',
-  'e'), S(' ', '+'), S(' ', '4'), S(' ', '+'), S(' ', 'i'), S('n', 'd'), S('e', 'x'), S(' ', '*'), S(' ', '2'), S(')', ' '), S('a', 's'), S(' ', '*'), S('u', 's'), S('h', 'o'), S('r', 't'), S(')', ';'), S('\n',
-  ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', '}'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', '}'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'r'), S('e', 't'), S('u', 'r'), S('n', ' '), S('0',
-  ';'), S('\n', ' '), S(' ', ' '), S(' ', '}'), S('\n', '\n'), S(' ', ' '), S(' ', ' '), S('o', 'p'), S('e', 'r'), S('a', 't'), S('o', 'r'), S(' ', '='), S('=', ' '), S('(', 'o'), S('t', 'h'), S('e', 'r'), S(':',
-  ' '), S('s', 't'), S('r', 'i'), S('n', 'g'), S(')', ':'), S(' ', 'b'), S('o', 'o'), S('l', ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('u', 'n'), S('s', 'a'), S('f', 'e'), S(' ', '{'), S('\n',
-  ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'i'), S('f', ' '), S('(', 't'), S('h', 'i'), S('s', ' '), S('a', 's'), S(' ', '*'), S('b', 'y'), S('t', 'e'), S(' ', '='), S('=', ' '), S('o', 't'), S('h',
-  'e'), S('r', ' '), S('a', 's'), S(' ', '*'), S('b', 'y'), S('t', 'e'), S(')', ' '), S('r', 'e'), S('t', 'u'), S('r', 'n'), S(' ', 't'), S('r', 'u'), S('e', ';'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ',
-  ' '), S(' ', 'i'), S('f', ' '), S('(', 't'), S('h', 'i'), S('s', ' '), S('a', 's'), S(' ', '*'), S('b', 'y'), S('t', 'e'), S(' ', '='), S('=', ' '), S('n', 'u'), S('l', 'l'), S(' ', '|'), S('|', ' '), S('o',
-  't'), S('h', 'e'), S('r', ' '), S('a', 's'), S(' ', '*'), S('b', 'y'), S('t', 'e'), S(' ', '='), S('=', ' '), S('n', 'u'), S('l', 'l'), S(')', ' '), S('r', 'e'), S('t', 'u'), S('r', 'n'), S(' ', 'f'), S('a',
-  'l'), S('s', 'e'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('v', 'a'), S('r', ' '), S('l', 'e'), S('n', 'g'), S('t', 'h'), S(' ', '='), S(' ', 't'), S('h', 'i'), S('s', '.'), S('l',
-  'e'), S('n', 'g'), S('t', 'h'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('i', 'f'), S(' ', '('), S('l', 'e'), S('n', 'g'), S('t', 'h'), S(' ', '!'), S('=', ' '), S('o', 't'), S('h',
-  'e'), S('r', '.'), S('l', 'e'), S('n', 'g'), S('t', 'h'), S(')', ' '), S('r', 'e'), S('t', 'u'), S('r', 'n'), S(' ', 'f'), S('a', 'l'), S('s', 'e'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ',
-  ' '), S('r', 'e'), S('t', 'u'), S('r', 'n'), S(' ', 'm'), S('e', 'm'), S('c', 'm'), S('p', '('), S('t', 'h'), S('i', 's'), S(' ', 'a'), S('s', ' '), S('*', 'b'), S('y', 't'), S('e', ' '), S('+', ' '), S('4',
-  ','), S(' ', 'o'), S('t', 'h'), S('e', 'r'), S(' ', 'a'), S('s', ' '), S('*', 'b'), S('y', 't'), S('e', ' '), S('+', ' '), S('4', ','), S(' ', 'l'), S('e', 'n'), S('g', 't'), S('h', ' '), S('a', 's'), S(' ',
-  'u'), S('i', 'n'), S('t', ' '), S('*', ' '), S('2', ')'), S(' ', '='), S('=', ' '), S('0', ';'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', '}'), S('\n', ' '), S(' ', ' '), S(' ', '}'), S('\n', '\n'), S(' ',
-  ' '), S(' ', ' '), S('s', 'l'), S('i', 'c'), S('e', '('), S('s', 't'), S('a', 'r'), S('t', ':'), S(' ', 'i'), S('n', 't'), S(',', ' '), S('e', 'n'), S('d', ':'), S(' ', 'i'), S('n', 't'), S(')', ':'), S(' ',
-  's'), S('t', 'r'), S('i', 'n'), S('g', ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('v', 'a'), S('r', ' '), S('l', 'e'), S('n', 'g'), S('t', 'h'), S(' ', '='), S(' ', 't'), S('h', 'i'), S('s',
-  '.'), S('l', 'e'), S('n', 'g'), S('t', 'h'), S(';', '\n'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'i'), S('f', ' '), S('(', 's'), S('t', 'a'), S('r', 't'), S(' ', '<'), S(' ', '0'), S(')', ' '), S('s',
-  't'), S('a', 'r'), S('t', ' '), S('=', ' '), S('s', 't'), S('a', 'r'), S('t', ' '), S('+', ' '), S('l', 'e'), S('n', 'g'), S('t', 'h'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('i', 'f'), S(' ',
-  '('), S('e', 'n'), S('d', ' '), S('<', ' '), S('0', ')'), S(' ', 'e'), S('n', 'd'), S(' ', '='), S(' ', 'e'), S('n', 'd'), S(' ', '+'), S(' ', 'l'), S('e', 'n'), S('g', 't'), S('h', ';'), S('\n', '\n'), S(' ',
-  ' '), S(' ', ' '), S(' ', ' '), S('i', 'f'), S(' ', '('), S('s', 't'), S('a', 'r'), S('t', ' '), S('<', ' '), S('0', ')'), S(' ', 's'), S('t', 'a'), S('r', 't'), S(' ', '='), S(' ', '0'), S(';', '\n'), S(' ',
-  ' '), S(' ', ' '), S(' ', ' '), S('e', 'l'), S('s', 'e'), S(' ', 'i'), S('f', ' '), S('(', 's'), S('t', 'a'), S('r', 't'), S(' ', '>'), S(' ', 'l'), S('e', 'n'), S('g', 't'), S('h', ')'), S(' ', 's'), S('t',
-  'a'), S('r', 't'), S(' ', '='), S(' ', 'l'), S('e', 'n'), S('g', 't'), S('h', ';'), S('\n', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('i', 'f'), S(' ', '('), S('e', 'n'), S('d', ' '), S('<', ' '), S('s',
-  't'), S('a', 'r'), S('t', ')'), S(' ', 'e'), S('n', 'd'), S(' ', '='), S(' ', 's'), S('t', 'a'), S('r', 't'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('e', 'l'), S('s', 'e'), S(' ', 'i'), S('f',
-  ' '), S('(', 'e'), S('n', 'd'), S(' ', '>'), S(' ', 'l'), S('e', 'n'), S('g', 't'), S('h', ')'), S(' ', 'e'), S('n', 'd'), S(' ', '='), S(' ', 'l'), S('e', 'n'), S('g', 't'), S('h', ';'), S('\n', '\n'), S(' ',
-  ' '), S(' ', ' '), S(' ', ' '), S('u', 'n'), S('s', 'a'), S('f', 'e'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'v'), S('a', 'r'), S(' ', 'r'), S('a', 'n'), S('g', 'e'), S(' ',
-  '='), S(' ', '('), S('e', 'n'), S('d', ' '), S('-', ' '), S('s', 't'), S('a', 'r'), S('t', ')'), S(' ', 'a'), S('s', ' '), S('u', 'i'), S('n', 't'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ',
-  ' '), S('v', 'a'), S('r', ' '), S('p', 't'), S('r', ' '), S('=', ' '), S('s', 't'), S('r', 'i'), S('n', 'g'), S('_', 'n'), S('e', 'w'), S('(', 'r'), S('a', 'n'), S('g', 'e'), S(')', ';'), S('\n', ' '), S(' ',
-  ' '), S(' ', ' '), S(' ', ' '), S(' ', 'm'), S('e', 'm'), S('c', 'p'), S('y', '('), S('p', 't'), S('r', ' '), S('a', 's'), S(' ', '*'), S('b', 'y'), S('t', 'e'), S(' ', '+'), S(' ', '4'), S(',', ' '), S('t',
-  'h'), S('i', 's'), S(' ', 'a'), S('s', ' '), S('*', 'b'), S('y', 't'), S('e', ' '), S('+', ' '), S('4', ' '), S('+', ' '), S('s', 't'), S('a', 'r'), S('t', ' '), S('*', ' '), S('2', ','), S(' ', 'r'), S('a',
-  'n'), S('g', 'e'), S(' ', '*'), S(' ', '2'), S(')', ';'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'r'), S('e', 't'), S('u', 'r'), S('n', ' '), S('p', 't'), S('r', ';'), S('\n', ' '), S(' ',
-  ' '), S(' ', ' '), S(' ', '}'), S('\n', ' '), S(' ', ' '), S(' ', '}'), S('\n', '\n'), S(' ', ' '), S(' ', ' '), S('s', 't'), S('a', 'r'), S('t', 's'), S('W', 'i'), S('t', 'h'), S('(', 't'), S('e', 'x'), S('t',
-  ':'), S(' ', 's'), S('t', 'r'), S('i', 'n'), S('g', ')'), S(':', ' '), S('b', 'o'), S('o', 'l'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'v'), S('a', 'r'), S(' ', 't'), S('e', 'x'), S('t',
-  'L'), S('e', 'n'), S('g', 't'), S('h', ' '), S('=', ' '), S('t', 'e'), S('x', 't'), S('.', 'l'), S('e', 'n'), S('g', 't'), S('h', ';'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'i'), S('f', ' '), S('(',
-  't'), S('h', 'i'), S('s', '.'), S('l', 'e'), S('n', 'g'), S('t', 'h'), S(' ', '<'), S(' ', 't'), S('e', 'x'), S('t', 'L'), S('e', 'n'), S('g', 't'), S('h', ')'), S(' ', 'r'), S('e', 't'), S('u', 'r'), S('n',
-  ' '), S('f', 'a'), S('l', 's'), S('e', ';'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'u'), S('n', 's'), S('a', 'f'), S('e', ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('r',
-  'e'), S('t', 'u'), S('r', 'n'), S(' ', 'm'), S('e', 'm'), S('c', 'm'), S('p', '('), S('t', 'h'), S('i', 's'), S(' ', 'a'), S('s', ' '), S('*', 'b'), S('y', 't'), S('e', ' '), S('+', ' '), S('4', ','), S(' ',
-  't'), S('e', 'x'), S('t', ' '), S('a', 's'), S(' ', '*'), S('b', 'y'), S('t', 'e'), S(' ', '+'), S(' ', '4'), S(',', ' '), S('t', 'e'), S('x', 't'), S('L', 'e'), S('n', 'g'), S('t', 'h'), S(' ', 'a'), S('s',
-  ' '), S('u', 'i'), S('n', 't'), S(' ', '*'), S(' ', '2'), S(')', ' '), S('=', '='), S(' ', '0'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('}', '\n'), S(' ', ' '), S(' ', ' '), S('}', '\n'), S('\n',
-  ' '), S(' ', ' '), S(' ', 'e'), S('n', 'd'), S('s', 'W'), S('i', 't'), S('h', '('), S('t', 'e'), S('x', 't'), S(':', ' '), S('s', 't'), S('r', 'i'), S('n', 'g'), S(')', ':'), S(' ', 'b'), S('o', 'o'), S('l',
-  ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('v', 'a'), S('r', ' '), S('t', 'h'), S('i', 's'), S('L', 'e'), S('n', 'g'), S('t', 'h'), S(' ', '='), S(' ', 't'), S('h', 'i'), S('s', '.'), S('l',
-  'e'), S('n', 'g'), S('t', 'h'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('v', 'a'), S('r', ' '), S('t', 'e'), S('x', 't'), S('L', 'e'), S('n', 'g'), S('t', 'h'), S(' ', '='), S(' ', 't'), S('e',
-  'x'), S('t', '.'), S('l', 'e'), S('n', 'g'), S('t', 'h'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('i', 'f'), S(' ', '('), S('t', 'h'), S('i', 's'), S('L', 'e'), S('n', 'g'), S('t', 'h'), S(' ',
-  '<'), S(' ', 't'), S('e', 'x'), S('t', 'L'), S('e', 'n'), S('g', 't'), S('h', ')'), S(' ', 'r'), S('e', 't'), S('u', 'r'), S('n', ' '), S('f', 'a'), S('l', 's'), S('e', ';'), S('\n', ' '), S(' ', ' '), S(' ',
-  ' '), S(' ', 'u'), S('n', 's'), S('a', 'f'), S('e', ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('r', 'e'), S('t', 'u'), S('r', 'n'), S(' ', 'm'), S('e', 'm'), S('c', 'm'), S('p',
-  '('), S('t', 'h'), S('i', 's'), S(' ', 'a'), S('s', ' '), S('*', 'b'), S('y', 't'), S('e', ' '), S('+', ' '), S('4', ' '), S('+', ' '), S('(', 't'), S('h', 'i'), S('s', 'L'), S('e', 'n'), S('g', 't'), S('h',
-  ' '), S('-', ' '), S('t', 'e'), S('x', 't'), S('L', 'e'), S('n', 'g'), S('t', 'h'), S(')', ' '), S('*', ' '), S('2', ','), S(' ', 't'), S('e', 'x'), S('t', ' '), S('a', 's'), S(' ', '*'), S('b', 'y'), S('t',
-  'e'), S(' ', '+'), S(' ', '4'), S(',', ' '), S('t', 'e'), S('x', 't'), S('L', 'e'), S('n', 'g'), S('t', 'h'), S(' ', 'a'), S('s', ' '), S('u', 'i'), S('n', 't'), S(' ', '*'), S(' ', '2'), S(')', ' '), S('=',
-  '='), S(' ', '0'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('}', '\n'), S(' ', ' '), S(' ', ' '), S('}', '\n'), S('\n', ' '), S(' ', ' '), S(' ', 'i'), S('n', 'd'), S('e', 'x'), S('O', 'f'), S('(',
-  't'), S('e', 'x'), S('t', ':'), S(' ', 's'), S('t', 'r'), S('i', 'n'), S('g', ')'), S(':', ' '), S('i', 'n'), S('t', ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('v', 'a'), S('r', ' '), S('t',
+  'd'), S('e', 'c'), S('l', 'a'), S('r', 'e'), S(' ', 'u'), S('n', 's'), S('a', 'f'), S('e', ' '), S('f', 'u'), S('n', 'c'), S('t', 'i'), S('o', 'n'), S(' ', 'f'), S('r', 'e'), S('e', '('), S('p', 't'), S('r',
+  ':'), S(' ', '*'), S('b', 'y'), S('t', 'e'), S(')', ':'), S(' ', 'v'), S('o', 'i'), S('d', ';'), S('\n', ' '), S(' ', 'd'), S('e', 'c'), S('l', 'a'), S('r', 'e'), S(' ', 'u'), S('n', 's'), S('a', 'f'), S('e',
+  ' '), S('f', 'u'), S('n', 'c'), S('t', 'i'), S('o', 'n'), S(' ', 'm'), S('e', 'm'), S('c', 'p'), S('y', '('), S('t', 'a'), S('r', 'g'), S('e', 't'), S(':', ' '), S('*', 'b'), S('y', 't'), S('e', ','), S(' ',
+  's'), S('o', 'u'), S('r', 'c'), S('e', ':'), S(' ', '*'), S('b', 'y'), S('t', 'e'), S(',', ' '), S('l', 'e'), S('n', 'g'), S('t', 'h'), S(':', ' '), S('u', 'i'), S('n', 't'), S(')', ':'), S(' ', 'v'), S('o',
+  'i'), S('d', ';'), S('\n', ' '), S(' ', 'd'), S('e', 'c'), S('l', 'a'), S('r', 'e'), S(' ', 'u'), S('n', 's'), S('a', 'f'), S('e', ' '), S('f', 'u'), S('n', 'c'), S('t', 'i'), S('o', 'n'), S(' ', 'm'), S('e',
+  'm'), S('c', 'm'), S('p', '('), S('a', ':'), S(' ', '*'), S('b', 'y'), S('t', 'e'), S(',', ' '), S('b', ':'), S(' ', '*'), S('b', 'y'), S('t', 'e'), S(',', ' '), S('l', 'e'), S('n', 'g'), S('t', 'h'), S(':',
+  ' '), S('u', 'i'), S('n', 't'), S(')', ':'), S(' ', 'i'), S('n', 't'), S(';', '\n'), S('\n', '#'), S('e', 'n'), S('d', 'i'), S('f', '\n'), S('\n', '#'), S('i', 'f'), S(' ', 'W'), S('A', 'S'), S('M', ' '), S('|',
+  '|'), S(' ', 'C'), S('\n', '\n'), S(' ', ' '), S('d', 'e'), S('c', 'l'), S('a', 'r'), S('e', ' '), S('c', 'l'), S('a', 's'), S('s', ' '), S('b', 'o'), S('o', 'l'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ',
+  't'), S('o', 'S'), S('t', 'r'), S('i', 'n'), S('g', '('), S(')', ':'), S(' ', 's'), S('t', 'r'), S('i', 'n'), S('g', ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('r', 'e'), S('t', 'u'), S('r',
+  'n'), S(' ', 't'), S('h', 'i'), S('s', ' '), S('?', ' '), S('"', 't'), S('r', 'u'), S('e', '"'), S(' ', ':'), S(' ', '"'), S('f', 'a'), S('l', 's'), S('e', '"'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S('}',
+  '\n'), S(' ', ' '), S('}', '\n'), S('\n', ' '), S(' ', 'd'), S('e', 'c'), S('l', 'a'), S('r', 'e'), S(' ', 'c'), S('l', 'a'), S('s', 's'), S(' ', 's'), S('b', 'y'), S('t', 'e'), S(' ', '{'), S('\n', ' '), S(' ',
+  ' '), S(' ', 't'), S('o', 'S'), S('t', 'r'), S('i', 'n'), S('g', '('), S(')', ':'), S(' ', 's'), S('t', 'r'), S('i', 'n'), S('g', ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('r', 'e'), S('t',
+  'u'), S('r', 'n'), S(' ', '('), S('t', 'h'), S('i', 's'), S(' ', 'a'), S('s', ' '), S('i', 'n'), S('t', ')'), S('.', 't'), S('o', 'S'), S('t', 'r'), S('i', 'n'), S('g', '('), S(')', ';'), S('\n', ' '), S(' ',
+  ' '), S(' ', '}'), S('\n', ' '), S(' ', '}'), S('\n', '\n'), S(' ', ' '), S('d', 'e'), S('c', 'l'), S('a', 'r'), S('e', ' '), S('c', 'l'), S('a', 's'), S('s', ' '), S('b', 'y'), S('t', 'e'), S(' ', '{'), S('\n',
+  ' '), S(' ', ' '), S(' ', 't'), S('o', 'S'), S('t', 'r'), S('i', 'n'), S('g', '('), S(')', ':'), S(' ', 's'), S('t', 'r'), S('i', 'n'), S('g', ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('r',
+  'e'), S('t', 'u'), S('r', 'n'), S(' ', '('), S('t', 'h'), S('i', 's'), S(' ', 'a'), S('s', ' '), S('u', 'i'), S('n', 't'), S(')', '.'), S('t', 'o'), S('S', 't'), S('r', 'i'), S('n', 'g'), S('(', ')'), S(';',
+  '\n'), S(' ', ' '), S(' ', ' '), S('}', '\n'), S(' ', ' '), S('}', '\n'), S('\n', ' '), S(' ', 'd'), S('e', 'c'), S('l', 'a'), S('r', 'e'), S(' ', 'c'), S('l', 'a'), S('s', 's'), S(' ', 's'), S('h', 'o'), S('r',
+  't'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ', 't'), S('o', 'S'), S('t', 'r'), S('i', 'n'), S('g', '('), S(')', ':'), S(' ', 's'), S('t', 'r'), S('i', 'n'), S('g', ' '), S('{', '\n'), S(' ', ' '), S(' ',
+  ' '), S(' ', ' '), S('r', 'e'), S('t', 'u'), S('r', 'n'), S(' ', '('), S('t', 'h'), S('i', 's'), S(' ', 'a'), S('s', ' '), S('i', 'n'), S('t', ')'), S('.', 't'), S('o', 'S'), S('t', 'r'), S('i', 'n'), S('g',
+  '('), S(')', ';'), S('\n', ' '), S(' ', ' '), S(' ', '}'), S('\n', ' '), S(' ', '}'), S('\n', '\n'), S(' ', ' '), S('d', 'e'), S('c', 'l'), S('a', 'r'), S('e', ' '), S('c', 'l'), S('a', 's'), S('s', ' '), S('u',
+  's'), S('h', 'o'), S('r', 't'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ', 't'), S('o', 'S'), S('t', 'r'), S('i', 'n'), S('g', '('), S(')', ':'), S(' ', 's'), S('t', 'r'), S('i', 'n'), S('g', ' '), S('{',
+  '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('r', 'e'), S('t', 'u'), S('r', 'n'), S(' ', '('), S('t', 'h'), S('i', 's'), S(' ', 'a'), S('s', ' '), S('u', 'i'), S('n', 't'), S(')', '.'), S('t', 'o'), S('S',
+  't'), S('r', 'i'), S('n', 'g'), S('(', ')'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S('}', '\n'), S(' ', ' '), S('}', '\n'), S('\n', ' '), S(' ', 'd'), S('e', 'c'), S('l', 'a'), S('r', 'e'), S(' ', 'c'), S('l',
+  'a'), S('s', 's'), S(' ', 'i'), S('n', 't'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ', 't'), S('o', 'S'), S('t', 'r'), S('i', 'n'), S('g', '('), S(')', ':'), S(' ', 's'), S('t', 'r'), S('i', 'n'), S('g',
+  ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('/', '/'), S(' ', 'S'), S('p', 'e'), S('c', 'i'), S('a', 'l'), S('-', 'c'), S('a', 's'), S('e', ' '), S('t', 'h'), S('i', 's'), S(' ', 't'), S('o',
+  ' '), S('k', 'e'), S('e', 'p'), S(' ', 't'), S('h', 'e'), S(' ', 'r'), S('e', 's'), S('t', ' '), S('o', 'f'), S(' ', 't'), S('h', 'e'), S(' ', 'c'), S('o', 'd'), S('e', ' '), S('s', 'i'), S('m', 'p'), S('l',
+  'e'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'i'), S('f', ' '), S('(', 't'), S('h', 'i'), S('s', ' '), S('=', '='), S(' ', '-'), S('2', '1'), S('4', '7'), S('4', '8'), S('3', '6'), S('4', '8'), S(')',
+  ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('r', 'e'), S('t', 'u'), S('r', 'n'), S(' ', '"'), S('-', '2'), S('1', '4'), S('7', '4'), S('8', '3'), S('6', '4'), S('8', '"'), S(';',
+  '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('}', '\n'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', '/'), S('/', ' '), S('T', 'r'), S('e', 'a'), S('t', ' '), S('t', 'h'), S('i', 's'), S(' ', 'l'), S('i',
+  'k'), S('e', ' '), S('a', 'n'), S(' ', 'u'), S('n', 's'), S('i', 'g'), S('n', 'e'), S('d', ' '), S('i', 'n'), S('t', 'e'), S('g', 'e'), S('r', ' '), S('p', 'r'), S('e', 'f'), S('i', 'x'), S('e', 'd'), S(' ',
+  'b'), S('y', ' '), S('\'', '-'), S('\'', ' '), S('i', 'f'), S(' ', 'i'), S('t', '\''), S('s', ' '), S('n', 'e'), S('g', 'a'), S('t', 'i'), S('v', 'e'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'r'), S('e',
+  't'), S('u', 'r'), S('n', ' '), S('i', 'n'), S('t', 'e'), S('r', 'n'), S('a', 'l'), S('I', 'n'), S('t', 'T'), S('o', 'S'), S('t', 'r'), S('i', 'n'), S('g', '('), S('(', 't'), S('h', 'i'), S('s', ' '), S('<',
+  ' '), S('0', ' '), S('?', ' '), S('-', 't'), S('h', 'i'), S('s', ' '), S(':', ' '), S('t', 'h'), S('i', 's'), S(')', ' '), S('a', 's'), S(' ', 'u'), S('i', 'n'), S('t', ','), S(' ', 't'), S('h', 'i'), S('s',
+  ' '), S('<', ' '), S('0', ')'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S('}', '\n'), S(' ', ' '), S('}', '\n'), S('\n', ' '), S(' ', 'd'), S('e', 'c'), S('l', 'a'), S('r', 'e'), S(' ', 'c'), S('l', 'a'), S('s',
+  's'), S(' ', 'u'), S('i', 'n'), S('t', ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S('t', 'o'), S('S', 't'), S('r', 'i'), S('n', 'g'), S('(', ')'), S(':', ' '), S('s', 't'), S('r', 'i'), S('n', 'g'), S(' ',
+  '{'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'r'), S('e', 't'), S('u', 'r'), S('n', ' '), S('i', 'n'), S('t', 'e'), S('r', 'n'), S('a', 'l'), S('I', 'n'), S('t', 'T'), S('o', 'S'), S('t', 'r'), S('i',
+  'n'), S('g', '('), S('t', 'h'), S('i', 's'), S(',', ' '), S('f', 'a'), S('l', 's'), S('e', ')'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S('}', '\n'), S(' ', ' '), S('}', '\n'), S('\n', ' '), S(' ', 'f'), S('u',
+  'n'), S('c', 't'), S('i', 'o'), S('n', ' '), S('i', 'n'), S('t', 'e'), S('r', 'n'), S('a', 'l'), S('I', 'n'), S('t', 'T'), S('o', 'S'), S('t', 'r'), S('i', 'n'), S('g', '('), S('v', 'a'), S('l', 'u'), S('e',
+  ':'), S(' ', 'u'), S('i', 'n'), S('t', ','), S(' ', 's'), S('i', 'g'), S('n', ':'), S(' ', 'b'), S('o', 'o'), S('l', ')'), S(':', ' '), S('s', 't'), S('r', 'i'), S('n', 'g'), S(' ', '{'), S('\n', ' '), S(' ',
+  ' '), S(' ', '/'), S('/', ' '), S('A', 'v'), S('o', 'i'), S('d', ' '), S('a', 'l'), S('l', 'o'), S('c', 'a'), S('t', 'i'), S('o', 'n'), S(' ', 'f'), S('o', 'r'), S(' ', 'c'), S('o', 'm'), S('m', 'o'), S('n',
+  ' '), S('c', 'a'), S('s', 'e'), S('s', '\n'), S(' ', ' '), S(' ', ' '), S('i', 'f'), S(' ', '('), S('v', 'a'), S('l', 'u'), S('e', ' '), S('=', '='), S(' ', '0'), S(')', ' '), S('r', 'e'), S('t', 'u'), S('r',
+  'n'), S(' ', '"'), S('0', '"'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S('i', 'f'), S(' ', '('), S('v', 'a'), S('l', 'u'), S('e', ' '), S('=', '='), S(' ', '1'), S(')', ' '), S('r', 'e'), S('t', 'u'), S('r',
+  'n'), S(' ', 's'), S('i', 'g'), S('n', ' '), S('?', ' '), S('"', '-'), S('1', '"'), S(' ', ':'), S(' ', '"'), S('1', '"'), S(';', '\n'), S('\n', ' '), S(' ', ' '), S(' ', 'u'), S('n', 's'), S('a', 'f'), S('e',
+  ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('/', '/'), S(' ', 'D'), S('e', 't'), S('e', 'r'), S('m', 'i'), S('n', 'e'), S(' ', 'h'), S('o', 'w'), S(' ', 'm'), S('a', 'n'), S('y', ' '), S('d',
+  'i'), S('g', 'i'), S('t', 's'), S(' ', 'w'), S('e', ' '), S('n', 'e'), S('e', 'd'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'v'), S('a', 'r'), S(' ', 'l'), S('e', 'n'), S('g', 't'), S('h', ' '), S('=',
+  ' '), S('(', '('), S('s', 'i'), S('g', 'n'), S(' ', '?'), S(' ', '1'), S(' ', ':'), S(' ', '0'), S(')', ' '), S('+', ' '), S('(', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('v', 'a'), S('l',
+  'u'), S('e', ' '), S('>', '='), S(' ', '1'), S('0', '0'), S('0', '0'), S('0', '0'), S('0', '0'), S(' ', '?'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'v'), S('a', 'l'), S('u',
+  'e'), S(' ', '>'), S('=', ' '), S('1', '0'), S('0', '0'), S('0', '0'), S('0', '0'), S('0', '0'), S(' ', '?'), S(' ', '1'), S('0', ' '), S(':', ' '), S('9', ' '), S(':', '\n'), S(' ', ' '), S(' ', ' '), S(' ',
+  ' '), S(' ', ' '), S('v', 'a'), S('l', 'u'), S('e', ' '), S('>', '='), S(' ', '1'), S('0', '0'), S('0', '0'), S(' ', '?'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'v'), S('a',
+  'l'), S('u', 'e'), S(' ', '>'), S('=', ' '), S('1', '0'), S('0', '0'), S('0', '0'), S('0', ' '), S('?', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('v', 'a'), S('l',
+  'u'), S('e', ' '), S('>', '='), S(' ', '1'), S('0', '0'), S('0', '0'), S('0', '0'), S('0', ' '), S('?', ' '), S('8', ' '), S(':', ' '), S('7', ' '), S(':', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ',
+  ' '), S(' ', ' '), S(' ', ' '), S('v', 'a'), S('l', 'u'), S('e', ' '), S('>', '='), S(' ', '1'), S('0', '0'), S('0', '0'), S('0', ' '), S('?', ' '), S('6', ' '), S(':', ' '), S('5', ' '), S(':', '\n'), S(' ',
+  ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('v', 'a'), S('l', 'u'), S('e', ' '), S('>', '='), S(' ', '1'), S('0', '0'), S(' ', '?'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ',
+  ' '), S(' ', ' '), S(' ', 'v'), S('a', 'l'), S('u', 'e'), S(' ', '>'), S('=', ' '), S('1', '0'), S('0', '0'), S(' ', '?'), S(' ', '4'), S(' ', ':'), S(' ', '3'), S(' ', ':'), S('\n', ' '), S(' ', ' '), S(' ',
+  ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'v'), S('a', 'l'), S('u', 'e'), S(' ', '>'), S('=', ' '), S('1', '0'), S(' ', '?'), S(' ', '2'), S(' ', ':'), S(' ', '1'), S(')', ')'), S(' ', 'a'), S('s',
+  ' '), S('u', 'i'), S('n', 't'), S(';', '\n'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'v'), S('a', 'r'), S(' ', 'p'), S('t', 'r'), S(' ', '='), S(' ', 's'), S('t', 'r'), S('i', 'n'), S('g', '_'), S('n',
+  'e'), S('w', '('), S('l', 'e'), S('n', 'g'), S('t', 'h'), S(')', ' '), S('a', 's'), S(' ', '*'), S('b', 'y'), S('t', 'e'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('v', 'a'), S('r', ' '), S('e',
+  'n'), S('d', ' '), S('=', ' '), S('p', 't'), S('r', ' '), S('+', ' '), S('4', ' '), S('+', ' '), S('l', 'e'), S('n', 'g'), S('t', 'h'), S(' ', '*'), S(' ', '2'), S(';', '\n'), S('\n', ' '), S(' ', ' '), S(' ',
+  ' '), S(' ', 'i'), S('f', ' '), S('(', 's'), S('i', 'g'), S('n', ')'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', '*'), S('(', '('), S('p', 't'), S('r', ' '), S('+', ' '), S('4',
+  ')'), S(' ', 'a'), S('s', ' '), S('*', 'u'), S('s', 'h'), S('o', 'r'), S('t', ')'), S(' ', '='), S(' ', '\''), S('-', '\''), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('}', '\n'), S('\n', ' '), S(' ',
+  ' '), S(' ', ' '), S(' ', 'w'), S('h', 'i'), S('l', 'e'), S(' ', '('), S('v', 'a'), S('l', 'u'), S('e', ' '), S('!', '='), S(' ', '0'), S(')', ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ',
+  ' '), S('e', 'n'), S('d', ' '), S('=', ' '), S('e', 'n'), S('d', ' '), S('+', ' '), S('-', '2'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('*', '('), S('e', 'n'), S('d', ' '), S('a',
+  's'), S(' ', '*'), S('u', 's'), S('h', 'o'), S('r', 't'), S(')', ' '), S('=', ' '), S('(', 'v'), S('a', 'l'), S('u', 'e'), S(' ', '%'), S(' ', '1'), S('0', ' '), S('+', ' '), S('\'', '0'), S('\'', ')'), S(' ',
+  'a'), S('s', ' '), S('u', 's'), S('h', 'o'), S('r', 't'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('v', 'a'), S('l', 'u'), S('e', ' '), S('=', ' '), S('v', 'a'), S('l', 'u'), S('e',
+  ' '), S('/', ' '), S('1', '0'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('}', '\n'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'r'), S('e', 't'), S('u', 'r'), S('n', ' '), S('p', 't'), S('r',
+  ' '), S('a', 's'), S(' ', 's'), S('t', 'r'), S('i', 'n'), S('g', ';'), S('\n', ' '), S(' ', ' '), S(' ', '}'), S('\n', ' '), S(' ', '}'), S('\n', '\n'), S(' ', ' '), S('f', 'u'), S('n', 'c'), S('t', 'i'), S('o',
+  'n'), S(' ', 's'), S('t', 'r'), S('i', 'n'), S('g', '_'), S('n', 'e'), S('w', '('), S('l', 'e'), S('n', 'g'), S('t', 'h'), S(':', ' '), S('u', 'i'), S('n', 't'), S(')', ':'), S(' ', 's'), S('t', 'r'), S('i',
+  'n'), S('g', ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S('u', 'n'), S('s', 'a'), S('f', 'e'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'v'), S('a', 'r'), S(' ', 'p'), S('t', 'r'), S(' ',
+  '='), S(' ', 'm'), S('a', 'l'), S('l', 'o'), S('c', '('), S('4', ' '), S('+', ' '), S('l', 'e'), S('n', 'g'), S('t', 'h'), S(' ', '*'), S(' ', '2'), S(')', ';'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ',
+  '*'), S('(', 'p'), S('t', 'r'), S(' ', 'a'), S('s', ' '), S('*', 'u'), S('i', 'n'), S('t', ')'), S(' ', '='), S(' ', 'l'), S('e', 'n'), S('g', 't'), S('h', ';'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ',
+  'r'), S('e', 't'), S('u', 'r'), S('n', ' '), S('p', 't'), S('r', ' '), S('a', 's'), S(' ', 's'), S('t', 'r'), S('i', 'n'), S('g', ';'), S('\n', ' '), S(' ', ' '), S(' ', '}'), S('\n', ' '), S(' ', '}'), S('\n',
+  '\n'), S(' ', ' '), S('d', 'e'), S('c', 'l'), S('a', 'r'), S('e', ' '), S('c', 'l'), S('a', 's'), S('s', ' '), S('s', 't'), S('r', 'i'), S('n', 'g'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ', 'c'), S('h',
+  'a'), S('r', 'A'), S('t', '('), S('i', 'n'), S('d', 'e'), S('x', ':'), S(' ', 'i'), S('n', 't'), S(')', ':'), S(' ', 's'), S('t', 'r'), S('i', 'n'), S('g', ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S(' ',
+  ' '), S('r', 'e'), S('t', 'u'), S('r', 'n'), S(' ', 't'), S('h', 'i'), S('s', '.'), S('s', 'l'), S('i', 'c'), S('e', '('), S('i', 'n'), S('d', 'e'), S('x', ','), S(' ', 'i'), S('n', 'd'), S('e', 'x'), S(' ',
+  '+'), S(' ', '1'), S(')', ';'), S('\n', ' '), S(' ', ' '), S(' ', '}'), S('\n', '\n'), S(' ', ' '), S(' ', ' '), S('c', 'h'), S('a', 'r'), S('C', 'o'), S('d', 'e'), S('A', 't'), S('(', 'i'), S('n', 'd'), S('e',
+  'x'), S(':', ' '), S('i', 'n'), S('t', ')'), S(':', ' '), S('u', 's'), S('h', 'o'), S('r', 't'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'r'), S('e', 't'), S('u', 'r'), S('n', ' '), S('t',
+  'h'), S('i', 's'), S('[', 'i'), S('n', 'd'), S('e', 'x'), S(']', ';'), S('\n', ' '), S(' ', ' '), S(' ', '}'), S('\n', '\n'), S(' ', ' '), S(' ', ' '), S('g', 'e'), S('t', ' '), S('l', 'e'), S('n', 'g'), S('t',
+  'h'), S('(', ')'), S(':', ' '), S('i', 'n'), S('t', ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('u', 'n'), S('s', 'a'), S('f', 'e'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ',
+  ' '), S(' ', 'r'), S('e', 't'), S('u', 'r'), S('n', ' '), S('*', '('), S('t', 'h'), S('i', 's'), S(' ', 'a'), S('s', ' '), S('*', 'i'), S('n', 't'), S(')', ';'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ',
+  '}'), S('\n', ' '), S(' ', ' '), S(' ', '}'), S('\n', '\n'), S(' ', ' '), S(' ', ' '), S('o', 'p'), S('e', 'r'), S('a', 't'), S('o', 'r'), S(' ', '['), S(']', ' '), S('(', 'i'), S('n', 'd'), S('e', 'x'), S(':',
+  ' '), S('i', 'n'), S('t', ')'), S(':', ' '), S('u', 's'), S('h', 'o'), S('r', 't'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'i'), S('f', ' '), S('(', 'i'), S('n', 'd'), S('e', 'x'), S(' ',
+  'a'), S('s', ' '), S('u', 'i'), S('n', 't'), S(' ', '<'), S(' ', 't'), S('h', 'i'), S('s', '.'), S('l', 'e'), S('n', 'g'), S('t', 'h'), S(' ', 'a'), S('s', ' '), S('u', 'i'), S('n', 't'), S(')', ' '), S('{',
+  '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('u', 'n'), S('s', 'a'), S('f', 'e'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'r'), S('e', 't'), S('u',
+  'r'), S('n', ' '), S('*', '('), S('(', 't'), S('h', 'i'), S('s', ' '), S('a', 's'), S(' ', '*'), S('b', 'y'), S('t', 'e'), S(' ', '+'), S(' ', '4'), S(' ', '+'), S(' ', 'i'), S('n', 'd'), S('e', 'x'), S(' ',
+  '*'), S(' ', '2'), S(')', ' '), S('a', 's'), S(' ', '*'), S('u', 's'), S('h', 'o'), S('r', 't'), S(')', ';'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', '}'), S('\n', ' '), S(' ', ' '), S(' ',
+  ' '), S(' ', '}'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'r'), S('e', 't'), S('u', 'r'), S('n', ' '), S('0', ';'), S('\n', ' '), S(' ', ' '), S(' ', '}'), S('\n', '\n'), S(' ', ' '), S(' ', ' '), S('o',
+  'p'), S('e', 'r'), S('a', 't'), S('o', 'r'), S(' ', '='), S('=', ' '), S('(', 'o'), S('t', 'h'), S('e', 'r'), S(':', ' '), S('s', 't'), S('r', 'i'), S('n', 'g'), S(')', ':'), S(' ', 'b'), S('o', 'o'), S('l',
+  ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('u', 'n'), S('s', 'a'), S('f', 'e'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'i'), S('f', ' '), S('(', 't'), S('h',
+  'i'), S('s', ' '), S('a', 's'), S(' ', '*'), S('b', 'y'), S('t', 'e'), S(' ', '='), S('=', ' '), S('o', 't'), S('h', 'e'), S('r', ' '), S('a', 's'), S(' ', '*'), S('b', 'y'), S('t', 'e'), S(')', ' '), S('r',
+  'e'), S('t', 'u'), S('r', 'n'), S(' ', 't'), S('r', 'u'), S('e', ';'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'i'), S('f', ' '), S('(', 't'), S('h', 'i'), S('s', ' '), S('a', 's'), S(' ',
+  '*'), S('b', 'y'), S('t', 'e'), S(' ', '='), S('=', ' '), S('n', 'u'), S('l', 'l'), S(' ', '|'), S('|', ' '), S('o', 't'), S('h', 'e'), S('r', ' '), S('a', 's'), S(' ', '*'), S('b', 'y'), S('t', 'e'), S(' ',
+  '='), S('=', ' '), S('n', 'u'), S('l', 'l'), S(')', ' '), S('r', 'e'), S('t', 'u'), S('r', 'n'), S(' ', 'f'), S('a', 'l'), S('s', 'e'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('v',
+  'a'), S('r', ' '), S('l', 'e'), S('n', 'g'), S('t', 'h'), S(' ', '='), S(' ', 't'), S('h', 'i'), S('s', '.'), S('l', 'e'), S('n', 'g'), S('t', 'h'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ',
+  ' '), S('i', 'f'), S(' ', '('), S('l', 'e'), S('n', 'g'), S('t', 'h'), S(' ', '!'), S('=', ' '), S('o', 't'), S('h', 'e'), S('r', '.'), S('l', 'e'), S('n', 'g'), S('t', 'h'), S(')', ' '), S('r', 'e'), S('t',
+  'u'), S('r', 'n'), S(' ', 'f'), S('a', 'l'), S('s', 'e'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('r', 'e'), S('t', 'u'), S('r', 'n'), S(' ', 'm'), S('e', 'm'), S('c', 'm'), S('p',
+  '('), S('t', 'h'), S('i', 's'), S(' ', 'a'), S('s', ' '), S('*', 'b'), S('y', 't'), S('e', ' '), S('+', ' '), S('4', ','), S(' ', 'o'), S('t', 'h'), S('e', 'r'), S(' ', 'a'), S('s', ' '), S('*', 'b'), S('y',
+  't'), S('e', ' '), S('+', ' '), S('4', ','), S(' ', 'l'), S('e', 'n'), S('g', 't'), S('h', ' '), S('a', 's'), S(' ', 'u'), S('i', 'n'), S('t', ' '), S('*', ' '), S('2', ')'), S(' ', '='), S('=', ' '), S('0',
+  ';'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', '}'), S('\n', ' '), S(' ', ' '), S(' ', '}'), S('\n', '\n'), S(' ', ' '), S(' ', ' '), S('s', 'l'), S('i', 'c'), S('e', '('), S('s', 't'), S('a', 'r'), S('t',
+  ':'), S(' ', 'i'), S('n', 't'), S(',', ' '), S('e', 'n'), S('d', ':'), S(' ', 'i'), S('n', 't'), S(')', ':'), S(' ', 's'), S('t', 'r'), S('i', 'n'), S('g', ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S(' ',
+  ' '), S('v', 'a'), S('r', ' '), S('l', 'e'), S('n', 'g'), S('t', 'h'), S(' ', '='), S(' ', 't'), S('h', 'i'), S('s', '.'), S('l', 'e'), S('n', 'g'), S('t', 'h'), S(';', '\n'), S('\n', ' '), S(' ', ' '), S(' ',
+  ' '), S(' ', 'i'), S('f', ' '), S('(', 's'), S('t', 'a'), S('r', 't'), S(' ', '<'), S(' ', '0'), S(')', ' '), S('s', 't'), S('a', 'r'), S('t', ' '), S('=', ' '), S('s', 't'), S('a', 'r'), S('t', ' '), S('+',
+  ' '), S('l', 'e'), S('n', 'g'), S('t', 'h'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('i', 'f'), S(' ', '('), S('e', 'n'), S('d', ' '), S('<', ' '), S('0', ')'), S(' ', 'e'), S('n', 'd'), S(' ',
+  '='), S(' ', 'e'), S('n', 'd'), S(' ', '+'), S(' ', 'l'), S('e', 'n'), S('g', 't'), S('h', ';'), S('\n', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('i', 'f'), S(' ', '('), S('s', 't'), S('a', 'r'), S('t',
+  ' '), S('<', ' '), S('0', ')'), S(' ', 's'), S('t', 'a'), S('r', 't'), S(' ', '='), S(' ', '0'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('e', 'l'), S('s', 'e'), S(' ', 'i'), S('f', ' '), S('(',
+  's'), S('t', 'a'), S('r', 't'), S(' ', '>'), S(' ', 'l'), S('e', 'n'), S('g', 't'), S('h', ')'), S(' ', 's'), S('t', 'a'), S('r', 't'), S(' ', '='), S(' ', 'l'), S('e', 'n'), S('g', 't'), S('h', ';'), S('\n',
+  '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('i', 'f'), S(' ', '('), S('e', 'n'), S('d', ' '), S('<', ' '), S('s', 't'), S('a', 'r'), S('t', ')'), S(' ', 'e'), S('n', 'd'), S(' ', '='), S(' ', 's'), S('t',
+  'a'), S('r', 't'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('e', 'l'), S('s', 'e'), S(' ', 'i'), S('f', ' '), S('(', 'e'), S('n', 'd'), S(' ', '>'), S(' ', 'l'), S('e', 'n'), S('g', 't'), S('h',
+  ')'), S(' ', 'e'), S('n', 'd'), S(' ', '='), S(' ', 'l'), S('e', 'n'), S('g', 't'), S('h', ';'), S('\n', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('u', 'n'), S('s', 'a'), S('f', 'e'), S(' ', '{'), S('\n',
+  ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'v'), S('a', 'r'), S(' ', 'r'), S('a', 'n'), S('g', 'e'), S(' ', '='), S(' ', '('), S('e', 'n'), S('d', ' '), S('-', ' '), S('s', 't'), S('a', 'r'), S('t',
+  ')'), S(' ', 'a'), S('s', ' '), S('u', 'i'), S('n', 't'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('v', 'a'), S('r', ' '), S('p', 't'), S('r', ' '), S('=', ' '), S('s', 't'), S('r',
+  'i'), S('n', 'g'), S('_', 'n'), S('e', 'w'), S('(', 'r'), S('a', 'n'), S('g', 'e'), S(')', ';'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'm'), S('e', 'm'), S('c', 'p'), S('y', '('), S('p',
+  't'), S('r', ' '), S('a', 's'), S(' ', '*'), S('b', 'y'), S('t', 'e'), S(' ', '+'), S(' ', '4'), S(',', ' '), S('t', 'h'), S('i', 's'), S(' ', 'a'), S('s', ' '), S('*', 'b'), S('y', 't'), S('e', ' '), S('+',
+  ' '), S('4', ' '), S('+', ' '), S('s', 't'), S('a', 'r'), S('t', ' '), S('*', ' '), S('2', ','), S(' ', 'r'), S('a', 'n'), S('g', 'e'), S(' ', '*'), S(' ', '2'), S(')', ';'), S('\n', ' '), S(' ', ' '), S(' ',
+  ' '), S(' ', ' '), S(' ', 'r'), S('e', 't'), S('u', 'r'), S('n', ' '), S('p', 't'), S('r', ';'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', '}'), S('\n', ' '), S(' ', ' '), S(' ', '}'), S('\n', '\n'), S(' ',
+  ' '), S(' ', ' '), S('s', 't'), S('a', 'r'), S('t', 's'), S('W', 'i'), S('t', 'h'), S('(', 't'), S('e', 'x'), S('t', ':'), S(' ', 's'), S('t', 'r'), S('i', 'n'), S('g', ')'), S(':', ' '), S('b', 'o'), S('o',
+  'l'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'v'), S('a', 'r'), S(' ', 't'), S('e', 'x'), S('t', 'L'), S('e', 'n'), S('g', 't'), S('h', ' '), S('=', ' '), S('t', 'e'), S('x', 't'), S('.',
+  'l'), S('e', 'n'), S('g', 't'), S('h', ';'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'i'), S('f', ' '), S('(', 't'), S('h', 'i'), S('s', '.'), S('l', 'e'), S('n', 'g'), S('t', 'h'), S(' ', '<'), S(' ',
+  't'), S('e', 'x'), S('t', 'L'), S('e', 'n'), S('g', 't'), S('h', ')'), S(' ', 'r'), S('e', 't'), S('u', 'r'), S('n', ' '), S('f', 'a'), S('l', 's'), S('e', ';'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ',
+  'u'), S('n', 's'), S('a', 'f'), S('e', ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('r', 'e'), S('t', 'u'), S('r', 'n'), S(' ', 'm'), S('e', 'm'), S('c', 'm'), S('p', '('), S('t',
+  'h'), S('i', 's'), S(' ', 'a'), S('s', ' '), S('*', 'b'), S('y', 't'), S('e', ' '), S('+', ' '), S('4', ','), S(' ', 't'), S('e', 'x'), S('t', ' '), S('a', 's'), S(' ', '*'), S('b', 'y'), S('t', 'e'), S(' ',
+  '+'), S(' ', '4'), S(',', ' '), S('t', 'e'), S('x', 't'), S('L', 'e'), S('n', 'g'), S('t', 'h'), S(' ', 'a'), S('s', ' '), S('u', 'i'), S('n', 't'), S(' ', '*'), S(' ', '2'), S(')', ' '), S('=', '='), S(' ',
+  '0'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('}', '\n'), S(' ', ' '), S(' ', ' '), S('}', '\n'), S('\n', ' '), S(' ', ' '), S(' ', 'e'), S('n', 'd'), S('s', 'W'), S('i', 't'), S('h', '('), S('t',
+  'e'), S('x', 't'), S(':', ' '), S('s', 't'), S('r', 'i'), S('n', 'g'), S(')', ':'), S(' ', 'b'), S('o', 'o'), S('l', ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('v', 'a'), S('r', ' '), S('t',
   'h'), S('i', 's'), S('L', 'e'), S('n', 'g'), S('t', 'h'), S(' ', '='), S(' ', 't'), S('h', 'i'), S('s', '.'), S('l', 'e'), S('n', 'g'), S('t', 'h'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('v',
   'a'), S('r', ' '), S('t', 'e'), S('x', 't'), S('L', 'e'), S('n', 'g'), S('t', 'h'), S(' ', '='), S(' ', 't'), S('e', 'x'), S('t', '.'), S('l', 'e'), S('n', 'g'), S('t', 'h'), S(';', '\n'), S(' ', ' '), S(' ',
-  ' '), S(' ', ' '), S('i', 'f'), S(' ', '('), S('t', 'h'), S('i', 's'), S('L', 'e'), S('n', 'g'), S('t', 'h'), S(' ', '>'), S('=', ' '), S('t', 'e'), S('x', 't'), S('L', 'e'), S('n', 'g'), S('t', 'h'), S(')',
-  ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('v', 'a'), S('r', ' '), S('i', ' '), S('=', ' '), S('0', ';'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'w'), S('h',
-  'i'), S('l', 'e'), S(' ', '('), S('i', ' '), S('<', ' '), S('t', 'h'), S('i', 's'), S('L', 'e'), S('n', 'g'), S('t', 'h'), S(' ', '-'), S(' ', 't'), S('e', 'x'), S('t', 'L'), S('e', 'n'), S('g', 't'), S('h',
-  ')'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'u'), S('n', 's'), S('a', 'f'), S('e', ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ',
-  ' '), S(' ', ' '), S('i', 'f'), S(' ', '('), S('m', 'e'), S('m', 'c'), S('m', 'p'), S('(', 't'), S('h', 'i'), S('s', ' '), S('a', 's'), S(' ', '*'), S('b', 'y'), S('t', 'e'), S(' ', '+'), S(' ', '4'), S(' ',
-  '+'), S(' ', 'i'), S(' ', '*'), S(' ', '2'), S(',', ' '), S('t', 'e'), S('x', 't'), S(' ', 'a'), S('s', ' '), S('*', 'b'), S('y', 't'), S('e', ' '), S('+', ' '), S('4', ','), S(' ', 't'), S('e', 'x'), S('t',
-  'L'), S('e', 'n'), S('g', 't'), S('h', ' '), S('a', 's'), S(' ', 'u'), S('i', 'n'), S('t', ' '), S('*', ' '), S('2', ')'), S(' ', '='), S('=', ' '), S('0', ')'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ',
-  ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'r'), S('e', 't'), S('u', 'r'), S('n', ' '), S('i', ';'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ',
-  '}'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', '}'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'i'), S(' ', '='), S(' ', 'i'), S(' ', '+'), S(' ',
-  '1'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('}', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('}', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('r', 'e'), S('t', 'u'), S('r',
-  'n'), S(' ', '-'), S('1', ';'), S('\n', ' '), S(' ', ' '), S(' ', '}'), S('\n', '\n'), S(' ', ' '), S(' ', ' '), S('l', 'a'), S('s', 't'), S('I', 'n'), S('d', 'e'), S('x', 'O'), S('f', '('), S('t', 'e'), S('x',
-  't'), S(':', ' '), S('s', 't'), S('r', 'i'), S('n', 'g'), S(')', ':'), S(' ', 'i'), S('n', 't'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'v'), S('a', 'r'), S(' ', 't'), S('h', 'i'), S('s',
-  'L'), S('e', 'n'), S('g', 't'), S('h', ' '), S('=', ' '), S('t', 'h'), S('i', 's'), S('.', 'l'), S('e', 'n'), S('g', 't'), S('h', ';'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'v'), S('a', 'r'), S(' ',
-  't'), S('e', 'x'), S('t', 'L'), S('e', 'n'), S('g', 't'), S('h', ' '), S('=', ' '), S('t', 'e'), S('x', 't'), S('.', 'l'), S('e', 'n'), S('g', 't'), S('h', ';'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ',
-  'i'), S('f', ' '), S('(', 't'), S('h', 'i'), S('s', 'L'), S('e', 'n'), S('g', 't'), S('h', ' '), S('>', '='), S(' ', 't'), S('e', 'x'), S('t', 'L'), S('e', 'n'), S('g', 't'), S('h', ')'), S(' ', '{'), S('\n',
-  ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'v'), S('a', 'r'), S(' ', 'i'), S(' ', '='), S(' ', 't'), S('h', 'i'), S('s', 'L'), S('e', 'n'), S('g', 't'), S('h', ' '), S('-', ' '), S('t', 'e'), S('x',
-  't'), S('L', 'e'), S('n', 'g'), S('t', 'h'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('w', 'h'), S('i', 'l'), S('e', ' '), S('(', 'i'), S(' ', '>'), S('=', ' '), S('0', ')'), S(' ',
-  '{'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'u'), S('n', 's'), S('a', 'f'), S('e', ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ',
-  ' '), S('i', 'f'), S(' ', '('), S('m', 'e'), S('m', 'c'), S('m', 'p'), S('(', 't'), S('h', 'i'), S('s', ' '), S('a', 's'), S(' ', '*'), S('b', 'y'), S('t', 'e'), S(' ', '+'), S(' ', '4'), S(' ', '+'), S(' ',
-  'i'), S(' ', '*'), S(' ', '2'), S(',', ' '), S('t', 'e'), S('x', 't'), S(' ', 'a'), S('s', ' '), S('*', 'b'), S('y', 't'), S('e', ' '), S('+', ' '), S('4', ','), S(' ', 't'), S('e', 'x'), S('t', 'L'), S('e',
-  'n'), S('g', 't'), S('h', ' '), S('a', 's'), S(' ', 'u'), S('i', 'n'), S('t', ' '), S('*', ' '), S('2', ')'), S(' ', '='), S('=', ' '), S('0', ')'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ',
-  ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'r'), S('e', 't'), S('u', 'r'), S('n', ' '), S('i', ';'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', '}'), S('\n',
-  ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', '}'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'i'), S(' ', '='), S(' ', 'i'), S(' ', '-'), S(' ', '1'), S(';',
-  '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('}', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('}', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('r', 'e'), S('t', 'u'), S('r', 'n'), S(' ',
-  '-'), S('1', ';'), S('\n', ' '), S(' ', ' '), S(' ', '}'), S('\n', ' '), S(' ', '}'), S('\n', '\n'), S('#', 'e'), S('l', 's'), S('e', '\n'), S('\n', ' '), S(' ', 'd'), S('e', 'c'), S('l', 'a'), S('r', 'e'), S(' ',
-  'c'), S('l', 'a'), S('s', 's'), S(' ', 'b'), S('o', 'o'), S('l', ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S('t', 'o'), S('S', 't'), S('r', 'i'), S('n', 'g'), S('(', ')'), S(':', ' '), S('s', 't'), S('r',
-  'i'), S('n', 'g'), S(';', '\n'), S(' ', ' '), S('}', '\n'), S('\n', ' '), S(' ', 'd'), S('e', 'c'), S('l', 'a'), S('r', 'e'), S(' ', 'c'), S('l', 'a'), S('s', 's'), S(' ', 's'), S('b', 'y'), S('t', 'e'), S(' ',
-  '{'), S('\n', ' '), S(' ', ' '), S(' ', 't'), S('o', 'S'), S('t', 'r'), S('i', 'n'), S('g', '('), S(')', ':'), S(' ', 's'), S('t', 'r'), S('i', 'n'), S('g', ';'), S('\n', ' '), S(' ', '}'), S('\n', '\n'), S(' ',
-  ' '), S('d', 'e'), S('c', 'l'), S('a', 'r'), S('e', ' '), S('c', 'l'), S('a', 's'), S('s', ' '), S('b', 'y'), S('t', 'e'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ', 't'), S('o', 'S'), S('t', 'r'), S('i',
-  'n'), S('g', '('), S(')', ':'), S(' ', 's'), S('t', 'r'), S('i', 'n'), S('g', ';'), S('\n', ' '), S(' ', '}'), S('\n', '\n'), S(' ', ' '), S('d', 'e'), S('c', 'l'), S('a', 'r'), S('e', ' '), S('c', 'l'), S('a',
-  's'), S('s', ' '), S('s', 'h'), S('o', 'r'), S('t', ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S('t', 'o'), S('S', 't'), S('r', 'i'), S('n', 'g'), S('(', ')'), S(':', ' '), S('s', 't'), S('r', 'i'), S('n',
-  'g'), S(';', '\n'), S(' ', ' '), S('}', '\n'), S('\n', ' '), S(' ', 'd'), S('e', 'c'), S('l', 'a'), S('r', 'e'), S(' ', 'c'), S('l', 'a'), S('s', 's'), S(' ', 'u'), S('s', 'h'), S('o', 'r'), S('t', ' '), S('{',
-  '\n'), S(' ', ' '), S(' ', ' '), S('t', 'o'), S('S', 't'), S('r', 'i'), S('n', 'g'), S('(', ')'), S(':', ' '), S('s', 't'), S('r', 'i'), S('n', 'g'), S(';', '\n'), S(' ', ' '), S('}', '\n'), S('\n', ' '), S(' ',
-  'd'), S('e', 'c'), S('l', 'a'), S('r', 'e'), S(' ', 'c'), S('l', 'a'), S('s', 's'), S(' ', 'i'), S('n', 't'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ', 't'), S('o', 'S'), S('t', 'r'), S('i', 'n'), S('g',
+  ' '), S(' ', ' '), S('i', 'f'), S(' ', '('), S('t', 'h'), S('i', 's'), S('L', 'e'), S('n', 'g'), S('t', 'h'), S(' ', '<'), S(' ', 't'), S('e', 'x'), S('t', 'L'), S('e', 'n'), S('g', 't'), S('h', ')'), S(' ',
+  'r'), S('e', 't'), S('u', 'r'), S('n', ' '), S('f', 'a'), S('l', 's'), S('e', ';'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'u'), S('n', 's'), S('a', 'f'), S('e', ' '), S('{', '\n'), S(' ', ' '), S(' ',
+  ' '), S(' ', ' '), S(' ', ' '), S('r', 'e'), S('t', 'u'), S('r', 'n'), S(' ', 'm'), S('e', 'm'), S('c', 'm'), S('p', '('), S('t', 'h'), S('i', 's'), S(' ', 'a'), S('s', ' '), S('*', 'b'), S('y', 't'), S('e',
+  ' '), S('+', ' '), S('4', ' '), S('+', ' '), S('(', 't'), S('h', 'i'), S('s', 'L'), S('e', 'n'), S('g', 't'), S('h', ' '), S('-', ' '), S('t', 'e'), S('x', 't'), S('L', 'e'), S('n', 'g'), S('t', 'h'), S(')',
+  ' '), S('*', ' '), S('2', ','), S(' ', 't'), S('e', 'x'), S('t', ' '), S('a', 's'), S(' ', '*'), S('b', 'y'), S('t', 'e'), S(' ', '+'), S(' ', '4'), S(',', ' '), S('t', 'e'), S('x', 't'), S('L', 'e'), S('n',
+  'g'), S('t', 'h'), S(' ', 'a'), S('s', ' '), S('u', 'i'), S('n', 't'), S(' ', '*'), S(' ', '2'), S(')', ' '), S('=', '='), S(' ', '0'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('}', '\n'), S(' ',
+  ' '), S(' ', ' '), S('}', '\n'), S('\n', ' '), S(' ', ' '), S(' ', 'i'), S('n', 'd'), S('e', 'x'), S('O', 'f'), S('(', 't'), S('e', 'x'), S('t', ':'), S(' ', 's'), S('t', 'r'), S('i', 'n'), S('g', ')'), S(':',
+  ' '), S('i', 'n'), S('t', ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('v', 'a'), S('r', ' '), S('t', 'h'), S('i', 's'), S('L', 'e'), S('n', 'g'), S('t', 'h'), S(' ', '='), S(' ', 't'), S('h',
+  'i'), S('s', '.'), S('l', 'e'), S('n', 'g'), S('t', 'h'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('v', 'a'), S('r', ' '), S('t', 'e'), S('x', 't'), S('L', 'e'), S('n', 'g'), S('t', 'h'), S(' ',
+  '='), S(' ', 't'), S('e', 'x'), S('t', '.'), S('l', 'e'), S('n', 'g'), S('t', 'h'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('i', 'f'), S(' ', '('), S('t', 'h'), S('i', 's'), S('L', 'e'), S('n',
+  'g'), S('t', 'h'), S(' ', '>'), S('=', ' '), S('t', 'e'), S('x', 't'), S('L', 'e'), S('n', 'g'), S('t', 'h'), S(')', ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('v', 'a'), S('r',
+  ' '), S('i', ' '), S('=', ' '), S('0', ';'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'w'), S('h', 'i'), S('l', 'e'), S(' ', '('), S('i', ' '), S('<', ' '), S('t', 'h'), S('i', 's'), S('L',
+  'e'), S('n', 'g'), S('t', 'h'), S(' ', '-'), S(' ', 't'), S('e', 'x'), S('t', 'L'), S('e', 'n'), S('g', 't'), S('h', ')'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ',
+  'u'), S('n', 's'), S('a', 'f'), S('e', ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('i', 'f'), S(' ', '('), S('m', 'e'), S('m', 'c'), S('m', 'p'), S('(',
+  't'), S('h', 'i'), S('s', ' '), S('a', 's'), S(' ', '*'), S('b', 'y'), S('t', 'e'), S(' ', '+'), S(' ', '4'), S(' ', '+'), S(' ', 'i'), S(' ', '*'), S(' ', '2'), S(',', ' '), S('t', 'e'), S('x', 't'), S(' ',
+  'a'), S('s', ' '), S('*', 'b'), S('y', 't'), S('e', ' '), S('+', ' '), S('4', ','), S(' ', 't'), S('e', 'x'), S('t', 'L'), S('e', 'n'), S('g', 't'), S('h', ' '), S('a', 's'), S(' ', 'u'), S('i', 'n'), S('t',
+  ' '), S('*', ' '), S('2', ')'), S(' ', '='), S('=', ' '), S('0', ')'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'r'), S('e', 't'), S('u',
+  'r'), S('n', ' '), S('i', ';'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', '}'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', '}'), S('\n',
+  ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'i'), S(' ', '='), S(' ', 'i'), S(' ', '+'), S(' ', '1'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('}', '\n'), S(' ',
+  ' '), S(' ', ' '), S(' ', ' '), S('}', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('r', 'e'), S('t', 'u'), S('r', 'n'), S(' ', '-'), S('1', ';'), S('\n', ' '), S(' ', ' '), S(' ', '}'), S('\n', '\n'), S(' ',
+  ' '), S(' ', ' '), S('l', 'a'), S('s', 't'), S('I', 'n'), S('d', 'e'), S('x', 'O'), S('f', '('), S('t', 'e'), S('x', 't'), S(':', ' '), S('s', 't'), S('r', 'i'), S('n', 'g'), S(')', ':'), S(' ', 'i'), S('n',
+  't'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'v'), S('a', 'r'), S(' ', 't'), S('h', 'i'), S('s', 'L'), S('e', 'n'), S('g', 't'), S('h', ' '), S('=', ' '), S('t', 'h'), S('i', 's'), S('.',
+  'l'), S('e', 'n'), S('g', 't'), S('h', ';'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'v'), S('a', 'r'), S(' ', 't'), S('e', 'x'), S('t', 'L'), S('e', 'n'), S('g', 't'), S('h', ' '), S('=', ' '), S('t',
+  'e'), S('x', 't'), S('.', 'l'), S('e', 'n'), S('g', 't'), S('h', ';'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'i'), S('f', ' '), S('(', 't'), S('h', 'i'), S('s', 'L'), S('e', 'n'), S('g', 't'), S('h',
+  ' '), S('>', '='), S(' ', 't'), S('e', 'x'), S('t', 'L'), S('e', 'n'), S('g', 't'), S('h', ')'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'v'), S('a', 'r'), S(' ', 'i'), S(' ',
+  '='), S(' ', 't'), S('h', 'i'), S('s', 'L'), S('e', 'n'), S('g', 't'), S('h', ' '), S('-', ' '), S('t', 'e'), S('x', 't'), S('L', 'e'), S('n', 'g'), S('t', 'h'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ',
+  ' '), S(' ', ' '), S('w', 'h'), S('i', 'l'), S('e', ' '), S('(', 'i'), S(' ', '>'), S('=', ' '), S('0', ')'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'u'), S('n',
+  's'), S('a', 'f'), S('e', ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('i', 'f'), S(' ', '('), S('m', 'e'), S('m', 'c'), S('m', 'p'), S('(', 't'), S('h',
+  'i'), S('s', ' '), S('a', 's'), S(' ', '*'), S('b', 'y'), S('t', 'e'), S(' ', '+'), S(' ', '4'), S(' ', '+'), S(' ', 'i'), S(' ', '*'), S(' ', '2'), S(',', ' '), S('t', 'e'), S('x', 't'), S(' ', 'a'), S('s',
+  ' '), S('*', 'b'), S('y', 't'), S('e', ' '), S('+', ' '), S('4', ','), S(' ', 't'), S('e', 'x'), S('t', 'L'), S('e', 'n'), S('g', 't'), S('h', ' '), S('a', 's'), S(' ', 'u'), S('i', 'n'), S('t', ' '), S('*',
+  ' '), S('2', ')'), S(' ', '='), S('=', ' '), S('0', ')'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'r'), S('e', 't'), S('u', 'r'), S('n',
+  ' '), S('i', ';'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', '}'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', '}'), S('\n', ' '), S(' ',
+  ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'i'), S(' ', '='), S(' ', 'i'), S(' ', '-'), S(' ', '1'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('}', '\n'), S(' ', ' '), S(' ',
+  ' '), S(' ', ' '), S('}', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('r', 'e'), S('t', 'u'), S('r', 'n'), S(' ', '-'), S('1', ';'), S('\n', ' '), S(' ', ' '), S(' ', '}'), S('\n', ' '), S(' ', '}'), S('\n',
+  '\n'), S('#', 'e'), S('l', 's'), S('e', '\n'), S('\n', ' '), S(' ', 'd'), S('e', 'c'), S('l', 'a'), S('r', 'e'), S(' ', 'c'), S('l', 'a'), S('s', 's'), S(' ', 'b'), S('o', 'o'), S('l', ' '), S('{', '\n'), S(' ',
+  ' '), S(' ', ' '), S('t', 'o'), S('S', 't'), S('r', 'i'), S('n', 'g'), S('(', ')'), S(':', ' '), S('s', 't'), S('r', 'i'), S('n', 'g'), S(';', '\n'), S(' ', ' '), S('}', '\n'), S('\n', ' '), S(' ', 'd'), S('e',
+  'c'), S('l', 'a'), S('r', 'e'), S(' ', 'c'), S('l', 'a'), S('s', 's'), S(' ', 's'), S('b', 'y'), S('t', 'e'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ', 't'), S('o', 'S'), S('t', 'r'), S('i', 'n'), S('g',
   '('), S(')', ':'), S(' ', 's'), S('t', 'r'), S('i', 'n'), S('g', ';'), S('\n', ' '), S(' ', '}'), S('\n', '\n'), S(' ', ' '), S('d', 'e'), S('c', 'l'), S('a', 'r'), S('e', ' '), S('c', 'l'), S('a', 's'), S('s',
-  ' '), S('u', 'i'), S('n', 't'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ', 't'), S('o', 'S'), S('t', 'r'), S('i', 'n'), S('g', '('), S(')', ':'), S(' ', 's'), S('t', 'r'), S('i', 'n'), S('g', ';'), S('\n',
-  ' '), S(' ', '}'), S('\n', '\n'), S(' ', ' '), S('d', 'e'), S('c', 'l'), S('a', 'r'), S('e', ' '), S('c', 'l'), S('a', 's'), S('s', ' '), S('s', 't'), S('r', 'i'), S('n', 'g'), S(' ', '{'), S('\n', ' '), S(' ',
-  ' '), S(' ', 'c'), S('h', 'a'), S('r', 'A'), S('t', '('), S('i', 'n'), S('d', 'e'), S('x', ':'), S(' ', 'i'), S('n', 't'), S(')', ':'), S(' ', 's'), S('t', 'r'), S('i', 'n'), S('g', ';'), S('\n', ' '), S(' ',
-  ' '), S(' ', 'c'), S('h', 'a'), S('r', 'C'), S('o', 'd'), S('e', 'A'), S('t', '('), S('i', 'n'), S('d', 'e'), S('x', ':'), S(' ', 'i'), S('n', 't'), S(')', ':'), S(' ', 'u'), S('s', 'h'), S('o', 'r'), S('t',
-  ';'), S('\n', ' '), S(' ', ' '), S(' ', 'g'), S('e', 't'), S(' ', 'l'), S('e', 'n'), S('g', 't'), S('h', '('), S(')', ':'), S(' ', 'i'), S('n', 't'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S('i', 'n'), S('d',
-  'e'), S('x', 'O'), S('f', '('), S('t', 'e'), S('x', 't'), S(':', ' '), S('s', 't'), S('r', 'i'), S('n', 'g'), S(')', ':'), S(' ', 'i'), S('n', 't'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S('l', 'a'), S('s',
-  't'), S('I', 'n'), S('d', 'e'), S('x', 'O'), S('f', '('), S('t', 'e'), S('x', 't'), S(':', ' '), S('s', 't'), S('r', 'i'), S('n', 'g'), S(')', ':'), S(' ', 'i'), S('n', 't'), S(';', '\n'), S(' ', ' '), S(' ',
-  ' '), S('o', 'p'), S('e', 'r'), S('a', 't'), S('o', 'r'), S(' ', '='), S('=', ' '), S('(', 'o'), S('t', 'h'), S('e', 'r'), S(':', ' '), S('s', 't'), S('r', 'i'), S('n', 'g'), S(')', ':'), S(' ', 'b'), S('o',
-  'o'), S('l', ';'), S('\n', ' '), S(' ', ' '), S(' ', 'o'), S('p', 'e'), S('r', 'a'), S('t', 'o'), S('r', ' '), S('[', ']'), S(' ', '('), S('i', 'n'), S('d', 'e'), S('x', ':'), S(' ', 'i'), S('n', 't'), S(')',
-  ':'), S(' ', 'u'), S('s', 'h'), S('o', 'r'), S('t', ' '), S('{', ' '), S('r', 'e'), S('t', 'u'), S('r', 'n'), S(' ', 't'), S('h', 'i'), S('s', '.'), S('c', 'h'), S('a', 'r'), S('C', 'o'), S('d', 'e'), S('A',
-  't'), S('(', 'i'), S('n', 'd'), S('e', 'x'), S(')', ';'), S(' ', '}'), S('\n', ' '), S(' ', ' '), S(' ', 's'), S('l', 'i'), S('c', 'e'), S('(', 's'), S('t', 'a'), S('r', 't'), S(':', ' '), S('i', 'n'), S('t',
-  ','), S(' ', 'e'), S('n', 'd'), S(':', ' '), S('i', 'n'), S('t', ')'), S(':', ' '), S('s', 't'), S('r', 'i'), S('n', 'g'), S(';', '\n'), S('\n', ' '), S(' ', ' '), S(' ', '#'), S('i', 'f'), S(' ', 'J'), S('S',
-  '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('s', 't'), S('a', 'r'), S('t', 's'), S('W', 'i'), S('t', 'h'), S('(', 't'), S('e', 'x'), S('t', ':'), S(' ', 's'), S('t', 'r'), S('i', 'n'), S('g', ')'), S(':',
-  ' '), S('b', 'o'), S('o', 'l'), S(' ', '{'), S(' ', 'r'), S('e', 't'), S('u', 'r'), S('n', ' '), S('t', 'h'), S('i', 's'), S('.', 's'), S('l', 'i'), S('c', 'e'), S('(', '0'), S(',', ' '), S('t', 'e'), S('x',
-  't'), S('.', 'l'), S('e', 'n'), S('g', 't'), S('h', ')'), S(' ', '='), S('=', ' '), S('t', 'e'), S('x', 't'), S(';', ' '), S('}', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('e', 'n'), S('d', 's'), S('W',
+  ' '), S('b', 'y'), S('t', 'e'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ', 't'), S('o', 'S'), S('t', 'r'), S('i', 'n'), S('g', '('), S(')', ':'), S(' ', 's'), S('t', 'r'), S('i', 'n'), S('g', ';'), S('\n',
+  ' '), S(' ', '}'), S('\n', '\n'), S(' ', ' '), S('d', 'e'), S('c', 'l'), S('a', 'r'), S('e', ' '), S('c', 'l'), S('a', 's'), S('s', ' '), S('s', 'h'), S('o', 'r'), S('t', ' '), S('{', '\n'), S(' ', ' '), S(' ',
+  ' '), S('t', 'o'), S('S', 't'), S('r', 'i'), S('n', 'g'), S('(', ')'), S(':', ' '), S('s', 't'), S('r', 'i'), S('n', 'g'), S(';', '\n'), S(' ', ' '), S('}', '\n'), S('\n', ' '), S(' ', 'd'), S('e', 'c'), S('l',
+  'a'), S('r', 'e'), S(' ', 'c'), S('l', 'a'), S('s', 's'), S(' ', 'u'), S('s', 'h'), S('o', 'r'), S('t', ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S('t', 'o'), S('S', 't'), S('r', 'i'), S('n', 'g'), S('(',
+  ')'), S(':', ' '), S('s', 't'), S('r', 'i'), S('n', 'g'), S(';', '\n'), S(' ', ' '), S('}', '\n'), S('\n', ' '), S(' ', 'd'), S('e', 'c'), S('l', 'a'), S('r', 'e'), S(' ', 'c'), S('l', 'a'), S('s', 's'), S(' ',
+  'i'), S('n', 't'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ', 't'), S('o', 'S'), S('t', 'r'), S('i', 'n'), S('g', '('), S(')', ':'), S(' ', 's'), S('t', 'r'), S('i', 'n'), S('g', ';'), S('\n', ' '), S(' ',
+  '}'), S('\n', '\n'), S(' ', ' '), S('d', 'e'), S('c', 'l'), S('a', 'r'), S('e', ' '), S('c', 'l'), S('a', 's'), S('s', ' '), S('u', 'i'), S('n', 't'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ', 't'), S('o',
+  'S'), S('t', 'r'), S('i', 'n'), S('g', '('), S(')', ':'), S(' ', 's'), S('t', 'r'), S('i', 'n'), S('g', ';'), S('\n', ' '), S(' ', '}'), S('\n', '\n'), S(' ', ' '), S('d', 'e'), S('c', 'l'), S('a', 'r'), S('e',
+  ' '), S('c', 'l'), S('a', 's'), S('s', ' '), S('s', 't'), S('r', 'i'), S('n', 'g'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ', 'c'), S('h', 'a'), S('r', 'A'), S('t', '('), S('i', 'n'), S('d', 'e'), S('x',
+  ':'), S(' ', 'i'), S('n', 't'), S(')', ':'), S(' ', 's'), S('t', 'r'), S('i', 'n'), S('g', ';'), S('\n', ' '), S(' ', ' '), S(' ', 'c'), S('h', 'a'), S('r', 'C'), S('o', 'd'), S('e', 'A'), S('t', '('), S('i',
+  'n'), S('d', 'e'), S('x', ':'), S(' ', 'i'), S('n', 't'), S(')', ':'), S(' ', 'u'), S('s', 'h'), S('o', 'r'), S('t', ';'), S('\n', ' '), S(' ', ' '), S(' ', 'g'), S('e', 't'), S(' ', 'l'), S('e', 'n'), S('g',
+  't'), S('h', '('), S(')', ':'), S(' ', 'i'), S('n', 't'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S('i', 'n'), S('d', 'e'), S('x', 'O'), S('f', '('), S('t', 'e'), S('x', 't'), S(':', ' '), S('s', 't'), S('r',
+  'i'), S('n', 'g'), S(')', ':'), S(' ', 'i'), S('n', 't'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S('l', 'a'), S('s', 't'), S('I', 'n'), S('d', 'e'), S('x', 'O'), S('f', '('), S('t', 'e'), S('x', 't'), S(':',
+  ' '), S('s', 't'), S('r', 'i'), S('n', 'g'), S(')', ':'), S(' ', 'i'), S('n', 't'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S('o', 'p'), S('e', 'r'), S('a', 't'), S('o', 'r'), S(' ', '='), S('=', ' '), S('(',
+  'o'), S('t', 'h'), S('e', 'r'), S(':', ' '), S('s', 't'), S('r', 'i'), S('n', 'g'), S(')', ':'), S(' ', 'b'), S('o', 'o'), S('l', ';'), S('\n', ' '), S(' ', ' '), S(' ', 'o'), S('p', 'e'), S('r', 'a'), S('t',
+  'o'), S('r', ' '), S('[', ']'), S(' ', '('), S('i', 'n'), S('d', 'e'), S('x', ':'), S(' ', 'i'), S('n', 't'), S(')', ':'), S(' ', 'u'), S('s', 'h'), S('o', 'r'), S('t', ' '), S('{', ' '), S('r', 'e'), S('t',
+  'u'), S('r', 'n'), S(' ', 't'), S('h', 'i'), S('s', '.'), S('c', 'h'), S('a', 'r'), S('C', 'o'), S('d', 'e'), S('A', 't'), S('(', 'i'), S('n', 'd'), S('e', 'x'), S(')', ';'), S(' ', '}'), S('\n', ' '), S(' ',
+  ' '), S(' ', 's'), S('l', 'i'), S('c', 'e'), S('(', 's'), S('t', 'a'), S('r', 't'), S(':', ' '), S('i', 'n'), S('t', ','), S(' ', 'e'), S('n', 'd'), S(':', ' '), S('i', 'n'), S('t', ')'), S(':', ' '), S('s',
+  't'), S('r', 'i'), S('n', 'g'), S(';', '\n'), S('\n', ' '), S(' ', ' '), S(' ', '#'), S('i', 'f'), S(' ', 'J'), S('S', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('s', 't'), S('a', 'r'), S('t', 's'), S('W',
   'i'), S('t', 'h'), S('(', 't'), S('e', 'x'), S('t', ':'), S(' ', 's'), S('t', 'r'), S('i', 'n'), S('g', ')'), S(':', ' '), S('b', 'o'), S('o', 'l'), S(' ', '{'), S(' ', 'r'), S('e', 't'), S('u', 'r'), S('n',
-  ' '), S('t', 'h'), S('i', 's'), S('.', 's'), S('l', 'i'), S('c', 'e'), S('(', '-'), S('t', 'e'), S('x', 't'), S('.', 'l'), S('e', 'n'), S('g', 't'), S('h', ','), S(' ', 't'), S('h', 'i'), S('s', '.'), S('l',
-  'e'), S('n', 'g'), S('t', 'h'), S(')', ' '), S('=', '='), S(' ', 't'), S('e', 'x'), S('t', ';'), S(' ', '}'), S('\n', ' '), S(' ', ' '), S(' ', '#'), S('e', 'l'), S('s', 'e'), S('\n', ' '), S(' ', ' '), S(' ',
-  ' '), S(' ', 's'), S('t', 'a'), S('r', 't'), S('s', 'W'), S('i', 't'), S('h', '('), S('t', 'e'), S('x', 't'), S(':', ' '), S('s', 't'), S('r', 'i'), S('n', 'g'), S(')', ':'), S(' ', 'b'), S('o', 'o'), S('l',
-  ';'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'e'), S('n', 'd'), S('s', 'W'), S('i', 't'), S('h', '('), S('t', 'e'), S('x', 't'), S(':', ' '), S('s', 't'), S('r', 'i'), S('n', 'g'), S(')', ':'), S(' ',
-  'b'), S('o', 'o'), S('l', ';'), S('\n', ' '), S(' ', ' '), S(' ', '#'), S('e', 'n'), S('d', 'i'), S('f', '\n'), S(' ', ' '), S('}', '\n'), S('\n', '#'), S('e', 'n'), S('d', 'i'), S('f', '\n'), S('\n', '#'), S('i',
-  'f'), S(' ', 'C'), S('\n', '\n'), S(' ', ' '), S('e', 'x'), S('t', 'e'), S('r', 'n'), S(' ', 'u'), S('n', 's'), S('a', 'f'), S('e', ' '), S('f', 'u'), S('n', 'c'), S('t', 'i'), S('o', 'n'), S(' ', 'c'), S('s',
-  't'), S('r', 'i'), S('n', 'g'), S('_', 't'), S('o', '_'), S('u', 't'), S('f', '1'), S('6', '('), S('u', 't'), S('f', '8'), S(':', ' '), S('*', 'b'), S('y', 't'), S('e', ')'), S(':', ' '), S('s', 't'), S('r',
-  'i'), S('n', 'g'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ', 'i'), S('f', ' '), S('(', 'u'), S('t', 'f'), S('8', ' '), S('=', '='), S(' ', 'n'), S('u', 'l'), S('l', ')'), S(' ', '{'), S('\n', ' '), S(' ',
-  ' '), S(' ', ' '), S(' ', 'r'), S('e', 't'), S('u', 'r'), S('n', ' '), S('n', 'u'), S('l', 'l'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S('}', '\n'), S('\n', ' '), S(' ', ' '), S(' ', 'v'), S('a', 'r'), S(' ',
-  'u'), S('t', 'f'), S('1', '6'), S('_', 'l'), S('e', 'n'), S('g', 't'), S('h', ':'), S(' ', 'u'), S('i', 'n'), S('t', ' '), S('=', ' '), S('0', ';'), S('\n', ' '), S(' ', ' '), S(' ', 'v'), S('a', 'r'), S(' ',
-  'a'), S(':', ' '), S('b', 'y'), S('t', 'e'), S(',', ' '), S('b', ':'), S(' ', 'b'), S('y', 't'), S('e', ','), S(' ', 'c'), S(':', ' '), S('b', 'y'), S('t', 'e'), S(',', ' '), S('d', ':'), S(' ', 'b'), S('y',
-  't'), S('e', ';'), S('\n', '\n'), S(' ', ' '), S(' ', ' '), S('/', '/'), S(' ', 'M'), S('e', 'a'), S('s', 'u'), S('r', 'e'), S(' ', 't'), S('e', 'x'), S('t', '\n'), S(' ', ' '), S(' ', ' '), S('v', 'a'), S('r',
-  ' '), S('i', ':'), S(' ', 'u'), S('i', 'n'), S('t', ' '), S('=', ' '), S('0', ';'), S('\n', ' '), S(' ', ' '), S(' ', 'w'), S('h', 'i'), S('l', 'e'), S(' ', '('), S('(', 'a'), S(' ', '='), S(' ', '*'), S('(',
-  'u'), S('t', 'f'), S('8', ' '), S('+', ' '), S('i', ')'), S(')', ' '), S('!', '='), S(' ', '\''), S('\\', '0'), S('\'', ')'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'i'), S(' ', '='), S(' ',
-  'i'), S(' ', '+'), S(' ', '1'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('v', 'a'), S('r', ' '), S('c', 'o'), S('d', 'e'), S('P', 'o'), S('i', 'n'), S('t', ':'), S(' ', 'u'), S('i', 'n'), S('t',
-  ';'), S('\n', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('/', '/'), S(' ', 'D'), S('e', 'c'), S('o', 'd'), S('e', ' '), S('U', 'T'), S('F', '-'), S('8', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('i',
-  'f'), S(' ', '('), S('(', 'b'), S(' ', '='), S(' ', '*'), S('(', 'u'), S('t', 'f'), S('8', ' '), S('+', ' '), S('i', ')'), S(')', ' '), S('!', '='), S(' ', '\''), S('\\', '0'), S('\'', ' '), S('&', '&'), S(' ',
-  'a'), S(' ', '>'), S('=', ' '), S('0', 'x'), S('C', '0'), S(')', ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('i', ' '), S('=', ' '), S('i', ' '), S('+', ' '), S('1', ';'), S('\n',
-  ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'i'), S('f', ' '), S('(', '('), S('c', ' '), S('=', ' '), S('*', '('), S('u', 't'), S('f', '8'), S(' ', '+'), S(' ', 'i'), S(')', ')'), S(' ', '!'), S('=',
-  ' '), S('\'', '\\'), S('0', '\''), S(' ', '&'), S('&', ' '), S('a', ' '), S('>', '='), S(' ', '0'), S('x', 'E'), S('0', ')'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ',
-  'i'), S(' ', '='), S(' ', 'i'), S(' ', '+'), S(' ', '1'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('i', 'f'), S(' ', '('), S('(', 'd'), S(' ', '='), S(' ', '*'), S('(',
-  'u'), S('t', 'f'), S('8', ' '), S('+', ' '), S('i', ')'), S(')', ' '), S('!', '='), S(' ', '\''), S('\\', '0'), S('\'', ' '), S('&', '&'), S(' ', 'a'), S(' ', '>'), S('=', ' '), S('0', 'x'), S('F', '0'), S(')',
-  ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('i', ' '), S('=', ' '), S('i', ' '), S('+', ' '), S('1', ';'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ',
-  ' '), S(' ', ' '), S(' ', ' '), S(' ', 'c'), S('o', 'd'), S('e', 'P'), S('o', 'i'), S('n', 't'), S(' ', '='), S(' ', '('), S('(', 'a'), S(' ', '&'), S(' ', '0'), S('x', '0'), S('7', ')'), S(' ', '<'), S('<',
-  ' '), S('1', '8'), S(')', ' '), S('|', ' '), S('(', '('), S('b', ' '), S('&', ' '), S('0', 'x'), S('3', 'F'), S(')', ' '), S('<', '<'), S(' ', '1'), S('2', ')'), S(' ', '|'), S(' ', '('), S('(', 'c'), S(' ',
-  '&'), S(' ', '0'), S('x', '3'), S('F', ')'), S(' ', '<'), S('<', ' '), S('6', ')'), S(' ', '|'), S(' ', '('), S('d', ' '), S('&', ' '), S('0', 'x'), S('3', 'F'), S(')', ';'), S('\n', ' '), S(' ', ' '), S(' ',
-  ' '), S(' ', ' '), S(' ', ' '), S(' ', '}'), S(' ', 'e'), S('l', 's'), S('e', ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('c', 'o'), S('d', 'e'), S('P',
-  'o'), S('i', 'n'), S('t', ' '), S('=', ' '), S('(', '('), S('a', ' '), S('&', ' '), S('0', 'x'), S('0', 'F'), S(')', ' '), S('<', '<'), S(' ', '1'), S('2', ')'), S(' ', '|'), S(' ', '('), S('(', 'b'), S(' ',
-  '&'), S(' ', '0'), S('x', '3'), S('F', ')'), S(' ', '<'), S('<', ' '), S('6', ')'), S(' ', '|'), S(' ', '('), S('c', ' '), S('&', ' '), S('0', 'x'), S('3', 'F'), S(')', ';'), S('\n', ' '), S(' ', ' '), S(' ',
-  ' '), S(' ', ' '), S(' ', ' '), S(' ', '}'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', '}'), S(' ', 'e'), S('l', 's'), S('e', ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ',
-  ' '), S(' ', ' '), S('c', 'o'), S('d', 'e'), S('P', 'o'), S('i', 'n'), S('t', ' '), S('=', ' '), S('(', '('), S('a', ' '), S('&', ' '), S('0', 'x'), S('1', 'F'), S(')', ' '), S('<', '<'), S(' ', '6'), S(')',
-  ' '), S('|', ' '), S('(', 'b'), S(' ', '&'), S(' ', '0'), S('x', '3'), S('F', ')'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('}', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('}',
-  ' '), S('e', 'l'), S('s', 'e'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'c'), S('o', 'd'), S('e', 'P'), S('o', 'i'), S('n', 't'), S(' ', '='), S(' ', 'a'), S(';', '\n'), S(' ',
-  ' '), S(' ', ' '), S(' ', ' '), S('}', '\n'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', '/'), S('/', ' '), S('E', 'n'), S('c', 'o'), S('d', 'e'), S(' ', 'U'), S('T', 'F'), S('-', '1'), S('6', '\n'), S(' ',
-  ' '), S(' ', ' '), S(' ', ' '), S('u', 't'), S('f', '1'), S('6', '_'), S('l', 'e'), S('n', 'g'), S('t', 'h'), S(' ', '='), S(' ', 'u'), S('t', 'f'), S('1', '6'), S('_', 'l'), S('e', 'n'), S('g', 't'), S('h',
-  ' '), S('+', ' '), S('(', 'c'), S('o', 'd'), S('e', 'P'), S('o', 'i'), S('n', 't'), S(' ', '<'), S(' ', '0'), S('x', '1'), S('0', '0'), S('0', '0'), S(' ', '?'), S(' ', '1'), S(' ', ':'), S(' ', '2'), S(')',
-  ' '), S('a', 's'), S(' ', 'u'), S('i', 'n'), S('t', ';'), S('\n', ' '), S(' ', ' '), S(' ', '}'), S('\n', '\n'), S(' ', ' '), S(' ', ' '), S('v', 'a'), S('r', ' '), S('o', 'u'), S('t', 'p'), S('u', 't'), S(' ',
-  '='), S(' ', 's'), S('t', 'r'), S('i', 'n'), S('g', '_'), S('n', 'e'), S('w', '('), S('u', 't'), S('f', '1'), S('6', '_'), S('l', 'e'), S('n', 'g'), S('t', 'h'), S(')', ';'), S('\n', ' '), S(' ', ' '), S(' ',
-  'v'), S('a', 'r'), S(' ', 'u'), S('t', 'f'), S('1', '6'), S(' ', '='), S(' ', 'o'), S('u', 't'), S('p', 'u'), S('t', ' '), S('a', 's'), S(' ', '*'), S('u', 's'), S('h', 'o'), S('r', 't'), S(' ', '+'), S(' ',
-  '2'), S(';', '\n'), S('\n', ' '), S(' ', ' '), S(' ', '/'), S('/', ' '), S('C', 'o'), S('n', 'v'), S('e', 'r'), S('t', ' '), S('t', 'e'), S('x', 't'), S('\n', ' '), S(' ', ' '), S(' ', 'i'), S(' ', '='), S(' ',
-  '0'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S('w', 'h'), S('i', 'l'), S('e', ' '), S('(', '('), S('a', ' '), S('=', ' '), S('*', '('), S('u', 't'), S('f', '8'), S(' ', '+'), S(' ', 'i'), S(')', ')'), S(' ',
-  '!'), S('=', ' '), S('\'', '\\'), S('0', '\''), S(')', ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('i', ' '), S('=', ' '), S('i', ' '), S('+', ' '), S('1', ';'), S('\n', ' '), S(' ', ' '), S(' ',
-  ' '), S(' ', 'v'), S('a', 'r'), S(' ', 'c'), S('o', 'd'), S('e', 'P'), S('o', 'i'), S('n', 't'), S(':', ' '), S('u', 'i'), S('n', 't'), S(';', '\n'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', '/'), S('/',
-  ' '), S('D', 'e'), S('c', 'o'), S('d', 'e'), S(' ', 'U'), S('T', 'F'), S('-', '8'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'i'), S('f', ' '), S('(', '('), S('b', ' '), S('=', ' '), S('*', '('), S('u',
-  't'), S('f', '8'), S(' ', '+'), S(' ', 'i'), S(')', ')'), S(' ', '!'), S('=', ' '), S('\'', '\\'), S('0', '\''), S(' ', '&'), S('&', ' '), S('a', ' '), S('>', '='), S(' ', '0'), S('x', 'C'), S('0', ')'), S(' ',
-  '{'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'i'), S(' ', '='), S(' ', 'i'), S(' ', '+'), S(' ', '1'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('i', 'f'), S(' ',
-  '('), S('(', 'c'), S(' ', '='), S(' ', '*'), S('(', 'u'), S('t', 'f'), S('8', ' '), S('+', ' '), S('i', ')'), S(')', ' '), S('!', '='), S(' ', '\''), S('\\', '0'), S('\'', ' '), S('&', '&'), S(' ', 'a'), S(' ',
-  '>'), S('=', ' '), S('0', 'x'), S('E', '0'), S(')', ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('i', ' '), S('=', ' '), S('i', ' '), S('+', ' '), S('1', ';'), S('\n',
-  ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'i'), S('f', ' '), S('(', '('), S('d', ' '), S('=', ' '), S('*', '('), S('u', 't'), S('f', '8'), S(' ', '+'), S(' ', 'i'), S(')', ')'), S(' ',
-  '!'), S('=', ' '), S('\'', '\\'), S('0', '\''), S(' ', '&'), S('&', ' '), S('a', ' '), S('>', '='), S(' ', '0'), S('x', 'F'), S('0', ')'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ',
-  ' '), S(' ', ' '), S(' ', 'i'), S(' ', '='), S(' ', 'i'), S(' ', '+'), S(' ', '1'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('c', 'o'), S('d', 'e'), S('P',
-  'o'), S('i', 'n'), S('t', ' '), S('=', ' '), S('(', '('), S('a', ' '), S('&', ' '), S('0', 'x'), S('0', '7'), S(')', ' '), S('<', '<'), S(' ', '1'), S('8', ')'), S(' ', '|'), S(' ', '('), S('(', 'b'), S(' ',
-  '&'), S(' ', '0'), S('x', '3'), S('F', ')'), S(' ', '<'), S('<', ' '), S('1', '2'), S(')', ' '), S('|', ' '), S('(', '('), S('c', ' '), S('&', ' '), S('0', 'x'), S('3', 'F'), S(')', ' '), S('<', '<'), S(' ',
-  '6'), S(')', ' '), S('|', ' '), S('(', 'd'), S(' ', '&'), S(' ', '0'), S('x', '3'), S('F', ')'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('}', ' '), S('e', 'l'), S('s',
-  'e'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'c'), S('o', 'd'), S('e', 'P'), S('o', 'i'), S('n', 't'), S(' ', '='), S(' ', '('), S('(', 'a'), S(' ',
-  '&'), S(' ', '0'), S('x', '0'), S('F', ')'), S(' ', '<'), S('<', ' '), S('1', '2'), S(')', ' '), S('|', ' '), S('(', '('), S('b', ' '), S('&', ' '), S('0', 'x'), S('3', 'F'), S(')', ' '), S('<', '<'), S(' ',
-  '6'), S(')', ' '), S('|', ' '), S('(', 'c'), S(' ', '&'), S(' ', '0'), S('x', '3'), S('F', ')'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('}', '\n'), S(' ', ' '), S(' ',
-  ' '), S(' ', ' '), S(' ', ' '), S('}', ' '), S('e', 'l'), S('s', 'e'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'c'), S('o', 'd'), S('e', 'P'), S('o', 'i'), S('n',
-  't'), S(' ', '='), S(' ', '('), S('(', 'a'), S(' ', '&'), S(' ', '0'), S('x', '1'), S('F', ')'), S(' ', '<'), S('<', ' '), S('6', ')'), S(' ', '|'), S(' ', '('), S('b', ' '), S('&', ' '), S('0', 'x'), S('3',
-  'F'), S(')', ';'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', '}'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', '}'), S(' ', 'e'), S('l', 's'), S('e', ' '), S('{', '\n'), S(' ', ' '), S(' ',
-  ' '), S(' ', ' '), S(' ', ' '), S('c', 'o'), S('d', 'e'), S('P', 'o'), S('i', 'n'), S('t', ' '), S('=', ' '), S('a', ';'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', '}'), S('\n', '\n'), S(' ', ' '), S(' ',
-  ' '), S(' ', ' '), S('/', '/'), S(' ', 'E'), S('n', 'c'), S('o', 'd'), S('e', ' '), S('U', 'T'), S('F', '-'), S('1', '6'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'i'), S('f', ' '), S('(', 'c'), S('o',
-  'd'), S('e', 'P'), S('o', 'i'), S('n', 't'), S(' ', '<'), S(' ', '0'), S('x', '1'), S('0', '0'), S('0', '0'), S(')', ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('*', 'u'), S('t',
-  'f'), S('1', '6'), S(' ', '='), S(' ', 'c'), S('o', 'd'), S('e', 'P'), S('o', 'i'), S('n', 't'), S(' ', 'a'), S('s', ' '), S('u', 's'), S('h', 'o'), S('r', 't'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ',
-  ' '), S('}', ' '), S('e', 'l'), S('s', 'e'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', '*'), S('u', 't'), S('f', '1'), S('6', ' '), S('=', ' '), S('(', '('), S('c', 'o'), S('d',
-  'e'), S('P', 'o'), S('i', 'n'), S('t', ' '), S('>', '>'), S(' ', '1'), S('0', ')'), S(' ', '+'), S(' ', '('), S('0', 'x'), S('D', '8'), S('0', '0'), S(' ', '-'), S(' ', '('), S('0', 'x'), S('1', '0'), S('0',
-  '0'), S('0', ' '), S('>', '>'), S(' ', '1'), S('0', ')'), S(')', ')'), S(' ', 'a'), S('s', ' '), S('u', 's'), S('h', 'o'), S('r', 't'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('u',
-  't'), S('f', '1'), S('6', ' '), S('=', ' '), S('u', 't'), S('f', '1'), S('6', ' '), S('+', ' '), S('1', ';'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', '*'), S('u', 't'), S('f', '1'), S('6',
-  ' '), S('=', ' '), S('(', '('), S('c', 'o'), S('d', 'e'), S('P', 'o'), S('i', 'n'), S('t', ' '), S('&', ' '), S('0', 'x'), S('3', 'F'), S('F', ')'), S(' ', '+'), S(' ', '0'), S('x', 'D'), S('C', '0'), S('0',
-  ')'), S(' ', 'a'), S('s', ' '), S('u', 's'), S('h', 'o'), S('r', 't'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('}', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('u', 't'), S('f', '1'), S('6',
-  ' '), S('=', ' '), S('u', 't'), S('f', '1'), S('6', ' '), S('+', ' '), S('1', ';'), S('\n', ' '), S(' ', ' '), S(' ', '}'), S('\n', '\n'), S(' ', ' '), S(' ', ' '), S('r', 'e'), S('t', 'u'), S('r', 'n'), S(' ',
-  'o'), S('u', 't'), S('p', 'u'), S('t', ';'), S('\n', ' '), S(' ', '}'), S('\n', '\n'), S(' ', ' '), S('e', 'x'), S('t', 'e'), S('r', 'n'), S(' ', 'u'), S('n', 's'), S('a', 'f'), S('e', ' '), S('f', 'u'), S('n',
-  'c'), S('t', 'i'), S('o', 'n'), S(' ', 'u'), S('t', 'f'), S('1', '6'), S('_', 't'), S('o', '_'), S('c', 's'), S('t', 'r'), S('i', 'n'), S('g', '('), S('i', 'n'), S('p', 'u'), S('t', ':'), S(' ', 's'), S('t',
-  'r'), S('i', 'n'), S('g', ')'), S(':', ' '), S('*', 'b'), S('y', 't'), S('e', ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S('i', 'f'), S(' ', '('), S('i', 'n'), S('p', 'u'), S('t', ' '), S('a', 's'), S(' ',
-  '*'), S('u', 'i'), S('n', 't'), S(' ', '='), S('=', ' '), S('n', 'u'), S('l', 'l'), S(')', ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('r', 'e'), S('t', 'u'), S('r', 'n'), S(' ', 'n'), S('u',
-  'l'), S('l', ';'), S('\n', ' '), S(' ', ' '), S(' ', '}'), S('\n', '\n'), S(' ', ' '), S(' ', ' '), S('v', 'a'), S('r', ' '), S('u', 't'), S('f', '1'), S('6', '_'), S('l', 'e'), S('n', 'g'), S('t', 'h'), S(' ',
-  '='), S(' ', '*'), S('(', 'i'), S('n', 'p'), S('u', 't'), S(' ', 'a'), S('s', ' '), S('*', 'u'), S('i', 'n'), S('t', ')'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S('v', 'a'), S('r', ' '), S('u', 't'), S('f',
-  '8'), S('_', 'l'), S('e', 'n'), S('g', 't'), S('h', ':'), S(' ', 'u'), S('i', 'n'), S('t', ' '), S('=', ' '), S('0', ';'), S('\n', ' '), S(' ', ' '), S(' ', 'v'), S('a', 'r'), S(' ', 'u'), S('t', 'f'), S('1',
-  '6'), S(' ', '='), S(' ', 'i'), S('n', 'p'), S('u', 't'), S(' ', 'a'), S('s', ' '), S('*', 'u'), S('s', 'h'), S('o', 'r'), S('t', ' '), S('+', ' '), S('2', ';'), S('\n', '\n'), S(' ', ' '), S(' ', ' '), S('/',
-  '/'), S(' ', 'M'), S('e', 'a'), S('s', 'u'), S('r', 'e'), S(' ', 't'), S('e', 'x'), S('t', '\n'), S(' ', ' '), S(' ', ' '), S('v', 'a'), S('r', ' '), S('i', ':'), S(' ', 'u'), S('i', 'n'), S('t', ' '), S('=',
-  ' '), S('0', ';'), S('\n', ' '), S(' ', ' '), S(' ', 'w'), S('h', 'i'), S('l', 'e'), S(' ', '('), S('i', ' '), S('<', ' '), S('u', 't'), S('f', '1'), S('6', '_'), S('l', 'e'), S('n', 'g'), S('t', 'h'), S(')',
-  ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('v', 'a'), S('r', ' '), S('c', 'o'), S('d', 'e'), S('P', 'o'), S('i', 'n'), S('t', ':'), S(' ', 'u'), S('i', 'n'), S('t', ';'), S('\n', '\n'), S(' ',
-  ' '), S(' ', ' '), S(' ', ' '), S('/', '/'), S(' ', 'D'), S('e', 'c'), S('o', 'd'), S('e', ' '), S('U', 'T'), S('F', '-'), S('1', '6'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'v'), S('a', 'r'), S(' ',
-  'a'), S(' ', '='), S(' ', '*'), S('(', 'u'), S('t', 'f'), S('1', '6'), S(' ', '+'), S(' ', 'i'), S(')', ';'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'i'), S(' ', '='), S(' ', 'i'), S(' ', '+'), S(' ',
-  '1'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('i', 'f'), S(' ', '('), S('i', ' '), S('<', ' '), S('u', 't'), S('f', '1'), S('6', '_'), S('l', 'e'), S('n', 'g'), S('t', 'h'), S(' ', '&'), S('&',
-  ' '), S('a', ' '), S('>', '='), S(' ', '0'), S('x', 'D'), S('8', '0'), S('0', ' '), S('&', '&'), S(' ', 'a'), S(' ', '<'), S('=', ' '), S('0', 'x'), S('D', 'B'), S('F', 'F'), S(')', ' '), S('{', '\n'), S(' ',
-  ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('v', 'a'), S('r', ' '), S('b', ' '), S('=', ' '), S('*', '('), S('u', 't'), S('f', '1'), S('6', ' '), S('+', ' '), S('i', ')'), S(';', '\n'), S(' ', ' '), S(' ',
-  ' '), S(' ', ' '), S(' ', ' '), S('i', ' '), S('=', ' '), S('i', ' '), S('+', ' '), S('1', ';'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'c'), S('o', 'd'), S('e', 'P'), S('o', 'i'), S('n',
-  't'), S(' ', '='), S(' ', '('), S('a', ' '), S('<', '<'), S(' ', '1'), S('0', ')'), S(' ', '+'), S(' ', 'b'), S(' ', '+'), S(' ', '('), S('0', 'x'), S('1', '0'), S('0', '0'), S('0', ' '), S('-', ' '), S('(',
-  '0'), S('x', 'D'), S('8', '0'), S('0', ' '), S('<', '<'), S(' ', '1'), S('0', ')'), S(' ', '-'), S(' ', '0'), S('x', 'D'), S('C', '0'), S('0', ')'), S(' ', 'a'), S('s', ' '), S('u', 'i'), S('n', 't'), S(';',
-  '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('}', ' '), S('e', 'l'), S('s', 'e'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'c'), S('o', 'd'), S('e', 'P'), S('o', 'i'), S('n',
-  't'), S(' ', '='), S(' ', 'a'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('}', '\n'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', '/'), S('/', ' '), S('E', 'n'), S('c', 'o'), S('d', 'e'), S(' ',
-  'U'), S('T', 'F'), S('-', '8'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'u'), S('t', 'f'), S('8', '_'), S('l', 'e'), S('n', 'g'), S('t', 'h'), S(' ', '='), S(' ', 'u'), S('t', 'f'), S('8', '_'), S('l',
-  'e'), S('n', 'g'), S('t', 'h'), S(' ', '+'), S(' ', '('), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'c'), S('o', 'd'), S('e', 'P'), S('o', 'i'), S('n', 't'), S(' ', '<'), S(' ', '0'), S('x',
-  '8'), S('0', ' '), S('?', ' '), S('1', ' '), S(':', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('c', 'o'), S('d', 'e'), S('P', 'o'), S('i', 'n'), S('t', ' '), S('<', ' '), S('0', 'x'), S('8',
-  '0'), S('0', ' '), S('?', ' '), S('2', ' '), S(':', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('c', 'o'), S('d', 'e'), S('P', 'o'), S('i', 'n'), S('t', ' '), S('<', ' '), S('0', 'x'), S('1',
-  '0'), S('0', '0'), S('0', ' '), S('?', ' '), S('3', ' '), S(':', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('4', ')'), S(' ', 'a'), S('s', ' '), S('u', 'i'), S('n', 't'), S(';', '\n'), S(' ',
-  ' '), S(' ', ' '), S('}', '\n'), S('\n', ' '), S(' ', ' '), S(' ', 'v'), S('a', 'r'), S(' ', 'u'), S('t', 'f'), S('8', ' '), S('=', ' '), S('m', 'a'), S('l', 'l'), S('o', 'c'), S('(', 'u'), S('t', 'f'), S('8',
-  '_'), S('l', 'e'), S('n', 'g'), S('t', 'h'), S(' ', '+'), S(' ', '1'), S(')', ';'), S('\n', ' '), S(' ', ' '), S(' ', 'v'), S('a', 'r'), S(' ', 'n'), S('e', 'x'), S('t', ' '), S('=', ' '), S('u', 't'), S('f',
-  '8'), S(';', '\n'), S('\n', ' '), S(' ', ' '), S(' ', '/'), S('/', ' '), S('C', 'o'), S('n', 'v'), S('e', 'r'), S('t', ' '), S('t', 'e'), S('x', 't'), S('\n', ' '), S(' ', ' '), S(' ', 'i'), S(' ', '='), S(' ',
-  '0'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S('w', 'h'), S('i', 'l'), S('e', ' '), S('(', 'i'), S(' ', '<'), S(' ', 'u'), S('t', 'f'), S('1', '6'), S('_', 'l'), S('e', 'n'), S('g', 't'), S('h', ')'), S(' ',
-  '{'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'v'), S('a', 'r'), S(' ', 'c'), S('o', 'd'), S('e', 'P'), S('o', 'i'), S('n', 't'), S(':', ' '), S('u', 'i'), S('n', 't'), S(';', '\n'), S('\n', ' '), S(' ',
-  ' '), S(' ', ' '), S(' ', '/'), S('/', ' '), S('D', 'e'), S('c', 'o'), S('d', 'e'), S(' ', 'U'), S('T', 'F'), S('-', '1'), S('6', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('v', 'a'), S('r', ' '), S('a',
-  ' '), S('=', ' '), S('*', '('), S('u', 't'), S('f', '1'), S('6', ' '), S('+', ' '), S('i', ')'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('i', ' '), S('=', ' '), S('i', ' '), S('+', ' '), S('1',
-  ';'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'i'), S('f', ' '), S('(', 'i'), S(' ', '<'), S(' ', 'u'), S('t', 'f'), S('1', '6'), S('_', 'l'), S('e', 'n'), S('g', 't'), S('h', ' '), S('&', '&'), S(' ',
-  'a'), S(' ', '>'), S('=', ' '), S('0', 'x'), S('D', '8'), S('0', '0'), S(' ', '&'), S('&', ' '), S('a', ' '), S('<', '='), S(' ', '0'), S('x', 'D'), S('B', 'F'), S('F', ')'), S(' ', '{'), S('\n', ' '), S(' ',
-  ' '), S(' ', ' '), S(' ', ' '), S(' ', 'v'), S('a', 'r'), S(' ', 'b'), S(' ', '='), S(' ', '*'), S('(', 'u'), S('t', 'f'), S('1', '6'), S(' ', '+'), S(' ', 'i'), S(')', ';'), S('\n', ' '), S(' ', ' '), S(' ',
-  ' '), S(' ', ' '), S(' ', 'i'), S(' ', '='), S(' ', 'i'), S(' ', '+'), S(' ', '1'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('c', 'o'), S('d', 'e'), S('P', 'o'), S('i', 'n'), S('t',
-  ' '), S('=', ' '), S('(', 'a'), S(' ', '<'), S('<', ' '), S('1', '0'), S(')', ' '), S('+', ' '), S('b', ' '), S('+', ' '), S('(', '0'), S('x', '1'), S('0', '0'), S('0', '0'), S(' ', '-'), S(' ', '('), S('0',
-  'x'), S('D', '8'), S('0', '0'), S(' ', '<'), S('<', ' '), S('1', '0'), S(')', ' '), S('-', ' '), S('0', 'x'), S('D', 'C'), S('0', '0'), S(')', ' '), S('a', 's'), S(' ', 'u'), S('i', 'n'), S('t', ';'), S('\n',
+  ' '), S('t', 'h'), S('i', 's'), S('.', 's'), S('l', 'i'), S('c', 'e'), S('(', '0'), S(',', ' '), S('t', 'e'), S('x', 't'), S('.', 'l'), S('e', 'n'), S('g', 't'), S('h', ')'), S(' ', '='), S('=', ' '), S('t',
+  'e'), S('x', 't'), S(';', ' '), S('}', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('e', 'n'), S('d', 's'), S('W', 'i'), S('t', 'h'), S('(', 't'), S('e', 'x'), S('t', ':'), S(' ', 's'), S('t', 'r'), S('i',
+  'n'), S('g', ')'), S(':', ' '), S('b', 'o'), S('o', 'l'), S(' ', '{'), S(' ', 'r'), S('e', 't'), S('u', 'r'), S('n', ' '), S('t', 'h'), S('i', 's'), S('.', 's'), S('l', 'i'), S('c', 'e'), S('(', '-'), S('t',
+  'e'), S('x', 't'), S('.', 'l'), S('e', 'n'), S('g', 't'), S('h', ','), S(' ', 't'), S('h', 'i'), S('s', '.'), S('l', 'e'), S('n', 'g'), S('t', 'h'), S(')', ' '), S('=', '='), S(' ', 't'), S('e', 'x'), S('t',
+  ';'), S(' ', '}'), S('\n', ' '), S(' ', ' '), S(' ', '#'), S('e', 'l'), S('s', 'e'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', 's'), S('t', 'a'), S('r', 't'), S('s', 'W'), S('i', 't'), S('h', '('), S('t',
+  'e'), S('x', 't'), S(':', ' '), S('s', 't'), S('r', 'i'), S('n', 'g'), S(')', ':'), S(' ', 'b'), S('o', 'o'), S('l', ';'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'e'), S('n', 'd'), S('s', 'W'), S('i',
+  't'), S('h', '('), S('t', 'e'), S('x', 't'), S(':', ' '), S('s', 't'), S('r', 'i'), S('n', 'g'), S(')', ':'), S(' ', 'b'), S('o', 'o'), S('l', ';'), S('\n', ' '), S(' ', ' '), S(' ', '#'), S('e', 'n'), S('d',
+  'i'), S('f', '\n'), S(' ', ' '), S('}', '\n'), S('\n', '#'), S('e', 'n'), S('d', 'i'), S('f', '\n'), S('\n', '#'), S('i', 'f'), S(' ', 'C'), S('\n', '\n'), S(' ', ' '), S('e', 'x'), S('t', 'e'), S('r', 'n'), S(' ',
+  'u'), S('n', 's'), S('a', 'f'), S('e', ' '), S('f', 'u'), S('n', 'c'), S('t', 'i'), S('o', 'n'), S(' ', 'c'), S('s', 't'), S('r', 'i'), S('n', 'g'), S('_', 't'), S('o', '_'), S('u', 't'), S('f', '1'), S('6',
+  '('), S('u', 't'), S('f', '8'), S(':', ' '), S('*', 'b'), S('y', 't'), S('e', ')'), S(':', ' '), S('s', 't'), S('r', 'i'), S('n', 'g'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ', 'i'), S('f', ' '), S('(',
+  'u'), S('t', 'f'), S('8', ' '), S('=', '='), S(' ', 'n'), S('u', 'l'), S('l', ')'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'r'), S('e', 't'), S('u', 'r'), S('n', ' '), S('n', 'u'), S('l',
+  'l'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S('}', '\n'), S('\n', ' '), S(' ', ' '), S(' ', 'v'), S('a', 'r'), S(' ', 'u'), S('t', 'f'), S('1', '6'), S('_', 'l'), S('e', 'n'), S('g', 't'), S('h', ':'), S(' ',
+  'u'), S('i', 'n'), S('t', ' '), S('=', ' '), S('0', ';'), S('\n', ' '), S(' ', ' '), S(' ', 'v'), S('a', 'r'), S(' ', 'a'), S(':', ' '), S('b', 'y'), S('t', 'e'), S(',', ' '), S('b', ':'), S(' ', 'b'), S('y',
+  't'), S('e', ','), S(' ', 'c'), S(':', ' '), S('b', 'y'), S('t', 'e'), S(',', ' '), S('d', ':'), S(' ', 'b'), S('y', 't'), S('e', ';'), S('\n', '\n'), S(' ', ' '), S(' ', ' '), S('/', '/'), S(' ', 'M'), S('e',
+  'a'), S('s', 'u'), S('r', 'e'), S(' ', 't'), S('e', 'x'), S('t', '\n'), S(' ', ' '), S(' ', ' '), S('v', 'a'), S('r', ' '), S('i', ':'), S(' ', 'u'), S('i', 'n'), S('t', ' '), S('=', ' '), S('0', ';'), S('\n',
+  ' '), S(' ', ' '), S(' ', 'w'), S('h', 'i'), S('l', 'e'), S(' ', '('), S('(', 'a'), S(' ', '='), S(' ', '*'), S('(', 'u'), S('t', 'f'), S('8', ' '), S('+', ' '), S('i', ')'), S(')', ' '), S('!', '='), S(' ',
+  '\''), S('\\', '0'), S('\'', ')'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'i'), S(' ', '='), S(' ', 'i'), S(' ', '+'), S(' ', '1'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('v',
+  'a'), S('r', ' '), S('c', 'o'), S('d', 'e'), S('P', 'o'), S('i', 'n'), S('t', ':'), S(' ', 'u'), S('i', 'n'), S('t', ';'), S('\n', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('/', '/'), S(' ', 'D'), S('e',
+  'c'), S('o', 'd'), S('e', ' '), S('U', 'T'), S('F', '-'), S('8', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('i', 'f'), S(' ', '('), S('(', 'b'), S(' ', '='), S(' ', '*'), S('(', 'u'), S('t', 'f'), S('8',
+  ' '), S('+', ' '), S('i', ')'), S(')', ' '), S('!', '='), S(' ', '\''), S('\\', '0'), S('\'', ' '), S('&', '&'), S(' ', 'a'), S(' ', '>'), S('=', ' '), S('0', 'x'), S('C', '0'), S(')', ' '), S('{', '\n'), S(' ',
+  ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('i', ' '), S('=', ' '), S('i', ' '), S('+', ' '), S('1', ';'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'i'), S('f', ' '), S('(', '('), S('c',
+  ' '), S('=', ' '), S('*', '('), S('u', 't'), S('f', '8'), S(' ', '+'), S(' ', 'i'), S(')', ')'), S(' ', '!'), S('=', ' '), S('\'', '\\'), S('0', '\''), S(' ', '&'), S('&', ' '), S('a', ' '), S('>', '='), S(' ',
+  '0'), S('x', 'E'), S('0', ')'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'i'), S(' ', '='), S(' ', 'i'), S(' ', '+'), S(' ', '1'), S(';', '\n'), S(' ', ' '), S(' ',
+  ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('i', 'f'), S(' ', '('), S('(', 'd'), S(' ', '='), S(' ', '*'), S('(', 'u'), S('t', 'f'), S('8', ' '), S('+', ' '), S('i', ')'), S(')', ' '), S('!', '='), S(' ',
+  '\''), S('\\', '0'), S('\'', ' '), S('&', '&'), S(' ', 'a'), S(' ', '>'), S('=', ' '), S('0', 'x'), S('F', '0'), S(')', ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ',
+  ' '), S('i', ' '), S('=', ' '), S('i', ' '), S('+', ' '), S('1', ';'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'c'), S('o', 'd'), S('e', 'P'), S('o', 'i'), S('n',
+  't'), S(' ', '='), S(' ', '('), S('(', 'a'), S(' ', '&'), S(' ', '0'), S('x', '0'), S('7', ')'), S(' ', '<'), S('<', ' '), S('1', '8'), S(')', ' '), S('|', ' '), S('(', '('), S('b', ' '), S('&', ' '), S('0',
+  'x'), S('3', 'F'), S(')', ' '), S('<', '<'), S(' ', '1'), S('2', ')'), S(' ', '|'), S(' ', '('), S('(', 'c'), S(' ', '&'), S(' ', '0'), S('x', '3'), S('F', ')'), S(' ', '<'), S('<', ' '), S('6', ')'), S(' ',
+  '|'), S(' ', '('), S('d', ' '), S('&', ' '), S('0', 'x'), S('3', 'F'), S(')', ';'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', '}'), S(' ', 'e'), S('l', 's'), S('e', ' '), S('{',
+  '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('c', 'o'), S('d', 'e'), S('P', 'o'), S('i', 'n'), S('t', ' '), S('=', ' '), S('(', '('), S('a', ' '), S('&', ' '), S('0',
+  'x'), S('0', 'F'), S(')', ' '), S('<', '<'), S(' ', '1'), S('2', ')'), S(' ', '|'), S(' ', '('), S('(', 'b'), S(' ', '&'), S(' ', '0'), S('x', '3'), S('F', ')'), S(' ', '<'), S('<', ' '), S('6', ')'), S(' ',
+  '|'), S(' ', '('), S('c', ' '), S('&', ' '), S('0', 'x'), S('3', 'F'), S(')', ';'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', '}'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ',
+  ' '), S(' ', '}'), S(' ', 'e'), S('l', 's'), S('e', ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('c', 'o'), S('d', 'e'), S('P', 'o'), S('i', 'n'), S('t', ' '), S('=',
+  ' '), S('(', '('), S('a', ' '), S('&', ' '), S('0', 'x'), S('1', 'F'), S(')', ' '), S('<', '<'), S(' ', '6'), S(')', ' '), S('|', ' '), S('(', 'b'), S(' ', '&'), S(' ', '0'), S('x', '3'), S('F', ')'), S(';',
+  '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('}', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('}', ' '), S('e', 'l'), S('s', 'e'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ',
+  ' '), S(' ', 'c'), S('o', 'd'), S('e', 'P'), S('o', 'i'), S('n', 't'), S(' ', '='), S(' ', 'a'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('}', '\n'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ',
+  '/'), S('/', ' '), S('E', 'n'), S('c', 'o'), S('d', 'e'), S(' ', 'U'), S('T', 'F'), S('-', '1'), S('6', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('u', 't'), S('f', '1'), S('6', '_'), S('l', 'e'), S('n',
+  'g'), S('t', 'h'), S(' ', '='), S(' ', 'u'), S('t', 'f'), S('1', '6'), S('_', 'l'), S('e', 'n'), S('g', 't'), S('h', ' '), S('+', ' '), S('(', 'c'), S('o', 'd'), S('e', 'P'), S('o', 'i'), S('n', 't'), S(' ',
+  '<'), S(' ', '0'), S('x', '1'), S('0', '0'), S('0', '0'), S(' ', '?'), S(' ', '1'), S(' ', ':'), S(' ', '2'), S(')', ' '), S('a', 's'), S(' ', 'u'), S('i', 'n'), S('t', ';'), S('\n', ' '), S(' ', ' '), S(' ',
+  '}'), S('\n', '\n'), S(' ', ' '), S(' ', ' '), S('v', 'a'), S('r', ' '), S('o', 'u'), S('t', 'p'), S('u', 't'), S(' ', '='), S(' ', 's'), S('t', 'r'), S('i', 'n'), S('g', '_'), S('n', 'e'), S('w', '('), S('u',
+  't'), S('f', '1'), S('6', '_'), S('l', 'e'), S('n', 'g'), S('t', 'h'), S(')', ';'), S('\n', ' '), S(' ', ' '), S(' ', 'v'), S('a', 'r'), S(' ', 'u'), S('t', 'f'), S('1', '6'), S(' ', '='), S(' ', 'o'), S('u',
+  't'), S('p', 'u'), S('t', ' '), S('a', 's'), S(' ', '*'), S('u', 's'), S('h', 'o'), S('r', 't'), S(' ', '+'), S(' ', '2'), S(';', '\n'), S('\n', ' '), S(' ', ' '), S(' ', '/'), S('/', ' '), S('C', 'o'), S('n',
+  'v'), S('e', 'r'), S('t', ' '), S('t', 'e'), S('x', 't'), S('\n', ' '), S(' ', ' '), S(' ', 'i'), S(' ', '='), S(' ', '0'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S('w', 'h'), S('i', 'l'), S('e', ' '), S('(',
+  '('), S('a', ' '), S('=', ' '), S('*', '('), S('u', 't'), S('f', '8'), S(' ', '+'), S(' ', 'i'), S(')', ')'), S(' ', '!'), S('=', ' '), S('\'', '\\'), S('0', '\''), S(')', ' '), S('{', '\n'), S(' ', ' '), S(' ',
+  ' '), S(' ', ' '), S('i', ' '), S('=', ' '), S('i', ' '), S('+', ' '), S('1', ';'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'v'), S('a', 'r'), S(' ', 'c'), S('o', 'd'), S('e', 'P'), S('o', 'i'), S('n',
+  't'), S(':', ' '), S('u', 'i'), S('n', 't'), S(';', '\n'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', '/'), S('/', ' '), S('D', 'e'), S('c', 'o'), S('d', 'e'), S(' ', 'U'), S('T', 'F'), S('-', '8'), S('\n',
+  ' '), S(' ', ' '), S(' ', ' '), S(' ', 'i'), S('f', ' '), S('(', '('), S('b', ' '), S('=', ' '), S('*', '('), S('u', 't'), S('f', '8'), S(' ', '+'), S(' ', 'i'), S(')', ')'), S(' ', '!'), S('=', ' '), S('\'',
+  '\\'), S('0', '\''), S(' ', '&'), S('&', ' '), S('a', ' '), S('>', '='), S(' ', '0'), S('x', 'C'), S('0', ')'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'i'), S(' ', '='), S(' ',
+  'i'), S(' ', '+'), S(' ', '1'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('i', 'f'), S(' ', '('), S('(', 'c'), S(' ', '='), S(' ', '*'), S('(', 'u'), S('t', 'f'), S('8', ' '), S('+',
+  ' '), S('i', ')'), S(')', ' '), S('!', '='), S(' ', '\''), S('\\', '0'), S('\'', ' '), S('&', '&'), S(' ', 'a'), S(' ', '>'), S('=', ' '), S('0', 'x'), S('E', '0'), S(')', ' '), S('{', '\n'), S(' ', ' '), S(' ',
+  ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('i', ' '), S('=', ' '), S('i', ' '), S('+', ' '), S('1', ';'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'i'), S('f', ' '), S('(',
+  '('), S('d', ' '), S('=', ' '), S('*', '('), S('u', 't'), S('f', '8'), S(' ', '+'), S(' ', 'i'), S(')', ')'), S(' ', '!'), S('=', ' '), S('\'', '\\'), S('0', '\''), S(' ', '&'), S('&', ' '), S('a', ' '), S('>',
+  '='), S(' ', '0'), S('x', 'F'), S('0', ')'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'i'), S(' ', '='), S(' ', 'i'), S(' ', '+'), S(' ', '1'), S(';',
+  '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('c', 'o'), S('d', 'e'), S('P', 'o'), S('i', 'n'), S('t', ' '), S('=', ' '), S('(', '('), S('a', ' '), S('&', ' '), S('0',
+  'x'), S('0', '7'), S(')', ' '), S('<', '<'), S(' ', '1'), S('8', ')'), S(' ', '|'), S(' ', '('), S('(', 'b'), S(' ', '&'), S(' ', '0'), S('x', '3'), S('F', ')'), S(' ', '<'), S('<', ' '), S('1', '2'), S(')',
+  ' '), S('|', ' '), S('(', '('), S('c', ' '), S('&', ' '), S('0', 'x'), S('3', 'F'), S(')', ' '), S('<', '<'), S(' ', '6'), S(')', ' '), S('|', ' '), S('(', 'd'), S(' ', '&'), S(' ', '0'), S('x', '3'), S('F',
+  ')'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('}', ' '), S('e', 'l'), S('s', 'e'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ',
+  ' '), S(' ', 'c'), S('o', 'd'), S('e', 'P'), S('o', 'i'), S('n', 't'), S(' ', '='), S(' ', '('), S('(', 'a'), S(' ', '&'), S(' ', '0'), S('x', '0'), S('F', ')'), S(' ', '<'), S('<', ' '), S('1', '2'), S(')',
+  ' '), S('|', ' '), S('(', '('), S('b', ' '), S('&', ' '), S('0', 'x'), S('3', 'F'), S(')', ' '), S('<', '<'), S(' ', '6'), S(')', ' '), S('|', ' '), S('(', 'c'), S(' ', '&'), S(' ', '0'), S('x', '3'), S('F',
+  ')'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('}', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('}', ' '), S('e', 'l'), S('s', 'e'), S(' ', '{'), S('\n',
+  ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'c'), S('o', 'd'), S('e', 'P'), S('o', 'i'), S('n', 't'), S(' ', '='), S(' ', '('), S('(', 'a'), S(' ', '&'), S(' ', '0'), S('x', '1'), S('F',
+  ')'), S(' ', '<'), S('<', ' '), S('6', ')'), S(' ', '|'), S(' ', '('), S('b', ' '), S('&', ' '), S('0', 'x'), S('3', 'F'), S(')', ';'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', '}'), S('\n',
   ' '), S(' ', ' '), S(' ', ' '), S(' ', '}'), S(' ', 'e'), S('l', 's'), S('e', ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('c', 'o'), S('d', 'e'), S('P', 'o'), S('i', 'n'), S('t',
   ' '), S('=', ' '), S('a', ';'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', '}'), S('\n', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('/', '/'), S(' ', 'E'), S('n', 'c'), S('o', 'd'), S('e', ' '), S('U',
-  'T'), S('F', '-'), S('8', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('i', 'f'), S(' ', '('), S('c', 'o'), S('d', 'e'), S('P', 'o'), S('i', 'n'), S('t', ' '), S('<', ' '), S('0', 'x'), S('8', '0'), S(')',
-  ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('*', 'n'), S('e', 'x'), S('t', ' '), S('=', ' '), S('c', 'o'), S('d', 'e'), S('P', 'o'), S('i', 'n'), S('t', ' '), S('a', 's'), S(' ',
-  'b'), S('y', 't'), S('e', ';'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', '}'), S(' ', 'e'), S('l', 's'), S('e', ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('i', 'f'), S(' ',
-  '('), S('c', 'o'), S('d', 'e'), S('P', 'o'), S('i', 'n'), S('t', ' '), S('<', ' '), S('0', 'x'), S('8', '0'), S('0', ')'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ',
-  '*'), S('n', 'e'), S('x', 't'), S(' ', '='), S(' ', '('), S('(', '('), S('c', 'o'), S('d', 'e'), S('P', 'o'), S('i', 'n'), S('t', ' '), S('>', '>'), S(' ', '6'), S(')', ' '), S('&', ' '), S('0', 'x'), S('1',
-  'F'), S(')', ' '), S('|', ' '), S('0', 'x'), S('C', '0'), S(')', ' '), S('a', 's'), S(' ', 'b'), S('y', 't'), S('e', ';'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', '}'), S(' ', 'e'), S('l',
-  's'), S('e', ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('i', 'f'), S(' ', '('), S('c', 'o'), S('d', 'e'), S('P', 'o'), S('i', 'n'), S('t', ' '), S('<', ' '), S('0',
-  'x'), S('1', '0'), S('0', '0'), S('0', ')'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', '*'), S('n', 'e'), S('x', 't'), S(' ', '='), S(' ', '('), S('(',
-  '('), S('c', 'o'), S('d', 'e'), S('P', 'o'), S('i', 'n'), S('t', ' '), S('>', '>'), S(' ', '1'), S('2', ')'), S(' ', '&'), S(' ', '0'), S('x', '0'), S('F', ')'), S(' ', '|'), S(' ', '0'), S('x', 'E'), S('0',
-  ')'), S(' ', 'a'), S('s', ' '), S('b', 'y'), S('t', 'e'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('}', ' '), S('e', 'l'), S('s', 'e'), S(' ', '{'), S('\n', ' '), S(' ',
-  ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', '*'), S('n', 'e'), S('x', 't'), S(' ', '='), S(' ', '('), S('(', '('), S('c', 'o'), S('d', 'e'), S('P', 'o'), S('i', 'n'), S('t', ' '), S('>',
-  '>'), S(' ', '1'), S('8', ')'), S(' ', '&'), S(' ', '0'), S('x', '0'), S('7', ')'), S(' ', '|'), S(' ', '0'), S('x', 'F'), S('0', ')'), S(' ', 'a'), S('s', ' '), S('b', 'y'), S('t', 'e'), S(';', '\n'), S(' ',
-  ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('n', 'e'), S('x', 't'), S(' ', '='), S(' ', 'n'), S('e', 'x'), S('t', ' '), S('+', ' '), S('1', ';'), S('\n', ' '), S(' ', ' '), S(' ',
+  'T'), S('F', '-'), S('1', '6'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'i'), S('f', ' '), S('(', 'c'), S('o', 'd'), S('e', 'P'), S('o', 'i'), S('n', 't'), S(' ', '<'), S(' ', '0'), S('x', '1'), S('0',
+  '0'), S('0', '0'), S(')', ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('*', 'u'), S('t', 'f'), S('1', '6'), S(' ', '='), S(' ', 'c'), S('o', 'd'), S('e', 'P'), S('o', 'i'), S('n',
+  't'), S(' ', 'a'), S('s', ' '), S('u', 's'), S('h', 'o'), S('r', 't'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('}', ' '), S('e', 'l'), S('s', 'e'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ',
+  ' '), S(' ', ' '), S(' ', '*'), S('u', 't'), S('f', '1'), S('6', ' '), S('=', ' '), S('(', '('), S('c', 'o'), S('d', 'e'), S('P', 'o'), S('i', 'n'), S('t', ' '), S('>', '>'), S(' ', '1'), S('0', ')'), S(' ',
+  '+'), S(' ', '('), S('0', 'x'), S('D', '8'), S('0', '0'), S(' ', '-'), S(' ', '('), S('0', 'x'), S('1', '0'), S('0', '0'), S('0', ' '), S('>', '>'), S(' ', '1'), S('0', ')'), S(')', ')'), S(' ', 'a'), S('s',
+  ' '), S('u', 's'), S('h', 'o'), S('r', 't'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('u', 't'), S('f', '1'), S('6', ' '), S('=', ' '), S('u', 't'), S('f', '1'), S('6', ' '), S('+',
+  ' '), S('1', ';'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', '*'), S('u', 't'), S('f', '1'), S('6', ' '), S('=', ' '), S('(', '('), S('c', 'o'), S('d', 'e'), S('P', 'o'), S('i', 'n'), S('t',
+  ' '), S('&', ' '), S('0', 'x'), S('3', 'F'), S('F', ')'), S(' ', '+'), S(' ', '0'), S('x', 'D'), S('C', '0'), S('0', ')'), S(' ', 'a'), S('s', ' '), S('u', 's'), S('h', 'o'), S('r', 't'), S(';', '\n'), S(' ',
+  ' '), S(' ', ' '), S(' ', ' '), S('}', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('u', 't'), S('f', '1'), S('6', ' '), S('=', ' '), S('u', 't'), S('f', '1'), S('6', ' '), S('+', ' '), S('1', ';'), S('\n',
+  ' '), S(' ', ' '), S(' ', '}'), S('\n', '\n'), S(' ', ' '), S(' ', ' '), S('r', 'e'), S('t', 'u'), S('r', 'n'), S(' ', 'o'), S('u', 't'), S('p', 'u'), S('t', ';'), S('\n', ' '), S(' ', '}'), S('\n', '\n'), S(' ',
+  ' '), S('e', 'x'), S('t', 'e'), S('r', 'n'), S(' ', 'u'), S('n', 's'), S('a', 'f'), S('e', ' '), S('f', 'u'), S('n', 'c'), S('t', 'i'), S('o', 'n'), S(' ', 'u'), S('t', 'f'), S('1', '6'), S('_', 't'), S('o',
+  '_'), S('c', 's'), S('t', 'r'), S('i', 'n'), S('g', '('), S('i', 'n'), S('p', 'u'), S('t', ':'), S(' ', 's'), S('t', 'r'), S('i', 'n'), S('g', ')'), S(':', ' '), S('*', 'b'), S('y', 't'), S('e', ' '), S('{',
+  '\n'), S(' ', ' '), S(' ', ' '), S('i', 'f'), S(' ', '('), S('i', 'n'), S('p', 'u'), S('t', ' '), S('a', 's'), S(' ', '*'), S('u', 'i'), S('n', 't'), S(' ', '='), S('=', ' '), S('n', 'u'), S('l', 'l'), S(')',
+  ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('r', 'e'), S('t', 'u'), S('r', 'n'), S(' ', 'n'), S('u', 'l'), S('l', ';'), S('\n', ' '), S(' ', ' '), S(' ', '}'), S('\n', '\n'), S(' ', ' '), S(' ',
+  ' '), S('v', 'a'), S('r', ' '), S('u', 't'), S('f', '1'), S('6', '_'), S('l', 'e'), S('n', 'g'), S('t', 'h'), S(' ', '='), S(' ', '*'), S('(', 'i'), S('n', 'p'), S('u', 't'), S(' ', 'a'), S('s', ' '), S('*',
+  'u'), S('i', 'n'), S('t', ')'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S('v', 'a'), S('r', ' '), S('u', 't'), S('f', '8'), S('_', 'l'), S('e', 'n'), S('g', 't'), S('h', ':'), S(' ', 'u'), S('i', 'n'), S('t',
+  ' '), S('=', ' '), S('0', ';'), S('\n', ' '), S(' ', ' '), S(' ', 'v'), S('a', 'r'), S(' ', 'u'), S('t', 'f'), S('1', '6'), S(' ', '='), S(' ', 'i'), S('n', 'p'), S('u', 't'), S(' ', 'a'), S('s', ' '), S('*',
+  'u'), S('s', 'h'), S('o', 'r'), S('t', ' '), S('+', ' '), S('2', ';'), S('\n', '\n'), S(' ', ' '), S(' ', ' '), S('/', '/'), S(' ', 'M'), S('e', 'a'), S('s', 'u'), S('r', 'e'), S(' ', 't'), S('e', 'x'), S('t',
+  '\n'), S(' ', ' '), S(' ', ' '), S('v', 'a'), S('r', ' '), S('i', ':'), S(' ', 'u'), S('i', 'n'), S('t', ' '), S('=', ' '), S('0', ';'), S('\n', ' '), S(' ', ' '), S(' ', 'w'), S('h', 'i'), S('l', 'e'), S(' ',
+  '('), S('i', ' '), S('<', ' '), S('u', 't'), S('f', '1'), S('6', '_'), S('l', 'e'), S('n', 'g'), S('t', 'h'), S(')', ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('v', 'a'), S('r', ' '), S('c',
+  'o'), S('d', 'e'), S('P', 'o'), S('i', 'n'), S('t', ':'), S(' ', 'u'), S('i', 'n'), S('t', ';'), S('\n', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('/', '/'), S(' ', 'D'), S('e', 'c'), S('o', 'd'), S('e',
+  ' '), S('U', 'T'), S('F', '-'), S('1', '6'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'v'), S('a', 'r'), S(' ', 'a'), S(' ', '='), S(' ', '*'), S('(', 'u'), S('t', 'f'), S('1', '6'), S(' ', '+'), S(' ',
+  'i'), S(')', ';'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'i'), S(' ', '='), S(' ', 'i'), S(' ', '+'), S(' ', '1'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('i', 'f'), S(' ', '('), S('i',
+  ' '), S('<', ' '), S('u', 't'), S('f', '1'), S('6', '_'), S('l', 'e'), S('n', 'g'), S('t', 'h'), S(' ', '&'), S('&', ' '), S('a', ' '), S('>', '='), S(' ', '0'), S('x', 'D'), S('8', '0'), S('0', ' '), S('&',
+  '&'), S(' ', 'a'), S(' ', '<'), S('=', ' '), S('0', 'x'), S('D', 'B'), S('F', 'F'), S(')', ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('v', 'a'), S('r', ' '), S('b', ' '), S('=',
+  ' '), S('*', '('), S('u', 't'), S('f', '1'), S('6', ' '), S('+', ' '), S('i', ')'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('i', ' '), S('=', ' '), S('i', ' '), S('+', ' '), S('1',
+  ';'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'c'), S('o', 'd'), S('e', 'P'), S('o', 'i'), S('n', 't'), S(' ', '='), S(' ', '('), S('a', ' '), S('<', '<'), S(' ', '1'), S('0', ')'), S(' ',
+  '+'), S(' ', 'b'), S(' ', '+'), S(' ', '('), S('0', 'x'), S('1', '0'), S('0', '0'), S('0', ' '), S('-', ' '), S('(', '0'), S('x', 'D'), S('8', '0'), S('0', ' '), S('<', '<'), S(' ', '1'), S('0', ')'), S(' ',
+  '-'), S(' ', '0'), S('x', 'D'), S('C', '0'), S('0', ')'), S(' ', 'a'), S('s', ' '), S('u', 'i'), S('n', 't'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('}', ' '), S('e', 'l'), S('s', 'e'), S(' ',
+  '{'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'c'), S('o', 'd'), S('e', 'P'), S('o', 'i'), S('n', 't'), S(' ', '='), S(' ', 'a'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('}',
+  '\n'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', '/'), S('/', ' '), S('E', 'n'), S('c', 'o'), S('d', 'e'), S(' ', 'U'), S('T', 'F'), S('-', '8'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'u'), S('t',
+  'f'), S('8', '_'), S('l', 'e'), S('n', 'g'), S('t', 'h'), S(' ', '='), S(' ', 'u'), S('t', 'f'), S('8', '_'), S('l', 'e'), S('n', 'g'), S('t', 'h'), S(' ', '+'), S(' ', '('), S('\n', ' '), S(' ', ' '), S(' ',
+  ' '), S(' ', ' '), S(' ', 'c'), S('o', 'd'), S('e', 'P'), S('o', 'i'), S('n', 't'), S(' ', '<'), S(' ', '0'), S('x', '8'), S('0', ' '), S('?', ' '), S('1', ' '), S(':', '\n'), S(' ', ' '), S(' ', ' '), S(' ',
+  ' '), S(' ', ' '), S('c', 'o'), S('d', 'e'), S('P', 'o'), S('i', 'n'), S('t', ' '), S('<', ' '), S('0', 'x'), S('8', '0'), S('0', ' '), S('?', ' '), S('2', ' '), S(':', '\n'), S(' ', ' '), S(' ', ' '), S(' ',
+  ' '), S(' ', ' '), S('c', 'o'), S('d', 'e'), S('P', 'o'), S('i', 'n'), S('t', ' '), S('<', ' '), S('0', 'x'), S('1', '0'), S('0', '0'), S('0', ' '), S('?', ' '), S('3', ' '), S(':', '\n'), S(' ', ' '), S(' ',
+  ' '), S(' ', ' '), S(' ', ' '), S('4', ')'), S(' ', 'a'), S('s', ' '), S('u', 'i'), S('n', 't'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S('}', '\n'), S('\n', ' '), S(' ', ' '), S(' ', 'v'), S('a', 'r'), S(' ',
+  'u'), S('t', 'f'), S('8', ' '), S('=', ' '), S('m', 'a'), S('l', 'l'), S('o', 'c'), S('(', 'u'), S('t', 'f'), S('8', '_'), S('l', 'e'), S('n', 'g'), S('t', 'h'), S(' ', '+'), S(' ', '1'), S(')', ';'), S('\n',
+  ' '), S(' ', ' '), S(' ', 'v'), S('a', 'r'), S(' ', 'n'), S('e', 'x'), S('t', ' '), S('=', ' '), S('u', 't'), S('f', '8'), S(';', '\n'), S('\n', ' '), S(' ', ' '), S(' ', '/'), S('/', ' '), S('C', 'o'), S('n',
+  'v'), S('e', 'r'), S('t', ' '), S('t', 'e'), S('x', 't'), S('\n', ' '), S(' ', ' '), S(' ', 'i'), S(' ', '='), S(' ', '0'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S('w', 'h'), S('i', 'l'), S('e', ' '), S('(',
+  'i'), S(' ', '<'), S(' ', 'u'), S('t', 'f'), S('1', '6'), S('_', 'l'), S('e', 'n'), S('g', 't'), S('h', ')'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'v'), S('a', 'r'), S(' ', 'c'), S('o',
+  'd'), S('e', 'P'), S('o', 'i'), S('n', 't'), S(':', ' '), S('u', 'i'), S('n', 't'), S(';', '\n'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', '/'), S('/', ' '), S('D', 'e'), S('c', 'o'), S('d', 'e'), S(' ',
+  'U'), S('T', 'F'), S('-', '1'), S('6', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('v', 'a'), S('r', ' '), S('a', ' '), S('=', ' '), S('*', '('), S('u', 't'), S('f', '1'), S('6', ' '), S('+', ' '), S('i',
+  ')'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('i', ' '), S('=', ' '), S('i', ' '), S('+', ' '), S('1', ';'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'i'), S('f', ' '), S('(', 'i'), S(' ',
+  '<'), S(' ', 'u'), S('t', 'f'), S('1', '6'), S('_', 'l'), S('e', 'n'), S('g', 't'), S('h', ' '), S('&', '&'), S(' ', 'a'), S(' ', '>'), S('=', ' '), S('0', 'x'), S('D', '8'), S('0', '0'), S(' ', '&'), S('&',
+  ' '), S('a', ' '), S('<', '='), S(' ', '0'), S('x', 'D'), S('B', 'F'), S('F', ')'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'v'), S('a', 'r'), S(' ', 'b'), S(' ', '='), S(' ',
+  '*'), S('(', 'u'), S('t', 'f'), S('1', '6'), S(' ', '+'), S(' ', 'i'), S(')', ';'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'i'), S(' ', '='), S(' ', 'i'), S(' ', '+'), S(' ', '1'), S(';',
+  '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('c', 'o'), S('d', 'e'), S('P', 'o'), S('i', 'n'), S('t', ' '), S('=', ' '), S('(', 'a'), S(' ', '<'), S('<', ' '), S('1', '0'), S(')', ' '), S('+',
+  ' '), S('b', ' '), S('+', ' '), S('(', '0'), S('x', '1'), S('0', '0'), S('0', '0'), S(' ', '-'), S(' ', '('), S('0', 'x'), S('D', '8'), S('0', '0'), S(' ', '<'), S('<', ' '), S('1', '0'), S(')', ' '), S('-',
+  ' '), S('0', 'x'), S('D', 'C'), S('0', '0'), S(')', ' '), S('a', 's'), S(' ', 'u'), S('i', 'n'), S('t', ';'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', '}'), S(' ', 'e'), S('l', 's'), S('e', ' '), S('{',
+  '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('c', 'o'), S('d', 'e'), S('P', 'o'), S('i', 'n'), S('t', ' '), S('=', ' '), S('a', ';'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', '}'), S('\n',
+  '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('/', '/'), S(' ', 'E'), S('n', 'c'), S('o', 'd'), S('e', ' '), S('U', 'T'), S('F', '-'), S('8', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('i', 'f'), S(' ',
+  '('), S('c', 'o'), S('d', 'e'), S('P', 'o'), S('i', 'n'), S('t', ' '), S('<', ' '), S('0', 'x'), S('8', '0'), S(')', ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('*', 'n'), S('e',
+  'x'), S('t', ' '), S('=', ' '), S('c', 'o'), S('d', 'e'), S('P', 'o'), S('i', 'n'), S('t', ' '), S('a', 's'), S(' ', 'b'), S('y', 't'), S('e', ';'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', '}'), S(' ',
+  'e'), S('l', 's'), S('e', ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('i', 'f'), S(' ', '('), S('c', 'o'), S('d', 'e'), S('P', 'o'), S('i', 'n'), S('t', ' '), S('<', ' '), S('0',
+  'x'), S('8', '0'), S('0', ')'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', '*'), S('n', 'e'), S('x', 't'), S(' ', '='), S(' ', '('), S('(', '('), S('c', 'o'), S('d',
+  'e'), S('P', 'o'), S('i', 'n'), S('t', ' '), S('>', '>'), S(' ', '6'), S(')', ' '), S('&', ' '), S('0', 'x'), S('1', 'F'), S(')', ' '), S('|', ' '), S('0', 'x'), S('C', '0'), S(')', ' '), S('a', 's'), S(' ',
+  'b'), S('y', 't'), S('e', ';'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', '}'), S(' ', 'e'), S('l', 's'), S('e', ' '), S('{', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ',
+  ' '), S('i', 'f'), S(' ', '('), S('c', 'o'), S('d', 'e'), S('P', 'o'), S('i', 'n'), S('t', ' '), S('<', ' '), S('0', 'x'), S('1', '0'), S('0', '0'), S('0', ')'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ',
   ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', '*'), S('n', 'e'), S('x', 't'), S(' ', '='), S(' ', '('), S('(', '('), S('c', 'o'), S('d', 'e'), S('P', 'o'), S('i', 'n'), S('t', ' '), S('>', '>'), S(' ',
-  '1'), S('2', ')'), S(' ', '&'), S(' ', '0'), S('x', '3'), S('F', ')'), S(' ', '|'), S(' ', '0'), S('x', '8'), S('0', ')'), S(' ', 'a'), S('s', ' '), S('b', 'y'), S('t', 'e'), S(';', '\n'), S(' ', ' '), S(' ',
-  ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('}', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('n', 'e'), S('x', 't'), S(' ', '='), S(' ', 'n'), S('e', 'x'), S('t', ' '), S('+',
-  ' '), S('1', ';'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', '*'), S('n', 'e'), S('x', 't'), S(' ', '='), S(' ', '('), S('(', '('), S('c', 'o'), S('d', 'e'), S('P', 'o'), S('i',
-  'n'), S('t', ' '), S('>', '>'), S(' ', '6'), S(')', ' '), S('&', ' '), S('0', 'x'), S('3', 'F'), S(')', ' '), S('|', ' '), S('0', 'x'), S('8', '0'), S(')', ' '), S('a', 's'), S(' ', 'b'), S('y', 't'), S('e',
-  ';'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', '}'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'n'), S('e', 'x'), S('t', ' '), S('=', ' '), S('n', 'e'), S('x', 't'), S(' ',
-  '+'), S(' ', '1'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('*', 'n'), S('e', 'x'), S('t', ' '), S('=', ' '), S('(', '('), S('c', 'o'), S('d', 'e'), S('P', 'o'), S('i', 'n'), S('t',
-  ' '), S('&', ' '), S('0', 'x'), S('3', 'F'), S(')', ' '), S('|', ' '), S('0', 'x'), S('8', '0'), S(')', ' '), S('a', 's'), S(' ', 'b'), S('y', 't'), S('e', ';'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ',
-  '}'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'n'), S('e', 'x'), S('t', ' '), S('=', ' '), S('n', 'e'), S('x', 't'), S(' ', '+'), S(' ', '1'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S('}', '\n'), S('\n',
-  ' '), S(' ', ' '), S(' ', '/'), S('/', ' '), S('C', ' '), S('s', 't'), S('r', 'i'), S('n', 'g'), S('s', ' '), S('a', 'r'), S('e', ' '), S('n', 'u'), S('l', 'l'), S('-', 't'), S('e', 'r'), S('m', 'i'), S('n',
-  'a'), S('t', 'e'), S('d', '\n'), S(' ', ' '), S(' ', ' '), S('*', 'n'), S('e', 'x'), S('t', ' '), S('=', ' '), S('\'', '\\'), S('0', '\''), S(';', '\n'), S('\n', ' '), S(' ', ' '), S(' ', 'r'), S('e', 't'), S('u',
-  'r'), S('n', ' '), S('u', 't'), S('f', '8'), S(';', '\n'), S(' ', ' '), S('}', '\n'), S('\n', '#'), S('e', 'n'), S('d', 'i'), S('f', '\n')};
-static const uint32_t __string_533[] = {2, S(':', ' ')};
-static const uint32_t __string_534_error[] = {7, S('e', 'r'), S('r', 'o'), S('r', ':'), S(' ', 0)};
-static const uint32_t __string_535_warning[] = {9, S('w', 'a'), S('r', 'n'), S('i', 'n'), S('g', ':'), S(' ', 0)};
-static const uint32_t __string_536_error[] = {7, S('e', 'r'), S('r', 'o'), S('r', ':'), S(' ', 0)};
-static const uint32_t __string_537[] = {1, S('\n', 0)};
-static const uint32_t __string_538_Usage_thinc_FLAGS_INPUTS[] = {346, S('\n', 'U'), S('s', 'a'), S('g', 'e'), S(':', ' '), S('t', 'h'), S('i', 'n'), S('c', ' '), S('[', 'F'), S('L', 'A'), S('G', 'S'), S(']',
-  ' '), S('[', 'I'), S('N', 'P'), S('U', 'T'), S('S', ']'), S('\n', '\n'), S(' ', ' '), S('-', '-'), S('h', 'e'), S('l', 'p'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'P'), S('r',
-  'i'), S('n', 't'), S(' ', 't'), S('h', 'i'), S('s', ' '), S('m', 'e'), S('s', 's'), S('a', 'g'), S('e', '.'), S('\n', ' '), S(' ', '-'), S('-', 'o'), S('u', 't'), S(' ', '['), S('P', 'A'), S('T', 'H'), S(']',
-  ' '), S(' ', ' '), S(' ', ' '), S('E', 'm'), S('i', 't'), S(' ', 'c'), S('o', 'd'), S('e', ' '), S('t', 'o'), S(' ', 'P'), S('A', 'T'), S('H', ' '), S('(', 't'), S('h', 'e'), S(' ', 't'), S('a', 'r'), S('g',
-  'e'), S('t', ' '), S('f', 'o'), S('r', 'm'), S('a', 't'), S(' ', 'i'), S('s', ' '), S('t', 'h'), S('e', ' '), S('f', 'i'), S('l', 'e'), S(' ', 'e'), S('x', 't'), S('e', 'n'), S('s', 'i'), S('o', 'n'), S(')',
-  '.'), S('\n', ' '), S(' ', '-'), S('-', 'd'), S('e', 'f'), S('i', 'n'), S('e', ' '), S('[', 'N'), S('A', 'M'), S('E', ']'), S(' ', ' '), S('D', 'e'), S('f', 'i'), S('n', 'e'), S(' ', 't'), S('h', 'e'), S(' ',
-  'f'), S('l', 'a'), S('g', ' '), S('N', 'A'), S('M', 'E'), S(' ', 'i'), S('n', ' '), S('a', 'l'), S('l', ' '), S('i', 'n'), S('p', 'u'), S('t', ' '), S('f', 'i'), S('l', 'e'), S('s', '.'), S('\n', '\n'), S('E',
-  'x'), S('a', 'm'), S('p', 'l'), S('e', 's'), S(':', '\n'), S('\n', ' '), S(' ', 't'), S('h', 'i'), S('n', 'c'), S(' ', 'm'), S('a', 'i'), S('n', '.'), S('t', 'h'), S('i', 'n'), S(' ', '-'), S('-', 'o'), S('u',
-  't'), S(' ', 'm'), S('a', 'i'), S('n', '.'), S('j', 's'), S('\n', ' '), S(' ', 't'), S('h', 'i'), S('n', 'c'), S(' ', 's'), S('r', 'c'), S('/', '*'), S('.', 't'), S('h', 'i'), S('n', ' '), S('-', '-'), S('o',
-  'u'), S('t', ' '), S('m', 'a'), S('i', 'n'), S('.', 'w'), S('a', 's'), S('m', '\n'), S(' ', ' '), S('t', 'h'), S('i', 'n'), S('c', ' '), S('n', 'a'), S('t', 'i'), S('v', 'e'), S('.', 't'), S('h', 'i'), S('n',
-  ' '), S('-', '-'), S('o', 'u'), S('t', ' '), S('m', 'a'), S('i', 'n'), S('.', 'c'), S(' ', '-'), S('-', 'd'), S('e', 'f'), S('i', 'n'), S('e', ' '), S('E', 'N'), S('A', 'B'), S('L', 'E'), S('_', 'T'), S('E',
-  'S'), S('T', 'S'), S('\n', '\n')};
-static const uint32_t __string_539[] = {1, S('-', 0)};
-static const uint32_t __string_540_h[] = {2, S('-', 'h')};
-static const uint32_t __string_541_help[] = {5, S('-', 'h'), S('e', 'l'), S('p', 0)};
-static const uint32_t __string_542_help[] = {6, S('-', '-'), S('h', 'e'), S('l', 'p')};
-static const uint32_t __string_543[] = {2, S('/', '?')};
-static const uint32_t __string_544_c[] = {3, S('-', '-'), S('c', 0)};
-static const uint32_t __string_545_js[] = {4, S('-', '-'), S('j', 's')};
-static const uint32_t __string_546_wasm[] = {6, S('-', '-'), S('w', 'a'), S('s', 'm')};
-static const uint32_t __string_547_define[] = {8, S('-', '-'), S('d', 'e'), S('f', 'i'), S('n', 'e')};
-static const uint32_t __string_548_out[] = {5, S('-', '-'), S('o', 'u'), S('t', 0)};
-static const uint32_t __string_549_Invalid_flag[] = {14, S('I', 'n'), S('v', 'a'), S('l', 'i'), S('d', ' '), S('f', 'l'), S('a', 'g'), S(':', ' ')};
-static const uint32_t __string_550_No_input_files[] = {14, S('N', 'o'), S(' ', 'i'), S('n', 'p'), S('u', 't'), S(' ', 'f'), S('i', 'l'), S('e', 's')};
-static const uint32_t __string_551_Missing_an_output_file_use_the[] = {43, S('M', 'i'), S('s', 's'), S('i', 'n'), S('g', ' '), S('a', 'n'), S(' ', 'o'), S('u', 't'), S('p', 'u'), S('t', ' '), S('f', 'i'), S('l',
-  'e'), S(' ', '('), S('u', 's'), S('e', ' '), S('t', 'h'), S('e', 160), S('-', '-'), S('o', 'u'), S('t', ' '), S('f', 'l'), S('a', 'g'), S(')', 0)};
-static const uint32_t __string_552_c[] = {2, S('.', 'c')};
-static const uint32_t __string_553_js[] = {3, S('.', 'j'), S('s', 0)};
-static const uint32_t __string_554_wasm[] = {5, S('.', 'w'), S('a', 's'), S('m', 0)};
-static const uint32_t __string_555_Missing_a_target_use_either_c[] = {50, S('M', 'i'), S('s', 's'), S('i', 'n'), S('g', ' '), S('a', ' '), S('t', 'a'), S('r', 'g'), S('e', 't'), S(' ', '('), S('u', 's'), S('e',
-  ' '), S('e', 'i'), S('t', 'h'), S('e', 'r'), S(' ', '-'), S('-', 'c'), S(',', ' '), S('-', '-'), S('j', 's'), S(',', ' '), S('o', 'r'), S(' ', '-'), S('-', 'w'), S('a', 's'), S('m', ')')};
-static const uint32_t __string_556_define[] = {8, S('-', '-'), S('d', 'e'), S('f', 'i'), S('n', 'e')};
-static const uint32_t __string_557_out[] = {5, S('-', '-'), S('o', 'u'), S('t', 0)};
-static const uint32_t __string_558[] = {1, S('-', 0)};
-static const uint32_t __string_559_Cannot_read_from[] = {17, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'r'), S('e', 'a'), S('d', ' '), S('f', 'r'), S('o', 'm'), S(' ', 0)};
-static const uint32_t __string_560_h[] = {2, S('.', 'h')};
-static const uint32_t __string_561_Cannot_write_to[] = {16, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'w'), S('r', 'i'), S('t', 'e'), S(' ', 't'), S('o', ' ')};
-static const uint32_t __string_562[] = {1, S('%', 0)};
-static const uint32_t __string_563[] = {1, S('&', 0)};
-static const uint32_t __string_564[] = {1, S('*', 0)};
-static const uint32_t __string_565[] = {2, S('*', '*')};
-static const uint32_t __string_566[] = {1, S('/', 0)};
-static const uint32_t __string_567[] = {1, S('<', 0)};
-static const uint32_t __string_568[] = {2, S('<', '<')};
-static const uint32_t __string_569[] = {2, S('=', '=')};
-static const uint32_t __string_570[] = {1, S('>', 0)};
-static const uint32_t __string_571[] = {2, S('>', '>')};
-static const uint32_t __string_572[] = {2, S('[', ']')};
-static const uint32_t __string_573[] = {1, S('^', 0)};
-static const uint32_t __string_574[] = {1, S('|', 0)};
-static const uint32_t __string_575[] = {3, S('[', ']'), S('=', 0)};
-static const uint32_t __string_576_Unexpected[] = {11, S('U', 'n'), S('e', 'x'), S('p', 'e'), S('c', 't'), S('e', 'd'), S(' ', 0)};
-static const uint32_t __string_577_Expected[] = {9, S('E', 'x'), S('p', 'e'), S('c', 't'), S('e', 'd'), S(' ', 0)};
-static const uint32_t __string_578_Expected[] = {9, S('E', 'x'), S('p', 'e'), S('c', 't'), S('e', 'd'), S(' ', 0)};
-static const uint32_t __string_579_but_found[] = {11, S(' ', 'b'), S('u', 't'), S(' ', 'f'), S('o', 'u'), S('n', 'd'), S(' ', 0)};
-static const uint32_t __string_580_Invalid_escape_code[] = {21, S('I', 'n'), S('v', 'a'), S('l', 'i'), S('d', ' '), S('e', 's'), S('c', 'a'), S('p', 'e'), S(' ', 'c'), S('o', 'd'), S('e', ' '), S('\'', 0)};
-static const uint32_t __string_581_Invalid_character_literal_strin[] = {53, S('I', 'n'), S('v', 'a'), S('l', 'i'), S('d', ' '), S('c', 'h'), S('a', 'r'), S('a', 'c'), S('t', 'e'), S('r', ' '), S('l', 'i'), S('t',
+  '1'), S('2', ')'), S(' ', '&'), S(' ', '0'), S('x', '0'), S('F', ')'), S(' ', '|'), S(' ', '0'), S('x', 'E'), S('0', ')'), S(' ', 'a'), S('s', ' '), S('b', 'y'), S('t', 'e'), S(';', '\n'), S(' ', ' '), S(' ',
+  ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('}', ' '), S('e', 'l'), S('s', 'e'), S(' ', '{'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', '*'), S('n', 'e'), S('x',
+  't'), S(' ', '='), S(' ', '('), S('(', '('), S('c', 'o'), S('d', 'e'), S('P', 'o'), S('i', 'n'), S('t', ' '), S('>', '>'), S(' ', '1'), S('8', ')'), S(' ', '&'), S(' ', '0'), S('x', '0'), S('7', ')'), S(' ',
+  '|'), S(' ', '0'), S('x', 'F'), S('0', ')'), S(' ', 'a'), S('s', ' '), S('b', 'y'), S('t', 'e'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('n', 'e'), S('x',
+  't'), S(' ', '='), S(' ', 'n'), S('e', 'x'), S('t', ' '), S('+', ' '), S('1', ';'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', '*'), S('n', 'e'), S('x', 't'), S(' ',
+  '='), S(' ', '('), S('(', '('), S('c', 'o'), S('d', 'e'), S('P', 'o'), S('i', 'n'), S('t', ' '), S('>', '>'), S(' ', '1'), S('2', ')'), S(' ', '&'), S(' ', '0'), S('x', '3'), S('F', ')'), S(' ', '|'), S(' ',
+  '0'), S('x', '8'), S('0', ')'), S(' ', 'a'), S('s', ' '), S('b', 'y'), S('t', 'e'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('}', '\n'), S(' ', ' '), S(' ', ' '), S(' ',
+  ' '), S(' ', ' '), S(' ', ' '), S('n', 'e'), S('x', 't'), S(' ', '='), S(' ', 'n'), S('e', 'x'), S('t', ' '), S('+', ' '), S('1', ';'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ',
+  '*'), S('n', 'e'), S('x', 't'), S(' ', '='), S(' ', '('), S('(', '('), S('c', 'o'), S('d', 'e'), S('P', 'o'), S('i', 'n'), S('t', ' '), S('>', '>'), S(' ', '6'), S(')', ' '), S('&', ' '), S('0', 'x'), S('3',
+  'F'), S(')', ' '), S('|', ' '), S('0', 'x'), S('8', '0'), S(')', ' '), S('a', 's'), S(' ', 'b'), S('y', 't'), S('e', ';'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', '}'), S('\n', ' '), S(' ',
+  ' '), S(' ', ' '), S(' ', ' '), S(' ', 'n'), S('e', 'x'), S('t', ' '), S('=', ' '), S('n', 'e'), S('x', 't'), S(' ', '+'), S(' ', '1'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S(' ', ' '), S(' ', ' '), S('*',
+  'n'), S('e', 'x'), S('t', ' '), S('=', ' '), S('(', '('), S('c', 'o'), S('d', 'e'), S('P', 'o'), S('i', 'n'), S('t', ' '), S('&', ' '), S('0', 'x'), S('3', 'F'), S(')', ' '), S('|', ' '), S('0', 'x'), S('8',
+  '0'), S(')', ' '), S('a', 's'), S(' ', 'b'), S('y', 't'), S('e', ';'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', '}'), S('\n', ' '), S(' ', ' '), S(' ', ' '), S(' ', 'n'), S('e', 'x'), S('t', ' '), S('=',
+  ' '), S('n', 'e'), S('x', 't'), S(' ', '+'), S(' ', '1'), S(';', '\n'), S(' ', ' '), S(' ', ' '), S('}', '\n'), S('\n', ' '), S(' ', ' '), S(' ', '/'), S('/', ' '), S('C', ' '), S('s', 't'), S('r', 'i'), S('n',
+  'g'), S('s', ' '), S('a', 'r'), S('e', ' '), S('n', 'u'), S('l', 'l'), S('-', 't'), S('e', 'r'), S('m', 'i'), S('n', 'a'), S('t', 'e'), S('d', '\n'), S(' ', ' '), S(' ', ' '), S('*', 'n'), S('e', 'x'), S('t',
+  ' '), S('=', ' '), S('\'', '\\'), S('0', '\''), S(';', '\n'), S('\n', ' '), S(' ', ' '), S(' ', 'r'), S('e', 't'), S('u', 'r'), S('n', ' '), S('u', 't'), S('f', '8'), S(';', '\n'), S(' ', ' '), S('}', '\n'), S('\n',
+  '#'), S('e', 'n'), S('d', 'i'), S('f', '\n')};
+static const uint32_t __string_355[] = {2, S(':', ' ')};
+static const uint32_t __string_356_error[] = {7, S('e', 'r'), S('r', 'o'), S('r', ':'), S(' ', 0)};
+static const uint32_t __string_357_warning[] = {9, S('w', 'a'), S('r', 'n'), S('i', 'n'), S('g', ':'), S(' ', 0)};
+static const uint32_t __string_358[] = {1, S('%', 0)};
+static const uint32_t __string_359[] = {1, S('&', 0)};
+static const uint32_t __string_360[] = {1, S('*', 0)};
+static const uint32_t __string_361[] = {2, S('*', '*')};
+static const uint32_t __string_362[] = {1, S('/', 0)};
+static const uint32_t __string_363[] = {1, S('<', 0)};
+static const uint32_t __string_364[] = {2, S('<', '<')};
+static const uint32_t __string_365[] = {2, S('=', '=')};
+static const uint32_t __string_366[] = {1, S('>', 0)};
+static const uint32_t __string_367[] = {2, S('>', '>')};
+static const uint32_t __string_368[] = {2, S('[', ']')};
+static const uint32_t __string_369[] = {1, S('^', 0)};
+static const uint32_t __string_370[] = {1, S('|', 0)};
+static const uint32_t __string_371[] = {3, S('[', ']'), S('=', 0)};
+static const uint32_t __string_372_Unexpected[] = {11, S('U', 'n'), S('e', 'x'), S('p', 'e'), S('c', 't'), S('e', 'd'), S(' ', 0)};
+static const uint32_t __string_373_Expected[] = {9, S('E', 'x'), S('p', 'e'), S('c', 't'), S('e', 'd'), S(' ', 0)};
+static const uint32_t __string_374_Expected[] = {9, S('E', 'x'), S('p', 'e'), S('c', 't'), S('e', 'd'), S(' ', 0)};
+static const uint32_t __string_375_but_found[] = {11, S(' ', 'b'), S('u', 't'), S(' ', 'f'), S('o', 'u'), S('n', 'd'), S(' ', 0)};
+static const uint32_t __string_376_Invalid_escape_code[] = {21, S('I', 'n'), S('v', 'a'), S('l', 'i'), S('d', ' '), S('e', 's'), S('c', 'a'), S('p', 'e'), S(' ', 'c'), S('o', 'd'), S('e', ' '), S('\'', 0)};
+static const uint32_t __string_377_Invalid_character_literal_strin[] = {53, S('I', 'n'), S('v', 'a'), S('l', 'i'), S('d', ' '), S('c', 'h'), S('a', 'r'), S('a', 'c'), S('t', 'e'), S('r', ' '), S('l', 'i'), S('t',
   'e'), S('r', 'a'), S('l', ' '), S('(', 's'), S('t', 'r'), S('i', 'n'), S('g', 's'), S(' ', 'u'), S('s', 'e'), S(' ', 'd'), S('o', 'u'), S('b', 'l'), S('e', ' '), S('q', 'u'), S('o', 't'), S('e', 's'), S(')', 0)};
-static const uint32_t __string_582_operator[] = {8, S('o', 'p'), S('e', 'r'), S('a', 't'), S('o', 'r')};
-static const uint32_t __string_583_get[] = {3, S('g', 'e'), S('t', 0)};
-static const uint32_t __string_584_set[] = {3, S('s', 'e'), S('t', 0)};
-static const uint32_t __string_585_Instance_functions_don_t_need_th[] = {52, S('I', 'n'), S('s', 't'), S('a', 'n'), S('c', 'e'), S(' ', 'f'), S('u', 'n'), S('c', 't'), S('i', 'o'), S('n', 's'), S(' ', 'd'), S('o',
+static const uint32_t __string_378_operator[] = {8, S('o', 'p'), S('e', 'r'), S('a', 't'), S('o', 'r')};
+static const uint32_t __string_379_get[] = {3, S('g', 'e'), S('t', 0)};
+static const uint32_t __string_380_set[] = {3, S('s', 'e'), S('t', 0)};
+static const uint32_t __string_381_Instance_functions_don_t_need_th[] = {52, S('I', 'n'), S('s', 't'), S('a', 'n'), S('c', 'e'), S(' ', 'f'), S('u', 'n'), S('c', 't'), S('i', 'o'), S('n', 's'), S(' ', 'd'), S('o',
   'n'), S('\'', 't'), S(' ', 'n'), S('e', 'e'), S('d', ' '), S('t', 'h'), S('e', ' '), S('\'', 'f'), S('u', 'n'), S('c', 't'), S('i', 'o'), S('n', '\''), S(' ', 'k'), S('e', 'y'), S('w', 'o'), S('r', 'd')};
-static const uint32_t __string_586_Instance_variables_don_t_need_th[] = {35, S('I', 'n'), S('s', 't'), S('a', 'n'), S('c', 'e'), S(' ', 'v'), S('a', 'r'), S('i', 'a'), S('b', 'l'), S('e', 's'), S(' ', 'd'), S('o',
+static const uint32_t __string_382_Instance_variables_don_t_need_th[] = {35, S('I', 'n'), S('s', 't'), S('a', 'n'), S('c', 'e'), S(' ', 'v'), S('a', 'r'), S('i', 'a'), S('b', 'l'), S('e', 's'), S(' ', 'd'), S('o',
   'n'), S('\'', 't'), S(' ', 'n'), S('e', 'e'), S('d', ' '), S('t', 'h'), S('e', ' '), S('\'', 0)};
-static const uint32_t __string_587_keyword[] = {9, S('\'', ' '), S('k', 'e'), S('y', 'w'), S('o', 'r'), S('d', 0)};
-static const uint32_t __string_588[] = {3, S('[', ']'), S('=', 0)};
-static const uint32_t __string_589[] = {2, S('[', ']')};
-static const uint32_t __string_590_The_operator[] = {14, S('T', 'h'), S('e', ' '), S('o', 'p'), S('e', 'r'), S('a', 't'), S('o', 'r'), S(' ', '\'')};
-static const uint32_t __string_591_cannot_be_implemented[] = {23, S('\'', ' '), S('c', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'b'), S('e', ' '), S('i', 'm'), S('p', 'l'), S('e', 'm'), S('e', 'n'), S('t',
+static const uint32_t __string_383_keyword[] = {9, S('\'', ' '), S('k', 'e'), S('y', 'w'), S('o', 'r'), S('d', 0)};
+static const uint32_t __string_384[] = {3, S('[', ']'), S('=', 0)};
+static const uint32_t __string_385[] = {2, S('[', ']')};
+static const uint32_t __string_386_The_operator[] = {14, S('T', 'h'), S('e', ' '), S('o', 'p'), S('e', 'r'), S('a', 't'), S('o', 'r'), S(' ', '\'')};
+static const uint32_t __string_387_cannot_be_implemented[] = {23, S('\'', ' '), S('c', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'b'), S('e', ' '), S('i', 'm'), S('p', 'l'), S('e', 'm'), S('e', 'n'), S('t',
   'e'), S('d', 0)};
-static const uint32_t __string_592_it_is_automatically_derived_fr[] = {40, S(' ', '('), S('i', 't'), S(' ', 'i'), S('s', ' '), S('a', 'u'), S('t', 'o'), S('m', 'a'), S('t', 'i'), S('c', 'a'), S('l', 'l'), S('y',
+static const uint32_t __string_388_it_is_automatically_derived_fr[] = {40, S(' ', '('), S('i', 't'), S(' ', 'i'), S('s', ' '), S('a', 'u'), S('t', 'o'), S('m', 'a'), S('t', 'i'), S('c', 'a'), S('l', 'l'), S('y',
   ' '), S('d', 'e'), S('r', 'i'), S('v', 'e'), S('d', ' '), S('f', 'r'), S('o', 'm'), S(' ', '\''), S('=', '='), S('\'', ')')};
-static const uint32_t __string_593_it_is_automatically_derived_fr[] = {39, S(' ', '('), S('i', 't'), S(' ', 'i'), S('s', ' '), S('a', 'u'), S('t', 'o'), S('m', 'a'), S('t', 'i'), S('c', 'a'), S('l', 'l'), S('y',
+static const uint32_t __string_389_it_is_automatically_derived_fr[] = {39, S(' ', '('), S('i', 't'), S(' ', 'i'), S('s', ' '), S('a', 'u'), S('t', 'o'), S('m', 'a'), S('t', 'i'), S('c', 'a'), S('l', 'l'), S('y',
   ' '), S('d', 'e'), S('r', 'i'), S('v', 'e'), S('d', ' '), S('f', 'r'), S('o', 'm'), S(' ', '\''), S('>', '\''), S(')', 0)};
-static const uint32_t __string_594_it_is_automatically_derived_fr[] = {39, S(' ', '('), S('i', 't'), S(' ', 'i'), S('s', ' '), S('a', 'u'), S('t', 'o'), S('m', 'a'), S('t', 'i'), S('c', 'a'), S('l', 'l'), S('y',
+static const uint32_t __string_390_it_is_automatically_derived_fr[] = {39, S(' ', '('), S('i', 't'), S(' ', 'i'), S('s', ' '), S('a', 'u'), S('t', 'o'), S('m', 'a'), S('t', 'i'), S('c', 'a'), S('l', 'l'), S('y',
   ' '), S('d', 'e'), S('r', 'i'), S('v', 'e'), S('d', ' '), S('f', 'r'), S('o', 'm'), S(' ', '\''), S('<', '\''), S(')', 0)};
-static const uint32_t __string_595[] = {0};
-static const uint32_t __string_596_Inline_initialization_of_instanc[] = {64, S('I', 'n'), S('l', 'i'), S('n', 'e'), S(' ', 'i'), S('n', 'i'), S('t', 'i'), S('a', 'l'), S('i', 'z'), S('a', 't'), S('i', 'o'), S('n',
+static const uint32_t __string_391[] = {0};
+static const uint32_t __string_392_Inline_initialization_of_instanc[] = {64, S('I', 'n'), S('l', 'i'), S('n', 'e'), S(' ', 'i'), S('n', 'i'), S('t', 'i'), S('a', 'l'), S('i', 'z'), S('a', 't'), S('i', 'o'), S('n',
   ' '), S('o', 'f'), S(' ', 'i'), S('n', 's'), S('t', 'a'), S('n', 'c'), S('e', ' '), S('v', 'a'), S('r', 'i'), S('a', 'b'), S('l', 'e'), S('s', ' '), S('i', 's'), S(' ', 'n'), S('o', 't'), S(' ', 's'), S('u',
   'p'), S('p', 'o'), S('r', 't'), S('e', 'd'), S(' ', 'y'), S('e', 't')};
-static const uint32_t __string_597_Use_the_0o_prefix_for_octal_in[] = {38, S('U', 's'), S('e', ' '), S('t', 'h'), S('e', ' '), S('\'', '0'), S('o', '\''), S(' ', 'p'), S('r', 'e'), S('f', 'i'), S('x', ' '), S('f',
+static const uint32_t __string_393_Use_the_0o_prefix_for_octal_in[] = {38, S('U', 's'), S('e', ' '), S('t', 'h'), S('e', ' '), S('\'', '0'), S('o', '\''), S(' ', 'p'), S('r', 'e'), S('f', 'i'), S('x', ' '), S('f',
   'o'), S('r', ' '), S('o', 'c'), S('t', 'a'), S('l', ' '), S('i', 'n'), S('t', 'e'), S('g', 'e'), S('r', 's')};
-static const uint32_t __string_598_Integer_literal_is_too_big_to_fi[] = {44, S('I', 'n'), S('t', 'e'), S('g', 'e'), S('r', ' '), S('l', 'i'), S('t', 'e'), S('r', 'a'), S('l', ' '), S('i', 's'), S(' ', 't'), S('o',
+static const uint32_t __string_394_Integer_literal_is_too_big_to_fi[] = {44, S('I', 'n'), S('t', 'e'), S('g', 'e'), S('r', ' '), S('l', 'i'), S('t', 'e'), S('r', 'a'), S('l', ' '), S('i', 's'), S(' ', 't'), S('o',
   'o'), S(' ', 'b'), S('i', 'g'), S(' ', 't'), S('o', ' '), S('f', 'i'), S('t', ' '), S('i', 'n'), S(' ', '3'), S('2', ' '), S('b', 'i'), S('t', 's')};
-static const uint32_t __string_599_Unexpected[] = {11, S('U', 'n'), S('e', 'x'), S('p', 'e'), S('c', 't'), S('e', 'd'), S(' ', 0)};
-static const uint32_t __string_600_Expected[] = {9, S('E', 'x'), S('p', 'e'), S('c', 't'), S('e', 'd'), S(' ', 0)};
-static const uint32_t __string_601_but_found[] = {11, S(' ', 'b'), S('u', 't'), S(' ', 'f'), S('o', 'u'), S('n', 'd'), S(' ', 0)};
-static const uint32_t __string_602_0[] = {1, S('0', 0)};
-static const uint32_t __string_603_Use_undef_to_turn_a_preproces[] = {44, S('U', 's'), S('e', ' '), S('\'', '#'), S('u', 'n'), S('d', 'e'), S('f', '\''), S(' ', 't'), S('o', ' '), S('t', 'u'), S('r', 'n'), S(' ',
+static const uint32_t __string_395_Unexpected[] = {11, S('U', 'n'), S('e', 'x'), S('p', 'e'), S('c', 't'), S('e', 'd'), S(' ', 0)};
+static const uint32_t __string_396_Expected[] = {9, S('E', 'x'), S('p', 'e'), S('c', 't'), S('e', 'd'), S(' ', 0)};
+static const uint32_t __string_397_but_found[] = {11, S(' ', 'b'), S('u', 't'), S(' ', 'f'), S('o', 'u'), S('n', 'd'), S(' ', 0)};
+static const uint32_t __string_398_0[] = {1, S('0', 0)};
+static const uint32_t __string_399_Use_undef_to_turn_a_preproces[] = {44, S('U', 's'), S('e', ' '), S('\'', '#'), S('u', 'n'), S('d', 'e'), S('f', '\''), S(' ', 't'), S('o', ' '), S('t', 'u'), S('r', 'n'), S(' ',
   'a'), S(' ', 'p'), S('r', 'e'), S('p', 'r'), S('o', 'c'), S('e', 's'), S('s', 'o'), S('r', ' '), S('f', 'l'), S('a', 'g'), S(' ', 'o'), S('f', 'f')};
-static const uint32_t __string_604_All_define_and_undef_direc[] = {68, S('A', 'l'), S('l', ' '), S('\'', '#'), S('d', 'e'), S('f', 'i'), S('n', 'e'), S('\'', ' '), S('a', 'n'), S('d', ' '), S('\'', '#'), S('u',
+static const uint32_t __string_400_All_define_and_undef_direc[] = {68, S('A', 'l'), S('l', ' '), S('\'', '#'), S('d', 'e'), S('f', 'i'), S('n', 'e'), S('\'', ' '), S('a', 'n'), S('d', ' '), S('\'', '#'), S('u',
   'n'), S('d', 'e'), S('f', '\''), S(' ', 'd'), S('i', 'r'), S('e', 'c'), S('t', 'i'), S('v', 'e'), S('s', ' '), S('m', 'u'), S('s', 't'), S(' ', 'b'), S('e', ' '), S('a', 't'), S(' ', 't'), S('h', 'e'), S(' ',
   't'), S('o', 'p'), S(' ', 'o'), S('f', ' '), S('t', 'h'), S('e', ' '), S('f', 'i'), S('l', 'e')};
-static const uint32_t __string_605_defined[] = {7, S('d', 'e'), S('f', 'i'), S('n', 'e'), S('d', 0)};
-static const uint32_t __string_606_There_is_no_defined_operator[] = {30, S('T', 'h'), S('e', 'r'), S('e', ' '), S('i', 's'), S(' ', 'n'), S('o', ' '), S('\'', 'd'), S('e', 'f'), S('i', 'n'), S('e', 'd'), S('\'',
+static const uint32_t __string_401_defined[] = {7, S('d', 'e'), S('f', 'i'), S('n', 'e'), S('d', 0)};
+static const uint32_t __string_402_There_is_no_defined_operator[] = {30, S('T', 'h'), S('e', 'r'), S('e', ' '), S('i', 's'), S(' ', 'n'), S('o', ' '), S('\'', 'd'), S('e', 'f'), S('i', 'n'), S('e', 'd'), S('\'',
   ' '), S('o', 'p'), S('e', 'r'), S('a', 't'), S('o', 'r')};
-static const uint32_t __string_607_just_use[] = {12, S(' ', '('), S('j', 'u'), S('s', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\'')};
-static const uint32_t __string_608_instead[] = {10, S('\'', ' '), S('i', 'n'), S('s', 't'), S('e', 'a'), S('d', ')')};
-static const uint32_t __string_609_0[] = {1, S('0', 0)};
-static const uint32_t __string_610_Unexpected_integer_did_you_mean[] = {34, S('U', 'n'), S('e', 'x'), S('p', 'e'), S('c', 't'), S('e', 'd'), S(' ', 'i'), S('n', 't'), S('e', 'g'), S('e', 'r'), S(' ', '('), S('d',
+static const uint32_t __string_403_just_use[] = {12, S(' ', '('), S('j', 'u'), S('s', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\'')};
+static const uint32_t __string_404_instead[] = {10, S('\'', ' '), S('i', 'n'), S('s', 't'), S('e', 'a'), S('d', ')')};
+static const uint32_t __string_405_0[] = {1, S('0', 0)};
+static const uint32_t __string_406_Unexpected_integer_did_you_mean[] = {34, S('U', 'n'), S('e', 'x'), S('p', 'e'), S('c', 't'), S('e', 'd'), S(' ', 'i'), S('n', 't'), S('e', 'g'), S('e', 'r'), S(' ', '('), S('d',
   'i'), S('d', ' '), S('y', 'o'), S('u', ' '), S('m', 'e'), S('a', 'n'), S(' ', '\'')};
-static const uint32_t __string_611_true[] = {4, S('t', 'r'), S('u', 'e')};
-static const uint32_t __string_612_false[] = {5, S('f', 'a'), S('l', 's'), S('e', 0)};
-static const uint32_t __string_613[] = {3, S('\'', ')'), S('?', 0)};
-static const uint32_t __string_614_Duplicate_symbol[] = {18, S('D', 'u'), S('p', 'l'), S('i', 'c'), S('a', 't'), S('e', ' '), S('s', 'y'), S('m', 'b'), S('o', 'l'), S(' ', '\'')};
-static const uint32_t __string_615[] = {1, S('\'', 0)};
-static const uint32_t __string_616[] = {2, S('\\', '"')};
-static const uint32_t __string_617_0[] = {2, S('\\', '0')};
-static const uint32_t __string_618_t[] = {2, S('\\', 't')};
-static const uint32_t __string_619_r[] = {2, S('\\', 'r')};
-static const uint32_t __string_620_n[] = {2, S('\\', 'n')};
-static const uint32_t __string_621[] = {2, S('\\', '\\')};
-static const uint32_t __string_622_signatures[] = {10, S('s', 'i'), S('g', 'n'), S('a', 't'), S('u', 'r'), S('e', 's')};
-static const uint32_t __string_623_import_table[] = {12, S('i', 'm'), S('p', 'o'), S('r', 't'), S('_', 't'), S('a', 'b'), S('l', 'e')};
-static const uint32_t __string_624_function_signatures[] = {19, S('f', 'u'), S('n', 'c'), S('t', 'i'), S('o', 'n'), S('_', 's'), S('i', 'g'), S('n', 'a'), S('t', 'u'), S('r', 'e'), S('s', 0)};
-static const uint32_t __string_625_memory[] = {6, S('m', 'e'), S('m', 'o'), S('r', 'y')};
-static const uint32_t __string_626_export_table[] = {12, S('e', 'x'), S('p', 'o'), S('r', 't'), S('_', 't'), S('a', 'b'), S('l', 'e')};
-static const uint32_t __string_627_function_bodies[] = {15, S('f', 'u'), S('n', 'c'), S('t', 'i'), S('o', 'n'), S('_', 'b'), S('o', 'd'), S('i', 'e'), S('s', 0)};
-static const uint32_t __string_628_data_segments[] = {13, S('d', 'a'), S('t', 'a'), S('_', 's'), S('e', 'g'), S('m', 'e'), S('n', 't'), S('s', 0)};
-static const uint32_t __string_629_names[] = {5, S('n', 'a'), S('m', 'e'), S('s', 0)};
+static const uint32_t __string_407_true[] = {4, S('t', 'r'), S('u', 'e')};
+static const uint32_t __string_408_false[] = {5, S('f', 'a'), S('l', 's'), S('e', 0)};
+static const uint32_t __string_409[] = {3, S('\'', ')'), S('?', 0)};
+static const uint32_t __string_410_Duplicate_symbol[] = {18, S('D', 'u'), S('p', 'l'), S('i', 'c'), S('a', 't'), S('e', ' '), S('s', 'y'), S('m', 'b'), S('o', 'l'), S(' ', '\'')};
+static const uint32_t __string_411[] = {1, S('\'', 0)};
+static const uint32_t __string_412[] = {2, S('\\', '"')};
+static const uint32_t __string_413_0[] = {2, S('\\', '0')};
+static const uint32_t __string_414_t[] = {2, S('\\', 't')};
+static const uint32_t __string_415_r[] = {2, S('\\', 'r')};
+static const uint32_t __string_416_n[] = {2, S('\\', 'n')};
+static const uint32_t __string_417[] = {2, S('\\', '\\')};
+static const uint32_t __string_418[] = {2, S(' ', ' ')};
+static const uint32_t __string_419[] = {2, S('{', '\n')};
+static const uint32_t __string_420[] = {2, S(',', ' ')};
+static const uint32_t __string_421_NULL[] = {4, S('N', 'U'), S('L', 'L')};
+static const uint32_t __string_422___string_[] = {9, S('_', '_'), S('s', 't'), S('r', 'i'), S('n', 'g'), S('_', 0)};
+static const uint32_t __string_423_ifdef_THINSCRIPT_BIG_ENDIAN[] = {120, S('\n', '#'), S('i', 'f'), S('d', 'e'), S('f', ' '), S('T', 'H'), S('I', 'N'), S('S', 'C'), S('R', 'I'), S('P', 'T'), S('_', 'B'), S('I',
+  'G'), S('_', 'E'), S('N', 'D'), S('I', 'A'), S('N', '\n'), S(' ', ' '), S('#', 'd'), S('e', 'f'), S('i', 'n'), S('e', ' '), S('S', '('), S('a', ','), S(' ', 'b'), S(')', ' '), S('(', '('), S('(', 'a'), S(')',
+  ' '), S('<', '<'), S(' ', '1'), S('6', ')'), S(' ', '|'), S(' ', '('), S('b', ')'), S(')', '\n'), S('#', 'e'), S('l', 's'), S('e', '\n'), S(' ', ' '), S('#', 'd'), S('e', 'f'), S('i', 'n'), S('e', ' '), S('S',
+  '('), S('a', ','), S(' ', 'b'), S(')', ' '), S('(', '('), S('a', ')'), S(' ', '|'), S(' ', '('), S('(', 'b'), S(')', ' '), S('<', '<'), S(' ', '1'), S('6', ')'), S(')', '\n'), S('#', 'e'), S('n', 'd'), S('i',
+  'f'), S('\n', '\n')};
+static const uint32_t __string_424_static_const_uint32_t[] = {22, S('s', 't'), S('a', 't'), S('i', 'c'), S(' ', 'c'), S('o', 'n'), S('s', 't'), S(' ', 'u'), S('i', 'n'), S('t', '3'), S('2', '_'), S('t',
+  ' ')};
+static const uint32_t __string_425[] = {6, S('[', ']'), S(' ', '='), S(' ', '{')};
+static const uint32_t __string_426_S[] = {4, S(',', ' '), S('S', '(')};
+static const uint32_t __string_427[] = {4, S(',', '\n'), S(' ', ' ')};
+static const uint32_t __string_428[] = {2, S(',', ' ')};
+static const uint32_t __string_429_0[] = {4, S(',', ' '), S('0', ')')};
+static const uint32_t __string_430[] = {3, S('}', ';'), S('\n', 0)};
+static const uint32_t __string_431_const_uint16_t[] = {18, S('(', 'c'), S('o', 'n'), S('s', 't'), S(' ', 'u'), S('i', 'n'), S('t', '1'), S('6', '_'), S('t', ' '), S('*', ')')};
+static const uint32_t __string_432[] = {2, S('-', '>')};
+static const uint32_t __string_433[] = {1, S('.', 0)};
+static const uint32_t __string_434[] = {3, S(' ', '?'), S(' ', 0)};
+static const uint32_t __string_435[] = {3, S(' ', ':'), S(' ', 0)};
+static const uint32_t __string_436[] = {2, S(',', ' ')};
+static const uint32_t __string_437_calloc_1_sizeof[] = {17, S('c', 'a'), S('l', 'l'), S('o', 'c'), S('(', '1'), S(',', ' '), S('s', 'i'), S('z', 'e'), S('o', 'f'), S('(', 0)};
+static const uint32_t __string_438[] = {2, S(')', ')')};
+static const uint32_t __string_439[] = {1, S('~', 0)};
+static const uint32_t __string_440[] = {1, S('*', 0)};
+static const uint32_t __string_441[] = {1, S('-', 0)};
+static const uint32_t __string_442[] = {1, S('!', 0)};
+static const uint32_t __string_443[] = {1, S('+', 0)};
+static const uint32_t __string_444[] = {2, S('-', '-')};
+static const uint32_t __string_445[] = {2, S('+', '+')};
+static const uint32_t __string_446[] = {2, S('-', '-')};
+static const uint32_t __string_447[] = {2, S('+', '+')};
+static const uint32_t __string_448[] = {3, S(' ', '+'), S(' ', 0)};
+static const uint32_t __string_449[] = {3, S(' ', '='), S(' ', 0)};
+static const uint32_t __string_450[] = {3, S(' ', '&'), S(' ', 0)};
+static const uint32_t __string_451[] = {3, S(' ', '|'), S(' ', 0)};
+static const uint32_t __string_452[] = {3, S(' ', '^'), S(' ', 0)};
+static const uint32_t __string_453[] = {3, S(' ', '/'), S(' ', 0)};
+static const uint32_t __string_454[] = {4, S(' ', '='), S('=', ' ')};
+static const uint32_t __string_455[] = {3, S(' ', '>'), S(' ', 0)};
+static const uint32_t __string_456[] = {4, S(' ', '>'), S('=', ' ')};
+static const uint32_t __string_457[] = {3, S(' ', '<'), S(' ', 0)};
+static const uint32_t __string_458[] = {4, S(' ', '<'), S('=', ' ')};
+static const uint32_t __string_459[] = {4, S(' ', '&'), S('&', ' ')};
+static const uint32_t __string_460[] = {4, S(' ', '|'), S('|', ' ')};
+static const uint32_t __string_461[] = {3, S(' ', '*'), S(' ', 0)};
+static const uint32_t __string_462[] = {4, S(' ', '!'), S('=', ' ')};
+static const uint32_t __string_463[] = {3, S(' ', '%'), S(' ', 0)};
+static const uint32_t __string_464[] = {4, S(' ', '<'), S('<', ' ')};
+static const uint32_t __string_465[] = {4, S(' ', '>'), S('>', ' ')};
+static const uint32_t __string_466[] = {3, S(' ', '-'), S(' ', 0)};
+static const uint32_t __string_467_struct[] = {7, S('s', 't'), S('r', 'u'), S('c', 't'), S(' ', 0)};
+static const uint32_t __string_468_uint8_t[] = {7, S('u', 'i'), S('n', 't'), S('8', '_'), S('t', 0)};
+static const uint32_t __string_469_int8_t[] = {6, S('i', 'n'), S('t', '8'), S('_', 't')};
+static const uint32_t __string_470_int32_t[] = {7, S('i', 'n'), S('t', '3'), S('2', '_'), S('t', 0)};
+static const uint32_t __string_471_int16_t[] = {7, S('i', 'n'), S('t', '1'), S('6', '_'), S('t', 0)};
+static const uint32_t __string_472_const_uint16_t[] = {14, S('c', 'o'), S('n', 's'), S('t', ' '), S('u', 'i'), S('n', 't'), S('1', '6'), S('_', 't')};
+static const uint32_t __string_473_uint32_t[] = {8, S('u', 'i'), S('n', 't'), S('3', '2'), S('_', 't')};
+static const uint32_t __string_474_uint16_t[] = {8, S('u', 'i'), S('n', 't'), S('1', '6'), S('_', 't')};
+static const uint32_t __string_475[] = {2, S(' ', '*')};
+static const uint32_t __string_476_if[] = {4, S('i', 'f'), S(' ', '(')};
+static const uint32_t __string_477[] = {2, S(')', ' ')};
+static const uint32_t __string_478[] = {2, S('\n', '\n')};
+static const uint32_t __string_479_else[] = {5, S('e', 'l'), S('s', 'e'), S(' ', 0)};
+static const uint32_t __string_480_while[] = {7, S('w', 'h'), S('i', 'l'), S('e', ' '), S('(', 0)};
+static const uint32_t __string_481[] = {2, S(')', ' ')};
+static const uint32_t __string_482_break[] = {7, S('b', 'r'), S('e', 'a'), S('k', ';'), S('\n', 0)};
+static const uint32_t __string_483_continue[] = {10, S('c', 'o'), S('n', 't'), S('i', 'n'), S('u', 'e'), S(';', '\n')};
+static const uint32_t __string_484[] = {2, S(';', '\n')};
+static const uint32_t __string_485_return[] = {7, S('r', 'e'), S('t', 'u'), S('r', 'n'), S(' ', 0)};
+static const uint32_t __string_486[] = {2, S(';', '\n')};
+static const uint32_t __string_487_return[] = {8, S('r', 'e'), S('t', 'u'), S('r', 'n'), S(';', '\n')};
+static const uint32_t __string_488[] = {3, S(' ', '='), S(' ', 0)};
+static const uint32_t __string_489[] = {2, S(';', '\n')};
+static const uint32_t __string_490_include_stdint_h[] = {20, S('#', 'i'), S('n', 'c'), S('l', 'u'), S('d', 'e'), S(' ', '<'), S('s', 't'), S('d', 'i'), S('n', 't'), S('.', 'h'), S('>', '\n')};
+static const uint32_t __string_491_include[] = {10, S('#', 'i'), S('n', 'c'), S('l', 'u'), S('d', 'e'), S(' ', '"')};
+static const uint32_t __string_492[] = {2, S('"', '\n')};
+static const uint32_t __string_493_include_stdlib_h[] = {20, S('#', 'i'), S('n', 'c'), S('l', 'u'), S('d', 'e'), S(' ', '<'), S('s', 't'), S('d', 'l'), S('i', 'b'), S('.', 'h'), S('>', '\n')};
+static const uint32_t __string_494_include_string_h[] = {20, S('#', 'i'), S('n', 'c'), S('l', 'u'), S('d', 'e'), S(' ', '<'), S('s', 't'), S('r', 'i'), S('n', 'g'), S('.', 'h'), S('>', '\n')};
+static const uint32_t __string_495_struct[] = {7, S('s', 't'), S('r', 'u'), S('c', 't'), S(' ', 0)};
+static const uint32_t __string_496[] = {2, S(';', '\n')};
+static const uint32_t __string_497_struct[] = {7, S('s', 't'), S('r', 'u'), S('c', 't'), S(' ', 0)};
+static const uint32_t __string_498[] = {3, S(' ', '{'), S('\n', 0)};
+static const uint32_t __string_499[] = {2, S(';', '\n')};
+static const uint32_t __string_500[] = {3, S('}', ';'), S('\n', 0)};
+static const uint32_t __string_501_enum[] = {7, S('e', 'n'), S('u', 'm'), S(' ', '{'), S('\n', 0)};
+static const uint32_t __string_502__[] = {1, S('_', 0)};
+static const uint32_t __string_503[] = {3, S(' ', '='), S(' ', 0)};
+static const uint32_t __string_504[] = {2, S(',', '\n')};
+static const uint32_t __string_505[] = {1, S('\n', 0)};
+static const uint32_t __string_506[] = {3, S('}', ';'), S('\n', 0)};
+static const uint32_t __string_507_malloc[] = {6, S('m', 'a'), S('l', 'l'), S('o', 'c')};
+static const uint32_t __string_508_memcpy[] = {6, S('m', 'e'), S('m', 'c'), S('p', 'y')};
+static const uint32_t __string_509_memcmp[] = {6, S('m', 'e'), S('m', 'c'), S('m', 'p')};
+static const uint32_t __string_510_static[] = {7, S('s', 't'), S('a', 't'), S('i', 'c'), S(' ', 0)};
+static const uint32_t __string_511___this[] = {6, S('_', '_'), S('t', 'h'), S('i', 's')};
+static const uint32_t __string_512[] = {2, S(',', ' ')};
+static const uint32_t __string_513[] = {3, S(')', ';'), S('\n', 0)};
+static const uint32_t __string_514_static[] = {7, S('s', 't'), S('a', 't'), S('i', 'c'), S(' ', 0)};
+static const uint32_t __string_515[] = {3, S(' ', '='), S(' ', 0)};
+static const uint32_t __string_516[] = {2, S(';', '\n')};
+static const uint32_t __string_517_static[] = {7, S('s', 't'), S('a', 't'), S('i', 'c'), S(' ', 0)};
+static const uint32_t __string_518[] = {2, S(',', ' ')};
+static const uint32_t __string_519[] = {2, S(')', ' ')};
+static const uint32_t __string_520_undef_S[] = {10, S('\n', '#'), S('u', 'n'), S('d', 'e'), S('f', ' '), S('S', '\n')};
+static const uint32_t __string_521_0[] = {4, S('\'', '\\'), S('0', '\'')};
+static const uint32_t __string_522_r[] = {4, S('\'', '\\'), S('r', '\'')};
+static const uint32_t __string_523_n[] = {4, S('\'', '\\'), S('n', '\'')};
+static const uint32_t __string_524_t[] = {4, S('\'', '\\'), S('t', '\'')};
+static const uint32_t __string_525_h[] = {2, S('.', 'h')};
+static const uint32_t __string_526[] = {2, S(' ', ' ')};
+static const uint32_t __string_527[] = {2, S('{', '\n')};
+static const uint32_t __string_528_0[] = {6, S(' ', '>'), S('>', '>'), S(' ', '0')};
+static const uint32_t __string_529_0[] = {4, S(' ', '|'), S(' ', '0')};
+static const uint32_t __string_530_0[] = {6, S(' ', '>'), S('>', '>'), S(' ', '0')};
+static const uint32_t __string_531_0[] = {4, S(' ', '|'), S(' ', '0')};
+static const uint32_t __string_532[] = {2, S(',', ' ')};
+static const uint32_t __string_533___imports[] = {10, S('_', '_'), S('i', 'm'), S('p', 'o'), S('r', 't'), S('s', '.')};
+static const uint32_t __string_534_null[] = {4, S('n', 'u'), S('l', 'l')};
+static const uint32_t __string_535_true[] = {4, S('t', 'r'), S('u', 'e')};
+static const uint32_t __string_536_false[] = {5, S('f', 'a'), S('l', 's'), S('e', 0)};
+static const uint32_t __string_537[] = {4, S(' ', '<'), S('<', ' ')};
+static const uint32_t __string_538[] = {4, S(' ', '>'), S('>', ' ')};
+static const uint32_t __string_539[] = {3, S(' ', '&'), S(' ', 0)};
+static const uint32_t __string_540_0[] = {4, S(' ', '|'), S(' ', '0')};
+static const uint32_t __string_541_0[] = {6, S(' ', '>'), S('>', '>'), S(' ', '0')};
+static const uint32_t __string_542[] = {3, S(' ', '?'), S(' ', 0)};
+static const uint32_t __string_543[] = {3, S(' ', ':'), S(' ', 0)};
+static const uint32_t __string_544_new[] = {4, S('n', 'e'), S('w', ' ')};
+static const uint32_t __string_545[] = {2, S('(', ')')};
+static const uint32_t __string_546[] = {1, S('!', 0)};
+static const uint32_t __string_547[] = {1, S('~', 0)};
+static const uint32_t __string_548[] = {1, S('-', 0)};
+static const uint32_t __string_549[] = {1, S('+', 0)};
+static const uint32_t __string_550[] = {2, S('+', '+')};
+static const uint32_t __string_551[] = {2, S('-', '-')};
+static const uint32_t __string_552[] = {2, S('+', '+')};
+static const uint32_t __string_553[] = {2, S('-', '-')};
+static const uint32_t __string_554[] = {3, S(' ', '+'), S(' ', 0)};
+static const uint32_t __string_555[] = {3, S(' ', '='), S(' ', 0)};
+static const uint32_t __string_556[] = {3, S(' ', '&'), S(' ', 0)};
+static const uint32_t __string_557[] = {3, S(' ', '|'), S(' ', 0)};
+static const uint32_t __string_558[] = {3, S(' ', '^'), S(' ', 0)};
+static const uint32_t __string_559[] = {3, S(' ', '/'), S(' ', 0)};
+static const uint32_t __string_560[] = {5, S(' ', '='), S('=', '='), S(' ', 0)};
+static const uint32_t __string_561[] = {3, S(' ', '>'), S(' ', 0)};
+static const uint32_t __string_562[] = {4, S(' ', '>'), S('=', ' ')};
+static const uint32_t __string_563[] = {3, S(' ', '<'), S(' ', 0)};
+static const uint32_t __string_564[] = {4, S(' ', '<'), S('=', ' ')};
+static const uint32_t __string_565[] = {4, S(' ', '&'), S('&', ' ')};
+static const uint32_t __string_566[] = {4, S(' ', '|'), S('|', ' ')};
+static const uint32_t __string_567[] = {5, S(' ', '!'), S('=', '='), S(' ', 0)};
+static const uint32_t __string_568[] = {3, S(' ', '%'), S(' ', 0)};
+static const uint32_t __string_569[] = {4, S(' ', '<'), S('<', ' ')};
+static const uint32_t __string_570[] = {5, S(' ', '>'), S('>', '>'), S(' ', 0)};
+static const uint32_t __string_571[] = {4, S(' ', '>'), S('>', ' ')};
+static const uint32_t __string_572[] = {3, S(' ', '-'), S(' ', 0)};
+static const uint32_t __string_573___imul[] = {7, S('_', '_'), S('i', 'm'), S('u', 'l'), S('(', 0)};
+static const uint32_t __string_574[] = {2, S(',', ' ')};
+static const uint32_t __string_575_0[] = {6, S(' ', '>'), S('>', '>'), S(' ', '0')};
+static const uint32_t __string_576_prototype[] = {11, S('.', 'p'), S('r', 'o'), S('t', 'o'), S('t', 'y'), S('p', 'e'), S('.', 0)};
+static const uint32_t __string_577_function[] = {11, S(' ', '='), S(' ', 'f'), S('u', 'n'), S('c', 't'), S('i', 'o'), S('n', 0)};
+static const uint32_t __string_578_var[] = {4, S('v', 'a'), S('r', ' ')};
+static const uint32_t __string_579___exports[] = {13, S(' ', '='), S(' ', '_'), S('_', 'e'), S('x', 'p'), S('o', 'r'), S('t', 's'), S('.', 0)};
+static const uint32_t __string_580_function[] = {11, S(' ', '='), S(' ', 'f'), S('u', 'n'), S('c', 't'), S('i', 'o'), S('n', 0)};
+static const uint32_t __string_581_function[] = {9, S('f', 'u'), S('n', 'c'), S('t', 'i'), S('o', 'n'), S(' ', 0)};
+static const uint32_t __string_582[] = {2, S(',', ' ')};
+static const uint32_t __string_583[] = {2, S(')', ' ')};
+static const uint32_t __string_584[] = {2, S(';', '\n')};
+static const uint32_t __string_585[] = {1, S('\n', 0)};
+static const uint32_t __string_586_if[] = {4, S('i', 'f'), S(' ', '(')};
+static const uint32_t __string_587[] = {2, S(')', ' ')};
+static const uint32_t __string_588[] = {2, S('\n', '\n')};
+static const uint32_t __string_589_else[] = {5, S('e', 'l'), S('s', 'e'), S(' ', 0)};
+static const uint32_t __string_590_while[] = {7, S('w', 'h'), S('i', 'l'), S('e', ' '), S('(', 0)};
+static const uint32_t __string_591[] = {2, S(')', ' ')};
+static const uint32_t __string_592_break[] = {7, S('b', 'r'), S('e', 'a'), S('k', ';'), S('\n', 0)};
+static const uint32_t __string_593_continue[] = {10, S('c', 'o'), S('n', 't'), S('i', 'n'), S('u', 'e'), S(';', '\n')};
+static const uint32_t __string_594[] = {2, S(';', '\n')};
+static const uint32_t __string_595_return[] = {7, S('r', 'e'), S('t', 'u'), S('r', 'n'), S(' ', 0)};
+static const uint32_t __string_596[] = {2, S(';', '\n')};
+static const uint32_t __string_597_return[] = {8, S('r', 'e'), S('t', 'u'), S('r', 'n'), S(';', '\n')};
+static const uint32_t __string_598_var[] = {4, S('v', 'a'), S('r', ' ')};
+static const uint32_t __string_599[] = {2, S(',', ' ')};
+static const uint32_t __string_600[] = {3, S(' ', '='), S(' ', 0)};
+static const uint32_t __string_601[] = {2, S(';', '\n')};
+static const uint32_t __string_602_function[] = {9, S('f', 'u'), S('n', 'c'), S('t', 'i'), S('o', 'n'), S(' ', 0)};
+static const uint32_t __string_603[] = {5, S('(', ')'), S(' ', '{'), S('\n', 0)};
+static const uint32_t __string_604_this[] = {5, S('t', 'h'), S('i', 's'), S('.', 0)};
+static const uint32_t __string_605[] = {3, S(' ', '='), S(' ', 0)};
+static const uint32_t __string_606[] = {2, S(';', '\n')};
+static const uint32_t __string_607[] = {2, S('}', '\n')};
+static const uint32_t __string_608___exports[] = {10, S('_', '_'), S('e', 'x'), S('p', 'o'), S('r', 't'), S('s', '.')};
+static const uint32_t __string_609[] = {5, S(' ', '='), S(' ', '{'), S('\n', 0)};
+static const uint32_t __string_610[] = {2, S(':', ' ')};
+static const uint32_t __string_611[] = {2, S(',', '\n')};
+static const uint32_t __string_612[] = {1, S('\n', 0)};
+static const uint32_t __string_613[] = {3, S('}', ';'), S('\n', 0)};
+static const uint32_t __string_614_function___imports___exports[] = {34, S('(', 'f'), S('u', 'n'), S('c', 't'), S('i', 'o'), S('n', '('), S('_', '_'), S('i', 'm'), S('p', 'o'), S('r', 't'), S('s', ','), S(' ',
+  '_'), S('_', 'e'), S('x', 'p'), S('o', 'r'), S('t', 's'), S(')', ' '), S('{', '\n')};
+static const uint32_t __string_615_var___imul_Math_imul_functi[] = {43, S('v', 'a'), S('r', ' '), S('_', '_'), S('i', 'm'), S('u', 'l'), S(' ', '='), S(' ', 'M'), S('a', 't'), S('h', '.'), S('i', 'm'), S('u',
+  'l'), S(' ', '|'), S('|', ' '), S('f', 'u'), S('n', 'c'), S('t', 'i'), S('o', 'n'), S('(', 'a'), S(',', ' '), S('b', ')'), S(' ', '{'), S('\n', 0)};
+static const uint32_t __string_616_return_a_b_16_16[] = {53, S('r', 'e'), S('t', 'u'), S('r', 'n'), S(' ', '('), S('a', ' '), S('*', ' '), S('(', 'b'), S(' ', '>'), S('>', '>'), S(' ', '1'), S('6',
+  ')'), S(' ', '<'), S('<', ' '), S('1', '6'), S(')', ' '), S('+', ' '), S('a', ' '), S('*', ' '), S('(', 'b'), S(' ', '&'), S(' ', '6'), S('5', '5'), S('3', '5'), S(')', ' '), S('|', ' '), S('0', ';'), S('\n', 0)};
+static const uint32_t __string_617[] = {3, S('}', ';'), S('\n', 0)};
+static const uint32_t __string_618[] = {3, S('}', '('), S('\n', 0)};
+static const uint32_t __string_619_typeof_global_undefined[] = {47, S('t', 'y'), S('p', 'e'), S('o', 'f'), S(' ', 'g'), S('l', 'o'), S('b', 'a'), S('l', ' '), S('!', '='), S('=', ' '), S('\'', 'u'), S('n',
+  'd'), S('e', 'f'), S('i', 'n'), S('e', 'd'), S('\'', ' '), S('?', ' '), S('g', 'l'), S('o', 'b'), S('a', 'l'), S(' ', ':'), S(' ', 't'), S('h', 'i'), S('s', ','), S('\n', 0)};
+static const uint32_t __string_620_typeof_exports_undefined[] = {48, S('t', 'y'), S('p', 'e'), S('o', 'f'), S(' ', 'e'), S('x', 'p'), S('o', 'r'), S('t', 's'), S(' ', '!'), S('=', '='), S(' ', '\''), S('u',
+  'n'), S('d', 'e'), S('f', 'i'), S('n', 'e'), S('d', '\''), S(' ', '?'), S(' ', 'e'), S('x', 'p'), S('o', 'r'), S('t', 's'), S(' ', ':'), S(' ', 't'), S('h', 'i'), S('s', '\n')};
+static const uint32_t __string_621[] = {4, S(')', ')'), S(';', '\n')};
+static const uint32_t __string_622_malloc[] = {6, S('m', 'a'), S('l', 'l'), S('o', 'c')};
+static const uint32_t __string_623_free[] = {4, S('f', 'r'), S('e', 'e')};
+static const uint32_t __string_624_dylink[] = {6, S('d', 'y'), S('l', 'i'), S('n', 'k')};
+static const uint32_t __string_625_name[] = {4, S('n', 'a'), S('m', 'e')};
+static const uint32_t __string_626_myModuleName[] = {12, S('m', 'y'), S('M', 'o'), S('d', 'u'), S('l', 'e'), S('N', 'a'), S('m', 'e')};
+static const uint32_t __string_627[] = {1, S('.', 0)};
+static const uint32_t __string_628_this[] = {4, S('t', 'h'), S('i', 's')};
+static const uint32_t __string_629_memory[] = {6, S('m', 'e'), S('m', 'o'), S('r', 'y')};
 static const uint32_t __string_630_currentHeapPointer[] = {18, S('c', 'u'), S('r', 'r'), S('e', 'n'), S('t', 'H'), S('e', 'a'), S('p', 'P'), S('o', 'i'), S('n', 't'), S('e', 'r')};
 static const uint32_t __string_631_originalHeapPointer[] = {19, S('o', 'r'), S('i', 'g'), S('i', 'n'), S('a', 'l'), S('H', 'e'), S('a', 'p'), S('P', 'o'), S('i', 'n'), S('t', 'e'), S('r', 0)};
 static const uint32_t __string_632_global[] = {6, S('g', 'l'), S('o', 'b'), S('a', 'l')};
-static const uint32_t __string_633_malloc[] = {6, S('m', 'a'), S('l', 'l'), S('o', 'c')};
 
 #undef S
 
-struct CResult;
+struct CommandLineArgument;
 struct CheckContext;
 struct Compiler;
-struct JsResult;
 struct Token;
 struct LineColumn;
 struct Source;
 struct Range;
 struct Diagnostic;
 struct Log;
-struct CommandLineArgument;
 struct NodeFlag;
 struct Node;
 struct ParserContext;
@@ -1175,29 +1178,27 @@ struct Preprocessor;
 struct Scope;
 struct StringBuilder;
 struct Symbol;
-struct Type;
+struct CResult;
+struct JsResult;
 struct WasmWrappedType;
 struct WasmSignature;
+struct WasmGlobal;
+struct WasmLocal;
 struct WasmFunction;
 struct WasmImport;
 struct WasmModule;
 struct WasmSharedOffset;
+struct Type;
+
+struct CommandLineArgument {
+  const uint16_t *text;
+  struct CommandLineArgument *next;
+};
 
 struct ByteArray {
   uint8_t *_data;
   uint32_t _length;
   uint32_t _capacity;
-};
-
-struct CResult {
-  struct CheckContext *context;
-  struct StringBuilder *code;
-  struct StringBuilder *codePrefix;
-  const uint16_t *headerName;
-  int32_t indent;
-  uint8_t hasStrings;
-  struct Node *previousNode;
-  int32_t nextStringLiteral;
 };
 
 struct CheckContext {
@@ -1237,14 +1238,6 @@ struct Compiler {
   const uint16_t *outputH;
 };
 
-struct JsResult {
-  struct CheckContext *context;
-  struct StringBuilder *code;
-  int32_t indent;
-  uint8_t foundMultiply;
-  struct Node *previousNode;
-};
-
 struct Token {
   int32_t kind;
   struct Range *range;
@@ -1281,11 +1274,6 @@ struct Diagnostic {
 struct Log {
   struct Diagnostic *first;
   struct Diagnostic *last;
-};
-
-struct CommandLineArgument {
-  const uint16_t *text;
-  struct CommandLineArgument *next;
 };
 
 struct NodeFlag {
@@ -1361,11 +1349,23 @@ struct Symbol {
   int32_t offset;
 };
 
-struct Type {
-  struct Symbol *symbol;
-  struct Type *pointerTo;
-  const uint16_t *cachedToString;
-  struct Type *cachedPointerType;
+struct CResult {
+  struct CheckContext *context;
+  struct StringBuilder *code;
+  struct StringBuilder *codePrefix;
+  const uint16_t *headerName;
+  int32_t indent;
+  uint8_t hasStrings;
+  struct Node *previousNode;
+  int32_t nextStringLiteral;
+};
+
+struct JsResult {
+  struct CheckContext *context;
+  struct StringBuilder *code;
+  int32_t indent;
+  uint8_t foundMultiply;
+  struct Node *previousNode;
 };
 
 struct WasmWrappedType {
@@ -1379,11 +1379,23 @@ struct WasmSignature {
   struct WasmSignature *next;
 };
 
+struct WasmGlobal {
+  struct Symbol *symbol;
+  struct WasmGlobal *next;
+};
+
+struct WasmLocal {
+  struct Symbol *symbol;
+  struct WasmLocal *next;
+};
+
 struct WasmFunction {
   struct Symbol *symbol;
   int32_t signatureIndex;
   uint8_t isExported;
-  int32_t intLocalCount;
+  struct WasmLocal *firstLocal;
+  struct WasmLocal *lastLocal;
+  int32_t localCount;
   struct WasmFunction *next;
 };
 
@@ -1395,9 +1407,13 @@ struct WasmImport {
 };
 
 struct WasmModule {
+  struct Compiler *compiler;
   struct WasmImport *firstImport;
   struct WasmImport *lastImport;
   int32_t importCount;
+  int32_t globalCount;
+  struct WasmGlobal *firstGlobal;
+  struct WasmGlobal *lastGlobal;
   struct WasmFunction *firstFunction;
   struct WasmFunction *lastFunction;
   int32_t functionCount;
@@ -1407,13 +1423,23 @@ struct WasmModule {
   struct ByteArray *memoryInitializer;
   int32_t currentHeapPointer;
   int32_t originalHeapPointer;
-  int32_t mallocFunctionIndex;
+  struct WasmFunction *mallocFunction;
+  struct WasmFunction *freeFunction;
+  struct WasmFunction *startFunction;
   struct CheckContext *context;
+  int32_t sectionPayloadOffset;
 };
 
 struct WasmSharedOffset {
   int32_t nextLocalOffset;
-  int32_t intLocalCount;
+  int32_t localCount;
+};
+
+struct Type {
+  struct Symbol *symbol;
+  struct Type *pointerTo;
+  const uint16_t *cachedToString;
+  struct Type *cachedPointerType;
 };
 
 static const uint16_t *ushort_toString(uint16_t __this);
@@ -1430,6 +1456,17 @@ static uint8_t string_endsWith(const uint16_t *__this, const uint16_t *text);
 static int32_t string_lastIndexOf(const uint16_t *__this, const uint16_t *text);
 const uint16_t *cstring_to_utf16(uint8_t *utf8);
 uint8_t *utf16_to_cstring(const uint16_t *input);
+void Terminal_setColor(int32_t color);
+void Terminal_write(const uint16_t *text);
+const uint16_t *IO_readTextFile(const uint16_t *path);
+uint8_t IO_writeTextFile(const uint16_t *path, const uint16_t *contents);
+uint8_t IO_writeBinaryFile(const uint16_t *path, struct ByteArray *contents);
+static void writeLogToTerminal(struct Log *log);
+static void printError(const uint16_t *text);
+void main_addArgument(const uint16_t *text);
+void main_reset();
+static void printUsage();
+int32_t main_entry();
 static void ByteArray_set16(struct ByteArray *array, int32_t index, int32_t value);
 static void ByteArray_set32(struct ByteArray *array, int32_t index, int32_t value);
 static void ByteArray_append32(struct ByteArray *array, int32_t value);
@@ -1441,29 +1478,6 @@ uint8_t ByteArray_get(struct ByteArray *__this, int32_t index);
 void ByteArray_set(struct ByteArray *__this, int32_t index, uint8_t value);
 void ByteArray_append(struct ByteArray *__this, uint8_t value);
 void ByteArray_resize(struct ByteArray *__this, int32_t length);
-static void CResult_emitIndent(struct CResult *__this);
-static void CResult_emitNewlineBefore(struct CResult *__this, struct Node *node);
-static void CResult_emitNewlineAfter(struct CResult *__this, struct Node *node);
-static void CResult_emitStatements(struct CResult *__this, struct Node *node);
-static void CResult_emitBlock(struct CResult *__this, struct Node *node);
-static void CResult_emitUnary(struct CResult *__this, struct Node *node, int32_t parentPrecedence, const uint16_t *operator);
-static void CResult_emitBinary(struct CResult *__this, struct Node *node, int32_t parentPrecedence, const uint16_t *operator, int32_t operatorPrecedence);
-static void CResult_emitCommaSeparatedExpressions(struct CResult *__this, struct Node *start, struct Node *stop);
-static void CResult_emitSymbolName(struct CResult *__this, struct Symbol *symbol);
-static void CResult_emitExpression(struct CResult *__this, struct Node *node, int32_t parentPrecedence);
-static uint8_t CResult_shouldEmitClass(struct CResult *__this, struct Node *node);
-static void CResult_emitType(struct CResult *__this, struct Type *originalType, int32_t mode);
-static void CResult_emitStatement(struct CResult *__this, struct Node *node);
-static void CResult_emitIncludes(struct CResult *__this, struct StringBuilder *code, int32_t mode);
-static void CResult_emitTypeDeclarations(struct CResult *__this, struct Node *node, int32_t mode);
-static void CResult_emitTypeDefinitions(struct CResult *__this, struct Node *node, int32_t mode);
-static uint8_t CResult_shouldEmitFunction(struct CResult *__this, struct Symbol *symbol);
-static void CResult_emitFunctionDeclarations(struct CResult *__this, struct Node *node, int32_t mode);
-static void CResult_emitGlobalVariables(struct CResult *__this, struct Node *node, int32_t mode);
-static void CResult_emitFunctionDefinitions(struct CResult *__this, struct Node *node);
-static void CResult_finishImplementation(struct CResult *__this);
-static void cEmitCharacter(struct StringBuilder *builder, uint16_t c);
-static void cEmit(struct Compiler *compiler);
 static int32_t CheckContext_allocateGlobalVariableOffset(struct CheckContext *__this, int32_t sizeOf, int32_t alignmentOf);
 static void addScopeToSymbol(struct Symbol *symbol, struct Scope *parentScope);
 static void linkSymbolToNode(struct Symbol *symbol, struct Node *node);
@@ -1494,19 +1508,6 @@ void Profiler_begin();
 void Profiler_end(const uint16_t *text);
 static uint8_t isPositivePowerOf2(int32_t value);
 static int32_t alignToNextMultipleOf(int32_t offset, int32_t alignment);
-static void JsResult_emitIndent(struct JsResult *__this);
-static void JsResult_emitNewlineBefore(struct JsResult *__this, struct Node *node);
-static void JsResult_emitNewlineAfter(struct JsResult *__this, struct Node *node);
-static void JsResult_emitStatements(struct JsResult *__this, struct Node *node);
-static void JsResult_emitBlock(struct JsResult *__this, struct Node *node);
-static void JsResult_emitUnary(struct JsResult *__this, struct Node *node, int32_t parentPrecedence, const uint16_t *operator);
-static void JsResult_emitBinary(struct JsResult *__this, struct Node *node, int32_t parentPrecedence, const uint16_t *operator, int32_t operatorPrecedence, int32_t mode);
-static void JsResult_emitCommaSeparatedExpressions(struct JsResult *__this, struct Node *start, struct Node *stop);
-static void JsResult_emitExpression(struct JsResult *__this, struct Node *node, int32_t parentPrecedence);
-static void JsResult_emitSymbolName(struct JsResult *__this, struct Symbol *symbol);
-static void JsResult_emitStatement(struct JsResult *__this, struct Node *node);
-static uint8_t jsKindCastsOperandsToInt(int32_t kind);
-static void jsEmit(struct Compiler *compiler);
 static uint8_t isKeyword(int32_t kind);
 static void splitToken(struct Token *first, int32_t firstKind, int32_t secondKind);
 static const uint16_t *tokenToString(int32_t token);
@@ -1533,17 +1534,6 @@ static void Log_warning(struct Log *__this, struct Range *range, const uint16_t 
 static void Log_append(struct Log *__this, struct Range *range, const uint16_t *message, int32_t kind);
 static const uint16_t *Log_toString(struct Log *__this);
 static uint8_t Log_hasErrors(struct Log *__this);
-void Terminal_setColor(int32_t color);
-void Terminal_write(const uint16_t *text);
-const uint16_t *IO_readTextFile(const uint16_t *path);
-uint8_t IO_writeTextFile(const uint16_t *path, const uint16_t *contents);
-uint8_t IO_writeBinaryFile(const uint16_t *path, struct ByteArray *contents);
-static void writeLogToTerminal(struct Log *log);
-static void printError(const uint16_t *text);
-void main_addArgument(const uint16_t *text);
-void main_reset();
-static void printUsage();
-int32_t main_entry();
 static uint8_t isUnary(int32_t kind);
 static uint8_t isUnaryPostfix(int32_t kind);
 static uint8_t isBinary(int32_t kind);
@@ -1581,6 +1571,7 @@ static uint8_t Node_isAssignTarget(struct Node *__this);
 static struct Node *Node_withRange(struct Node *__this, struct Range *range);
 static struct Node *Node_withInternalRange(struct Node *__this, struct Range *range);
 static struct Node *Node_functionFirstArgument(struct Node *__this);
+static int32_t Node_functionArgumentCount(struct Node *__this);
 static struct Node *Node_functionFirstArgumentIgnoringThis(struct Node *__this);
 static struct Node *Node_functionReturnType(struct Node *__this);
 static struct Node *Node_functionBody(struct Node *__this);
@@ -1705,6 +1696,7 @@ static struct StringBuilder *StringBuilder_new();
 static void StringBuilder_appendQuoted(struct StringBuilder *sb, const uint16_t *text);
 static void StringBuilder_clear(struct StringBuilder *__this);
 static struct StringBuilder *StringBuilder_appendChar(struct StringBuilder *__this, uint16_t c);
+static struct StringBuilder *StringBuilder_appendInt(struct StringBuilder *__this, int32_t i);
 static struct StringBuilder *StringBuilder_appendSlice(struct StringBuilder *__this, const uint16_t *text, int32_t start, int32_t end);
 static struct StringBuilder *StringBuilder_append(struct StringBuilder *__this, const uint16_t *text);
 static const uint16_t *StringBuilder_finish(struct StringBuilder *__this);
@@ -1722,6 +1714,84 @@ static uint8_t Symbol_isUsed(struct Symbol *__this);
 static struct Symbol *Symbol_parent(struct Symbol *__this);
 static struct Type *Symbol_resolvedTypeUnderlyingIfEnumValue(struct Symbol *__this, struct CheckContext *context);
 static void Symbol_determineClassLayout(struct Symbol *__this, struct CheckContext *context);
+static void CResult_emitIndent(struct CResult *__this);
+static void CResult_emitNewlineBefore(struct CResult *__this, struct Node *node);
+static void CResult_emitNewlineAfter(struct CResult *__this, struct Node *node);
+static void CResult_emitStatements(struct CResult *__this, struct Node *node);
+static void CResult_emitBlock(struct CResult *__this, struct Node *node);
+static void CResult_emitUnary(struct CResult *__this, struct Node *node, int32_t parentPrecedence, const uint16_t *operator);
+static void CResult_emitBinary(struct CResult *__this, struct Node *node, int32_t parentPrecedence, const uint16_t *operator, int32_t operatorPrecedence);
+static void CResult_emitCommaSeparatedExpressions(struct CResult *__this, struct Node *start, struct Node *stop);
+static void CResult_emitSymbolName(struct CResult *__this, struct Symbol *symbol);
+static void CResult_emitExpression(struct CResult *__this, struct Node *node, int32_t parentPrecedence);
+static uint8_t CResult_shouldEmitClass(struct CResult *__this, struct Node *node);
+static void CResult_emitType(struct CResult *__this, struct Type *originalType, int32_t mode);
+static void CResult_emitStatement(struct CResult *__this, struct Node *node);
+static void CResult_emitIncludes(struct CResult *__this, struct StringBuilder *code, int32_t mode);
+static void CResult_emitTypeDeclarations(struct CResult *__this, struct Node *node, int32_t mode);
+static void CResult_emitTypeDefinitions(struct CResult *__this, struct Node *node, int32_t mode);
+static uint8_t CResult_shouldEmitFunction(struct CResult *__this, struct Symbol *symbol);
+static void CResult_emitFunctionDeclarations(struct CResult *__this, struct Node *node, int32_t mode);
+static void CResult_emitGlobalVariables(struct CResult *__this, struct Node *node, int32_t mode);
+static void CResult_emitFunctionDefinitions(struct CResult *__this, struct Node *node);
+static void CResult_finishImplementation(struct CResult *__this);
+static void cEmitCharacter(struct StringBuilder *builder, uint16_t c);
+static void cEmit(struct Compiler *compiler);
+static void JsResult_emitIndent(struct JsResult *__this);
+static void JsResult_emitNewlineBefore(struct JsResult *__this, struct Node *node);
+static void JsResult_emitNewlineAfter(struct JsResult *__this, struct Node *node);
+static void JsResult_emitStatements(struct JsResult *__this, struct Node *node);
+static void JsResult_emitBlock(struct JsResult *__this, struct Node *node);
+static void JsResult_emitUnary(struct JsResult *__this, struct Node *node, int32_t parentPrecedence, const uint16_t *operator);
+static void JsResult_emitBinary(struct JsResult *__this, struct Node *node, int32_t parentPrecedence, const uint16_t *operator, int32_t operatorPrecedence, int32_t mode);
+static void JsResult_emitCommaSeparatedExpressions(struct JsResult *__this, struct Node *start, struct Node *stop);
+static void JsResult_emitExpression(struct JsResult *__this, struct Node *node, int32_t parentPrecedence);
+static void JsResult_emitSymbolName(struct JsResult *__this, struct Symbol *symbol);
+static void JsResult_emitStatement(struct JsResult *__this, struct Node *node);
+static uint8_t jsKindCastsOperandsToInt(int32_t kind);
+static void jsEmit(struct Compiler *compiler);
+static void WasmModule_growMemoryInitializer(struct WasmModule *__this);
+static struct WasmImport *WasmModule_allocateImport(struct WasmModule *__this, int32_t signatureIndex, const uint16_t *mod, const uint16_t *name);
+static struct WasmGlobal *WasmModule_allocateGlobal(struct WasmModule *__this, struct Symbol *symbol);
+static struct WasmFunction *WasmModule_allocateFunction(struct WasmModule *__this, struct Symbol *symbol, int32_t signatureIndex);
+static int32_t WasmModule_allocateSignature(struct WasmModule *__this, struct WasmWrappedType *argumentTypes, struct WasmWrappedType *returnType);
+static void WasmModule_emitModule(struct WasmModule *__this, struct ByteArray *array);
+static void WasmModule_beginSection(struct WasmModule *__this, struct ByteArray *array, int32_t code, const uint16_t *name);
+static void WasmModule_finishSection(struct WasmModule *__this, struct ByteArray *array);
+static void WasmModule_emitDylinkSection(struct WasmModule *__this, struct ByteArray *array);
+static void WasmModule_emitNameSection(struct WasmModule *__this, struct ByteArray *array);
+static void WasmModule_emitTypeSection(struct WasmModule *__this, struct ByteArray *array);
+static void WasmModule_emitImportSection(struct WasmModule *__this, struct ByteArray *array);
+static void WasmModule_emitFunctionSection(struct WasmModule *__this, struct ByteArray *array);
+static void WasmModule_emitTableSection(struct WasmModule *__this, struct ByteArray *array);
+static void WasmModule_emitMemorySection(struct WasmModule *__this, struct ByteArray *array);
+static void WasmModule_emitGlobalSection(struct WasmModule *__this, struct ByteArray *array);
+static void WasmModule_emitExportSection(struct WasmModule *__this, struct ByteArray *array);
+static void WasmModule_emitStartSection(struct WasmModule *__this, struct ByteArray *array);
+static void WasmModule_emitElementSection(struct WasmModule *__this, struct ByteArray *array);
+static void WasmModule_emitCodeSection(struct WasmModule *__this, struct ByteArray *array);
+static void WasmModule_emitDataSection(struct WasmModule *__this, struct ByteArray *array);
+static void WasmModule_prepareToEmit(struct WasmModule *__this, struct Node *node);
+static void WasmModule_emitBinaryExpression(struct WasmModule *__this, struct ByteArray *array, struct Node *node, uint8_t opcode);
+static void WasmModule_emitLoadFromMemory(struct WasmModule *__this, struct ByteArray *array, struct Type *type, struct Node *relativeBase, int32_t offset);
+static void WasmModule_emitStoreToMemory(struct WasmModule *__this, struct ByteArray *array, struct Type *type, struct Node *relativeBase, int32_t offset, struct Node *value);
+static int32_t WasmModule_emitNode(struct WasmModule *__this, struct ByteArray *array, struct Node *node);
+static void WasmModule_emit(struct WasmModule *__this, struct ByteArray *array, int32_t code);
+static void WasmModule_emit1U(struct WasmModule *__this, struct ByteArray *array, int32_t code, int32_t imm);
+static void WasmModule_emit1S(struct WasmModule *__this, struct ByteArray *array, int32_t code, int32_t imm);
+static void WasmModule_emit2U(struct WasmModule *__this, struct ByteArray *array, int32_t code, int32_t imm1, int32_t imm2);
+static int32_t WasmModule_getWasmType(struct WasmModule *__this, struct Type *type);
+static int32_t WasmModule_getFunctionCallIndex(struct WasmModule *__this, struct Symbol *symbol);
+static uint8_t wasmAreSignaturesEqual(struct WasmSignature *a, struct WasmSignature *b);
+static void wasmPatchVarUnsigned(struct ByteArray *array, int32_t offset, int32_t value, int32_t maxValue);
+static void wasmWriteVarUnsigned(struct ByteArray *array, int32_t value);
+static void wasmWriteVarSigned(struct ByteArray *array, int32_t value);
+static void wasmWriteLengthPrefixedUTF8(struct ByteArray *array, const uint16_t *value);
+static struct WasmWrappedType *wasmWrapType(int32_t id);
+static uint8_t wasmIsGratuitousBlock(struct Node *node);
+static uint8_t wasmIsImplicitBlock(struct Node *node);
+static void wasmAssignLocalVariableOffsets(struct Node *node, struct WasmSharedOffset *shared, struct WasmFunction *fn);
+static void wasmEmit(struct Compiler *compiler);
 static uint8_t Type_isClass(struct Type *__this);
 static uint8_t Type_isEnum(struct Type *__this);
 static uint8_t Type_isInteger(struct Type *__this);
@@ -1738,35 +1808,6 @@ static struct Type *Type_pointerType(struct Type *__this);
 static const uint16_t *Type_toString(struct Type *__this);
 static struct Symbol *Type_findMember(struct Type *__this, const uint16_t *name, int32_t hint);
 static uint8_t Type_hasInstanceMembers(struct Type *__this);
-static uint8_t wasmAreSignaturesEqual(struct WasmSignature *a, struct WasmSignature *b);
-static void WasmModule_growMemoryInitializer(struct WasmModule *__this);
-static struct WasmImport *WasmModule_allocateImport(struct WasmModule *__this, int32_t signatureIndex, const uint16_t *mod, const uint16_t *name);
-static struct WasmFunction *WasmModule_allocateFunction(struct WasmModule *__this, struct Symbol *symbol, int32_t signatureIndex);
-static int32_t WasmModule_allocateSignature(struct WasmModule *__this, struct WasmWrappedType *argumentTypes, struct WasmWrappedType *returnType);
-static void WasmModule_emitModule(struct WasmModule *__this, struct ByteArray *array);
-static void WasmModule_emitSignatures(struct WasmModule *__this, struct ByteArray *array);
-static void WasmModule_emitImportTable(struct WasmModule *__this, struct ByteArray *array);
-static void WasmModule_emitFunctionSignatures(struct WasmModule *__this, struct ByteArray *array);
-static void WasmModule_emitMemory(struct WasmModule *__this, struct ByteArray *array);
-static void WasmModule_emitExportTable(struct WasmModule *__this, struct ByteArray *array);
-static void WasmModule_emitFunctionBodies(struct WasmModule *__this, struct ByteArray *array);
-static void WasmModule_emitDataSegments(struct WasmModule *__this, struct ByteArray *array);
-static void WasmModule_emitNames(struct WasmModule *__this, struct ByteArray *array);
-static void WasmModule_prepareToEmit(struct WasmModule *__this, struct Node *node);
-static void WasmModule_emitBinaryExpression(struct WasmModule *__this, struct ByteArray *array, struct Node *node, uint8_t opcode);
-static void WasmModule_emitLoadFromMemory(struct WasmModule *__this, struct ByteArray *array, struct Type *type, struct Node *relativeBase, int32_t offset);
-static void WasmModule_emitStoreToMemory(struct WasmModule *__this, struct ByteArray *array, struct Type *type, struct Node *relativeBase, int32_t offset, struct Node *value);
-static int32_t WasmModule_emitNode(struct WasmModule *__this, struct ByteArray *array, struct Node *node);
-static int32_t WasmModule_getWasmType(struct WasmModule *__this, struct Type *type);
-static void wasmPatchVarUnsigned(struct ByteArray *array, int32_t offset, int32_t value, int32_t maxValue);
-static void wasmWriteVarUnsigned(struct ByteArray *array, int32_t value);
-static void wasmWriteVarSigned(struct ByteArray *array, int32_t value);
-static void wasmWriteLengthPrefixedASCII(struct ByteArray *array, const uint16_t *value);
-static int32_t wasmStartSection(struct ByteArray *array, const uint16_t *name);
-static void wasmFinishSection(struct ByteArray *array, int32_t offset);
-static struct WasmWrappedType *wasmWrapType(int32_t id);
-static void wasmAssignLocalVariableOffsets(struct Node *node, struct WasmSharedOffset *shared);
-static void wasmEmit(struct Compiler *compiler);
 
 static struct CommandLineArgument *firstArgument = NULL;
 static struct CommandLineArgument *lastArgument = NULL;
@@ -2101,6 +2142,204 @@ uint8_t *utf16_to_cstring(const uint16_t *input) {
   return utf8;
 }
 
+static void writeLogToTerminal(struct Log *log) {
+  struct Diagnostic *diagnostic = log->first;
+
+  while (diagnostic != NULL) {
+    struct LineColumn *location = Source_indexToLineColumn(diagnostic->range->source, diagnostic->range->start);
+    struct StringBuilder *builder = StringBuilder_new();
+    Diagnostic_appendSourceName(diagnostic, builder, location);
+    Terminal_setColor(1);
+    Terminal_write(StringBuilder_finish(builder));
+    builder = StringBuilder_new();
+    Diagnostic_appendKind(diagnostic, builder);
+    Terminal_setColor(diagnostic->kind == 0 ? 2 : 4);
+    Terminal_write(StringBuilder_finish(builder));
+    builder = StringBuilder_new();
+    Diagnostic_appendMessage(diagnostic, builder);
+    Terminal_setColor(1);
+    Terminal_write(StringBuilder_finish(builder));
+    builder = StringBuilder_new();
+    Diagnostic_appendLineContents(diagnostic, builder, location);
+    Terminal_setColor(0);
+    Terminal_write(StringBuilder_finish(builder));
+    builder = StringBuilder_new();
+    Diagnostic_appendRange(diagnostic, builder, location);
+    Terminal_setColor(3);
+    Terminal_write(StringBuilder_finish(builder));
+    diagnostic = diagnostic->next;
+  }
+
+  Terminal_setColor(0);
+}
+
+static void printError(const uint16_t *text) {
+  Terminal_setColor(2);
+  Terminal_write((const uint16_t *)__string_4_error);
+  Terminal_setColor(1);
+  Terminal_write(text);
+  Terminal_write((const uint16_t *)__string_5);
+  Terminal_setColor(0);
+}
+
+void main_addArgument(const uint16_t *text) {
+  struct CommandLineArgument *argument = calloc(1, sizeof(struct CommandLineArgument));
+  argument->text = text;
+
+  if (firstArgument == NULL) {
+    firstArgument = argument;
+  }
+
+  else {
+    lastArgument->next = argument;
+  }
+
+  lastArgument = argument;
+}
+
+void main_reset() {
+  firstArgument = NULL;
+  lastArgument = NULL;
+}
+
+static void printUsage() {
+  Terminal_write((const uint16_t *)__string_6_Usage_thinc_FLAGS_INPUTS);
+}
+
+int32_t main_entry() {
+  int32_t target = 0;
+  struct CommandLineArgument *argument = firstArgument;
+  int32_t inputCount = 0;
+  const uint16_t *output = NULL;
+
+  if (firstArgument == NULL) {
+    printUsage();
+
+    return 1;
+  }
+
+  while (argument != NULL) {
+    const uint16_t *text = argument->text;
+
+    if (string_startsWith(text, (const uint16_t *)__string_7)) {
+      if (string_op_equals(text, (const uint16_t *)__string_8_h) || string_op_equals(text, (const uint16_t *)__string_9_help) || string_op_equals(text, (const uint16_t *)__string_10_help) || string_op_equals(text, (const uint16_t *)__string_11)) {
+        printUsage();
+
+        return 0;
+      }
+
+      else if (string_op_equals(text, (const uint16_t *)__string_12_c)) {
+        target = 1;
+      }
+
+      else if (string_op_equals(text, (const uint16_t *)__string_13_js)) {
+        target = 2;
+      }
+
+      else if (string_op_equals(text, (const uint16_t *)__string_14_wasm)) {
+        target = 3;
+      }
+
+      else if (string_op_equals(text, (const uint16_t *)__string_15_define) && argument->next != NULL) {
+        argument = argument->next;
+      }
+
+      else if (string_op_equals(text, (const uint16_t *)__string_16_out) && argument->next != NULL) {
+        argument = argument->next;
+        output = argument->text;
+      }
+
+      else {
+        printError(StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_17_Invalid_flag), text)));
+
+        return 2;
+      }
+    }
+
+    else {
+      inputCount = inputCount + 1;
+    }
+
+    argument = argument->next;
+  }
+
+  if (inputCount == 0) {
+    printError((const uint16_t *)__string_18_No_input_files);
+
+    return 3;
+  }
+
+  if (string_op_equals(output, NULL)) {
+    printError((const uint16_t *)__string_19_Missing_an_output_file_use_the);
+
+    return 4;
+  }
+
+  if (target == 0) {
+    if (string_endsWith(output, (const uint16_t *)__string_20_c)) {
+      target = 1;
+    }
+
+    else if (string_endsWith(output, (const uint16_t *)__string_21_js)) {
+      target = 2;
+    }
+
+    else if (string_endsWith(output, (const uint16_t *)__string_22_wasm)) {
+      target = 3;
+    }
+
+    else {
+      printError((const uint16_t *)__string_23_Missing_a_target_use_either_c);
+
+      return 5;
+    }
+  }
+
+  struct Compiler *compiler = calloc(1, sizeof(struct Compiler));
+  Compiler_initialize(compiler, target, output);
+  argument = firstArgument;
+
+  while (argument != NULL) {
+    const uint16_t *text = argument->text;
+
+    if (string_op_equals(text, (const uint16_t *)__string_24_define)) {
+      argument = argument->next;
+      Preprocessor_define(compiler->preprocessor, argument->text, 1);
+    }
+
+    else if (string_op_equals(text, (const uint16_t *)__string_25_out)) {
+      argument = argument->next;
+    }
+
+    else if (!string_startsWith(text, (const uint16_t *)__string_26)) {
+      const uint16_t *contents = IO_readTextFile(text);
+
+      if (string_op_equals(contents, NULL)) {
+        printError(StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_27_Cannot_read_from), text)));
+
+        return 6;
+      }
+
+      Compiler_addInput(compiler, text, contents);
+    }
+
+    argument = argument->next;
+  }
+
+  Compiler_finish(compiler);
+  writeLogToTerminal(compiler->log);
+
+  if (!Log_hasErrors(compiler->log)) {
+    if ((target == 1 && IO_writeTextFile(output, compiler->outputC) && IO_writeTextFile(replaceFileExtension(output, (const uint16_t *)__string_28_h), compiler->outputH)) || (target == 2 && IO_writeTextFile(output, compiler->outputJS)) || (target == 3 && IO_writeBinaryFile(output, compiler->outputWASM))) {
+      return 0;
+    }
+
+    printError(StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_29_Cannot_write_to), output)));
+  }
+
+  return 7;
+}
+
 static void ByteArray_set16(struct ByteArray *array, int32_t index, int32_t value) {
   ByteArray_set(array, index, (uint8_t)value);
   ByteArray_set(array, index + 1, (uint8_t)(value >> 8));
@@ -2167,874 +2406,6 @@ void ByteArray_resize(struct ByteArray *__this, int32_t length) {
   __this->_length = (uint32_t)length;
 }
 
-static void CResult_emitIndent(struct CResult *__this) {
-  int32_t i = __this->indent;
-
-  while (i > 0) {
-    StringBuilder_append(__this->code, (const uint16_t *)__string_4);
-    i = i - 1;
-  }
-}
-
-static void CResult_emitNewlineBefore(struct CResult *__this, struct Node *node) {
-  if (__this->previousNode != NULL && (!isCompactNodeKind(__this->previousNode->kind) || !isCompactNodeKind(node->kind))) {
-    StringBuilder_appendChar(__this->code, 10);
-  }
-
-  __this->previousNode = NULL;
-}
-
-static void CResult_emitNewlineAfter(struct CResult *__this, struct Node *node) {
-  __this->previousNode = node;
-}
-
-static void CResult_emitStatements(struct CResult *__this, struct Node *node) {
-  while (node != NULL) {
-    CResult_emitStatement(__this, node);
-    node = node->nextSibling;
-  }
-}
-
-static void CResult_emitBlock(struct CResult *__this, struct Node *node) {
-  __this->previousNode = NULL;
-  StringBuilder_append(__this->code, (const uint16_t *)__string_5);
-  __this->indent = __this->indent + 1;
-  CResult_emitStatements(__this, node->firstChild);
-  __this->indent = __this->indent - 1;
-  CResult_emitIndent(__this);
-  StringBuilder_appendChar(__this->code, 125);
-  __this->previousNode = NULL;
-}
-
-static void CResult_emitUnary(struct CResult *__this, struct Node *node, int32_t parentPrecedence, const uint16_t *operator) {
-  uint8_t isPostfix = isUnaryPostfix(node->kind);
-  int32_t operatorPrecedence = isPostfix ? 14 : 13;
-  struct StringBuilder *code = __this->code;
-
-  if (parentPrecedence > operatorPrecedence) {
-    StringBuilder_appendChar(code, 40);
-  }
-
-  if (!isPostfix) {
-    StringBuilder_append(code, operator);
-  }
-
-  CResult_emitExpression(__this, Node_unaryValue(node), operatorPrecedence);
-
-  if (isPostfix) {
-    StringBuilder_append(code, operator);
-  }
-
-  if (parentPrecedence > operatorPrecedence) {
-    StringBuilder_appendChar(code, 41);
-  }
-}
-
-static void CResult_emitBinary(struct CResult *__this, struct Node *node, int32_t parentPrecedence, const uint16_t *operator, int32_t operatorPrecedence) {
-  int32_t kind = node->kind;
-  uint8_t isRightAssociative = kind == 49;
-  uint8_t needsParentheses = parentPrecedence > operatorPrecedence;
-  int32_t parentKind = node->parent->kind;
-  struct StringBuilder *code = __this->code;
-
-  if ((parentKind == 61 && kind == 60) || (parentKind == 51 && kind == 50) || ((parentKind == 54 || parentKind == 63) && (kind == 54 || kind == 63)) || ((kind == 48 || kind == 67) && (parentKind == 50 || parentKind == 51 || parentKind == 52 || parentKind == 65 || parentKind == 66))) {
-    needsParentheses = 1;
-  }
-
-  if (needsParentheses) {
-    StringBuilder_appendChar(code, 40);
-  }
-
-  CResult_emitExpression(__this, Node_binaryLeft(node), isRightAssociative ? (int32_t)((int32_t)operatorPrecedence + 1) : operatorPrecedence);
-  StringBuilder_append(code, operator);
-  CResult_emitExpression(__this, Node_binaryRight(node), isRightAssociative ? operatorPrecedence : (int32_t)((int32_t)operatorPrecedence + 1));
-
-  if (needsParentheses) {
-    StringBuilder_appendChar(code, 41);
-  }
-}
-
-static void CResult_emitCommaSeparatedExpressions(struct CResult *__this, struct Node *start, struct Node *stop) {
-  while (start != stop) {
-    CResult_emitExpression(__this, start, 0);
-    start = start->nextSibling;
-
-    if (start != stop) {
-      StringBuilder_append(__this->code, (const uint16_t *)__string_6);
-    }
-  }
-}
-
-static void CResult_emitSymbolName(struct CResult *__this, struct Symbol *symbol) {
-  if (symbol->kind == 4) {
-    StringBuilder_appendChar(StringBuilder_append(__this->code, Symbol_parent(symbol)->name), 95);
-  }
-
-  StringBuilder_append(__this->code, !string_op_equals(symbol->rename, NULL) ? symbol->rename : symbol->name);
-}
-
-static void CResult_emitExpression(struct CResult *__this, struct Node *node, int32_t parentPrecedence) {
-  struct StringBuilder *code = __this->code;
-  assert(node->resolvedType != NULL);
-
-  if (node->kind == 29) {
-    CResult_emitSymbolName(__this, node->symbol);
-  }
-
-  else if (node->kind == 31) {
-    StringBuilder_append(code, (const uint16_t *)__string_7_NULL);
-  }
-
-  else if (node->kind == 22) {
-    StringBuilder_appendChar(code, node->intValue != 0 ? 49 : 48);
-  }
-
-  else if (node->kind == 28) {
-    StringBuilder_append(code, Type_isUnsigned(node->resolvedType) ? uint_toString((uint32_t)node->intValue) : int_toString(node->intValue));
-  }
-
-  else if (node->kind == 34) {
-    int32_t id = __this->nextStringLiteral;
-    struct StringBuilder *builder = StringBuilder_new();
-    StringBuilder_append(StringBuilder_append(builder, (const uint16_t *)__string_8___string_), int_toString(id));
-    const uint16_t *value = node->stringValue;
-    struct StringBuilder *codePrefix = __this->codePrefix;
-    int32_t length = string_length(value);
-    int32_t i = 0;
-
-    if (!__this->hasStrings) {
-      StringBuilder_append(codePrefix, (const uint16_t *)__string_9_ifdef_THINSCRIPT_BIG_ENDIAN);
-      __this->hasStrings = 1;
-    }
-
-    uint8_t underscore = 1;
-    i = 0;
-
-    while (i < length && i < 32) {
-      uint16_t c = string_op_get(value, i);
-
-      if (isAlpha(c) || isNumber(c)) {
-        if (underscore) {
-          StringBuilder_appendChar(builder, 95);
-          underscore = 0;
-        }
-
-        StringBuilder_appendChar(builder, c);
-      }
-
-      else {
-        underscore = 1;
-      }
-
-      i = i + 1;
-    }
-
-    const uint16_t *name = StringBuilder_finish(builder);
-    StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_append(codePrefix, (const uint16_t *)__string_10_static_const_uint32_t), name), (const uint16_t *)__string_11), int_toString(length));
-    i = 0;
-
-    while (i < length) {
-      StringBuilder_append(codePrefix, (const uint16_t *)__string_12_S);
-      cEmitCharacter(codePrefix, string_op_get(value, i));
-
-      if (i + 1 < length) {
-        StringBuilder_append(codePrefix, i % 32 == 20 ? (const uint16_t *)__string_13 : (const uint16_t *)__string_14);
-        cEmitCharacter(codePrefix, string_op_get(value, i + 1));
-        StringBuilder_appendChar(codePrefix, 41);
-      }
-
-      else {
-        StringBuilder_append(codePrefix, (const uint16_t *)__string_15_0);
-      }
-
-      i = i + 2;
-    }
-
-    StringBuilder_append(codePrefix, (const uint16_t *)__string_16);
-    __this->nextStringLiteral = __this->nextStringLiteral + 1;
-    StringBuilder_append(StringBuilder_append(code, (const uint16_t *)__string_17_const_uint16_t), name);
-  }
-
-  else if (node->kind == 24) {
-    if (parentPrecedence > 13) {
-      StringBuilder_appendChar(code, 40);
-    }
-
-    StringBuilder_appendChar(code, 40);
-    CResult_emitType(__this, node->resolvedType, 0);
-    StringBuilder_appendChar(code, 41);
-    CResult_emitExpression(__this, Node_castValue(node), 13);
-
-    if (parentPrecedence > 13) {
-      StringBuilder_appendChar(code, 41);
-    }
-  }
-
-  else if (node->kind == 25) {
-    struct Node *target = Node_dotTarget(node);
-    CResult_emitExpression(__this, target, 15);
-    StringBuilder_append(code, Type_isReference(target->resolvedType) ? (const uint16_t *)__string_18 : (const uint16_t *)__string_19);
-    CResult_emitSymbolName(__this, node->symbol);
-  }
-
-  else if (node->kind == 26) {
-    if (parentPrecedence > 1) {
-      StringBuilder_appendChar(code, 40);
-    }
-
-    CResult_emitExpression(__this, Node_hookValue(node), 2);
-    StringBuilder_append(code, (const uint16_t *)__string_20);
-    CResult_emitExpression(__this, Node_hookTrue(node), 1);
-    StringBuilder_append(code, (const uint16_t *)__string_21);
-    CResult_emitExpression(__this, Node_hookFalse(node), 1);
-
-    if (parentPrecedence > 1) {
-      StringBuilder_appendChar(code, 41);
-    }
-  }
-
-  else if (node->kind == 23) {
-    struct Node *value = Node_callValue(node);
-    CResult_emitSymbolName(__this, value->symbol);
-    StringBuilder_appendChar(code, 40);
-
-    if (value->kind == 25) {
-      CResult_emitExpression(__this, Node_dotTarget(value), 0);
-
-      if (value->nextSibling != NULL) {
-        StringBuilder_append(code, (const uint16_t *)__string_22);
-      }
-    }
-
-    CResult_emitCommaSeparatedExpressions(__this, value->nextSibling, NULL);
-    StringBuilder_appendChar(code, 41);
-  }
-
-  else if (node->kind == 30) {
-    StringBuilder_append(code, (const uint16_t *)__string_23_calloc_1_sizeof);
-    CResult_emitType(__this, node->resolvedType, 2);
-    StringBuilder_append(code, (const uint16_t *)__string_24);
-  }
-
-  else if (node->kind == 38) {
-    CResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_25);
-  }
-
-  else if (node->kind == 39) {
-    CResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_26);
-  }
-
-  else if (node->kind == 40) {
-    CResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_27);
-  }
-
-  else if (node->kind == 41) {
-    CResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_28);
-  }
-
-  else if (node->kind == 43) {
-    CResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_29);
-  }
-
-  else if (node->kind == 44) {
-    CResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_30);
-  }
-
-  else if (node->kind == 45) {
-    CResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_31);
-  }
-
-  else if (node->kind == 46) {
-    CResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_32);
-  }
-
-  else if (node->kind == 47) {
-    CResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_33);
-  }
-
-  else if (node->kind == 48) {
-    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_34, 10);
-  }
-
-  else if (node->kind == 49) {
-    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_35, 1);
-  }
-
-  else if (node->kind == 50) {
-    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_36, 6);
-  }
-
-  else if (node->kind == 51) {
-    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_37, 4);
-  }
-
-  else if (node->kind == 52) {
-    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_38, 5);
-  }
-
-  else if (node->kind == 53) {
-    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_39, 11);
-  }
-
-  else if (node->kind == 54) {
-    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_40, 7);
-  }
-
-  else if (node->kind == 56) {
-    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_41, 8);
-  }
-
-  else if (node->kind == 57) {
-    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_42, 8);
-  }
-
-  else if (node->kind == 58) {
-    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_43, 8);
-  }
-
-  else if (node->kind == 59) {
-    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_44, 8);
-  }
-
-  else if (node->kind == 60) {
-    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_45, 3);
-  }
-
-  else if (node->kind == 61) {
-    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_46, 2);
-  }
-
-  else if (node->kind == 62) {
-    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_47, 11);
-  }
-
-  else if (node->kind == 63) {
-    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_48, 7);
-  }
-
-  else if (node->kind == 64) {
-    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_49, 11);
-  }
-
-  else if (node->kind == 65) {
-    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_50, 9);
-  }
-
-  else if (node->kind == 66) {
-    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_51, 9);
-  }
-
-  else if (node->kind == 67) {
-    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_52, 10);
-  }
-
-  else {
-    assert(0);
-  }
-}
-
-static uint8_t CResult_shouldEmitClass(struct CResult *__this, struct Node *node) {
-  assert(node->kind == 9);
-
-  return node->symbol->kind == 0 && node->symbol != __this->context->stringType->symbol;
-}
-
-static void CResult_emitType(struct CResult *__this, struct Type *originalType, int32_t mode) {
-  struct CheckContext *context = __this->context;
-  struct StringBuilder *code = __this->code;
-  struct Type *type = originalType;
-
-  if (Type_isEnum(type)) {
-    type = Type_underlyingType(type, __this->context);
-  }
-
-  else {
-    while (type->pointerTo != NULL) {
-      type = type->pointerTo;
-    }
-  }
-
-  if (Type_isClass(type)) {
-    StringBuilder_append(code, (const uint16_t *)__string_53_struct);
-  }
-
-  if (type == context->boolType || type == context->byteType) {
-    StringBuilder_append(code, (const uint16_t *)__string_54_uint8_t);
-  }
-
-  else if (type == context->sbyteType) {
-    StringBuilder_append(code, (const uint16_t *)__string_55_int8_t);
-  }
-
-  else if (type == context->intType) {
-    StringBuilder_append(code, (const uint16_t *)__string_56_int32_t);
-  }
-
-  else if (type == context->shortType) {
-    StringBuilder_append(code, (const uint16_t *)__string_57_int16_t);
-  }
-
-  else if (type == context->stringType) {
-    StringBuilder_append(code, (const uint16_t *)__string_58_const_uint16_t);
-  }
-
-  else if (type == context->uintType) {
-    StringBuilder_append(code, (const uint16_t *)__string_59_uint32_t);
-  }
-
-  else if (type == context->ushortType) {
-    StringBuilder_append(code, (const uint16_t *)__string_60_uint16_t);
-  }
-
-  else {
-    CResult_emitSymbolName(__this, type->symbol);
-  }
-
-  if (originalType->pointerTo != NULL) {
-    StringBuilder_appendChar(code, 32);
-
-    while (originalType->pointerTo != NULL) {
-      StringBuilder_appendChar(code, 42);
-      originalType = originalType->pointerTo;
-    }
-  }
-
-  else if (mode != 2) {
-    if (Type_isReference(type)) {
-      StringBuilder_append(code, (const uint16_t *)__string_61);
-    }
-
-    else if (mode == 1) {
-      StringBuilder_appendChar(code, 32);
-    }
-  }
-}
-
-static void CResult_emitStatement(struct CResult *__this, struct Node *node) {
-  struct StringBuilder *code = __this->code;
-
-  if (node->kind == 16) {
-    CResult_emitNewlineBefore(__this, node);
-    CResult_emitIndent(__this);
-
-    while (1) {
-      StringBuilder_append(code, (const uint16_t *)__string_62_if);
-      CResult_emitExpression(__this, Node_ifValue(node), 0);
-      StringBuilder_append(code, (const uint16_t *)__string_63);
-      CResult_emitBlock(__this, Node_ifTrue(node));
-      struct Node *no = Node_ifFalse(node);
-
-      if (no == NULL) {
-        StringBuilder_appendChar(code, 10);
-
-        break;
-      }
-
-      StringBuilder_append(code, (const uint16_t *)__string_64);
-      CResult_emitIndent(__this);
-      StringBuilder_append(code, (const uint16_t *)__string_65_else);
-
-      if (no->firstChild == NULL || no->firstChild != no->lastChild || no->firstChild->kind != 16) {
-        CResult_emitBlock(__this, no);
-        StringBuilder_appendChar(code, 10);
-
-        break;
-      }
-
-      node = no->firstChild;
-    }
-
-    CResult_emitNewlineAfter(__this, node);
-  }
-
-  else if (node->kind == 20) {
-    CResult_emitNewlineBefore(__this, node);
-    CResult_emitIndent(__this);
-    StringBuilder_append(code, (const uint16_t *)__string_66_while);
-    CResult_emitExpression(__this, Node_whileValue(node), 0);
-    StringBuilder_append(code, (const uint16_t *)__string_67);
-    CResult_emitBlock(__this, Node_whileBody(node));
-    StringBuilder_appendChar(code, 10);
-    CResult_emitNewlineAfter(__this, node);
-  }
-
-  else if (node->kind == 8) {
-    CResult_emitNewlineBefore(__this, node);
-    CResult_emitIndent(__this);
-    StringBuilder_append(code, (const uint16_t *)__string_68_break);
-    CResult_emitNewlineAfter(__this, node);
-  }
-
-  else if (node->kind == 11) {
-    CResult_emitNewlineBefore(__this, node);
-    CResult_emitIndent(__this);
-    StringBuilder_append(code, (const uint16_t *)__string_69_continue);
-    CResult_emitNewlineAfter(__this, node);
-  }
-
-  else if (node->kind == 14) {
-    CResult_emitNewlineBefore(__this, node);
-    CResult_emitIndent(__this);
-    CResult_emitExpression(__this, Node_expressionValue(node), 0);
-    StringBuilder_append(code, (const uint16_t *)__string_70);
-    CResult_emitNewlineAfter(__this, node);
-  }
-
-  else if (node->kind == 12) {
-  }
-
-  else if (node->kind == 17) {
-    struct Node *value = Node_returnValue(node);
-    CResult_emitNewlineBefore(__this, node);
-    CResult_emitIndent(__this);
-
-    if (value != NULL) {
-      StringBuilder_append(code, (const uint16_t *)__string_71_return);
-      CResult_emitExpression(__this, value, 0);
-      StringBuilder_append(code, (const uint16_t *)__string_72);
-    }
-
-    else {
-      StringBuilder_append(code, (const uint16_t *)__string_73_return);
-    }
-
-    CResult_emitNewlineAfter(__this, node);
-  }
-
-  else if (node->kind == 7) {
-    if (node->parent->kind == 7) {
-      CResult_emitStatements(__this, node->firstChild);
-    }
-
-    else {
-      CResult_emitNewlineBefore(__this, node);
-      CResult_emitIndent(__this);
-      CResult_emitBlock(__this, node);
-      StringBuilder_appendChar(code, 10);
-      CResult_emitNewlineAfter(__this, node);
-    }
-  }
-
-  else if (node->kind == 19) {
-    CResult_emitNewlineBefore(__this, node);
-    struct Node *child = node->firstChild;
-
-    while (child != NULL) {
-      struct Node *value = Node_variableValue(child);
-      CResult_emitIndent(__this);
-      CResult_emitType(__this, child->symbol->resolvedType, 1);
-      CResult_emitSymbolName(__this, child->symbol);
-      assert(value != NULL);
-      StringBuilder_append(code, (const uint16_t *)__string_74);
-      CResult_emitExpression(__this, value, 0);
-      StringBuilder_append(code, (const uint16_t *)__string_75);
-      child = child->nextSibling;
-    }
-
-    CResult_emitNewlineAfter(__this, node);
-  }
-
-  else if (node->kind == 10 || node->kind == 13) {
-  }
-
-  else {
-    assert(0);
-  }
-}
-
-static void CResult_emitIncludes(struct CResult *__this, struct StringBuilder *code, int32_t mode) {
-  if (mode == 0) {
-    StringBuilder_append(code, (const uint16_t *)__string_76_include_stdint_h);
-  }
-
-  else {
-    StringBuilder_append(StringBuilder_append(StringBuilder_append(code, (const uint16_t *)__string_77_include), __this->headerName), (const uint16_t *)__string_78);
-    StringBuilder_append(code, (const uint16_t *)__string_79_include_stdlib_h);
-    StringBuilder_append(code, (const uint16_t *)__string_80_include_string_h);
-  }
-}
-
-static void CResult_emitTypeDeclarations(struct CResult *__this, struct Node *node, int32_t mode) {
-  struct StringBuilder *code = __this->code;
-
-  while (node != NULL) {
-    if (node->kind == 9) {
-      if (CResult_shouldEmitClass(__this, node) && (Node_isDeclareOrExtern(node) ? mode == 0 : mode == 1)) {
-        CResult_emitNewlineBefore(__this, node);
-        StringBuilder_append(StringBuilder_append(StringBuilder_append(code, (const uint16_t *)__string_81_struct), node->symbol->name), (const uint16_t *)__string_82);
-      }
-    }
-
-    node = node->nextSibling;
-  }
-}
-
-static void CResult_emitTypeDefinitions(struct CResult *__this, struct Node *node, int32_t mode) {
-  struct StringBuilder *code = __this->code;
-
-  while (node != NULL) {
-    if (node->kind == 9) {
-      if (CResult_shouldEmitClass(__this, node) && mode != 0) {
-        CResult_emitNewlineBefore(__this, node);
-        StringBuilder_append(code, (const uint16_t *)__string_83_struct);
-        CResult_emitSymbolName(__this, node->symbol);
-        StringBuilder_append(code, (const uint16_t *)__string_84);
-        __this->indent = __this->indent + 1;
-        struct Node *child = node->firstChild;
-
-        while (child != NULL) {
-          if (child->kind == 6) {
-            CResult_emitIndent(__this);
-            CResult_emitType(__this, child->symbol->resolvedType, 1);
-            CResult_emitSymbolName(__this, child->symbol);
-            StringBuilder_append(code, (const uint16_t *)__string_85);
-          }
-
-          child = child->nextSibling;
-        }
-
-        __this->indent = __this->indent - 1;
-        StringBuilder_append(code, (const uint16_t *)__string_86);
-        CResult_emitNewlineAfter(__this, node);
-      }
-    }
-
-    else if (node->kind == 13) {
-      if (mode == 0 && Node_isExtern(node)) {
-        CResult_emitNewlineBefore(__this, node);
-        StringBuilder_append(code, (const uint16_t *)__string_87_enum);
-        __this->indent = __this->indent + 1;
-        struct Node *child = node->firstChild;
-
-        while (child != NULL) {
-          assert(child->kind == 6);
-          CResult_emitIndent(__this);
-          CResult_emitSymbolName(__this, node->symbol);
-          StringBuilder_append(code, (const uint16_t *)__string_88__);
-          CResult_emitSymbolName(__this, child->symbol);
-          StringBuilder_append(code, (const uint16_t *)__string_89);
-          StringBuilder_append(code, int_toString(child->symbol->offset));
-          child = child->nextSibling;
-          StringBuilder_append(code, child != NULL ? (const uint16_t *)__string_90 : (const uint16_t *)__string_91);
-        }
-
-        __this->indent = __this->indent - 1;
-        CResult_emitIndent(__this);
-        StringBuilder_append(code, (const uint16_t *)__string_92);
-        CResult_emitNewlineAfter(__this, node);
-      }
-    }
-
-    node = node->nextSibling;
-  }
-}
-
-static uint8_t CResult_shouldEmitFunction(struct CResult *__this, struct Symbol *symbol) {
-  return symbol->kind != 5 || (!string_op_equals(symbol->name, (const uint16_t *)__string_93_malloc) && !string_op_equals(symbol->name, (const uint16_t *)__string_94_memcpy) && !string_op_equals(symbol->name, (const uint16_t *)__string_95_memcmp));
-}
-
-static void CResult_emitFunctionDeclarations(struct CResult *__this, struct Node *node, int32_t mode) {
-  struct StringBuilder *code = __this->code;
-
-  while (node != NULL) {
-    if (node->kind == 15 && (mode != 0 || Node_isDeclareOrExtern(node))) {
-      struct Symbol *symbol = node->symbol;
-
-      if (CResult_shouldEmitFunction(__this, symbol)) {
-        struct Node *returnType = Node_functionReturnType(node);
-        struct Node *child = Node_functionFirstArgument(node);
-        CResult_emitNewlineBefore(__this, node);
-
-        if (!Node_isDeclareOrExtern(node)) {
-          StringBuilder_append(code, (const uint16_t *)__string_96_static);
-        }
-
-        CResult_emitType(__this, returnType->resolvedType, 1);
-        CResult_emitSymbolName(__this, symbol);
-        StringBuilder_appendChar(code, 40);
-
-        if (symbol->kind == 4) {
-          child->symbol->rename = (const uint16_t *)__string_97___this;
-        }
-
-        while (child != returnType) {
-          assert(child->kind == 6);
-          CResult_emitType(__this, child->symbol->resolvedType, 1);
-          CResult_emitSymbolName(__this, child->symbol);
-          child = child->nextSibling;
-
-          if (child != returnType) {
-            StringBuilder_append(code, (const uint16_t *)__string_98);
-          }
-        }
-
-        StringBuilder_append(code, (const uint16_t *)__string_99);
-      }
-    }
-
-    else if (node->kind == 9) {
-      CResult_emitFunctionDeclarations(__this, node->firstChild, mode);
-    }
-
-    node = node->nextSibling;
-  }
-}
-
-static void CResult_emitGlobalVariables(struct CResult *__this, struct Node *node, int32_t mode) {
-  struct StringBuilder *code = __this->code;
-
-  while (node != NULL) {
-    if (node->kind == 6 && (mode != 0 || Node_isExtern(node))) {
-      struct Node *value = Node_variableValue(node);
-      CResult_emitNewlineBefore(__this, node);
-
-      if (!Node_isDeclareOrExtern(node)) {
-        StringBuilder_append(code, (const uint16_t *)__string_100_static);
-      }
-
-      CResult_emitType(__this, node->symbol->resolvedType, 1);
-      CResult_emitSymbolName(__this, node->symbol);
-      StringBuilder_append(code, (const uint16_t *)__string_101);
-      CResult_emitExpression(__this, value, 0);
-      StringBuilder_append(code, (const uint16_t *)__string_102);
-    }
-
-    else if (node->kind == 19) {
-      CResult_emitGlobalVariables(__this, node->firstChild, mode);
-    }
-
-    node = node->nextSibling;
-  }
-}
-
-static void CResult_emitFunctionDefinitions(struct CResult *__this, struct Node *node) {
-  struct StringBuilder *code = __this->code;
-
-  while (node != NULL) {
-    if (node->kind == 15) {
-      struct Node *body = Node_functionBody(node);
-      struct Symbol *symbol = node->symbol;
-
-      if (body != NULL && CResult_shouldEmitFunction(__this, symbol)) {
-        struct Node *returnType = Node_functionReturnType(node);
-        struct Node *child = node->firstChild;
-        CResult_emitNewlineBefore(__this, node);
-
-        if (!Node_isDeclareOrExtern(node)) {
-          StringBuilder_append(code, (const uint16_t *)__string_103_static);
-        }
-
-        CResult_emitType(__this, returnType->resolvedType, 1);
-        CResult_emitSymbolName(__this, symbol);
-        StringBuilder_appendChar(code, 40);
-
-        while (child != returnType) {
-          assert(child->kind == 6);
-          CResult_emitType(__this, child->symbol->resolvedType, 1);
-          CResult_emitSymbolName(__this, child->symbol);
-          child = child->nextSibling;
-
-          if (child != returnType) {
-            StringBuilder_append(code, (const uint16_t *)__string_104);
-          }
-        }
-
-        StringBuilder_append(code, (const uint16_t *)__string_105);
-        CResult_emitBlock(__this, Node_functionBody(node));
-        StringBuilder_appendChar(code, 10);
-        CResult_emitNewlineAfter(__this, node);
-      }
-    }
-
-    else if (node->kind == 9) {
-      CResult_emitFunctionDefinitions(__this, node->firstChild);
-    }
-
-    node = node->nextSibling;
-  }
-}
-
-static void CResult_finishImplementation(struct CResult *__this) {
-  if (__this->hasStrings) {
-    StringBuilder_append(__this->codePrefix, (const uint16_t *)__string_106_undef_S);
-  }
-}
-
-static void cEmitCharacter(struct StringBuilder *builder, uint16_t c) {
-  if (isASCII(c)) {
-    StringBuilder_appendChar(builder, 39);
-
-    if (c == 92 || c == 39) {
-      StringBuilder_appendChar(builder, 92);
-    }
-
-    StringBuilder_appendChar(builder, c);
-    StringBuilder_appendChar(builder, 39);
-  }
-
-  else if (c == 0) {
-    StringBuilder_append(builder, (const uint16_t *)__string_107_0);
-  }
-
-  else if (c == 13) {
-    StringBuilder_append(builder, (const uint16_t *)__string_108_r);
-  }
-
-  else if (c == 10) {
-    StringBuilder_append(builder, (const uint16_t *)__string_109_n);
-  }
-
-  else if (c == 9) {
-    StringBuilder_append(builder, (const uint16_t *)__string_110_t);
-  }
-
-  else {
-    StringBuilder_append(builder, ushort_toString(c));
-  }
-}
-
-static void cEmit(struct Compiler *compiler) {
-  struct Node *child = compiler->global->firstChild;
-  struct StringBuilder *temporaryCode = StringBuilder_new();
-  struct StringBuilder *headerCode = StringBuilder_new();
-  struct StringBuilder *implementationCode = StringBuilder_new();
-  struct CResult *result = calloc(1, sizeof(struct CResult));
-  result->context = compiler->context;
-  result->code = temporaryCode;
-  result->codePrefix = implementationCode;
-  result->headerName = replaceFileExtension(compiler->outputName, (const uint16_t *)__string_111_h);
-
-  if (child != NULL) {
-    CResult_emitIncludes(result, implementationCode, 1);
-    CResult_emitNewlineAfter(result, child);
-    CResult_emitTypeDeclarations(result, child, 1);
-    CResult_emitNewlineAfter(result, child);
-    CResult_emitTypeDefinitions(result, child, 1);
-    CResult_emitNewlineAfter(result, child);
-    CResult_emitFunctionDeclarations(result, child, 1);
-    CResult_emitNewlineAfter(result, child);
-    CResult_emitGlobalVariables(result, child, 1);
-    CResult_emitNewlineAfter(result, child);
-    CResult_emitFunctionDefinitions(result, child);
-    CResult_finishImplementation(result);
-    StringBuilder_append(implementationCode, StringBuilder_finish(temporaryCode));
-    result->code = headerCode;
-    CResult_emitIncludes(result, headerCode, 0);
-    CResult_emitNewlineAfter(result, child);
-    CResult_emitTypeDeclarations(result, child, 0);
-    CResult_emitNewlineAfter(result, child);
-    CResult_emitTypeDefinitions(result, child, 0);
-    CResult_emitNewlineAfter(result, child);
-    CResult_emitFunctionDeclarations(result, child, 0);
-    CResult_emitNewlineAfter(result, child);
-    CResult_emitGlobalVariables(result, child, 0);
-    CResult_emitNewlineAfter(result, child);
-  }
-
-  compiler->outputC = StringBuilder_finish(implementationCode);
-  compiler->outputH = StringBuilder_finish(headerCode);
-}
-
 static int32_t CheckContext_allocateGlobalVariableOffset(struct CheckContext *__this, int32_t sizeOf, int32_t alignmentOf) {
   int32_t offset = alignToNextMultipleOf(__this->nextGlobalVariableOffset, alignmentOf);
   __this->nextGlobalVariableOffset = offset + sizeOf;
@@ -3063,7 +2434,7 @@ static void initialize(struct CheckContext *context, struct Node *node, struct S
     int32_t parentKind = node->parent->kind;
 
     if (kind != 6 && kind != 19 && (kind != 15 || parentKind != 9) && (parentKind == 1) != (kind == 9 || kind == 13 || kind == 15 || kind == 10)) {
-      Log_error(context->log, node->range, (const uint16_t *)__string_112_This_statement_is_not_allowed_he);
+      Log_error(context->log, node->range, (const uint16_t *)__string_30_This_statement_is_not_allowed_he);
     }
   }
 
@@ -3088,20 +2459,20 @@ static void initialize(struct CheckContext *context, struct Node *node, struct S
     symbol->name = node->stringValue;
 
     if (Node_isOperator(node)) {
-      if (string_op_equals(symbol->name, (const uint16_t *)__string_113) || string_op_equals(symbol->name, (const uint16_t *)__string_114)) {
+      if (string_op_equals(symbol->name, (const uint16_t *)__string_31) || string_op_equals(symbol->name, (const uint16_t *)__string_32)) {
         if (Node_functionFirstArgument(node) == Node_functionReturnType(node)) {
           symbol->flags = 8;
-          symbol->rename = string_op_equals(symbol->name, (const uint16_t *)__string_115) ? (const uint16_t *)__string_116_op_positive : (const uint16_t *)__string_117_op_negative;
+          symbol->rename = string_op_equals(symbol->name, (const uint16_t *)__string_33) ? (const uint16_t *)__string_34_op_positive : (const uint16_t *)__string_35_op_negative;
         }
 
         else {
           symbol->flags = 2;
-          symbol->rename = string_op_equals(symbol->name, (const uint16_t *)__string_118) ? (const uint16_t *)__string_119_op_add : (const uint16_t *)__string_120_op_subtract;
+          symbol->rename = string_op_equals(symbol->name, (const uint16_t *)__string_36) ? (const uint16_t *)__string_37_op_add : (const uint16_t *)__string_38_op_subtract;
         }
       }
 
       else {
-        symbol->rename = string_op_equals(symbol->name, (const uint16_t *)__string_121) ? (const uint16_t *)__string_122_op_remainder : string_op_equals(symbol->name, (const uint16_t *)__string_123) ? (const uint16_t *)__string_124_op_and : string_op_equals(symbol->name, (const uint16_t *)__string_125) ? (const uint16_t *)__string_126_op_multiply : string_op_equals(symbol->name, (const uint16_t *)__string_127) ? (const uint16_t *)__string_128_op_exponent : string_op_equals(symbol->name, (const uint16_t *)__string_129) ? (const uint16_t *)__string_130_op_increment : string_op_equals(symbol->name, (const uint16_t *)__string_131) ? (const uint16_t *)__string_132_op_decrement : string_op_equals(symbol->name, (const uint16_t *)__string_133) ? (const uint16_t *)__string_134_op_divide : string_op_equals(symbol->name, (const uint16_t *)__string_135) ? (const uint16_t *)__string_136_op_lessThan : string_op_equals(symbol->name, (const uint16_t *)__string_137) ? (const uint16_t *)__string_138_op_shiftLeft : string_op_equals(symbol->name, (const uint16_t *)__string_139) ? (const uint16_t *)__string_140_op_equals : string_op_equals(symbol->name, (const uint16_t *)__string_141) ? (const uint16_t *)__string_142_op_greaterThan : string_op_equals(symbol->name, (const uint16_t *)__string_143) ? (const uint16_t *)__string_144_op_shiftRight : string_op_equals(symbol->name, (const uint16_t *)__string_145) ? (const uint16_t *)__string_146_op_get : string_op_equals(symbol->name, (const uint16_t *)__string_147) ? (const uint16_t *)__string_148_op_set : string_op_equals(symbol->name, (const uint16_t *)__string_149) ? (const uint16_t *)__string_150_op_xor : string_op_equals(symbol->name, (const uint16_t *)__string_151) ? (const uint16_t *)__string_152_op_or : string_op_equals(symbol->name, (const uint16_t *)__string_153) ? (const uint16_t *)__string_154_op_complement : NULL;
+        symbol->rename = string_op_equals(symbol->name, (const uint16_t *)__string_39) ? (const uint16_t *)__string_40_op_remainder : string_op_equals(symbol->name, (const uint16_t *)__string_41) ? (const uint16_t *)__string_42_op_and : string_op_equals(symbol->name, (const uint16_t *)__string_43) ? (const uint16_t *)__string_44_op_multiply : string_op_equals(symbol->name, (const uint16_t *)__string_45) ? (const uint16_t *)__string_46_op_exponent : string_op_equals(symbol->name, (const uint16_t *)__string_47) ? (const uint16_t *)__string_48_op_increment : string_op_equals(symbol->name, (const uint16_t *)__string_49) ? (const uint16_t *)__string_50_op_decrement : string_op_equals(symbol->name, (const uint16_t *)__string_51) ? (const uint16_t *)__string_52_op_divide : string_op_equals(symbol->name, (const uint16_t *)__string_53) ? (const uint16_t *)__string_54_op_lessThan : string_op_equals(symbol->name, (const uint16_t *)__string_55) ? (const uint16_t *)__string_56_op_shiftLeft : string_op_equals(symbol->name, (const uint16_t *)__string_57) ? (const uint16_t *)__string_58_op_equals : string_op_equals(symbol->name, (const uint16_t *)__string_59) ? (const uint16_t *)__string_60_op_greaterThan : string_op_equals(symbol->name, (const uint16_t *)__string_61) ? (const uint16_t *)__string_62_op_shiftRight : string_op_equals(symbol->name, (const uint16_t *)__string_63) ? (const uint16_t *)__string_64_op_get : string_op_equals(symbol->name, (const uint16_t *)__string_65) ? (const uint16_t *)__string_66_op_set : string_op_equals(symbol->name, (const uint16_t *)__string_67) ? (const uint16_t *)__string_68_op_xor : string_op_equals(symbol->name, (const uint16_t *)__string_69) ? (const uint16_t *)__string_70_op_or : string_op_equals(symbol->name, (const uint16_t *)__string_71) ? (const uint16_t *)__string_72_op_complement : NULL;
       }
     }
 
@@ -3113,7 +2484,7 @@ static void initialize(struct CheckContext *context, struct Node *node, struct S
     if (symbol->kind == 4) {
       struct Symbol *parent = Symbol_parent(symbol);
       initializeSymbol(context, parent);
-      Node_insertChildBefore(node, Node_functionFirstArgument(node), createVariable((const uint16_t *)__string_155_this, createType(parent->resolvedType), NULL));
+      Node_insertChildBefore(node, Node_functionFirstArgument(node), createVariable((const uint16_t *)__string_73_this, createType(parent->resolvedType), NULL));
     }
   }
 
@@ -3145,14 +2516,14 @@ static void initialize(struct CheckContext *context, struct Node *node, struct S
   }
 
   if (kind == 1 && mode == 1) {
-    context->boolType = Scope_findLocal(parentScope, (const uint16_t *)__string_156_bool, 0)->resolvedType;
-    context->byteType = Scope_findLocal(parentScope, (const uint16_t *)__string_157_byte, 0)->resolvedType;
-    context->intType = Scope_findLocal(parentScope, (const uint16_t *)__string_158_int, 0)->resolvedType;
-    context->sbyteType = Scope_findLocal(parentScope, (const uint16_t *)__string_159_sbyte, 0)->resolvedType;
-    context->shortType = Scope_findLocal(parentScope, (const uint16_t *)__string_160_short, 0)->resolvedType;
-    context->stringType = Scope_findLocal(parentScope, (const uint16_t *)__string_161_string, 0)->resolvedType;
-    context->uintType = Scope_findLocal(parentScope, (const uint16_t *)__string_162_uint, 0)->resolvedType;
-    context->ushortType = Scope_findLocal(parentScope, (const uint16_t *)__string_163_ushort, 0)->resolvedType;
+    context->boolType = Scope_findLocal(parentScope, (const uint16_t *)__string_74_bool, 0)->resolvedType;
+    context->byteType = Scope_findLocal(parentScope, (const uint16_t *)__string_75_byte, 0)->resolvedType;
+    context->intType = Scope_findLocal(parentScope, (const uint16_t *)__string_76_int, 0)->resolvedType;
+    context->sbyteType = Scope_findLocal(parentScope, (const uint16_t *)__string_77_sbyte, 0)->resolvedType;
+    context->shortType = Scope_findLocal(parentScope, (const uint16_t *)__string_78_short, 0)->resolvedType;
+    context->stringType = Scope_findLocal(parentScope, (const uint16_t *)__string_79_string, 0)->resolvedType;
+    context->uintType = Scope_findLocal(parentScope, (const uint16_t *)__string_80_uint, 0)->resolvedType;
+    context->ushortType = Scope_findLocal(parentScope, (const uint16_t *)__string_81_ushort, 0)->resolvedType;
     prepareNativeType(context->boolType, 1, 0);
     prepareNativeType(context->byteType, 1, 48);
     prepareNativeType(context->intType, 4, 32);
@@ -3200,22 +2571,22 @@ static void initializeSymbol(struct CheckContext *context, struct Symbol *symbol
   assert(symbol->state == 0);
   symbol->state = 1;
   struct Node *node = symbol->node;
-  forbidFlag(context, node, 2, (const uint16_t *)__string_164_Unsupported_flag_export);
-  forbidFlag(context, node, 128, (const uint16_t *)__string_165_Unsupported_flag_protected);
-  forbidFlag(context, node, 1024, (const uint16_t *)__string_166_Unsupported_flag_static);
+  forbidFlag(context, node, 2, (const uint16_t *)__string_82_Unsupported_flag_export);
+  forbidFlag(context, node, 128, (const uint16_t *)__string_83_Unsupported_flag_protected);
+  forbidFlag(context, node, 1024, (const uint16_t *)__string_84_Unsupported_flag_static);
 
   if (symbol->kind == 0 || symbol->kind == 3) {
-    forbidFlag(context, node, 8, (const uint16_t *)__string_167_Cannot_use_get_on_a_class);
-    forbidFlag(context, node, 512, (const uint16_t *)__string_168_Cannot_use_set_on_a_class);
-    forbidFlag(context, node, 256, (const uint16_t *)__string_169_Cannot_use_public_on_a_class);
-    forbidFlag(context, node, 64, (const uint16_t *)__string_170_Cannot_use_private_on_a_class);
+    forbidFlag(context, node, 8, (const uint16_t *)__string_85_Cannot_use_get_on_a_class);
+    forbidFlag(context, node, 512, (const uint16_t *)__string_86_Cannot_use_set_on_a_class);
+    forbidFlag(context, node, 256, (const uint16_t *)__string_87_Cannot_use_public_on_a_class);
+    forbidFlag(context, node, 64, (const uint16_t *)__string_88_Cannot_use_private_on_a_class);
   }
 
   else if (symbol->kind == 1) {
-    forbidFlag(context, node, 8, (const uint16_t *)__string_171_Cannot_use_get_on_an_enum);
-    forbidFlag(context, node, 512, (const uint16_t *)__string_172_Cannot_use_set_on_an_enum);
-    forbidFlag(context, node, 256, (const uint16_t *)__string_173_Cannot_use_public_on_an_enum);
-    forbidFlag(context, node, 64, (const uint16_t *)__string_174_Cannot_use_private_on_an_enum);
+    forbidFlag(context, node, 8, (const uint16_t *)__string_89_Cannot_use_get_on_an_enum);
+    forbidFlag(context, node, 512, (const uint16_t *)__string_90_Cannot_use_set_on_an_enum);
+    forbidFlag(context, node, 256, (const uint16_t *)__string_91_Cannot_use_public_on_an_enum);
+    forbidFlag(context, node, 64, (const uint16_t *)__string_92_Cannot_use_private_on_an_enum);
     symbol->resolvedType = calloc(1, sizeof(struct Type));
     symbol->resolvedType->symbol = symbol;
     struct Symbol *underlyingSymbol = Type_underlyingType(symbol->resolvedType, context)->symbol;
@@ -3246,49 +2617,49 @@ static void initializeSymbol(struct CheckContext *context, struct Symbol *symbol
     }
 
     if (symbol->kind != 4) {
-      forbidFlag(context, node, 8, (const uint16_t *)__string_175_Cannot_use_get_here);
-      forbidFlag(context, node, 512, (const uint16_t *)__string_176_Cannot_use_set_here);
-      forbidFlag(context, node, 256, (const uint16_t *)__string_177_Cannot_use_public_here);
-      forbidFlag(context, node, 64, (const uint16_t *)__string_178_Cannot_use_private_here);
+      forbidFlag(context, node, 8, (const uint16_t *)__string_93_Cannot_use_get_here);
+      forbidFlag(context, node, 512, (const uint16_t *)__string_94_Cannot_use_set_here);
+      forbidFlag(context, node, 256, (const uint16_t *)__string_95_Cannot_use_public_here);
+      forbidFlag(context, node, 64, (const uint16_t *)__string_96_Cannot_use_private_here);
     }
 
     else if (Node_isGet(node)) {
-      forbidFlag(context, node, 512, (const uint16_t *)__string_179_Cannot_use_both_get_and_set);
+      forbidFlag(context, node, 512, (const uint16_t *)__string_97_Cannot_use_both_get_and_set);
 
       if (argumentCount != 1) {
-        Log_error(context->log, symbol->range, (const uint16_t *)__string_180_Getters_must_not_have_any_argume);
+        Log_error(context->log, symbol->range, (const uint16_t *)__string_98_Getters_must_not_have_any_argume);
       }
     }
 
     else if (Node_isSet(node)) {
-      symbol->rename = StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_181_set_), symbol->name));
+      symbol->rename = StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_99_set_), symbol->name));
 
       if (argumentCount != 2) {
-        Log_error(context->log, symbol->range, (const uint16_t *)__string_182_Setters_must_have_exactly_one_ar);
+        Log_error(context->log, symbol->range, (const uint16_t *)__string_100_Setters_must_have_exactly_one_ar);
       }
     }
 
     else if (Node_isOperator(node)) {
-      if (string_op_equals(symbol->name, (const uint16_t *)__string_183) || string_op_equals(symbol->name, (const uint16_t *)__string_184) || string_op_equals(symbol->name, (const uint16_t *)__string_185)) {
+      if (string_op_equals(symbol->name, (const uint16_t *)__string_101) || string_op_equals(symbol->name, (const uint16_t *)__string_102) || string_op_equals(symbol->name, (const uint16_t *)__string_103)) {
         if (argumentCount != 1) {
-          Log_error(context->log, symbol->range, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_186_Operator), symbol->name), (const uint16_t *)__string_187_must_not_have_any_arguments)));
+          Log_error(context->log, symbol->range, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_104_Operator), symbol->name), (const uint16_t *)__string_105_must_not_have_any_arguments)));
         }
       }
 
-      else if (string_op_equals(symbol->name, (const uint16_t *)__string_188) || string_op_equals(symbol->name, (const uint16_t *)__string_189)) {
+      else if (string_op_equals(symbol->name, (const uint16_t *)__string_106) || string_op_equals(symbol->name, (const uint16_t *)__string_107)) {
         if (argumentCount > 2) {
-          Log_error(context->log, symbol->range, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_190_Operator), symbol->name), (const uint16_t *)__string_191_must_have_at_most_one_argument)));
+          Log_error(context->log, symbol->range, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_108_Operator), symbol->name), (const uint16_t *)__string_109_must_have_at_most_one_argument)));
         }
       }
 
-      else if (string_op_equals(symbol->name, (const uint16_t *)__string_192)) {
+      else if (string_op_equals(symbol->name, (const uint16_t *)__string_110)) {
         if (argumentCount < 2) {
-          Log_error(context->log, symbol->range, (const uint16_t *)__string_193_Operator_must_have_at_leas);
+          Log_error(context->log, symbol->range, (const uint16_t *)__string_111_Operator_must_have_at_leas);
         }
       }
 
       else if (argumentCount != 2) {
-        Log_error(context->log, symbol->range, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_194_Operator), symbol->name), (const uint16_t *)__string_195_must_have_exactly_one_argument)));
+        Log_error(context->log, symbol->range, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_112_Operator), symbol->name), (const uint16_t *)__string_113_must_have_exactly_one_argument)));
       }
     }
 
@@ -3298,8 +2669,8 @@ static void initializeSymbol(struct CheckContext *context, struct Symbol *symbol
     if (symbol->kind == 4) {
       struct Symbol *parent = Symbol_parent(symbol);
       uint8_t shouldConvertInstanceToGlobal = 0;
-      forbidFlag(context, node, 4, (const uint16_t *)__string_196_Cannot_use_extern_on_an_instan);
-      forbidFlag(context, node, 1, (const uint16_t *)__string_197_Cannot_use_declare_on_an_insta);
+      forbidFlag(context, node, 4, (const uint16_t *)__string_114_Cannot_use_extern_on_an_instan);
+      forbidFlag(context, node, 1, (const uint16_t *)__string_115_Cannot_use_declare_on_an_insta);
 
       if (Node_isDeclare(parent->node)) {
         if (body == NULL) {
@@ -3313,7 +2684,7 @@ static void initializeSymbol(struct CheckContext *context, struct Symbol *symbol
 
       else {
         if (body == NULL) {
-          Log_error(context->log, node->lastChild->range, (const uint16_t *)__string_198_Must_implement_this_function);
+          Log_error(context->log, node->lastChild->range, (const uint16_t *)__string_116_Must_implement_this_function);
         }
 
         if (Node_isExtern(parent->node)) {
@@ -3326,34 +2697,34 @@ static void initializeSymbol(struct CheckContext *context, struct Symbol *symbol
         symbol->flags = symbol->flags | 1;
         symbol->rename = StringBuilder_finish(StringBuilder_append(StringBuilder_appendChar(StringBuilder_append(StringBuilder_new(), parent->name), 95), !string_op_equals(symbol->rename, NULL) ? symbol->rename : symbol->name));
         struct Node *argument = Node_functionFirstArgument(node);
-        assert(string_op_equals(argument->symbol->name, (const uint16_t *)__string_199_this));
-        argument->symbol->rename = (const uint16_t *)__string_200___this;
+        assert(string_op_equals(argument->symbol->name, (const uint16_t *)__string_117_this));
+        argument->symbol->rename = (const uint16_t *)__string_118___this;
       }
     }
 
     else if (body == NULL) {
-      forbidFlag(context, node, 4, (const uint16_t *)__string_201_Cannot_use_extern_on_an_unimpl);
-      requireFlag(context, node, 1, (const uint16_t *)__string_202_Declared_functions_must_be_prefi);
+      forbidFlag(context, node, 4, (const uint16_t *)__string_119_Cannot_use_extern_on_an_unimpl);
+      requireFlag(context, node, 1, (const uint16_t *)__string_120_Declared_functions_must_be_prefi);
     }
 
     else {
-      forbidFlag(context, node, 1, (const uint16_t *)__string_203_Cannot_use_declare_on_a_functi);
+      forbidFlag(context, node, 1, (const uint16_t *)__string_121_Cannot_use_declare_on_a_functi);
     }
 
     context->isUnsafeAllowed = oldUnsafeAllowed;
   }
 
   else if (isVariable(symbol->kind)) {
-    forbidFlag(context, node, 8, (const uint16_t *)__string_204_Cannot_use_get_on_a_variable);
-    forbidFlag(context, node, 512, (const uint16_t *)__string_205_Cannot_use_set_on_a_variable);
+    forbidFlag(context, node, 8, (const uint16_t *)__string_122_Cannot_use_get_on_a_variable);
+    forbidFlag(context, node, 512, (const uint16_t *)__string_123_Cannot_use_set_on_a_variable);
     struct Node *type = Node_variableType(node);
     struct Node *value = Node_variableValue(node);
     uint8_t oldUnsafeAllowed = context->isUnsafeAllowed;
     context->isUnsafeAllowed = context->isUnsafeAllowed || Node_isUnsafe(node);
 
     if (symbol->kind != 9) {
-      forbidFlag(context, node, 256, (const uint16_t *)__string_206_Cannot_use_public_here);
-      forbidFlag(context, node, 64, (const uint16_t *)__string_207_Cannot_use_private_here);
+      forbidFlag(context, node, 256, (const uint16_t *)__string_124_Cannot_use_public_here);
+      forbidFlag(context, node, 64, (const uint16_t *)__string_125_Cannot_use_private_here);
     }
 
     if (type != NULL) {
@@ -3367,12 +2738,12 @@ static void initializeSymbol(struct CheckContext *context, struct Symbol *symbol
     }
 
     else {
-      Log_error(context->log, node->internalRange, (const uint16_t *)__string_208_Cannot_create_untyped_variables);
+      Log_error(context->log, node->internalRange, (const uint16_t *)__string_126_Cannot_create_untyped_variables);
       symbol->resolvedType = context->errorType;
     }
 
     if (symbol->resolvedType == context->voidType || symbol->resolvedType == context->nullType) {
-      Log_error(context->log, node->internalRange, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_209_Cannot_create_a_variable_with_ty), Type_toString(symbol->resolvedType)), 39)));
+      Log_error(context->log, node->internalRange, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_127_Cannot_create_a_variable_with_ty), Type_toString(symbol->resolvedType)), 39)));
       symbol->resolvedType = context->errorType;
     }
 
@@ -3386,7 +2757,7 @@ static void initializeSymbol(struct CheckContext *context, struct Symbol *symbol
         }
 
         else if (value->resolvedType != context->errorType) {
-          Log_error(context->log, value->range, (const uint16_t *)__string_210_Invalid_constant_initializer);
+          Log_error(context->log, value->range, (const uint16_t *)__string_128_Invalid_constant_initializer);
           symbol->resolvedType = context->errorType;
         }
       }
@@ -3404,7 +2775,7 @@ static void initializeSymbol(struct CheckContext *context, struct Symbol *symbol
       }
 
       else {
-        Log_error(context->log, node->internalRange, (const uint16_t *)__string_211_Constants_must_be_initialized);
+        Log_error(context->log, node->internalRange, (const uint16_t *)__string_129_Constants_must_be_initialized);
       }
     }
 
@@ -3415,7 +2786,7 @@ static void initializeSymbol(struct CheckContext *context, struct Symbol *symbol
         struct Symbol *shadowed = Scope_findLocal(scope, symbol->name, 0);
 
         if (shadowed != NULL) {
-          Log_error(context->log, node->internalRange, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_212_The_symbol), symbol->name), (const uint16_t *)__string_213_shadows_another_symbol_with_th)));
+          Log_error(context->log, node->internalRange, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_130_The_symbol), symbol->name), (const uint16_t *)__string_131_shadows_another_symbol_with_th)));
 
           break;
         }
@@ -3465,12 +2836,12 @@ static void resolveAsExpression(struct CheckContext *context, struct Node *node,
 
   if (node->resolvedType != context->errorType) {
     if (Node_isType(node)) {
-      Log_error(context->log, node->range, (const uint16_t *)__string_214_Expected_expression_but_found_ty);
+      Log_error(context->log, node->range, (const uint16_t *)__string_132_Expected_expression_but_found_ty);
       node->resolvedType = context->errorType;
     }
 
     else if (node->resolvedType == context->voidType && node->parent->kind != 14) {
-      Log_error(context->log, node->range, (const uint16_t *)__string_215_This_expression_does_not_return);
+      Log_error(context->log, node->range, (const uint16_t *)__string_133_This_expression_does_not_return);
       node->resolvedType = context->errorType;
     }
   }
@@ -3482,7 +2853,7 @@ static void resolveAsType(struct CheckContext *context, struct Node *node, struc
   assert(node->resolvedType != NULL);
 
   if (node->resolvedType != context->errorType && !Node_isType(node)) {
-    Log_error(context->log, node->range, (const uint16_t *)__string_216_Expected_type_but_found_expressi);
+    Log_error(context->log, node->range, (const uint16_t *)__string_134_Expected_type_but_found_expressi);
     node->resolvedType = context->errorType;
   }
 }
@@ -3524,7 +2895,7 @@ static uint8_t canConvert(struct CheckContext *context, struct Node *node, struc
 
 static void checkConversion(struct CheckContext *context, struct Node *node, struct Type *to, int32_t kind) {
   if (!canConvert(context, node, to, kind)) {
-    Log_error(context->log, node->range, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_217_Cannot_convert_from_type), Type_toString(node->resolvedType)), (const uint16_t *)__string_218_to_type), Type_toString(to)), kind == 0 && canConvert(context, node, to, 1) ? (const uint16_t *)__string_219_without_a_cast : (const uint16_t *)__string_220)));
+    Log_error(context->log, node->range, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_135_Cannot_convert_from_type), Type_toString(node->resolvedType)), (const uint16_t *)__string_136_to_type), Type_toString(to)), kind == 0 && canConvert(context, node, to, 1) ? (const uint16_t *)__string_137_without_a_cast : (const uint16_t *)__string_138)));
     node->resolvedType = context->errorType;
   }
 }
@@ -3533,7 +2904,7 @@ static void checkStorage(struct CheckContext *context, struct Node *target) {
   assert(isExpression(target));
 
   if (target->resolvedType != context->errorType && target->kind != 27 && target->kind != 39 && ((target->kind != 29 && target->kind != 25) || (target->symbol != NULL && (!isVariable(target->symbol->kind) || target->symbol->kind == 7)))) {
-    Log_error(context->log, target->range, (const uint16_t *)__string_221_Cannot_store_to_this_location);
+    Log_error(context->log, target->range, (const uint16_t *)__string_139_Cannot_store_to_this_location);
     target->resolvedType = context->errorType;
   }
 }
@@ -3613,7 +2984,7 @@ static uint8_t binaryHasUnsignedArguments(struct Node *node) {
 
 static uint8_t isSymbolAccessAllowed(struct CheckContext *context, struct Symbol *symbol, struct Node *node, struct Range *range) {
   if (Symbol_isUnsafe(symbol) && !context->isUnsafeAllowed) {
-    Log_error(context->log, range, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_222_Cannot_use_symbol), symbol->name), (const uint16_t *)__string_223_outside_an_unsafe_block)));
+    Log_error(context->log, range, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_140_Cannot_use_symbol), symbol->name), (const uint16_t *)__string_141_outside_an_unsafe_block)));
 
     return 0;
   }
@@ -3622,7 +2993,7 @@ static uint8_t isSymbolAccessAllowed(struct CheckContext *context, struct Symbol
     struct Symbol *parent = Symbol_parent(symbol);
 
     if (parent != NULL && context->enclosingClass != parent) {
-      Log_error(context->log, range, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_224_Cannot_access_private_symbol), symbol->name), (const uint16_t *)__string_225_here)));
+      Log_error(context->log, range, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_142_Cannot_access_private_symbol), symbol->name), (const uint16_t *)__string_143_here)));
 
       return 0;
     }
@@ -3630,11 +3001,11 @@ static uint8_t isSymbolAccessAllowed(struct CheckContext *context, struct Symbol
 
   if (isFunction(symbol->kind) && (Symbol_isSetter(symbol) ? !Node_isAssignTarget(node) : !Node_isCallValue(node))) {
     if (Symbol_isSetter(symbol)) {
-      Log_error(context->log, range, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_226_Cannot_use_setter), symbol->name), (const uint16_t *)__string_227_here)));
+      Log_error(context->log, range, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_144_Cannot_use_setter), symbol->name), (const uint16_t *)__string_145_here)));
     }
 
     else {
-      Log_error(context->log, range, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_228_Must_call_function), symbol->name), 39)));
+      Log_error(context->log, range, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_146_Must_call_function), symbol->name), 39)));
     }
 
     return 0;
@@ -3702,7 +3073,7 @@ static void resolve(struct CheckContext *context, struct Node *node, struct Scop
       checkConversion(context, value, Symbol_resolvedTypeUnderlyingIfEnumValue(symbol, context), 0);
 
       if (symbol->kind == 8 && value->kind != 28 && value->kind != 22 && value->kind != 31) {
-        Log_error(context->log, value->range, (const uint16_t *)__string_229_Global_initializers_must_be_comp);
+        Log_error(context->log, value->range, (const uint16_t *)__string_147_Global_initializers_must_be_comp);
       }
     }
 
@@ -3734,7 +3105,7 @@ static void resolve(struct CheckContext *context, struct Node *node, struct Scop
     }
 
     if (!found) {
-      Log_error(context->log, node->range, (const uint16_t *)__string_230_Cannot_use_this_statement_outsid);
+      Log_error(context->log, node->range, (const uint16_t *)__string_148_Cannot_use_this_statement_outsid);
     }
   }
 
@@ -3775,10 +3146,10 @@ static void resolve(struct CheckContext *context, struct Node *node, struct Scop
     struct Type *type = target->resolvedType;
 
     if (type != context->errorType) {
-      struct Symbol *symbol = Type_hasInstanceMembers(type) ? Type_findMember(type, (const uint16_t *)__string_231, 0) : NULL;
+      struct Symbol *symbol = Type_hasInstanceMembers(type) ? Type_findMember(type, (const uint16_t *)__string_149, 0) : NULL;
 
       if (symbol == NULL) {
-        Log_error(context->log, node->internalRange, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_232_Cannot_index_into_type), Type_toString(target->resolvedType)), 39)));
+        Log_error(context->log, node->internalRange, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_150_Cannot_index_into_type), Type_toString(target->resolvedType)), 39)));
       }
 
       else {
@@ -3793,30 +3164,30 @@ static void resolve(struct CheckContext *context, struct Node *node, struct Scop
   }
 
   else if (kind == 21) {
-    struct Node *type = Node_alignOfType(node);
-    resolveAsType(context, type, parentScope);
+    struct Node *alignOfType = Node_alignOfType(node);
+    resolveAsType(context, alignOfType, parentScope);
     node->resolvedType = context->intType;
 
-    if (type->resolvedType != context->errorType) {
-      Node_becomeIntegerConstant(node, Type_allocationAlignmentOf(type->resolvedType, context));
+    if (alignOfType->resolvedType != context->errorType) {
+      Node_becomeIntegerConstant(node, Type_allocationAlignmentOf(alignOfType->resolvedType, context));
     }
   }
 
   else if (kind == 33) {
-    struct Node *type = Node_sizeOfType(node);
-    resolveAsType(context, type, parentScope);
+    struct Node *sizeOfType = Node_sizeOfType(node);
+    resolveAsType(context, sizeOfType, parentScope);
     node->resolvedType = context->intType;
 
-    if (type->resolvedType != context->errorType) {
-      Node_becomeIntegerConstant(node, Type_allocationSizeOf(type->resolvedType, context));
+    if (sizeOfType->resolvedType != context->errorType) {
+      Node_becomeIntegerConstant(node, Type_allocationSizeOf(sizeOfType->resolvedType, context));
     }
   }
 
   else if (kind == 35) {
-    struct Symbol *symbol = Scope_findNested(parentScope, (const uint16_t *)__string_233_this, 0, 0);
+    struct Symbol *symbol = Scope_findNested(parentScope, (const uint16_t *)__string_151_this, 0, 0);
 
     if (symbol == NULL) {
-      Log_error(context->log, node->range, (const uint16_t *)__string_234_Cannot_use_this_here);
+      Log_error(context->log, node->range, (const uint16_t *)__string_152_Cannot_use_this_here);
     }
 
     else {
@@ -3833,26 +3204,26 @@ static void resolve(struct CheckContext *context, struct Node *node, struct Scop
     struct Symbol *symbol = Scope_findNested(parentScope, name, 0, 0);
 
     if (symbol == NULL) {
-      struct StringBuilder *builder = StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_235_No_symbol_named), name), (const uint16_t *)__string_236_here);
+      struct StringBuilder *builder = StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_153_No_symbol_named), name), (const uint16_t *)__string_154_here);
       symbol = Scope_findNested(parentScope, name, 0, 1);
 
       if (symbol != NULL) {
-        StringBuilder_append(StringBuilder_append(StringBuilder_append(builder, (const uint16_t *)__string_237_did_you_mean_this), symbol->name), (const uint16_t *)__string_238);
+        StringBuilder_append(StringBuilder_append(StringBuilder_append(builder, (const uint16_t *)__string_155_did_you_mean_this), symbol->name), (const uint16_t *)__string_156);
       }
 
-      else if (string_op_equals(name, (const uint16_t *)__string_239_number)) {
-        StringBuilder_append(builder, (const uint16_t *)__string_240_did_you_mean_int);
+      else if (string_op_equals(name, (const uint16_t *)__string_157_number)) {
+        StringBuilder_append(builder, (const uint16_t *)__string_158_did_you_mean_int);
       }
 
-      else if (string_op_equals(name, (const uint16_t *)__string_241_boolean)) {
-        StringBuilder_append(builder, (const uint16_t *)__string_242_did_you_mean_bool);
+      else if (string_op_equals(name, (const uint16_t *)__string_159_boolean)) {
+        StringBuilder_append(builder, (const uint16_t *)__string_160_did_you_mean_bool);
       }
 
       Log_error(context->log, node->range, StringBuilder_finish(builder));
     }
 
     else if (symbol->state == 1) {
-      Log_error(context->log, node->range, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_243_Cyclic_reference_to_symbol), name), (const uint16_t *)__string_244_here)));
+      Log_error(context->log, node->range, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_161_Cyclic_reference_to_symbol), name), (const uint16_t *)__string_162_here)));
     }
 
     else if (isSymbolAccessAllowed(context, symbol, node, node->range)) {
@@ -3873,16 +3244,16 @@ static void resolve(struct CheckContext *context, struct Node *node, struct Scop
   }
 
   else if (kind == 24) {
-    struct Node *value = Node_castValue(node);
-    struct Node *type = Node_castType(node);
-    resolveAsExpression(context, value, parentScope);
-    resolveAsType(context, type, parentScope);
-    struct Type *castedType = type->resolvedType;
-    checkConversion(context, value, castedType, 1);
+    struct Node *castValue = Node_castValue(node);
+    struct Node *castType = Node_castType(node);
+    resolveAsExpression(context, castValue, parentScope);
+    resolveAsType(context, castType, parentScope);
+    struct Type *castedType = castType->resolvedType;
+    checkConversion(context, castValue, castedType, 1);
     node->resolvedType = castedType;
 
-    if (value->kind == 28 && Type_isInteger(castedType)) {
-      int32_t result = value->intValue;
+    if (castValue->kind == 28 && Type_isInteger(castedType)) {
+      int32_t result = castValue->intValue;
       int32_t shift = 32 - Type_integerBitCount(castedType, context);
       Node_becomeIntegerConstant(node, Type_isUnsigned(castedType) ? (int32_t)Type_integerBitMask(castedType, context) & result : result << shift >> shift);
     }
@@ -3900,7 +3271,7 @@ static void resolve(struct CheckContext *context, struct Node *node, struct Scop
           struct Symbol *symbol = Type_findMember(target->resolvedType, name, Node_isAssignTarget(node) ? 6 : 5);
 
           if (symbol == NULL) {
-            Log_error(context->log, node->internalRange, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_245_No_member_named), name), (const uint16_t *)__string_246_on_type), Type_toString(target->resolvedType)), 39)));
+            Log_error(context->log, node->internalRange, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_163_No_member_named), name), (const uint16_t *)__string_164_on_type), Type_toString(target->resolvedType)), 39)));
           }
 
           else if (Symbol_isGetter(symbol)) {
@@ -3925,7 +3296,7 @@ static void resolve(struct CheckContext *context, struct Node *node, struct Scop
       }
 
       else {
-        Log_error(context->log, node->internalRange, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_247_The_type), Type_toString(target->resolvedType)), (const uint16_t *)__string_248_has_no_members)));
+        Log_error(context->log, node->internalRange, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_165_The_type), Type_toString(target->resolvedType)), (const uint16_t *)__string_166_has_no_members)));
       }
     }
   }
@@ -3938,18 +3309,18 @@ static void resolve(struct CheckContext *context, struct Node *node, struct Scop
       struct Symbol *symbol = value->symbol;
 
       if (symbol == NULL || !isFunction(symbol->kind)) {
-        Log_error(context->log, value->range, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_249_Cannot_call_value_of_type), Type_toString(value->resolvedType)), 39)));
+        Log_error(context->log, value->range, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_167_Cannot_call_value_of_type), Type_toString(value->resolvedType)), 39)));
       }
 
       else {
         initializeSymbol(context, symbol);
 
         if (Symbol_shouldConvertInstanceToGlobal(symbol)) {
-          struct Node *name = createSymbolReference(symbol);
-          Node_insertChildBefore(node, value, Node_withRange(name, value->internalRange));
+          struct Node *reference = createSymbolReference(symbol);
+          Node_insertChildBefore(node, value, Node_withRange(reference, value->internalRange));
           Node_insertChildBefore(node, value, Node_remove(Node_dotTarget(value)));
           Node_remove(value);
-          value = name;
+          value = reference;
         }
 
         struct Node *returnType = Node_functionReturnType(symbol->node);
@@ -3964,7 +3335,7 @@ static void resolve(struct CheckContext *context, struct Node *node, struct Scop
         }
 
         if (argumentVariable != returnType) {
-          Log_error(context->log, node->internalRange, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_250_Not_enough_arguments_for_functio), symbol->name), 39)));
+          Log_error(context->log, node->internalRange, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_168_Not_enough_arguments_for_functio), symbol->name), 39)));
         }
 
         else if (argumentValue != NULL) {
@@ -3973,7 +3344,7 @@ static void resolve(struct CheckContext *context, struct Node *node, struct Scop
             argumentValue = argumentValue->nextSibling;
           }
 
-          Log_error(context->log, node->internalRange, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_251_Too_many_arguments_for_function), symbol->name), 39)));
+          Log_error(context->log, node->internalRange, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_169_Too_many_arguments_for_function), symbol->name), 39)));
         }
 
         node->resolvedType = returnType->resolvedType;
@@ -3993,13 +3364,13 @@ static void resolve(struct CheckContext *context, struct Node *node, struct Scop
         }
 
         else {
-          Log_error(context->log, value->range, (const uint16_t *)__string_252_Unexpected_return_value_in_funct);
+          Log_error(context->log, value->range, (const uint16_t *)__string_170_Unexpected_return_value_in_funct);
         }
       }
     }
 
     else if (context->currentReturnType != NULL && context->currentReturnType != context->voidType) {
-      Log_error(context->log, node->range, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_253_Expected_return_value_in_functio), Type_toString(context->currentReturnType)), 39)));
+      Log_error(context->log, node->range, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_171_Expected_return_value_in_functio), Type_toString(context->currentReturnType)), 39)));
     }
   }
 
@@ -4007,12 +3378,12 @@ static void resolve(struct CheckContext *context, struct Node *node, struct Scop
   }
 
   else if (kind == 5) {
-    Log_error(context->log, node->range, (const uint16_t *)__string_254_Generics_are_not_implemented_yet);
+    Log_error(context->log, node->range, (const uint16_t *)__string_172_Generics_are_not_implemented_yet);
   }
 
   else if (kind == 0) {
     resolveAsType(context, Node_extendsType(node), parentScope);
-    Log_error(context->log, node->range, (const uint16_t *)__string_255_Subclassing_is_not_implemented_y);
+    Log_error(context->log, node->range, (const uint16_t *)__string_173_Subclassing_is_not_implemented_y);
   }
 
   else if (kind == 3) {
@@ -4023,7 +3394,7 @@ static void resolve(struct CheckContext *context, struct Node *node, struct Scop
       child = child->nextSibling;
     }
 
-    Log_error(context->log, node->range, (const uint16_t *)__string_256_Interfaces_are_not_implemented_y);
+    Log_error(context->log, node->range, (const uint16_t *)__string_174_Interfaces_are_not_implemented_y);
   }
 
   else if (kind == 14) {
@@ -4062,7 +3433,7 @@ static void resolve(struct CheckContext *context, struct Node *node, struct Scop
     struct Type *commonType = (yes->resolvedType == context->nullType ? no : yes)->resolvedType;
 
     if (yes->resolvedType != commonType && (yes->resolvedType != context->nullType || !Type_isReference(commonType)) && no->resolvedType != commonType && (no->resolvedType != context->nullType || !Type_isReference(commonType))) {
-      Log_error(context->log, spanRanges(yes->range, no->range), StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_257_Type), Type_toString(yes->resolvedType)), (const uint16_t *)__string_258_is_not_the_same_as_type), Type_toString(no->resolvedType)), 39)));
+      Log_error(context->log, spanRanges(yes->range, no->range), StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_175_Type), Type_toString(yes->resolvedType)), (const uint16_t *)__string_176_is_not_the_same_as_type), Type_toString(no->resolvedType)), 39)));
     }
 
     node->resolvedType = commonType;
@@ -4078,10 +3449,10 @@ static void resolve(struct CheckContext *context, struct Node *node, struct Scop
       struct Type *type = target->resolvedType;
 
       if (type != context->errorType) {
-        struct Symbol *symbol = Type_hasInstanceMembers(type) ? Type_findMember(type, (const uint16_t *)__string_259, 0) : NULL;
+        struct Symbol *symbol = Type_hasInstanceMembers(type) ? Type_findMember(type, (const uint16_t *)__string_177, 0) : NULL;
 
         if (symbol == NULL) {
-          Log_error(context->log, left->internalRange, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_260_Cannot_index_into_type), Type_toString(target->resolvedType)), 39)));
+          Log_error(context->log, left->internalRange, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_178_Cannot_index_into_type), Type_toString(target->resolvedType)), 39)));
         }
 
         else {
@@ -4122,21 +3493,21 @@ static void resolve(struct CheckContext *context, struct Node *node, struct Scop
   }
 
   else if (kind == 30) {
-    struct Node *type = Node_newType(node);
-    resolveAsType(context, type, parentScope);
+    struct Node *newType = Node_newType(node);
+    resolveAsType(context, newType, parentScope);
 
-    if (type->resolvedType != context->errorType) {
-      if (!Type_isClass(type->resolvedType)) {
-        Log_error(context->log, type->range, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_261_Cannot_construct_type), Type_toString(type->resolvedType)), 39)));
+    if (newType->resolvedType != context->errorType) {
+      if (!Type_isClass(newType->resolvedType)) {
+        Log_error(context->log, newType->range, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_179_Cannot_construct_type), Type_toString(newType->resolvedType)), 39)));
       }
 
       else {
-        node->resolvedType = type->resolvedType;
+        node->resolvedType = newType->resolvedType;
       }
     }
 
-    if (type->nextSibling != NULL) {
-      Log_error(context->log, node->internalRange, (const uint16_t *)__string_262_Constructors_with_arguments_are);
+    if (newType->nextSibling != NULL) {
+      Log_error(context->log, node->internalRange, (const uint16_t *)__string_180_Constructors_with_arguments_are);
     }
   }
 
@@ -4145,11 +3516,11 @@ static void resolve(struct CheckContext *context, struct Node *node, struct Scop
     resolveAsType(context, value, parentScope);
 
     if (context->target == 2) {
-      Log_error(context->log, node->internalRange, (const uint16_t *)__string_263_Cannot_use_pointers_when_compili);
+      Log_error(context->log, node->internalRange, (const uint16_t *)__string_181_Cannot_use_pointers_when_compili);
     }
 
     else if (!context->isUnsafeAllowed) {
-      Log_error(context->log, node->internalRange, (const uint16_t *)__string_264_Cannot_use_pointers_outside_an);
+      Log_error(context->log, node->internalRange, (const uint16_t *)__string_182_Cannot_use_pointers_outside_an);
     }
 
     else {
@@ -4157,7 +3528,7 @@ static void resolve(struct CheckContext *context, struct Node *node, struct Scop
 
       if (type != context->errorType) {
         if (!Type_isInteger(type) && type->pointerTo == NULL) {
-          Log_error(context->log, node->internalRange, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_265_Cannot_create_a_pointer_to_non_i), Type_toString(type)), 39)));
+          Log_error(context->log, node->internalRange, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_183_Cannot_create_a_pointer_to_non_i), Type_toString(type)), 39)));
         }
 
         else {
@@ -4174,7 +3545,7 @@ static void resolve(struct CheckContext *context, struct Node *node, struct Scop
 
     if (type != context->errorType) {
       if (type->pointerTo == NULL) {
-        Log_error(context->log, node->internalRange, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_266_Cannot_dereference_type), Type_toString(type)), 39)));
+        Log_error(context->log, node->internalRange, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_184_Cannot_dereference_type), Type_toString(type)), 39)));
       }
 
       else {
@@ -4186,7 +3557,7 @@ static void resolve(struct CheckContext *context, struct Node *node, struct Scop
   else if (kind == 37) {
     struct Node *value = Node_unaryValue(node);
     resolveAsExpression(context, value, parentScope);
-    Log_error(context->log, node->internalRange, (const uint16_t *)__string_267_The_address_of_operator_is_not_s);
+    Log_error(context->log, node->internalRange, (const uint16_t *)__string_185_The_address_of_operator_is_not_s);
   }
 
   else if (isUnary(kind)) {
@@ -4236,7 +3607,7 @@ static void resolve(struct CheckContext *context, struct Node *node, struct Scop
       }
 
       else {
-        Log_error(context->log, node->internalRange, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_268_Cannot_use_unary_operator), name), (const uint16_t *)__string_269_with_type), Type_toString(value->resolvedType)), 39)));
+        Log_error(context->log, node->internalRange, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_186_Cannot_use_unary_operator), name), (const uint16_t *)__string_187_with_type), Type_toString(value->resolvedType)), 39)));
       }
     }
   }
@@ -4263,7 +3634,7 @@ static void resolve(struct CheckContext *context, struct Node *node, struct Scop
       node->resolvedType = context->boolType;
 
       if (leftType != rightType) {
-        Log_error(context->log, node->internalRange, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_270_Cannot_compare_type), Type_toString(leftType)), (const uint16_t *)__string_271_with_type), Type_toString(rightType)), 39)));
+        Log_error(context->log, node->internalRange, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_188_Cannot_compare_type), Type_toString(leftType)), (const uint16_t *)__string_189_with_type), Type_toString(rightType)), 39)));
       }
     }
 
@@ -4353,13 +3724,13 @@ static void resolve(struct CheckContext *context, struct Node *node, struct Scop
       }
 
       else {
-        Log_error(context->log, node->internalRange, (const uint16_t *)__string_272_This_operator_is_not_currently_s);
+        Log_error(context->log, node->internalRange, (const uint16_t *)__string_190_This_operator_is_not_currently_s);
       }
     }
 
     else if (leftType != context->errorType) {
       const uint16_t *name = Range_toString(node->internalRange);
-      struct Symbol *symbol = Type_findMember(leftType, kind == 63 ? (const uint16_t *)__string_273 : kind == 59 ? (const uint16_t *)__string_274 : kind == 57 ? (const uint16_t *)__string_275 : name, 4);
+      struct Symbol *symbol = Type_findMember(leftType, kind == 63 ? (const uint16_t *)__string_191 : kind == 59 ? (const uint16_t *)__string_192 : kind == 57 ? (const uint16_t *)__string_193 : name, 4);
 
       if (symbol != NULL) {
         left = Node_withInternalRange(Node_withRange(createMemberReference(Node_remove(left), symbol), node->range), node->internalRange);
@@ -4386,12 +3757,12 @@ static void resolve(struct CheckContext *context, struct Node *node, struct Scop
         node->resolvedType = context->boolType;
 
         if (leftType != context->errorType && rightType != context->errorType && leftType != rightType && !canConvert(context, right, leftType, 0) && !canConvert(context, left, rightType, 0)) {
-          Log_error(context->log, node->internalRange, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_276_Cannot_compare_type), Type_toString(leftType)), (const uint16_t *)__string_277_with_type), Type_toString(rightType)), 39)));
+          Log_error(context->log, node->internalRange, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_194_Cannot_compare_type), Type_toString(leftType)), (const uint16_t *)__string_195_with_type), Type_toString(rightType)), 39)));
         }
       }
 
       else {
-        Log_error(context->log, node->internalRange, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_278_Cannot_use_binary_operator), name), (const uint16_t *)__string_279_with_type), Type_toString(leftType)), 39)));
+        Log_error(context->log, node->internalRange, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_196_Cannot_use_binary_operator), name), (const uint16_t *)__string_197_with_type), Type_toString(leftType)), 39)));
       }
     }
   }
@@ -4407,20 +3778,20 @@ static void Compiler_initialize(struct Compiler *__this, int32_t target, const u
   __this->preprocessor = calloc(1, sizeof(struct Preprocessor));
   __this->target = target;
   __this->outputName = outputName;
-  __this->librarySource = Compiler_addInput(__this, (const uint16_t *)__string_280_native, library());
+  __this->librarySource = Compiler_addInput(__this, (const uint16_t *)__string_198_native, library());
   __this->librarySource->isLibrary = 1;
   Compiler_createGlobals(__this);
 
   if (target == 1) {
-    Preprocessor_define(__this->preprocessor, (const uint16_t *)__string_281_C, 1);
+    Preprocessor_define(__this->preprocessor, (const uint16_t *)__string_199_C, 1);
   }
 
   else if (target == 2) {
-    Preprocessor_define(__this->preprocessor, (const uint16_t *)__string_282_JS, 1);
+    Preprocessor_define(__this->preprocessor, (const uint16_t *)__string_200_JS, 1);
   }
 
   else if (target == 3) {
-    Preprocessor_define(__this->preprocessor, (const uint16_t *)__string_283_WASM, 1);
+    Preprocessor_define(__this->preprocessor, (const uint16_t *)__string_201_WASM, 1);
   }
 }
 
@@ -4433,9 +3804,9 @@ static void Compiler_createGlobals(struct Compiler *__this) {
   global->kind = 2;
   struct Scope *scope = calloc(1, sizeof(struct Scope));
   global->scope = scope;
-  context->errorType = Scope_defineNativeType(scope, context->log, (const uint16_t *)__string_284_error);
-  context->nullType = Scope_defineNativeType(scope, context->log, (const uint16_t *)__string_285_null);
-  context->voidType = Scope_defineNativeType(scope, context->log, (const uint16_t *)__string_286_void);
+  context->errorType = Scope_defineNativeType(scope, context->log, (const uint16_t *)__string_202_error);
+  context->nullType = Scope_defineNativeType(scope, context->log, (const uint16_t *)__string_203_null);
+  context->voidType = Scope_defineNativeType(scope, context->log, (const uint16_t *)__string_204_void);
   __this->context = context;
   __this->global = global;
 }
@@ -4467,7 +3838,7 @@ static uint8_t Compiler_finish(struct Compiler *__this) {
     source = source->next;
   }
 
-  Profiler_end((const uint16_t *)__string_287_lexing);
+  Profiler_end((const uint16_t *)__string_205_lexing);
   Profiler_begin();
   source = __this->firstSource;
 
@@ -4476,7 +3847,7 @@ static uint8_t Compiler_finish(struct Compiler *__this) {
     source = source->next;
   }
 
-  Profiler_end((const uint16_t *)__string_288_preprocessing);
+  Profiler_end((const uint16_t *)__string_206_preprocessing);
   Profiler_begin();
   source = __this->firstSource;
 
@@ -4488,7 +3859,7 @@ static uint8_t Compiler_finish(struct Compiler *__this) {
     source = source->next;
   }
 
-  Profiler_end((const uint16_t *)__string_289_parsing);
+  Profiler_end((const uint16_t *)__string_207_parsing);
   Profiler_begin();
   struct Node *global = __this->global;
   struct CheckContext *context = __this->context;
@@ -4528,7 +3899,7 @@ static uint8_t Compiler_finish(struct Compiler *__this) {
     resolve(context, global, global->scope);
   }
 
-  Profiler_end((const uint16_t *)__string_290_checking);
+  Profiler_end((const uint16_t *)__string_208_checking);
 
   if (Log_hasErrors(__this->log)) {
     return 0;
@@ -4536,7 +3907,7 @@ static uint8_t Compiler_finish(struct Compiler *__this) {
 
   Profiler_begin();
   treeShaking(global);
-  Profiler_end((const uint16_t *)__string_291_shaking);
+  Profiler_end((const uint16_t *)__string_209_shaking);
   Profiler_begin();
 
   if (__this->target == 1) {
@@ -4551,16 +3922,16 @@ static uint8_t Compiler_finish(struct Compiler *__this) {
     wasmEmit(__this);
   }
 
-  Profiler_end((const uint16_t *)__string_292_emitting);
+  Profiler_end((const uint16_t *)__string_210_emitting);
 
   return 1;
 }
 
 static const uint16_t *replaceFileExtension(const uint16_t *path, const uint16_t *extension) {
   struct StringBuilder *builder = StringBuilder_new();
-  int32_t dot = string_lastIndexOf(path, (const uint16_t *)__string_293);
-  int32_t forward = string_lastIndexOf(path, (const uint16_t *)__string_294);
-  int32_t backward = string_lastIndexOf(path, (const uint16_t *)__string_295);
+  int32_t dot = string_lastIndexOf(path, (const uint16_t *)__string_211);
+  int32_t forward = string_lastIndexOf(path, (const uint16_t *)__string_212);
+  int32_t backward = string_lastIndexOf(path, (const uint16_t *)__string_213);
 
   if (dot > 0 && dot > forward && dot > backward) {
     path = string_slice(path, 0, dot);
@@ -4577,723 +3948,6 @@ static int32_t alignToNextMultipleOf(int32_t offset, int32_t alignment) {
   assert(isPositivePowerOf2(alignment));
 
   return (offset + alignment - 1) & -alignment;
-}
-
-static void JsResult_emitIndent(struct JsResult *__this) {
-  int32_t i = __this->indent;
-
-  while (i > 0) {
-    StringBuilder_append(__this->code, (const uint16_t *)__string_296);
-    i = i - 1;
-  }
-}
-
-static void JsResult_emitNewlineBefore(struct JsResult *__this, struct Node *node) {
-  if (__this->previousNode != NULL && (!isCompactNodeKind(__this->previousNode->kind) || !isCompactNodeKind(node->kind))) {
-    StringBuilder_appendChar(__this->code, 10);
-  }
-
-  __this->previousNode = NULL;
-}
-
-static void JsResult_emitNewlineAfter(struct JsResult *__this, struct Node *node) {
-  __this->previousNode = node;
-}
-
-static void JsResult_emitStatements(struct JsResult *__this, struct Node *node) {
-  while (node != NULL) {
-    JsResult_emitStatement(__this, node);
-    node = node->nextSibling;
-  }
-}
-
-static void JsResult_emitBlock(struct JsResult *__this, struct Node *node) {
-  __this->previousNode = NULL;
-  StringBuilder_append(__this->code, (const uint16_t *)__string_297);
-  __this->indent = __this->indent + 1;
-  JsResult_emitStatements(__this, node->firstChild);
-  __this->indent = __this->indent - 1;
-  JsResult_emitIndent(__this);
-  StringBuilder_appendChar(__this->code, 125);
-  __this->previousNode = NULL;
-}
-
-static void JsResult_emitUnary(struct JsResult *__this, struct Node *node, int32_t parentPrecedence, const uint16_t *operator) {
-  uint8_t isPostfix = isUnaryPostfix(node->kind);
-  uint8_t shouldCastToInt = node->kind == 40 && !jsKindCastsOperandsToInt(node->parent->kind);
-  uint8_t isUnsigned = Node_isUnsignedOperator(node);
-  int32_t operatorPrecedence = shouldCastToInt ? isUnsigned ? 9 : 4 : isPostfix ? 14 : 13;
-  struct StringBuilder *code = __this->code;
-
-  if (parentPrecedence > operatorPrecedence) {
-    StringBuilder_appendChar(code, 40);
-  }
-
-  if (!isPostfix) {
-    StringBuilder_append(code, operator);
-  }
-
-  JsResult_emitExpression(__this, Node_unaryValue(node), operatorPrecedence);
-
-  if (isPostfix) {
-    StringBuilder_append(code, operator);
-  }
-
-  if (shouldCastToInt) {
-    StringBuilder_append(code, isUnsigned ? (const uint16_t *)__string_298_0 : (const uint16_t *)__string_299_0);
-  }
-
-  if (parentPrecedence > operatorPrecedence) {
-    StringBuilder_appendChar(code, 41);
-  }
-}
-
-static void JsResult_emitBinary(struct JsResult *__this, struct Node *node, int32_t parentPrecedence, const uint16_t *operator, int32_t operatorPrecedence, int32_t mode) {
-  uint8_t isRightAssociative = node->kind == 49;
-  uint8_t isUnsigned = Node_isUnsignedOperator(node);
-  struct StringBuilder *code = __this->code;
-  uint8_t shouldCastToInt = mode == 1 && (isUnsigned || !jsKindCastsOperandsToInt(node->parent->kind));
-  int32_t selfPrecedence = shouldCastToInt ? isUnsigned ? 9 : 4 : parentPrecedence;
-
-  if (parentPrecedence > selfPrecedence) {
-    StringBuilder_appendChar(code, 40);
-  }
-
-  if (selfPrecedence > operatorPrecedence) {
-    StringBuilder_appendChar(code, 40);
-  }
-
-  JsResult_emitExpression(__this, Node_binaryLeft(node), isRightAssociative ? (int32_t)((int32_t)operatorPrecedence + 1) : operatorPrecedence);
-  StringBuilder_append(code, operator);
-  JsResult_emitExpression(__this, Node_binaryRight(node), isRightAssociative ? operatorPrecedence : (int32_t)((int32_t)operatorPrecedence + 1));
-
-  if (selfPrecedence > operatorPrecedence) {
-    StringBuilder_appendChar(code, 41);
-  }
-
-  if (shouldCastToInt) {
-    StringBuilder_append(code, isUnsigned ? (const uint16_t *)__string_300_0 : (const uint16_t *)__string_301_0);
-  }
-
-  if (parentPrecedence > selfPrecedence) {
-    StringBuilder_appendChar(code, 41);
-  }
-}
-
-static void JsResult_emitCommaSeparatedExpressions(struct JsResult *__this, struct Node *start, struct Node *stop) {
-  while (start != stop) {
-    JsResult_emitExpression(__this, start, 0);
-    start = start->nextSibling;
-
-    if (start != stop) {
-      StringBuilder_append(__this->code, (const uint16_t *)__string_302);
-    }
-  }
-}
-
-static void JsResult_emitExpression(struct JsResult *__this, struct Node *node, int32_t parentPrecedence) {
-  struct StringBuilder *code = __this->code;
-
-  if (node->kind == 29) {
-    struct Symbol *symbol = node->symbol;
-
-    if (symbol->kind == 5 && Node_isDeclare(symbol->node)) {
-      StringBuilder_append(code, (const uint16_t *)__string_303___declare);
-    }
-
-    JsResult_emitSymbolName(__this, symbol);
-  }
-
-  else if (node->kind == 31) {
-    StringBuilder_append(code, (const uint16_t *)__string_304_null);
-  }
-
-  else if (node->kind == 22) {
-    StringBuilder_append(code, node->intValue != 0 ? (const uint16_t *)__string_305_true : (const uint16_t *)__string_306_false);
-  }
-
-  else if (node->kind == 28) {
-    if (parentPrecedence == 15) {
-      StringBuilder_appendChar(code, 40);
-    }
-
-    StringBuilder_append(code, Type_isUnsigned(node->resolvedType) ? uint_toString((uint32_t)node->intValue) : int_toString(node->intValue));
-
-    if (parentPrecedence == 15) {
-      StringBuilder_appendChar(code, 41);
-    }
-  }
-
-  else if (node->kind == 34) {
-    StringBuilder_appendQuoted(code, node->stringValue);
-  }
-
-  else if (node->kind == 24) {
-    struct CheckContext *context = __this->context;
-    struct Node *value = Node_castValue(node);
-    struct Type *from = Type_underlyingType(value->resolvedType, context);
-    struct Type *type = Type_underlyingType(node->resolvedType, context);
-    int32_t fromSize = Type_variableSizeOf(from, context);
-    int32_t typeSize = Type_variableSizeOf(type, context);
-
-    if (from == type || fromSize < typeSize) {
-      JsResult_emitExpression(__this, value, parentPrecedence);
-    }
-
-    else if (type == context->sbyteType || type == context->shortType) {
-      if (parentPrecedence > 9) {
-        StringBuilder_appendChar(code, 40);
-      }
-
-      const uint16_t *shift = int_toString(32 - (typeSize << 3));
-      JsResult_emitExpression(__this, value, 9);
-      StringBuilder_append(code, (const uint16_t *)__string_307);
-      StringBuilder_append(code, shift);
-      StringBuilder_append(code, (const uint16_t *)__string_308);
-      StringBuilder_append(code, shift);
-
-      if (parentPrecedence > 9) {
-        StringBuilder_appendChar(code, 41);
-      }
-    }
-
-    else if (type == context->byteType || type == context->ushortType) {
-      if (parentPrecedence > 6) {
-        StringBuilder_appendChar(code, 40);
-      }
-
-      JsResult_emitExpression(__this, value, 6);
-      StringBuilder_append(code, (const uint16_t *)__string_309);
-      StringBuilder_append(code, uint_toString(Type_integerBitMask(type, context)));
-
-      if (parentPrecedence > 6) {
-        StringBuilder_appendChar(code, 41);
-      }
-    }
-
-    else if (type == context->intType) {
-      if (parentPrecedence > 4) {
-        StringBuilder_appendChar(code, 40);
-      }
-
-      JsResult_emitExpression(__this, value, 4);
-      StringBuilder_append(code, (const uint16_t *)__string_310_0);
-
-      if (parentPrecedence > 4) {
-        StringBuilder_appendChar(code, 41);
-      }
-    }
-
-    else if (type == context->uintType) {
-      if (parentPrecedence > 9) {
-        StringBuilder_appendChar(code, 40);
-      }
-
-      JsResult_emitExpression(__this, value, 9);
-      StringBuilder_append(code, (const uint16_t *)__string_311_0);
-
-      if (parentPrecedence > 9) {
-        StringBuilder_appendChar(code, 41);
-      }
-    }
-
-    else {
-      JsResult_emitExpression(__this, value, parentPrecedence);
-    }
-  }
-
-  else if (node->kind == 25) {
-    JsResult_emitExpression(__this, Node_dotTarget(node), 15);
-    StringBuilder_appendChar(code, 46);
-    JsResult_emitSymbolName(__this, node->symbol);
-  }
-
-  else if (node->kind == 26) {
-    if (parentPrecedence > 1) {
-      StringBuilder_appendChar(code, 40);
-    }
-
-    JsResult_emitExpression(__this, Node_hookValue(node), 2);
-    StringBuilder_append(code, (const uint16_t *)__string_312);
-    JsResult_emitExpression(__this, Node_hookTrue(node), 1);
-    StringBuilder_append(code, (const uint16_t *)__string_313);
-    JsResult_emitExpression(__this, Node_hookFalse(node), 1);
-
-    if (parentPrecedence > 1) {
-      StringBuilder_appendChar(code, 41);
-    }
-  }
-
-  else if (node->kind == 27) {
-    struct Node *value = Node_indexTarget(node);
-    JsResult_emitExpression(__this, value, 14);
-    StringBuilder_appendChar(code, 91);
-    JsResult_emitCommaSeparatedExpressions(__this, value->nextSibling, NULL);
-    StringBuilder_appendChar(code, 93);
-  }
-
-  else if (node->kind == 23) {
-    if (Node_expandCallIntoOperatorTree(node)) {
-      JsResult_emitExpression(__this, node, parentPrecedence);
-    }
-
-    else {
-      struct Node *value = Node_callValue(node);
-      JsResult_emitExpression(__this, value, 14);
-
-      if (value->symbol == NULL || !Symbol_isGetter(value->symbol)) {
-        StringBuilder_appendChar(code, 40);
-        JsResult_emitCommaSeparatedExpressions(__this, value->nextSibling, NULL);
-        StringBuilder_appendChar(code, 41);
-      }
-    }
-  }
-
-  else if (node->kind == 30) {
-    StringBuilder_append(code, (const uint16_t *)__string_314_new);
-    JsResult_emitExpression(__this, Node_newType(node), 14);
-    StringBuilder_append(code, (const uint16_t *)__string_315);
-  }
-
-  else if (node->kind == 41) {
-    struct Node *value = Node_unaryValue(node);
-    Node_expandCallIntoOperatorTree(value);
-    int32_t invertedKind = invertedBinaryKind(value->kind);
-
-    if (invertedKind != value->kind) {
-      value->kind = invertedKind;
-      JsResult_emitExpression(__this, value, parentPrecedence);
-    }
-
-    else {
-      JsResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_316);
-    }
-  }
-
-  else if (node->kind == 38) {
-    JsResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_317);
-  }
-
-  else if (node->kind == 40) {
-    JsResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_318);
-  }
-
-  else if (node->kind == 43) {
-    JsResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_319);
-  }
-
-  else if (node->kind == 47) {
-    JsResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_320);
-  }
-
-  else if (node->kind == 46) {
-    JsResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_321);
-  }
-
-  else if (node->kind == 45) {
-    JsResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_322);
-  }
-
-  else if (node->kind == 44) {
-    JsResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_323);
-  }
-
-  else if (node->kind == 48) {
-    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_324, 10, 1);
-  }
-
-  else if (node->kind == 49) {
-    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_325, 1, 0);
-  }
-
-  else if (node->kind == 50) {
-    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_326, 6, 0);
-  }
-
-  else if (node->kind == 51) {
-    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_327, 4, 0);
-  }
-
-  else if (node->kind == 52) {
-    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_328, 5, 0);
-  }
-
-  else if (node->kind == 53) {
-    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_329, 11, 1);
-  }
-
-  else if (node->kind == 54) {
-    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_330, 7, 0);
-  }
-
-  else if (node->kind == 56) {
-    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_331, 8, 0);
-  }
-
-  else if (node->kind == 57) {
-    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_332, 8, 0);
-  }
-
-  else if (node->kind == 58) {
-    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_333, 8, 0);
-  }
-
-  else if (node->kind == 59) {
-    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_334, 8, 0);
-  }
-
-  else if (node->kind == 60) {
-    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_335, 3, 0);
-  }
-
-  else if (node->kind == 61) {
-    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_336, 2, 0);
-  }
-
-  else if (node->kind == 63) {
-    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_337, 7, 0);
-  }
-
-  else if (node->kind == 64) {
-    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_338, 11, 1);
-  }
-
-  else if (node->kind == 65) {
-    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_339, 9, 0);
-  }
-
-  else if (node->kind == 66) {
-    JsResult_emitBinary(__this, node, parentPrecedence, Node_isUnsignedOperator(node) ? (const uint16_t *)__string_340 : (const uint16_t *)__string_341, 9, 0);
-  }
-
-  else if (node->kind == 67) {
-    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_342, 10, 1);
-  }
-
-  else if (node->kind == 62) {
-    struct Node *left = Node_binaryLeft(node);
-    struct Node *right = Node_binaryRight(node);
-    uint8_t isUnsigned = Node_isUnsignedOperator(node);
-
-    if (isUnsigned && parentPrecedence > 9) {
-      StringBuilder_appendChar(code, 40);
-    }
-
-    StringBuilder_append(code, (const uint16_t *)__string_343___imul);
-    JsResult_emitExpression(__this, left, 0);
-    StringBuilder_append(code, (const uint16_t *)__string_344);
-    JsResult_emitExpression(__this, right, 0);
-    StringBuilder_appendChar(code, 41);
-    __this->foundMultiply = 1;
-
-    if (isUnsigned) {
-      StringBuilder_append(code, (const uint16_t *)__string_345_0);
-
-      if (parentPrecedence > 9) {
-        StringBuilder_appendChar(code, 41);
-      }
-    }
-  }
-
-  else {
-    assert(0);
-  }
-}
-
-static void JsResult_emitSymbolName(struct JsResult *__this, struct Symbol *symbol) {
-  StringBuilder_append(__this->code, !string_op_equals(symbol->rename, NULL) ? symbol->rename : symbol->name);
-}
-
-static void JsResult_emitStatement(struct JsResult *__this, struct Node *node) {
-  struct StringBuilder *code = __this->code;
-
-  if (node->kind == 15) {
-    struct Node *body = Node_functionBody(node);
-
-    if (body == NULL) {
-      return;
-    }
-
-    struct Symbol *symbol = node->symbol;
-    uint8_t needsSemicolon = 0;
-    JsResult_emitNewlineBefore(__this, node);
-    JsResult_emitIndent(__this);
-
-    if (symbol->kind == 4) {
-      JsResult_emitSymbolName(__this, Symbol_parent(symbol));
-      StringBuilder_append(code, (const uint16_t *)__string_346_prototype);
-      JsResult_emitSymbolName(__this, symbol);
-      StringBuilder_append(code, (const uint16_t *)__string_347_function);
-      needsSemicolon = 1;
-    }
-
-    else if (Node_isExtern(node)) {
-      StringBuilder_append(code, (const uint16_t *)__string_348_var);
-      JsResult_emitSymbolName(__this, symbol);
-      StringBuilder_append(code, (const uint16_t *)__string_349___extern);
-      JsResult_emitSymbolName(__this, symbol);
-      StringBuilder_append(code, (const uint16_t *)__string_350_function);
-      needsSemicolon = 1;
-    }
-
-    else {
-      StringBuilder_append(code, (const uint16_t *)__string_351_function);
-      JsResult_emitSymbolName(__this, symbol);
-    }
-
-    StringBuilder_appendChar(code, 40);
-    struct Node *returnType = Node_functionReturnType(node);
-    struct Node *child = Node_functionFirstArgumentIgnoringThis(node);
-
-    while (child != returnType) {
-      assert(child->kind == 6);
-      JsResult_emitSymbolName(__this, child->symbol);
-      child = child->nextSibling;
-
-      if (child != returnType) {
-        StringBuilder_append(code, (const uint16_t *)__string_352);
-      }
-    }
-
-    StringBuilder_append(code, (const uint16_t *)__string_353);
-    JsResult_emitBlock(__this, Node_functionBody(node));
-    StringBuilder_append(code, needsSemicolon ? (const uint16_t *)__string_354 : (const uint16_t *)__string_355);
-    JsResult_emitNewlineAfter(__this, node);
-  }
-
-  else if (node->kind == 16) {
-    JsResult_emitNewlineBefore(__this, node);
-    JsResult_emitIndent(__this);
-
-    while (1) {
-      StringBuilder_append(code, (const uint16_t *)__string_356_if);
-      JsResult_emitExpression(__this, Node_ifValue(node), 0);
-      StringBuilder_append(code, (const uint16_t *)__string_357);
-      JsResult_emitBlock(__this, Node_ifTrue(node));
-      struct Node *no = Node_ifFalse(node);
-
-      if (no == NULL) {
-        StringBuilder_appendChar(code, 10);
-
-        break;
-      }
-
-      StringBuilder_append(code, (const uint16_t *)__string_358);
-      JsResult_emitIndent(__this);
-      StringBuilder_append(code, (const uint16_t *)__string_359_else);
-
-      if (no->firstChild == NULL || no->firstChild != no->lastChild || no->firstChild->kind != 16) {
-        JsResult_emitBlock(__this, no);
-        StringBuilder_appendChar(code, 10);
-
-        break;
-      }
-
-      node = no->firstChild;
-    }
-
-    JsResult_emitNewlineAfter(__this, node);
-  }
-
-  else if (node->kind == 20) {
-    JsResult_emitNewlineBefore(__this, node);
-    JsResult_emitIndent(__this);
-    StringBuilder_append(code, (const uint16_t *)__string_360_while);
-    JsResult_emitExpression(__this, Node_whileValue(node), 0);
-    StringBuilder_append(code, (const uint16_t *)__string_361);
-    JsResult_emitBlock(__this, Node_whileBody(node));
-    StringBuilder_appendChar(code, 10);
-    JsResult_emitNewlineAfter(__this, node);
-  }
-
-  else if (node->kind == 8) {
-    JsResult_emitNewlineBefore(__this, node);
-    JsResult_emitIndent(__this);
-    StringBuilder_append(code, (const uint16_t *)__string_362_break);
-    JsResult_emitNewlineAfter(__this, node);
-  }
-
-  else if (node->kind == 11) {
-    JsResult_emitNewlineBefore(__this, node);
-    JsResult_emitIndent(__this);
-    StringBuilder_append(code, (const uint16_t *)__string_363_continue);
-    JsResult_emitNewlineAfter(__this, node);
-  }
-
-  else if (node->kind == 14) {
-    JsResult_emitNewlineBefore(__this, node);
-    JsResult_emitIndent(__this);
-    JsResult_emitExpression(__this, Node_expressionValue(node), 0);
-    StringBuilder_append(code, (const uint16_t *)__string_364);
-    JsResult_emitNewlineAfter(__this, node);
-  }
-
-  else if (node->kind == 12) {
-  }
-
-  else if (node->kind == 17) {
-    struct Node *value = Node_returnValue(node);
-    JsResult_emitNewlineBefore(__this, node);
-    JsResult_emitIndent(__this);
-
-    if (value != NULL) {
-      StringBuilder_append(code, (const uint16_t *)__string_365_return);
-      JsResult_emitExpression(__this, value, 0);
-      StringBuilder_append(code, (const uint16_t *)__string_366);
-    }
-
-    else {
-      StringBuilder_append(code, (const uint16_t *)__string_367_return);
-    }
-
-    JsResult_emitNewlineAfter(__this, node);
-  }
-
-  else if (node->kind == 7) {
-    if (node->parent->kind == 7) {
-      JsResult_emitStatements(__this, node->firstChild);
-    }
-
-    else {
-      JsResult_emitNewlineBefore(__this, node);
-      JsResult_emitIndent(__this);
-      JsResult_emitBlock(__this, node);
-      StringBuilder_appendChar(code, 10);
-      JsResult_emitNewlineAfter(__this, node);
-    }
-  }
-
-  else if (node->kind == 19) {
-    JsResult_emitNewlineBefore(__this, node);
-    JsResult_emitIndent(__this);
-    StringBuilder_append(code, (const uint16_t *)__string_368_var);
-    struct Node *child = node->firstChild;
-
-    while (child != NULL) {
-      struct Node *value = Node_variableValue(child);
-      JsResult_emitSymbolName(__this, child->symbol);
-      child = child->nextSibling;
-
-      if (child != NULL) {
-        StringBuilder_append(code, (const uint16_t *)__string_369);
-      }
-
-      assert(value != NULL);
-      StringBuilder_append(code, (const uint16_t *)__string_370);
-      JsResult_emitExpression(__this, value, 0);
-    }
-
-    StringBuilder_append(code, (const uint16_t *)__string_371);
-    JsResult_emitNewlineAfter(__this, node);
-  }
-
-  else if (node->kind == 9) {
-    if (!Node_isDeclare(node)) {
-      JsResult_emitNewlineBefore(__this, node);
-      JsResult_emitIndent(__this);
-      StringBuilder_append(code, (const uint16_t *)__string_372_function);
-      JsResult_emitSymbolName(__this, node->symbol);
-      StringBuilder_append(code, (const uint16_t *)__string_373);
-      __this->indent = __this->indent + 1;
-      struct Node *argument = node->firstChild;
-
-      while (argument != NULL) {
-        if (argument->kind == 6) {
-          JsResult_emitIndent(__this);
-          StringBuilder_append(code, (const uint16_t *)__string_374_this);
-          JsResult_emitSymbolName(__this, argument->symbol);
-          StringBuilder_append(code, (const uint16_t *)__string_375);
-          JsResult_emitExpression(__this, Node_variableValue(argument), 0);
-          StringBuilder_append(code, (const uint16_t *)__string_376);
-        }
-
-        argument = argument->nextSibling;
-      }
-
-      __this->indent = __this->indent - 1;
-      JsResult_emitIndent(__this);
-      StringBuilder_append(code, (const uint16_t *)__string_377);
-      JsResult_emitNewlineAfter(__this, node);
-    }
-
-    struct Node *child = node->firstChild;
-
-    while (child != NULL) {
-      if (child->kind == 15) {
-        JsResult_emitStatement(__this, child);
-      }
-
-      child = child->nextSibling;
-    }
-  }
-
-  else if (node->kind == 13) {
-    if (Node_isExtern(node)) {
-      JsResult_emitNewlineBefore(__this, node);
-      JsResult_emitIndent(__this);
-      StringBuilder_append(code, (const uint16_t *)__string_378___extern);
-      JsResult_emitSymbolName(__this, node->symbol);
-      StringBuilder_append(code, (const uint16_t *)__string_379);
-      __this->indent = __this->indent + 1;
-      struct Node *child = node->firstChild;
-
-      while (child != NULL) {
-        assert(child->kind == 6);
-        JsResult_emitIndent(__this);
-        JsResult_emitSymbolName(__this, child->symbol);
-        StringBuilder_append(code, (const uint16_t *)__string_380);
-        StringBuilder_append(code, int_toString(child->symbol->offset));
-        child = child->nextSibling;
-        StringBuilder_append(code, child != NULL ? (const uint16_t *)__string_381 : (const uint16_t *)__string_382);
-      }
-
-      __this->indent = __this->indent - 1;
-      JsResult_emitIndent(__this);
-      StringBuilder_append(code, (const uint16_t *)__string_383);
-      JsResult_emitNewlineAfter(__this, node);
-    }
-  }
-
-  else if (node->kind == 10) {
-  }
-
-  else {
-    assert(0);
-  }
-}
-
-static uint8_t jsKindCastsOperandsToInt(int32_t kind) {
-  return kind == 65 || kind == 66 || kind == 51 || kind == 50 || kind == 52;
-}
-
-static void jsEmit(struct Compiler *compiler) {
-  struct StringBuilder *code = StringBuilder_new();
-  struct JsResult *result = calloc(1, sizeof(struct JsResult));
-  result->context = compiler->context;
-  result->code = code;
-  StringBuilder_append(code, (const uint16_t *)__string_384_function___declare___extern);
-  result->indent = 1;
-  JsResult_emitStatements(result, compiler->global->firstChild);
-
-  if (result->foundMultiply) {
-    StringBuilder_appendChar(code, 10);
-    JsResult_emitIndent(result);
-    StringBuilder_append(code, (const uint16_t *)__string_385_var___imul_Math_imul_functi);
-    result->indent = 2;
-    JsResult_emitIndent(result);
-    StringBuilder_append(code, (const uint16_t *)__string_386_return_a_b_16_16);
-    result->indent = 1;
-    JsResult_emitIndent(result);
-    StringBuilder_append(code, (const uint16_t *)__string_387);
-  }
-
-  StringBuilder_append(code, (const uint16_t *)__string_388);
-  JsResult_emitIndent(result);
-  StringBuilder_append(code, (const uint16_t *)__string_389_typeof_global_undefined);
-  JsResult_emitIndent(result);
-  StringBuilder_append(code, (const uint16_t *)__string_390_typeof_exports_undefined);
-  StringBuilder_append(code, (const uint16_t *)__string_391);
-  compiler->outputJS = StringBuilder_finish(code);
 }
 
 static uint8_t isKeyword(int32_t kind) {
@@ -5314,331 +3968,331 @@ static void splitToken(struct Token *first, int32_t firstKind, int32_t secondKin
 
 static const uint16_t *tokenToString(int32_t token) {
   if (token == 0) {
-    return (const uint16_t *)__string_392_end_of_file;
+    return (const uint16_t *)__string_214_end_of_file;
   }
 
   if (token == 1) {
-    return (const uint16_t *)__string_393_character_literal;
+    return (const uint16_t *)__string_215_character_literal;
   }
 
   if (token == 2) {
-    return (const uint16_t *)__string_394_identifier;
+    return (const uint16_t *)__string_216_identifier;
   }
 
   if (token == 3) {
-    return (const uint16_t *)__string_395_integer_literal;
+    return (const uint16_t *)__string_217_integer_literal;
   }
 
   if (token == 4) {
-    return (const uint16_t *)__string_396_string_literal;
+    return (const uint16_t *)__string_218_string_literal;
   }
 
   if (token == 5) {
-    return (const uint16_t *)__string_397;
+    return (const uint16_t *)__string_219;
   }
 
   if (token == 6) {
-    return (const uint16_t *)__string_398;
+    return (const uint16_t *)__string_220;
   }
 
   if (token == 7) {
-    return (const uint16_t *)__string_399;
+    return (const uint16_t *)__string_221;
   }
 
   if (token == 8) {
-    return (const uint16_t *)__string_400;
+    return (const uint16_t *)__string_222;
   }
 
   if (token == 9) {
-    return (const uint16_t *)__string_401;
+    return (const uint16_t *)__string_223;
   }
 
   if (token == 10) {
-    return (const uint16_t *)__string_402;
+    return (const uint16_t *)__string_224;
   }
 
   if (token == 11) {
-    return (const uint16_t *)__string_403;
+    return (const uint16_t *)__string_225;
   }
 
   if (token == 12) {
-    return (const uint16_t *)__string_404;
+    return (const uint16_t *)__string_226;
   }
 
   if (token == 13) {
-    return (const uint16_t *)__string_405;
+    return (const uint16_t *)__string_227;
   }
 
   if (token == 14) {
-    return (const uint16_t *)__string_406;
+    return (const uint16_t *)__string_228;
   }
 
   if (token == 15) {
-    return (const uint16_t *)__string_407;
+    return (const uint16_t *)__string_229;
   }
 
   if (token == 16) {
-    return (const uint16_t *)__string_408;
+    return (const uint16_t *)__string_230;
   }
 
   if (token == 17) {
-    return (const uint16_t *)__string_409;
+    return (const uint16_t *)__string_231;
   }
 
   if (token == 18) {
-    return (const uint16_t *)__string_410;
+    return (const uint16_t *)__string_232;
   }
 
   if (token == 19) {
-    return (const uint16_t *)__string_411;
+    return (const uint16_t *)__string_233;
   }
 
   if (token == 20) {
-    return (const uint16_t *)__string_412;
+    return (const uint16_t *)__string_234;
   }
 
   if (token == 21) {
-    return (const uint16_t *)__string_413;
+    return (const uint16_t *)__string_235;
   }
 
   if (token == 22) {
-    return (const uint16_t *)__string_414;
+    return (const uint16_t *)__string_236;
   }
 
   if (token == 23) {
-    return (const uint16_t *)__string_415;
+    return (const uint16_t *)__string_237;
   }
 
   if (token == 24) {
-    return (const uint16_t *)__string_416;
+    return (const uint16_t *)__string_238;
   }
 
   if (token == 25) {
-    return (const uint16_t *)__string_417;
+    return (const uint16_t *)__string_239;
   }
 
   if (token == 26) {
-    return (const uint16_t *)__string_418;
+    return (const uint16_t *)__string_240;
   }
 
   if (token == 27) {
-    return (const uint16_t *)__string_419;
+    return (const uint16_t *)__string_241;
   }
 
   if (token == 28) {
-    return (const uint16_t *)__string_420;
+    return (const uint16_t *)__string_242;
   }
 
   if (token == 29) {
-    return (const uint16_t *)__string_421;
+    return (const uint16_t *)__string_243;
   }
 
   if (token == 30) {
-    return (const uint16_t *)__string_422;
+    return (const uint16_t *)__string_244;
   }
 
   if (token == 31) {
-    return (const uint16_t *)__string_423;
+    return (const uint16_t *)__string_245;
   }
 
   if (token == 32) {
-    return (const uint16_t *)__string_424;
+    return (const uint16_t *)__string_246;
   }
 
   if (token == 33) {
-    return (const uint16_t *)__string_425;
+    return (const uint16_t *)__string_247;
   }
 
   if (token == 34) {
-    return (const uint16_t *)__string_426;
+    return (const uint16_t *)__string_248;
   }
 
   if (token == 35) {
-    return (const uint16_t *)__string_427;
+    return (const uint16_t *)__string_249;
   }
 
   if (token == 36) {
-    return (const uint16_t *)__string_428;
+    return (const uint16_t *)__string_250;
   }
 
   if (token == 37) {
-    return (const uint16_t *)__string_429;
+    return (const uint16_t *)__string_251;
   }
 
   if (token == 38) {
-    return (const uint16_t *)__string_430;
+    return (const uint16_t *)__string_252;
   }
 
   if (token == 39) {
-    return (const uint16_t *)__string_431;
+    return (const uint16_t *)__string_253;
   }
 
   if (token == 40) {
-    return (const uint16_t *)__string_432_alignof;
+    return (const uint16_t *)__string_254_alignof;
   }
 
   if (token == 41) {
-    return (const uint16_t *)__string_433_as;
+    return (const uint16_t *)__string_255_as;
   }
 
   if (token == 42) {
-    return (const uint16_t *)__string_434_break;
+    return (const uint16_t *)__string_256_break;
   }
 
   if (token == 43) {
-    return (const uint16_t *)__string_435_class;
+    return (const uint16_t *)__string_257_class;
   }
 
   if (token == 44) {
-    return (const uint16_t *)__string_436_const;
+    return (const uint16_t *)__string_258_const;
   }
 
   if (token == 45) {
-    return (const uint16_t *)__string_437_continue;
+    return (const uint16_t *)__string_259_continue;
   }
 
   if (token == 46) {
-    return (const uint16_t *)__string_438_declare;
+    return (const uint16_t *)__string_260_declare;
   }
 
   if (token == 47) {
-    return (const uint16_t *)__string_439_else;
+    return (const uint16_t *)__string_261_else;
   }
 
   if (token == 48) {
-    return (const uint16_t *)__string_440_enum;
+    return (const uint16_t *)__string_262_enum;
   }
 
   if (token == 49) {
-    return (const uint16_t *)__string_441_export;
+    return (const uint16_t *)__string_263_export;
   }
 
   if (token == 50) {
-    return (const uint16_t *)__string_442_extends;
+    return (const uint16_t *)__string_264_extends;
   }
 
   if (token == 51) {
-    return (const uint16_t *)__string_443_extern;
+    return (const uint16_t *)__string_265_extern;
   }
 
   if (token == 52) {
-    return (const uint16_t *)__string_444_false;
+    return (const uint16_t *)__string_266_false;
   }
 
   if (token == 53) {
-    return (const uint16_t *)__string_445_function;
+    return (const uint16_t *)__string_267_function;
   }
 
   if (token == 54) {
-    return (const uint16_t *)__string_446_if;
+    return (const uint16_t *)__string_268_if;
   }
 
   if (token == 55) {
-    return (const uint16_t *)__string_447_implements;
+    return (const uint16_t *)__string_269_implements;
   }
 
   if (token == 56) {
-    return (const uint16_t *)__string_448_import;
+    return (const uint16_t *)__string_270_import;
   }
 
   if (token == 57) {
-    return (const uint16_t *)__string_449_interface;
+    return (const uint16_t *)__string_271_interface;
   }
 
   if (token == 58) {
-    return (const uint16_t *)__string_450_let;
+    return (const uint16_t *)__string_272_let;
   }
 
   if (token == 59) {
-    return (const uint16_t *)__string_451_new;
+    return (const uint16_t *)__string_273_new;
   }
 
   if (token == 60) {
-    return (const uint16_t *)__string_452_null;
+    return (const uint16_t *)__string_274_null;
   }
 
   if (token == 61) {
-    return (const uint16_t *)__string_453_operator;
+    return (const uint16_t *)__string_275_operator;
   }
 
   if (token == 62) {
-    return (const uint16_t *)__string_454_private;
+    return (const uint16_t *)__string_276_private;
   }
 
   if (token == 63) {
-    return (const uint16_t *)__string_455_protected;
+    return (const uint16_t *)__string_277_protected;
   }
 
   if (token == 64) {
-    return (const uint16_t *)__string_456_public;
+    return (const uint16_t *)__string_278_public;
   }
 
   if (token == 65) {
-    return (const uint16_t *)__string_457_return;
+    return (const uint16_t *)__string_279_return;
   }
 
   if (token == 66) {
-    return (const uint16_t *)__string_458_sizeof;
+    return (const uint16_t *)__string_280_sizeof;
   }
 
   if (token == 67) {
-    return (const uint16_t *)__string_459_static;
+    return (const uint16_t *)__string_281_static;
   }
 
   if (token == 68) {
-    return (const uint16_t *)__string_460_this;
+    return (const uint16_t *)__string_282_this;
   }
 
   if (token == 69) {
-    return (const uint16_t *)__string_461_true;
+    return (const uint16_t *)__string_283_true;
   }
 
   if (token == 70) {
-    return (const uint16_t *)__string_462_unsafe;
+    return (const uint16_t *)__string_284_unsafe;
   }
 
   if (token == 71) {
-    return (const uint16_t *)__string_463_var;
+    return (const uint16_t *)__string_285_var;
   }
 
   if (token == 72) {
-    return (const uint16_t *)__string_464_while;
+    return (const uint16_t *)__string_286_while;
   }
 
   if (token == 73) {
-    return (const uint16_t *)__string_465_define;
+    return (const uint16_t *)__string_287_define;
   }
 
   if (token == 74) {
-    return (const uint16_t *)__string_466_elif;
+    return (const uint16_t *)__string_288_elif;
   }
 
   if (token == 75) {
-    return (const uint16_t *)__string_467_else;
+    return (const uint16_t *)__string_289_else;
   }
 
   if (token == 76) {
-    return (const uint16_t *)__string_468_endif;
+    return (const uint16_t *)__string_290_endif;
   }
 
   if (token == 77) {
-    return (const uint16_t *)__string_469_error;
+    return (const uint16_t *)__string_291_error;
   }
 
   if (token == 78) {
-    return (const uint16_t *)__string_470_if;
+    return (const uint16_t *)__string_292_if;
   }
 
   if (token == 80) {
-    return (const uint16_t *)__string_471_newline;
+    return (const uint16_t *)__string_293_newline;
   }
 
   if (token == 81) {
-    return (const uint16_t *)__string_472_undef;
+    return (const uint16_t *)__string_294_undef;
   }
 
   if (token == 82) {
-    return (const uint16_t *)__string_473_warning;
+    return (const uint16_t *)__string_295_warning;
   }
 
   assert(0);
@@ -5708,142 +4362,142 @@ static struct Token *tokenize(struct Source *source, struct Log *log) {
         const uint16_t *text = string_slice(contents, start, i);
 
         if (length == 2) {
-          if (string_op_equals(text, (const uint16_t *)__string_474_as)) {
+          if (string_op_equals(text, (const uint16_t *)__string_296_as)) {
             kind = 41;
           }
 
-          else if (string_op_equals(text, (const uint16_t *)__string_475_if)) {
+          else if (string_op_equals(text, (const uint16_t *)__string_297_if)) {
             kind = 54;
           }
         }
 
         else if (length == 3) {
-          if (string_op_equals(text, (const uint16_t *)__string_476_let)) {
+          if (string_op_equals(text, (const uint16_t *)__string_298_let)) {
             kind = 58;
           }
 
-          else if (string_op_equals(text, (const uint16_t *)__string_477_new)) {
+          else if (string_op_equals(text, (const uint16_t *)__string_299_new)) {
             kind = 59;
           }
 
-          else if (string_op_equals(text, (const uint16_t *)__string_478_var)) {
+          else if (string_op_equals(text, (const uint16_t *)__string_300_var)) {
             kind = 71;
           }
         }
 
         else if (length == 4) {
-          if (string_op_equals(text, (const uint16_t *)__string_479_else)) {
+          if (string_op_equals(text, (const uint16_t *)__string_301_else)) {
             kind = 47;
           }
 
-          else if (string_op_equals(text, (const uint16_t *)__string_480_enum)) {
+          else if (string_op_equals(text, (const uint16_t *)__string_302_enum)) {
             kind = 48;
           }
 
-          else if (string_op_equals(text, (const uint16_t *)__string_481_null)) {
+          else if (string_op_equals(text, (const uint16_t *)__string_303_null)) {
             kind = 60;
           }
 
-          else if (string_op_equals(text, (const uint16_t *)__string_482_this)) {
+          else if (string_op_equals(text, (const uint16_t *)__string_304_this)) {
             kind = 68;
           }
 
-          else if (string_op_equals(text, (const uint16_t *)__string_483_true)) {
+          else if (string_op_equals(text, (const uint16_t *)__string_305_true)) {
             kind = 69;
           }
         }
 
         else if (length == 5) {
-          if (string_op_equals(text, (const uint16_t *)__string_484_break)) {
+          if (string_op_equals(text, (const uint16_t *)__string_306_break)) {
             kind = 42;
           }
 
-          else if (string_op_equals(text, (const uint16_t *)__string_485_class)) {
+          else if (string_op_equals(text, (const uint16_t *)__string_307_class)) {
             kind = 43;
           }
 
-          else if (string_op_equals(text, (const uint16_t *)__string_486_const)) {
+          else if (string_op_equals(text, (const uint16_t *)__string_308_const)) {
             kind = 44;
           }
 
-          else if (string_op_equals(text, (const uint16_t *)__string_487_false)) {
+          else if (string_op_equals(text, (const uint16_t *)__string_309_false)) {
             kind = 52;
           }
 
-          else if (string_op_equals(text, (const uint16_t *)__string_488_while)) {
+          else if (string_op_equals(text, (const uint16_t *)__string_310_while)) {
             kind = 72;
           }
         }
 
         else if (length == 6) {
-          if (string_op_equals(text, (const uint16_t *)__string_489_export)) {
+          if (string_op_equals(text, (const uint16_t *)__string_311_export)) {
             kind = 49;
           }
 
-          else if (string_op_equals(text, (const uint16_t *)__string_490_extern)) {
+          else if (string_op_equals(text, (const uint16_t *)__string_312_extern)) {
             kind = 51;
           }
 
-          else if (string_op_equals(text, (const uint16_t *)__string_491_import)) {
+          else if (string_op_equals(text, (const uint16_t *)__string_313_import)) {
             kind = 56;
           }
 
-          else if (string_op_equals(text, (const uint16_t *)__string_492_public)) {
+          else if (string_op_equals(text, (const uint16_t *)__string_314_public)) {
             kind = 64;
           }
 
-          else if (string_op_equals(text, (const uint16_t *)__string_493_return)) {
+          else if (string_op_equals(text, (const uint16_t *)__string_315_return)) {
             kind = 65;
           }
 
-          else if (string_op_equals(text, (const uint16_t *)__string_494_sizeof)) {
+          else if (string_op_equals(text, (const uint16_t *)__string_316_sizeof)) {
             kind = 66;
           }
 
-          else if (string_op_equals(text, (const uint16_t *)__string_495_static)) {
+          else if (string_op_equals(text, (const uint16_t *)__string_317_static)) {
             kind = 67;
           }
 
-          else if (string_op_equals(text, (const uint16_t *)__string_496_unsafe)) {
+          else if (string_op_equals(text, (const uint16_t *)__string_318_unsafe)) {
             kind = 70;
           }
         }
 
         else if (length == 7) {
-          if (string_op_equals(text, (const uint16_t *)__string_497_alignof)) {
+          if (string_op_equals(text, (const uint16_t *)__string_319_alignof)) {
             kind = 40;
           }
 
-          else if (string_op_equals(text, (const uint16_t *)__string_498_declare)) {
+          else if (string_op_equals(text, (const uint16_t *)__string_320_declare)) {
             kind = 46;
           }
 
-          else if (string_op_equals(text, (const uint16_t *)__string_499_extends)) {
+          else if (string_op_equals(text, (const uint16_t *)__string_321_extends)) {
             kind = 50;
           }
 
-          else if (string_op_equals(text, (const uint16_t *)__string_500_private)) {
+          else if (string_op_equals(text, (const uint16_t *)__string_322_private)) {
             kind = 62;
           }
         }
 
-        else if (string_op_equals(text, (const uint16_t *)__string_501_continue)) {
+        else if (string_op_equals(text, (const uint16_t *)__string_323_continue)) {
           kind = 45;
         }
 
-        else if (string_op_equals(text, (const uint16_t *)__string_502_function)) {
+        else if (string_op_equals(text, (const uint16_t *)__string_324_function)) {
           kind = 53;
         }
 
-        else if (string_op_equals(text, (const uint16_t *)__string_503_implements)) {
+        else if (string_op_equals(text, (const uint16_t *)__string_325_implements)) {
           kind = 55;
         }
 
-        else if (string_op_equals(text, (const uint16_t *)__string_504_interface)) {
+        else if (string_op_equals(text, (const uint16_t *)__string_326_interface)) {
           kind = 57;
         }
 
-        else if (string_op_equals(text, (const uint16_t *)__string_505_protected)) {
+        else if (string_op_equals(text, (const uint16_t *)__string_327_protected)) {
           kind = 63;
         }
       }
@@ -5891,7 +4545,7 @@ static struct Token *tokenize(struct Source *source, struct Log *log) {
             i = i + 1;
           }
 
-          Log_error(log, createRange(source, start, i), StringBuilder_finish(StringBuilder_appendChar(StringBuilder_appendSlice(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_506_Invalid_integer_literal), contents, start, i), 39)));
+          Log_error(log, createRange(source, start, i), StringBuilder_finish(StringBuilder_appendChar(StringBuilder_appendSlice(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_328_Invalid_integer_literal), contents, start, i), 39)));
 
           return NULL;
         }
@@ -5922,7 +4576,7 @@ static struct Token *tokenize(struct Source *source, struct Log *log) {
       }
 
       if (kind == 0) {
-        Log_error(log, createRange(source, start, i), c == 39 ? (const uint16_t *)__string_507_Unterminated_character_literal : c == 96 ? (const uint16_t *)__string_508_Unterminated_template_literal : (const uint16_t *)__string_509_Unterminated_string_literal);
+        Log_error(log, createRange(source, start, i), c == 39 ? (const uint16_t *)__string_329_Unterminated_character_literal : c == 96 ? (const uint16_t *)__string_330_Unterminated_template_literal : (const uint16_t *)__string_331_Unterminated_string_literal);
 
         return NULL;
       }
@@ -6024,7 +4678,7 @@ static struct Token *tokenize(struct Source *source, struct Log *log) {
         }
 
         if (!foundEnd) {
-          Log_error(log, createRange(source, start, start + 2), (const uint16_t *)__string_510_Unterminated_multi_line_comment);
+          Log_error(log, createRange(source, start, start + 2), (const uint16_t *)__string_332_Unterminated_multi_line_comment);
 
           return NULL;
         }
@@ -6042,7 +4696,7 @@ static struct Token *tokenize(struct Source *source, struct Log *log) {
 
         if (i < limit && string_op_get(contents, i) == 61) {
           i = i + 1;
-          Log_error(log, createRange(source, start, i), (const uint16_t *)__string_511_Use_instead_of);
+          Log_error(log, createRange(source, start, i), (const uint16_t *)__string_333_Use_instead_of);
         }
       }
     }
@@ -6056,7 +4710,7 @@ static struct Token *tokenize(struct Source *source, struct Log *log) {
 
         if (i < limit && string_op_get(contents, i) == 61) {
           i = i + 1;
-          Log_error(log, createRange(source, start, i), (const uint16_t *)__string_512_Use_instead_of);
+          Log_error(log, createRange(source, start, i), (const uint16_t *)__string_334_Use_instead_of);
         }
       }
     }
@@ -6140,39 +4794,39 @@ static struct Token *tokenize(struct Source *source, struct Log *log) {
 
       const uint16_t *text = string_slice(contents, start, i);
 
-      if (string_op_equals(text, (const uint16_t *)__string_513_define)) {
+      if (string_op_equals(text, (const uint16_t *)__string_335_define)) {
         kind = 73;
       }
 
-      else if (string_op_equals(text, (const uint16_t *)__string_514_elif)) {
+      else if (string_op_equals(text, (const uint16_t *)__string_336_elif)) {
         kind = 74;
       }
 
-      else if (string_op_equals(text, (const uint16_t *)__string_515_else)) {
+      else if (string_op_equals(text, (const uint16_t *)__string_337_else)) {
         kind = 75;
       }
 
-      else if (string_op_equals(text, (const uint16_t *)__string_516_endif)) {
+      else if (string_op_equals(text, (const uint16_t *)__string_338_endif)) {
         kind = 76;
       }
 
-      else if (string_op_equals(text, (const uint16_t *)__string_517_error)) {
+      else if (string_op_equals(text, (const uint16_t *)__string_339_error)) {
         kind = 77;
       }
 
-      else if (string_op_equals(text, (const uint16_t *)__string_518_if)) {
+      else if (string_op_equals(text, (const uint16_t *)__string_340_if)) {
         kind = 78;
       }
 
-      else if (string_op_equals(text, (const uint16_t *)__string_519_undef)) {
+      else if (string_op_equals(text, (const uint16_t *)__string_341_undef)) {
         kind = 81;
       }
 
-      else if (string_op_equals(text, (const uint16_t *)__string_520_warning)) {
+      else if (string_op_equals(text, (const uint16_t *)__string_342_warning)) {
         kind = 82;
       }
 
-      else if (start == 0 && string_op_equals(text, (const uint16_t *)__string_521) && i < limit && string_op_get(contents, i) == 33) {
+      else if (start == 0 && string_op_equals(text, (const uint16_t *)__string_343) && i < limit && string_op_get(contents, i) == 33) {
         while (i < limit && string_op_get(contents, i) != 10) {
           i = i + 1;
         }
@@ -6181,20 +4835,20 @@ static struct Token *tokenize(struct Source *source, struct Log *log) {
       }
 
       else {
-        struct StringBuilder *builder = StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_522_Invalid_preprocessor_token), text), 39);
+        struct StringBuilder *builder = StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_344_Invalid_preprocessor_token), text), 39);
 
-        if (string_op_equals(text, (const uint16_t *)__string_523_ifdef)) {
-          StringBuilder_append(builder, (const uint16_t *)__string_524_did_you_mean_if);
+        if (string_op_equals(text, (const uint16_t *)__string_345_ifdef)) {
+          StringBuilder_append(builder, (const uint16_t *)__string_346_did_you_mean_if);
           kind = 78;
         }
 
-        else if (string_op_equals(text, (const uint16_t *)__string_525_elsif) || string_op_equals(text, (const uint16_t *)__string_526_elseif)) {
-          StringBuilder_append(builder, (const uint16_t *)__string_527_did_you_mean_elif);
+        else if (string_op_equals(text, (const uint16_t *)__string_347_elsif) || string_op_equals(text, (const uint16_t *)__string_348_elseif)) {
+          StringBuilder_append(builder, (const uint16_t *)__string_349_did_you_mean_elif);
           kind = 74;
         }
 
-        else if (string_op_equals(text, (const uint16_t *)__string_528_end)) {
-          StringBuilder_append(builder, (const uint16_t *)__string_529_did_you_mean_endif);
+        else if (string_op_equals(text, (const uint16_t *)__string_350_end)) {
+          StringBuilder_append(builder, (const uint16_t *)__string_351_did_you_mean_endif);
           kind = 76;
         }
 
@@ -6214,7 +4868,7 @@ static struct Token *tokenize(struct Source *source, struct Log *log) {
         }
 
         if (j < end) {
-          Log_error(log, createRange(source, start, i), StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_530_Expected_newline_before), tokenToString(kind))));
+          Log_error(log, createRange(source, start, i), StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_352_Expected_newline_before), tokenToString(kind))));
         }
       }
 
@@ -6225,7 +4879,7 @@ static struct Token *tokenize(struct Source *source, struct Log *log) {
     struct Range *range = createRange(source, start, i);
 
     if (kind == 0) {
-      Log_error(log, range, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_appendSlice(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_531_Syntax_error), contents, start, start + 1), 39)));
+      Log_error(log, range, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_appendSlice(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_353_Syntax_error), contents, start, start + 1), 39)));
 
       return NULL;
     }
@@ -6271,7 +4925,7 @@ static struct Token *tokenize(struct Source *source, struct Log *log) {
 }
 
 static const uint16_t *library() {
-  return (const uint16_t *)__string_532_if_WASM_These_will_be_fi;
+  return (const uint16_t *)__string_354_if_WASM_These_will_be_fi;
 }
 
 static struct LineColumn *Source_indexToLineColumn(struct Source *__this, int32_t index) {
@@ -6351,11 +5005,11 @@ static struct Range *spanRanges(struct Range *left, struct Range *right) {
 }
 
 static void Diagnostic_appendSourceName(struct Diagnostic *__this, struct StringBuilder *builder, struct LineColumn *location) {
-  StringBuilder_append(StringBuilder_append(StringBuilder_appendChar(StringBuilder_append(StringBuilder_appendChar(StringBuilder_append(builder, __this->range->source->name), 58), int_toString(location->line + 1)), 58), int_toString(location->column + 1)), (const uint16_t *)__string_533);
+  StringBuilder_append(StringBuilder_append(StringBuilder_appendChar(StringBuilder_append(StringBuilder_appendChar(StringBuilder_append(builder, __this->range->source->name), 58), int_toString(location->line + 1)), 58), int_toString(location->column + 1)), (const uint16_t *)__string_355);
 }
 
 static void Diagnostic_appendKind(struct Diagnostic *__this, struct StringBuilder *builder) {
-  StringBuilder_append(builder, __this->kind == 0 ? (const uint16_t *)__string_534_error : (const uint16_t *)__string_535_warning);
+  StringBuilder_append(builder, __this->kind == 0 ? (const uint16_t *)__string_356_error : (const uint16_t *)__string_357_warning);
 }
 
 static void Diagnostic_appendMessage(struct Diagnostic *__this, struct StringBuilder *builder) {
@@ -6443,208 +5097,11 @@ static uint8_t Log_hasErrors(struct Log *__this) {
       return 1;
     }
 
+    assert(diagnostic != diagnostic->next);
     diagnostic = diagnostic->next;
   }
 
   return 0;
-}
-
-static void writeLogToTerminal(struct Log *log) {
-  struct Diagnostic *diagnostic = log->first;
-
-  while (diagnostic != NULL) {
-    struct LineColumn *location = Source_indexToLineColumn(diagnostic->range->source, diagnostic->range->start);
-    struct StringBuilder *builder = StringBuilder_new();
-    Diagnostic_appendSourceName(diagnostic, builder, location);
-    Terminal_setColor(1);
-    Terminal_write(StringBuilder_finish(builder));
-    builder = StringBuilder_new();
-    Diagnostic_appendKind(diagnostic, builder);
-    Terminal_setColor(diagnostic->kind == 0 ? 2 : 4);
-    Terminal_write(StringBuilder_finish(builder));
-    builder = StringBuilder_new();
-    Diagnostic_appendMessage(diagnostic, builder);
-    Terminal_setColor(1);
-    Terminal_write(StringBuilder_finish(builder));
-    builder = StringBuilder_new();
-    Diagnostic_appendLineContents(diagnostic, builder, location);
-    Terminal_setColor(0);
-    Terminal_write(StringBuilder_finish(builder));
-    builder = StringBuilder_new();
-    Diagnostic_appendRange(diagnostic, builder, location);
-    Terminal_setColor(3);
-    Terminal_write(StringBuilder_finish(builder));
-    diagnostic = diagnostic->next;
-  }
-
-  Terminal_setColor(0);
-}
-
-static void printError(const uint16_t *text) {
-  Terminal_setColor(2);
-  Terminal_write((const uint16_t *)__string_536_error);
-  Terminal_setColor(1);
-  Terminal_write(text);
-  Terminal_write((const uint16_t *)__string_537);
-  Terminal_setColor(0);
-}
-
-void main_addArgument(const uint16_t *text) {
-  struct CommandLineArgument *argument = calloc(1, sizeof(struct CommandLineArgument));
-  argument->text = text;
-
-  if (firstArgument == NULL) {
-    firstArgument = argument;
-  }
-
-  else {
-    lastArgument->next = argument;
-  }
-
-  lastArgument = argument;
-}
-
-void main_reset() {
-  firstArgument = NULL;
-  lastArgument = NULL;
-}
-
-static void printUsage() {
-  Terminal_write((const uint16_t *)__string_538_Usage_thinc_FLAGS_INPUTS);
-}
-
-int32_t main_entry() {
-  int32_t target = 0;
-  struct CommandLineArgument *argument = firstArgument;
-  int32_t inputCount = 0;
-  const uint16_t *output = NULL;
-
-  if (firstArgument == NULL) {
-    printUsage();
-
-    return 1;
-  }
-
-  while (argument != NULL) {
-    const uint16_t *text = argument->text;
-
-    if (string_startsWith(text, (const uint16_t *)__string_539)) {
-      if (string_op_equals(text, (const uint16_t *)__string_540_h) || string_op_equals(text, (const uint16_t *)__string_541_help) || string_op_equals(text, (const uint16_t *)__string_542_help) || string_op_equals(text, (const uint16_t *)__string_543)) {
-        printUsage();
-
-        return 0;
-      }
-
-      else if (string_op_equals(text, (const uint16_t *)__string_544_c)) {
-        target = 1;
-      }
-
-      else if (string_op_equals(text, (const uint16_t *)__string_545_js)) {
-        target = 2;
-      }
-
-      else if (string_op_equals(text, (const uint16_t *)__string_546_wasm)) {
-        target = 3;
-      }
-
-      else if (string_op_equals(text, (const uint16_t *)__string_547_define) && argument->next != NULL) {
-        argument = argument->next;
-      }
-
-      else if (string_op_equals(text, (const uint16_t *)__string_548_out) && argument->next != NULL) {
-        argument = argument->next;
-        output = argument->text;
-      }
-
-      else {
-        printError(StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_549_Invalid_flag), text)));
-
-        return 1;
-      }
-    }
-
-    else {
-      inputCount = inputCount + 1;
-    }
-
-    argument = argument->next;
-  }
-
-  if (inputCount == 0) {
-    printError((const uint16_t *)__string_550_No_input_files);
-
-    return 1;
-  }
-
-  if (string_op_equals(output, NULL)) {
-    printError((const uint16_t *)__string_551_Missing_an_output_file_use_the);
-
-    return 1;
-  }
-
-  if (target == 0) {
-    if (string_endsWith(output, (const uint16_t *)__string_552_c)) {
-      target = 1;
-    }
-
-    else if (string_endsWith(output, (const uint16_t *)__string_553_js)) {
-      target = 2;
-    }
-
-    else if (string_endsWith(output, (const uint16_t *)__string_554_wasm)) {
-      target = 3;
-    }
-
-    else {
-      printError((const uint16_t *)__string_555_Missing_a_target_use_either_c);
-
-      return 1;
-    }
-  }
-
-  struct Compiler *compiler = calloc(1, sizeof(struct Compiler));
-  Compiler_initialize(compiler, target, output);
-  argument = firstArgument;
-
-  while (argument != NULL) {
-    const uint16_t *text = argument->text;
-
-    if (string_op_equals(text, (const uint16_t *)__string_556_define)) {
-      argument = argument->next;
-      Preprocessor_define(compiler->preprocessor, argument->text, 1);
-    }
-
-    else if (string_op_equals(text, (const uint16_t *)__string_557_out)) {
-      argument = argument->next;
-    }
-
-    else if (!string_startsWith(text, (const uint16_t *)__string_558)) {
-      const uint16_t *contents = IO_readTextFile(text);
-
-      if (string_op_equals(contents, NULL)) {
-        printError(StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_559_Cannot_read_from), text)));
-
-        return 1;
-      }
-
-      Compiler_addInput(compiler, text, contents);
-    }
-
-    argument = argument->next;
-  }
-
-  Compiler_finish(compiler);
-  writeLogToTerminal(compiler->log);
-
-  if (!Log_hasErrors(compiler->log)) {
-    if ((target == 1 && IO_writeTextFile(output, compiler->outputC) && IO_writeTextFile(replaceFileExtension(output, (const uint16_t *)__string_560_h), compiler->outputH)) || (target == 2 && IO_writeTextFile(output, compiler->outputJS)) || (target == 3 && IO_writeBinaryFile(output, compiler->outputWASM))) {
-      return 0;
-    }
-
-    printError(StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_561_Cannot_write_to), output)));
-  }
-
-  return 1;
 }
 
 static uint8_t isUnary(int32_t kind) {
@@ -6991,6 +5448,19 @@ static struct Node *Node_functionFirstArgument(struct Node *__this) {
   return child;
 }
 
+static int32_t Node_functionArgumentCount(struct Node *__this) {
+  int32_t count = 0;
+  struct Node *argument = Node_functionFirstArgument(__this);
+  struct Node *returnType = Node_functionReturnType(__this);
+
+  while (argument != NULL && argument != returnType) {
+    count = count + 1;
+    argument = argument->nextSibling;
+  }
+
+  return count;
+}
+
 static struct Node *Node_functionFirstArgumentIgnoringThis(struct Node *__this) {
   assert(__this->kind == 15);
   assert(Node_childCount(__this) >= 2);
@@ -7225,55 +5695,55 @@ static uint8_t Node_expandCallIntoOperatorTree(struct Node *__this) {
   if (value->kind == 25 && Node_isOperator(symbol->node) && Node_isDeclare(symbol->node)) {
     int32_t binaryKind = 31;
 
-    if (string_op_equals(symbol->name, (const uint16_t *)__string_562)) {
+    if (string_op_equals(symbol->name, (const uint16_t *)__string_358)) {
       binaryKind = 64;
     }
 
-    else if (string_op_equals(symbol->name, (const uint16_t *)__string_563)) {
+    else if (string_op_equals(symbol->name, (const uint16_t *)__string_359)) {
       binaryKind = 50;
     }
 
-    else if (string_op_equals(symbol->name, (const uint16_t *)__string_564)) {
+    else if (string_op_equals(symbol->name, (const uint16_t *)__string_360)) {
       binaryKind = 62;
     }
 
-    else if (string_op_equals(symbol->name, (const uint16_t *)__string_565)) {
+    else if (string_op_equals(symbol->name, (const uint16_t *)__string_361)) {
       binaryKind = 55;
     }
 
-    else if (string_op_equals(symbol->name, (const uint16_t *)__string_566)) {
+    else if (string_op_equals(symbol->name, (const uint16_t *)__string_362)) {
       binaryKind = 53;
     }
 
-    else if (string_op_equals(symbol->name, (const uint16_t *)__string_567)) {
+    else if (string_op_equals(symbol->name, (const uint16_t *)__string_363)) {
       binaryKind = 58;
     }
 
-    else if (string_op_equals(symbol->name, (const uint16_t *)__string_568)) {
+    else if (string_op_equals(symbol->name, (const uint16_t *)__string_364)) {
       binaryKind = 65;
     }
 
-    else if (string_op_equals(symbol->name, (const uint16_t *)__string_569)) {
+    else if (string_op_equals(symbol->name, (const uint16_t *)__string_365)) {
       binaryKind = 54;
     }
 
-    else if (string_op_equals(symbol->name, (const uint16_t *)__string_570)) {
+    else if (string_op_equals(symbol->name, (const uint16_t *)__string_366)) {
       binaryKind = 56;
     }
 
-    else if (string_op_equals(symbol->name, (const uint16_t *)__string_571)) {
+    else if (string_op_equals(symbol->name, (const uint16_t *)__string_367)) {
       binaryKind = 66;
     }
 
-    else if (string_op_equals(symbol->name, (const uint16_t *)__string_572)) {
+    else if (string_op_equals(symbol->name, (const uint16_t *)__string_368)) {
       binaryKind = 27;
     }
 
-    else if (string_op_equals(symbol->name, (const uint16_t *)__string_573)) {
+    else if (string_op_equals(symbol->name, (const uint16_t *)__string_369)) {
       binaryKind = 52;
     }
 
-    else if (string_op_equals(symbol->name, (const uint16_t *)__string_574)) {
+    else if (string_op_equals(symbol->name, (const uint16_t *)__string_370)) {
       binaryKind = 51;
     }
 
@@ -7285,7 +5755,7 @@ static uint8_t Node_expandCallIntoOperatorTree(struct Node *__this) {
       return 1;
     }
 
-    else if (string_op_equals(symbol->name, (const uint16_t *)__string_575)) {
+    else if (string_op_equals(symbol->name, (const uint16_t *)__string_371)) {
       __this->kind = 49;
       struct Node *target = createIndex(Node_remove(Node_dotTarget(Node_remove(value))));
       Node_appendChild(target, Node_remove(__this->firstChild));
@@ -7669,7 +6139,7 @@ static void ParserContext_advance(struct ParserContext *__this) {
 static void ParserContext_unexpectedToken(struct ParserContext *__this) {
   if (__this->lastError != __this->current) {
     __this->lastError = __this->current;
-    Log_error(__this->log, __this->current->range, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_576_Unexpected), tokenToString(__this->current->kind))));
+    Log_error(__this->log, __this->current->range, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_372_Unexpected), tokenToString(__this->current->kind))));
   }
 }
 
@@ -7681,11 +6151,11 @@ static uint8_t ParserContext_expect(struct ParserContext *__this, int32_t kind) 
       struct Range *currentLine = Range_enclosingLine(__this->current->range);
 
       if (kind != 2 && !Range_equals(previousLine, currentLine)) {
-        Log_error(__this->log, Range_rangeAtEnd(previousLine), StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_577_Expected), tokenToString(kind))));
+        Log_error(__this->log, Range_rangeAtEnd(previousLine), StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_373_Expected), tokenToString(kind))));
       }
 
       else {
-        Log_error(__this->log, __this->current->range, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_578_Expected), tokenToString(kind)), (const uint16_t *)__string_579_but_found), tokenToString(__this->current->kind))));
+        Log_error(__this->log, __this->current->range, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_374_Expected), tokenToString(kind)), (const uint16_t *)__string_375_but_found), tokenToString(__this->current->kind))));
       }
     }
 
@@ -7777,7 +6247,7 @@ static const uint16_t *ParserContext_parseQuotedString(struct ParserContext *__t
 
       else {
         struct Range *escape = createRange(range->source, range->start + end - 1, range->start + end + 1);
-        Log_error(__this->log, escape, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_580_Invalid_escape_code), Range_toString(escape)), 39)));
+        Log_error(__this->log, escape, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_376_Invalid_escape_code), Range_toString(escape)), 39)));
 
         return NULL;
       }
@@ -7825,7 +6295,7 @@ static struct Node *ParserContext_parsePrefix(struct ParserContext *__this, int3
       ParserContext_advance(__this);
 
       if (string_length(text) != 1) {
-        Log_error(__this->log, token->range, (const uint16_t *)__string_581_Invalid_character_literal_strin);
+        Log_error(__this->log, token->range, (const uint16_t *)__string_377_Invalid_character_literal_strin);
 
         return Node_withRange(createParseError(), token->range);
       }
@@ -8493,7 +6963,7 @@ static struct Node *ParserContext_parseClass(struct ParserContext *__this, struc
 
     const uint16_t *text = Range_toString(childName->range);
 
-    if (string_op_equals(text, (const uint16_t *)__string_582_operator) && !ParserContext_peek(__this, 20) && !ParserContext_peek(__this, 2)) {
+    if (string_op_equals(text, (const uint16_t *)__string_378_operator) && !ParserContext_peek(__this, 20) && !ParserContext_peek(__this, 2)) {
       childName->kind = 61;
       __this->current = childName;
 
@@ -8505,8 +6975,8 @@ static struct Node *ParserContext_parseClass(struct ParserContext *__this, struc
     }
 
     else if (ParserContext_peek(__this, 2)) {
-      uint8_t isGet = string_op_equals(text, (const uint16_t *)__string_583_get);
-      uint8_t isSet = string_op_equals(text, (const uint16_t *)__string_584_set);
+      uint8_t isGet = string_op_equals(text, (const uint16_t *)__string_379_get);
+      uint8_t isSet = string_op_equals(text, (const uint16_t *)__string_380_set);
 
       if (isGet || isSet) {
         childFlags = appendFlag(childFlags, isGet ? 8 : 512, childName->range);
@@ -8515,13 +6985,13 @@ static struct Node *ParserContext_parseClass(struct ParserContext *__this, struc
       }
 
       else if (oldKind == 53) {
-        Log_error(__this->log, childName->range, (const uint16_t *)__string_585_Instance_functions_don_t_need_th);
+        Log_error(__this->log, childName->range, (const uint16_t *)__string_381_Instance_functions_don_t_need_th);
         childName = __this->current;
         ParserContext_advance(__this);
       }
 
       else if (oldKind == 44 || oldKind == 58 || oldKind == 71) {
-        Log_error(__this->log, childName->range, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_586_Instance_variables_don_t_need_th), Range_toString(childName->range)), (const uint16_t *)__string_587_keyword)));
+        Log_error(__this->log, childName->range, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_382_Instance_variables_don_t_need_th), Range_toString(childName->range)), (const uint16_t *)__string_383_keyword)));
         childName = __this->current;
         ParserContext_advance(__this);
       }
@@ -8569,13 +7039,13 @@ static struct Node *ParserContext_parseFunction(struct ParserContext *__this, st
 
       if (ParserContext_peek(__this, 5)) {
         nameRange = spanRanges(token->range, __this->current->range);
-        name = (const uint16_t *)__string_588;
+        name = (const uint16_t *)__string_384;
         ParserContext_advance(__this);
       }
 
       else {
         nameRange = spanRanges(token->range, end->range);
-        name = (const uint16_t *)__string_589;
+        name = (const uint16_t *)__string_385;
       }
 
       isOperator = 1;
@@ -8590,7 +7060,7 @@ static struct Node *ParserContext_parseFunction(struct ParserContext *__this, st
     else if (ParserContext_eat(__this, 5) || ParserContext_eat(__this, 17) || ParserContext_eat(__this, 22) || ParserContext_eat(__this, 23) || ParserContext_eat(__this, 24) || ParserContext_eat(__this, 28) || ParserContext_eat(__this, 29)) {
       nameRange = end->range;
       name = Range_toString(nameRange);
-      Log_error(__this->log, nameRange, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_590_The_operator), name), (const uint16_t *)__string_591_cannot_be_implemented), end->kind == 29 ? (const uint16_t *)__string_592_it_is_automatically_derived_fr : end->kind == 22 ? (const uint16_t *)__string_593_it_is_automatically_derived_fr : end->kind == 17 ? (const uint16_t *)__string_594_it_is_automatically_derived_fr : (const uint16_t *)__string_595)));
+      Log_error(__this->log, nameRange, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_386_The_operator), name), (const uint16_t *)__string_387_cannot_be_implemented), end->kind == 29 ? (const uint16_t *)__string_388_it_is_automatically_derived_fr : end->kind == 22 ? (const uint16_t *)__string_389_it_is_automatically_derived_fr : end->kind == 17 ? (const uint16_t *)__string_390_it_is_automatically_derived_fr : (const uint16_t *)__string_391)));
     }
 
     else {
@@ -8769,7 +7239,7 @@ static struct Node *ParserContext_parseVariables(struct ParserContext *__this, s
       }
 
       if (parent != NULL) {
-        Log_error(__this->log, value->range, (const uint16_t *)__string_596_Inline_initialization_of_instanc);
+        Log_error(__this->log, value->range, (const uint16_t *)__string_392_Inline_initialization_of_instanc);
       }
     }
 
@@ -8981,7 +7451,7 @@ static uint8_t ParserContext_parseInt(struct ParserContext *__this, struct Range
     }
 
     else {
-      Log_error(__this->log, range, (const uint16_t *)__string_597_Use_the_0o_prefix_for_octal_in);
+      Log_error(__this->log, range, (const uint16_t *)__string_393_Use_the_0o_prefix_for_octal_in);
 
       return 0;
     }
@@ -8997,7 +7467,7 @@ static uint8_t ParserContext_parseInt(struct ParserContext *__this, struct Range
     uint32_t baseValue = value * base;
 
     if (baseValue / base != value || baseValue > 4294967295 - digit) {
-      Log_error(__this->log, range, (const uint16_t *)__string_598_Integer_literal_is_too_big_to_fi);
+      Log_error(__this->log, range, (const uint16_t *)__string_394_Integer_literal_is_too_big_to_fi);
 
       return 0;
     }
@@ -9048,12 +7518,12 @@ static void Preprocessor_advance(struct Preprocessor *__this) {
 }
 
 static void Preprocessor_unexpectedToken(struct Preprocessor *__this) {
-  Log_error(__this->log, __this->current->range, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_599_Unexpected), tokenToString(__this->current->kind))));
+  Log_error(__this->log, __this->current->range, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_395_Unexpected), tokenToString(__this->current->kind))));
 }
 
 static uint8_t Preprocessor_expect(struct Preprocessor *__this, int32_t kind) {
   if (!Preprocessor_peek(__this, kind)) {
-    Log_error(__this->log, __this->current->range, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_600_Expected), tokenToString(kind)), (const uint16_t *)__string_601_but_found), tokenToString(__this->current->kind))));
+    Log_error(__this->log, __this->current->range, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_396_Expected), tokenToString(kind)), (const uint16_t *)__string_397_but_found), tokenToString(__this->current->kind))));
 
     return 0;
   }
@@ -9125,8 +7595,8 @@ static uint8_t Preprocessor_scan(struct Preprocessor *__this, uint8_t isParentLi
         Preprocessor_define(__this, Range_toString(__this->previous->range), current->kind == 73);
       }
 
-      if (Preprocessor_eat(__this, 52) || (Preprocessor_eat(__this, 3) && string_op_equals(Range_toString(__this->previous->range), (const uint16_t *)__string_602_0))) {
-        Log_error(__this->log, __this->previous->range, (const uint16_t *)__string_603_Use_undef_to_turn_a_preproces);
+      if (Preprocessor_eat(__this, 52) || (Preprocessor_eat(__this, 3) && string_op_equals(Range_toString(__this->previous->range), (const uint16_t *)__string_398_0))) {
+        Log_error(__this->log, __this->previous->range, (const uint16_t *)__string_399_Use_undef_to_turn_a_preproces);
       }
 
       if (!Preprocessor_peek(__this, 0) && !Preprocessor_expect(__this, 80)) {
@@ -9136,7 +7606,7 @@ static uint8_t Preprocessor_scan(struct Preprocessor *__this, uint8_t isParentLi
       }
 
       if (!__this->isDefineAndUndefAllowed) {
-        Log_error(__this->log, spanRanges(current->range, __this->previous->range), (const uint16_t *)__string_604_All_define_and_undef_direc);
+        Log_error(__this->log, spanRanges(current->range, __this->previous->range), (const uint16_t *)__string_400_All_define_and_undef_direc);
       }
 
       Preprocessor_removeTokensFrom(__this, previous);
@@ -9240,14 +7710,14 @@ static int32_t Preprocessor_parsePrefix(struct Preprocessor *__this) {
   if (Preprocessor_eat(__this, 2)) {
     const uint16_t *name = Range_toString(__this->previous->range);
 
-    if (Preprocessor_peek(__this, 20) && string_op_equals(name, (const uint16_t *)__string_605_defined)) {
+    if (Preprocessor_peek(__this, 20) && string_op_equals(name, (const uint16_t *)__string_401_defined)) {
       isDefinedOperator = 1;
     }
 
     else {
-      uint8_t isTrue = Preprocessor_isDefined(__this, name);
+      uint8_t isDefined = Preprocessor_isDefined(__this, name);
 
-      return isTrue ? 1 : 0;
+      return isDefined ? 1 : 0;
     }
   }
 
@@ -9270,10 +7740,10 @@ static int32_t Preprocessor_parsePrefix(struct Preprocessor *__this) {
     }
 
     if (isDefinedOperator) {
-      struct StringBuilder *builder = StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_606_There_is_no_defined_operator);
+      struct StringBuilder *builder = StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_402_There_is_no_defined_operator);
 
       if (first->kind == 2 && __this->previous == first->next) {
-        StringBuilder_append(StringBuilder_append(StringBuilder_append(builder, (const uint16_t *)__string_607_just_use), Range_toString(first->range)), (const uint16_t *)__string_608_instead);
+        StringBuilder_append(StringBuilder_append(StringBuilder_append(builder, (const uint16_t *)__string_403_just_use), Range_toString(first->range)), (const uint16_t *)__string_404_instead);
       }
 
       Log_error(__this->log, spanRanges(start->range, __this->previous->range), StringBuilder_finish(builder));
@@ -9283,8 +7753,8 @@ static int32_t Preprocessor_parsePrefix(struct Preprocessor *__this) {
   }
 
   if (Preprocessor_eat(__this, 3)) {
-    uint8_t isTrue = !string_op_equals(Range_toString(__this->previous->range), (const uint16_t *)__string_609_0);
-    Log_error(__this->log, __this->previous->range, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_610_Unexpected_integer_did_you_mean), isTrue ? (const uint16_t *)__string_611_true : (const uint16_t *)__string_612_false), (const uint16_t *)__string_613)));
+    uint8_t isTrue = !string_op_equals(Range_toString(__this->previous->range), (const uint16_t *)__string_405_0);
+    Log_error(__this->log, __this->previous->range, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_406_Unexpected_integer_did_you_mean), isTrue ? (const uint16_t *)__string_407_true : (const uint16_t *)__string_408_false), (const uint16_t *)__string_409)));
 
     return isTrue ? 1 : 0;
   }
@@ -9412,7 +7882,7 @@ static uint8_t Scope_define(struct Scope *__this, struct Log *log, struct Symbol
   struct Symbol *existing = Scope_findLocal(__this, symbol->name, hint);
 
   if (existing != NULL) {
-    Log_error(log, symbol->range, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_614_Duplicate_symbol), symbol->name), (const uint16_t *)__string_615)));
+    Log_error(log, symbol->range, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_410_Duplicate_symbol), symbol->name), (const uint16_t *)__string_411)));
 
     return 0;
   }
@@ -9540,27 +8010,27 @@ static void StringBuilder_appendQuoted(struct StringBuilder *sb, const uint16_t 
     uint16_t c = string_op_get(text, end);
 
     if (c == 34) {
-      StringBuilder_append(StringBuilder_appendSlice(sb, text, start, end), (const uint16_t *)__string_616);
+      StringBuilder_append(StringBuilder_appendSlice(sb, text, start, end), (const uint16_t *)__string_412);
     }
 
     else if (c == 0) {
-      StringBuilder_append(StringBuilder_appendSlice(sb, text, start, end), (const uint16_t *)__string_617_0);
+      StringBuilder_append(StringBuilder_appendSlice(sb, text, start, end), (const uint16_t *)__string_413_0);
     }
 
     else if (c == 9) {
-      StringBuilder_append(StringBuilder_appendSlice(sb, text, start, end), (const uint16_t *)__string_618_t);
+      StringBuilder_append(StringBuilder_appendSlice(sb, text, start, end), (const uint16_t *)__string_414_t);
     }
 
     else if (c == 13) {
-      StringBuilder_append(StringBuilder_appendSlice(sb, text, start, end), (const uint16_t *)__string_619_r);
+      StringBuilder_append(StringBuilder_appendSlice(sb, text, start, end), (const uint16_t *)__string_415_r);
     }
 
     else if (c == 10) {
-      StringBuilder_append(StringBuilder_appendSlice(sb, text, start, end), (const uint16_t *)__string_620_n);
+      StringBuilder_append(StringBuilder_appendSlice(sb, text, start, end), (const uint16_t *)__string_416_n);
     }
 
     else if (c == 92) {
-      StringBuilder_append(StringBuilder_appendSlice(sb, text, start, end), (const uint16_t *)__string_621);
+      StringBuilder_append(StringBuilder_appendSlice(sb, text, start, end), (const uint16_t *)__string_417);
     }
 
     else {
@@ -9592,6 +8062,12 @@ static void StringBuilder_clear(struct StringBuilder *__this) {
 static struct StringBuilder *StringBuilder_appendChar(struct StringBuilder *__this, uint16_t c) {
   ByteArray_append(__this->_bytes, (uint8_t)c);
   ByteArray_append(__this->_bytes, (uint8_t)(c >> 8));
+
+  return __this;
+}
+
+static struct StringBuilder *StringBuilder_appendInt(struct StringBuilder *__this, int32_t i) {
+  StringBuilder_append(__this, int_toString(i));
 
   return __this;
 }
@@ -9715,112 +8191,1589 @@ static void Symbol_determineClassLayout(struct Symbol *__this, struct CheckConte
   __this->maxAlignment = maxAlignment;
 }
 
-static uint8_t Type_isClass(struct Type *__this) {
-  return __this->symbol != NULL && __this->symbol->kind == 0;
+static void CResult_emitIndent(struct CResult *__this) {
+  int32_t i = __this->indent;
+
+  while (i > 0) {
+    StringBuilder_append(__this->code, (const uint16_t *)__string_418);
+    i = i - 1;
+  }
 }
 
-static uint8_t Type_isEnum(struct Type *__this) {
-  return __this->symbol != NULL && __this->symbol->kind == 1;
-}
-
-static uint8_t Type_isInteger(struct Type *__this) {
-  return (__this->symbol != NULL && (__this->symbol->flags & 32) != 0) || Type_isEnum(__this);
-}
-
-static uint8_t Type_isUnsigned(struct Type *__this) {
-  return __this->symbol != NULL && (__this->symbol->flags & 16) != 0;
-}
-
-static uint8_t Type_isReference(struct Type *__this) {
-  return __this->pointerTo != NULL || (__this->symbol != NULL && (__this->symbol->flags & 4) != 0);
-}
-
-static struct Type *Type_underlyingType(struct Type *__this, struct CheckContext *context) {
-  return Type_isEnum(__this) ? context->intType : __this->pointerTo != NULL ? context->uintType : __this;
-}
-
-static int32_t Type_integerBitCount(struct Type *__this, struct CheckContext *context) {
-  return __this->symbol != NULL ? __this->symbol->byteSize << 3 : 0;
-}
-
-static uint32_t Type_integerBitMask(struct Type *__this, struct CheckContext *context) {
-  return 4294967295 >> (uint32_t)(32 - Type_integerBitCount(__this, context));
-}
-
-static int32_t Type_allocationSizeOf(struct Type *__this, struct CheckContext *context) {
-  return __this->symbol == NULL ? context->pointerByteSize : __this->symbol->byteSize;
-}
-
-static int32_t Type_allocationAlignmentOf(struct Type *__this, struct CheckContext *context) {
-  return Type_allocationSizeOf(__this, context);
-}
-
-static int32_t Type_variableSizeOf(struct Type *__this, struct CheckContext *context) {
-  return Type_isReference(__this) ? context->pointerByteSize : __this->symbol->byteSize;
-}
-
-static int32_t Type_variableAlignmentOf(struct Type *__this, struct CheckContext *context) {
-  return Type_variableSizeOf(__this, context);
-}
-
-static struct Type *Type_pointerType(struct Type *__this) {
-  struct Type *type = __this->cachedPointerType;
-
-  if (type == NULL) {
-    type = calloc(1, sizeof(struct Type));
-    type->pointerTo = __this;
-    __this->cachedPointerType = type;
+static void CResult_emitNewlineBefore(struct CResult *__this, struct Node *node) {
+  if (__this->previousNode != NULL && (!isCompactNodeKind(__this->previousNode->kind) || !isCompactNodeKind(node->kind))) {
+    StringBuilder_appendChar(__this->code, 10);
   }
 
-  return type;
+  __this->previousNode = NULL;
 }
 
-static const uint16_t *Type_toString(struct Type *__this) {
-  if (string_op_equals(__this->cachedToString, NULL)) {
-    __this->cachedToString = __this->pointerTo != NULL ? StringBuilder_finish(StringBuilder_append(StringBuilder_appendChar(StringBuilder_new(), 42), Type_toString(__this->pointerTo))) : __this->symbol->name;
+static void CResult_emitNewlineAfter(struct CResult *__this, struct Node *node) {
+  __this->previousNode = node;
+}
+
+static void CResult_emitStatements(struct CResult *__this, struct Node *node) {
+  while (node != NULL) {
+    CResult_emitStatement(__this, node);
+    node = node->nextSibling;
+  }
+}
+
+static void CResult_emitBlock(struct CResult *__this, struct Node *node) {
+  __this->previousNode = NULL;
+  StringBuilder_append(__this->code, (const uint16_t *)__string_419);
+  __this->indent = __this->indent + 1;
+  CResult_emitStatements(__this, node->firstChild);
+  __this->indent = __this->indent - 1;
+  CResult_emitIndent(__this);
+  StringBuilder_appendChar(__this->code, 125);
+  __this->previousNode = NULL;
+}
+
+static void CResult_emitUnary(struct CResult *__this, struct Node *node, int32_t parentPrecedence, const uint16_t *operator) {
+  uint8_t isPostfix = isUnaryPostfix(node->kind);
+  int32_t operatorPrecedence = isPostfix ? 14 : 13;
+  struct StringBuilder *code = __this->code;
+
+  if (parentPrecedence > operatorPrecedence) {
+    StringBuilder_appendChar(code, 40);
   }
 
-  return __this->cachedToString;
+  if (!isPostfix) {
+    StringBuilder_append(code, operator);
+  }
+
+  CResult_emitExpression(__this, Node_unaryValue(node), operatorPrecedence);
+
+  if (isPostfix) {
+    StringBuilder_append(code, operator);
+  }
+
+  if (parentPrecedence > operatorPrecedence) {
+    StringBuilder_appendChar(code, 41);
+  }
 }
 
-static struct Symbol *Type_findMember(struct Type *__this, const uint16_t *name, int32_t hint) {
-  struct Symbol *symbol = __this->symbol;
+static void CResult_emitBinary(struct CResult *__this, struct Node *node, int32_t parentPrecedence, const uint16_t *operator, int32_t operatorPrecedence) {
+  int32_t kind = node->kind;
+  uint8_t isRightAssociative = kind == 49;
+  uint8_t needsParentheses = parentPrecedence > operatorPrecedence;
+  int32_t parentKind = node->parent->kind;
+  struct StringBuilder *code = __this->code;
 
-  return symbol != NULL && symbol->scope != NULL ? Scope_findLocal(symbol->scope, name, hint) : NULL;
+  if ((parentKind == 61 && kind == 60) || (parentKind == 51 && kind == 50) || ((parentKind == 54 || parentKind == 63) && (kind == 54 || kind == 63)) || ((kind == 48 || kind == 67) && (parentKind == 50 || parentKind == 51 || parentKind == 52 || parentKind == 65 || parentKind == 66))) {
+    needsParentheses = 1;
+  }
+
+  if (needsParentheses) {
+    StringBuilder_appendChar(code, 40);
+  }
+
+  CResult_emitExpression(__this, Node_binaryLeft(node), isRightAssociative ? (int32_t)((int32_t)operatorPrecedence + 1) : operatorPrecedence);
+  StringBuilder_append(code, operator);
+  CResult_emitExpression(__this, Node_binaryRight(node), isRightAssociative ? operatorPrecedence : (int32_t)((int32_t)operatorPrecedence + 1));
+
+  if (needsParentheses) {
+    StringBuilder_appendChar(code, 41);
+  }
 }
 
-static uint8_t Type_hasInstanceMembers(struct Type *__this) {
-  struct Symbol *symbol = __this->symbol;
+static void CResult_emitCommaSeparatedExpressions(struct CResult *__this, struct Node *start, struct Node *stop) {
+  while (start != stop) {
+    CResult_emitExpression(__this, start, 0);
+    start = start->nextSibling;
 
-  return symbol != NULL && (symbol->kind == 0 || symbol->kind == 3);
+    if (start != stop) {
+      StringBuilder_append(__this->code, (const uint16_t *)__string_420);
+    }
+  }
 }
 
-static uint8_t wasmAreSignaturesEqual(struct WasmSignature *a, struct WasmSignature *b) {
-  assert(a->returnType != NULL);
-  assert(b->returnType != NULL);
-  assert(a->returnType->next == NULL);
-  assert(b->returnType->next == NULL);
-  struct WasmWrappedType *x = a->argumentTypes;
-  struct WasmWrappedType *y = b->argumentTypes;
+static void CResult_emitSymbolName(struct CResult *__this, struct Symbol *symbol) {
+  if (symbol->kind == 4) {
+    StringBuilder_appendChar(StringBuilder_append(__this->code, Symbol_parent(symbol)->name), 95);
+  }
 
-  while (x != NULL && y != NULL) {
-    if (x->id != y->id) {
-      return 0;
+  StringBuilder_append(__this->code, !string_op_equals(symbol->rename, NULL) ? symbol->rename : symbol->name);
+}
+
+static void CResult_emitExpression(struct CResult *__this, struct Node *node, int32_t parentPrecedence) {
+  struct StringBuilder *code = __this->code;
+  assert(node->resolvedType != NULL);
+
+  if (node->kind == 29) {
+    CResult_emitSymbolName(__this, node->symbol);
+  }
+
+  else if (node->kind == 31) {
+    StringBuilder_append(code, (const uint16_t *)__string_421_NULL);
+  }
+
+  else if (node->kind == 22) {
+    StringBuilder_appendChar(code, node->intValue != 0 ? 49 : 48);
+  }
+
+  else if (node->kind == 28) {
+    StringBuilder_append(code, Type_isUnsigned(node->resolvedType) ? uint_toString((uint32_t)node->intValue) : int_toString(node->intValue));
+  }
+
+  else if (node->kind == 34) {
+    int32_t id = __this->nextStringLiteral;
+    struct StringBuilder *builder = StringBuilder_new();
+    StringBuilder_append(StringBuilder_append(builder, (const uint16_t *)__string_422___string_), int_toString(id));
+    const uint16_t *value = node->stringValue;
+    struct StringBuilder *codePrefix = __this->codePrefix;
+    int32_t length = string_length(value);
+    int32_t i = 0;
+
+    if (!__this->hasStrings) {
+      StringBuilder_append(codePrefix, (const uint16_t *)__string_423_ifdef_THINSCRIPT_BIG_ENDIAN);
+      __this->hasStrings = 1;
     }
 
-    x = x->next;
-    y = y->next;
+    uint8_t underscore = 1;
+    i = 0;
+
+    while (i < length && i < 32) {
+      uint16_t c = string_op_get(value, i);
+
+      if (isAlpha(c) || isNumber(c)) {
+        if (underscore) {
+          StringBuilder_appendChar(builder, 95);
+          underscore = 0;
+        }
+
+        StringBuilder_appendChar(builder, c);
+      }
+
+      else {
+        underscore = 1;
+      }
+
+      i = i + 1;
+    }
+
+    const uint16_t *name = StringBuilder_finish(builder);
+    StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_append(codePrefix, (const uint16_t *)__string_424_static_const_uint32_t), name), (const uint16_t *)__string_425), int_toString(length));
+    i = 0;
+
+    while (i < length) {
+      StringBuilder_append(codePrefix, (const uint16_t *)__string_426_S);
+      cEmitCharacter(codePrefix, string_op_get(value, i));
+
+      if (i + 1 < length) {
+        StringBuilder_append(codePrefix, i % 32 == 20 ? (const uint16_t *)__string_427 : (const uint16_t *)__string_428);
+        cEmitCharacter(codePrefix, string_op_get(value, i + 1));
+        StringBuilder_appendChar(codePrefix, 41);
+      }
+
+      else {
+        StringBuilder_append(codePrefix, (const uint16_t *)__string_429_0);
+      }
+
+      i = i + 2;
+    }
+
+    StringBuilder_append(codePrefix, (const uint16_t *)__string_430);
+    __this->nextStringLiteral = __this->nextStringLiteral + 1;
+    StringBuilder_append(StringBuilder_append(code, (const uint16_t *)__string_431_const_uint16_t), name);
   }
 
-  if (x != NULL || y != NULL) {
-    return 0;
+  else if (node->kind == 24) {
+    if (parentPrecedence > 13) {
+      StringBuilder_appendChar(code, 40);
+    }
+
+    StringBuilder_appendChar(code, 40);
+    CResult_emitType(__this, node->resolvedType, 0);
+    StringBuilder_appendChar(code, 41);
+    CResult_emitExpression(__this, Node_castValue(node), 13);
+
+    if (parentPrecedence > 13) {
+      StringBuilder_appendChar(code, 41);
+    }
   }
 
-  if (a->returnType->id != b->returnType->id) {
-    return 0;
+  else if (node->kind == 25) {
+    struct Node *target = Node_dotTarget(node);
+    CResult_emitExpression(__this, target, 15);
+    StringBuilder_append(code, Type_isReference(target->resolvedType) ? (const uint16_t *)__string_432 : (const uint16_t *)__string_433);
+    CResult_emitSymbolName(__this, node->symbol);
   }
 
-  return 1;
+  else if (node->kind == 26) {
+    if (parentPrecedence > 1) {
+      StringBuilder_appendChar(code, 40);
+    }
+
+    CResult_emitExpression(__this, Node_hookValue(node), 2);
+    StringBuilder_append(code, (const uint16_t *)__string_434);
+    CResult_emitExpression(__this, Node_hookTrue(node), 1);
+    StringBuilder_append(code, (const uint16_t *)__string_435);
+    CResult_emitExpression(__this, Node_hookFalse(node), 1);
+
+    if (parentPrecedence > 1) {
+      StringBuilder_appendChar(code, 41);
+    }
+  }
+
+  else if (node->kind == 23) {
+    struct Node *callValue = Node_callValue(node);
+    CResult_emitSymbolName(__this, callValue->symbol);
+    StringBuilder_appendChar(code, 40);
+
+    if (callValue->kind == 25) {
+      CResult_emitExpression(__this, Node_dotTarget(callValue), 0);
+
+      if (callValue->nextSibling != NULL) {
+        StringBuilder_append(code, (const uint16_t *)__string_436);
+      }
+    }
+
+    CResult_emitCommaSeparatedExpressions(__this, callValue->nextSibling, NULL);
+    StringBuilder_appendChar(code, 41);
+  }
+
+  else if (node->kind == 30) {
+    StringBuilder_append(code, (const uint16_t *)__string_437_calloc_1_sizeof);
+    CResult_emitType(__this, node->resolvedType, 2);
+    StringBuilder_append(code, (const uint16_t *)__string_438);
+  }
+
+  else if (node->kind == 38) {
+    CResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_439);
+  }
+
+  else if (node->kind == 39) {
+    CResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_440);
+  }
+
+  else if (node->kind == 40) {
+    CResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_441);
+  }
+
+  else if (node->kind == 41) {
+    CResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_442);
+  }
+
+  else if (node->kind == 43) {
+    CResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_443);
+  }
+
+  else if (node->kind == 44) {
+    CResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_444);
+  }
+
+  else if (node->kind == 45) {
+    CResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_445);
+  }
+
+  else if (node->kind == 46) {
+    CResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_446);
+  }
+
+  else if (node->kind == 47) {
+    CResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_447);
+  }
+
+  else if (node->kind == 48) {
+    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_448, 10);
+  }
+
+  else if (node->kind == 49) {
+    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_449, 1);
+  }
+
+  else if (node->kind == 50) {
+    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_450, 6);
+  }
+
+  else if (node->kind == 51) {
+    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_451, 4);
+  }
+
+  else if (node->kind == 52) {
+    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_452, 5);
+  }
+
+  else if (node->kind == 53) {
+    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_453, 11);
+  }
+
+  else if (node->kind == 54) {
+    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_454, 7);
+  }
+
+  else if (node->kind == 56) {
+    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_455, 8);
+  }
+
+  else if (node->kind == 57) {
+    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_456, 8);
+  }
+
+  else if (node->kind == 58) {
+    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_457, 8);
+  }
+
+  else if (node->kind == 59) {
+    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_458, 8);
+  }
+
+  else if (node->kind == 60) {
+    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_459, 3);
+  }
+
+  else if (node->kind == 61) {
+    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_460, 2);
+  }
+
+  else if (node->kind == 62) {
+    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_461, 11);
+  }
+
+  else if (node->kind == 63) {
+    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_462, 7);
+  }
+
+  else if (node->kind == 64) {
+    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_463, 11);
+  }
+
+  else if (node->kind == 65) {
+    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_464, 9);
+  }
+
+  else if (node->kind == 66) {
+    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_465, 9);
+  }
+
+  else if (node->kind == 67) {
+    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_466, 10);
+  }
+
+  else {
+    assert(0);
+  }
+}
+
+static uint8_t CResult_shouldEmitClass(struct CResult *__this, struct Node *node) {
+  assert(node->kind == 9);
+
+  return node->symbol->kind == 0 && node->symbol != __this->context->stringType->symbol;
+}
+
+static void CResult_emitType(struct CResult *__this, struct Type *originalType, int32_t mode) {
+  struct CheckContext *context = __this->context;
+  struct StringBuilder *code = __this->code;
+  struct Type *type = originalType;
+
+  if (Type_isEnum(type)) {
+    type = Type_underlyingType(type, __this->context);
+  }
+
+  else {
+    while (type->pointerTo != NULL) {
+      type = type->pointerTo;
+    }
+  }
+
+  if (Type_isClass(type)) {
+    StringBuilder_append(code, (const uint16_t *)__string_467_struct);
+  }
+
+  if (type == context->boolType || type == context->byteType) {
+    StringBuilder_append(code, (const uint16_t *)__string_468_uint8_t);
+  }
+
+  else if (type == context->sbyteType) {
+    StringBuilder_append(code, (const uint16_t *)__string_469_int8_t);
+  }
+
+  else if (type == context->intType) {
+    StringBuilder_append(code, (const uint16_t *)__string_470_int32_t);
+  }
+
+  else if (type == context->shortType) {
+    StringBuilder_append(code, (const uint16_t *)__string_471_int16_t);
+  }
+
+  else if (type == context->stringType) {
+    StringBuilder_append(code, (const uint16_t *)__string_472_const_uint16_t);
+  }
+
+  else if (type == context->uintType) {
+    StringBuilder_append(code, (const uint16_t *)__string_473_uint32_t);
+  }
+
+  else if (type == context->ushortType) {
+    StringBuilder_append(code, (const uint16_t *)__string_474_uint16_t);
+  }
+
+  else {
+    CResult_emitSymbolName(__this, type->symbol);
+  }
+
+  if (originalType->pointerTo != NULL) {
+    StringBuilder_appendChar(code, 32);
+
+    while (originalType->pointerTo != NULL) {
+      StringBuilder_appendChar(code, 42);
+      originalType = originalType->pointerTo;
+    }
+  }
+
+  else if (mode != 2) {
+    if (Type_isReference(type)) {
+      StringBuilder_append(code, (const uint16_t *)__string_475);
+    }
+
+    else if (mode == 1) {
+      StringBuilder_appendChar(code, 32);
+    }
+  }
+}
+
+static void CResult_emitStatement(struct CResult *__this, struct Node *node) {
+  struct StringBuilder *code = __this->code;
+
+  if (node->kind == 16) {
+    CResult_emitNewlineBefore(__this, node);
+    CResult_emitIndent(__this);
+
+    while (1) {
+      StringBuilder_append(code, (const uint16_t *)__string_476_if);
+      CResult_emitExpression(__this, Node_ifValue(node), 0);
+      StringBuilder_append(code, (const uint16_t *)__string_477);
+      CResult_emitBlock(__this, Node_ifTrue(node));
+      struct Node *no = Node_ifFalse(node);
+
+      if (no == NULL) {
+        StringBuilder_appendChar(code, 10);
+
+        break;
+      }
+
+      StringBuilder_append(code, (const uint16_t *)__string_478);
+      CResult_emitIndent(__this);
+      StringBuilder_append(code, (const uint16_t *)__string_479_else);
+
+      if (no->firstChild == NULL || no->firstChild != no->lastChild || no->firstChild->kind != 16) {
+        CResult_emitBlock(__this, no);
+        StringBuilder_appendChar(code, 10);
+
+        break;
+      }
+
+      node = no->firstChild;
+    }
+
+    CResult_emitNewlineAfter(__this, node);
+  }
+
+  else if (node->kind == 20) {
+    CResult_emitNewlineBefore(__this, node);
+    CResult_emitIndent(__this);
+    StringBuilder_append(code, (const uint16_t *)__string_480_while);
+    CResult_emitExpression(__this, Node_whileValue(node), 0);
+    StringBuilder_append(code, (const uint16_t *)__string_481);
+    CResult_emitBlock(__this, Node_whileBody(node));
+    StringBuilder_appendChar(code, 10);
+    CResult_emitNewlineAfter(__this, node);
+  }
+
+  else if (node->kind == 8) {
+    CResult_emitNewlineBefore(__this, node);
+    CResult_emitIndent(__this);
+    StringBuilder_append(code, (const uint16_t *)__string_482_break);
+    CResult_emitNewlineAfter(__this, node);
+  }
+
+  else if (node->kind == 11) {
+    CResult_emitNewlineBefore(__this, node);
+    CResult_emitIndent(__this);
+    StringBuilder_append(code, (const uint16_t *)__string_483_continue);
+    CResult_emitNewlineAfter(__this, node);
+  }
+
+  else if (node->kind == 14) {
+    CResult_emitNewlineBefore(__this, node);
+    CResult_emitIndent(__this);
+    CResult_emitExpression(__this, Node_expressionValue(node), 0);
+    StringBuilder_append(code, (const uint16_t *)__string_484);
+    CResult_emitNewlineAfter(__this, node);
+  }
+
+  else if (node->kind == 12) {
+  }
+
+  else if (node->kind == 17) {
+    struct Node *value = Node_returnValue(node);
+    CResult_emitNewlineBefore(__this, node);
+    CResult_emitIndent(__this);
+
+    if (value != NULL) {
+      StringBuilder_append(code, (const uint16_t *)__string_485_return);
+      CResult_emitExpression(__this, value, 0);
+      StringBuilder_append(code, (const uint16_t *)__string_486);
+    }
+
+    else {
+      StringBuilder_append(code, (const uint16_t *)__string_487_return);
+    }
+
+    CResult_emitNewlineAfter(__this, node);
+  }
+
+  else if (node->kind == 7) {
+    if (node->parent->kind == 7) {
+      CResult_emitStatements(__this, node->firstChild);
+    }
+
+    else {
+      CResult_emitNewlineBefore(__this, node);
+      CResult_emitIndent(__this);
+      CResult_emitBlock(__this, node);
+      StringBuilder_appendChar(code, 10);
+      CResult_emitNewlineAfter(__this, node);
+    }
+  }
+
+  else if (node->kind == 19) {
+    CResult_emitNewlineBefore(__this, node);
+    struct Node *child = node->firstChild;
+
+    while (child != NULL) {
+      struct Node *value = Node_variableValue(child);
+      CResult_emitIndent(__this);
+      CResult_emitType(__this, child->symbol->resolvedType, 1);
+      CResult_emitSymbolName(__this, child->symbol);
+      assert(value != NULL);
+      StringBuilder_append(code, (const uint16_t *)__string_488);
+      CResult_emitExpression(__this, value, 0);
+      StringBuilder_append(code, (const uint16_t *)__string_489);
+      child = child->nextSibling;
+    }
+
+    CResult_emitNewlineAfter(__this, node);
+  }
+
+  else if (node->kind == 10 || node->kind == 13) {
+  }
+
+  else {
+    assert(0);
+  }
+}
+
+static void CResult_emitIncludes(struct CResult *__this, struct StringBuilder *code, int32_t mode) {
+  if (mode == 0) {
+    StringBuilder_append(code, (const uint16_t *)__string_490_include_stdint_h);
+  }
+
+  else {
+    StringBuilder_append(StringBuilder_append(StringBuilder_append(code, (const uint16_t *)__string_491_include), __this->headerName), (const uint16_t *)__string_492);
+    StringBuilder_append(code, (const uint16_t *)__string_493_include_stdlib_h);
+    StringBuilder_append(code, (const uint16_t *)__string_494_include_string_h);
+  }
+}
+
+static void CResult_emitTypeDeclarations(struct CResult *__this, struct Node *node, int32_t mode) {
+  struct StringBuilder *code = __this->code;
+
+  while (node != NULL) {
+    if (node->kind == 9) {
+      if (CResult_shouldEmitClass(__this, node) && (Node_isDeclareOrExtern(node) ? mode == 0 : mode == 1)) {
+        CResult_emitNewlineBefore(__this, node);
+        StringBuilder_append(StringBuilder_append(StringBuilder_append(code, (const uint16_t *)__string_495_struct), node->symbol->name), (const uint16_t *)__string_496);
+      }
+    }
+
+    node = node->nextSibling;
+  }
+}
+
+static void CResult_emitTypeDefinitions(struct CResult *__this, struct Node *node, int32_t mode) {
+  struct StringBuilder *code = __this->code;
+
+  while (node != NULL) {
+    if (node->kind == 9) {
+      if (CResult_shouldEmitClass(__this, node) && mode != 0) {
+        CResult_emitNewlineBefore(__this, node);
+        StringBuilder_append(code, (const uint16_t *)__string_497_struct);
+        CResult_emitSymbolName(__this, node->symbol);
+        StringBuilder_append(code, (const uint16_t *)__string_498);
+        __this->indent = __this->indent + 1;
+        struct Node *child = node->firstChild;
+
+        while (child != NULL) {
+          if (child->kind == 6) {
+            CResult_emitIndent(__this);
+            CResult_emitType(__this, child->symbol->resolvedType, 1);
+            CResult_emitSymbolName(__this, child->symbol);
+            StringBuilder_append(code, (const uint16_t *)__string_499);
+          }
+
+          child = child->nextSibling;
+        }
+
+        __this->indent = __this->indent - 1;
+        StringBuilder_append(code, (const uint16_t *)__string_500);
+        CResult_emitNewlineAfter(__this, node);
+      }
+    }
+
+    else if (node->kind == 13) {
+      if (mode == 0 && Node_isExtern(node)) {
+        CResult_emitNewlineBefore(__this, node);
+        StringBuilder_append(code, (const uint16_t *)__string_501_enum);
+        __this->indent = __this->indent + 1;
+        struct Node *child = node->firstChild;
+
+        while (child != NULL) {
+          assert(child->kind == 6);
+          CResult_emitIndent(__this);
+          CResult_emitSymbolName(__this, node->symbol);
+          StringBuilder_append(code, (const uint16_t *)__string_502__);
+          CResult_emitSymbolName(__this, child->symbol);
+          StringBuilder_append(code, (const uint16_t *)__string_503);
+          StringBuilder_append(code, int_toString(child->symbol->offset));
+          child = child->nextSibling;
+          StringBuilder_append(code, child != NULL ? (const uint16_t *)__string_504 : (const uint16_t *)__string_505);
+        }
+
+        __this->indent = __this->indent - 1;
+        CResult_emitIndent(__this);
+        StringBuilder_append(code, (const uint16_t *)__string_506);
+        CResult_emitNewlineAfter(__this, node);
+      }
+    }
+
+    node = node->nextSibling;
+  }
+}
+
+static uint8_t CResult_shouldEmitFunction(struct CResult *__this, struct Symbol *symbol) {
+  return symbol->kind != 5 || (!string_op_equals(symbol->name, (const uint16_t *)__string_507_malloc) && !string_op_equals(symbol->name, (const uint16_t *)__string_508_memcpy) && !string_op_equals(symbol->name, (const uint16_t *)__string_509_memcmp));
+}
+
+static void CResult_emitFunctionDeclarations(struct CResult *__this, struct Node *node, int32_t mode) {
+  struct StringBuilder *code = __this->code;
+
+  while (node != NULL) {
+    if (node->kind == 15 && (mode != 0 || Node_isDeclareOrExtern(node))) {
+      struct Symbol *symbol = node->symbol;
+
+      if (CResult_shouldEmitFunction(__this, symbol)) {
+        struct Node *returnType = Node_functionReturnType(node);
+        struct Node *child = Node_functionFirstArgument(node);
+        CResult_emitNewlineBefore(__this, node);
+
+        if (!Node_isDeclareOrExtern(node)) {
+          StringBuilder_append(code, (const uint16_t *)__string_510_static);
+        }
+
+        CResult_emitType(__this, returnType->resolvedType, 1);
+        CResult_emitSymbolName(__this, symbol);
+        StringBuilder_appendChar(code, 40);
+
+        if (symbol->kind == 4) {
+          child->symbol->rename = (const uint16_t *)__string_511___this;
+        }
+
+        while (child != returnType) {
+          assert(child->kind == 6);
+          CResult_emitType(__this, child->symbol->resolvedType, 1);
+          CResult_emitSymbolName(__this, child->symbol);
+          child = child->nextSibling;
+
+          if (child != returnType) {
+            StringBuilder_append(code, (const uint16_t *)__string_512);
+          }
+        }
+
+        StringBuilder_append(code, (const uint16_t *)__string_513);
+      }
+    }
+
+    else if (node->kind == 9) {
+      CResult_emitFunctionDeclarations(__this, node->firstChild, mode);
+    }
+
+    node = node->nextSibling;
+  }
+}
+
+static void CResult_emitGlobalVariables(struct CResult *__this, struct Node *node, int32_t mode) {
+  struct StringBuilder *code = __this->code;
+
+  while (node != NULL) {
+    if (node->kind == 6 && (mode != 0 || Node_isExtern(node))) {
+      struct Node *value = Node_variableValue(node);
+      CResult_emitNewlineBefore(__this, node);
+
+      if (!Node_isDeclareOrExtern(node)) {
+        StringBuilder_append(code, (const uint16_t *)__string_514_static);
+      }
+
+      CResult_emitType(__this, node->symbol->resolvedType, 1);
+      CResult_emitSymbolName(__this, node->symbol);
+      StringBuilder_append(code, (const uint16_t *)__string_515);
+      CResult_emitExpression(__this, value, 0);
+      StringBuilder_append(code, (const uint16_t *)__string_516);
+    }
+
+    else if (node->kind == 19) {
+      CResult_emitGlobalVariables(__this, node->firstChild, mode);
+    }
+
+    node = node->nextSibling;
+  }
+}
+
+static void CResult_emitFunctionDefinitions(struct CResult *__this, struct Node *node) {
+  struct StringBuilder *code = __this->code;
+
+  while (node != NULL) {
+    if (node->kind == 15) {
+      struct Node *body = Node_functionBody(node);
+      struct Symbol *symbol = node->symbol;
+
+      if (body != NULL && CResult_shouldEmitFunction(__this, symbol)) {
+        struct Node *returnType = Node_functionReturnType(node);
+        struct Node *child = node->firstChild;
+        CResult_emitNewlineBefore(__this, node);
+
+        if (!Node_isDeclareOrExtern(node)) {
+          StringBuilder_append(code, (const uint16_t *)__string_517_static);
+        }
+
+        CResult_emitType(__this, returnType->resolvedType, 1);
+        CResult_emitSymbolName(__this, symbol);
+        StringBuilder_appendChar(code, 40);
+
+        while (child != returnType) {
+          assert(child->kind == 6);
+          CResult_emitType(__this, child->symbol->resolvedType, 1);
+          CResult_emitSymbolName(__this, child->symbol);
+          child = child->nextSibling;
+
+          if (child != returnType) {
+            StringBuilder_append(code, (const uint16_t *)__string_518);
+          }
+        }
+
+        StringBuilder_append(code, (const uint16_t *)__string_519);
+        CResult_emitBlock(__this, Node_functionBody(node));
+        StringBuilder_appendChar(code, 10);
+        CResult_emitNewlineAfter(__this, node);
+      }
+    }
+
+    else if (node->kind == 9) {
+      CResult_emitFunctionDefinitions(__this, node->firstChild);
+    }
+
+    node = node->nextSibling;
+  }
+}
+
+static void CResult_finishImplementation(struct CResult *__this) {
+  if (__this->hasStrings) {
+    StringBuilder_append(__this->codePrefix, (const uint16_t *)__string_520_undef_S);
+  }
+}
+
+static void cEmitCharacter(struct StringBuilder *builder, uint16_t c) {
+  if (isASCII(c)) {
+    StringBuilder_appendChar(builder, 39);
+
+    if (c == 92 || c == 39) {
+      StringBuilder_appendChar(builder, 92);
+    }
+
+    StringBuilder_appendChar(builder, c);
+    StringBuilder_appendChar(builder, 39);
+  }
+
+  else if (c == 0) {
+    StringBuilder_append(builder, (const uint16_t *)__string_521_0);
+  }
+
+  else if (c == 13) {
+    StringBuilder_append(builder, (const uint16_t *)__string_522_r);
+  }
+
+  else if (c == 10) {
+    StringBuilder_append(builder, (const uint16_t *)__string_523_n);
+  }
+
+  else if (c == 9) {
+    StringBuilder_append(builder, (const uint16_t *)__string_524_t);
+  }
+
+  else {
+    StringBuilder_append(builder, ushort_toString(c));
+  }
+}
+
+static void cEmit(struct Compiler *compiler) {
+  struct Node *child = compiler->global->firstChild;
+  struct StringBuilder *temporaryCode = StringBuilder_new();
+  struct StringBuilder *headerCode = StringBuilder_new();
+  struct StringBuilder *implementationCode = StringBuilder_new();
+  struct CResult *result = calloc(1, sizeof(struct CResult));
+  result->context = compiler->context;
+  result->code = temporaryCode;
+  result->codePrefix = implementationCode;
+  result->headerName = replaceFileExtension(compiler->outputName, (const uint16_t *)__string_525_h);
+
+  if (child != NULL) {
+    CResult_emitIncludes(result, implementationCode, 1);
+    CResult_emitNewlineAfter(result, child);
+    CResult_emitTypeDeclarations(result, child, 1);
+    CResult_emitNewlineAfter(result, child);
+    CResult_emitTypeDefinitions(result, child, 1);
+    CResult_emitNewlineAfter(result, child);
+    CResult_emitFunctionDeclarations(result, child, 1);
+    CResult_emitNewlineAfter(result, child);
+    CResult_emitGlobalVariables(result, child, 1);
+    CResult_emitNewlineAfter(result, child);
+    CResult_emitFunctionDefinitions(result, child);
+    CResult_finishImplementation(result);
+    StringBuilder_append(implementationCode, StringBuilder_finish(temporaryCode));
+    result->code = headerCode;
+    CResult_emitIncludes(result, headerCode, 0);
+    CResult_emitNewlineAfter(result, child);
+    CResult_emitTypeDeclarations(result, child, 0);
+    CResult_emitNewlineAfter(result, child);
+    CResult_emitTypeDefinitions(result, child, 0);
+    CResult_emitNewlineAfter(result, child);
+    CResult_emitFunctionDeclarations(result, child, 0);
+    CResult_emitNewlineAfter(result, child);
+    CResult_emitGlobalVariables(result, child, 0);
+    CResult_emitNewlineAfter(result, child);
+  }
+
+  compiler->outputC = StringBuilder_finish(implementationCode);
+  compiler->outputH = StringBuilder_finish(headerCode);
+}
+
+static void JsResult_emitIndent(struct JsResult *__this) {
+  int32_t i = __this->indent;
+
+  while (i > 0) {
+    StringBuilder_append(__this->code, (const uint16_t *)__string_526);
+    i = i - 1;
+  }
+}
+
+static void JsResult_emitNewlineBefore(struct JsResult *__this, struct Node *node) {
+  if (__this->previousNode != NULL && (!isCompactNodeKind(__this->previousNode->kind) || !isCompactNodeKind(node->kind))) {
+    StringBuilder_appendChar(__this->code, 10);
+  }
+
+  __this->previousNode = NULL;
+}
+
+static void JsResult_emitNewlineAfter(struct JsResult *__this, struct Node *node) {
+  __this->previousNode = node;
+}
+
+static void JsResult_emitStatements(struct JsResult *__this, struct Node *node) {
+  while (node != NULL) {
+    JsResult_emitStatement(__this, node);
+    node = node->nextSibling;
+  }
+}
+
+static void JsResult_emitBlock(struct JsResult *__this, struct Node *node) {
+  __this->previousNode = NULL;
+  StringBuilder_append(__this->code, (const uint16_t *)__string_527);
+  __this->indent = __this->indent + 1;
+  JsResult_emitStatements(__this, node->firstChild);
+  __this->indent = __this->indent - 1;
+  JsResult_emitIndent(__this);
+  StringBuilder_appendChar(__this->code, 125);
+  __this->previousNode = NULL;
+}
+
+static void JsResult_emitUnary(struct JsResult *__this, struct Node *node, int32_t parentPrecedence, const uint16_t *operator) {
+  uint8_t isPostfix = isUnaryPostfix(node->kind);
+  uint8_t shouldCastToInt = node->kind == 40 && !jsKindCastsOperandsToInt(node->parent->kind);
+  uint8_t isUnsigned = Node_isUnsignedOperator(node);
+  int32_t operatorPrecedence = shouldCastToInt ? isUnsigned ? 9 : 4 : isPostfix ? 14 : 13;
+  struct StringBuilder *code = __this->code;
+
+  if (parentPrecedence > operatorPrecedence) {
+    StringBuilder_appendChar(code, 40);
+  }
+
+  if (!isPostfix) {
+    StringBuilder_append(code, operator);
+  }
+
+  JsResult_emitExpression(__this, Node_unaryValue(node), operatorPrecedence);
+
+  if (isPostfix) {
+    StringBuilder_append(code, operator);
+  }
+
+  if (shouldCastToInt) {
+    StringBuilder_append(code, isUnsigned ? (const uint16_t *)__string_528_0 : (const uint16_t *)__string_529_0);
+  }
+
+  if (parentPrecedence > operatorPrecedence) {
+    StringBuilder_appendChar(code, 41);
+  }
+}
+
+static void JsResult_emitBinary(struct JsResult *__this, struct Node *node, int32_t parentPrecedence, const uint16_t *operator, int32_t operatorPrecedence, int32_t mode) {
+  uint8_t isRightAssociative = node->kind == 49;
+  uint8_t isUnsigned = Node_isUnsignedOperator(node);
+  struct StringBuilder *code = __this->code;
+  uint8_t shouldCastToInt = mode == 1 && (isUnsigned || !jsKindCastsOperandsToInt(node->parent->kind));
+  int32_t selfPrecedence = shouldCastToInt ? isUnsigned ? 9 : 4 : parentPrecedence;
+
+  if (parentPrecedence > selfPrecedence) {
+    StringBuilder_appendChar(code, 40);
+  }
+
+  if (selfPrecedence > operatorPrecedence) {
+    StringBuilder_appendChar(code, 40);
+  }
+
+  JsResult_emitExpression(__this, Node_binaryLeft(node), isRightAssociative ? (int32_t)((int32_t)operatorPrecedence + 1) : operatorPrecedence);
+  StringBuilder_append(code, operator);
+  JsResult_emitExpression(__this, Node_binaryRight(node), isRightAssociative ? operatorPrecedence : (int32_t)((int32_t)operatorPrecedence + 1));
+
+  if (selfPrecedence > operatorPrecedence) {
+    StringBuilder_appendChar(code, 41);
+  }
+
+  if (shouldCastToInt) {
+    StringBuilder_append(code, isUnsigned ? (const uint16_t *)__string_530_0 : (const uint16_t *)__string_531_0);
+  }
+
+  if (parentPrecedence > selfPrecedence) {
+    StringBuilder_appendChar(code, 41);
+  }
+}
+
+static void JsResult_emitCommaSeparatedExpressions(struct JsResult *__this, struct Node *start, struct Node *stop) {
+  while (start != stop) {
+    JsResult_emitExpression(__this, start, 0);
+    start = start->nextSibling;
+
+    if (start != stop) {
+      StringBuilder_append(__this->code, (const uint16_t *)__string_532);
+    }
+  }
+}
+
+static void JsResult_emitExpression(struct JsResult *__this, struct Node *node, int32_t parentPrecedence) {
+  struct StringBuilder *code = __this->code;
+
+  if (node->kind == 29) {
+    struct Symbol *symbol = node->symbol;
+
+    if (symbol->kind == 5 && Node_isDeclare(symbol->node)) {
+      StringBuilder_append(code, (const uint16_t *)__string_533___imports);
+    }
+
+    JsResult_emitSymbolName(__this, symbol);
+  }
+
+  else if (node->kind == 31) {
+    StringBuilder_append(code, (const uint16_t *)__string_534_null);
+  }
+
+  else if (node->kind == 22) {
+    StringBuilder_append(code, node->intValue != 0 ? (const uint16_t *)__string_535_true : (const uint16_t *)__string_536_false);
+  }
+
+  else if (node->kind == 28) {
+    if (parentPrecedence == 15) {
+      StringBuilder_appendChar(code, 40);
+    }
+
+    StringBuilder_append(code, Type_isUnsigned(node->resolvedType) ? uint_toString((uint32_t)node->intValue) : int_toString(node->intValue));
+
+    if (parentPrecedence == 15) {
+      StringBuilder_appendChar(code, 41);
+    }
+  }
+
+  else if (node->kind == 34) {
+    StringBuilder_appendQuoted(code, node->stringValue);
+  }
+
+  else if (node->kind == 24) {
+    struct CheckContext *context = __this->context;
+    struct Node *value = Node_castValue(node);
+    struct Type *from = Type_underlyingType(value->resolvedType, context);
+    struct Type *type = Type_underlyingType(node->resolvedType, context);
+    int32_t fromSize = Type_variableSizeOf(from, context);
+    int32_t typeSize = Type_variableSizeOf(type, context);
+
+    if (from == type || fromSize < typeSize) {
+      JsResult_emitExpression(__this, value, parentPrecedence);
+    }
+
+    else if (type == context->sbyteType || type == context->shortType) {
+      if (parentPrecedence > 9) {
+        StringBuilder_appendChar(code, 40);
+      }
+
+      const uint16_t *shift = int_toString(32 - (typeSize << 3));
+      JsResult_emitExpression(__this, value, 9);
+      StringBuilder_append(code, (const uint16_t *)__string_537);
+      StringBuilder_append(code, shift);
+      StringBuilder_append(code, (const uint16_t *)__string_538);
+      StringBuilder_append(code, shift);
+
+      if (parentPrecedence > 9) {
+        StringBuilder_appendChar(code, 41);
+      }
+    }
+
+    else if (type == context->byteType || type == context->ushortType) {
+      if (parentPrecedence > 6) {
+        StringBuilder_appendChar(code, 40);
+      }
+
+      JsResult_emitExpression(__this, value, 6);
+      StringBuilder_append(code, (const uint16_t *)__string_539);
+      StringBuilder_append(code, uint_toString(Type_integerBitMask(type, context)));
+
+      if (parentPrecedence > 6) {
+        StringBuilder_appendChar(code, 41);
+      }
+    }
+
+    else if (type == context->intType) {
+      if (parentPrecedence > 4) {
+        StringBuilder_appendChar(code, 40);
+      }
+
+      JsResult_emitExpression(__this, value, 4);
+      StringBuilder_append(code, (const uint16_t *)__string_540_0);
+
+      if (parentPrecedence > 4) {
+        StringBuilder_appendChar(code, 41);
+      }
+    }
+
+    else if (type == context->uintType) {
+      if (parentPrecedence > 9) {
+        StringBuilder_appendChar(code, 40);
+      }
+
+      JsResult_emitExpression(__this, value, 9);
+      StringBuilder_append(code, (const uint16_t *)__string_541_0);
+
+      if (parentPrecedence > 9) {
+        StringBuilder_appendChar(code, 41);
+      }
+    }
+
+    else {
+      JsResult_emitExpression(__this, value, parentPrecedence);
+    }
+  }
+
+  else if (node->kind == 25) {
+    JsResult_emitExpression(__this, Node_dotTarget(node), 15);
+    StringBuilder_appendChar(code, 46);
+    JsResult_emitSymbolName(__this, node->symbol);
+  }
+
+  else if (node->kind == 26) {
+    if (parentPrecedence > 1) {
+      StringBuilder_appendChar(code, 40);
+    }
+
+    JsResult_emitExpression(__this, Node_hookValue(node), 2);
+    StringBuilder_append(code, (const uint16_t *)__string_542);
+    JsResult_emitExpression(__this, Node_hookTrue(node), 1);
+    StringBuilder_append(code, (const uint16_t *)__string_543);
+    JsResult_emitExpression(__this, Node_hookFalse(node), 1);
+
+    if (parentPrecedence > 1) {
+      StringBuilder_appendChar(code, 41);
+    }
+  }
+
+  else if (node->kind == 27) {
+    struct Node *value = Node_indexTarget(node);
+    JsResult_emitExpression(__this, value, 14);
+    StringBuilder_appendChar(code, 91);
+    JsResult_emitCommaSeparatedExpressions(__this, value->nextSibling, NULL);
+    StringBuilder_appendChar(code, 93);
+  }
+
+  else if (node->kind == 23) {
+    if (Node_expandCallIntoOperatorTree(node)) {
+      JsResult_emitExpression(__this, node, parentPrecedence);
+    }
+
+    else {
+      struct Node *value = Node_callValue(node);
+      JsResult_emitExpression(__this, value, 14);
+
+      if (value->symbol == NULL || !Symbol_isGetter(value->symbol)) {
+        StringBuilder_appendChar(code, 40);
+        JsResult_emitCommaSeparatedExpressions(__this, value->nextSibling, NULL);
+        StringBuilder_appendChar(code, 41);
+      }
+    }
+  }
+
+  else if (node->kind == 30) {
+    StringBuilder_append(code, (const uint16_t *)__string_544_new);
+    JsResult_emitExpression(__this, Node_newType(node), 14);
+    StringBuilder_append(code, (const uint16_t *)__string_545);
+  }
+
+  else if (node->kind == 41) {
+    struct Node *value = Node_unaryValue(node);
+    Node_expandCallIntoOperatorTree(value);
+    int32_t invertedKind = invertedBinaryKind(value->kind);
+
+    if (invertedKind != value->kind) {
+      value->kind = invertedKind;
+      JsResult_emitExpression(__this, value, parentPrecedence);
+    }
+
+    else {
+      JsResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_546);
+    }
+  }
+
+  else if (node->kind == 38) {
+    JsResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_547);
+  }
+
+  else if (node->kind == 40) {
+    JsResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_548);
+  }
+
+  else if (node->kind == 43) {
+    JsResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_549);
+  }
+
+  else if (node->kind == 47) {
+    JsResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_550);
+  }
+
+  else if (node->kind == 46) {
+    JsResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_551);
+  }
+
+  else if (node->kind == 45) {
+    JsResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_552);
+  }
+
+  else if (node->kind == 44) {
+    JsResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_553);
+  }
+
+  else if (node->kind == 48) {
+    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_554, 10, 1);
+  }
+
+  else if (node->kind == 49) {
+    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_555, 1, 0);
+  }
+
+  else if (node->kind == 50) {
+    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_556, 6, 0);
+  }
+
+  else if (node->kind == 51) {
+    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_557, 4, 0);
+  }
+
+  else if (node->kind == 52) {
+    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_558, 5, 0);
+  }
+
+  else if (node->kind == 53) {
+    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_559, 11, 1);
+  }
+
+  else if (node->kind == 54) {
+    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_560, 7, 0);
+  }
+
+  else if (node->kind == 56) {
+    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_561, 8, 0);
+  }
+
+  else if (node->kind == 57) {
+    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_562, 8, 0);
+  }
+
+  else if (node->kind == 58) {
+    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_563, 8, 0);
+  }
+
+  else if (node->kind == 59) {
+    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_564, 8, 0);
+  }
+
+  else if (node->kind == 60) {
+    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_565, 3, 0);
+  }
+
+  else if (node->kind == 61) {
+    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_566, 2, 0);
+  }
+
+  else if (node->kind == 63) {
+    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_567, 7, 0);
+  }
+
+  else if (node->kind == 64) {
+    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_568, 11, 1);
+  }
+
+  else if (node->kind == 65) {
+    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_569, 9, 0);
+  }
+
+  else if (node->kind == 66) {
+    JsResult_emitBinary(__this, node, parentPrecedence, Node_isUnsignedOperator(node) ? (const uint16_t *)__string_570 : (const uint16_t *)__string_571, 9, 0);
+  }
+
+  else if (node->kind == 67) {
+    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_572, 10, 1);
+  }
+
+  else if (node->kind == 62) {
+    struct Node *left = Node_binaryLeft(node);
+    struct Node *right = Node_binaryRight(node);
+    uint8_t isUnsigned = Node_isUnsignedOperator(node);
+
+    if (isUnsigned && parentPrecedence > 9) {
+      StringBuilder_appendChar(code, 40);
+    }
+
+    StringBuilder_append(code, (const uint16_t *)__string_573___imul);
+    JsResult_emitExpression(__this, left, 0);
+    StringBuilder_append(code, (const uint16_t *)__string_574);
+    JsResult_emitExpression(__this, right, 0);
+    StringBuilder_appendChar(code, 41);
+    __this->foundMultiply = 1;
+
+    if (isUnsigned) {
+      StringBuilder_append(code, (const uint16_t *)__string_575_0);
+
+      if (parentPrecedence > 9) {
+        StringBuilder_appendChar(code, 41);
+      }
+    }
+  }
+
+  else {
+    assert(0);
+  }
+}
+
+static void JsResult_emitSymbolName(struct JsResult *__this, struct Symbol *symbol) {
+  StringBuilder_append(__this->code, !string_op_equals(symbol->rename, NULL) ? symbol->rename : symbol->name);
+}
+
+static void JsResult_emitStatement(struct JsResult *__this, struct Node *node) {
+  struct StringBuilder *code = __this->code;
+
+  if (node->kind == 15) {
+    struct Node *body = Node_functionBody(node);
+
+    if (body == NULL) {
+      return;
+    }
+
+    struct Symbol *symbol = node->symbol;
+    uint8_t needsSemicolon = 0;
+    JsResult_emitNewlineBefore(__this, node);
+    JsResult_emitIndent(__this);
+
+    if (symbol->kind == 4) {
+      JsResult_emitSymbolName(__this, Symbol_parent(symbol));
+      StringBuilder_append(code, (const uint16_t *)__string_576_prototype);
+      JsResult_emitSymbolName(__this, symbol);
+      StringBuilder_append(code, (const uint16_t *)__string_577_function);
+      needsSemicolon = 1;
+    }
+
+    else if (Node_isExtern(node)) {
+      StringBuilder_append(code, (const uint16_t *)__string_578_var);
+      JsResult_emitSymbolName(__this, symbol);
+      StringBuilder_append(code, (const uint16_t *)__string_579___exports);
+      JsResult_emitSymbolName(__this, symbol);
+      StringBuilder_append(code, (const uint16_t *)__string_580_function);
+      needsSemicolon = 1;
+    }
+
+    else {
+      StringBuilder_append(code, (const uint16_t *)__string_581_function);
+      JsResult_emitSymbolName(__this, symbol);
+    }
+
+    StringBuilder_appendChar(code, 40);
+    struct Node *returnType = Node_functionReturnType(node);
+    struct Node *child = Node_functionFirstArgumentIgnoringThis(node);
+
+    while (child != returnType) {
+      assert(child->kind == 6);
+      JsResult_emitSymbolName(__this, child->symbol);
+      child = child->nextSibling;
+
+      if (child != returnType) {
+        StringBuilder_append(code, (const uint16_t *)__string_582);
+      }
+    }
+
+    StringBuilder_append(code, (const uint16_t *)__string_583);
+    JsResult_emitBlock(__this, Node_functionBody(node));
+    StringBuilder_append(code, needsSemicolon ? (const uint16_t *)__string_584 : (const uint16_t *)__string_585);
+    JsResult_emitNewlineAfter(__this, node);
+  }
+
+  else if (node->kind == 16) {
+    JsResult_emitNewlineBefore(__this, node);
+    JsResult_emitIndent(__this);
+
+    while (1) {
+      StringBuilder_append(code, (const uint16_t *)__string_586_if);
+      JsResult_emitExpression(__this, Node_ifValue(node), 0);
+      StringBuilder_append(code, (const uint16_t *)__string_587);
+      JsResult_emitBlock(__this, Node_ifTrue(node));
+      struct Node *no = Node_ifFalse(node);
+
+      if (no == NULL) {
+        StringBuilder_appendChar(code, 10);
+
+        break;
+      }
+
+      StringBuilder_append(code, (const uint16_t *)__string_588);
+      JsResult_emitIndent(__this);
+      StringBuilder_append(code, (const uint16_t *)__string_589_else);
+
+      if (no->firstChild == NULL || no->firstChild != no->lastChild || no->firstChild->kind != 16) {
+        JsResult_emitBlock(__this, no);
+        StringBuilder_appendChar(code, 10);
+
+        break;
+      }
+
+      node = no->firstChild;
+    }
+
+    JsResult_emitNewlineAfter(__this, node);
+  }
+
+  else if (node->kind == 20) {
+    JsResult_emitNewlineBefore(__this, node);
+    JsResult_emitIndent(__this);
+    StringBuilder_append(code, (const uint16_t *)__string_590_while);
+    JsResult_emitExpression(__this, Node_whileValue(node), 0);
+    StringBuilder_append(code, (const uint16_t *)__string_591);
+    JsResult_emitBlock(__this, Node_whileBody(node));
+    StringBuilder_appendChar(code, 10);
+    JsResult_emitNewlineAfter(__this, node);
+  }
+
+  else if (node->kind == 8) {
+    JsResult_emitNewlineBefore(__this, node);
+    JsResult_emitIndent(__this);
+    StringBuilder_append(code, (const uint16_t *)__string_592_break);
+    JsResult_emitNewlineAfter(__this, node);
+  }
+
+  else if (node->kind == 11) {
+    JsResult_emitNewlineBefore(__this, node);
+    JsResult_emitIndent(__this);
+    StringBuilder_append(code, (const uint16_t *)__string_593_continue);
+    JsResult_emitNewlineAfter(__this, node);
+  }
+
+  else if (node->kind == 14) {
+    JsResult_emitNewlineBefore(__this, node);
+    JsResult_emitIndent(__this);
+    JsResult_emitExpression(__this, Node_expressionValue(node), 0);
+    StringBuilder_append(code, (const uint16_t *)__string_594);
+    JsResult_emitNewlineAfter(__this, node);
+  }
+
+  else if (node->kind == 12) {
+  }
+
+  else if (node->kind == 17) {
+    struct Node *value = Node_returnValue(node);
+    JsResult_emitNewlineBefore(__this, node);
+    JsResult_emitIndent(__this);
+
+    if (value != NULL) {
+      StringBuilder_append(code, (const uint16_t *)__string_595_return);
+      JsResult_emitExpression(__this, value, 0);
+      StringBuilder_append(code, (const uint16_t *)__string_596);
+    }
+
+    else {
+      StringBuilder_append(code, (const uint16_t *)__string_597_return);
+    }
+
+    JsResult_emitNewlineAfter(__this, node);
+  }
+
+  else if (node->kind == 7) {
+    if (node->parent->kind == 7) {
+      JsResult_emitStatements(__this, node->firstChild);
+    }
+
+    else {
+      JsResult_emitNewlineBefore(__this, node);
+      JsResult_emitIndent(__this);
+      JsResult_emitBlock(__this, node);
+      StringBuilder_appendChar(code, 10);
+      JsResult_emitNewlineAfter(__this, node);
+    }
+  }
+
+  else if (node->kind == 19) {
+    JsResult_emitNewlineBefore(__this, node);
+    JsResult_emitIndent(__this);
+    StringBuilder_append(code, (const uint16_t *)__string_598_var);
+    struct Node *child = node->firstChild;
+
+    while (child != NULL) {
+      struct Node *value = Node_variableValue(child);
+      JsResult_emitSymbolName(__this, child->symbol);
+      child = child->nextSibling;
+
+      if (child != NULL) {
+        StringBuilder_append(code, (const uint16_t *)__string_599);
+      }
+
+      assert(value != NULL);
+      StringBuilder_append(code, (const uint16_t *)__string_600);
+      JsResult_emitExpression(__this, value, 0);
+    }
+
+    StringBuilder_append(code, (const uint16_t *)__string_601);
+    JsResult_emitNewlineAfter(__this, node);
+  }
+
+  else if (node->kind == 9) {
+    if (!Node_isDeclare(node)) {
+      JsResult_emitNewlineBefore(__this, node);
+      JsResult_emitIndent(__this);
+      StringBuilder_append(code, (const uint16_t *)__string_602_function);
+      JsResult_emitSymbolName(__this, node->symbol);
+      StringBuilder_append(code, (const uint16_t *)__string_603);
+      __this->indent = __this->indent + 1;
+      struct Node *argument = node->firstChild;
+
+      while (argument != NULL) {
+        if (argument->kind == 6) {
+          JsResult_emitIndent(__this);
+          StringBuilder_append(code, (const uint16_t *)__string_604_this);
+          JsResult_emitSymbolName(__this, argument->symbol);
+          StringBuilder_append(code, (const uint16_t *)__string_605);
+          JsResult_emitExpression(__this, Node_variableValue(argument), 0);
+          StringBuilder_append(code, (const uint16_t *)__string_606);
+        }
+
+        argument = argument->nextSibling;
+      }
+
+      __this->indent = __this->indent - 1;
+      JsResult_emitIndent(__this);
+      StringBuilder_append(code, (const uint16_t *)__string_607);
+      JsResult_emitNewlineAfter(__this, node);
+    }
+
+    struct Node *child = node->firstChild;
+
+    while (child != NULL) {
+      if (child->kind == 15) {
+        JsResult_emitStatement(__this, child);
+      }
+
+      child = child->nextSibling;
+    }
+  }
+
+  else if (node->kind == 13) {
+    if (Node_isExtern(node)) {
+      JsResult_emitNewlineBefore(__this, node);
+      JsResult_emitIndent(__this);
+      StringBuilder_append(code, (const uint16_t *)__string_608___exports);
+      JsResult_emitSymbolName(__this, node->symbol);
+      StringBuilder_append(code, (const uint16_t *)__string_609);
+      __this->indent = __this->indent + 1;
+      struct Node *child = node->firstChild;
+
+      while (child != NULL) {
+        assert(child->kind == 6);
+        JsResult_emitIndent(__this);
+        JsResult_emitSymbolName(__this, child->symbol);
+        StringBuilder_append(code, (const uint16_t *)__string_610);
+        StringBuilder_append(code, int_toString(child->symbol->offset));
+        child = child->nextSibling;
+        StringBuilder_append(code, child != NULL ? (const uint16_t *)__string_611 : (const uint16_t *)__string_612);
+      }
+
+      __this->indent = __this->indent - 1;
+      JsResult_emitIndent(__this);
+      StringBuilder_append(code, (const uint16_t *)__string_613);
+      JsResult_emitNewlineAfter(__this, node);
+    }
+  }
+
+  else if (node->kind == 10) {
+  }
+
+  else {
+    assert(0);
+  }
+}
+
+static uint8_t jsKindCastsOperandsToInt(int32_t kind) {
+  return kind == 65 || kind == 66 || kind == 51 || kind == 50 || kind == 52;
+}
+
+static void jsEmit(struct Compiler *compiler) {
+  struct StringBuilder *code = StringBuilder_new();
+  struct JsResult *result = calloc(1, sizeof(struct JsResult));
+  result->context = compiler->context;
+  result->code = code;
+  StringBuilder_append(code, (const uint16_t *)__string_614_function___imports___exports);
+  result->indent = 1;
+  JsResult_emitStatements(result, compiler->global->firstChild);
+
+  if (result->foundMultiply) {
+    StringBuilder_appendChar(code, 10);
+    JsResult_emitIndent(result);
+    StringBuilder_append(code, (const uint16_t *)__string_615_var___imul_Math_imul_functi);
+    result->indent = 2;
+    JsResult_emitIndent(result);
+    StringBuilder_append(code, (const uint16_t *)__string_616_return_a_b_16_16);
+    result->indent = 1;
+    JsResult_emitIndent(result);
+    StringBuilder_append(code, (const uint16_t *)__string_617);
+  }
+
+  StringBuilder_append(code, (const uint16_t *)__string_618);
+  JsResult_emitIndent(result);
+  StringBuilder_append(code, (const uint16_t *)__string_619_typeof_global_undefined);
+  JsResult_emitIndent(result);
+  StringBuilder_append(code, (const uint16_t *)__string_620_typeof_exports_undefined);
+  StringBuilder_append(code, (const uint16_t *)__string_621);
+  compiler->outputJS = StringBuilder_finish(code);
 }
 
 static void WasmModule_growMemoryInitializer(struct WasmModule *__this) {
@@ -9854,6 +9807,25 @@ static struct WasmImport *WasmModule_allocateImport(struct WasmModule *__this, i
   return result;
 }
 
+static struct WasmGlobal *WasmModule_allocateGlobal(struct WasmModule *__this, struct Symbol *symbol) {
+  struct WasmGlobal *global = calloc(1, sizeof(struct WasmGlobal));
+  global->symbol = symbol;
+  symbol->offset = __this->globalCount;
+
+  if (__this->firstGlobal == NULL) {
+    __this->firstGlobal = global;
+  }
+
+  else {
+    __this->lastGlobal->next = global;
+  }
+
+  __this->lastGlobal = global;
+  __this->globalCount = __this->globalCount + 1;
+
+  return global;
+}
+
 static struct WasmFunction *WasmModule_allocateFunction(struct WasmModule *__this, struct Symbol *symbol, int32_t signatureIndex) {
   struct WasmFunction *fn = calloc(1, sizeof(struct WasmFunction));
   fn->symbol = symbol;
@@ -9869,6 +9841,18 @@ static struct WasmFunction *WasmModule_allocateFunction(struct WasmModule *__thi
 
   __this->lastFunction = fn;
   __this->functionCount = __this->functionCount + 1;
+
+  if (symbol->kind == 5) {
+    if (string_op_equals(symbol->name, (const uint16_t *)__string_622_malloc)) {
+      assert(__this->mallocFunction == NULL);
+      __this->mallocFunction = fn;
+    }
+
+    else if (string_op_equals(symbol->name, (const uint16_t *)__string_623_free)) {
+      assert(__this->freeFunction == NULL);
+      __this->freeFunction = fn;
+    }
+  }
 
   return fn;
 }
@@ -9906,72 +9890,190 @@ static int32_t WasmModule_allocateSignature(struct WasmModule *__this, struct Wa
 }
 
 static void WasmModule_emitModule(struct WasmModule *__this, struct ByteArray *array) {
+  assert(ByteArray_length(array) == 0);
   ByteArray_append32(array, 1836278016);
-  ByteArray_append32(array, 10);
-  WasmModule_emitSignatures(__this, array);
-  WasmModule_emitImportTable(__this, array);
-  WasmModule_emitFunctionSignatures(__this, array);
-  WasmModule_emitMemory(__this, array);
-  WasmModule_emitExportTable(__this, array);
-  WasmModule_emitFunctionBodies(__this, array);
-  WasmModule_emitDataSegments(__this, array);
-  WasmModule_emitNames(__this, array);
+  ByteArray_append32(array, 1);
+  WasmModule_emitDylinkSection(__this, array);
+  WasmModule_emitTypeSection(__this, array);
+  WasmModule_emitImportSection(__this, array);
+  WasmModule_emitFunctionSection(__this, array);
+  WasmModule_emitTableSection(__this, array);
+  WasmModule_emitMemorySection(__this, array);
+  WasmModule_emitGlobalSection(__this, array);
+  WasmModule_emitExportSection(__this, array);
+  WasmModule_emitStartSection(__this, array);
+  WasmModule_emitElementSection(__this, array);
+  WasmModule_emitCodeSection(__this, array);
+  WasmModule_emitDataSection(__this, array);
+  WasmModule_emitNameSection(__this, array);
 }
 
-static void WasmModule_emitSignatures(struct WasmModule *__this, struct ByteArray *array) {
-  int32_t section = wasmStartSection(array, (const uint16_t *)__string_622_signatures);
-  wasmWriteVarUnsigned(array, __this->signatureCount);
-  struct WasmSignature *signature = __this->firstSignature;
+static void WasmModule_beginSection(struct WasmModule *__this, struct ByteArray *array, int32_t code, const uint16_t *name) {
+  wasmWriteVarUnsigned(array, code);
+  wasmWriteVarUnsigned(array, -1);
+  __this->sectionPayloadOffset = ByteArray_length(array);
 
-  while (signature != NULL) {
+  if (code == 0 || !string_op_equals(name, NULL)) {
+    assert(!string_op_equals(name, NULL));
+    wasmWriteLengthPrefixedUTF8(array, name);
+  }
+}
+
+static void WasmModule_finishSection(struct WasmModule *__this, struct ByteArray *array) {
+  wasmPatchVarUnsigned(array, __this->sectionPayloadOffset - 5, ByteArray_length(array) - __this->sectionPayloadOffset, -1);
+}
+
+static void WasmModule_emitDylinkSection(struct WasmModule *__this, struct ByteArray *array) {
+  assert(ByteArray_length(array) == 8);
+  WasmModule_beginSection(__this, array, 0, (const uint16_t *)__string_624_dylink);
+  wasmWriteVarUnsigned(array, ByteArray_length(__this->memoryInitializer));
+  wasmWriteVarUnsigned(array, 0);
+  WasmModule_finishSection(__this, array);
+}
+
+static void WasmModule_emitNameSection(struct WasmModule *__this, struct ByteArray *array) {
+  WasmModule_beginSection(__this, array, 0, (const uint16_t *)__string_625_name);
+  wasmWriteVarUnsigned(array, 0);
+  wasmWriteLengthPrefixedUTF8(array, (const uint16_t *)__string_626_myModuleName);
+  wasmWriteVarUnsigned(array, 1);
+  int32_t nameLengthOffset = ByteArray_length(array);
+  wasmWriteVarUnsigned(array, -1);
+  wasmWriteVarUnsigned(array, __this->functionCount);
+  struct WasmFunction *fn = __this->firstFunction;
+
+  while (fn != NULL) {
+    const uint16_t *name = fn->symbol->name;
+
+    if (fn->symbol->kind == 4) {
+      name = StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), Symbol_parent(fn->symbol)->name), (const uint16_t *)__string_627), name));
+    }
+
+    wasmWriteVarUnsigned(array, WasmModule_getFunctionCallIndex(__this, fn->symbol));
+    wasmWriteLengthPrefixedUTF8(array, name);
+    fn = fn->next;
+  }
+
+  wasmPatchVarUnsigned(array, nameLengthOffset, ByteArray_length(array) - nameLengthOffset - 5, -1);
+  int32_t functionsWithLocals = 0;
+  fn = __this->firstFunction;
+
+  while (fn != NULL) {
+    if (fn->symbol->kind == 4 || fn->localCount > 0) {
+      functionsWithLocals = functionsWithLocals + 1;
+    }
+
+    fn = fn->next;
+  }
+
+  if (functionsWithLocals > 0) {
+    wasmWriteVarUnsigned(array, 2);
+    nameLengthOffset = ByteArray_length(array);
+    wasmWriteVarUnsigned(array, -1);
+    wasmWriteVarUnsigned(array, functionsWithLocals);
+    fn = __this->firstFunction;
+
+    while (fn != NULL) {
+      uint8_t isInstance = fn->symbol->kind == 4;
+      int32_t localCount = fn->localCount;
+
+      if (isInstance) {
+        localCount = localCount + 1;
+      }
+
+      if (localCount > 0) {
+        wasmWriteVarUnsigned(array, WasmModule_getFunctionCallIndex(__this, fn->symbol));
+        wasmWriteVarUnsigned(array, localCount);
+        int32_t index = 0;
+
+        if (isInstance) {
+          wasmWriteVarUnsigned(array, index);
+          wasmWriteLengthPrefixedUTF8(array, (const uint16_t *)__string_628_this);
+          index = index + 1;
+        }
+
+        struct WasmLocal *local = fn->firstLocal;
+
+        while (local != NULL) {
+          wasmWriteVarUnsigned(array, index);
+          wasmWriteLengthPrefixedUTF8(array, local->symbol->name);
+          index = index + 1;
+          local = local->next;
+        }
+      }
+
+      fn = fn->next;
+    }
+
+    wasmPatchVarUnsigned(array, nameLengthOffset, ByteArray_length(array) - nameLengthOffset - 5, -1);
+  }
+
+  WasmModule_finishSection(__this, array);
+}
+
+static void WasmModule_emitTypeSection(struct WasmModule *__this, struct ByteArray *array) {
+  WasmModule_beginSection(__this, array, 1, NULL);
+  wasmWriteVarUnsigned(array, __this->signatureCount);
+  struct WasmSignature *sig = __this->firstSignature;
+
+  while (sig != NULL) {
     int32_t count = 0;
-    struct WasmWrappedType *type = signature->argumentTypes;
+    struct WasmWrappedType *type = sig->argumentTypes;
 
     while (type != NULL) {
       count = count + 1;
       type = type->next;
     }
 
+    wasmWriteVarSigned(array, -32);
     wasmWriteVarUnsigned(array, count);
-    wasmWriteVarUnsigned(array, (int32_t)signature->returnType->id);
-    type = signature->argumentTypes;
+    type = sig->argumentTypes;
 
     while (type != NULL) {
-      wasmWriteVarUnsigned(array, (int32_t)type->id);
+      wasmWriteVarSigned(array, type->id);
       type = type->next;
     }
 
-    signature = signature->next;
+    if (sig->returnType->id != 0) {
+      wasmWriteVarUnsigned(array, 1);
+      wasmWriteVarSigned(array, (int32_t)sig->returnType->id);
+    }
+
+    else {
+      wasmWriteVarUnsigned(array, 0);
+    }
+
+    sig = sig->next;
   }
 
-  wasmFinishSection(array, section);
+  WasmModule_finishSection(__this, array);
 }
 
-static void WasmModule_emitImportTable(struct WasmModule *__this, struct ByteArray *array) {
+static void WasmModule_emitImportSection(struct WasmModule *__this, struct ByteArray *array) {
   if (__this->firstImport == NULL) {
     return;
   }
 
-  int32_t section = wasmStartSection(array, (const uint16_t *)__string_623_import_table);
+  WasmModule_beginSection(__this, array, 2, NULL);
   wasmWriteVarUnsigned(array, __this->importCount);
   struct WasmImport *current = __this->firstImport;
 
   while (current != NULL) {
+    wasmWriteLengthPrefixedUTF8(array, current->module);
+    wasmWriteLengthPrefixedUTF8(array, current->name);
+    wasmWriteVarUnsigned(array, 0);
     wasmWriteVarUnsigned(array, current->signatureIndex);
-    wasmWriteLengthPrefixedASCII(array, current->module);
-    wasmWriteLengthPrefixedASCII(array, current->name);
     current = current->next;
   }
 
-  wasmFinishSection(array, section);
+  WasmModule_finishSection(__this, array);
 }
 
-static void WasmModule_emitFunctionSignatures(struct WasmModule *__this, struct ByteArray *array) {
+static void WasmModule_emitFunctionSection(struct WasmModule *__this, struct ByteArray *array) {
   if (__this->firstFunction == NULL) {
     return;
   }
 
-  int32_t section = wasmStartSection(array, (const uint16_t *)__string_624_function_signatures);
+  WasmModule_beginSection(__this, array, 3, NULL);
   wasmWriteVarUnsigned(array, __this->functionCount);
   struct WasmFunction *fn = __this->firstFunction;
 
@@ -9980,18 +10082,55 @@ static void WasmModule_emitFunctionSignatures(struct WasmModule *__this, struct 
     fn = fn->next;
   }
 
-  wasmFinishSection(array, section);
+  WasmModule_finishSection(__this, array);
 }
 
-static void WasmModule_emitMemory(struct WasmModule *__this, struct ByteArray *array) {
-  int32_t section = wasmStartSection(array, (const uint16_t *)__string_625_memory);
-  wasmWriteVarUnsigned(array, 256);
-  wasmWriteVarUnsigned(array, 256);
+static void WasmModule_emitTableSection(struct WasmModule *__this, struct ByteArray *array) {
+}
+
+static void WasmModule_emitMemorySection(struct WasmModule *__this, struct ByteArray *array) {
+  WasmModule_beginSection(__this, array, 5, NULL);
   wasmWriteVarUnsigned(array, 1);
-  wasmFinishSection(array, section);
+  wasmWriteVarUnsigned(array, 256 >= 256 ? 1 : 0);
+  wasmWriteVarUnsigned(array, 256);
+
+  if (256 >= 256) {
+    wasmWriteVarUnsigned(array, 256);
+  }
+
+  WasmModule_finishSection(__this, array);
 }
 
-static void WasmModule_emitExportTable(struct WasmModule *__this, struct ByteArray *array) {
+static void WasmModule_emitGlobalSection(struct WasmModule *__this, struct ByteArray *array) {
+  if (__this->firstGlobal == NULL) {
+    return;
+  }
+
+  WasmModule_beginSection(__this, array, 6, NULL);
+  wasmWriteVarUnsigned(array, __this->globalCount);
+  struct WasmGlobal *glo = __this->firstGlobal;
+
+  while (glo != NULL) {
+    int32_t type = WasmModule_getWasmType(__this, Node_variableType(glo->symbol->node)->resolvedType);
+
+    if (type == -1) {
+      wasmWriteVarSigned(array, -1);
+      wasmWriteVarUnsigned(array, 65);
+      wasmWriteVarSigned(array, 0);
+    }
+
+    else {
+      assert(0);
+    }
+
+    wasmWriteVarUnsigned(array, 11);
+    glo = glo->next;
+  }
+
+  WasmModule_finishSection(__this, array);
+}
+
+static void WasmModule_emitExportSection(struct WasmModule *__this, struct ByteArray *array) {
   int32_t exportedCount = 0;
   struct WasmFunction *fn = __this->firstFunction;
 
@@ -10007,71 +10146,113 @@ static void WasmModule_emitExportTable(struct WasmModule *__this, struct ByteArr
     return;
   }
 
-  int32_t section = wasmStartSection(array, (const uint16_t *)__string_626_export_table);
-  wasmWriteVarUnsigned(array, exportedCount);
-  int32_t i = 0;
+  WasmModule_beginSection(__this, array, 7, NULL);
+  wasmWriteVarUnsigned(array, exportedCount + 1);
+  wasmWriteLengthPrefixedUTF8(array, (const uint16_t *)__string_629_memory);
+  wasmWriteVarUnsigned(array, 2);
+  wasmWriteVarUnsigned(array, 0);
+  int32_t i = __this->importCount;
   fn = __this->firstFunction;
 
   while (fn != NULL) {
     if (fn->isExported) {
+      wasmWriteLengthPrefixedUTF8(array, fn->symbol->name);
+      wasmWriteVarUnsigned(array, 0);
       wasmWriteVarUnsigned(array, i);
-      wasmWriteLengthPrefixedASCII(array, fn->symbol->name);
     }
 
     fn = fn->next;
     i = i + 1;
   }
 
-  wasmFinishSection(array, section);
+  WasmModule_finishSection(__this, array);
 }
 
-static void WasmModule_emitFunctionBodies(struct WasmModule *__this, struct ByteArray *array) {
+static void WasmModule_emitStartSection(struct WasmModule *__this, struct ByteArray *array) {
+  if (__this->startFunction == NULL) {
+    return;
+  }
+
+  WasmModule_beginSection(__this, array, 8, NULL);
+  wasmWriteVarUnsigned(array, WasmModule_getFunctionCallIndex(__this, __this->startFunction->symbol));
+  WasmModule_finishSection(__this, array);
+}
+
+static void WasmModule_emitElementSection(struct WasmModule *__this, struct ByteArray *array) {
+}
+
+static void WasmModule_emitCodeSection(struct WasmModule *__this, struct ByteArray *array) {
   if (__this->firstFunction == NULL) {
     return;
   }
 
-  int32_t section = wasmStartSection(array, (const uint16_t *)__string_627_function_bodies);
+  WasmModule_beginSection(__this, array, 10, NULL);
   wasmWriteVarUnsigned(array, __this->functionCount);
   struct WasmFunction *fn = __this->firstFunction;
 
   while (fn != NULL) {
-    int32_t bodyLength = ByteArray_length(array);
+    int32_t headerOffset = ByteArray_length(array);
     wasmWriteVarUnsigned(array, -1);
+    int32_t payloadOffset = ByteArray_length(array);
+    wasmWriteVarUnsigned(array, fn->localCount);
 
-    if (fn->intLocalCount > 0) {
-      wasmWriteVarUnsigned(array, 1);
-      wasmWriteVarUnsigned(array, fn->intLocalCount);
-      ByteArray_append(array, 1);
-    }
+    if (fn->localCount > 0) {
+      struct WasmLocal *local = fn->firstLocal;
 
-    else {
-      wasmWriteVarUnsigned(array, 0);
+      while (local != NULL) {
+        wasmWriteVarUnsigned(array, 1);
+        wasmWriteVarSigned(array, WasmModule_getWasmType(__this, local->symbol->resolvedType));
+        local = local->next;
+      }
     }
 
     struct Node *child = Node_functionBody(fn->symbol->node)->firstChild;
+    struct Node *lastChild = NULL;
 
     while (child != NULL) {
+      lastChild = child;
       WasmModule_emitNode(__this, array, child);
       child = child->nextSibling;
     }
 
-    wasmPatchVarUnsigned(array, bodyLength, ByteArray_length(array) - bodyLength - 5, -1);
+    struct Type *returnType = Node_functionReturnType(fn->symbol->node)->resolvedType;
+
+    if (returnType != __this->context->voidType) {
+      if (lastChild != NULL && lastChild->kind == 17) {
+        assert(ByteArray_get(array, ByteArray_length(array) - 1) == 15);
+        ByteArray_set(array, ByteArray_length(array) - 1, 11);
+      }
+
+      else {
+        WasmModule_emit(__this, array, 0);
+        WasmModule_emit(__this, array, 11);
+      }
+    }
+
+    else {
+      WasmModule_emit(__this, array, 11);
+    }
+
+    wasmPatchVarUnsigned(array, headerOffset, ByteArray_length(array) - payloadOffset, -1);
     fn = fn->next;
   }
 
-  wasmFinishSection(array, section);
+  WasmModule_finishSection(__this, array);
 }
 
-static void WasmModule_emitDataSegments(struct WasmModule *__this, struct ByteArray *array) {
+static void WasmModule_emitDataSection(struct WasmModule *__this, struct ByteArray *array) {
   WasmModule_growMemoryInitializer(__this);
   struct ByteArray *memoryInitializer = __this->memoryInitializer;
   int32_t initializerLength = ByteArray_length(memoryInitializer);
-  int32_t initialHeapPointer = alignToNextMultipleOf(initializerLength + 8, 8);
+  int32_t initialHeapPointer = alignToNextMultipleOf(initializerLength + 4, 8);
   ByteArray_set32(memoryInitializer, __this->currentHeapPointer, initialHeapPointer);
   ByteArray_set32(memoryInitializer, __this->originalHeapPointer, initialHeapPointer);
-  int32_t section = wasmStartSection(array, (const uint16_t *)__string_628_data_segments);
+  WasmModule_beginSection(__this, array, 11, NULL);
   wasmWriteVarUnsigned(array, 1);
-  wasmWriteVarUnsigned(array, 8);
+  wasmWriteVarUnsigned(array, 0);
+  wasmWriteVarUnsigned(array, 65);
+  wasmWriteVarSigned(array, 4);
+  wasmWriteVarUnsigned(array, 11);
   wasmWriteVarUnsigned(array, initializerLength);
   int32_t i = 0;
 
@@ -10080,27 +10261,7 @@ static void WasmModule_emitDataSegments(struct WasmModule *__this, struct ByteAr
     i = i + 1;
   }
 
-  wasmFinishSection(array, section);
-}
-
-static void WasmModule_emitNames(struct WasmModule *__this, struct ByteArray *array) {
-  int32_t section = wasmStartSection(array, (const uint16_t *)__string_629_names);
-  wasmWriteVarUnsigned(array, __this->functionCount);
-  struct WasmFunction *fn = __this->firstFunction;
-
-  while (fn != NULL) {
-    const uint16_t *name = fn->symbol->name;
-
-    if (fn->symbol->kind == 4) {
-      name = StringBuilder_finish(StringBuilder_append(StringBuilder_appendChar(StringBuilder_append(StringBuilder_new(), Symbol_parent(fn->symbol)->name), 46), name));
-    }
-
-    wasmWriteLengthPrefixedASCII(array, name);
-    wasmWriteVarUnsigned(array, 0);
-    fn = fn->next;
-  }
-
-  wasmFinishSection(array, section);
+  WasmModule_finishSection(__this, array);
 }
 
 static void WasmModule_prepareToEmit(struct WasmModule *__this, struct Node *node) {
@@ -10188,20 +10349,18 @@ static void WasmModule_prepareToEmit(struct WasmModule *__this, struct Node *nod
       return;
     }
 
-    symbol->offset = __this->functionCount;
-    struct WasmFunction *fn = WasmModule_allocateFunction(__this, symbol, signatureIndex);
-
-    if (symbol->kind == 5 && string_op_equals(symbol->name, (const uint16_t *)__string_633_malloc)) {
-      assert(__this->mallocFunctionIndex == -1);
-      __this->mallocFunctionIndex = symbol->offset;
+    else {
+      symbol->offset = __this->functionCount;
     }
+
+    struct WasmFunction *fn = WasmModule_allocateFunction(__this, symbol, signatureIndex);
 
     if (Node_isExtern(node)) {
       fn->isExported = 1;
     }
 
-    wasmAssignLocalVariableOffsets(body, shared);
-    fn->intLocalCount = shared->intLocalCount;
+    wasmAssignLocalVariableOffsets(body, shared, fn);
+    fn->localCount = shared->localCount;
   }
 
   struct Node *child = node->firstChild;
@@ -10213,97 +10372,91 @@ static void WasmModule_prepareToEmit(struct WasmModule *__this, struct Node *nod
 }
 
 static void WasmModule_emitBinaryExpression(struct WasmModule *__this, struct ByteArray *array, struct Node *node, uint8_t opcode) {
-  ByteArray_append(array, opcode);
   WasmModule_emitNode(__this, array, Node_binaryLeft(node));
   WasmModule_emitNode(__this, array, Node_binaryRight(node));
+  WasmModule_emit(__this, array, opcode);
 }
 
 static void WasmModule_emitLoadFromMemory(struct WasmModule *__this, struct ByteArray *array, struct Type *type, struct Node *relativeBase, int32_t offset) {
-  int32_t sizeOf = Type_variableSizeOf(type, __this->context);
-
-  if (sizeOf == 1) {
-    ByteArray_append(array, Type_isUnsigned(type) ? 33 : 32);
-    wasmWriteVarUnsigned(array, 0);
-  }
-
-  else if (sizeOf == 2) {
-    ByteArray_append(array, Type_isUnsigned(type) ? 35 : 34);
-    wasmWriteVarUnsigned(array, 1);
-  }
-
-  else if (sizeOf == 4) {
-    ByteArray_append(array, 42);
-    wasmWriteVarUnsigned(array, 2);
-  }
-
-  else {
-    assert(0);
-  }
-
-  wasmWriteVarUnsigned(array, offset);
-
   if (relativeBase != NULL) {
     WasmModule_emitNode(__this, array, relativeBase);
   }
 
   else {
-    ByteArray_append(array, 10);
-    wasmWriteVarUnsigned(array, 0);
+    WasmModule_emit1U(__this, array, 65, 0);
+  }
+
+  int32_t sizeOf = Type_variableSizeOf(type, __this->context);
+
+  if (sizeOf == 1) {
+    WasmModule_emit2U(__this, array, Type_isUnsigned(type) ? 45 : 44, 0, offset);
+  }
+
+  else if (sizeOf == 2) {
+    WasmModule_emit2U(__this, array, Type_isUnsigned(type) ? 47 : 46, 1, offset);
+  }
+
+  else if (sizeOf == 4) {
+    WasmModule_emit2U(__this, array, 40, 2, offset);
+  }
+
+  else {
+    assert(0);
   }
 }
 
 static void WasmModule_emitStoreToMemory(struct WasmModule *__this, struct ByteArray *array, struct Type *type, struct Node *relativeBase, int32_t offset, struct Node *value) {
-  int32_t sizeOf = Type_variableSizeOf(type, __this->context);
-
-  if (sizeOf == 1) {
-    ByteArray_append(array, 46);
-    wasmWriteVarUnsigned(array, 0);
-  }
-
-  else if (sizeOf == 2) {
-    ByteArray_append(array, 47);
-    wasmWriteVarUnsigned(array, 1);
-  }
-
-  else if (sizeOf == 4) {
-    ByteArray_append(array, 51);
-    wasmWriteVarUnsigned(array, 2);
-  }
-
-  else {
-    assert(0);
-  }
-
-  wasmWriteVarUnsigned(array, offset);
-
   if (relativeBase != NULL) {
     WasmModule_emitNode(__this, array, relativeBase);
   }
 
   else {
-    ByteArray_append(array, 10);
-    wasmWriteVarUnsigned(array, 0);
+    WasmModule_emit1U(__this, array, 65, 0);
   }
 
   WasmModule_emitNode(__this, array, value);
+  int32_t sizeOf = Type_variableSizeOf(type, __this->context);
+
+  if (sizeOf == 1) {
+    WasmModule_emit2U(__this, array, 58, 0, offset);
+  }
+
+  else if (sizeOf == 2) {
+    WasmModule_emit2U(__this, array, 59, 1, offset);
+  }
+
+  else if (sizeOf == 4) {
+    WasmModule_emit2U(__this, array, 54, 2, offset);
+  }
+
+  else {
+    assert(0);
+  }
 }
 
 static int32_t WasmModule_emitNode(struct WasmModule *__this, struct ByteArray *array, struct Node *node) {
   assert(!isExpression(node) || node->resolvedType != NULL);
 
   if (node->kind == 7) {
-    ByteArray_append(array, 1);
-    int32_t offset = ByteArray_length(array);
-    wasmWriteVarUnsigned(array, -1);
-    int32_t count = 0;
     struct Node *child = node->firstChild;
 
-    while (child != NULL) {
-      count = count + WasmModule_emitNode(__this, array, child);
-      child = child->nextSibling;
+    if (wasmIsGratuitousBlock(node)) {
+      while (child != NULL) {
+        WasmModule_emitNode(__this, array, child);
+        child = child->nextSibling;
+      }
     }
 
-    wasmPatchVarUnsigned(array, offset, count, -1);
+    else {
+      WasmModule_emit1S(__this, array, 2, -64);
+
+      while (child != NULL) {
+        WasmModule_emitNode(__this, array, child);
+        child = child->nextSibling;
+      }
+
+      WasmModule_emit(__this, array, 11);
+    }
   }
 
   else if (node->kind == 20) {
@@ -10314,50 +10467,48 @@ static int32_t WasmModule_emitNode(struct WasmModule *__this, struct ByteArray *
       return 0;
     }
 
-    ByteArray_append(array, 2);
-    int32_t offset = ByteArray_length(array);
-    wasmWriteVarUnsigned(array, -1);
-    int32_t count = 0;
+    WasmModule_emit1S(__this, array, 2, -64);
+    WasmModule_emit1S(__this, array, 3, -64);
 
     if (value->kind != 22) {
-      ByteArray_append(array, 7);
-      wasmWriteVarUnsigned(array, 1);
-      ByteArray_append(array, 0);
-      ByteArray_append(array, 90);
       WasmModule_emitNode(__this, array, value);
-      count = count + 1;
+      WasmModule_emit(__this, array, 69);
+      WasmModule_emit1U(__this, array, 13, 1);
+    }
+
+    else {
+      assert(value->intValue != 0);
     }
 
     struct Node *child = body->firstChild;
 
     while (child != NULL) {
-      count = count + WasmModule_emitNode(__this, array, child);
+      WasmModule_emitNode(__this, array, child);
       child = child->nextSibling;
     }
 
-    ByteArray_append(array, 6);
-    wasmWriteVarUnsigned(array, 0);
-    ByteArray_append(array, 0);
-    count = count + 1;
-    wasmPatchVarUnsigned(array, offset, count, -1);
+    WasmModule_emit1U(__this, array, 12, 0);
+    WasmModule_emit(__this, array, 0);
+    WasmModule_emit(__this, array, 11);
+    WasmModule_emit(__this, array, 11);
   }
 
   else if (node->kind == 8 || node->kind == 11) {
     int32_t label = 0;
     struct Node *parent = node->parent;
 
-    while (parent != NULL && parent->kind != 20) {
-      if (parent->kind == 7) {
+    while (parent->kind != 20) {
+      if ((parent->kind == 7 && !wasmIsGratuitousBlock(parent)) || wasmIsImplicitBlock(parent)) {
         label = label + 1;
       }
 
       parent = parent->parent;
+      assert(parent != NULL);
     }
 
     assert(label > 0);
-    ByteArray_append(array, 6);
-    wasmWriteVarUnsigned(array, label - (node->kind == 8 ? 0 : 1));
-    ByteArray_append(array, 0);
+    WasmModule_emit1U(__this, array, 12, label - (node->kind == 8 ? 0 : 1));
+    WasmModule_emit(__this, array, 0);
   }
 
   else if (node->kind == 12) {
@@ -10370,11 +10521,12 @@ static int32_t WasmModule_emitNode(struct WasmModule *__this, struct ByteArray *
 
   else if (node->kind == 17) {
     struct Node *value = Node_returnValue(node);
-    ByteArray_append(array, 20);
 
     if (value != NULL) {
       WasmModule_emitNode(__this, array, value);
     }
+
+    WasmModule_emit(__this, array, 15);
   }
 
   else if (node->kind == 19) {
@@ -10391,38 +10543,44 @@ static int32_t WasmModule_emitNode(struct WasmModule *__this, struct ByteArray *
   }
 
   else if (node->kind == 16) {
-    struct Node *branch = Node_ifFalse(node);
-    ByteArray_append(array, branch == NULL ? 3 : 4);
+    struct Node *ifTrue = Node_ifTrue(node);
+    struct Node *ifFalse = Node_ifFalse(node);
     WasmModule_emitNode(__this, array, Node_ifValue(node));
-    WasmModule_emitNode(__this, array, Node_ifTrue(node));
+    WasmModule_emit1S(__this, array, 4, -64);
+    WasmModule_emitNode(__this, array, ifTrue);
 
-    if (branch != NULL) {
-      WasmModule_emitNode(__this, array, branch);
+    if (ifFalse != NULL) {
+      WasmModule_emit(__this, array, 5);
+      WasmModule_emitNode(__this, array, ifFalse);
     }
+
+    WasmModule_emit(__this, array, 11);
   }
 
   else if (node->kind == 26) {
-    ByteArray_append(array, 4);
+    struct Node *trueNode = Node_hookTrue(node);
+    struct Node *falseNode = Node_hookFalse(node);
     WasmModule_emitNode(__this, array, Node_hookValue(node));
-    WasmModule_emitNode(__this, array, Node_hookTrue(node));
+    WasmModule_emit1S(__this, array, 4, (int32_t)WasmModule_getWasmType(__this, trueNode->resolvedType));
+    WasmModule_emitNode(__this, array, trueNode);
+    WasmModule_emit(__this, array, 5);
     WasmModule_emitNode(__this, array, Node_hookFalse(node));
+    WasmModule_emit(__this, array, 11);
   }
 
   else if (node->kind == 6) {
     struct Node *value = Node_variableValue(node);
 
     if (node->symbol->kind == 10) {
-      ByteArray_append(array, 15);
-      wasmWriteVarUnsigned(array, node->symbol->offset);
-
       if (value != NULL) {
         WasmModule_emitNode(__this, array, value);
       }
 
       else {
-        ByteArray_append(array, 10);
-        wasmWriteVarSigned(array, 0);
+        WasmModule_emit1U(__this, array, 65, 0);
       }
+
+      WasmModule_emit1U(__this, array, 33, node->symbol->offset);
     }
 
     else {
@@ -10434,12 +10592,11 @@ static int32_t WasmModule_emitNode(struct WasmModule *__this, struct ByteArray *
     struct Symbol *symbol = node->symbol;
 
     if (symbol->kind == 6 || symbol->kind == 10) {
-      ByteArray_append(array, 14);
-      wasmWriteVarUnsigned(array, symbol->offset);
+      WasmModule_emit1U(__this, array, 32, symbol->offset);
     }
 
     else if (symbol->kind == 8) {
-      WasmModule_emitLoadFromMemory(__this, array, symbol->resolvedType, NULL, symbol->offset + 8);
+      WasmModule_emitLoadFromMemory(__this, array, symbol->resolvedType, NULL, symbol->offset + 4);
     }
 
     else {
@@ -10452,28 +10609,26 @@ static int32_t WasmModule_emitNode(struct WasmModule *__this, struct ByteArray *
   }
 
   else if (node->kind == 31) {
-    ByteArray_append(array, 10);
-    wasmWriteVarSigned(array, 0);
+    WasmModule_emit1S(__this, array, 65, 0);
   }
 
   else if (node->kind == 28 || node->kind == 22) {
-    ByteArray_append(array, 10);
-    wasmWriteVarSigned(array, node->intValue);
+    WasmModule_emit1S(__this, array, 65, node->intValue);
   }
 
   else if (node->kind == 34) {
-    ByteArray_append(array, 10);
-    wasmWriteVarSigned(array, node->intValue + 8);
+    WasmModule_emit1S(__this, array, 65, node->intValue + 4);
   }
 
   else if (node->kind == 23) {
     struct Node *value = Node_callValue(node);
     struct Symbol *symbol = value->symbol;
     assert(isFunction(symbol->kind));
-    ByteArray_append(array, Node_functionBody(symbol->node) == NULL ? 31 : 18);
-    wasmWriteVarUnsigned(array, symbol->offset);
+    struct Node *returnType = Node_functionReturnType(symbol->node);
+    assert(returnType->resolvedType != NULL);
 
     if (symbol->kind == 4) {
+      WasmModule_emit(__this, array, 1);
       WasmModule_emitNode(__this, array, Node_dotTarget(value));
     }
 
@@ -10483,16 +10638,20 @@ static int32_t WasmModule_emitNode(struct WasmModule *__this, struct ByteArray *
       WasmModule_emitNode(__this, array, child);
       child = child->nextSibling;
     }
+
+    WasmModule_emit1U(__this, array, 16, WasmModule_getFunctionCallIndex(__this, symbol));
+
+    if (node->parent->kind == 14 && returnType->resolvedType != __this->context->voidType) {
+      WasmModule_emit(__this, array, 26);
+    }
   }
 
   else if (node->kind == 30) {
-    struct Node *type = Node_newType(node);
-    int32_t size = Type_allocationSizeOf(type->resolvedType, __this->context);
-    ByteArray_append(array, 18);
-    wasmWriteVarUnsigned(array, __this->mallocFunctionIndex);
+    struct Node *newType = Node_newType(node);
+    int32_t size = Type_allocationSizeOf(newType->resolvedType, __this->context);
     assert(size > 0);
-    ByteArray_append(array, 10);
-    wasmWriteVarSigned(array, size);
+    WasmModule_emit1S(__this, array, 65, size);
+    WasmModule_emit1U(__this, array, 16, WasmModule_getFunctionCallIndex(__this, __this->mallocFunction->symbol));
   }
 
   else if (node->kind == 43) {
@@ -10500,22 +10659,20 @@ static int32_t WasmModule_emitNode(struct WasmModule *__this, struct ByteArray *
   }
 
   else if (node->kind == 40) {
-    ByteArray_append(array, 65);
-    ByteArray_append(array, 10);
-    wasmWriteVarSigned(array, 0);
+    WasmModule_emit1S(__this, array, 65, 0);
     WasmModule_emitNode(__this, array, Node_unaryValue(node));
+    WasmModule_emit(__this, array, 107);
   }
 
   else if (node->kind == 38) {
-    ByteArray_append(array, 73);
-    ByteArray_append(array, 10);
-    wasmWriteVarSigned(array, -1);
+    WasmModule_emit1S(__this, array, 65, -1);
     WasmModule_emitNode(__this, array, Node_unaryValue(node));
+    WasmModule_emit(__this, array, 115);
   }
 
   else if (node->kind == 41) {
-    ByteArray_append(array, 90);
     WasmModule_emitNode(__this, array, Node_unaryValue(node));
+    WasmModule_emit(__this, array, 69);
   }
 
   else if (node->kind == 24) {
@@ -10532,20 +10689,17 @@ static int32_t WasmModule_emitNode(struct WasmModule *__this, struct ByteArray *
 
     else if (type == context->sbyteType || type == context->shortType) {
       int32_t shift = 32 - (typeSize << 3);
-      ByteArray_append(array, 76);
-      ByteArray_append(array, 74);
       WasmModule_emitNode(__this, array, value);
-      ByteArray_append(array, 10);
-      wasmWriteVarSigned(array, shift);
-      ByteArray_append(array, 10);
-      wasmWriteVarSigned(array, shift);
+      WasmModule_emit1S(__this, array, 65, shift);
+      WasmModule_emit(__this, array, 117);
+      WasmModule_emit1S(__this, array, 65, shift);
+      WasmModule_emit(__this, array, 116);
     }
 
     else if (type == context->byteType || type == context->ushortType) {
-      ByteArray_append(array, 71);
       WasmModule_emitNode(__this, array, value);
-      ByteArray_append(array, 10);
-      wasmWriteVarSigned(array, (int32_t)Type_integerBitMask(type, __this->context));
+      WasmModule_emit1S(__this, array, 65, (int32_t)Type_integerBitMask(type, __this->context));
+      WasmModule_emit(__this, array, 113);
     }
 
     else {
@@ -10569,6 +10723,7 @@ static int32_t WasmModule_emitNode(struct WasmModule *__this, struct ByteArray *
     struct Node *left = Node_binaryLeft(node);
     struct Node *right = Node_binaryRight(node);
     struct Symbol *symbol = left->symbol;
+    assert(node->parent->kind == 14);
 
     if (left->kind == 39) {
       WasmModule_emitStoreToMemory(__this, array, Type_underlyingType(left->resolvedType, __this->context), Node_unaryValue(left), 0, right);
@@ -10579,13 +10734,12 @@ static int32_t WasmModule_emitNode(struct WasmModule *__this, struct ByteArray *
     }
 
     else if (symbol->kind == 8) {
-      WasmModule_emitStoreToMemory(__this, array, symbol->resolvedType, NULL, symbol->offset + 8, right);
+      WasmModule_emitStoreToMemory(__this, array, symbol->resolvedType, NULL, symbol->offset + 4, right);
     }
 
     else if (symbol->kind == 6 || symbol->kind == 10) {
-      ByteArray_append(array, 15);
-      wasmWriteVarUnsigned(array, symbol->offset);
       WasmModule_emitNode(__this, array, right);
+      WasmModule_emit1U(__this, array, 33, symbol->offset);
     }
 
     else {
@@ -10594,19 +10748,21 @@ static int32_t WasmModule_emitNode(struct WasmModule *__this, struct ByteArray *
   }
 
   else if (node->kind == 60) {
-    ByteArray_append(array, 4);
     WasmModule_emitNode(__this, array, Node_binaryLeft(node));
+    WasmModule_emit1S(__this, array, 4, -1);
     WasmModule_emitNode(__this, array, Node_binaryRight(node));
-    ByteArray_append(array, 10);
-    wasmWriteVarSigned(array, 0);
+    WasmModule_emit(__this, array, 5);
+    WasmModule_emit1S(__this, array, 65, 0);
+    WasmModule_emit(__this, array, 11);
   }
 
   else if (node->kind == 61) {
-    ByteArray_append(array, 4);
     WasmModule_emitNode(__this, array, Node_binaryLeft(node));
-    ByteArray_append(array, 10);
-    wasmWriteVarSigned(array, 1);
+    WasmModule_emit1S(__this, array, 4, -1);
+    WasmModule_emit1S(__this, array, 65, 1);
+    WasmModule_emit(__this, array, 5);
     WasmModule_emitNode(__this, array, Node_binaryRight(node));
+    WasmModule_emit(__this, array, 11);
   }
 
   else {
@@ -10615,7 +10771,6 @@ static int32_t WasmModule_emitNode(struct WasmModule *__this, struct ByteArray *
     if (node->kind == 48) {
       struct Node *left = Node_binaryLeft(node);
       struct Node *right = Node_binaryRight(node);
-      ByteArray_append(array, 64);
       WasmModule_emitNode(__this, array, left);
 
       if (left->resolvedType->pointerTo == NULL) {
@@ -10628,29 +10783,25 @@ static int32_t WasmModule_emitNode(struct WasmModule *__this, struct ByteArray *
 
         if (size == 2) {
           if (right->kind == 28) {
-            ByteArray_append(array, 10);
-            wasmWriteVarSigned(array, right->intValue << 1);
+            WasmModule_emit1S(__this, array, 65, right->intValue << 1);
           }
 
           else {
-            ByteArray_append(array, 74);
             WasmModule_emitNode(__this, array, right);
-            ByteArray_append(array, 10);
-            wasmWriteVarSigned(array, 1);
+            WasmModule_emit1S(__this, array, 65, 1);
+            WasmModule_emit(__this, array, 116);
           }
         }
 
         else if (size == 4) {
           if (right->kind == 28) {
-            ByteArray_append(array, 10);
-            wasmWriteVarSigned(array, right->intValue << 2);
+            WasmModule_emit1S(__this, array, 65, right->intValue << 2);
           }
 
           else {
-            ByteArray_append(array, 74);
             WasmModule_emitNode(__this, array, right);
-            ByteArray_append(array, 10);
-            wasmWriteVarSigned(array, 2);
+            WasmModule_emit1S(__this, array, 65, 2);
+            WasmModule_emit(__this, array, 116);
           }
         }
 
@@ -10658,66 +10809,68 @@ static int32_t WasmModule_emitNode(struct WasmModule *__this, struct ByteArray *
           WasmModule_emitNode(__this, array, right);
         }
       }
+
+      WasmModule_emit(__this, array, 106);
     }
 
     else if (node->kind == 50) {
-      WasmModule_emitBinaryExpression(__this, array, node, 71);
+      WasmModule_emitBinaryExpression(__this, array, node, 113);
     }
 
     else if (node->kind == 51) {
-      WasmModule_emitBinaryExpression(__this, array, node, 72);
+      WasmModule_emitBinaryExpression(__this, array, node, 114);
     }
 
     else if (node->kind == 52) {
-      WasmModule_emitBinaryExpression(__this, array, node, 73);
+      WasmModule_emitBinaryExpression(__this, array, node, 115);
     }
 
     else if (node->kind == 54) {
-      WasmModule_emitBinaryExpression(__this, array, node, 77);
+      WasmModule_emitBinaryExpression(__this, array, node, 70);
     }
 
     else if (node->kind == 62) {
-      WasmModule_emitBinaryExpression(__this, array, node, 66);
+      WasmModule_emitBinaryExpression(__this, array, node, 108);
     }
 
     else if (node->kind == 63) {
-      WasmModule_emitBinaryExpression(__this, array, node, 78);
+      WasmModule_emitBinaryExpression(__this, array, node, 71);
     }
 
     else if (node->kind == 65) {
-      WasmModule_emitBinaryExpression(__this, array, node, 74);
+      WasmModule_emitBinaryExpression(__this, array, node, 116);
     }
 
     else if (node->kind == 67) {
-      WasmModule_emitBinaryExpression(__this, array, node, 65);
+      WasmModule_emitBinaryExpression(__this, array, node, 107);
     }
 
     else if (node->kind == 53) {
-      WasmModule_emitBinaryExpression(__this, array, node, isUnsigned ? 68 : 67);
+      WasmModule_emitBinaryExpression(__this, array, node, isUnsigned ? 110 : 109);
     }
 
     else if (node->kind == 56) {
-      WasmModule_emitBinaryExpression(__this, array, node, isUnsigned ? 85 : 83);
+      WasmModule_emitBinaryExpression(__this, array, node, isUnsigned ? 75 : 74);
     }
 
     else if (node->kind == 57) {
-      WasmModule_emitBinaryExpression(__this, array, node, isUnsigned ? 86 : 84);
+      WasmModule_emitBinaryExpression(__this, array, node, isUnsigned ? 79 : 78);
     }
 
     else if (node->kind == 58) {
-      WasmModule_emitBinaryExpression(__this, array, node, isUnsigned ? 81 : 79);
+      WasmModule_emitBinaryExpression(__this, array, node, isUnsigned ? 73 : 72);
     }
 
     else if (node->kind == 59) {
-      WasmModule_emitBinaryExpression(__this, array, node, isUnsigned ? 82 : 80);
+      WasmModule_emitBinaryExpression(__this, array, node, isUnsigned ? 77 : 76);
     }
 
     else if (node->kind == 64) {
-      WasmModule_emitBinaryExpression(__this, array, node, isUnsigned ? 70 : 69);
+      WasmModule_emitBinaryExpression(__this, array, node, isUnsigned ? 112 : 111);
     }
 
     else if (node->kind == 66) {
-      WasmModule_emitBinaryExpression(__this, array, node, isUnsigned ? 75 : 76);
+      WasmModule_emitBinaryExpression(__this, array, node, isUnsigned ? 118 : 117);
     }
 
     else {
@@ -10728,11 +10881,31 @@ static int32_t WasmModule_emitNode(struct WasmModule *__this, struct ByteArray *
   return 1;
 }
 
+static void WasmModule_emit(struct WasmModule *__this, struct ByteArray *array, int32_t code) {
+  wasmWriteVarUnsigned(array, code);
+}
+
+static void WasmModule_emit1U(struct WasmModule *__this, struct ByteArray *array, int32_t code, int32_t imm) {
+  wasmWriteVarUnsigned(array, code);
+  wasmWriteVarUnsigned(array, imm);
+}
+
+static void WasmModule_emit1S(struct WasmModule *__this, struct ByteArray *array, int32_t code, int32_t imm) {
+  wasmWriteVarUnsigned(array, code);
+  wasmWriteVarSigned(array, imm);
+}
+
+static void WasmModule_emit2U(struct WasmModule *__this, struct ByteArray *array, int32_t code, int32_t imm1, int32_t imm2) {
+  wasmWriteVarUnsigned(array, code);
+  wasmWriteVarUnsigned(array, imm1);
+  wasmWriteVarUnsigned(array, imm2);
+}
+
 static int32_t WasmModule_getWasmType(struct WasmModule *__this, struct Type *type) {
   struct CheckContext *context = __this->context;
 
   if (type == context->boolType || Type_isInteger(type) || Type_isReference(type)) {
-    return 1;
+    return -1;
   }
 
   if (type == context->voidType) {
@@ -10742,6 +10915,40 @@ static int32_t WasmModule_getWasmType(struct WasmModule *__this, struct Type *ty
   assert(0);
 
   return 0;
+}
+
+static int32_t WasmModule_getFunctionCallIndex(struct WasmModule *__this, struct Symbol *symbol) {
+  assert(symbol->kind == 5 || symbol->kind == 4);
+
+  return Node_functionBody(symbol->node) == NULL ? symbol->offset : __this->importCount + symbol->offset;
+}
+
+static uint8_t wasmAreSignaturesEqual(struct WasmSignature *a, struct WasmSignature *b) {
+  assert(a->returnType != NULL);
+  assert(b->returnType != NULL);
+  assert(a->returnType->next == NULL);
+  assert(b->returnType->next == NULL);
+  struct WasmWrappedType *x = a->argumentTypes;
+  struct WasmWrappedType *y = b->argumentTypes;
+
+  while (x != NULL && y != NULL) {
+    if (x->id != y->id) {
+      return 0;
+    }
+
+    x = x->next;
+    y = y->next;
+  }
+
+  if (x != NULL || y != NULL) {
+    return 0;
+  }
+
+  if (a->returnType->id != b->returnType->id) {
+    return 0;
+  }
+
+  return 1;
 }
 
 static void wasmPatchVarUnsigned(struct ByteArray *array, int32_t offset, int32_t value, int32_t maxValue) {
@@ -10803,66 +11010,193 @@ static void wasmWriteVarSigned(struct ByteArray *array, int32_t value) {
   }
 }
 
-static void wasmWriteLengthPrefixedASCII(struct ByteArray *array, const uint16_t *value) {
+static void wasmWriteLengthPrefixedUTF8(struct ByteArray *array, const uint16_t *value) {
+  int32_t stringLengthOffset = ByteArray_length(array);
+  wasmWriteVarUnsigned(array, -1);
+  int32_t stringPayloadOffset = ByteArray_length(array);
   int32_t length = string_length(value);
-  wasmWriteVarUnsigned(array, length);
-  int32_t index = ByteArray_length(array);
-  ByteArray_resize(array, index + length);
   int32_t i = 0;
+  uint32_t c1 = 0;
+  uint32_t c2 = 0;
 
   while (i < length) {
-    ByteArray_set(array, index + i, (uint8_t)string_op_get(value, i));
+    c1 = string_op_get(value, i);
+
+    if (c1 < 128) {
+      ByteArray_append(array, (uint8_t)c1);
+    }
+
+    else if (c1 < 2048) {
+      ByteArray_append(array, (uint8_t)(c1 >> 6 | 192));
+      ByteArray_append(array, (uint8_t)((c1 & 63) | 128));
+    }
+
+    else if ((c1 & 64512) != 55296) {
+      ByteArray_append(array, (uint8_t)(c1 >> 12 | 224));
+      ByteArray_append(array, (uint8_t)((c1 >> 6 & 63) | 128));
+      ByteArray_append(array, (uint8_t)((c1 & 63) | 128));
+    }
+
+    else {
+      c2 = string_op_get(value, i + 1);
+
+      if ((c2 & 64512) == 56320) {
+        c1 = ((c1 & 1023) << 10) + 65536 + (c2 & 1023);
+        i = i + 1;
+        ByteArray_append(array, (uint8_t)(c1 >> 18 | 240));
+        ByteArray_append(array, (uint8_t)((c1 >> 12 & 63) | 128));
+        ByteArray_append(array, (uint8_t)((c1 >> 6 & 63) | 128));
+        ByteArray_append(array, (uint8_t)((c1 & 63) | 128));
+      }
+
+      else {
+        assert(0);
+      }
+    }
+
     i = i + 1;
   }
-}
 
-static int32_t wasmStartSection(struct ByteArray *array, const uint16_t *name) {
-  int32_t offset = ByteArray_length(array);
-  wasmWriteVarUnsigned(array, -1);
-  wasmWriteLengthPrefixedASCII(array, name);
-
-  return offset;
-}
-
-static void wasmFinishSection(struct ByteArray *array, int32_t offset) {
-  wasmPatchVarUnsigned(array, offset, ByteArray_length(array) - offset - 5, -1);
+  wasmPatchVarUnsigned(array, stringLengthOffset, ByteArray_length(array) - stringPayloadOffset, -1);
 }
 
 static struct WasmWrappedType *wasmWrapType(int32_t id) {
-  assert(id == 0 || id == 1);
+  assert(id == 0 || id == -1);
   struct WasmWrappedType *type = calloc(1, sizeof(struct WasmWrappedType));
   type->id = id;
 
   return type;
 }
 
-static void wasmAssignLocalVariableOffsets(struct Node *node, struct WasmSharedOffset *shared) {
+static uint8_t wasmIsGratuitousBlock(struct Node *node) {
+  return node->kind == 7 && Node_childCount(node) == 1;
+}
+
+static uint8_t wasmIsImplicitBlock(struct Node *node) {
+  return node->kind == 16;
+}
+
+static void wasmAssignLocalVariableOffsets(struct Node *node, struct WasmSharedOffset *shared, struct WasmFunction *fn) {
   if (node->kind == 6) {
     assert(node->symbol->kind == 10);
     node->symbol->offset = shared->nextLocalOffset;
     shared->nextLocalOffset = shared->nextLocalOffset + 1;
-    shared->intLocalCount = shared->intLocalCount + 1;
+    shared->localCount = shared->localCount + 1;
+    struct WasmLocal *local = calloc(1, sizeof(struct WasmLocal));
+    local->symbol = node->symbol;
+
+    if (fn->firstLocal == NULL) {
+      fn->firstLocal = local;
+    }
+
+    else {
+      fn->lastLocal->next = local;
+    }
+
+    fn->lastLocal = local;
   }
 
   struct Node *child = node->firstChild;
 
   while (child != NULL) {
-    wasmAssignLocalVariableOffsets(child, shared);
+    wasmAssignLocalVariableOffsets(child, shared, fn);
     child = child->nextSibling;
   }
 }
 
 static void wasmEmit(struct Compiler *compiler) {
   struct WasmModule *module = calloc(1, sizeof(struct WasmModule));
+  module->compiler = compiler;
   module->context = compiler->context;
   module->memoryInitializer = calloc(1, sizeof(struct ByteArray));
-  module->mallocFunctionIndex = -1;
+  assert(ByteArray_length(module->memoryInitializer) == 0);
   module->currentHeapPointer = -1;
   module->originalHeapPointer = -1;
   WasmModule_prepareToEmit(module, compiler->global);
-  assert(module->mallocFunctionIndex != -1);
   assert(module->currentHeapPointer != -1);
   assert(module->originalHeapPointer != -1);
+  assert(module->mallocFunction != NULL);
+  assert(module->freeFunction != NULL);
   compiler->outputWASM = calloc(1, sizeof(struct ByteArray));
   WasmModule_emitModule(module, compiler->outputWASM);
+}
+
+static uint8_t Type_isClass(struct Type *__this) {
+  return __this->symbol != NULL && __this->symbol->kind == 0;
+}
+
+static uint8_t Type_isEnum(struct Type *__this) {
+  return __this->symbol != NULL && __this->symbol->kind == 1;
+}
+
+static uint8_t Type_isInteger(struct Type *__this) {
+  return (__this->symbol != NULL && (__this->symbol->flags & 32) != 0) || Type_isEnum(__this);
+}
+
+static uint8_t Type_isUnsigned(struct Type *__this) {
+  return __this->symbol != NULL && (__this->symbol->flags & 16) != 0;
+}
+
+static uint8_t Type_isReference(struct Type *__this) {
+  return __this->pointerTo != NULL || (__this->symbol != NULL && (__this->symbol->flags & 4) != 0);
+}
+
+static struct Type *Type_underlyingType(struct Type *__this, struct CheckContext *context) {
+  return Type_isEnum(__this) ? context->intType : __this->pointerTo != NULL ? context->uintType : __this;
+}
+
+static int32_t Type_integerBitCount(struct Type *__this, struct CheckContext *context) {
+  return __this->symbol != NULL ? __this->symbol->byteSize << 3 : 0;
+}
+
+static uint32_t Type_integerBitMask(struct Type *__this, struct CheckContext *context) {
+  return 4294967295 >> (uint32_t)(32 - Type_integerBitCount(__this, context));
+}
+
+static int32_t Type_allocationSizeOf(struct Type *__this, struct CheckContext *context) {
+  return __this->symbol == NULL ? context->pointerByteSize : __this->symbol->byteSize;
+}
+
+static int32_t Type_allocationAlignmentOf(struct Type *__this, struct CheckContext *context) {
+  return Type_allocationSizeOf(__this, context);
+}
+
+static int32_t Type_variableSizeOf(struct Type *__this, struct CheckContext *context) {
+  return Type_isReference(__this) ? context->pointerByteSize : __this->symbol->byteSize;
+}
+
+static int32_t Type_variableAlignmentOf(struct Type *__this, struct CheckContext *context) {
+  return Type_variableSizeOf(__this, context);
+}
+
+static struct Type *Type_pointerType(struct Type *__this) {
+  struct Type *type = __this->cachedPointerType;
+
+  if (type == NULL) {
+    type = calloc(1, sizeof(struct Type));
+    type->pointerTo = __this;
+    __this->cachedPointerType = type;
+  }
+
+  return type;
+}
+
+static const uint16_t *Type_toString(struct Type *__this) {
+  if (string_op_equals(__this->cachedToString, NULL)) {
+    __this->cachedToString = __this->pointerTo != NULL ? StringBuilder_finish(StringBuilder_append(StringBuilder_appendChar(StringBuilder_new(), 42), Type_toString(__this->pointerTo))) : __this->symbol->name;
+  }
+
+  return __this->cachedToString;
+}
+
+static struct Symbol *Type_findMember(struct Type *__this, const uint16_t *name, int32_t hint) {
+  struct Symbol *symbol = __this->symbol;
+
+  return symbol != NULL && symbol->scope != NULL ? Scope_findLocal(symbol->scope, name, hint) : NULL;
+}
+
+static uint8_t Type_hasInstanceMembers(struct Type *__this) {
+  struct Symbol *symbol = __this->symbol;
+
+  return symbol != NULL && (symbol->kind == 0 || symbol->kind == 3);
 }

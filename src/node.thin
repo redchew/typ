@@ -105,10 +105,11 @@ function isExpression(node: Node): bool {
 }
 
 function isCompactNodeKind(kind: NodeKind): bool {
-  return
+  return (
     kind == NodeKind.CONSTANTS ||
     kind == NodeKind.EXPRESSION ||
-    kind == NodeKind.VARIABLES;
+    kind == NodeKind.VARIABLES
+  );
 }
 
 const NODE_FLAG_DECLARE = 1 << 0;
@@ -421,6 +422,17 @@ class Node {
       child = child.nextSibling;
     }
     return child;
+  }
+
+  functionArgumentCount(): int {
+    var count = 0;
+    var argument = this.functionFirstArgument();
+    var returnType = this.functionReturnType();
+    while (argument != null && argument != returnType) {
+      count = count + 1;
+      argument = argument.nextSibling;
+    }
+    return count;
   }
 
   functionFirstArgumentIgnoringThis(): Node {

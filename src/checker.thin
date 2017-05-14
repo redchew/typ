@@ -693,10 +693,11 @@ function binaryHasUnsignedArguments(node: Node): bool {
   var leftType = left.resolvedType;
   var rightType = right.resolvedType;
 
-  return
+  return (
     leftType.isUnsigned() && rightType.isUnsigned() ||
     leftType.isUnsigned() && right.isNonNegativeInteger() ||
-    left.isNonNegativeInteger() && rightType.isUnsigned();
+    left.isNonNegativeInteger() && rightType.isUnsigned()
+  );
 }
 
 function isSymbolAccessAllowed(context: CheckContext, symbol: Symbol, node: Node, range: Range): bool {
@@ -741,7 +742,6 @@ function isSymbolAccessAllowed(context: CheckContext, symbol: Symbol, node: Node
 
     return false;
   }
-
   return true;
 }
 
@@ -896,22 +896,22 @@ function resolve(context: CheckContext, node: Node, parentScope: Scope): void {
   }
 
   else if (kind == NodeKind.ALIGN_OF) {
-    var type = node.alignOfType();
-    resolveAsType(context, type, parentScope);
+    var alignOfType = node.alignOfType();
+    resolveAsType(context, alignOfType, parentScope);
     node.resolvedType = context.intType;
 
-    if (type.resolvedType != context.errorType) {
-      node.becomeIntegerConstant(type.resolvedType.allocationAlignmentOf(context));
+    if (alignOfType.resolvedType != context.errorType) {
+      node.becomeIntegerConstant(alignOfType.resolvedType.allocationAlignmentOf(context));
     }
   }
 
   else if (kind == NodeKind.SIZE_OF) {
-    var type = node.sizeOfType();
-    resolveAsType(context, type, parentScope);
+    var sizeOfType = node.sizeOfType();
+    resolveAsType(context, sizeOfType, parentScope);
     node.resolvedType = context.intType;
 
-    if (type.resolvedType != context.errorType) {
-      node.becomeIntegerConstant(type.resolvedType.allocationSizeOf(context));
+    if (sizeOfType.resolvedType != context.errorType) {
+      node.becomeIntegerConstant(sizeOfType.resolvedType.allocationSizeOf(context));
     }
   }
 
@@ -979,20 +979,20 @@ function resolve(context: CheckContext, node: Node, parentScope: Scope): void {
   }
 
   else if (kind == NodeKind.CAST) {
-    var value = node.castValue();
-    var type = node.castType();
-    resolveAsExpression(context, value, parentScope);
-    resolveAsType(context, type, parentScope);
-    var castedType = type.resolvedType;
-    checkConversion(context, value, castedType, ConversionKind.EXPLICIT);
+    var castValue = node.castValue();
+    var castType = node.castType();
+    resolveAsExpression(context, castValue, parentScope);
+    resolveAsType(context, castType, parentScope);
+    var castedType = castType.resolvedType;
+    checkConversion(context, castValue, castedType, ConversionKind.EXPLICIT);
     node.resolvedType = castedType;
 
     // Automatically fold constants
-    if (value.kind == NodeKind.INT && castedType.isInteger()) {
-      var result = value.intValue;
+    if (castValue.kind == NodeKind.INT && castedType.isInteger()) {
+      var result = castValue.intValue;
       var shift = 32 - castedType.integerBitCount(context);
       node.becomeIntegerConstant(castedType.isUnsigned()
-        ? castedType.integerBitMask(context) as int & result
+        ? (castedType.integerBitMask(context) as int) & result
         : result << shift >> shift);
     }
   }
@@ -1072,11 +1072,11 @@ function resolve(context: CheckContext, node: Node, parentScope: Scope): void {
         initializeSymbol(context, symbol);
 
         if (symbol.shouldConvertInstanceToGlobal()) {
-          var name = createSymbolReference(symbol);
-          node.insertChildBefore(value, name.withRange(value.internalRange));
+          var reference = createSymbolReference(symbol);
+          node.insertChildBefore(value, reference.withRange(value.internalRange));
           node.insertChildBefore(value, value.dotTarget().remove());
           value.remove();
-          value = name;
+          value = reference;
         }
 
         var returnType = symbol.node.functionReturnType();
@@ -1270,25 +1270,25 @@ function resolve(context: CheckContext, node: Node, parentScope: Scope): void {
   }
 
   else if (kind == NodeKind.NEW) {
-    var type = node.newType();
-    resolveAsType(context, type, parentScope);
+    var newType = node.newType();
+    resolveAsType(context, newType, parentScope);
 
-    if (type.resolvedType != context.errorType) {
-      if (!type.resolvedType.isClass()) {
-        context.log.error(type.range, StringBuilder_new()
+    if (newType.resolvedType != context.errorType) {
+      if (!newType.resolvedType.isClass()) {
+        context.log.error(newType.range, StringBuilder_new()
           .append("Cannot construct type '")
-          .append(type.resolvedType.toString())
+          .append(newType.resolvedType.toString())
           .appendChar('\'')
           .finish());
       }
 
       else {
-        node.resolvedType = type.resolvedType;
+        node.resolvedType = newType.resolvedType;
       }
     }
 
     // TODO: Constructors
-    if (type.nextSibling != null) {
+    if (newType.nextSibling != null) {
       context.log.error(node.internalRange, "Constructors with arguments are not supported yet");
     }
   }

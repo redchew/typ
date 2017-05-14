@@ -213,10 +213,11 @@ function tokenToString(token: TokenKind): string {
 }
 
 function isAlpha(c: ushort): bool {
-  return
+  return (
     c >= 'a' && c <= 'z' ||
     c >= 'A' && c <= 'Z' ||
-    c == '_';
+    c == '_'
+  );
 }
 
 function isASCII(c: ushort): bool {

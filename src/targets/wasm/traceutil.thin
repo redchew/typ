@@ -1,0 +1,317 @@
+#if WASM_TRACE
+
+function wasmTrace(sb: StringBuilder): void {
+  Terminal_write(sb.append("\n").finish());
+}
+
+function wasmToHexString(value: int, length: int): string {
+  var sb = StringBuilder_new();
+  _wasmToHexStringReverse(sb, value as uint, 1, length as uint);
+  return sb.finish();
+}
+
+function _wasmToHexStringReverse(sb: StringBuilder, value: uint, i: uint, k: uint): void {
+  if (i < k) {
+    _wasmToHexStringReverse(sb, value / 0x10, i + 1, k);
+  }
+  var rem = value % 0x10;
+  sb.appendChar((rem < 10 ? '0' + rem : '7' + rem) as ushort);
+}
+
+function wasmIndent(level: int): string {
+  assert(level >= 0);
+  var sb = StringBuilder_new();
+  while (level > 0) {
+    sb.append("  ");
+    level = level - 1;
+  }
+  return sb.finish();
+}
+
+function wasmFunctionToString(module: WasmModule, fn: WasmFunction): string {
+  var sb = StringBuilder_new();
+  if (fn.symbol.kind == SymbolKind.FUNCTION_INSTANCE) {
+    sb.append(fn.symbol.parent().name);
+    sb.append(".");
+  }
+  sb.append(fn.symbol.name);
+  sb.append("(");
+  var firstArg = fn.symbol.node.functionFirstArgumentIgnoringThis();
+  var arg = firstArg;
+  var ret = fn.symbol.node.functionReturnType();
+  while (arg != ret) {
+    if (arg != firstArg) {
+      sb.append(", ");
+    }
+    sb.append(arg.symbol.name);
+    sb.append(": ")
+      .append(wasmTypeToString(module.getWasmType(arg.symbol.resolvedType)));
+    arg = arg.nextSibling;
+  }
+  return sb.append("): ")
+    .append(ret.resolvedType == null ? "void" : wasmTypeToString(module.getWasmType(ret.resolvedType)))
+    .finish();
+}
+
+function wasmOpcodeToString(code: int): string {
+  return (
+
+    // Control flow operators
+    code == WASM_OPCODE_UNREACHABLE ? "unreachable" :
+    code == WASM_OPCODE_NOP ? "nop" :
+    code == WASM_OPCODE_BLOCK ? "block" :
+    code == WASM_OPCODE_LOOP ? "loop" :
+    code == WASM_OPCODE_IF ? "if" :
+    code == WASM_OPCODE_ELSE ? "else" :
+    code == WASM_OPCODE_END ? "end" :
+    code == WASM_OPCODE_BR ? "br" :
+    code == WASM_OPCODE_BR_IF ? "br_if" :
+    code == WASM_OPCODE_BR_TABLE ? "br_table" :
+    code == WASM_OPCODE_RETURN ? "return" :
+
+    // Call operators
+    code == WASM_OPCODE_CALL ? "call" :
+    code == WASM_OPCODE_CALL_INDIRECT ? "call_indirect" :
+
+    // Parametric operators
+    code == WASM_OPCODE_DROP ? "drop" :
+    code == WASM_OPCODE_SELECT ? "select" :
+
+    // Variable access
+    code == WASM_OPCODE_GET_LOCAL ? "get_local" :
+    code == WASM_OPCODE_SET_LOCAL ? "set_local" :
+    code == WASM_OPCODE_TEE_LOCAL ? "tee_local" :
+    code == WASM_OPCODE_GET_GLOBAL ? "get_global" :
+    code == WASM_OPCODE_SET_GLOBAL ? "set_global" :
+
+    // Memory-related operators
+    code == WASM_OPCODE_I32_LOAD ? "i32.load" :
+    code == WASM_OPCODE_I64_LOAD ? "i64.load" :
+    code == WASM_OPCODE_F32_LOAD ? "f32.load" :
+    code == WASM_OPCODE_F64_LOAD ? "f64.load" :
+
+    code == WASM_OPCODE_I32_LOAD8_S ? "i32.load8_s" :
+    code == WASM_OPCODE_I32_LOAD8_U ? "i32.load8_u" :
+    code == WASM_OPCODE_I32_LOAD16_S ? "i32.load16_s" :
+    code == WASM_OPCODE_I32_LOAD16_U ? "i32.load16_u" :
+
+    code == WASM_OPCODE_I64_LOAD8_S ? "i64.load8_s" :
+    code == WASM_OPCODE_I64_LOAD8_U ? "i64.load8_u" :
+    code == WASM_OPCODE_I64_LOAD16_S ? "i64.load16_s" :
+    code == WASM_OPCODE_I64_LOAD16_U ? "i64.load16_u" :
+    code == WASM_OPCODE_I64_LOAD32_S ? "i64.load32_s" :
+    code == WASM_OPCODE_I64_LOAD32_U ? "i64.load32_u" :
+
+    code == WASM_OPCODE_I32_STORE ? "i32.store" :
+    code == WASM_OPCODE_I64_STORE ? "i64.store" :
+    code == WASM_OPCODE_F32_STORE ? "f32.store" :
+    code == WASM_OPCODE_F64_STORE ? "f64.store" :
+
+    code == WASM_OPCODE_I32_STORE8 ? "i32.store8" :
+    code == WASM_OPCODE_I32_STORE16 ? "i32.store16" :
+    code == WASM_OPCODE_I64_STORE8 ? "i64.store8" :
+    code == WASM_OPCODE_I64_STORE16 ? "i64.store16" :
+    code == WASM_OPCODE_I64_STORE32 ? "i64.store32" :
+
+    code == WASM_OPCODE_CURRENT_MEMORY ? "current_memory" :
+    code == WASM_OPCODE_GROW_MEMORY ? "grow_memory" :
+
+    // Constants
+    code == WASM_OPCODE_I32_CONST ? "i32.const" :
+    code == WASM_OPCODE_I64_CONST ? "i64.const" :
+    code == WASM_OPCODE_F32_CONST ? "f32.const" :
+    code == WASM_OPCODE_F64_CONST ? "f64.const" :
+
+    // Comparison operators
+    code == WASM_OPCODE_I32_EQZ ? "i32.eqz" :
+    code == WASM_OPCODE_I32_EQ ? "i32.eq" :
+    code == WASM_OPCODE_I32_NE ? "i32.ne" :
+    code == WASM_OPCODE_I32_LT_S ? "i32.lt_s" :
+    code == WASM_OPCODE_I32_LT_U ? "i32.lt_u" :
+    code == WASM_OPCODE_I32_GT_S ? "i32.gt_s" :
+    code == WASM_OPCODE_I32_GT_U ? "i32.gt_u" :
+    code == WASM_OPCODE_I32_LE_S ? "i32.le_s" :
+    code == WASM_OPCODE_I32_LE_U ? "i32.le_u" :
+    code == WASM_OPCODE_I32_GE_S ? "i32.ge_s" :
+    code == WASM_OPCODE_I32_GE_U ? "i32.ge_u" :
+
+    code == WASM_OPCODE_I64_EQZ ? "i64.eqz" :
+    code == WASM_OPCODE_I64_EQ ? "i64.eq" :
+    code == WASM_OPCODE_I64_NE ? "i64.ne" :
+    code == WASM_OPCODE_I64_LT_S ? "i64.lt_s" :
+    code == WASM_OPCODE_I64_LT_U ? "i64.lt_u" :
+    code == WASM_OPCODE_I64_GT_S ? "i64.gt_s" :
+    code == WASM_OPCODE_I64_GT_U ? "i64.gt_u" :
+    code == WASM_OPCODE_I64_LE_S ? "i64.le_s" :
+    code == WASM_OPCODE_I64_LE_U ? "i64.le_u" :
+    code == WASM_OPCODE_I64_GE_S ? "i64.ge_s" :
+    code == WASM_OPCODE_I64_GE_U ? "i64.ge_u" :
+
+    code == WASM_OPCODE_F32_EQ ? "f32.eq" :
+    code == WASM_OPCODE_F32_NE ? "f32.ne" :
+    code == WASM_OPCODE_F32_LT ? "f32.lt" :
+    code == WASM_OPCODE_F32_GT ? "f32.gt" :
+    code == WASM_OPCODE_F32_LE ? "f32.le" :
+    code == WASM_OPCODE_F32_GE ? "f32.ge" :
+
+    code == WASM_OPCODE_F64_EQ ? "f64.eq" :
+    code == WASM_OPCODE_F64_NE ? "f64.ne" :
+    code == WASM_OPCODE_F64_LT ? "f64.lt" :
+    code == WASM_OPCODE_F64_GT ? "f64.gt" :
+    code == WASM_OPCODE_F64_LE ? "f64.le" :
+    code == WASM_OPCODE_F64_GE ? "f64.ge" :
+
+    // Numeric operators
+    code == WASM_OPCODE_I32_CLZ ? "i32.clz" :
+    code == WASM_OPCODE_I32_CTZ ? "i32.ctz" :
+    code == WASM_OPCODE_I32_POPCNT ? "i32.popcnt" :
+    code == WASM_OPCODE_I32_ADD ? "i32.add" :
+    code == WASM_OPCODE_I32_SUB ? "i32.sub" :
+    code == WASM_OPCODE_I32_MUL ? "i32.mul" :
+    code == WASM_OPCODE_I32_DIV_S ? "i32.div_s" :
+    code == WASM_OPCODE_I32_DIV_U ? "i32.div_u" :
+    code == WASM_OPCODE_I32_REM_S ? "i32.rem_s" :
+    code == WASM_OPCODE_I32_REM_U ? "i32.rem_u" :
+    code == WASM_OPCODE_I32_AND ? "i32.and" :
+    code == WASM_OPCODE_I32_OR ? "i32.or" :
+    code == WASM_OPCODE_I32_XOR ? "i32.xor" :
+    code == WASM_OPCODE_I32_SHL ? "i32.shl" :
+    code == WASM_OPCODE_I32_SHR_S ? "i32.shr_s" :
+    code == WASM_OPCODE_I32_SHR_U ? "i32.shr_u" :
+    code == WASM_OPCODE_I32_ROTL ? "i32.rotl" :
+    code == WASM_OPCODE_I32_ROTR ? "i32.rotr" :
+
+    code == WASM_OPCODE_I64_CLZ ? "i64.clz" :
+    code == WASM_OPCODE_I64_CTZ ? "i64.ctz" :
+    code == WASM_OPCODE_I64_POPCNT ? "i64.popcnt" :
+    code == WASM_OPCODE_I64_ADD ? "i64.add" :
+    code == WASM_OPCODE_I64_SUB ? "i64.sub" :
+    code == WASM_OPCODE_I64_MUL ? "i64.mul" :
+    code == WASM_OPCODE_I64_DIV_S ? "i64.div_s" :
+    code == WASM_OPCODE_I64_DIV_U ? "i64.div_u" :
+    code == WASM_OPCODE_I64_REM_S ? "i64.rem_s" :
+    code == WASM_OPCODE_I64_REM_U ? "i64.rem_u" :
+    code == WASM_OPCODE_I64_AND ? "i64.and" :
+    code == WASM_OPCODE_I64_OR ? "i64.or" :
+    code == WASM_OPCODE_I64_XOR ? "i64.xor" :
+    code == WASM_OPCODE_I64_SHL ? "i64.shl" :
+    code == WASM_OPCODE_I64_SHR_S ? "i64.shr_s" :
+    code == WASM_OPCODE_I64_SHR_U ? "i64.shr_u" :
+    code == WASM_OPCODE_I64_ROTL ? "i64.rotl" :
+    code == WASM_OPCODE_I64_ROTR ? "i64.rotr" :
+
+    code == WASM_OPCODE_F32_ABS ? "f32.abs" :
+    code == WASM_OPCODE_F32_NEG ? "f32.nerg" :
+    code == WASM_OPCODE_F32_CEIL ? "f32.ceil" :
+    code == WASM_OPCODE_F32_FLOOR ? "f32.floor" :
+    code == WASM_OPCODE_F32_TRUNC ? "f32.trunc" :
+    code == WASM_OPCODE_F32_NEAREST ? "f32.nearest" :
+    code == WASM_OPCODE_F32_SQRT ? "f32.sqrt" :
+    code == WASM_OPCODE_F32_ADD ? "f32.add" :
+    code == WASM_OPCODE_F32_SUB ? "f32.sub" :
+    code == WASM_OPCODE_F32_MUL ? "f32.mul" :
+    code == WASM_OPCODE_F32_DIV ? "f32.div" :
+    code == WASM_OPCODE_F32_MIN ? "f32.min" :
+    code == WASM_OPCODE_F32_MAX ? "f32.max" :
+    code == WASM_OPCODE_F32_COPYSIGN ? "f32.copysign" :
+
+    code == WASM_OPCODE_F64_ABS ? "f64.abs" :
+    code == WASM_OPCODE_F64_NEG ? "f64.neg" :
+    code == WASM_OPCODE_F64_CEIL ? "f64.ceil" :
+    code == WASM_OPCODE_F64_FLOOR ? "f64.floor" :
+    code == WASM_OPCODE_F64_TRUNC ? "f64.trunc" :
+    code == WASM_OPCODE_F64_NEAREST ? "f64.nearest" :
+    code == WASM_OPCODE_F64_SQRT ? "f64.sqrt" :
+    code == WASM_OPCODE_F64_ADD ? "f64.add" :
+    code == WASM_OPCODE_F64_SUB ? "f64.sub" :
+    code == WASM_OPCODE_F64_MUL ? "f64.mul" :
+    code == WASM_OPCODE_F64_DIV ? "f64.div" :
+    code == WASM_OPCODE_F64_MIN ? "f64.min" :
+    code == WASM_OPCODE_F64_MAX ? "f64.max" :
+    code == WASM_OPCODE_F64_COPYSIGN ? "f64.copysign" :
+
+    // Conversions
+    code == WASM_OPCODE_I32_WRAP_I64 ? "i32.wrap_i64" :
+    code == WASM_OPCODE_I32_TRUNC_S_F32 ? "i32.trunc_s_f32" :
+    code == WASM_OPCODE_I32_TRUNC_U_F32 ? "i32.trunc_u_f32" :
+    code == WASM_OPCODE_I32_TRUNC_S_F64 ? "i32.trunc_s_f64" :
+    code == WASM_OPCODE_I32_TRUNC_U_F64 ? "i32.trunc_u_f64" :
+
+    code == WASM_OPCODE_I64_EXTEND_S_I32 ? "i64.extend_s_i32" :
+    code == WASM_OPCODE_I64_EXTEND_U_I32 ? "i64.extend_u_i32" :
+    code == WASM_OPCODE_I64_TRUNC_S_F32 ? "i64.trunc_s_f32" :
+    code == WASM_OPCODE_I64_TRUNC_U_F32 ? "i64.trunc_u_f32" :
+    code == WASM_OPCODE_I64_TRUNC_S_F64 ? "i64.trunc_s_f64" :
+    code == WASM_OPCODE_I64_TRUNC_U_F64 ? "i64.trunc_u_f64" :
+
+    code == WASM_OPCODE_F32_CONVERT_S_I32 ? "f32.convert_s_i32" :
+    code == WASM_OPCODE_F32_CONVERT_U_I32 ? "f32.convert_u_i32" :
+    code == WASM_OPCODE_F32_CONVERT_S_I64 ? "f32.convert_s_i64" :
+    code == WASM_OPCODE_F32_CONVERT_U_I64 ? "f32.convert_u_i64" :
+    code == WASM_OPCODE_F32_DEMOTE_F64 ? "f32.demote_f64" :
+
+    code == WASM_OPCODE_F64_CONVERT_S_I32 ? "f64.convert_s_i32" :
+    code == WASM_OPCODE_F64_CONVERT_U_I32 ? "f64.convert_u_i32" :
+    code == WASM_OPCODE_F64_CONVERT_S_I64 ? "f64.convert_s_i64" :
+    code == WASM_OPCODE_F64_CONVERT_U_I64 ? "f64.convert_u_i64" :
+    code == WASM_OPCODE_F64_PROMOTE_F32 ? "f64.promote_f32" :
+
+    // Reinterpretations
+    code == WASM_OPCODE_I32_REINTERPRET_F32 ? "i32.reinterpret_f32" :
+    code == WASM_OPCODE_I64_REINTERPRET_F64 ? "i64.reinterpret_f64" :
+    code == WASM_OPCODE_F32_REINTERPRET_I32 ? "f32.reinterpret_i32" :
+    code == WASM_OPCODE_F64_REINTERPRET_I64 ? "f64.reinterpret_i64" :
+
+    "<unknown>"
+  );
+}
+
+function wasmOpToString(code: int, n: int, imm1: int, imm2: int): string {
+  var sb = StringBuilder_new()
+    .append(wasmOpcodeToString(code));
+  if (n > 0) {
+    sb.append(" ")
+      .appendInt(imm1);
+    if (n > 1) {
+      sb.append(" ")
+        .appendInt(imm2);
+    }
+  }
+  return sb.finish();
+}
+
+function wasmTypeToString(type: WasmType): string {
+  return (
+    type == WasmType.Void ? "Void" :
+    type == WasmType.I32 ? "I32" :
+    type == WasmType.I64 ? "I64" :
+    type == WasmType.F32 ? "F32" :
+    type == WasmType.F64 ? "F64" :
+    type == WasmType.Func ? "Func" :
+    type == WasmType.Anyfunc ? "Anyfunc" :
+    type == WasmType.BlockType ? "BlockType" :
+
+    "<unknown>"
+  );
+}
+
+function wasmSectionToString(code: WasmSection, name: string): string {
+  return (
+    code == WasmSection.CustomWithName ? StringBuilder_new().append("Custom '").append(name).append("'").finish() :
+    code == WasmSection.Type ? "Type" :
+    code == WasmSection.Import ? "Import" :
+    code == WasmSection.Function ? "Function" :
+    code == WasmSection.Table ? "Table" :
+    code == WasmSection.Memory ? "Memory" :
+    code == WasmSection.Global ? "Global" :
+    code == WasmSection.Export ? "Export" :
+    code == WasmSection.Start ? "Start" :
+    code == WasmSection.Element ? "Element" :
+    code == WasmSection.Code ? "Code" :
+    code == WasmSection.Data ? "Data" :
+
+    "<unknown>"
+  );
+}
+
+#endif

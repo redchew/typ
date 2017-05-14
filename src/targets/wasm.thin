@@ -1,0 +1,1813 @@
+// Control flow operators
+const WASM_OPCODE_UNREACHABLE: byte = 0x00;
+const WASM_OPCODE_NOP: byte = 0x01;
+const WASM_OPCODE_BLOCK: byte = 0x02;
+const WASM_OPCODE_LOOP: byte = 0x03;
+const WASM_OPCODE_IF: byte = 0x04;
+const WASM_OPCODE_ELSE: byte = 0x05;
+const WASM_OPCODE_END: byte = 0x0b;
+const WASM_OPCODE_BR: byte = 0x0c;
+const WASM_OPCODE_BR_IF: byte = 0x0d;
+const WASM_OPCODE_BR_TABLE: byte = 0x0e;
+const WASM_OPCODE_RETURN: byte = 0x0f;
+
+// Call operators
+const WASM_OPCODE_CALL: byte = 0x10;
+const WASM_OPCODE_CALL_INDIRECT: byte = 0x11;
+
+//Parametric operators
+const WASM_OPCODE_DROP: byte = 0x1a;
+const WASM_OPCODE_SELECT: byte = 0x1b;
+
+//Variable access
+const WASM_OPCODE_GET_LOCAL: byte = 0x20;
+const WASM_OPCODE_SET_LOCAL: byte = 0x21;
+const WASM_OPCODE_TEE_LOCAL: byte = 0x22;
+const WASM_OPCODE_GET_GLOBAL: byte = 0x23;
+const WASM_OPCODE_SET_GLOBAL: byte = 0x24;
+
+// Memory-related operators
+const WASM_OPCODE_I32_LOAD: byte = 0x28;
+const WASM_OPCODE_I64_LOAD: byte = 0x29;
+const WASM_OPCODE_F32_LOAD: byte = 0x2a;
+const WASM_OPCODE_F64_LOAD: byte = 0x2b;
+
+const WASM_OPCODE_I32_LOAD8_S: byte = 0x2c;
+const WASM_OPCODE_I32_LOAD8_U: byte = 0x2d;
+const WASM_OPCODE_I32_LOAD16_S: byte = 0x2e;
+const WASM_OPCODE_I32_LOAD16_U: byte = 0x2f;
+
+const WASM_OPCODE_I64_LOAD8_S: byte = 0x30;
+const WASM_OPCODE_I64_LOAD8_U: byte = 0x31;
+const WASM_OPCODE_I64_LOAD16_S: byte = 0x32;
+const WASM_OPCODE_I64_LOAD16_U: byte = 0x33;
+const WASM_OPCODE_I64_LOAD32_S: byte = 0x34;
+const WASM_OPCODE_I64_LOAD32_U: byte = 0x35;
+
+const WASM_OPCODE_I32_STORE: byte = 0x36;
+const WASM_OPCODE_I64_STORE: byte = 0x37;
+const WASM_OPCODE_F32_STORE: byte = 0x38;
+const WASM_OPCODE_F64_STORE: byte = 0x39;
+
+const WASM_OPCODE_I32_STORE8: byte = 0x3a;
+const WASM_OPCODE_I32_STORE16: byte = 0x3b;
+const WASM_OPCODE_I64_STORE8: byte = 0x3c;
+const WASM_OPCODE_I64_STORE16: byte = 0x3d;
+const WASM_OPCODE_I64_STORE32: byte = 0x3e;
+
+const WASM_OPCODE_CURRENT_MEMORY: byte = 0x3f;
+const WASM_OPCODE_GROW_MEMORY: byte = 0x40;
+
+// Constants
+const WASM_OPCODE_I32_CONST: byte = 0x41;
+const WASM_OPCODE_I64_CONST: byte = 0x42;
+const WASM_OPCODE_F32_CONST: byte = 0x43;
+const WASM_OPCODE_F64_CONST: byte = 0x44;
+
+//Comparison operators
+const WASM_OPCODE_I32_EQZ: byte = 0x45;
+const WASM_OPCODE_I32_EQ: byte = 0x46;
+const WASM_OPCODE_I32_NE: byte = 0x47;
+const WASM_OPCODE_I32_LT_S: byte = 0x48;
+const WASM_OPCODE_I32_LT_U: byte = 0x49;
+const WASM_OPCODE_I32_GT_S: byte = 0x4a;
+const WASM_OPCODE_I32_GT_U: byte = 0x4b;
+const WASM_OPCODE_I32_LE_S: byte = 0x4c;
+const WASM_OPCODE_I32_LE_U: byte = 0x4d;
+const WASM_OPCODE_I32_GE_S: byte = 0x4e;
+const WASM_OPCODE_I32_GE_U: byte = 0x4f;
+
+const WASM_OPCODE_I64_EQZ: byte = 0x50;
+const WASM_OPCODE_I64_EQ: byte = 0x51;
+const WASM_OPCODE_I64_NE: byte = 0x52;
+const WASM_OPCODE_I64_LT_S: byte = 0x53;
+const WASM_OPCODE_I64_LT_U: byte = 0x54;
+const WASM_OPCODE_I64_GT_S: byte = 0x55;
+const WASM_OPCODE_I64_GT_U: byte = 0x56;
+const WASM_OPCODE_I64_LE_S: byte = 0x57;
+const WASM_OPCODE_I64_LE_U: byte = 0x58;
+const WASM_OPCODE_I64_GE_S: byte = 0x59;
+const WASM_OPCODE_I64_GE_U: byte = 0x5a;
+
+const WASM_OPCODE_F32_EQ: byte = 0x5b;
+const WASM_OPCODE_F32_NE: byte = 0x5c;
+const WASM_OPCODE_F32_LT: byte = 0x5d;
+const WASM_OPCODE_F32_GT: byte = 0x5e;
+const WASM_OPCODE_F32_LE: byte = 0x5f;
+const WASM_OPCODE_F32_GE: byte = 0x60;
+
+const WASM_OPCODE_F64_EQ: byte = 0x61;
+const WASM_OPCODE_F64_NE: byte = 0x62;
+const WASM_OPCODE_F64_LT: byte = 0x63;
+const WASM_OPCODE_F64_GT: byte = 0x64;
+const WASM_OPCODE_F64_LE: byte = 0x65;
+const WASM_OPCODE_F64_GE: byte = 0x66;
+
+//Numeric operators
+const WASM_OPCODE_I32_CLZ: byte = 0x67;
+const WASM_OPCODE_I32_CTZ: byte = 0x68;
+const WASM_OPCODE_I32_POPCNT: byte = 0x69;
+const WASM_OPCODE_I32_ADD: byte = 0x6a;
+const WASM_OPCODE_I32_SUB: byte = 0x6b;
+const WASM_OPCODE_I32_MUL: byte = 0x6c;
+const WASM_OPCODE_I32_DIV_S: byte = 0x6d;
+const WASM_OPCODE_I32_DIV_U: byte = 0x6e;
+const WASM_OPCODE_I32_REM_S: byte = 0x6f;
+const WASM_OPCODE_I32_REM_U: byte = 0x70;
+const WASM_OPCODE_I32_AND: byte = 0x71;
+const WASM_OPCODE_I32_OR: byte = 0x72;
+const WASM_OPCODE_I32_XOR: byte = 0x73;
+const WASM_OPCODE_I32_SHL: byte = 0x74;
+const WASM_OPCODE_I32_SHR_S: byte = 0x75;
+const WASM_OPCODE_I32_SHR_U: byte = 0x76;
+const WASM_OPCODE_I32_ROTL: byte = 0x77;
+const WASM_OPCODE_I32_ROTR: byte = 0x78;
+
+const WASM_OPCODE_I64_CLZ: byte = 0x79;
+const WASM_OPCODE_I64_CTZ: byte = 0x7a;
+const WASM_OPCODE_I64_POPCNT: byte = 0x7b;
+const WASM_OPCODE_I64_ADD: byte = 0x7c;
+const WASM_OPCODE_I64_SUB: byte = 0x7d;
+const WASM_OPCODE_I64_MUL: byte = 0x7e;
+const WASM_OPCODE_I64_DIV_S: byte = 0x7f;
+const WASM_OPCODE_I64_DIV_U: byte = 0x80;
+const WASM_OPCODE_I64_REM_S: byte = 0x81;
+const WASM_OPCODE_I64_REM_U: byte = 0x82;
+const WASM_OPCODE_I64_AND: byte = 0x83;
+const WASM_OPCODE_I64_OR: byte = 0x84;
+const WASM_OPCODE_I64_XOR: byte = 0x85;
+const WASM_OPCODE_I64_SHL: byte = 0x86;
+const WASM_OPCODE_I64_SHR_S: byte = 0x87;
+const WASM_OPCODE_I64_SHR_U: byte = 0x88;
+const WASM_OPCODE_I64_ROTL: byte = 0x89;
+const WASM_OPCODE_I64_ROTR: byte = 0x8a;
+
+const WASM_OPCODE_F32_ABS: byte = 0x8b;
+const WASM_OPCODE_F32_NEG: byte = 0x8c;
+const WASM_OPCODE_F32_CEIL: byte = 0x8d;
+const WASM_OPCODE_F32_FLOOR: byte = 0x8e;
+const WASM_OPCODE_F32_TRUNC: byte = 0x8f;
+const WASM_OPCODE_F32_NEAREST: byte = 0x90;
+const WASM_OPCODE_F32_SQRT: byte = 0x91;
+const WASM_OPCODE_F32_ADD: byte = 0x92;
+const WASM_OPCODE_F32_SUB: byte = 0x93;
+const WASM_OPCODE_F32_MUL: byte = 0x94;
+const WASM_OPCODE_F32_DIV: byte = 0x95;
+const WASM_OPCODE_F32_MIN: byte = 0x96;
+const WASM_OPCODE_F32_MAX: byte = 0x97;
+const WASM_OPCODE_F32_COPYSIGN: byte = 0x98;
+
+const WASM_OPCODE_F64_ABS: byte = 0x99;
+const WASM_OPCODE_F64_NEG: byte = 0x9a;
+const WASM_OPCODE_F64_CEIL: byte = 0x9b;
+const WASM_OPCODE_F64_FLOOR: byte = 0x9c;
+const WASM_OPCODE_F64_TRUNC: byte = 0x9d;
+const WASM_OPCODE_F64_NEAREST: byte = 0x9e;
+const WASM_OPCODE_F64_SQRT: byte = 0x9f;
+const WASM_OPCODE_F64_ADD: byte = 0xa0;
+const WASM_OPCODE_F64_SUB: byte = 0xa1;
+const WASM_OPCODE_F64_MUL: byte = 0xa2;
+const WASM_OPCODE_F64_DIV: byte = 0xa3;
+const WASM_OPCODE_F64_MIN: byte = 0xa4;
+const WASM_OPCODE_F64_MAX: byte = 0xa5;
+const WASM_OPCODE_F64_COPYSIGN: byte = 0xa6;
+
+//Conversions
+const WASM_OPCODE_I32_WRAP_I64: byte = 0xa7;
+const WASM_OPCODE_I32_TRUNC_S_F32: byte = 0xa8;
+const WASM_OPCODE_I32_TRUNC_U_F32: byte = 0xa9;
+const WASM_OPCODE_I32_TRUNC_S_F64: byte = 0xaa;
+const WASM_OPCODE_I32_TRUNC_U_F64: byte = 0xab;
+
+const WASM_OPCODE_I64_EXTEND_S_I32: byte = 0xac;
+const WASM_OPCODE_I64_EXTEND_U_I32: byte = 0xad;
+const WASM_OPCODE_I64_TRUNC_S_F32: byte = 0xae;
+const WASM_OPCODE_I64_TRUNC_U_F32: byte = 0xaf;
+const WASM_OPCODE_I64_TRUNC_S_F64: byte = 0xb0;
+const WASM_OPCODE_I64_TRUNC_U_F64: byte = 0xb1;
+
+const WASM_OPCODE_F32_CONVERT_S_I32: byte = 0xb2;
+const WASM_OPCODE_F32_CONVERT_U_I32: byte = 0xb3;
+const WASM_OPCODE_F32_CONVERT_S_I64: byte = 0xb4;
+const WASM_OPCODE_F32_CONVERT_U_I64: byte = 0xb5;
+const WASM_OPCODE_F32_DEMOTE_F64: byte = 0xb6;
+
+const WASM_OPCODE_F64_CONVERT_S_I32: byte = 0xb7;
+const WASM_OPCODE_F64_CONVERT_U_I32: byte = 0xb8;
+const WASM_OPCODE_F64_CONVERT_S_I64: byte = 0xb9;
+const WASM_OPCODE_F64_CONVERT_U_I64: byte = 0xba;
+const WASM_OPCODE_F64_PROMOTE_F32: byte = 0xbb;
+
+//Reinterpretations
+const WASM_OPCODE_I32_REINTERPRET_F32: byte = 0xbc;
+const WASM_OPCODE_I64_REINTERPRET_F64: byte = 0xbd;
+const WASM_OPCODE_F32_REINTERPRET_I32: byte = 0xbe;
+const WASM_OPCODE_F64_REINTERPRET_I64: byte = 0xbf;
+
+const WASM_MAGIC = 0x6d736100;
+const WASM_VERSION = 0x1;
+const WASM_INITIAL_MEMORY = 256;
+const WASM_MAXIMUM_MEMORY = 256;
+
+#if !WASM64
+  const WASM_MEMORY_INITIALIZER_BASE = 4; // Leave space for "null"
+#else
+  const WASM_MEMORY_INITIALIZER_BASE = 8; // Leave space for "null"
+#endif
+
+enum WasmType {
+  Void = 0,
+  I32 = -0x01,
+  I64 = -0x02,
+  F32 = -0x03,
+  F64 = -0x04,
+  Anyfunc = -0x10,
+  Func = -0x20,
+  BlockType = -0x40
+}
+
+enum WasmSection {
+  CustomWithName = 0,
+  Type = 1,
+  Import = 2,
+  Function = 3,
+  Table = 4,
+  Memory = 5,
+  Global = 6,
+  Export = 7,
+  Start = 8,
+  Element = 9,
+  Code = 10,
+  Data = 11
+}
+
+enum WasmExternalKind {
+  Function = 0,
+  Table = 1,
+  Memory = 2,
+  Global = 3
+}
+
+enum WasmNameKind {
+  Module = 0,
+  Function = 1,
+  Local = 2
+}
+
+class WasmWrappedType {
+  id: WasmType;
+  next: WasmWrappedType;
+}
+
+class WasmSignature {
+  argumentTypes: WasmWrappedType;
+  returnType: WasmWrappedType;
+  next: WasmSignature;
+}
+
+class WasmGlobal {
+  symbol: Symbol;
+  next: WasmGlobal;
+}
+
+class WasmLocal {
+  symbol: Symbol;
+  next: WasmLocal;
+}
+
+class WasmFunction {
+  symbol: Symbol;
+  signatureIndex: int;
+  isExported: bool;
+  firstLocal: WasmLocal;
+  lastLocal: WasmLocal;
+  localCount: int;
+  next: WasmFunction;
+}
+
+class WasmImport {
+  signatureIndex: int;
+  module: string;
+  name: string;
+  next: WasmImport;
+}
+
+class WasmModule {
+  compiler: Compiler;
+
+  firstImport: WasmImport;
+  lastImport: WasmImport;
+  importCount: int;
+
+  globalCount: int;
+  firstGlobal: WasmGlobal;
+  lastGlobal: WasmGlobal;
+
+  firstFunction: WasmFunction;
+  lastFunction: WasmFunction;
+  functionCount: int;
+
+  firstSignature: WasmSignature;
+  lastSignature: WasmSignature;
+  signatureCount: int;
+
+  memoryInitializer: ByteArray;
+  currentHeapPointer: int;
+  originalHeapPointer: int;
+  mallocFunction: WasmFunction;
+  freeFunction: WasmFunction;
+  startFunction: WasmFunction;
+  context: CheckContext;
+
+  sectionPayloadOffset: int;
+
+  growMemoryInitializer(): void {
+    var array = this.memoryInitializer;
+    var current = array.length();
+    var length = this.context.nextGlobalVariableOffset;
+
+    while (current < length) {
+      array.append(0);
+      current = current + 1;
+    }
+  }
+
+  allocateImport(signatureIndex: int, mod: string, name: string): WasmImport {
+    var result = new WasmImport();
+    result.signatureIndex = signatureIndex;
+    result.module = mod;
+    result.name = name;
+
+    if (this.firstImport == null) this.firstImport = result;
+    else this.lastImport.next = result;
+    this.lastImport = result;
+
+    this.importCount = this.importCount + 1;
+    return result;
+  }
+
+  allocateGlobal(symbol: Symbol): WasmGlobal {
+    let global = new WasmGlobal();
+    global.symbol = symbol;
+    symbol.offset = this.globalCount;
+
+    if (this.firstGlobal == null) this.firstGlobal = global;
+    else this.lastGlobal.next= global;
+    this.lastGlobal = global;
+
+    this.globalCount = this.globalCount + 1;
+    return global;
+  }
+
+  allocateFunction(symbol: Symbol, signatureIndex: int): WasmFunction {
+    var fn = new WasmFunction();
+    fn.symbol = symbol;
+    fn.signatureIndex = signatureIndex;
+
+    if (this.firstFunction == null) this.firstFunction = fn;
+    else this.lastFunction.next = fn;
+    this.lastFunction = fn;
+
+    this.functionCount = this.functionCount + 1;
+
+    // Make sure "malloc" and friends are tracked
+    if (symbol.kind == SymbolKind.FUNCTION_GLOBAL) {
+
+      if (symbol.name == "malloc") {
+        assert(this.mallocFunction == null);
+        this.mallocFunction = fn;
+      }
+
+      else if (symbol.name == "free") {
+        assert(this.freeFunction == null);
+        this.freeFunction = fn;
+      }
+    }
+
+    return fn;
+  }
+
+  allocateSignature(argumentTypes: WasmWrappedType, returnType: WasmWrappedType): int {
+    assert(returnType != null);
+    assert(returnType.next == null);
+
+    var signature = new WasmSignature();
+    signature.argumentTypes = argumentTypes;
+    signature.returnType = returnType;
+
+    var check = this.firstSignature;
+    var i = 0;
+
+    while (check != null) {
+      if (wasmAreSignaturesEqual(signature, check)) {
+        return i;
+      }
+
+      check = check.next;
+      i = i + 1;
+    }
+
+    if (this.firstSignature == null) this.firstSignature = signature;
+    else this.lastSignature.next = signature;
+    this.lastSignature = signature;
+
+    this.signatureCount = this.signatureCount + 1;
+    return i;
+  }
+
+  emitModule(array: ByteArray): void {
+    assert(array.length() == 0);
+
+    #if WASM_TRACE
+      wasmTrace(StringBuilder_new().append(wasmToHexString(array.length(), 6))
+        .append(" <magic ").appendInt(WASM_MAGIC).append(">")
+      );
+    #endif
+
+    ByteArray_append32(array, WASM_MAGIC);
+
+    #if WASM_TRACE
+      wasmTrace(StringBuilder_new().append(wasmToHexString(array.length(), 6))
+        .append(" <version ").appendInt(WASM_VERSION).append(">")
+      );
+    #endif
+
+    ByteArray_append32(array, WASM_VERSION);
+
+    this.emitDylinkSection(array); // TODO: dynamic linking, should be the very first section in the module
+    this.emitTypeSection(array);
+    this.emitImportSection(array);
+    this.emitFunctionSection(array);
+    this.emitTableSection(array);
+    this.emitMemorySection(array);
+    this.emitGlobalSection(array);
+    this.emitExportSection(array);
+    this.emitStartSection(array);
+    this.emitElementSection(array);
+    this.emitCodeSection(array);
+    this.emitDataSection(array);
+    this.emitNameSection(array); // debug symbols, must follow on data
+  }
+
+  beginSection(array: ByteArray, code: WasmSection, name: string): void {
+    wasmWriteVarUnsigned(array, code); // section code
+    wasmWriteVarUnsigned(array, ~0); // payload length, patched later
+    this.sectionPayloadOffset = array.length();
+
+    #if WASM_TRACE
+      wasmTrace(StringBuilder_new().append("\n").append(wasmToHexString(this.sectionPayloadOffset, 6)).append(" ").append(wasmSectionToString(code, name)).append(" section"));
+    #endif
+
+    if (code == WasmSection.CustomWithName || name != null) {
+      assert(name != null);
+      wasmWriteLengthPrefixedUTF8(array, name);
+    }
+  }
+
+  finishSection(array: ByteArray): void {
+    wasmPatchVarUnsigned(array, this.sectionPayloadOffset - 5, array.length() - this.sectionPayloadOffset, ~0);
+  }
+
+  emitDylinkSection(array: ByteArray): void {
+    assert(array.length() == 8);
+    this.beginSection(array, WasmSection.CustomWithName, "dylink");
+
+    wasmWriteVarUnsigned(array, this.memoryInitializer.length()); // memory size
+
+    #if WASM_TRACE
+      wasmTrace(StringBuilder_new().append(" ").append(wasmToHexString(array.length(), 6)).append(" memoryBase: ").appendInt(this.memoryInitializer.length()));
+    #endif
+
+    wasmWriteVarUnsigned(array, 0); // table size
+
+    #if WASM_TRACE
+      wasmTrace(StringBuilder_new().append(" ").append(wasmToHexString(array.length(), 6)).append(" tableBase: 0"));
+    #endif
+
+    this.finishSection(array);
+  }
+
+  emitNameSection(array: ByteArray): void {
+    this.beginSection(array, WasmSection.CustomWithName, "name");
+
+    #if WASM_TRACE
+      wasmTrace(StringBuilder_new().append(" ").append(wasmToHexString(array.length(), 6)).append(" Module subsection: 'myModuleName'"));
+    #endif
+
+    wasmWriteVarUnsigned(array, WasmNameKind.Module);
+    wasmWriteLengthPrefixedUTF8(array, "myModuleName");
+
+    #if WASM_TRACE
+      wasmTrace(StringBuilder_new().append(" ").append(wasmToHexString(array.length(), 6)).append(" Function subsection [ count=").appendInt(this.functionCount).append(" ]"));
+    #endif
+
+    wasmWriteVarUnsigned(array, WasmNameKind.Function);
+    var nameLengthOffset = array.length();
+    wasmWriteVarUnsigned(array, ~0); // patched later
+    wasmWriteVarUnsigned(array, this.functionCount);
+    var fn = this.firstFunction;
+    while (fn != null) {
+      var name = fn.symbol.name;
+
+      if (fn.symbol.kind == SymbolKind.FUNCTION_INSTANCE) {
+        name = StringBuilder_new()
+          .append(fn.symbol.parent().name)
+          .append(".")
+          .append(name)
+          .finish();
+      }
+
+      #if WASM_TRACE
+        wasmTrace(StringBuilder_new().append("  ").append(wasmToHexString(array.length(), 6)).append(" ").append(name).append(" [ callIndex=").appendInt(this.getFunctionCallIndex(fn.symbol)).append(" ]"));
+      #endif
+
+      wasmWriteVarUnsigned(array, this.getFunctionCallIndex(fn.symbol));
+      wasmWriteLengthPrefixedUTF8(array, name);
+      fn = fn.next;
+    }
+    wasmPatchVarUnsigned(array, nameLengthOffset, array.length() - nameLengthOffset - 5, ~0);
+
+    var functionsWithLocals = 0;
+    fn = this.firstFunction;
+    while (fn != null) {
+      if (fn.symbol.kind == SymbolKind.FUNCTION_INSTANCE || fn.localCount > 0) {
+        functionsWithLocals = functionsWithLocals + 1;
+      }
+      fn = fn.next;
+    }
+    if (functionsWithLocals > 0) {
+
+      #if WASM_TRACE
+        wasmTrace(StringBuilder_new().append(" ").append(wasmToHexString(array.length(), 6)).append(" Local subsection [ count=").appendInt(functionsWithLocals).append(" ]"));
+      #endif
+
+      wasmWriteVarUnsigned(array, WasmNameKind.Local);
+      nameLengthOffset = array.length();
+      wasmWriteVarUnsigned(array, ~0); // patched later
+      wasmWriteVarUnsigned(array, functionsWithLocals);
+
+      fn = this.firstFunction;
+      while (fn != null) {
+        var isInstance = fn.symbol.kind == SymbolKind.FUNCTION_INSTANCE;
+        var localCount = fn.localCount;
+        if (isInstance) {
+          localCount = localCount + 1;
+        }
+        if (localCount > 0) {
+
+          #if WASM_TRACE
+            var name = fn.symbol.name;
+            if (isInstance) {
+              name = StringBuilder_new()
+                .append(fn.symbol.parent().name)
+                .append(".")
+                .append(name)
+                .finish();
+            }
+            wasmTrace(StringBuilder_new().append("  ").append(wasmToHexString(array.length(), 6)).append(" ").append(name).append(" [ callIndex=").appendInt(this.getFunctionCallIndex(fn.symbol)).append(", count=").appendInt(localCount).append(" ]"));
+          #endif
+
+          wasmWriteVarUnsigned(array, this.getFunctionCallIndex(fn.symbol));
+          wasmWriteVarUnsigned(array, localCount);
+
+          var index = 0;
+          if (isInstance) {
+
+            #if WASM_TRACE
+              wasmTrace(StringBuilder_new().append("   ").append(wasmToHexString(array.length(), 6)).append(" this [ index=0 ]"));
+            #endif
+
+            wasmWriteVarUnsigned(array, index);
+            wasmWriteLengthPrefixedUTF8(array, "this");
+            index = index + 1;
+          }
+
+          var local = fn.firstLocal;
+          while (local != null) {
+
+            #if WASM_TRACE
+              wasmTrace(StringBuilder_new().append("   ").append(wasmToHexString(array.length(), 6)).append(" ").append(local.symbol.name).append(" [ index=").appendInt(index).append(" ]"));
+            #endif
+
+            wasmWriteVarUnsigned(array, index);
+            wasmWriteLengthPrefixedUTF8(array, local.symbol.name);
+            index = index + 1;
+            local = local.next;
+          }
+        }
+        fn = fn.next;
+      }
+
+      wasmPatchVarUnsigned(array, nameLengthOffset, array.length() - nameLengthOffset - 5, ~0);
+    }
+
+    this.finishSection(array);
+  }
+
+  emitTypeSection(array: ByteArray): void {
+    this.beginSection(array, WasmSection.Type, null);
+    wasmWriteVarUnsigned(array, this.signatureCount);
+
+    var sig = this.firstSignature;
+    while (sig != null) {
+      var count = 0;
+      var type = sig.argumentTypes;
+
+      while (type != null) {
+        count = count + 1;
+        type = type.next;
+      }
+
+      #if WASM_TRACE
+        wasmTrace(StringBuilder_new().append(" ").append(wasmToHexString(array.length(), 6)).append(" ").append(wasmTypeToString(WasmType.Func)).append(" [ count=").appendInt(count).append(" ]"));
+      #endif
+
+      wasmWriteVarSigned(array, WasmType.Func);
+      wasmWriteVarUnsigned(array, count);
+
+      type = sig.argumentTypes;
+      while (type != null) {
+
+        #if WASM_TRACE
+          wasmTrace(StringBuilder_new().append("  ").append(wasmToHexString(array.length(), 6)).append(" ").append(wasmTypeToString(type.id)));
+        #endif
+
+        wasmWriteVarSigned(array, type.id);
+
+        type = type.next;
+      }
+
+      #if WASM_TRACE
+        wasmTrace(StringBuilder_new().append("  ").append(wasmToHexString(array.length(), 6)).append(" -> ").append(wasmTypeToString(sig.returnType.id)));
+      #endif
+
+      if (sig.returnType.id != WasmType.Void) {
+        wasmWriteVarUnsigned(array, 1); // return count
+        wasmWriteVarSigned(array, sig.returnType.id as int); // return type
+      }
+
+      else {
+        wasmWriteVarUnsigned(array, 0);
+      }
+
+      sig = sig.next;
+    }
+
+    this.finishSection(array);
+  }
+
+  emitImportSection(array: ByteArray): void {
+    if (this.firstImport == null)
+      return;
+
+    this.beginSection(array, WasmSection.Import, null);
+    wasmWriteVarUnsigned(array, this.importCount /* + 1 or 2 */);
+
+    // The following would be used in conjunction with the dylink section when importing memory and/or tables
+    //
+    // wasmWriteLengthPrefixedUTF8(array, "env");
+    // wasmWriteLengthPrefixedUTF8(array, "memoryBase");
+    // wasmWriteVarUnsigned(array, WasmExternalKind.Global);
+    // wasmWriteVarSigned(array, WasmType.I32);
+    // wasmWriteVarUnsigned(array, 0);
+    //
+    // wasmWriteLengthPrefixedUTF8(array, "env");
+    // wasmWriteLengthPrefixedUTF8(array, "tableBase");
+    // wasmWriteVarUnsigned(array, WasmExternalKind.Global);
+    // wasmWriteVarSigned(array, WasmType.I32);
+    // wasmWriteVarUnsigned(array, 0);
+
+    var current = this.firstImport;
+    while (current != null) {
+      wasmWriteLengthPrefixedUTF8(array, current.module);
+      wasmWriteLengthPrefixedUTF8(array, current.name);
+      wasmWriteVarUnsigned(array, WasmExternalKind.Function);
+      wasmWriteVarUnsigned(array, current.signatureIndex); // if kind = Function: type index
+      current = current.next;
+    }
+
+    this.finishSection(array);
+  }
+
+  emitFunctionSection(array: ByteArray): void {
+    if (this.firstFunction == null)
+      return;
+
+    this.beginSection(array, WasmSection.Function, null);
+    wasmWriteVarUnsigned(array, this.functionCount);
+
+    var fn = this.firstFunction;
+    while (fn != null) {
+      wasmWriteVarUnsigned(array, fn.signatureIndex);
+      fn = fn.next;
+    }
+
+    this.finishSection(array);
+  }
+
+  emitTableSection(array: ByteArray): void { /* TODO */ }
+
+  emitMemorySection(array: ByteArray): void {
+    this.beginSection(array, WasmSection.Memory, null);
+    wasmWriteVarUnsigned(array, 1); // number of memories
+
+    wasmWriteVarUnsigned(array, WASM_MAXIMUM_MEMORY >= WASM_INITIAL_MEMORY ? 1 : 0);
+    wasmWriteVarUnsigned(array, WASM_INITIAL_MEMORY); // in pages of 64kb
+    if (WASM_MAXIMUM_MEMORY >= WASM_INITIAL_MEMORY)
+      wasmWriteVarUnsigned(array, WASM_MAXIMUM_MEMORY); // in pages of 64kb
+
+    this.finishSection(array);
+  }
+
+  emitGlobalSection(array: ByteArray): void {
+    if (this.firstGlobal == null)
+      return;
+
+    this.beginSection(array, WasmSection.Global, null);
+    wasmWriteVarUnsigned(array, this.globalCount);
+
+    var glo = this.firstGlobal;
+    while (glo != null) {
+      var type = this.getWasmType(glo.symbol.node.variableType().resolvedType);
+
+      if (type == WasmType.I32) {
+        wasmWriteVarSigned(array, WasmType.I32);
+        wasmWriteVarUnsigned(array, WASM_OPCODE_I32_CONST);
+        wasmWriteVarSigned(array, 0);
+      }
+
+      else {
+        assert(false);
+      }
+
+      wasmWriteVarUnsigned(array, WASM_OPCODE_END);
+      glo = glo.next;
+    }
+
+    this.finishSection(array);
+  }
+
+  emitExportSection(array: ByteArray): void {
+    var exportedCount = 0;
+    var fn = this.firstFunction;
+    while (fn != null) {
+      if (fn.isExported) {
+        exportedCount = exportedCount + 1;
+      }
+      fn = fn.next;
+    }
+    if (exportedCount == 0) {
+      return;
+    }
+
+    this.beginSection(array, WasmSection.Export, null);
+    wasmWriteVarUnsigned(array, exportedCount + 1); // including memory
+
+    wasmWriteLengthPrefixedUTF8(array, "memory");
+    wasmWriteVarUnsigned(array, WasmExternalKind.Memory);
+    wasmWriteVarUnsigned(array, 0); // memory index
+
+    var i = this.importCount;
+    fn = this.firstFunction;
+    while (fn != null) {
+      if (fn.isExported) {
+        wasmWriteLengthPrefixedUTF8(array, fn.symbol.name); // length prefixed name
+        wasmWriteVarUnsigned(array, WasmExternalKind.Function); // definition kind
+        wasmWriteVarUnsigned(array, i); // definition index
+      }
+      fn = fn.next;
+      i = i + 1;
+    }
+
+    this.finishSection(array);
+  }
+
+  emitStartSection(array: ByteArray): void {
+    if (this.startFunction == null) {
+      return;
+    }
+    this.beginSection(array, WasmSection.Start, null);
+
+    wasmWriteVarUnsigned(array, this.getFunctionCallIndex(this.startFunction.symbol));
+
+    this.finishSection(array);
+  }
+
+  emitElementSection(array: ByteArray): void { /* TODO */ }
+
+  emitCodeSection(array: ByteArray): void {
+    if (this.firstFunction == null) {
+      return;
+    }
+    this.beginSection(array, WasmSection.Code, null);
+    wasmWriteVarUnsigned(array, this.functionCount);
+
+    var fn = this.firstFunction;
+    while (fn != null) {
+      var headerOffset = array.length();
+
+      #if WASM_TRACE
+        wasmTrace(StringBuilder_new().append(" ").append(wasmToHexString(headerOffset, 6)).append(" ").append(wasmFunctionToString(this, fn)).append(" [ callIndex=").appendInt(this.getFunctionCallIndex(fn.symbol)).append(", locals=").appendInt(fn.localCount).append(", export=").append(fn.isExported ? "true" : "false").append(" ]"));
+      #endif
+
+      wasmWriteVarUnsigned(array, ~0); // body size, patched later
+      var payloadOffset = array.length();
+      wasmWriteVarUnsigned(array, fn.localCount); // number of local_entries
+
+      if (fn.localCount > 0) {
+        // TODO: This writes one local_entry per local and doesn't yet combine locals of the same type
+        var local = fn.firstLocal;
+        while (local != null) {
+          wasmWriteVarUnsigned(array, 1); // number of locals of this type
+          wasmWriteVarSigned(array, this.getWasmType(local.symbol.resolvedType)); // local type
+          local = local.next;
+        }
+      }
+
+      #if WASM_TRACE
+        this.indentLevel = 0;
+      #endif
+
+      var child = fn.symbol.node.functionBody().firstChild;
+      var lastChild: Node = null;
+      while (child != null) {
+        lastChild = child;
+        this.emitNode(array, child);
+        child = child.nextSibling;
+      }
+
+      var returnType = fn.symbol.node.functionReturnType().resolvedType;
+      if (returnType != this.context.voidType) {
+
+        if (lastChild != null && lastChild.kind == NodeKind.RETURN) { // Replace return with end (also pops)
+          assert(array.get(array.length() - 1) == WASM_OPCODE_RETURN);
+          array.set(array.length() - 1, WASM_OPCODE_END);
+        }
+
+        else {
+          this.emit(array, WASM_OPCODE_UNREACHABLE); // Clears the stack, syntax checker requires return anyway
+          this.emit(array, WASM_OPCODE_END);
+        }
+      }
+
+      else {
+        this.emit(array, WASM_OPCODE_END);
+      }
+
+      wasmPatchVarUnsigned(array, headerOffset, array.length() - payloadOffset, ~0);
+      fn = fn.next;
+    }
+    this.finishSection(array);
+  }
+
+  emitDataSection(array: ByteArray): void {
+    this.growMemoryInitializer();
+    var memoryInitializer = this.memoryInitializer;
+    var initializerLength = memoryInitializer.length();
+    var initialHeapPointer = alignToNextMultipleOf(WASM_MEMORY_INITIALIZER_BASE + initializerLength, 8);
+
+    // Pass the initial heap pointer to the "malloc" function
+    ByteArray_set32(memoryInitializer, this.currentHeapPointer, initialHeapPointer);
+    ByteArray_set32(memoryInitializer, this.originalHeapPointer, initialHeapPointer);
+
+    // This only writes one single section containing everything
+    this.beginSection(array, WasmSection.Data, null);
+
+    #if WASM_TRACE
+      wasmTrace(StringBuilder_new().append(" ").append(wasmToHexString(array.length(), 6)).append(" count: 1"));
+    #endif
+
+    wasmWriteVarUnsigned(array, 1);
+
+    // Emit the range of the memory initializer
+    #if WASM_TRACE
+      wasmTrace(StringBuilder_new().append("  ").append(wasmToHexString(array.length(), 6)).append(" Memory ").append("0 ").append("[ base=").appendInt(WASM_MEMORY_INITIALIZER_BASE).append(", size=").appendInt(initializerLength).append(" ]"));
+    #endif
+
+    wasmWriteVarUnsigned(array, 0); // linear memory index
+    wasmWriteVarUnsigned(array, WASM_OPCODE_I32_CONST); // initializer expression
+    wasmWriteVarSigned(array, WASM_MEMORY_INITIALIZER_BASE);
+    wasmWriteVarUnsigned(array, WASM_OPCODE_END);
+    wasmWriteVarUnsigned(array, initializerLength); // size of data
+
+    // Copy the entire memory initializer (also includes zero-initialized data for now)
+    var i = 0;
+    while (i < initializerLength) {
+      array.append(memoryInitializer.get(i));
+      i = i + 1;
+    }
+
+    this.finishSection(array);
+  }
+
+  prepareToEmit(node: Node): void {
+    if (node.kind == NodeKind.STRING) {
+      var text = node.stringValue;
+      var length = text.length;
+      var offset = this.context.allocateGlobalVariableOffset(length * 2 + 4, 4);
+      node.intValue = offset;
+      this.growMemoryInitializer();
+      var memoryInitializer = this.memoryInitializer;
+
+      // Emit a length-prefixed string
+      ByteArray_set32(memoryInitializer, offset, length);
+      ByteArray_setString(memoryInitializer, offset + 4, text);
+    }
+
+    else if (node.kind == NodeKind.VARIABLE) {
+      var symbol = node.symbol;
+
+      if (symbol.kind == SymbolKind.VARIABLE_GLOBAL) {
+        var sizeOf = symbol.resolvedType.variableSizeOf(this.context);
+        var value = symbol.node.variableValue().intValue;
+        var memoryInitializer = this.memoryInitializer;
+
+        // Copy the initial value into the memory initializer
+        this.growMemoryInitializer();
+        if (sizeOf == 1) memoryInitializer.set(symbol.offset, value as byte);
+        else if (sizeOf == 2) ByteArray_set16(memoryInitializer, symbol.offset, value);
+        else if (sizeOf == 4) ByteArray_set32(memoryInitializer, symbol.offset, value);
+        else assert(false);
+
+        // Make sure the heap offset is tracked
+        if (symbol.name == "currentHeapPointer") {
+          assert(this.currentHeapPointer == -1);
+          this.currentHeapPointer = symbol.offset;
+        }
+
+        // Make sure the heap offset is tracked
+        else if (symbol.name == "originalHeapPointer") {
+          assert(this.originalHeapPointer == -1);
+          this.originalHeapPointer = symbol.offset;
+        }
+      }
+    }
+
+    else if (node.kind == NodeKind.FUNCTION) {
+      var returnType = node.functionReturnType();
+      var shared = new WasmSharedOffset();
+      var argumentTypesFirst: WasmWrappedType = null;
+      var argumentTypesLast: WasmWrappedType = null;
+
+      // Make sure to include the implicit "this" variable as a normal argument
+      var argument = node.functionFirstArgument();
+      while (argument != returnType) {
+        var type = wasmWrapType(this.getWasmType(argument.variableType().resolvedType));
+
+        if (argumentTypesFirst == null) argumentTypesFirst = type;
+        else argumentTypesLast.next = type;
+        argumentTypesLast = type;
+
+        shared.nextLocalOffset = shared.nextLocalOffset + 1;
+        argument = argument.nextSibling;
+      }
+      var signatureIndex = this.allocateSignature(argumentTypesFirst, wasmWrapType(this.getWasmType(returnType.resolvedType)));
+      var body = node.functionBody();
+      var symbol = node.symbol;
+
+      // Functions without bodies are imports
+      if (body == null) {
+        var moduleName = symbol.kind == SymbolKind.FUNCTION_INSTANCE ? symbol.parent().name : "global";
+        symbol.offset = this.importCount;
+        this.allocateImport(signatureIndex, moduleName, symbol.name);
+        node = node.nextSibling;
+        return;
+      }
+
+      else {
+        symbol.offset = this.functionCount;
+      }
+
+      var fn = this.allocateFunction(symbol, signatureIndex);
+
+      // Only export "extern" functions
+      if (node.isExtern()) {
+        fn.isExported = true;
+      }
+
+      // Assign local variable offsets
+      wasmAssignLocalVariableOffsets(body, shared, fn);
+      fn.localCount = shared.localCount;
+    }
+
+    var child = node.firstChild;
+    while (child != null) {
+      this.prepareToEmit(child);
+      child = child.nextSibling;
+    }
+  }
+
+  emitBinaryExpression(array: ByteArray, node: Node, opcode: byte): void {
+
+    this.emitNode(array, node.binaryLeft());
+    this.emitNode(array, node.binaryRight());
+    this.emit(array, opcode); // Pops 2, pushes 1
+
+  }
+
+  emitLoadFromMemory(array: ByteArray, type: Type, relativeBase: Node, offset: int): void {
+
+    // Relative address
+    if (relativeBase != null) {
+      this.emitNode(array, relativeBase);
+    }
+
+    // Absolute address
+    else {
+      this.emit1U(array, WASM_OPCODE_I32_CONST, 0); // Pushes 1
+    }
+
+    var sizeOf = type.variableSizeOf(this.context);
+
+    if (sizeOf == 1) {
+      this.emit2U(array, type.isUnsigned() ? WASM_OPCODE_I32_LOAD8_U : WASM_OPCODE_I32_LOAD8_S, 0, offset); // Pops 1, pushes 1
+    }
+
+    else if (sizeOf == 2) {
+      this.emit2U(array, type.isUnsigned() ? WASM_OPCODE_I32_LOAD16_U : WASM_OPCODE_I32_LOAD16_S, 1, offset); // Pops 1, pushes 1
+    }
+
+    else if (sizeOf == 4) {
+      this.emit2U(array, WASM_OPCODE_I32_LOAD, 2, offset); // Pops 1, pushes 1
+    }
+
+    else {
+      assert(false);
+    }
+  }
+
+  emitStoreToMemory(array: ByteArray, type: Type, relativeBase: Node, offset: int, value: Node): void {
+
+    // Relative address
+    if (relativeBase != null) {
+      this.emitNode(array, relativeBase);
+    }
+
+    // Absolute address
+    else {
+      this.emit1U(array, WASM_OPCODE_I32_CONST, 0); // Pushes 1
+    }
+
+    this.emitNode(array, value);
+
+    var sizeOf = type.variableSizeOf(this.context);
+
+    if (sizeOf == 1) {
+      this.emit2U(array, WASM_OPCODE_I32_STORE8, 0, offset); // Pops 2
+    }
+
+    else if (sizeOf == 2) {
+      this.emit2U(array, WASM_OPCODE_I32_STORE16, 1, offset); // Pops 2
+    }
+
+    else if (sizeOf == 4) {
+      this.emit2U(array, WASM_OPCODE_I32_STORE, 2, offset); // Pops 2
+    }
+
+    else {
+      assert(false);
+    }
+  }
+
+  emitNode(array: ByteArray, node: Node): int {
+    assert(!isExpression(node) || node.resolvedType != null);
+
+    if (node.kind == NodeKind.BLOCK) {
+      var child = node.firstChild;
+
+      if (wasmIsGratuitousBlock(node)) {
+
+        while (child != null) {
+          this.emitNode(array, child);
+          child = child.nextSibling;
+        }
+
+      }
+
+      else {
+
+        this.emit1S(array, WASM_OPCODE_BLOCK, WasmType.BlockType);
+
+        #if WASM_TRACE
+          this.indentLevel = this.indentLevel + 1;
+        #endif
+
+        while (child != null) {
+          this.emitNode(array, child);
+          child = child.nextSibling;
+        }
+
+        #if WASM_TRACE
+          this.indentLevel = this.indentLevel - 1;
+        #endif
+
+        this.emit(array, WASM_OPCODE_END);
+
+      }
+    }
+
+    else if (node.kind == NodeKind.WHILE) {
+      var value = node.whileValue();
+      var body = node.whileBody();
+
+      // Ignore "while (false) { ... }"
+      if (value.kind == NodeKind.BOOL && value.intValue == 0) {
+        return 0;
+      }
+
+      this.emit1S(array, WASM_OPCODE_BLOCK, WasmType.BlockType);
+
+      #if WASM_TRACE
+        this.indentLevel = this.indentLevel + 1;
+      #endif
+
+      this.emit1S(array, WASM_OPCODE_LOOP, WasmType.BlockType);
+
+      #if WASM_TRACE
+        this.indentLevel = this.indentLevel + 1;
+      #endif
+
+      if (value.kind != NodeKind.BOOL) { // Not "while (true) { ... }"
+        this.emitNode(array, value);
+        this.emit(array, WASM_OPCODE_I32_EQZ); // Pops 1, pushes 1; the conditional is flipped
+        this.emit1U(array, WASM_OPCODE_BR_IF, 1); // Pops 1; break out of the immediately enclosing loop
+      }
+
+      else {
+        assert(value.intValue != 0);
+      }
+
+      var child = body.firstChild;
+      while (child != null) {
+        this.emitNode(array, child);
+        child = child.nextSibling;
+      }
+
+      this.emit1U(array, WASM_OPCODE_BR, 0); // Continue at the top of the immediately enclosing loop
+      this.emit(array, WASM_OPCODE_UNREACHABLE); // Resets the stack
+
+      #if WASM_TRACE
+        this.indentLevel = this.indentLevel - 1;
+      #endif
+
+      this.emit(array, WASM_OPCODE_END);
+
+      #if WASM_TRACE
+        this.indentLevel = this.indentLevel - 1;
+      #endif
+
+      this.emit(array, WASM_OPCODE_END);
+    }
+
+    else if (node.kind == NodeKind.BREAK || node.kind == NodeKind.CONTINUE) {
+      var label = 0;
+      var parent = node.parent;
+
+      while (parent.kind != NodeKind.WHILE) {
+        if ((parent.kind == NodeKind.BLOCK && !wasmIsGratuitousBlock(parent)) || wasmIsImplicitBlock(parent)) {
+          label = label + 1;
+        }
+        parent = parent.parent;
+        assert(parent != null);
+      }
+
+      assert(label > 0);
+      this.emit1U(array, WASM_OPCODE_BR, label - (node.kind == NodeKind.BREAK ? 0 : 1));
+      this.emit(array, WASM_OPCODE_UNREACHABLE);
+    }
+
+    else if (node.kind == NodeKind.EMPTY) {
+      return 0;
+    }
+
+    else if (node.kind == NodeKind.EXPRESSION) {
+      this.emitNode(array, node.expressionValue());
+    }
+
+    else if (node.kind == NodeKind.RETURN) {
+
+      var value = node.returnValue();
+      if (value != null) {
+        this.emitNode(array, value);
+      }
+      this.emit(array, WASM_OPCODE_RETURN); // Pops 1 if non-void
+    }
+
+    else if (node.kind == NodeKind.VARIABLES) {
+      var count = 0;
+      var child = node.firstChild;
+      while (child != null) {
+        assert(child.kind == NodeKind.VARIABLE);
+        count = count + this.emitNode(array, child);
+        child = child.nextSibling;
+      }
+      return count;
+    }
+
+    else if (node.kind == NodeKind.IF) {
+      var ifTrue = node.ifTrue();
+      var ifFalse = node.ifFalse();
+
+      this.emitNode(array, node.ifValue());
+
+      this.emit1S(array, WASM_OPCODE_IF, WasmType.BlockType); // Pops 1
+
+      #if WASM_TRACE
+        this.indentLevel = this.indentLevel + 1;
+      #endif
+
+      this.emitNode(array, ifTrue);
+
+      if (ifFalse != null) {
+
+        #if WASM_TRACE
+          this.indentLevel = this.indentLevel - 1;
+        #endif
+
+        this.emit(array, WASM_OPCODE_ELSE);
+
+        #if WASM_TRACE
+          this.indentLevel = this.indentLevel + 1;
+        #endif
+
+        this.emitNode(array, ifFalse);
+      }
+
+      #if WASM_TRACE
+        this.indentLevel = this.indentLevel - 1;
+      #endif
+
+      this.emit(array, WASM_OPCODE_END);
+    }
+
+    else if (node.kind == NodeKind.HOOK) { // Ternary if
+      let trueNode = node.hookTrue();
+      let falseNode = node.hookFalse();
+
+      this.emitNode(array, node.hookValue());
+      this.emit1S(array, WASM_OPCODE_IF, this.getWasmType(trueNode.resolvedType) as int); // Pops 1
+
+      #if WASM_TRACE
+        this.indentLevel = this.indentLevel + 1;
+      #endif
+
+      this.emitNode(array, trueNode);
+
+      #if WASM_TRACE
+        this.indentLevel = this.indentLevel - 1;
+      #endif
+
+      this.emit(array, WASM_OPCODE_ELSE);
+
+      #if WASM_TRACE
+        this.indentLevel = this.indentLevel + 1;
+      #endif
+
+      this.emitNode(array, node.hookFalse());
+
+      #if WASM_TRACE
+        this.indentLevel = this.indentLevel - 1;
+      #endif
+
+      this.emit(array, WASM_OPCODE_END);
+    }
+
+    else if (node.kind == NodeKind.VARIABLE) {
+      var value = node.variableValue();
+
+      if (node.symbol.kind == SymbolKind.VARIABLE_LOCAL) {
+
+        if (value != null) {
+          this.emitNode(array, value);
+        }
+
+        // Default initialization
+        else {
+          this.emit1U(array, WASM_OPCODE_I32_CONST, 0); // Pushes 1
+        }
+
+        this.emit1U(array, WASM_OPCODE_SET_LOCAL, node.symbol.offset); // Pops 1
+      }
+
+      else {
+        assert(false);
+      }
+    }
+
+    else if (node.kind == NodeKind.NAME) {
+      var symbol = node.symbol;
+
+      if (symbol.kind == SymbolKind.VARIABLE_ARGUMENT || symbol.kind == SymbolKind.VARIABLE_LOCAL) {
+        this.emit1U(array, WASM_OPCODE_GET_LOCAL, symbol.offset); // Pushes 1; TODO: use tee_local where applicable
+      }
+
+      else if (symbol.kind == SymbolKind.VARIABLE_GLOBAL) {
+        this.emitLoadFromMemory(array, symbol.resolvedType, null, WASM_MEMORY_INITIALIZER_BASE + symbol.offset);
+      }
+
+      else {
+        assert(false);
+      }
+    }
+
+    else if (node.kind == NodeKind.DEREFERENCE) {
+      this.emitLoadFromMemory(array, node.resolvedType.underlyingType(this.context), node.unaryValue(), 0);
+    }
+
+    else if (node.kind == NodeKind.NULL) {
+      this.emit1S(array, WASM_OPCODE_I32_CONST, 0); // Pushes 1
+    }
+
+    else if (node.kind == NodeKind.INT || node.kind == NodeKind.BOOL) {
+      this.emit1S(array, WASM_OPCODE_I32_CONST, node.intValue); // Pushes 1
+    }
+
+    else if (node.kind == NodeKind.STRING) {
+      this.emit1S(array, WASM_OPCODE_I32_CONST, WASM_MEMORY_INITIALIZER_BASE + node.intValue); // Pushes 1
+    }
+
+    else if (node.kind == NodeKind.CALL) {
+      var value = node.callValue();
+      var symbol = value.symbol;
+      assert(isFunction(symbol.kind));
+
+      var returnType = symbol.node.functionReturnType();
+      assert(returnType.resolvedType != null);
+
+      // Write out the implicit "this" argument
+      if (symbol.kind == SymbolKind.FUNCTION_INSTANCE) {
+        this.emit(array, WASM_OPCODE_NOP);
+        this.emitNode(array, value.dotTarget());
+      }
+
+      var child = value.nextSibling;
+      while (child != null) {
+        this.emitNode(array, child);
+        child = child.nextSibling;
+      }
+
+      this.emit1U(array, WASM_OPCODE_CALL, this.getFunctionCallIndex(symbol)); // Pops N (each argument), pushes 1 if non-void
+
+      if (node.parent.kind == NodeKind.EXPRESSION && returnType.resolvedType != this.context.voidType) {
+        this.emit(array, WASM_OPCODE_DROP); // Pops 1; obsolete return value
+      }
+    }
+
+    else if (node.kind == NodeKind.NEW) {
+      var newType = node.newType();
+      var size = newType.resolvedType.allocationSizeOf(this.context);
+
+      // Pass the object size as the first argument
+      assert(size > 0);
+      this.emit1S(array, WASM_OPCODE_I32_CONST, size); // Pushes 1
+      this.emit1U(array, WASM_OPCODE_CALL, this.getFunctionCallIndex(this.mallocFunction.symbol)); // Pops 1, pushes 1 (malloc)
+    }
+
+    else if (node.kind == NodeKind.POSITIVE) {
+      this.emitNode(array, node.unaryValue());
+    }
+
+    else if (node.kind == NodeKind.NEGATIVE) {
+      this.emit1S(array, WASM_OPCODE_I32_CONST, 0); // Pushes 1
+      this.emitNode(array, node.unaryValue());
+      this.emit(array, WASM_OPCODE_I32_SUB); // Pops 2, pushes 1
+    }
+
+    else if (node.kind == NodeKind.COMPLEMENT) {
+      this.emit1S(array, WASM_OPCODE_I32_CONST, ~0); // Pushes 1
+      this.emitNode(array, node.unaryValue());
+      this.emit(array, WASM_OPCODE_I32_XOR); // Pops 2, pushes 1
+    }
+
+    else if (node.kind == NodeKind.NOT) {
+      this.emitNode(array, node.unaryValue());
+      this.emit(array, WASM_OPCODE_I32_EQZ); // Pops 1, pushes 1
+    }
+
+    else if (node.kind == NodeKind.CAST) {
+      var value = node.castValue();
+      var context = this.context;
+      var from: Type = value.resolvedType.underlyingType(context);
+      var type: Type = node.resolvedType.underlyingType(context);
+      var fromSize = from.variableSizeOf(context);
+      var typeSize = type.variableSizeOf(context);
+
+      // The cast isn't needed if it's to a wider integer type
+      if (from == type || fromSize < typeSize) {
+        this.emitNode(array, value);
+      }
+
+      else {
+        // Sign-extend
+        if (type == context.sbyteType || type == context.shortType) {
+          var shift = 32 - typeSize * 8;
+          this.emitNode(array, value);
+          this.emit1S(array, WASM_OPCODE_I32_CONST, shift); // Pushes 1
+          this.emit(array, WASM_OPCODE_I32_SHR_S); // Pops 2, pushes 1
+          this.emit1S(array, WASM_OPCODE_I32_CONST, shift);  // Pushes 1
+          this.emit(array, WASM_OPCODE_I32_SHL); // Pops 2, pushes 1
+        }
+
+        // Mask
+        else if (type == context.byteType || type == context.ushortType) {
+          this.emitNode(array, value);
+          this.emit1S(array, WASM_OPCODE_I32_CONST, type.integerBitMask(this.context) as int); // Pushes 1
+          this.emit(array, WASM_OPCODE_I32_AND); // Pops 2, pushes 1
+        }
+
+        // No cast needed
+        else {
+          this.emitNode(array, value);
+        }
+      }
+    }
+
+    else if (node.kind == NodeKind.DOT) {
+      var symbol = node.symbol;
+
+      if (symbol.kind == SymbolKind.VARIABLE_INSTANCE) {
+        this.emitLoadFromMemory(array, symbol.resolvedType, node.dotTarget(), symbol.offset);
+      }
+
+      else {
+        assert(false);
+      }
+    }
+
+    else if (node.kind == NodeKind.ASSIGN) {
+      var left = node.binaryLeft();
+      var right = node.binaryRight();
+      var symbol = left.symbol;
+
+      assert(node.parent.kind == NodeKind.EXPRESSION); // FIXME: This doesn't work within expressions
+
+      if (left.kind == NodeKind.DEREFERENCE) {
+        this.emitStoreToMemory(array, left.resolvedType.underlyingType(this.context), left.unaryValue(), 0, right);
+      }
+
+      else if (symbol.kind == SymbolKind.VARIABLE_INSTANCE) {
+        this.emitStoreToMemory(array, symbol.resolvedType, left.dotTarget(), symbol.offset, right);
+      }
+
+      else if (symbol.kind == SymbolKind.VARIABLE_GLOBAL) {
+        this.emitStoreToMemory(array, symbol.resolvedType, null, WASM_MEMORY_INITIALIZER_BASE + symbol.offset, right);
+      }
+
+      else if (symbol.kind == SymbolKind.VARIABLE_ARGUMENT || symbol.kind == SymbolKind.VARIABLE_LOCAL) {
+        this.emitNode(array, right);
+        this.emit1U(array, WASM_OPCODE_SET_LOCAL, symbol.offset);
+      }
+
+      else {
+        assert(false);
+      }
+    }
+
+    else if (node.kind == NodeKind.LOGICAL_AND) { // a && b universal
+      this.emitNode(array, node.binaryLeft());
+      this.emit1S(array, WASM_OPCODE_IF, WasmType.I32); // Pops 1
+      this.emitNode(array, node.binaryRight());
+      this.emit(array, WASM_OPCODE_ELSE);
+      this.emit1S(array, WASM_OPCODE_I32_CONST, 0); // Pushes 1
+      this.emit(array, WASM_OPCODE_END);
+    }
+
+    else if (node.kind == NodeKind.LOGICAL_OR) { // a || b with a bool
+      this.emitNode(array, node.binaryLeft());
+      this.emit1S(array, WASM_OPCODE_IF, WasmType.I32); // Pops 1
+      this.emit1S(array, WASM_OPCODE_I32_CONST, 1); // Pushes 1
+      this.emit(array, WASM_OPCODE_ELSE);
+      this.emitNode(array, node.binaryRight());
+      this.emit(array, WASM_OPCODE_END);
+    }
+
+    else {
+      var isUnsigned = node.isUnsignedOperator();
+
+      if (node.kind == NodeKind.ADD) {
+        var left = node.binaryLeft();
+        var right = node.binaryRight();
+
+        this.emitNode(array, left);
+        if (left.resolvedType.pointerTo == null) {
+          this.emitNode(array, right);
+        }
+
+        // Need to multiply the right by the size of the pointer target
+        else {
+          assert(right.resolvedType.isInteger());
+          var size = left.resolvedType.pointerTo.allocationSizeOf(this.context);
+
+          if (size == 2) {
+            if (right.kind == NodeKind.INT) {
+              this.emit1S(array, WASM_OPCODE_I32_CONST, right.intValue << 1); // Pushes 1
+            }
+
+            else {
+              this.emitNode(array, right);
+              this.emit1S(array, WASM_OPCODE_I32_CONST, 1); // Pushes 1
+              this.emit(array, WASM_OPCODE_I32_SHL); // Pops 2, pushes 1
+            }
+          }
+
+          else if (size == 4) {
+            if (right.kind == NodeKind.INT) {
+              this.emit1S(array, WASM_OPCODE_I32_CONST, right.intValue << 2); // Pushes 1
+            }
+
+            else {
+              this.emitNode(array, right);
+              this.emit1S(array, WASM_OPCODE_I32_CONST, 2); // Pushes 1
+              this.emit(array, WASM_OPCODE_I32_SHL); // Pops 2, pushes 1
+            }
+          }
+
+          else {
+            this.emitNode(array, right);
+          }
+        }
+        this.emit(array, WASM_OPCODE_I32_ADD); // Pops 2, pushes 1
+      }
+
+      else if (node.kind == NodeKind.BITWISE_AND) this.emitBinaryExpression(array, node, WASM_OPCODE_I32_AND);
+      else if (node.kind == NodeKind.BITWISE_OR) this.emitBinaryExpression(array, node, WASM_OPCODE_I32_OR);
+      else if (node.kind == NodeKind.BITWISE_XOR) this.emitBinaryExpression(array, node, WASM_OPCODE_I32_XOR);
+      else if (node.kind == NodeKind.EQUAL) this.emitBinaryExpression(array, node, WASM_OPCODE_I32_EQ);
+      else if (node.kind == NodeKind.MULTIPLY) this.emitBinaryExpression(array, node, WASM_OPCODE_I32_MUL);
+      else if (node.kind == NodeKind.NOT_EQUAL) this.emitBinaryExpression(array, node, WASM_OPCODE_I32_NE);
+      else if (node.kind == NodeKind.SHIFT_LEFT) this.emitBinaryExpression(array, node, WASM_OPCODE_I32_SHL);
+      else if (node.kind == NodeKind.SUBTRACT) this.emitBinaryExpression(array, node, WASM_OPCODE_I32_SUB);
+
+      else if (node.kind == NodeKind.DIVIDE) this.emitBinaryExpression(array, node, isUnsigned ? WASM_OPCODE_I32_DIV_U : WASM_OPCODE_I32_DIV_S);
+      else if (node.kind == NodeKind.GREATER_THAN) this.emitBinaryExpression(array, node, isUnsigned ? WASM_OPCODE_I32_GT_U : WASM_OPCODE_I32_GT_S);
+      else if (node.kind == NodeKind.GREATER_THAN_EQUAL) this.emitBinaryExpression(array, node, isUnsigned ? WASM_OPCODE_I32_GE_U : WASM_OPCODE_I32_GE_S);
+      else if (node.kind == NodeKind.LESS_THAN) this.emitBinaryExpression(array, node, isUnsigned ? WASM_OPCODE_I32_LT_U : WASM_OPCODE_I32_LT_S);
+      else if (node.kind == NodeKind.LESS_THAN_EQUAL) this.emitBinaryExpression(array, node, isUnsigned ? WASM_OPCODE_I32_LE_U : WASM_OPCODE_I32_LE_S);
+      else if (node.kind == NodeKind.REMAINDER) this.emitBinaryExpression(array, node, isUnsigned ? WASM_OPCODE_I32_REM_U : WASM_OPCODE_I32_REM_S);
+      else if (node.kind == NodeKind.SHIFT_RIGHT) this.emitBinaryExpression(array, node, isUnsigned ? WASM_OPCODE_I32_SHR_U : WASM_OPCODE_I32_SHR_S);
+
+      else {
+        assert(false);
+      }
+    }
+    return 1;
+  }
+
+  emit(array: ByteArray, code: int): void {
+
+    #if WASM_TRACE
+      wasmTrace(StringBuilder_new().append("  ").append(wasmToHexString(array.length(), 6)).append(" | ").append(wasmIndent(this.indentLevel)).append(wasmOpToString(code, 0, -1, -1)));
+    #endif
+
+    wasmWriteVarUnsigned(array, code);
+  }
+
+  emit1U(array: ByteArray, code: int, imm: int): void {
+
+    #if WASM_TRACE
+      wasmTrace(StringBuilder_new().append("  ").append(wasmToHexString(array.length(), 6)).append(" | ").append(wasmIndent(this.indentLevel)).append(wasmOpToString(code, 1, imm, -1)));
+    #endif
+
+    wasmWriteVarUnsigned(array, code);
+    wasmWriteVarUnsigned(array, imm);
+  }
+
+  emit1S(array: ByteArray, code: int, imm: int): void {
+
+    #if WASM_TRACE
+      wasmTrace(StringBuilder_new().append("  ").append(wasmToHexString(array.length(), 6)).append(" | ").append(wasmIndent(this.indentLevel)).append(wasmOpToString(code, 1, imm, -1)));
+    #endif
+
+    wasmWriteVarUnsigned(array, code);
+    wasmWriteVarSigned(array, imm);
+  }
+
+  emit2U(array: ByteArray, code: int, imm1: int, imm2: int): void {
+
+    #if WASM_TRACE
+      wasmTrace(StringBuilder_new().append("  ").append(wasmToHexString(array.length(), 6)).append(" | ").append(wasmIndent(this.indentLevel)).append(wasmOpToString(code, 2, imm1, imm2)));
+    #endif
+
+    wasmWriteVarUnsigned(array, code);
+    wasmWriteVarUnsigned(array, imm1);
+    wasmWriteVarUnsigned(array, imm2);
+  }
+
+  getWasmType(type: Type): WasmType {
+    var context = this.context;
+
+    if (type == context.boolType || type.isInteger() || type.isReference()) {
+      return WasmType.I32;
+    }
+
+    if (type == context.voidType) {
+      return WasmType.Void;
+    }
+
+    assert(false);
+    return WasmType.Void;
+  }
+
+  getFunctionCallIndex(symbol: Symbol): int {
+    assert(symbol.kind == SymbolKind.FUNCTION_GLOBAL || symbol.kind == SymbolKind.FUNCTION_INSTANCE);
+    return symbol.node.functionBody() == null ? symbol.offset : this.importCount + symbol.offset;
+  }
+
+  #if WASM_TRACE
+    indentLevel: int;
+  #endif
+}
+
+function wasmAreSignaturesEqual(a: WasmSignature, b: WasmSignature): bool {
+  assert(a.returnType != null);
+  assert(b.returnType != null);
+  assert(a.returnType.next == null);
+  assert(b.returnType.next == null);
+
+  var x = a.argumentTypes;
+  var y = b.argumentTypes;
+
+  while (x != null && y != null) {
+    if (x.id != y.id) {
+      return false;
+    }
+
+    x = x.next;
+    y = y.next;
+  }
+
+  if (x != null || y != null) {
+    return false;
+  }
+
+  if (a.returnType.id != b.returnType.id) {
+    return false;
+  }
+
+  return true;
+}
+
+function wasmPatchVarUnsigned(array: ByteArray, offset: int, value: int, maxValue: int): void {
+  var current = value as uint;
+  var max = maxValue as uint;
+  while (true) {
+    var element = current & 127;
+    current = current >> 7;
+    max = max >> 7;
+    if (max != 0) {
+      element = element | 128;
+    }
+    array.set(offset, element as byte);
+    offset = offset + 1;
+    if (max == 0) {
+      break;
+    }
+  }
+}
+
+function wasmWriteVarUnsigned(array: ByteArray, value: int): void {
+  var current = value as uint;
+  while (true) {
+    var element = current & 127;
+    current = current >> 7;
+    if (current != 0) {
+      element = element | 128;
+    }
+    array.append(element as byte);
+    if (current == 0) {
+      break;
+    }
+  }
+}
+
+function wasmWriteVarSigned(array: ByteArray, value: int): void {
+  while (true) {
+    var element = value & 127;
+    value = value >> 7;
+    var done =
+      value == 0 && (element & 64) == 0 ||
+      value == -1 && (element & 64) != 0;
+    if (!done) {
+      element = element | 128;
+    }
+    array.append(element as byte);
+    if (done) {
+      break;
+    }
+  }
+}
+
+function wasmWriteLengthPrefixedUTF8(array: ByteArray, value: string): void {
+  var stringLengthOffset = array.length();
+  wasmWriteVarUnsigned(array, ~0); // patched later
+  var stringPayloadOffset = array.length();
+
+  var length = value.length;
+  var i = 0;
+  var c1: uint;
+  var c2: uint;
+  while (i < length) {
+    c1 = value[i];
+
+    if (c1 < 128) {
+      array.append(c1 as byte);
+    }
+
+    else if (c1 < 2048) {
+      array.append((c1 >> 6       | 192) as byte);
+      array.append((c1       & 63 | 128) as byte);
+    }
+
+    else if ((c1 & 0xfc00) != 0xd800) {
+      array.append((c1 >> 12      | 224) as byte);
+      array.append((c1 >> 6  & 63 | 128) as byte);
+      array.append((c1       & 63 | 128) as byte);
+    }
+
+    else {
+      c2 = value[i + 1];
+
+      if ((c2 & 0xfc00) == 0xdc00) {
+        c1 = 0x10000 + ((c1 & 0x03ff) << 10) + (c2 & 0x03ff);
+        i = i + 1;
+        array.append((c1 >> 18      | 240) as byte);
+        array.append((c1 >> 12 & 63 | 128) as byte);
+        array.append((c1 >> 6  & 63 | 128) as byte);
+        array.append((c1       & 63 | 128) as byte);
+      }
+
+      else {
+        assert(false);
+      }
+    }
+
+    i = i + 1;
+  }
+
+  wasmPatchVarUnsigned(array, stringLengthOffset, array.length() - stringPayloadOffset, ~0);
+}
+
+function wasmWrapType(id: WasmType): WasmWrappedType {
+  assert(id == WasmType.Void || id == WasmType.I32);
+  var type = new WasmWrappedType();
+  type.id = id;
+  return type;
+}
+
+function wasmIsGratuitousBlock(node: Node): bool {
+  return node.kind == NodeKind.BLOCK && node.childCount() == 1;
+}
+
+function wasmIsImplicitBlock(node: Node): bool {
+  return node.kind == NodeKind.IF;
+}
+
+class WasmSharedOffset {
+  nextLocalOffset: int;
+  localCount: int;
+}
+
+function wasmAssignLocalVariableOffsets(node: Node, shared: WasmSharedOffset, fn: WasmFunction): void {
+  if (node.kind == NodeKind.VARIABLE) {
+    assert(node.symbol.kind == SymbolKind.VARIABLE_LOCAL);
+    node.symbol.offset = shared.nextLocalOffset;
+    shared.nextLocalOffset = shared.nextLocalOffset + 1;
+    shared.localCount = shared.localCount + 1;
+
+    var local = new WasmLocal();
+    local.symbol = node.symbol;
+    if (fn.firstLocal == null) fn.firstLocal = local;
+    else fn.lastLocal.next = local;
+    fn.lastLocal = local;
+  }
+
+  var child = node.firstChild;
+  while (child != null) {
+    wasmAssignLocalVariableOffsets(child, shared, fn);
+    child = child.nextSibling;
+  }
+}
+
+function wasmEmit(compiler: Compiler): void {
+  var module = new WasmModule();
+  module.compiler = compiler;
+  module.context = compiler.context;
+  module.memoryInitializer = new ByteArray();
+  assert(module.memoryInitializer.length() == 0);
+
+  // Set these to invalid values since "0" is valid
+  module.currentHeapPointer = -1;
+  module.originalHeapPointer = -1;
+
+  // Emission requires two passes
+  module.prepareToEmit(compiler.global);
+
+  // The standard library must be included
+  assert(module.currentHeapPointer != -1);
+  assert(module.originalHeapPointer != -1);
+  assert(module.mallocFunction != null);
+  assert(module.freeFunction != null);
+
+  compiler.outputWASM = new ByteArray();
+  module.emitModule(compiler.outputWASM);
+}

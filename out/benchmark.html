@@ -107,7 +107,7 @@
   var jsContext = jsCanvas.getContext('2d');
 
   function supportsWebAssembly() {
-    return typeof Wasm !== 'undefined';
+    return typeof WebAssembly !== 'undefined' && WebAssembly && WebAssembly.instantiate;
   }
 
   function main() {
@@ -122,56 +122,57 @@
     loadWebAssembly(function(wasm) {
       loadJavaScript(function(js) {
         fetch('benchmark.thin', 'text', function(input) {
-          var compiledWebAssembly = compileWebAssembly(wasm);
-          var compiledJavaScript = compileJavaScript(js);
-          var sources = [{
-            name: '<stdin>',
-            contents: input,
-          }];
-          var timeout = 10;
-          var limit = 20;
-          var count = 0;
+          compileWebAssembly(wasm, function(compiledWebAssembly) {
+            var compiledJavaScript = compileJavaScript(js);
+            var sources = [{
+              name: '<stdin>',
+              contents: input,
+            }];
+            var timeout = 10;
+            var limit = 20;
+            var count = 0;
 
-          var jsTimes = [];
-          var wasmTimes = [];
+            var jsTimes = [];
+            var wasmTimes = [];
 
-          function renderTimes() {
-            draw(jsContext, jsTimes);
-            draw(wasmContext, wasmTimes);
-          }
-
-          var tickJS = function() {
-            var before = now();
-            var result = compiledJavaScript(sources, 'WebAssembly', 'compiled');
-            var time = Math.round(now() - before);
-            console.log('total time for JavaScript: ' + time + 'ms');
-            jsTimes.push(time);
-            renderTimes();
-
-            if (++count < limit) {
-              setTimeout(tickJS, timeout);
+            function renderTimes() {
+              draw(jsContext, jsTimes);
+              draw(wasmContext, wasmTimes);
             }
 
-            else {
-              count = 0;
-              setTimeout(tickWASM, timeout);
-            }
-          };
+            var tickJS = function() {
+              var before = now();
+              var result = compiledJavaScript(sources, 'WebAssembly', 'compiled');
+              var time = Math.round(now() - before);
+              console.log('total time for JavaScript: ' + time + 'ms');
+              jsTimes.push(time);
+              renderTimes();
 
-          var tickWASM = function() {
-            var before = now();
-            var result = compiledWebAssembly(sources, 'WebAssembly', 'compiled');
-            var time = Math.round(now() - before);
-            console.log('total time for WebAssembly: ' + time + 'ms');
-            wasmTimes.push(time);
-            renderTimes();
+              if (++count < limit) {
+                setTimeout(tickJS, timeout);
+              }
 
-            if (++count < limit) {
-              setTimeout(tickWASM, timeout);
-            }
-          };
+              else {
+                count = 0;
+                setTimeout(tickWASM, timeout);
+              }
+            };
 
-          setTimeout(tickJS, timeout);
+            var tickWASM = function() {
+              var before = now();
+              var result = compiledWebAssembly(sources, 'WebAssembly', 'compiled');
+              var time = Math.round(now() - before);
+              console.log('total time for WebAssembly: ' + time + 'ms');
+              wasmTimes.push(time);
+              renderTimes();
+
+              if (++count < limit) {
+                setTimeout(tickWASM, timeout);
+              }
+            };
+
+            setTimeout(tickJS, timeout);
+          });
         });
       });
     });

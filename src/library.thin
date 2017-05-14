@@ -25,6 +25,8 @@ function library(): string {
     return offset;
   }
 
+  extern unsafe function free(ptr: *byte): void { /* TODO */ }
+
   unsafe function memcpy(target: *byte, source: *byte, length: uint): void {
     // No-op if either of the inputs are null
     if (source == null || target == null) {
@@ -91,6 +93,7 @@ function library(): string {
 #elif C
 
   declare unsafe function malloc(sizeOf: uint): *byte;
+  declare unsafe function free(ptr: *byte): void;
   declare unsafe function memcpy(target: *byte, source: *byte, length: uint): void;
   declare unsafe function memcmp(a: *byte, b: *byte, length: uint): int;
 

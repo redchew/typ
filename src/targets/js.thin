@@ -128,7 +128,7 @@ class JsResult {
     if (node.kind == NodeKind.NAME) {
       var symbol = node.symbol;
       if (symbol.kind == SymbolKind.FUNCTION_GLOBAL && symbol.node.isDeclare()) {
-        code.append("__declare.");
+        code.append("__imports.");
       }
       this.emitSymbolName(symbol);
     }
@@ -397,7 +397,7 @@ class JsResult {
       else if (node.isExtern()) {
         code.append("var ");
         this.emitSymbolName(symbol);
-        code.append(" = __extern.");
+        code.append(" = __exports.");
         this.emitSymbolName(symbol);
         code.append(" = function");
         needsSemicolon = true;
@@ -581,7 +581,7 @@ class JsResult {
       if (node.isExtern()) {
         this.emitNewlineBefore(node);
         this.emitIndent();
-        code.append("__extern.");
+        code.append("__exports.");
         this.emitSymbolName(node.symbol);
         code.append(" = {\n");
         this.indent = this.indent + 1;
@@ -615,9 +615,10 @@ class JsResult {
 }
 
 function jsKindCastsOperandsToInt(kind: NodeKind): bool {
-  return
+  return (
     kind == NodeKind.SHIFT_LEFT || kind == NodeKind.SHIFT_RIGHT ||
-    kind == NodeKind.BITWISE_OR || kind == NodeKind.BITWISE_AND || kind == NodeKind.BITWISE_XOR;
+    kind == NodeKind.BITWISE_OR || kind == NodeKind.BITWISE_AND || kind == NodeKind.BITWISE_XOR
+  );
 }
 
 function jsEmit(compiler: Compiler): void {
@@ -626,7 +627,7 @@ function jsEmit(compiler: Compiler): void {
   result.context = compiler.context;
   result.code = code;
 
-  code.append("(function(__declare, __extern) {\n");
+  code.append("(function(__imports, __exports) {\n");
   result.indent = 1;
   result.emitStatements(compiler.global.firstChild);
 

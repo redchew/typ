@@ -101,9 +101,10 @@ function printUsage(): void {
   Terminal_write(`
 Usage: thinc [FLAGS] [INPUTS]
 
-  --help           Print this message.
-  --out [PATH]     Emit code to PATH (the target format is the file extension).
-  --define [NAME]  Define the flag NAME in all input files.
+  --help              Print this message.
+  --out [PATH]        Emit code to PATH (the target format is the file extension).
+  --define [NAME]     Define the flag NAME in all input files.
+  --c, --js, --wasm   Explicitly sets the target format.
 
 Examples:
 
@@ -114,6 +115,14 @@ Examples:
 `);
 }
 
+const EUSAGE = 1;
+const EARGUMENTS = 2;
+const EINPUT = 3;
+const EOUTPUT = 4;
+const ETARGET = 5;
+const EREAD = 6;
+const EWRITE = 7;
+
 extern function main_entry(): int {
   var target = CompileTarget.NONE;
   var argument = firstArgument;
@@ -123,7 +132,7 @@ extern function main_entry(): int {
   // Print usage by default
   if (firstArgument == null) {
     printUsage();
-    return 1;
+    return EUSAGE;
   }
 
   // Initial pass over the argument list
@@ -146,7 +155,7 @@ extern function main_entry(): int {
         output = argument.text;
       } else {
         printError(StringBuilder_new().append("Invalid flag: ").append(text).finish());
-        return 1;
+        return EARGUMENTS;
       }
     } else {
       inputCount = inputCount + 1;
@@ -157,13 +166,13 @@ extern function main_entry(): int {
   // Must have inputs
   if (inputCount == 0) {
     printError("No input files");
-    return 1;
+    return EINPUT;
   }
 
   // Must have an output
   if (output == null) {
     printError("Missing an output file (use the --out flag)");
-    return 1;
+    return EOUTPUT;
   }
 
   // Automatically set the target based on the file extension
@@ -173,7 +182,7 @@ extern function main_entry(): int {
     else if (output.endsWith(".wasm")) target = CompileTarget.WEBASSEMBLY;
     else {
       printError("Missing a target (use either --c, --js, or --wasm)");
-      return 1;
+      return ETARGET;
     }
   }
 
@@ -194,7 +203,7 @@ extern function main_entry(): int {
       var contents = IO_readTextFile(text);
       if (contents == null) {
         printError(StringBuilder_new().append("Cannot read from ").append(text).finish());
-        return 1;
+        return EREAD;
       }
       compiler.addInput(text, contents);
     }
@@ -216,5 +225,5 @@ extern function main_entry(): int {
     printError(StringBuilder_new().append("Cannot write to ").append(output).finish());
   }
 
-  return 1;
+  return EWRITE;
 }
