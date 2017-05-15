@@ -1,0 +1,24 @@
+function metadata(node: Node, context: CheckContext, decorator: Node): void {
+  assert(node.kind == NodeKind.FUNCTION);
+
+  // This is an example of what decorators could do. However, without a way to extend the
+  // compiler with custom decorators (i.e. imports and function pointers), this feature
+  // won't be of much value, yet.
+
+  var body = node.functionBody();
+  if (body == null || body.childCount() == 0) { // No need to instrument empty functions
+    return;
+  }
+
+  var range = node.range;
+  var source = range.source;
+  var index = source.indexToLineColumn(range.start);
+
+  var variables = createVariables();
+  variables.appendChild(createVariable("__name", null, createString(node.symbol.name)));
+  variables.appendChild(createVariable("__file", null, createString(source.name)));
+  variables.appendChild(createVariable("__line", null, createInt(index.line)));
+  variables.appendChild(createVariable("__column", null, createInt(index.column)));
+
+  body.insertChildBefore(body.firstChild, variables);
+}

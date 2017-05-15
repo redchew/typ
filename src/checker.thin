@@ -129,6 +129,25 @@ function initialize(context: CheckContext, node: Node, parentScope: Scope, mode:
       initializeSymbol(context, parent);
       node.insertChildBefore(node.functionFirstArgument(), createVariable("this", createType(parent.resolvedType), null));
     }
+
+    // Decorators can be used to modify functions on compile time
+    var decorators = node.firstChild;
+    while (decorators != null) {
+      if (decorators.kind == NodeKind.DECORATORS) {
+        break;
+      }
+      decorators = decorators.nextSibling;
+    }
+    if (decorators != null) {
+      var decorator = decorators.firstChild;
+      while (decorator != null) {
+        var name = decorator.stringValue;
+        if (decorator.stringValue == "metadata") metadata(node, context, decorator);
+        else context.log.error(node.range, "There is no such decorator");
+        decorator = decorator.nextSibling;
+      }
+      decorators.remove();
+    }
   }
 
   // Variable
@@ -155,14 +174,6 @@ function initialize(context: CheckContext, node: Node, parentScope: Scope, mode:
       parentScope = scope;
     }
     node.scope = parentScope;
-  }
-
-  // Decorators
-  else if (kind == NodeKind.DECORATORS) {
-    assert(node.parent.kind == NodeKind.FUNCTION);
-
-    // TODO: Working decorators
-    context.log.error(node.range, "Decorators are not supported yet");
   }
 
   // Children
