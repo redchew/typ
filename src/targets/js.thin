@@ -525,13 +525,13 @@ class JsResult {
       while (child != null) {
         var value = child.variableValue();
         this.emitSymbolName(child.symbol);
+        assert(value != null);
+        code.append(" = ");
+        this.emitExpression(value, Precedence.LOWEST);
         child = child.nextSibling;
         if (child != null) {
           code.append(", ");
         }
-        assert(value != null);
-        code.append(" = ");
-        this.emitExpression(value, Precedence.LOWEST);
       }
 
       code.append(";\n");
