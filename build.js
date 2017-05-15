@@ -1,7 +1,7 @@
 var child_process = require('child_process');
 var fs = require('fs');
 
-eval(fs.readFileSync('./out/common.js', 'utf8'));
+eval(fs.readFileSync('./docs/common.js', 'utf8'));
 
 // Always build all targets to catch errors in other targets
 function compile(compiler, sources) {
@@ -31,9 +31,9 @@ function compileNativeUnix() {
   try {
     var command = [
       'cc',
-      __dirname + '/lib/thinc.c',
-      __dirname + '/out/compiled.c',
-      '-o', __dirname + '/out/thinc',
+      '../lib/thinc.c',
+      '../out/compiled.c',
+      '-o', 'thinc',
       '-Wall',
       '-Wextra',
       '-Wno-unused-parameter',
@@ -42,7 +42,7 @@ function compileNativeUnix() {
       '-O3',
     ];
     console.log(command.join(' '));
-    var child = child_process.spawn(command.shift(), command, {stdio: 'inherit'});
+    var child = child_process.spawn(command.shift(), command, { stdio: 'inherit', cwd: __dirname + "/out" });
   } catch (e) {
     console.log('failed to build the native compiler');
   }
@@ -72,9 +72,9 @@ function compileNativeWindows() {
 
     var version = versions.shift();
     var folder = process.env['VS' + version + 'COMNTOOLS'];
-    var child = child_process.spawn('cmd.exe', [], {cwd: __dirname, stdio: ['pipe', process.stdout, process.stderr]});
+    var child = child_process.spawn('cmd.exe', [], { cwd: __dirname + "/out", stdio: ['pipe', process.stdout, process.stderr] });
     child.stdin.write('"' + folder + '/../../VC/bin/vcvars32.bat"\n');
-    child.stdin.write('cl.exe /O2 lib/thinc.c out/compiled.c /Fe"out/thinc.exe"\n');
+    child.stdin.write('cl.exe /O2 ../lib/thinc.c ../out/compiled.c /Fe"thinc.exe"\n');
     child.stdin.end();
     child.on('close', function(code) {
       if (code !== 0 || !fs.existsSync(__dirname + '/out/thinc.exe')) {
@@ -102,7 +102,7 @@ var sources = [];
   });
 })(sourceDir);
 
-var compiled = fs.readFileSync(__dirname + '/out/compiled.js', 'utf8');
+var compiled = fs.readFileSync(__dirname + '/docs/compiled.js', 'utf8');
 
 console.log('compiling...');
 var compiled = compile(compiled, sources);
@@ -118,11 +118,10 @@ fs.writeFileSync(__dirname + '/out/compiled.h', compiled.h);
 console.log('wrote to "out/compiled.c"');
 console.log('wrote to "out/compiled.h"');
 
-fs.writeFileSync(__dirname + '/out/compiled.js', compiled.js);
-console.log('wrote to "out/compiled.js"');
-
-fs.writeFileSync(__dirname + '/out/compiled.wasm', Buffer(compiled.wasm));
-console.log('wrote to "out/compiled.wasm"');
+fs.writeFileSync(__dirname + '/docs/compiled.js', compiled.js);
+console.log('wrote to "docs/compiled.js"');
+fs.writeFileSync(__dirname + '/docs/compiled.wasm', Buffer(compiled.wasm));
+console.log('wrote to "docs/compiled.wasm"');
 
 console.log('building the native compiler...');
 if (process.platform === 'win32') compileNativeWindows();

@@ -3,6 +3,6 @@
   "version": "0.0.2",
   "description": "A low-level programming language inspired by TypeScript",
   "bin": {
-    "thinc": "lib/thinc.js"
+    "thinc": "lib/thinc"
   }
 }

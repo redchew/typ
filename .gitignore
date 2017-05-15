@@ -1,7 +1,6 @@
 .DS_Store
 .vscode/
 *.obj
-/node_modules/
-/out/thinc
-/out/thinc.exe
-/sandbox/
+node_modules/
+out/
+sandbox/
