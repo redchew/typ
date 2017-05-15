@@ -157,6 +157,14 @@ function initialize(context: CheckContext, node: Node, parentScope: Scope, mode:
     node.scope = parentScope;
   }
 
+  // Decorators
+  else if (kind == NodeKind.DECORATORS) {
+    assert(node.parent.kind == NodeKind.FUNCTION);
+
+    // TODO: Working decorators
+    context.log.error(node.range, "Decorators are not supported yet");
+  }
+
   // Children
   var child = node.firstChild;
   while (child != null) {

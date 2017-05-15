@@ -7,6 +7,8 @@ enum NodeKind {
   PARAMETER,
   PARAMETERS,
   VARIABLE,
+  DECORATOR,
+  DECORATORS,
 
   // Statements
   BLOCK,
@@ -418,8 +420,11 @@ class Node {
     assert(this.kind == NodeKind.FUNCTION);
     assert(this.childCount() >= 2);
     var child = this.firstChild;
-    if (child.kind == NodeKind.PARAMETERS) {
+    var whileCount = 0;
+    while (child.kind == NodeKind.PARAMETERS || child.kind == NodeKind.DECORATORS) {
+      assert(whileCount < 2);
       child = child.nextSibling;
+      whileCount = whileCount + 1;
     }
     return child;
   }
@@ -903,6 +908,19 @@ function createVariable(name: string, type: Node, value: Node): Node {
     node.appendChild(value);
   }
 
+  return node;
+}
+
+function createDecorator(name: string): Node {
+  var node = new Node();
+  node.kind = NodeKind.DECORATOR;
+  node.stringValue = name;
+  return node;
+}
+
+function createDecorators(): Node {
+  var node = new Node();
+  node.kind = NodeKind.DECORATORS;
   return node;
 }
 

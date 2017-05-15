@@ -746,6 +746,13 @@ class ParserContext {
     }
 
     while (!this.peek(TokenKind.END_OF_FILE) && !this.peek(TokenKind.RIGHT_BRACE)) {
+      var childDecorators: Node = null;
+      if (this.peek(TokenKind.DECORATOR_MAGIC)) {
+        childDecorators = this.parseDecorators();
+        if (childDecorators == null) {
+          return null;
+        }
+      }
       var childFlags = this.parseFlags();
       var childName = this.current;
       var oldKind = childName.kind;
@@ -767,7 +774,7 @@ class ParserContext {
       if (text == "operator" && !this.peek(TokenKind.LEFT_PARENTHESIS) && !this.peek(TokenKind.IDENTIFIER)) {
         childName.kind = TokenKind.OPERATOR;
         this.current = childName;
-        if (this.parseFunction(childFlags, node) == null) {
+        if (this.parseFunction(childFlags, childDecorators, node) == null) {
           return null;
         }
         continue;
@@ -813,13 +820,19 @@ class ParserContext {
       // Function
       if (this.peek(TokenKind.LEFT_PARENTHESIS) || this.peek(TokenKind.LESS_THAN)) {
         this.current = childName;
-        if (this.parseFunction(childFlags, node) == null) {
+        if (this.parseFunction(childFlags, childDecorators, node) == null) {
           return null;
         }
       }
 
       // Variable
       else {
+
+        // Recover from misplaced decorators
+        if (childDecorators != null) {
+          this.log.error(spanRanges(childDecorators.range, childName.range), "Decorators must preceed a function");
+        }
+
         this.current = childName;
         if (this.parseVariables(childFlags, node) == null) {
           return null;
@@ -835,7 +848,7 @@ class ParserContext {
     return node.withRange(spanRanges(token.range, close.range)).withInternalRange(name.range);
   }
 
-  parseFunction(firstFlag: NodeFlag, parent: Node): Node {
+  parseFunction(firstFlag: NodeFlag, decorators: Node, parent: Node): Node {
     var isOperator = false;
     var token = this.current;
     var nameRange: Range;
@@ -945,6 +958,11 @@ class ParserContext {
         return null;
       }
       node.appendChild(parameters);
+    }
+
+    // Decorators
+    if (decorators != null) {
+      node.appendChild(decorators);
     }
 
     if (!this.expect(TokenKind.LEFT_PARENTHESIS)) {
@@ -1162,11 +1180,27 @@ class ParserContext {
   }
 
   parseStatement(mode: StatementMode): Node {
+    var decorators: Node;
+
+    if (this.peek(TokenKind.DECORATOR_MAGIC)) {
+      decorators = this.parseDecorators();
+      if (decorators == null) {
+        return null;
+      }
+    }
+
     var firstFlag = mode == StatementMode.FILE ? this.parseFlags() : null;
+
+    if (this.peek(TokenKind.FUNCTION)) return this.parseFunction(firstFlag, decorators, null);
+
+    // Decorators need to be attached to a function
+    if (decorators != null) {
+      this.unexpectedToken();
+      return null;
+    }
 
     if (this.peek(TokenKind.UNSAFE) && firstFlag == null) return this.parseUnsafe();
     if (this.peek(TokenKind.CONST) || this.peek(TokenKind.LET) || this.peek(TokenKind.VAR)) return this.parseVariables(firstFlag, null);
-    if (this.peek(TokenKind.FUNCTION)) return this.parseFunction(firstFlag, null);
     if (this.peek(TokenKind.CLASS)) return this.parseClass(firstFlag);
     if (this.peek(TokenKind.ENUM)) return this.parseEnum(firstFlag);
 
@@ -1250,6 +1284,47 @@ class ParserContext {
     node.intValue = value as int;
     node.flags = NODE_FLAG_POSITIVE;
     return true;
+  }
+
+  parseDecorator(): Node {
+    assert(this.current.kind == TokenKind.DECORATOR_MAGIC);
+
+    // Remember where the magic is for the symbol later
+    var magicRange = this.current.range;
+    this.advance();
+
+    var name = this.current;
+    if (!this.expect(TokenKind.IDENTIFIER)) {
+      return null;
+    }
+
+    var node = createDecorator(name.range.toString());
+
+    // Arguments are optional
+    if (this.peek(TokenKind.LEFT_PARENTHESIS)) {
+      this.parseArgumentList(this.current.range, node);
+    }
+
+    return node.withRange(spanRanges(magicRange, this.current.range));
+  }
+
+  parseDecorators(): Node {
+    assert(this.current.kind == TokenKind.DECORATOR_MAGIC);
+
+    var firstMagicRange = this.current.range;
+
+    var decorators = createDecorators();
+    while (true) {
+      var decorator = this.parseDecorator();
+      if (decorator == null) {
+        return null;
+      }
+      decorators.appendChild(decorator);
+      if (!this.peek(TokenKind.DECORATOR_MAGIC)) {
+        break;
+      }
+    }
+    return decorators.withRange(spanRanges(firstMagicRange, this.previous.range));
   }
 }
 

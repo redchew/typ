@@ -90,6 +90,9 @@ enum TokenKind {
   PREPROCESSOR_NEWLINE,
   PREPROCESSOR_UNDEF,
   PREPROCESSOR_WARNING,
+
+  // Decorators
+  DECORATOR_MAGIC,
 }
 
 function isKeyword(kind: TokenKind): bool {
@@ -658,6 +661,11 @@ function tokenize(source: Source, log: Log): Token {
 
       needsPreprocessor = true;
       wantNewline = true;
+
+    }
+
+    else if (c == '@') {
+      kind = TokenKind.DECORATOR_MAGIC;
     }
 
     var range = createRange(source, start, i);
