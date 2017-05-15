@@ -10,7 +10,7 @@ Also the WebAssembly specification is still being developed and the current bina
 
 ## Demo
 
-An interactive compiler demo is available online at http://evanw.github.io/thinscript/.
+An interactive compiler demo is available online at http://dcode.io/thinscript.
 Here's some example code to demonstrate the language (documentation will be written at some point):
 
 ```TypeScript
@@ -66,5 +66,5 @@ extern function main(): int {
 # Building
 
 Run `node build.js` to build the compiler using itself.
-This generates updated versions of `out/compiled.js`, `out/compiled.wasm`, and `out/compiled.c`.
-If you have a C compiler installed, this also builds a native version of the compiler by compiling `out/compiled.c` and `lib/thinc.c` together into the `out/thinc` binary.
+This generates updated versions of `docs/compiled.js`, `docs/compiled.wasm`, and `out/compiled.c`.
+If you have a C compiler installed, this also builds a native version of the compiler by compiling `out/compiled.c` and `lib/thinc.c` together into the `out/thinc` respectively `out/thinc.exe` binary.
