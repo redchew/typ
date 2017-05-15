@@ -127,6 +127,7 @@ const NODE_FLAG_SET = 1 << 9;
 const NODE_FLAG_STATIC = 1 << 10;
 const NODE_FLAG_UNSAFE = 1 << 11;
 const NODE_FLAG_UNSIGNED_OPERATOR = 1 << 12;
+const NODE_FLAG_CONSTRUCTOR = 1 << 13;
 
 class NodeFlag {
   flag: int;
@@ -267,12 +268,20 @@ class Node {
     return (this.flags & NODE_FLAG_PRIVATE) != 0;
   }
 
+  isStatic(): bool {
+    return (this.flags & NODE_FLAG_STATIC) != 0;
+  }
+
   isUnsafe(): bool {
     return (this.flags & NODE_FLAG_UNSAFE) != 0;
   }
 
   isUnsignedOperator(): bool {
     return (this.flags & NODE_FLAG_UNSIGNED_OPERATOR) != 0;
+  }
+
+  isConstructor(): bool {
+    return (this.flags & NODE_FLAG_CONSTRUCTOR) != 0;
   }
 
   childCount(): int {
@@ -466,6 +475,16 @@ class Node {
     return body.kind == NodeKind.BLOCK ? body : null;
   }
 
+  classConstructor(): Node {
+    assert(this.kind == NodeKind.CLASS);
+    var child = this.firstChild;
+    while (child != null) {
+      if ((child.flags & NODE_FLAG_CONSTRUCTOR) != 0) break;
+      child = child.nextSibling;
+    }
+    return child;
+  }
+
   newType(): Node {
     assert(this.kind == NodeKind.NEW);
     assert(this.childCount() >= 1);
@@ -473,11 +492,27 @@ class Node {
     return this.firstChild;
   }
 
+  newFirstArgument(): Node {
+    assert(this.kind == NodeKind.NEW);
+    assert(this.childCount() >= 1);
+    assert(isExpression(this.firstChild));
+    assert(this.firstChild.nextSibling == null || isExpression(this.firstChild.nextSibling));
+    return this.firstChild.nextSibling;
+  }
+
   callValue(): Node {
     assert(this.kind == NodeKind.CALL);
     assert(this.childCount() >= 1);
     assert(isExpression(this.firstChild));
     return this.firstChild;
+  }
+
+  callFirstArgument(): Node {
+    assert(this.kind == NodeKind.CALL);
+    assert(this.childCount() >= 1);
+    assert(isExpression(this.firstChild));
+    assert(this.firstChild.nextSibling == null || isExpression(this.firstChild.nextSibling));
+    return this.firstChild.nextSibling;
   }
 
   castValue(): Node {
@@ -812,6 +847,17 @@ function createClass(name: string): Node {
   var node = new Node();
   node.kind = NodeKind.CLASS;
   node.stringValue = name;
+  return node;
+}
+
+function createClassConstructor(parent: Node): Node {
+  assert(parent.kind == NodeKind.CLASS);
+  var node = new Node();
+  node.kind = NodeKind.FUNCTION;
+  node.stringValue = "constructor";
+  node.flags = node.flags | NODE_FLAG_CONSTRUCTOR;
+  node.appendChild(createVariables());
+  node.appendChild(createName(parent.stringValue));
   return node;
 }
 

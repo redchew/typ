@@ -291,7 +291,9 @@ class JsResult {
     else if (node.kind == NodeKind.NEW) {
       code.append("new ");
       this.emitExpression(node.newType(), Precedence.UNARY_POSTFIX);
-      code.append("()");
+      code.append("(");
+      this.emitCommaSeparatedExpressions(node.newFirstArgument(), null);
+      code.append(")");
     }
 
     else if (node.kind == NodeKind.NOT) {
@@ -376,6 +378,12 @@ class JsResult {
     var code = this.code;
 
     if (node.kind == NodeKind.FUNCTION) {
+
+      // Constructors are handled explicitly
+      if (node.isConstructor()) {
+        return;
+      }
+
       var body = node.functionBody();
       if (body == null) {
         return;
@@ -539,32 +547,58 @@ class JsResult {
     }
 
     else if (node.kind == NodeKind.CLASS) {
+      var argument: Node;
+
       // Emit constructor
       if (!node.isDeclare()) {
         this.emitNewlineBefore(node);
         this.emitIndent();
         code.append("function ");
         this.emitSymbolName(node.symbol);
-        code.append("() {\n");
-        this.indent = this.indent + 1;
+        code.append("(");
 
-        var argument = node.firstChild;
-        while (argument != null) {
-          if (argument.kind == NodeKind.VARIABLE) {
-            this.emitIndent();
-            code.append("this.");
+        var ctor = node.classConstructor();
+        if (ctor != null) {
+          var returnType = ctor.functionReturnType();
+          argument = ctor.functionFirstArgumentIgnoringThis();
+          while (argument != returnType) {
+            assert(argument.kind == NodeKind.VARIABLE);
             this.emitSymbolName(argument.symbol);
-            code.append(" = ");
-            this.emitExpression(argument.variableValue(), Precedence.LOWEST);
-            code.append(";\n");
+            argument = argument.nextSibling;
+            if (argument != returnType) {
+              code.append(", ");
+            }
           }
-          argument = argument.nextSibling;
+        }
+        code.append(") ");
+
+        if (ctor != null) {
+          this.emitBlock(ctor.functionBody());
         }
 
-        this.indent = this.indent - 1;
-        this.emitIndent();
-        code.append("}\n");
+        else {
+          code.append("{}\n");
+        }
+
         this.emitNewlineAfter(node);
+      }
+
+      // Emit default values on the prototype
+      argument = node.firstChild;
+      if (argument != null) {
+        code.append("\n");
+      }
+      while (argument != null) {
+        if (argument.kind == NodeKind.VARIABLE) {
+          this.emitIndent();
+          this.emitSymbolName(node.symbol);
+          code.append(".prototype.");
+          this.emitSymbolName(argument.symbol);
+          code.append(" = ");
+          this.emitExpression(argument.variableValue(), Precedence.LOWEST);
+          code.append(";\n");
+        }
+        argument = argument.nextSibling;
       }
 
       // Emit instance functions

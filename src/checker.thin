@@ -4,6 +4,7 @@ class CheckContext {
   pointerByteSize: int;
   isUnsafeAllowed: bool;
   enclosingClass: Symbol;
+  currentFunction: Node;
   currentReturnType: Type;
   nextGlobalVariableOffset: int;
   isDebug: bool;
@@ -801,11 +802,14 @@ function resolve(context: CheckContext, node: Node, parentScope: Scope): void {
     initializeSymbol(context, node.symbol);
 
     if (body != null) {
+      var oldFunction = context.currentFunction;
       var oldReturnType = context.currentReturnType;
       var oldUnsafeAllowed = context.isUnsafeAllowed;
+      context.currentFunction = node;
       context.currentReturnType = node.functionReturnType().resolvedType;
       context.isUnsafeAllowed = node.isUnsafe();
       resolveChildren(context, body, node.scope);
+      context.currentFunction = oldFunction;
       context.currentReturnType = oldReturnType;
       context.isUnsafeAllowed = oldUnsafeAllowed;
     }
@@ -1143,7 +1147,11 @@ function resolve(context: CheckContext, node: Node, parentScope: Scope): void {
   else if (kind == NodeKind.RETURN) {
     var value = node.returnValue();
 
-    if (value != null) {
+    if (context.currentFunction.isConstructor()) {
+      context.log.error(node.range, "Constructors cannot return a value");
+    }
+
+    else if (value != null) {
       resolveAsExpression(context, value, parentScope);
 
       if (context.currentReturnType != null) {
@@ -1295,7 +1303,7 @@ function resolve(context: CheckContext, node: Node, parentScope: Scope): void {
     resolveAsType(context, newType, parentScope);
 
     if (newType.resolvedType != context.errorType) {
-      if (!newType.resolvedType.isClass()) {
+      if (!newType.resolvedType.isClass() || newType.resolvedType.symbol.kind == SymbolKind.TYPE_NATIVE) {
         context.log.error(newType.range, StringBuilder_new()
           .append("Cannot construct type '")
           .append(newType.resolvedType.toString())
@@ -1305,12 +1313,46 @@ function resolve(context: CheckContext, node: Node, parentScope: Scope): void {
 
       else {
         node.resolvedType = newType.resolvedType;
-      }
-    }
 
-    // TODO: Constructors
-    if (newType.nextSibling != null) {
-      context.log.error(node.internalRange, "Constructors with arguments are not supported yet");
+        var argumentValue = node.newFirstArgument();
+        var ctor = newType.symbol.node.classConstructor();
+
+        if (ctor != null) {
+          var argumentVariable = ctor.functionFirstArgumentIgnoringThis();
+          var returnType = ctor.functionReturnType();
+          assert(newType.resolvedType == returnType.resolvedType);
+
+          // Match argument values with variables
+          while (argumentVariable != returnType && argumentValue != null) {
+            resolveAsExpression(context, argumentValue, parentScope);
+            checkConversion(context, argumentValue, argumentVariable.symbol.resolvedType, ConversionKind.IMPLICIT);
+            argumentVariable = argumentVariable.nextSibling;
+            argumentValue = argumentValue.nextSibling;
+          }
+
+          // Not enough arguments?
+          if (argumentVariable != returnType) {
+            context.log.error(node.internalRange, StringBuilder_new()
+              .append("Not enough arguments for constructor '")
+              .append(newType.symbol.name)
+              .appendChar('\'')
+              .finish());
+          }
+        }
+
+        // Too many arguments?
+        if (argumentValue != null) {
+          while (argumentValue != null) {
+            resolveAsExpression(context, argumentValue, parentScope);
+            argumentValue = argumentValue.nextSibling;
+          }
+          context.log.error(node.internalRange, StringBuilder_new()
+            .append("Too many arguments for constructor '")
+            .append(newType.symbol.name)
+            .appendChar('\'')
+            .finish());
+        }
+      }
     }
   }
 

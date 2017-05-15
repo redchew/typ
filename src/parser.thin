@@ -828,7 +828,7 @@ class ParserContext {
       // Variable
       else {
 
-        // Recover from misplaced decorators
+        // Report misplaced decorators
         if (childDecorators != null) {
           this.log.error(spanRanges(childDecorators.range, childName.range), "Decorators must preceed a function");
         }
@@ -951,12 +951,33 @@ class ParserContext {
       node.flags = node.flags | NODE_FLAG_OPERATOR;
     }
 
+    // Constructors
+    var isConstructor = false;
+    if (parent != null && parent.kind == NodeKind.CLASS && name == "constructor") {
+      var ctor = parent.classConstructor();
+      if (ctor != null) {
+        this.log.error(nameRange, "A class cannot declare multiple constructors");
+        this.log.error(ctor.range, "Previous constructor declared here");
+      }
+      if ((node.flags & NODE_FLAG_STATIC) != 0) {
+        this.log.error(nameRange, "Constructors cannot be declared static");
+      }
+      node.flags = node.flags | NODE_FLAG_CONSTRUCTOR;
+      isConstructor = true;
+    }
+
     // Type parameters
     if (this.peek(TokenKind.LESS_THAN)) {
       var parameters = this.parseParameters();
       if (parameters == null) {
         return null;
       }
+
+      if (isConstructor) {
+        this.log.error(nameRange, "Constructors cannot specify type parameters (their type parameters are automatically derived from the respective class)");
+        parameters = createParseError();
+      }
+
       node.appendChild(parameters);
     }
 
@@ -1020,10 +1041,25 @@ class ParserContext {
 
     var returnType: Node;
 
-    if (this.expect(TokenKind.COLON)) {
+    // Constructors implicitly return an instance of the class
+    if (isConstructor) {
+      returnType = createName(parent.stringValue).withRange(nameRange);
+    }
+
+    if (this.peek(TokenKind.COLON)) {
+      var colonRange = this.current.range;
+      this.advance();
       returnType = this.parseType();
 
-      if (returnType == null) {
+      if (isConstructor) {
+        if (returnType != null) {
+          this.log.error(spanRanges(colonRange, returnType.range), "Constructors cannot specify a return type");
+          returnType = createParseError();
+        }
+      }
+
+      else if (returnType == null) {
+
         // Recover from a missing return type
         if (this.peek(TokenKind.SEMICOLON) || this.peek(TokenKind.LEFT_BRACE)) {
           returnType = createParseError();
@@ -1037,7 +1073,9 @@ class ParserContext {
 
     // Recover from a missing colon
     else if (this.peek(TokenKind.SEMICOLON) || this.peek(TokenKind.LEFT_BRACE)) {
-      returnType = createParseError();
+      if (!isConstructor) {
+        returnType = createParseError();
+      }
     }
 
     else {

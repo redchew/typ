@@ -257,15 +257,17 @@ class CResult {
         }
       }
 
-      this.emitCommaSeparatedExpressions(callValue.nextSibling, null);
+      this.emitCommaSeparatedExpressions(node.callFirstArgument(), null);
       code.appendChar(')');
     }
 
-    // This uses "calloc" instead of "malloc" because it needs to be zero-initialized
     else if (node.kind == NodeKind.NEW) {
-      code.append("calloc(1, sizeof(");
-      this.emitType(node.resolvedType, TypeMode.BARE);
-      code.append("))");
+      var newType = node.newType();
+      var ctor = newType.symbol.node.classConstructor();
+      this.emitSymbolName(newType.symbol);
+      code.append("_constructor(");
+      this.emitCommaSeparatedExpressions(node.newFirstArgument(), null);
+      code.append(")");
     }
 
     else if (node.kind == NodeKind.COMPLEMENT) this.emitUnary(node, parentPrecedence, "~");
@@ -309,6 +311,8 @@ class CResult {
   }
 
   emitType(originalType: Type, mode: TypeMode): void {
+    assert(originalType != null);
+
     var context = this.context;
     var code = this.code;
     var type = originalType;
@@ -555,47 +559,22 @@ class CResult {
   }
 
   shouldEmitFunction(symbol: Symbol): bool {
-    return symbol.kind != SymbolKind.FUNCTION_GLOBAL || symbol.name != "malloc" && symbol.name != "memcpy" && symbol.name != "memcmp";
+    return symbol.kind != SymbolKind.FUNCTION_GLOBAL || symbol.name != "malloc" && symbol.name != "free" && symbol.name != "memcpy" && symbol.name != "memcmp";
   }
 
   emitFunctionDeclarations(node: Node, mode: SourceMode): void {
     var code = this.code;
 
     while (node != null) {
-      if (node.kind == NodeKind.FUNCTION && (mode != SourceMode.HEADER || node.isDeclareOrExtern())) {
-        var symbol = node.symbol;
 
-        if (this.shouldEmitFunction(symbol)) {
-          var returnType = node.functionReturnType();
-          var child = node.functionFirstArgument();
-
-          this.emitNewlineBefore(node);
-          if (!node.isDeclareOrExtern()) {
-            code.append("static ");
-          }
-          this.emitType(returnType.resolvedType, TypeMode.DECLARATION);
-          this.emitSymbolName(symbol);
-          code.appendChar('(');
-
-          if (symbol.kind == SymbolKind.FUNCTION_INSTANCE) {
-            child.symbol.rename = "__this";
-          }
-
-          while (child != returnType) {
-            assert(child.kind == NodeKind.VARIABLE);
-            this.emitType(child.symbol.resolvedType, TypeMode.DECLARATION);
-            this.emitSymbolName(child.symbol);
-            child = child.nextSibling;
-            if (child != returnType) {
-              code.append(", ");
-            }
-          }
-
-          code.append(");\n");
+      if (node.kind == NodeKind.FUNCTION) {
+        if (this.shouldEmitFunction(node.symbol) && (mode != SourceMode.HEADER || node.isDeclareOrExtern())) {
+          this.emitFunction(node, true);
         }
       }
 
       else if (node.kind == NodeKind.CLASS) {
+        this.emitConstructor(node, true);
         this.emitFunctionDeclarations(node.firstChild, mode);
       }
 
@@ -632,45 +611,136 @@ class CResult {
     var code = this.code;
 
     while (node != null) {
+
       if (node.kind == NodeKind.FUNCTION) {
-        var body = node.functionBody();
-        var symbol = node.symbol;
-
-        if (body != null && this.shouldEmitFunction(symbol)) {
-          var returnType = node.functionReturnType();
-          var child = node.firstChild;
-
-          this.emitNewlineBefore(node);
-          if (!node.isDeclareOrExtern()) {
-            code.append("static ");
-          }
-          this.emitType(returnType.resolvedType, TypeMode.DECLARATION);
-          this.emitSymbolName(symbol);
-          code.appendChar('(');
-
-          while (child != returnType) {
-            assert(child.kind == NodeKind.VARIABLE);
-            this.emitType(child.symbol.resolvedType, TypeMode.DECLARATION);
-            this.emitSymbolName(child.symbol);
-            child = child.nextSibling;
-            if (child != returnType) {
-              code.append(", ");
-            }
-          }
-
-          code.append(") ");
-          this.emitBlock(node.functionBody());
-          code.appendChar('\n');
-          this.emitNewlineAfter(node);
+        if (this.shouldEmitFunction(node.symbol) && node.functionBody() != null && !node.isConstructor()) {
+          this.emitFunction(node, false);
         }
       }
 
       else if (node.kind == NodeKind.CLASS) {
+        this.emitConstructor(node, false);
         this.emitFunctionDefinitions(node.firstChild);
       }
 
       node = node.nextSibling;
     }
+  }
+
+  emitFunction(node: Node, isDeclaration: bool): void {
+    assert(node.kind == NodeKind.FUNCTION);
+
+    var code = this.code;
+    var symbol = node.symbol;
+    var returnType = node.functionReturnType();
+    var child = node.functionFirstArgument();
+
+    this.emitNewlineBefore(node);
+    if (!node.isDeclareOrExtern()) {
+      code.append("static ");
+    }
+    this.emitType(returnType.resolvedType, TypeMode.DECLARATION);
+    this.emitSymbolName(symbol);
+    code.appendChar('(');
+
+    if (symbol.kind == SymbolKind.FUNCTION_INSTANCE) {
+      child.symbol.rename = "__this";
+      
+      // Constructors use 'this' but it isn't an argument
+      if (node.isConstructor()) {
+        child = child.nextSibling;
+      }
+    }
+
+    while (child != returnType) {
+      assert(child.kind == NodeKind.VARIABLE);
+      this.emitType(child.symbol.resolvedType, TypeMode.DECLARATION);
+      this.emitSymbolName(child.symbol);
+      child = child.nextSibling;
+      if (child != returnType) {
+        code.append(", ");
+      }
+    }
+
+    if (isDeclaration) {
+      code.append(");\n");
+    }
+
+    else {
+      code.append(") ");
+      this.emitBlock(node.functionBody());
+      code.appendChar('\n');
+      this.emitNewlineAfter(node);
+    }
+  }
+
+  emitConstructor(node: Node, isDeclaration: bool): void {
+    assert(node.kind == NodeKind.CLASS);
+
+    var classType = node.symbol.resolvedType;
+    if (classType.symbol.kind == SymbolKind.TYPE_NATIVE) {
+      return;
+    }
+
+    var code = this.code;
+    var ctor = node.classConstructor();
+
+    code.append("\n");
+    if (ctor == null || !node.isDeclareOrExtern()) {
+      code.append("static ");
+    }
+    this.emitType(classType, TypeMode.NORMAL);
+    this.emitSymbolName(node.symbol);
+    code.append("_constructor(");
+
+    if (ctor != null) {
+      var child = ctor.functionFirstArgumentIgnoringThis();
+      var returnType = ctor.functionReturnType();
+      while (child != returnType) {
+        assert(child.kind == NodeKind.VARIABLE);
+        this.emitType(child.symbol.resolvedType, TypeMode.DECLARATION);
+        this.emitSymbolName(child.symbol);
+        child = child.nextSibling;
+        if (child != returnType) {
+          code.append(", ");
+        }
+      }
+    }
+
+    if (isDeclaration) {
+      code.append(");\n");
+      return;
+    }
+
+    code.append(") {\n");
+    this.indent = this.indent + 1;
+
+    // This uses "calloc" instead of "malloc" because it needs to be zero-initialized
+    this.emitIndent();
+
+    if (ctor != null) {
+      this.emitType(classType, TypeMode.NORMAL);
+      code.append(" __this = calloc(1, sizeof(");
+      this.emitType(classType, TypeMode.BARE);
+      code.append("));\n");
+
+      this.previousNode = null;
+      this.emitStatements(ctor.functionBody().firstChild);
+      this.previousNode = null;
+
+      this.emitIndent();
+      code.append("return __this;\n");
+    }
+
+    else {
+      code.append("return calloc(1, sizeof(");
+      this.emitType(classType, TypeMode.BARE);
+      code.append("));\n");
+    }
+
+    this.indent = this.indent - 1;
+    code.append("}\n");
+    this.emitNewlineAfter(node);
   }
 
   finishImplementation(): void {

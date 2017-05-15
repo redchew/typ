@@ -1357,10 +1357,22 @@ class WasmModule {
       var newType = node.newType();
       var size = newType.resolvedType.allocationSizeOf(this.context);
 
-      // Pass the object size as the first argument
+      // Pass the object size to malloc as the first argument
       assert(size > 0);
       this.emit1S(array, WASM_OPCODE_I32_CONST, size); // Pushes 1
-      this.emit1U(array, WASM_OPCODE_CALL, this.getFunctionCallIndex(this.mallocFunction.symbol)); // Pops 1, pushes 1 (malloc)
+      this.emit1U(array, WASM_OPCODE_CALL, this.getFunctionCallIndex(this.mallocFunction.symbol)); // Pops 1, pushes 1 (memory pointer)
+
+      // Call the constructor function
+      var ctor = newType.symbol.node.classConstructor();
+      if (ctor != null) {
+        assert(node.childCount() - 1 == ctor.functionArgumentCount() - 1);
+        var argument = node.newFirstArgument();
+        while (argument != null) {
+          this.emitNode(array, argument);
+          argument = argument.nextSibling;
+        }
+        this.emit1U(array, WASM_OPCODE_CALL, this.getFunctionCallIndex(ctor.symbol)); // Pops N (each argument), pushes 1 (memory pointer)
+      }
     }
 
     else if (node.kind == NodeKind.POSITIVE) {
