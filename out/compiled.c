@@ -98,368 +98,375 @@ static const uint32_t __string_70_op_or[] = {5, S('o', 'p'), S('_', 'o'), S('r',
 static const uint32_t __string_71[] = {1, S('~', 0)};
 static const uint32_t __string_72_op_complement[] = {13, S('o', 'p'), S('_', 'c'), S('o', 'm'), S('p', 'l'), S('e', 'm'), S('e', 'n'), S('t', 0)};
 static const uint32_t __string_73_this[] = {4, S('t', 'h'), S('i', 's')};
-static const uint32_t __string_74_bool[] = {4, S('b', 'o'), S('o', 'l')};
-static const uint32_t __string_75_byte[] = {4, S('b', 'y'), S('t', 'e')};
-static const uint32_t __string_76_int[] = {3, S('i', 'n'), S('t', 0)};
-static const uint32_t __string_77_sbyte[] = {5, S('s', 'b'), S('y', 't'), S('e', 0)};
-static const uint32_t __string_78_short[] = {5, S('s', 'h'), S('o', 'r'), S('t', 0)};
-static const uint32_t __string_79_string[] = {6, S('s', 't'), S('r', 'i'), S('n', 'g')};
-static const uint32_t __string_80_uint[] = {4, S('u', 'i'), S('n', 't')};
-static const uint32_t __string_81_ushort[] = {6, S('u', 's'), S('h', 'o'), S('r', 't')};
-static const uint32_t __string_82_Unsupported_flag_export[] = {25, S('U', 'n'), S('s', 'u'), S('p', 'p'), S('o', 'r'), S('t', 'e'), S('d', ' '), S('f', 'l'), S('a', 'g'), S(' ', '\''), S('e', 'x'), S('p',
+static const uint32_t __string_74_metadata[] = {8, S('m', 'e'), S('t', 'a'), S('d', 'a'), S('t', 'a')};
+static const uint32_t __string_75_There_is_no_such_decorator[] = {26, S('T', 'h'), S('e', 'r'), S('e', ' '), S('i', 's'), S(' ', 'n'), S('o', ' '), S('s', 'u'), S('c', 'h'), S(' ', 'd'), S('e', 'c'), S('o',
+  'r'), S('a', 't'), S('o', 'r')};
+static const uint32_t __string_76_bool[] = {4, S('b', 'o'), S('o', 'l')};
+static const uint32_t __string_77_byte[] = {4, S('b', 'y'), S('t', 'e')};
+static const uint32_t __string_78_int[] = {3, S('i', 'n'), S('t', 0)};
+static const uint32_t __string_79_sbyte[] = {5, S('s', 'b'), S('y', 't'), S('e', 0)};
+static const uint32_t __string_80_short[] = {5, S('s', 'h'), S('o', 'r'), S('t', 0)};
+static const uint32_t __string_81_string[] = {6, S('s', 't'), S('r', 'i'), S('n', 'g')};
+static const uint32_t __string_82_uint[] = {4, S('u', 'i'), S('n', 't')};
+static const uint32_t __string_83_ushort[] = {6, S('u', 's'), S('h', 'o'), S('r', 't')};
+static const uint32_t __string_84_Unsupported_flag_export[] = {25, S('U', 'n'), S('s', 'u'), S('p', 'p'), S('o', 'r'), S('t', 'e'), S('d', ' '), S('f', 'l'), S('a', 'g'), S(' ', '\''), S('e', 'x'), S('p',
   'o'), S('r', 't'), S('\'', 0)};
-static const uint32_t __string_83_Unsupported_flag_protected[] = {28, S('U', 'n'), S('s', 'u'), S('p', 'p'), S('o', 'r'), S('t', 'e'), S('d', ' '), S('f', 'l'), S('a', 'g'), S(' ', '\''), S('p', 'r'), S('o',
+static const uint32_t __string_85_Unsupported_flag_protected[] = {28, S('U', 'n'), S('s', 'u'), S('p', 'p'), S('o', 'r'), S('t', 'e'), S('d', ' '), S('f', 'l'), S('a', 'g'), S(' ', '\''), S('p', 'r'), S('o',
   't'), S('e', 'c'), S('t', 'e'), S('d', '\'')};
-static const uint32_t __string_84_Unsupported_flag_static[] = {25, S('U', 'n'), S('s', 'u'), S('p', 'p'), S('o', 'r'), S('t', 'e'), S('d', ' '), S('f', 'l'), S('a', 'g'), S(' ', '\''), S('s', 't'), S('a',
+static const uint32_t __string_86_Unsupported_flag_static[] = {25, S('U', 'n'), S('s', 'u'), S('p', 'p'), S('o', 'r'), S('t', 'e'), S('d', ' '), S('f', 'l'), S('a', 'g'), S(' ', '\''), S('s', 't'), S('a',
   't'), S('i', 'c'), S('\'', 0)};
-static const uint32_t __string_85_Cannot_use_get_on_a_class[] = {27, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('g', 'e'), S('t', '\''), S(' ', 'o'), S('n', ' '), S('a',
+static const uint32_t __string_87_Cannot_use_get_on_a_class[] = {27, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('g', 'e'), S('t', '\''), S(' ', 'o'), S('n', ' '), S('a',
   ' '), S('c', 'l'), S('a', 's'), S('s', 0)};
-static const uint32_t __string_86_Cannot_use_set_on_a_class[] = {27, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('s', 'e'), S('t', '\''), S(' ', 'o'), S('n', ' '), S('a',
+static const uint32_t __string_88_Cannot_use_set_on_a_class[] = {27, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('s', 'e'), S('t', '\''), S(' ', 'o'), S('n', ' '), S('a',
   ' '), S('c', 'l'), S('a', 's'), S('s', 0)};
-static const uint32_t __string_87_Cannot_use_public_on_a_class[] = {30, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('p', 'u'), S('b', 'l'), S('i', 'c'), S('\'', ' '), S('o',
+static const uint32_t __string_89_Cannot_use_public_on_a_class[] = {30, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('p', 'u'), S('b', 'l'), S('i', 'c'), S('\'', ' '), S('o',
   'n'), S(' ', 'a'), S(' ', 'c'), S('l', 'a'), S('s', 's')};
-static const uint32_t __string_88_Cannot_use_private_on_a_class[] = {31, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('p', 'r'), S('i', 'v'), S('a', 't'), S('e', '\''), S(' ',
+static const uint32_t __string_90_Cannot_use_private_on_a_class[] = {31, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('p', 'r'), S('i', 'v'), S('a', 't'), S('e', '\''), S(' ',
   'o'), S('n', ' '), S('a', ' '), S('c', 'l'), S('a', 's'), S('s', 0)};
-static const uint32_t __string_89_Cannot_use_get_on_an_enum[] = {27, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('g', 'e'), S('t', '\''), S(' ', 'o'), S('n', ' '), S('a',
+static const uint32_t __string_91_Cannot_use_get_on_an_enum[] = {27, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('g', 'e'), S('t', '\''), S(' ', 'o'), S('n', ' '), S('a',
   'n'), S(' ', 'e'), S('n', 'u'), S('m', 0)};
-static const uint32_t __string_90_Cannot_use_set_on_an_enum[] = {27, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('s', 'e'), S('t', '\''), S(' ', 'o'), S('n', ' '), S('a',
+static const uint32_t __string_92_Cannot_use_set_on_an_enum[] = {27, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('s', 'e'), S('t', '\''), S(' ', 'o'), S('n', ' '), S('a',
   'n'), S(' ', 'e'), S('n', 'u'), S('m', 0)};
-static const uint32_t __string_91_Cannot_use_public_on_an_enum[] = {30, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('p', 'u'), S('b', 'l'), S('i', 'c'), S('\'', ' '), S('o',
+static const uint32_t __string_93_Cannot_use_public_on_an_enum[] = {30, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('p', 'u'), S('b', 'l'), S('i', 'c'), S('\'', ' '), S('o',
   'n'), S(' ', 'a'), S('n', ' '), S('e', 'n'), S('u', 'm')};
-static const uint32_t __string_92_Cannot_use_private_on_an_enum[] = {31, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('p', 'r'), S('i', 'v'), S('a', 't'), S('e', '\''), S(' ',
+static const uint32_t __string_94_Cannot_use_private_on_an_enum[] = {31, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('p', 'r'), S('i', 'v'), S('a', 't'), S('e', '\''), S(' ',
   'o'), S('n', ' '), S('a', 'n'), S(' ', 'e'), S('n', 'u'), S('m', 0)};
-static const uint32_t __string_93_Cannot_use_get_here[] = {21, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('g', 'e'), S('t', '\''), S(' ', 'h'), S('e', 'r'), S('e', 0)};
-static const uint32_t __string_94_Cannot_use_set_here[] = {21, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('s', 'e'), S('t', '\''), S(' ', 'h'), S('e', 'r'), S('e', 0)};
-static const uint32_t __string_95_Cannot_use_public_here[] = {24, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('p', 'u'), S('b', 'l'), S('i', 'c'), S('\'', ' '), S('h',
+static const uint32_t __string_95_Cannot_use_get_here[] = {21, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('g', 'e'), S('t', '\''), S(' ', 'h'), S('e', 'r'), S('e', 0)};
+static const uint32_t __string_96_Cannot_use_set_here[] = {21, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('s', 'e'), S('t', '\''), S(' ', 'h'), S('e', 'r'), S('e', 0)};
+static const uint32_t __string_97_Cannot_use_public_here[] = {24, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('p', 'u'), S('b', 'l'), S('i', 'c'), S('\'', ' '), S('h',
   'e'), S('r', 'e')};
-static const uint32_t __string_96_Cannot_use_private_here[] = {25, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('p', 'r'), S('i', 'v'), S('a', 't'), S('e', '\''), S(' ',
+static const uint32_t __string_98_Cannot_use_private_here[] = {25, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('p', 'r'), S('i', 'v'), S('a', 't'), S('e', '\''), S(' ',
   'h'), S('e', 'r'), S('e', 0)};
-static const uint32_t __string_97_Cannot_use_both_get_and_set[] = {31, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', 'b'), S('o', 't'), S('h', ' '), S('\'', 'g'), S('e', 't'), S('\'',
+static const uint32_t __string_99_Cannot_use_both_get_and_set[] = {31, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', 'b'), S('o', 't'), S('h', ' '), S('\'', 'g'), S('e', 't'), S('\'',
   ' '), S('a', 'n'), S('d', ' '), S('\'', 's'), S('e', 't'), S('\'', 0)};
-static const uint32_t __string_98_Getters_must_not_have_any_argume[] = {35, S('G', 'e'), S('t', 't'), S('e', 'r'), S('s', ' '), S('m', 'u'), S('s', 't'), S(' ', 'n'), S('o', 't'), S(' ', 'h'), S('a', 'v'), S('e',
+static const uint32_t __string_100_Getters_must_not_have_any_argume[] = {35, S('G', 'e'), S('t', 't'), S('e', 'r'), S('s', ' '), S('m', 'u'), S('s', 't'), S(' ', 'n'), S('o', 't'), S(' ', 'h'), S('a', 'v'), S('e',
   ' '), S('a', 'n'), S('y', ' '), S('a', 'r'), S('g', 'u'), S('m', 'e'), S('n', 't'), S('s', 0)};
-static const uint32_t __string_99_set_[] = {4, S('s', 'e'), S('t', '_')};
-static const uint32_t __string_100_Setters_must_have_exactly_one_ar[] = {38, S('S', 'e'), S('t', 't'), S('e', 'r'), S('s', ' '), S('m', 'u'), S('s', 't'), S(' ', 'h'), S('a', 'v'), S('e', ' '), S('e', 'x'), S('a',
+static const uint32_t __string_101_set_[] = {4, S('s', 'e'), S('t', '_')};
+static const uint32_t __string_102_Setters_must_have_exactly_one_ar[] = {38, S('S', 'e'), S('t', 't'), S('e', 'r'), S('s', ' '), S('m', 'u'), S('s', 't'), S(' ', 'h'), S('a', 'v'), S('e', ' '), S('e', 'x'), S('a',
   'c'), S('t', 'l'), S('y', ' '), S('o', 'n'), S('e', ' '), S('a', 'r'), S('g', 'u'), S('m', 'e'), S('n', 't')};
-static const uint32_t __string_101[] = {1, S('~', 0)};
-static const uint32_t __string_102[] = {2, S('+', '+')};
-static const uint32_t __string_103[] = {2, S('-', '-')};
-static const uint32_t __string_104_Operator[] = {10, S('O', 'p'), S('e', 'r'), S('a', 't'), S('o', 'r'), S(' ', '\'')};
-static const uint32_t __string_105_must_not_have_any_arguments[] = {29, S('\'', ' '), S('m', 'u'), S('s', 't'), S(' ', 'n'), S('o', 't'), S(' ', 'h'), S('a', 'v'), S('e', ' '), S('a', 'n'), S('y', ' '), S('a',
+static const uint32_t __string_103[] = {1, S('~', 0)};
+static const uint32_t __string_104[] = {2, S('+', '+')};
+static const uint32_t __string_105[] = {2, S('-', '-')};
+static const uint32_t __string_106_Operator[] = {10, S('O', 'p'), S('e', 'r'), S('a', 't'), S('o', 'r'), S(' ', '\'')};
+static const uint32_t __string_107_must_not_have_any_arguments[] = {29, S('\'', ' '), S('m', 'u'), S('s', 't'), S(' ', 'n'), S('o', 't'), S(' ', 'h'), S('a', 'v'), S('e', ' '), S('a', 'n'), S('y', ' '), S('a',
   'r'), S('g', 'u'), S('m', 'e'), S('n', 't'), S('s', 0)};
-static const uint32_t __string_106[] = {1, S('+', 0)};
-static const uint32_t __string_107[] = {1, S('-', 0)};
-static const uint32_t __string_108_Operator[] = {10, S('O', 'p'), S('e', 'r'), S('a', 't'), S('o', 'r'), S(' ', '\'')};
-static const uint32_t __string_109_must_have_at_most_one_argument[] = {32, S('\'', ' '), S('m', 'u'), S('s', 't'), S(' ', 'h'), S('a', 'v'), S('e', ' '), S('a', 't'), S(' ', 'm'), S('o', 's'), S('t', ' '), S('o',
+static const uint32_t __string_108[] = {1, S('+', 0)};
+static const uint32_t __string_109[] = {1, S('-', 0)};
+static const uint32_t __string_110_Operator[] = {10, S('O', 'p'), S('e', 'r'), S('a', 't'), S('o', 'r'), S(' ', '\'')};
+static const uint32_t __string_111_must_have_at_most_one_argument[] = {32, S('\'', ' '), S('m', 'u'), S('s', 't'), S(' ', 'h'), S('a', 'v'), S('e', ' '), S('a', 't'), S(' ', 'm'), S('o', 's'), S('t', ' '), S('o',
   'n'), S('e', ' '), S('a', 'r'), S('g', 'u'), S('m', 'e'), S('n', 't')};
-static const uint32_t __string_110[] = {3, S('[', ']'), S('=', 0)};
-static const uint32_t __string_111_Operator_must_have_at_leas[] = {46, S('O', 'p'), S('e', 'r'), S('a', 't'), S('o', 'r'), S(' ', '\''), S('[', ']'), S('=', '\''), S(' ', 'm'), S('u', 's'), S('t', ' '), S('h',
+static const uint32_t __string_112[] = {3, S('[', ']'), S('=', 0)};
+static const uint32_t __string_113_Operator_must_have_at_leas[] = {46, S('O', 'p'), S('e', 'r'), S('a', 't'), S('o', 'r'), S(' ', '\''), S('[', ']'), S('=', '\''), S(' ', 'm'), S('u', 's'), S('t', ' '), S('h',
   'a'), S('v', 'e'), S(' ', 'a'), S('t', ' '), S('l', 'e'), S('a', 's'), S('t', ' '), S('o', 'n'), S('e', ' '), S('a', 'r'), S('g', 'u'), S('m', 'e'), S('n', 't')};
-static const uint32_t __string_112_Operator[] = {10, S('O', 'p'), S('e', 'r'), S('a', 't'), S('o', 'r'), S(' ', '\'')};
-static const uint32_t __string_113_must_have_exactly_one_argument[] = {32, S('\'', ' '), S('m', 'u'), S('s', 't'), S(' ', 'h'), S('a', 'v'), S('e', ' '), S('e', 'x'), S('a', 'c'), S('t', 'l'), S('y', ' '), S('o',
+static const uint32_t __string_114_Operator[] = {10, S('O', 'p'), S('e', 'r'), S('a', 't'), S('o', 'r'), S(' ', '\'')};
+static const uint32_t __string_115_must_have_exactly_one_argument[] = {32, S('\'', ' '), S('m', 'u'), S('s', 't'), S(' ', 'h'), S('a', 'v'), S('e', ' '), S('e', 'x'), S('a', 'c'), S('t', 'l'), S('y', ' '), S('o',
   'n'), S('e', ' '), S('a', 'r'), S('g', 'u'), S('m', 'e'), S('n', 't')};
-static const uint32_t __string_114_Cannot_use_extern_on_an_instan[] = {43, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('e', 'x'), S('t', 'e'), S('r', 'n'), S('\'', ' '), S('o',
+static const uint32_t __string_116_Cannot_use_extern_on_an_instan[] = {43, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('e', 'x'), S('t', 'e'), S('r', 'n'), S('\'', ' '), S('o',
   'n'), S(' ', 'a'), S('n', ' '), S('i', 'n'), S('s', 't'), S('a', 'n'), S('c', 'e'), S(' ', 'f'), S('u', 'n'), S('c', 't'), S('i', 'o'), S('n', 0)};
-static const uint32_t __string_115_Cannot_use_declare_on_an_insta[] = {44, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('d', 'e'), S('c', 'l'), S('a', 'r'), S('e', '\''), S(' ',
+static const uint32_t __string_117_Cannot_use_declare_on_an_insta[] = {44, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('d', 'e'), S('c', 'l'), S('a', 'r'), S('e', '\''), S(' ',
   'o'), S('n', ' '), S('a', 'n'), S(' ', 'i'), S('n', 's'), S('t', 'a'), S('n', 'c'), S('e', ' '), S('f', 'u'), S('n', 'c'), S('t', 'i'), S('o', 'n')};
-static const uint32_t __string_116_Must_implement_this_function[] = {28, S('M', 'u'), S('s', 't'), S(' ', 'i'), S('m', 'p'), S('l', 'e'), S('m', 'e'), S('n', 't'), S(' ', 't'), S('h', 'i'), S('s', ' '), S('f',
+static const uint32_t __string_118_Must_implement_this_function[] = {28, S('M', 'u'), S('s', 't'), S(' ', 'i'), S('m', 'p'), S('l', 'e'), S('m', 'e'), S('n', 't'), S(' ', 't'), S('h', 'i'), S('s', ' '), S('f',
   'u'), S('n', 'c'), S('t', 'i'), S('o', 'n')};
-static const uint32_t __string_117_this[] = {4, S('t', 'h'), S('i', 's')};
-static const uint32_t __string_118___this[] = {6, S('_', '_'), S('t', 'h'), S('i', 's')};
-static const uint32_t __string_119_Cannot_use_extern_on_an_unimpl[] = {48, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('e', 'x'), S('t', 'e'), S('r', 'n'), S('\'', ' '), S('o',
+static const uint32_t __string_119_this[] = {4, S('t', 'h'), S('i', 's')};
+static const uint32_t __string_120___this[] = {6, S('_', '_'), S('t', 'h'), S('i', 's')};
+static const uint32_t __string_121_Cannot_use_extern_on_an_unimpl[] = {48, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('e', 'x'), S('t', 'e'), S('r', 'n'), S('\'', ' '), S('o',
   'n'), S(' ', 'a'), S('n', ' '), S('u', 'n'), S('i', 'm'), S('p', 'l'), S('e', 'm'), S('e', 'n'), S('t', 'e'), S('d', ' '), S('f', 'u'), S('n', 'c'), S('t', 'i'), S('o', 'n')};
-static const uint32_t __string_120_Declared_functions_must_be_prefi[] = {50, S('D', 'e'), S('c', 'l'), S('a', 'r'), S('e', 'd'), S(' ', 'f'), S('u', 'n'), S('c', 't'), S('i', 'o'), S('n', 's'), S(' ', 'm'), S('u',
+static const uint32_t __string_122_Declared_functions_must_be_prefi[] = {50, S('D', 'e'), S('c', 'l'), S('a', 'r'), S('e', 'd'), S(' ', 'f'), S('u', 'n'), S('c', 't'), S('i', 'o'), S('n', 's'), S(' ', 'm'), S('u',
   's'), S('t', ' '), S('b', 'e'), S(' ', 'p'), S('r', 'e'), S('f', 'i'), S('x', 'e'), S('d', ' '), S('w', 'i'), S('t', 'h'), S(' ', '\''), S('d', 'e'), S('c', 'l'), S('a', 'r'), S('e', '\'')};
-static const uint32_t __string_121_Cannot_use_declare_on_a_functi[] = {57, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('d', 'e'), S('c', 'l'), S('a', 'r'), S('e', '\''), S(' ',
+static const uint32_t __string_123_Cannot_use_declare_on_a_functi[] = {57, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('d', 'e'), S('c', 'l'), S('a', 'r'), S('e', '\''), S(' ',
   'o'), S('n', ' '), S('a', ' '), S('f', 'u'), S('n', 'c'), S('t', 'i'), S('o', 'n'), S(' ', 'w'), S('i', 't'), S('h', ' '), S('a', 'n'), S(' ', 'i'), S('m', 'p'), S('l', 'e'), S('m', 'e'), S('n', 't'), S('a',
   't'), S('i', 'o'), S('n', 0)};
-static const uint32_t __string_122_Cannot_use_get_on_a_variable[] = {30, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('g', 'e'), S('t', '\''), S(' ', 'o'), S('n', ' '), S('a',
+static const uint32_t __string_124_Cannot_use_get_on_a_variable[] = {30, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('g', 'e'), S('t', '\''), S(' ', 'o'), S('n', ' '), S('a',
   ' '), S('v', 'a'), S('r', 'i'), S('a', 'b'), S('l', 'e')};
-static const uint32_t __string_123_Cannot_use_set_on_a_variable[] = {30, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('s', 'e'), S('t', '\''), S(' ', 'o'), S('n', ' '), S('a',
+static const uint32_t __string_125_Cannot_use_set_on_a_variable[] = {30, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('s', 'e'), S('t', '\''), S(' ', 'o'), S('n', ' '), S('a',
   ' '), S('v', 'a'), S('r', 'i'), S('a', 'b'), S('l', 'e')};
-static const uint32_t __string_124_Cannot_use_public_here[] = {24, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('p', 'u'), S('b', 'l'), S('i', 'c'), S('\'', ' '), S('h',
+static const uint32_t __string_126_Cannot_use_public_here[] = {24, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('p', 'u'), S('b', 'l'), S('i', 'c'), S('\'', ' '), S('h',
   'e'), S('r', 'e')};
-static const uint32_t __string_125_Cannot_use_private_here[] = {25, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('p', 'r'), S('i', 'v'), S('a', 't'), S('e', '\''), S(' ',
+static const uint32_t __string_127_Cannot_use_private_here[] = {25, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('p', 'r'), S('i', 'v'), S('a', 't'), S('e', '\''), S(' ',
   'h'), S('e', 'r'), S('e', 0)};
-static const uint32_t __string_126_Cannot_create_untyped_variables[] = {31, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'c'), S('r', 'e'), S('a', 't'), S('e', ' '), S('u', 'n'), S('t', 'y'), S('p', 'e'), S('d',
+static const uint32_t __string_128_Cannot_create_untyped_variables[] = {31, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'c'), S('r', 'e'), S('a', 't'), S('e', ' '), S('u', 'n'), S('t', 'y'), S('p', 'e'), S('d',
   ' '), S('v', 'a'), S('r', 'i'), S('a', 'b'), S('l', 'e'), S('s', 0)};
-static const uint32_t __string_127_Cannot_create_a_variable_with_ty[] = {36, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'c'), S('r', 'e'), S('a', 't'), S('e', ' '), S('a', ' '), S('v', 'a'), S('r', 'i'), S('a',
+static const uint32_t __string_129_Cannot_create_a_variable_with_ty[] = {36, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'c'), S('r', 'e'), S('a', 't'), S('e', ' '), S('a', ' '), S('v', 'a'), S('r', 'i'), S('a',
   'b'), S('l', 'e'), S(' ', 'w'), S('i', 't'), S('h', ' '), S('t', 'y'), S('p', 'e'), S(' ', '\'')};
-static const uint32_t __string_128_Invalid_constant_initializer[] = {28, S('I', 'n'), S('v', 'a'), S('l', 'i'), S('d', ' '), S('c', 'o'), S('n', 's'), S('t', 'a'), S('n', 't'), S(' ', 'i'), S('n', 'i'), S('t',
+static const uint32_t __string_130_Invalid_constant_initializer[] = {28, S('I', 'n'), S('v', 'a'), S('l', 'i'), S('d', ' '), S('c', 'o'), S('n', 's'), S('t', 'a'), S('n', 't'), S(' ', 'i'), S('n', 'i'), S('t',
   'i'), S('a', 'l'), S('i', 'z'), S('e', 'r')};
-static const uint32_t __string_129_Constants_must_be_initialized[] = {29, S('C', 'o'), S('n', 's'), S('t', 'a'), S('n', 't'), S('s', ' '), S('m', 'u'), S('s', 't'), S(' ', 'b'), S('e', ' '), S('i', 'n'), S('i',
+static const uint32_t __string_131_Constants_must_be_initialized[] = {29, S('C', 'o'), S('n', 's'), S('t', 'a'), S('n', 't'), S('s', ' '), S('m', 'u'), S('s', 't'), S(' ', 'b'), S('e', ' '), S('i', 'n'), S('i',
   't'), S('i', 'a'), S('l', 'i'), S('z', 'e'), S('d', 0)};
-static const uint32_t __string_130_The_symbol[] = {12, S('T', 'h'), S('e', ' '), S('s', 'y'), S('m', 'b'), S('o', 'l'), S(' ', '\'')};
-static const uint32_t __string_131_shadows_another_symbol_with_th[] = {61, S('\'', ' '), S('s', 'h'), S('a', 'd'), S('o', 'w'), S('s', ' '), S('a', 'n'), S('o', 't'), S('h', 'e'), S('r', ' '), S('s', 'y'), S('m',
+static const uint32_t __string_132_The_symbol[] = {12, S('T', 'h'), S('e', ' '), S('s', 'y'), S('m', 'b'), S('o', 'l'), S(' ', '\'')};
+static const uint32_t __string_133_shadows_another_symbol_with_th[] = {61, S('\'', ' '), S('s', 'h'), S('a', 'd'), S('o', 'w'), S('s', ' '), S('a', 'n'), S('o', 't'), S('h', 'e'), S('r', ' '), S('s', 'y'), S('m',
   'b'), S('o', 'l'), S(' ', 'w'), S('i', 't'), S('h', ' '), S('t', 'h'), S('e', ' '), S('s', 'a'), S('m', 'e'), S(' ', 'n'), S('a', 'm'), S('e', ' '), S('i', 'n'), S(' ', 'a'), S(' ', 'p'), S('a', 'r'), S('e',
   'n'), S('t', ' '), S('s', 'c'), S('o', 'p'), S('e', 0)};
-static const uint32_t __string_132_Expected_expression_but_found_ty[] = {34, S('E', 'x'), S('p', 'e'), S('c', 't'), S('e', 'd'), S(' ', 'e'), S('x', 'p'), S('r', 'e'), S('s', 's'), S('i', 'o'), S('n', ' '), S('b',
+static const uint32_t __string_134_Expected_expression_but_found_ty[] = {34, S('E', 'x'), S('p', 'e'), S('c', 't'), S('e', 'd'), S(' ', 'e'), S('x', 'p'), S('r', 'e'), S('s', 's'), S('i', 'o'), S('n', ' '), S('b',
   'u'), S('t', ' '), S('f', 'o'), S('u', 'n'), S('d', ' '), S('t', 'y'), S('p', 'e')};
-static const uint32_t __string_133_This_expression_does_not_return[] = {39, S('T', 'h'), S('i', 's'), S(' ', 'e'), S('x', 'p'), S('r', 'e'), S('s', 's'), S('i', 'o'), S('n', ' '), S('d', 'o'), S('e', 's'), S(' ',
+static const uint32_t __string_135_This_expression_does_not_return[] = {39, S('T', 'h'), S('i', 's'), S(' ', 'e'), S('x', 'p'), S('r', 'e'), S('s', 's'), S('i', 'o'), S('n', ' '), S('d', 'o'), S('e', 's'), S(' ',
   'n'), S('o', 't'), S(' ', 'r'), S('e', 't'), S('u', 'r'), S('n', ' '), S('a', ' '), S('v', 'a'), S('l', 'u'), S('e', 0)};
-static const uint32_t __string_134_Expected_type_but_found_expressi[] = {34, S('E', 'x'), S('p', 'e'), S('c', 't'), S('e', 'd'), S(' ', 't'), S('y', 'p'), S('e', ' '), S('b', 'u'), S('t', ' '), S('f', 'o'), S('u',
+static const uint32_t __string_136_Expected_type_but_found_expressi[] = {34, S('E', 'x'), S('p', 'e'), S('c', 't'), S('e', 'd'), S(' ', 't'), S('y', 'p'), S('e', ' '), S('b', 'u'), S('t', ' '), S('f', 'o'), S('u',
   'n'), S('d', ' '), S('e', 'x'), S('p', 'r'), S('e', 's'), S('s', 'i'), S('o', 'n')};
-static const uint32_t __string_135_Cannot_convert_from_type[] = {26, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'c'), S('o', 'n'), S('v', 'e'), S('r', 't'), S(' ', 'f'), S('r', 'o'), S('m', ' '), S('t',
+static const uint32_t __string_137_Cannot_convert_from_type[] = {26, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'c'), S('o', 'n'), S('v', 'e'), S('r', 't'), S(' ', 'f'), S('r', 'o'), S('m', ' '), S('t',
   'y'), S('p', 'e'), S(' ', '\'')};
-static const uint32_t __string_136_to_type[] = {11, S('\'', ' '), S('t', 'o'), S(' ', 't'), S('y', 'p'), S('e', ' '), S('\'', 0)};
-static const uint32_t __string_137_without_a_cast[] = {16, S('\'', ' '), S('w', 'i'), S('t', 'h'), S('o', 'u'), S('t', ' '), S('a', ' '), S('c', 'a'), S('s', 't')};
-static const uint32_t __string_138[] = {1, S('\'', 0)};
-static const uint32_t __string_139_Cannot_store_to_this_location[] = {29, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 's'), S('t', 'o'), S('r', 'e'), S(' ', 't'), S('o', ' '), S('t', 'h'), S('i', 's'), S(' ',
+static const uint32_t __string_138_to_type[] = {11, S('\'', ' '), S('t', 'o'), S(' ', 't'), S('y', 'p'), S('e', ' '), S('\'', 0)};
+static const uint32_t __string_139_without_a_cast[] = {16, S('\'', ' '), S('w', 'i'), S('t', 'h'), S('o', 'u'), S('t', ' '), S('a', ' '), S('c', 'a'), S('s', 't')};
+static const uint32_t __string_140[] = {1, S('\'', 0)};
+static const uint32_t __string_141_Cannot_store_to_this_location[] = {29, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 's'), S('t', 'o'), S('r', 'e'), S(' ', 't'), S('o', ' '), S('t', 'h'), S('i', 's'), S(' ',
   'l'), S('o', 'c'), S('a', 't'), S('i', 'o'), S('n', 0)};
-static const uint32_t __string_140_Cannot_use_symbol[] = {19, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', 's'), S('y', 'm'), S('b', 'o'), S('l', ' '), S('\'', 0)};
-static const uint32_t __string_141_outside_an_unsafe_block[] = {27, S('\'', ' '), S('o', 'u'), S('t', 's'), S('i', 'd'), S('e', ' '), S('a', 'n'), S(' ', '\''), S('u', 'n'), S('s', 'a'), S('f', 'e'), S('\'',
+static const uint32_t __string_142_Cannot_use_symbol[] = {19, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', 's'), S('y', 'm'), S('b', 'o'), S('l', ' '), S('\'', 0)};
+static const uint32_t __string_143_outside_an_unsafe_block[] = {27, S('\'', ' '), S('o', 'u'), S('t', 's'), S('i', 'd'), S('e', ' '), S('a', 'n'), S(' ', '\''), S('u', 'n'), S('s', 'a'), S('f', 'e'), S('\'',
   ' '), S('b', 'l'), S('o', 'c'), S('k', 0)};
-static const uint32_t __string_142_Cannot_access_private_symbol[] = {30, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'a'), S('c', 'c'), S('e', 's'), S('s', ' '), S('p', 'r'), S('i', 'v'), S('a', 't'), S('e',
+static const uint32_t __string_144_Cannot_access_private_symbol[] = {30, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'a'), S('c', 'c'), S('e', 's'), S('s', ' '), S('p', 'r'), S('i', 'v'), S('a', 't'), S('e',
   ' '), S('s', 'y'), S('m', 'b'), S('o', 'l'), S(' ', '\'')};
-static const uint32_t __string_143_here[] = {6, S('\'', ' '), S('h', 'e'), S('r', 'e')};
-static const uint32_t __string_144_Cannot_use_setter[] = {19, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', 's'), S('e', 't'), S('t', 'e'), S('r', ' '), S('\'', 0)};
 static const uint32_t __string_145_here[] = {6, S('\'', ' '), S('h', 'e'), S('r', 'e')};
-static const uint32_t __string_146_Must_call_function[] = {20, S('M', 'u'), S('s', 't'), S(' ', 'c'), S('a', 'l'), S('l', ' '), S('f', 'u'), S('n', 'c'), S('t', 'i'), S('o', 'n'), S(' ', '\'')};
-static const uint32_t __string_147_Global_initializers_must_be_comp[] = {50, S('G', 'l'), S('o', 'b'), S('a', 'l'), S(' ', 'i'), S('n', 'i'), S('t', 'i'), S('a', 'l'), S('i', 'z'), S('e', 'r'), S('s', ' '), S('m',
+static const uint32_t __string_146_Cannot_use_setter[] = {19, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', 's'), S('e', 't'), S('t', 'e'), S('r', ' '), S('\'', 0)};
+static const uint32_t __string_147_here[] = {6, S('\'', ' '), S('h', 'e'), S('r', 'e')};
+static const uint32_t __string_148_Must_call_function[] = {20, S('M', 'u'), S('s', 't'), S(' ', 'c'), S('a', 'l'), S('l', ' '), S('f', 'u'), S('n', 'c'), S('t', 'i'), S('o', 'n'), S(' ', '\'')};
+static const uint32_t __string_149_Global_initializers_must_be_comp[] = {50, S('G', 'l'), S('o', 'b'), S('a', 'l'), S(' ', 'i'), S('n', 'i'), S('t', 'i'), S('a', 'l'), S('i', 'z'), S('e', 'r'), S('s', ' '), S('m',
   'u'), S('s', 't'), S(' ', 'b'), S('e', ' '), S('c', 'o'), S('m', 'p'), S('i', 'l'), S('e', '-'), S('t', 'i'), S('m', 'e'), S(' ', 'c'), S('o', 'n'), S('s', 't'), S('a', 'n'), S('t', 's')};
-static const uint32_t __string_148_Cannot_use_this_statement_outsid[] = {43, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', 't'), S('h', 'i'), S('s', ' '), S('s', 't'), S('a', 't'), S('e',
+static const uint32_t __string_150_Cannot_use_this_statement_outsid[] = {43, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', 't'), S('h', 'i'), S('s', ' '), S('s', 't'), S('a', 't'), S('e',
   'm'), S('e', 'n'), S('t', ' '), S('o', 'u'), S('t', 's'), S('i', 'd'), S('e', ' '), S('o', 'f'), S(' ', 'a'), S(' ', 'l'), S('o', 'o'), S('p', 0)};
-static const uint32_t __string_149[] = {2, S('[', ']')};
-static const uint32_t __string_150_Cannot_index_into_type[] = {24, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'i'), S('n', 'd'), S('e', 'x'), S(' ', 'i'), S('n', 't'), S('o', ' '), S('t', 'y'), S('p',
+static const uint32_t __string_151[] = {2, S('[', ']')};
+static const uint32_t __string_152_Cannot_index_into_type[] = {24, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'i'), S('n', 'd'), S('e', 'x'), S(' ', 'i'), S('n', 't'), S('o', ' '), S('t', 'y'), S('p',
   'e'), S(' ', '\'')};
-static const uint32_t __string_151_this[] = {4, S('t', 'h'), S('i', 's')};
-static const uint32_t __string_152_Cannot_use_this_here[] = {22, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('t', 'h'), S('i', 's'), S('\'', ' '), S('h', 'e'), S('r',
+static const uint32_t __string_153_this[] = {4, S('t', 'h'), S('i', 's')};
+static const uint32_t __string_154_Cannot_use_this_here[] = {22, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\''), S('t', 'h'), S('i', 's'), S('\'', ' '), S('h', 'e'), S('r',
   'e')};
-static const uint32_t __string_153_No_symbol_named[] = {17, S('N', 'o'), S(' ', 's'), S('y', 'm'), S('b', 'o'), S('l', ' '), S('n', 'a'), S('m', 'e'), S('d', ' '), S('\'', 0)};
-static const uint32_t __string_154_here[] = {6, S('\'', ' '), S('h', 'e'), S('r', 'e')};
-static const uint32_t __string_155_did_you_mean_this[] = {21, S(',', ' '), S('d', 'i'), S('d', ' '), S('y', 'o'), S('u', ' '), S('m', 'e'), S('a', 'n'), S(' ', '\''), S('t', 'h'), S('i', 's'), S('.', 0)};
-static const uint32_t __string_156[] = {2, S('\'', '?')};
-static const uint32_t __string_157_number[] = {6, S('n', 'u'), S('m', 'b'), S('e', 'r')};
-static const uint32_t __string_158_did_you_mean_int[] = {21, S(',', ' '), S('d', 'i'), S('d', ' '), S('y', 'o'), S('u', ' '), S('m', 'e'), S('a', 'n'), S(' ', '\''), S('i', 'n'), S('t', '\''), S('?', 0)};
-static const uint32_t __string_159_boolean[] = {7, S('b', 'o'), S('o', 'l'), S('e', 'a'), S('n', 0)};
-static const uint32_t __string_160_did_you_mean_bool[] = {22, S(',', ' '), S('d', 'i'), S('d', ' '), S('y', 'o'), S('u', ' '), S('m', 'e'), S('a', 'n'), S(' ', '\''), S('b', 'o'), S('o', 'l'), S('\'',
+static const uint32_t __string_155_No_symbol_named[] = {17, S('N', 'o'), S(' ', 's'), S('y', 'm'), S('b', 'o'), S('l', ' '), S('n', 'a'), S('m', 'e'), S('d', ' '), S('\'', 0)};
+static const uint32_t __string_156_here[] = {6, S('\'', ' '), S('h', 'e'), S('r', 'e')};
+static const uint32_t __string_157_did_you_mean_this[] = {21, S(',', ' '), S('d', 'i'), S('d', ' '), S('y', 'o'), S('u', ' '), S('m', 'e'), S('a', 'n'), S(' ', '\''), S('t', 'h'), S('i', 's'), S('.', 0)};
+static const uint32_t __string_158[] = {2, S('\'', '?')};
+static const uint32_t __string_159_number[] = {6, S('n', 'u'), S('m', 'b'), S('e', 'r')};
+static const uint32_t __string_160_did_you_mean_int[] = {21, S(',', ' '), S('d', 'i'), S('d', ' '), S('y', 'o'), S('u', ' '), S('m', 'e'), S('a', 'n'), S(' ', '\''), S('i', 'n'), S('t', '\''), S('?', 0)};
+static const uint32_t __string_161_boolean[] = {7, S('b', 'o'), S('o', 'l'), S('e', 'a'), S('n', 0)};
+static const uint32_t __string_162_did_you_mean_bool[] = {22, S(',', ' '), S('d', 'i'), S('d', ' '), S('y', 'o'), S('u', ' '), S('m', 'e'), S('a', 'n'), S(' ', '\''), S('b', 'o'), S('o', 'l'), S('\'',
   '?')};
-static const uint32_t __string_161_Cyclic_reference_to_symbol[] = {28, S('C', 'y'), S('c', 'l'), S('i', 'c'), S(' ', 'r'), S('e', 'f'), S('e', 'r'), S('e', 'n'), S('c', 'e'), S(' ', 't'), S('o', ' '), S('s',
+static const uint32_t __string_163_Cyclic_reference_to_symbol[] = {28, S('C', 'y'), S('c', 'l'), S('i', 'c'), S(' ', 'r'), S('e', 'f'), S('e', 'r'), S('e', 'n'), S('c', 'e'), S(' ', 't'), S('o', ' '), S('s',
   'y'), S('m', 'b'), S('o', 'l'), S(' ', '\'')};
-static const uint32_t __string_162_here[] = {6, S('\'', ' '), S('h', 'e'), S('r', 'e')};
-static const uint32_t __string_163_No_member_named[] = {17, S('N', 'o'), S(' ', 'm'), S('e', 'm'), S('b', 'e'), S('r', ' '), S('n', 'a'), S('m', 'e'), S('d', ' '), S('\'', 0)};
-static const uint32_t __string_164_on_type[] = {11, S('\'', ' '), S('o', 'n'), S(' ', 't'), S('y', 'p'), S('e', ' '), S('\'', 0)};
-static const uint32_t __string_165_The_type[] = {10, S('T', 'h'), S('e', ' '), S('t', 'y'), S('p', 'e'), S(' ', '\'')};
-static const uint32_t __string_166_has_no_members[] = {16, S('\'', ' '), S('h', 'a'), S('s', ' '), S('n', 'o'), S(' ', 'm'), S('e', 'm'), S('b', 'e'), S('r', 's')};
-static const uint32_t __string_167_Cannot_call_value_of_type[] = {27, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'c'), S('a', 'l'), S('l', ' '), S('v', 'a'), S('l', 'u'), S('e', ' '), S('o', 'f'), S(' ',
+static const uint32_t __string_164_here[] = {6, S('\'', ' '), S('h', 'e'), S('r', 'e')};
+static const uint32_t __string_165_No_member_named[] = {17, S('N', 'o'), S(' ', 'm'), S('e', 'm'), S('b', 'e'), S('r', ' '), S('n', 'a'), S('m', 'e'), S('d', ' '), S('\'', 0)};
+static const uint32_t __string_166_on_type[] = {11, S('\'', ' '), S('o', 'n'), S(' ', 't'), S('y', 'p'), S('e', ' '), S('\'', 0)};
+static const uint32_t __string_167_The_type[] = {10, S('T', 'h'), S('e', ' '), S('t', 'y'), S('p', 'e'), S(' ', '\'')};
+static const uint32_t __string_168_has_no_members[] = {16, S('\'', ' '), S('h', 'a'), S('s', ' '), S('n', 'o'), S(' ', 'm'), S('e', 'm'), S('b', 'e'), S('r', 's')};
+static const uint32_t __string_169_Cannot_call_value_of_type[] = {27, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'c'), S('a', 'l'), S('l', ' '), S('v', 'a'), S('l', 'u'), S('e', ' '), S('o', 'f'), S(' ',
   't'), S('y', 'p'), S('e', ' '), S('\'', 0)};
-static const uint32_t __string_168_Not_enough_arguments_for_functio[] = {35, S('N', 'o'), S('t', ' '), S('e', 'n'), S('o', 'u'), S('g', 'h'), S(' ', 'a'), S('r', 'g'), S('u', 'm'), S('e', 'n'), S('t', 's'), S(' ',
+static const uint32_t __string_170_Not_enough_arguments_for_functio[] = {35, S('N', 'o'), S('t', ' '), S('e', 'n'), S('o', 'u'), S('g', 'h'), S(' ', 'a'), S('r', 'g'), S('u', 'm'), S('e', 'n'), S('t', 's'), S(' ',
   'f'), S('o', 'r'), S(' ', 'f'), S('u', 'n'), S('c', 't'), S('i', 'o'), S('n', ' '), S('\'', 0)};
-static const uint32_t __string_169_Too_many_arguments_for_function[] = {33, S('T', 'o'), S('o', ' '), S('m', 'a'), S('n', 'y'), S(' ', 'a'), S('r', 'g'), S('u', 'm'), S('e', 'n'), S('t', 's'), S(' ', 'f'), S('o',
+static const uint32_t __string_171_Too_many_arguments_for_function[] = {33, S('T', 'o'), S('o', ' '), S('m', 'a'), S('n', 'y'), S(' ', 'a'), S('r', 'g'), S('u', 'm'), S('e', 'n'), S('t', 's'), S(' ', 'f'), S('o',
   'r'), S(' ', 'f'), S('u', 'n'), S('c', 't'), S('i', 'o'), S('n', ' '), S('\'', 0)};
-static const uint32_t __string_170_Unexpected_return_value_in_funct[] = {52, S('U', 'n'), S('e', 'x'), S('p', 'e'), S('c', 't'), S('e', 'd'), S(' ', 'r'), S('e', 't'), S('u', 'r'), S('n', ' '), S('v', 'a'), S('l',
+static const uint32_t __string_172_Unexpected_return_value_in_funct[] = {52, S('U', 'n'), S('e', 'x'), S('p', 'e'), S('c', 't'), S('e', 'd'), S(' ', 'r'), S('e', 't'), S('u', 'r'), S('n', ' '), S('v', 'a'), S('l',
   'u'), S('e', ' '), S('i', 'n'), S(' ', 'f'), S('u', 'n'), S('c', 't'), S('i', 'o'), S('n', ' '), S('r', 'e'), S('t', 'u'), S('r', 'n'), S('i', 'n'), S('g', ' '), S('\'', 'v'), S('o', 'i'), S('d', '\'')};
-static const uint32_t __string_171_Expected_return_value_in_functio[] = {45, S('E', 'x'), S('p', 'e'), S('c', 't'), S('e', 'd'), S(' ', 'r'), S('e', 't'), S('u', 'r'), S('n', ' '), S('v', 'a'), S('l', 'u'), S('e',
+static const uint32_t __string_173_Expected_return_value_in_functio[] = {45, S('E', 'x'), S('p', 'e'), S('c', 't'), S('e', 'd'), S(' ', 'r'), S('e', 't'), S('u', 'r'), S('n', ' '), S('v', 'a'), S('l', 'u'), S('e',
   ' '), S('i', 'n'), S(' ', 'f'), S('u', 'n'), S('c', 't'), S('i', 'o'), S('n', ' '), S('r', 'e'), S('t', 'u'), S('r', 'n'), S('i', 'n'), S('g', ' '), S('\'', 0)};
-static const uint32_t __string_172_Generics_are_not_implemented_yet[] = {32, S('G', 'e'), S('n', 'e'), S('r', 'i'), S('c', 's'), S(' ', 'a'), S('r', 'e'), S(' ', 'n'), S('o', 't'), S(' ', 'i'), S('m', 'p'), S('l',
+static const uint32_t __string_174_Generics_are_not_implemented_yet[] = {32, S('G', 'e'), S('n', 'e'), S('r', 'i'), S('c', 's'), S(' ', 'a'), S('r', 'e'), S(' ', 'n'), S('o', 't'), S(' ', 'i'), S('m', 'p'), S('l',
   'e'), S('m', 'e'), S('n', 't'), S('e', 'd'), S(' ', 'y'), S('e', 't')};
-static const uint32_t __string_173_Subclassing_is_not_implemented_y[] = {34, S('S', 'u'), S('b', 'c'), S('l', 'a'), S('s', 's'), S('i', 'n'), S('g', ' '), S('i', 's'), S(' ', 'n'), S('o', 't'), S(' ', 'i'), S('m',
+static const uint32_t __string_175_Subclassing_is_not_implemented_y[] = {34, S('S', 'u'), S('b', 'c'), S('l', 'a'), S('s', 's'), S('i', 'n'), S('g', ' '), S('i', 's'), S(' ', 'n'), S('o', 't'), S(' ', 'i'), S('m',
   'p'), S('l', 'e'), S('m', 'e'), S('n', 't'), S('e', 'd'), S(' ', 'y'), S('e', 't')};
-static const uint32_t __string_174_Interfaces_are_not_implemented_y[] = {34, S('I', 'n'), S('t', 'e'), S('r', 'f'), S('a', 'c'), S('e', 's'), S(' ', 'a'), S('r', 'e'), S(' ', 'n'), S('o', 't'), S(' ', 'i'), S('m',
+static const uint32_t __string_176_Interfaces_are_not_implemented_y[] = {34, S('I', 'n'), S('t', 'e'), S('r', 'f'), S('a', 'c'), S('e', 's'), S(' ', 'a'), S('r', 'e'), S(' ', 'n'), S('o', 't'), S(' ', 'i'), S('m',
   'p'), S('l', 'e'), S('m', 'e'), S('n', 't'), S('e', 'd'), S(' ', 'y'), S('e', 't')};
-static const uint32_t __string_175_Type[] = {6, S('T', 'y'), S('p', 'e'), S(' ', '\'')};
-static const uint32_t __string_176_is_not_the_same_as_type[] = {27, S('\'', ' '), S('i', 's'), S(' ', 'n'), S('o', 't'), S(' ', 't'), S('h', 'e'), S(' ', 's'), S('a', 'm'), S('e', ' '), S('a', 's'), S(' ',
+static const uint32_t __string_177_Type[] = {6, S('T', 'y'), S('p', 'e'), S(' ', '\'')};
+static const uint32_t __string_178_is_not_the_same_as_type[] = {27, S('\'', ' '), S('i', 's'), S(' ', 'n'), S('o', 't'), S(' ', 't'), S('h', 'e'), S(' ', 's'), S('a', 'm'), S('e', ' '), S('a', 's'), S(' ',
   't'), S('y', 'p'), S('e', ' '), S('\'', 0)};
-static const uint32_t __string_177[] = {3, S('[', ']'), S('=', 0)};
-static const uint32_t __string_178_Cannot_index_into_type[] = {24, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'i'), S('n', 'd'), S('e', 'x'), S(' ', 'i'), S('n', 't'), S('o', ' '), S('t', 'y'), S('p',
+static const uint32_t __string_179[] = {3, S('[', ']'), S('=', 0)};
+static const uint32_t __string_180_Cannot_index_into_type[] = {24, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'i'), S('n', 'd'), S('e', 'x'), S(' ', 'i'), S('n', 't'), S('o', ' '), S('t', 'y'), S('p',
   'e'), S(' ', '\'')};
-static const uint32_t __string_179_Cannot_construct_type[] = {23, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'c'), S('o', 'n'), S('s', 't'), S('r', 'u'), S('c', 't'), S(' ', 't'), S('y', 'p'), S('e',
+static const uint32_t __string_181_Cannot_construct_type[] = {23, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'c'), S('o', 'n'), S('s', 't'), S('r', 'u'), S('c', 't'), S(' ', 't'), S('y', 'p'), S('e',
   ' '), S('\'', 0)};
-static const uint32_t __string_180_Constructors_with_arguments_are[] = {49, S('C', 'o'), S('n', 's'), S('t', 'r'), S('u', 'c'), S('t', 'o'), S('r', 's'), S(' ', 'w'), S('i', 't'), S('h', ' '), S('a', 'r'), S('g',
+static const uint32_t __string_182_Constructors_with_arguments_are[] = {49, S('C', 'o'), S('n', 's'), S('t', 'r'), S('u', 'c'), S('t', 'o'), S('r', 's'), S(' ', 'w'), S('i', 't'), S('h', ' '), S('a', 'r'), S('g',
   'u'), S('m', 'e'), S('n', 't'), S('s', ' '), S('a', 'r'), S('e', ' '), S('n', 'o'), S('t', ' '), S('s', 'u'), S('p', 'p'), S('o', 'r'), S('t', 'e'), S('d', ' '), S('y', 'e'), S('t', 0)};
-static const uint32_t __string_181_Cannot_use_pointers_when_compili[] = {48, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', 'p'), S('o', 'i'), S('n', 't'), S('e', 'r'), S('s', ' '), S('w',
+static const uint32_t __string_183_Cannot_use_pointers_when_compili[] = {48, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', 'p'), S('o', 'i'), S('n', 't'), S('e', 'r'), S('s', ' '), S('w',
   'h'), S('e', 'n'), S(' ', 'c'), S('o', 'm'), S('p', 'i'), S('l', 'i'), S('n', 'g'), S(' ', 't'), S('o', ' '), S('J', 'a'), S('v', 'a'), S('S', 'c'), S('r', 'i'), S('p', 't')};
-static const uint32_t __string_182_Cannot_use_pointers_outside_an[] = {45, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', 'p'), S('o', 'i'), S('n', 't'), S('e', 'r'), S('s', ' '), S('o',
+static const uint32_t __string_184_Cannot_use_pointers_outside_an[] = {45, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', 'p'), S('o', 'i'), S('n', 't'), S('e', 'r'), S('s', ' '), S('o',
   'u'), S('t', 's'), S('i', 'd'), S('e', ' '), S('a', 'n'), S(' ', '\''), S('u', 'n'), S('s', 'a'), S('f', 'e'), S('\'', ' '), S('b', 'l'), S('o', 'c'), S('k', 0)};
-static const uint32_t __string_183_Cannot_create_a_pointer_to_non_i[] = {45, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'c'), S('r', 'e'), S('a', 't'), S('e', ' '), S('a', ' '), S('p', 'o'), S('i', 'n'), S('t',
+static const uint32_t __string_185_Cannot_create_a_pointer_to_non_i[] = {45, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'c'), S('r', 'e'), S('a', 't'), S('e', ' '), S('a', ' '), S('p', 'o'), S('i', 'n'), S('t',
   'e'), S('r', ' '), S('t', 'o'), S(' ', 'n'), S('o', 'n'), S('-', 'i'), S('n', 't'), S('e', 'g'), S('e', 'r'), S(' ', 't'), S('y', 'p'), S('e', ' '), S('\'', 0)};
-static const uint32_t __string_184_Cannot_dereference_type[] = {25, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'd'), S('e', 'r'), S('e', 'f'), S('e', 'r'), S('e', 'n'), S('c', 'e'), S(' ', 't'), S('y',
+static const uint32_t __string_186_Cannot_dereference_type[] = {25, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'd'), S('e', 'r'), S('e', 'f'), S('e', 'r'), S('e', 'n'), S('c', 'e'), S(' ', 't'), S('y',
   'p'), S('e', ' '), S('\'', 0)};
-static const uint32_t __string_185_The_address_of_operator_is_not_s[] = {40, S('T', 'h'), S('e', ' '), S('a', 'd'), S('d', 'r'), S('e', 's'), S('s', '-'), S('o', 'f'), S(' ', 'o'), S('p', 'e'), S('r', 'a'), S('t',
+static const uint32_t __string_187_The_address_of_operator_is_not_s[] = {40, S('T', 'h'), S('e', ' '), S('a', 'd'), S('d', 'r'), S('e', 's'), S('s', '-'), S('o', 'f'), S(' ', 'o'), S('p', 'e'), S('r', 'a'), S('t',
   'o'), S('r', ' '), S('i', 's'), S(' ', 'n'), S('o', 't'), S(' ', 's'), S('u', 'p'), S('p', 'o'), S('r', 't'), S('e', 'd')};
-static const uint32_t __string_186_Cannot_use_unary_operator[] = {27, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', 'u'), S('n', 'a'), S('r', 'y'), S(' ', 'o'), S('p', 'e'), S('r',
+static const uint32_t __string_188_Cannot_use_unary_operator[] = {27, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', 'u'), S('n', 'a'), S('r', 'y'), S(' ', 'o'), S('p', 'e'), S('r',
   'a'), S('t', 'o'), S('r', ' '), S('\'', 0)};
-static const uint32_t __string_187_with_type[] = {13, S('\'', ' '), S('w', 'i'), S('t', 'h'), S(' ', 't'), S('y', 'p'), S('e', ' '), S('\'', 0)};
-static const uint32_t __string_188_Cannot_compare_type[] = {21, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'c'), S('o', 'm'), S('p', 'a'), S('r', 'e'), S(' ', 't'), S('y', 'p'), S('e', ' '), S('\'', 0)};
 static const uint32_t __string_189_with_type[] = {13, S('\'', ' '), S('w', 'i'), S('t', 'h'), S(' ', 't'), S('y', 'p'), S('e', ' '), S('\'', 0)};
-static const uint32_t __string_190_This_operator_is_not_currently_s[] = {40, S('T', 'h'), S('i', 's'), S(' ', 'o'), S('p', 'e'), S('r', 'a'), S('t', 'o'), S('r', ' '), S('i', 's'), S(' ', 'n'), S('o', 't'), S(' ',
+static const uint32_t __string_190_Cannot_compare_type[] = {21, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'c'), S('o', 'm'), S('p', 'a'), S('r', 'e'), S(' ', 't'), S('y', 'p'), S('e', ' '), S('\'', 0)};
+static const uint32_t __string_191_with_type[] = {13, S('\'', ' '), S('w', 'i'), S('t', 'h'), S(' ', 't'), S('y', 'p'), S('e', ' '), S('\'', 0)};
+static const uint32_t __string_192_This_operator_is_not_currently_s[] = {40, S('T', 'h'), S('i', 's'), S(' ', 'o'), S('p', 'e'), S('r', 'a'), S('t', 'o'), S('r', ' '), S('i', 's'), S(' ', 'n'), S('o', 't'), S(' ',
   'c'), S('u', 'r'), S('r', 'e'), S('n', 't'), S('l', 'y'), S(' ', 's'), S('u', 'p'), S('p', 'o'), S('r', 't'), S('e', 'd')};
-static const uint32_t __string_191[] = {2, S('=', '=')};
-static const uint32_t __string_192[] = {1, S('>', 0)};
-static const uint32_t __string_193[] = {1, S('<', 0)};
-static const uint32_t __string_194_Cannot_compare_type[] = {21, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'c'), S('o', 'm'), S('p', 'a'), S('r', 'e'), S(' ', 't'), S('y', 'p'), S('e', ' '), S('\'', 0)};
-static const uint32_t __string_195_with_type[] = {13, S('\'', ' '), S('w', 'i'), S('t', 'h'), S(' ', 't'), S('y', 'p'), S('e', ' '), S('\'', 0)};
-static const uint32_t __string_196_Cannot_use_binary_operator[] = {28, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', 'b'), S('i', 'n'), S('a', 'r'), S('y', ' '), S('o', 'p'), S('e',
-  'r'), S('a', 't'), S('o', 'r'), S(' ', '\'')};
+static const uint32_t __string_193[] = {2, S('=', '=')};
+static const uint32_t __string_194[] = {1, S('>', 0)};
+static const uint32_t __string_195[] = {1, S('<', 0)};
+static const uint32_t __string_196_Cannot_compare_type[] = {21, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'c'), S('o', 'm'), S('p', 'a'), S('r', 'e'), S(' ', 't'), S('y', 'p'), S('e', ' '), S('\'', 0)};
 static const uint32_t __string_197_with_type[] = {13, S('\'', ' '), S('w', 'i'), S('t', 'h'), S(' ', 't'), S('y', 'p'), S('e', ' '), S('\'', 0)};
-static const uint32_t __string_198_native[] = {8, S('<', 'n'), S('a', 't'), S('i', 'v'), S('e', '>')};
-static const uint32_t __string_199_C[] = {1, S('C', 0)};
-static const uint32_t __string_200_JS[] = {2, S('J', 'S')};
-static const uint32_t __string_201_WASM[] = {4, S('W', 'A'), S('S', 'M')};
-static const uint32_t __string_202_error[] = {7, S('<', 'e'), S('r', 'r'), S('o', 'r'), S('>', 0)};
-static const uint32_t __string_203_null[] = {4, S('n', 'u'), S('l', 'l')};
-static const uint32_t __string_204_void[] = {4, S('v', 'o'), S('i', 'd')};
-static const uint32_t __string_205_lexing[] = {6, S('l', 'e'), S('x', 'i'), S('n', 'g')};
-static const uint32_t __string_206_preprocessing[] = {13, S('p', 'r'), S('e', 'p'), S('r', 'o'), S('c', 'e'), S('s', 's'), S('i', 'n'), S('g', 0)};
-static const uint32_t __string_207_parsing[] = {7, S('p', 'a'), S('r', 's'), S('i', 'n'), S('g', 0)};
-static const uint32_t __string_208_checking[] = {8, S('c', 'h'), S('e', 'c'), S('k', 'i'), S('n', 'g')};
-static const uint32_t __string_209_shaking[] = {7, S('s', 'h'), S('a', 'k'), S('i', 'n'), S('g', 0)};
-static const uint32_t __string_210_emitting[] = {8, S('e', 'm'), S('i', 't'), S('t', 'i'), S('n', 'g')};
-static const uint32_t __string_211[] = {1, S('.', 0)};
-static const uint32_t __string_212[] = {1, S('/', 0)};
-static const uint32_t __string_213[] = {1, S('\\', 0)};
-static const uint32_t __string_214_end_of_file[] = {11, S('e', 'n'), S('d', ' '), S('o', 'f'), S(' ', 'f'), S('i', 'l'), S('e', 0)};
-static const uint32_t __string_215_character_literal[] = {17, S('c', 'h'), S('a', 'r'), S('a', 'c'), S('t', 'e'), S('r', ' '), S('l', 'i'), S('t', 'e'), S('r', 'a'), S('l', 0)};
-static const uint32_t __string_216_identifier[] = {10, S('i', 'd'), S('e', 'n'), S('t', 'i'), S('f', 'i'), S('e', 'r')};
-static const uint32_t __string_217_integer_literal[] = {15, S('i', 'n'), S('t', 'e'), S('g', 'e'), S('r', ' '), S('l', 'i'), S('t', 'e'), S('r', 'a'), S('l', 0)};
-static const uint32_t __string_218_string_literal[] = {14, S('s', 't'), S('r', 'i'), S('n', 'g'), S(' ', 'l'), S('i', 't'), S('e', 'r'), S('a', 'l')};
-static const uint32_t __string_219[] = {3, S('\'', '='), S('\'', 0)};
-static const uint32_t __string_220[] = {3, S('\'', '&'), S('\'', 0)};
-static const uint32_t __string_221[] = {3, S('\'', '|'), S('\'', 0)};
-static const uint32_t __string_222[] = {3, S('\'', '^'), S('\'', 0)};
-static const uint32_t __string_223[] = {3, S('\'', ':'), S('\'', 0)};
-static const uint32_t __string_224[] = {3, S('\'', ','), S('\'', 0)};
-static const uint32_t __string_225[] = {3, S('\'', '~'), S('\'', 0)};
-static const uint32_t __string_226[] = {3, S('\'', '/'), S('\'', 0)};
-static const uint32_t __string_227[] = {3, S('\'', '.'), S('\'', 0)};
-static const uint32_t __string_228[] = {4, S('\'', '='), S('=', '\'')};
-static const uint32_t __string_229[] = {4, S('\'', '*'), S('*', '\'')};
-static const uint32_t __string_230[] = {3, S('\'', '>'), S('\'', 0)};
-static const uint32_t __string_231[] = {4, S('\'', '>'), S('=', '\'')};
-static const uint32_t __string_232[] = {3, S('\'', '{'), S('\'', 0)};
-static const uint32_t __string_233[] = {3, S('\'', '['), S('\'', 0)};
-static const uint32_t __string_234[] = {3, S('\'', '('), S('\'', 0)};
-static const uint32_t __string_235[] = {3, S('\'', '<'), S('\'', 0)};
-static const uint32_t __string_236[] = {4, S('\'', '<'), S('=', '\'')};
-static const uint32_t __string_237[] = {4, S('\'', '&'), S('&', '\'')};
-static const uint32_t __string_238[] = {4, S('\'', '|'), S('|', '\'')};
-static const uint32_t __string_239[] = {3, S('\'', '-'), S('\'', 0)};
-static const uint32_t __string_240[] = {4, S('\'', '-'), S('-', '\'')};
-static const uint32_t __string_241[] = {3, S('\'', '*'), S('\'', 0)};
-static const uint32_t __string_242[] = {3, S('\'', '!'), S('\'', 0)};
-static const uint32_t __string_243[] = {4, S('\'', '!'), S('=', '\'')};
-static const uint32_t __string_244[] = {3, S('\'', '+'), S('\'', 0)};
-static const uint32_t __string_245[] = {4, S('\'', '+'), S('+', '\'')};
-static const uint32_t __string_246[] = {3, S('\'', '?'), S('\'', 0)};
-static const uint32_t __string_247[] = {3, S('\'', '%'), S('\'', 0)};
-static const uint32_t __string_248[] = {3, S('\'', '}'), S('\'', 0)};
-static const uint32_t __string_249[] = {3, S('\'', ']'), S('\'', 0)};
-static const uint32_t __string_250[] = {3, S('\'', ')'), S('\'', 0)};
-static const uint32_t __string_251[] = {3, S('\'', ';'), S('\'', 0)};
-static const uint32_t __string_252[] = {4, S('\'', '<'), S('<', '\'')};
-static const uint32_t __string_253[] = {4, S('\'', '>'), S('>', '\'')};
-static const uint32_t __string_254_alignof[] = {9, S('\'', 'a'), S('l', 'i'), S('g', 'n'), S('o', 'f'), S('\'', 0)};
-static const uint32_t __string_255_as[] = {4, S('\'', 'a'), S('s', '\'')};
-static const uint32_t __string_256_break[] = {7, S('\'', 'b'), S('r', 'e'), S('a', 'k'), S('\'', 0)};
-static const uint32_t __string_257_class[] = {7, S('\'', 'c'), S('l', 'a'), S('s', 's'), S('\'', 0)};
-static const uint32_t __string_258_const[] = {7, S('\'', 'c'), S('o', 'n'), S('s', 't'), S('\'', 0)};
-static const uint32_t __string_259_continue[] = {10, S('\'', 'c'), S('o', 'n'), S('t', 'i'), S('n', 'u'), S('e', '\'')};
-static const uint32_t __string_260_declare[] = {9, S('\'', 'd'), S('e', 'c'), S('l', 'a'), S('r', 'e'), S('\'', 0)};
-static const uint32_t __string_261_else[] = {6, S('\'', 'e'), S('l', 's'), S('e', '\'')};
-static const uint32_t __string_262_enum[] = {6, S('\'', 'e'), S('n', 'u'), S('m', '\'')};
-static const uint32_t __string_263_export[] = {8, S('\'', 'e'), S('x', 'p'), S('o', 'r'), S('t', '\'')};
-static const uint32_t __string_264_extends[] = {9, S('\'', 'e'), S('x', 't'), S('e', 'n'), S('d', 's'), S('\'', 0)};
-static const uint32_t __string_265_extern[] = {8, S('\'', 'e'), S('x', 't'), S('e', 'r'), S('n', '\'')};
-static const uint32_t __string_266_false[] = {7, S('\'', 'f'), S('a', 'l'), S('s', 'e'), S('\'', 0)};
-static const uint32_t __string_267_function[] = {10, S('\'', 'f'), S('u', 'n'), S('c', 't'), S('i', 'o'), S('n', '\'')};
-static const uint32_t __string_268_if[] = {4, S('\'', 'i'), S('f', '\'')};
-static const uint32_t __string_269_implements[] = {12, S('\'', 'i'), S('m', 'p'), S('l', 'e'), S('m', 'e'), S('n', 't'), S('s', '\'')};
-static const uint32_t __string_270_import[] = {8, S('\'', 'i'), S('m', 'p'), S('o', 'r'), S('t', '\'')};
-static const uint32_t __string_271_interface[] = {11, S('\'', 'i'), S('n', 't'), S('e', 'r'), S('f', 'a'), S('c', 'e'), S('\'', 0)};
-static const uint32_t __string_272_let[] = {5, S('\'', 'l'), S('e', 't'), S('\'', 0)};
-static const uint32_t __string_273_new[] = {5, S('\'', 'n'), S('e', 'w'), S('\'', 0)};
-static const uint32_t __string_274_null[] = {6, S('\'', 'n'), S('u', 'l'), S('l', '\'')};
-static const uint32_t __string_275_operator[] = {10, S('\'', 'o'), S('p', 'e'), S('r', 'a'), S('t', 'o'), S('r', '\'')};
-static const uint32_t __string_276_private[] = {9, S('\'', 'p'), S('r', 'i'), S('v', 'a'), S('t', 'e'), S('\'', 0)};
-static const uint32_t __string_277_protected[] = {11, S('\'', 'p'), S('r', 'o'), S('t', 'e'), S('c', 't'), S('e', 'd'), S('\'', 0)};
-static const uint32_t __string_278_public[] = {8, S('\'', 'p'), S('u', 'b'), S('l', 'i'), S('c', '\'')};
-static const uint32_t __string_279_return[] = {8, S('\'', 'r'), S('e', 't'), S('u', 'r'), S('n', '\'')};
-static const uint32_t __string_280_sizeof[] = {8, S('\'', 's'), S('i', 'z'), S('e', 'o'), S('f', '\'')};
-static const uint32_t __string_281_static[] = {8, S('\'', 's'), S('t', 'a'), S('t', 'i'), S('c', '\'')};
-static const uint32_t __string_282_this[] = {6, S('\'', 't'), S('h', 'i'), S('s', '\'')};
-static const uint32_t __string_283_true[] = {6, S('\'', 't'), S('r', 'u'), S('e', '\'')};
-static const uint32_t __string_284_unsafe[] = {8, S('\'', 'u'), S('n', 's'), S('a', 'f'), S('e', '\'')};
-static const uint32_t __string_285_var[] = {5, S('\'', 'v'), S('a', 'r'), S('\'', 0)};
-static const uint32_t __string_286_while[] = {7, S('\'', 'w'), S('h', 'i'), S('l', 'e'), S('\'', 0)};
-static const uint32_t __string_287_define[] = {9, S('\'', '#'), S('d', 'e'), S('f', 'i'), S('n', 'e'), S('\'', 0)};
-static const uint32_t __string_288_elif[] = {7, S('\'', '#'), S('e', 'l'), S('i', 'f'), S('\'', 0)};
-static const uint32_t __string_289_else[] = {7, S('\'', '#'), S('e', 'l'), S('s', 'e'), S('\'', 0)};
-static const uint32_t __string_290_endif[] = {8, S('\'', '#'), S('e', 'n'), S('d', 'i'), S('f', '\'')};
-static const uint32_t __string_291_error[] = {8, S('\'', '#'), S('e', 'r'), S('r', 'o'), S('r', '\'')};
-static const uint32_t __string_292_if[] = {5, S('\'', '#'), S('i', 'f'), S('\'', 0)};
-static const uint32_t __string_293_newline[] = {7, S('n', 'e'), S('w', 'l'), S('i', 'n'), S('e', 0)};
-static const uint32_t __string_294_undef[] = {8, S('\'', '#'), S('u', 'n'), S('d', 'e'), S('f', '\'')};
-static const uint32_t __string_295_warning[] = {10, S('\'', '#'), S('w', 'a'), S('r', 'n'), S('i', 'n'), S('g', '\'')};
-static const uint32_t __string_296_as[] = {2, S('a', 's')};
-static const uint32_t __string_297_if[] = {2, S('i', 'f')};
-static const uint32_t __string_298_let[] = {3, S('l', 'e'), S('t', 0)};
-static const uint32_t __string_299_new[] = {3, S('n', 'e'), S('w', 0)};
-static const uint32_t __string_300_var[] = {3, S('v', 'a'), S('r', 0)};
-static const uint32_t __string_301_else[] = {4, S('e', 'l'), S('s', 'e')};
-static const uint32_t __string_302_enum[] = {4, S('e', 'n'), S('u', 'm')};
-static const uint32_t __string_303_null[] = {4, S('n', 'u'), S('l', 'l')};
-static const uint32_t __string_304_this[] = {4, S('t', 'h'), S('i', 's')};
-static const uint32_t __string_305_true[] = {4, S('t', 'r'), S('u', 'e')};
-static const uint32_t __string_306_break[] = {5, S('b', 'r'), S('e', 'a'), S('k', 0)};
-static const uint32_t __string_307_class[] = {5, S('c', 'l'), S('a', 's'), S('s', 0)};
-static const uint32_t __string_308_const[] = {5, S('c', 'o'), S('n', 's'), S('t', 0)};
-static const uint32_t __string_309_false[] = {5, S('f', 'a'), S('l', 's'), S('e', 0)};
-static const uint32_t __string_310_while[] = {5, S('w', 'h'), S('i', 'l'), S('e', 0)};
-static const uint32_t __string_311_export[] = {6, S('e', 'x'), S('p', 'o'), S('r', 't')};
-static const uint32_t __string_312_extern[] = {6, S('e', 'x'), S('t', 'e'), S('r', 'n')};
-static const uint32_t __string_313_import[] = {6, S('i', 'm'), S('p', 'o'), S('r', 't')};
-static const uint32_t __string_314_public[] = {6, S('p', 'u'), S('b', 'l'), S('i', 'c')};
-static const uint32_t __string_315_return[] = {6, S('r', 'e'), S('t', 'u'), S('r', 'n')};
-static const uint32_t __string_316_sizeof[] = {6, S('s', 'i'), S('z', 'e'), S('o', 'f')};
-static const uint32_t __string_317_static[] = {6, S('s', 't'), S('a', 't'), S('i', 'c')};
-static const uint32_t __string_318_unsafe[] = {6, S('u', 'n'), S('s', 'a'), S('f', 'e')};
-static const uint32_t __string_319_alignof[] = {7, S('a', 'l'), S('i', 'g'), S('n', 'o'), S('f', 0)};
-static const uint32_t __string_320_declare[] = {7, S('d', 'e'), S('c', 'l'), S('a', 'r'), S('e', 0)};
-static const uint32_t __string_321_extends[] = {7, S('e', 'x'), S('t', 'e'), S('n', 'd'), S('s', 0)};
-static const uint32_t __string_322_private[] = {7, S('p', 'r'), S('i', 'v'), S('a', 't'), S('e', 0)};
-static const uint32_t __string_323_continue[] = {8, S('c', 'o'), S('n', 't'), S('i', 'n'), S('u', 'e')};
-static const uint32_t __string_324_function[] = {8, S('f', 'u'), S('n', 'c'), S('t', 'i'), S('o', 'n')};
-static const uint32_t __string_325_implements[] = {10, S('i', 'm'), S('p', 'l'), S('e', 'm'), S('e', 'n'), S('t', 's')};
-static const uint32_t __string_326_interface[] = {9, S('i', 'n'), S('t', 'e'), S('r', 'f'), S('a', 'c'), S('e', 0)};
-static const uint32_t __string_327_protected[] = {9, S('p', 'r'), S('o', 't'), S('e', 'c'), S('t', 'e'), S('d', 0)};
-static const uint32_t __string_328_Invalid_integer_literal[] = {26, S('I', 'n'), S('v', 'a'), S('l', 'i'), S('d', ' '), S('i', 'n'), S('t', 'e'), S('g', 'e'), S('r', ' '), S('l', 'i'), S('t', 'e'), S('r',
+static const uint32_t __string_198_Cannot_use_binary_operator[] = {28, S('C', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'u'), S('s', 'e'), S(' ', 'b'), S('i', 'n'), S('a', 'r'), S('y', ' '), S('o', 'p'), S('e',
+  'r'), S('a', 't'), S('o', 'r'), S(' ', '\'')};
+static const uint32_t __string_199_with_type[] = {13, S('\'', ' '), S('w', 'i'), S('t', 'h'), S(' ', 't'), S('y', 'p'), S('e', ' '), S('\'', 0)};
+static const uint32_t __string_200_native[] = {8, S('<', 'n'), S('a', 't'), S('i', 'v'), S('e', '>')};
+static const uint32_t __string_201_C[] = {1, S('C', 0)};
+static const uint32_t __string_202_JS[] = {2, S('J', 'S')};
+static const uint32_t __string_203_WASM[] = {4, S('W', 'A'), S('S', 'M')};
+static const uint32_t __string_204_error[] = {7, S('<', 'e'), S('r', 'r'), S('o', 'r'), S('>', 0)};
+static const uint32_t __string_205_null[] = {4, S('n', 'u'), S('l', 'l')};
+static const uint32_t __string_206_void[] = {4, S('v', 'o'), S('i', 'd')};
+static const uint32_t __string_207_lexing[] = {6, S('l', 'e'), S('x', 'i'), S('n', 'g')};
+static const uint32_t __string_208_preprocessing[] = {13, S('p', 'r'), S('e', 'p'), S('r', 'o'), S('c', 'e'), S('s', 's'), S('i', 'n'), S('g', 0)};
+static const uint32_t __string_209_parsing[] = {7, S('p', 'a'), S('r', 's'), S('i', 'n'), S('g', 0)};
+static const uint32_t __string_210_checking[] = {8, S('c', 'h'), S('e', 'c'), S('k', 'i'), S('n', 'g')};
+static const uint32_t __string_211_shaking[] = {7, S('s', 'h'), S('a', 'k'), S('i', 'n'), S('g', 0)};
+static const uint32_t __string_212_emitting[] = {8, S('e', 'm'), S('i', 't'), S('t', 'i'), S('n', 'g')};
+static const uint32_t __string_213[] = {1, S('.', 0)};
+static const uint32_t __string_214[] = {1, S('/', 0)};
+static const uint32_t __string_215[] = {1, S('\\', 0)};
+static const uint32_t __string_216___name[] = {6, S('_', '_'), S('n', 'a'), S('m', 'e')};
+static const uint32_t __string_217___file[] = {6, S('_', '_'), S('f', 'i'), S('l', 'e')};
+static const uint32_t __string_218___line[] = {6, S('_', '_'), S('l', 'i'), S('n', 'e')};
+static const uint32_t __string_219___column[] = {8, S('_', '_'), S('c', 'o'), S('l', 'u'), S('m', 'n')};
+static const uint32_t __string_220_end_of_file[] = {11, S('e', 'n'), S('d', ' '), S('o', 'f'), S(' ', 'f'), S('i', 'l'), S('e', 0)};
+static const uint32_t __string_221_character_literal[] = {17, S('c', 'h'), S('a', 'r'), S('a', 'c'), S('t', 'e'), S('r', ' '), S('l', 'i'), S('t', 'e'), S('r', 'a'), S('l', 0)};
+static const uint32_t __string_222_identifier[] = {10, S('i', 'd'), S('e', 'n'), S('t', 'i'), S('f', 'i'), S('e', 'r')};
+static const uint32_t __string_223_integer_literal[] = {15, S('i', 'n'), S('t', 'e'), S('g', 'e'), S('r', ' '), S('l', 'i'), S('t', 'e'), S('r', 'a'), S('l', 0)};
+static const uint32_t __string_224_string_literal[] = {14, S('s', 't'), S('r', 'i'), S('n', 'g'), S(' ', 'l'), S('i', 't'), S('e', 'r'), S('a', 'l')};
+static const uint32_t __string_225[] = {3, S('\'', '='), S('\'', 0)};
+static const uint32_t __string_226[] = {3, S('\'', '&'), S('\'', 0)};
+static const uint32_t __string_227[] = {3, S('\'', '|'), S('\'', 0)};
+static const uint32_t __string_228[] = {3, S('\'', '^'), S('\'', 0)};
+static const uint32_t __string_229[] = {3, S('\'', ':'), S('\'', 0)};
+static const uint32_t __string_230[] = {3, S('\'', ','), S('\'', 0)};
+static const uint32_t __string_231[] = {3, S('\'', '~'), S('\'', 0)};
+static const uint32_t __string_232[] = {3, S('\'', '/'), S('\'', 0)};
+static const uint32_t __string_233[] = {3, S('\'', '.'), S('\'', 0)};
+static const uint32_t __string_234[] = {4, S('\'', '='), S('=', '\'')};
+static const uint32_t __string_235[] = {4, S('\'', '*'), S('*', '\'')};
+static const uint32_t __string_236[] = {3, S('\'', '>'), S('\'', 0)};
+static const uint32_t __string_237[] = {4, S('\'', '>'), S('=', '\'')};
+static const uint32_t __string_238[] = {3, S('\'', '{'), S('\'', 0)};
+static const uint32_t __string_239[] = {3, S('\'', '['), S('\'', 0)};
+static const uint32_t __string_240[] = {3, S('\'', '('), S('\'', 0)};
+static const uint32_t __string_241[] = {3, S('\'', '<'), S('\'', 0)};
+static const uint32_t __string_242[] = {4, S('\'', '<'), S('=', '\'')};
+static const uint32_t __string_243[] = {4, S('\'', '&'), S('&', '\'')};
+static const uint32_t __string_244[] = {4, S('\'', '|'), S('|', '\'')};
+static const uint32_t __string_245[] = {3, S('\'', '-'), S('\'', 0)};
+static const uint32_t __string_246[] = {4, S('\'', '-'), S('-', '\'')};
+static const uint32_t __string_247[] = {3, S('\'', '*'), S('\'', 0)};
+static const uint32_t __string_248[] = {3, S('\'', '!'), S('\'', 0)};
+static const uint32_t __string_249[] = {4, S('\'', '!'), S('=', '\'')};
+static const uint32_t __string_250[] = {3, S('\'', '+'), S('\'', 0)};
+static const uint32_t __string_251[] = {4, S('\'', '+'), S('+', '\'')};
+static const uint32_t __string_252[] = {3, S('\'', '?'), S('\'', 0)};
+static const uint32_t __string_253[] = {3, S('\'', '%'), S('\'', 0)};
+static const uint32_t __string_254[] = {3, S('\'', '}'), S('\'', 0)};
+static const uint32_t __string_255[] = {3, S('\'', ']'), S('\'', 0)};
+static const uint32_t __string_256[] = {3, S('\'', ')'), S('\'', 0)};
+static const uint32_t __string_257[] = {3, S('\'', ';'), S('\'', 0)};
+static const uint32_t __string_258[] = {4, S('\'', '<'), S('<', '\'')};
+static const uint32_t __string_259[] = {4, S('\'', '>'), S('>', '\'')};
+static const uint32_t __string_260_alignof[] = {9, S('\'', 'a'), S('l', 'i'), S('g', 'n'), S('o', 'f'), S('\'', 0)};
+static const uint32_t __string_261_as[] = {4, S('\'', 'a'), S('s', '\'')};
+static const uint32_t __string_262_break[] = {7, S('\'', 'b'), S('r', 'e'), S('a', 'k'), S('\'', 0)};
+static const uint32_t __string_263_class[] = {7, S('\'', 'c'), S('l', 'a'), S('s', 's'), S('\'', 0)};
+static const uint32_t __string_264_const[] = {7, S('\'', 'c'), S('o', 'n'), S('s', 't'), S('\'', 0)};
+static const uint32_t __string_265_continue[] = {10, S('\'', 'c'), S('o', 'n'), S('t', 'i'), S('n', 'u'), S('e', '\'')};
+static const uint32_t __string_266_declare[] = {9, S('\'', 'd'), S('e', 'c'), S('l', 'a'), S('r', 'e'), S('\'', 0)};
+static const uint32_t __string_267_else[] = {6, S('\'', 'e'), S('l', 's'), S('e', '\'')};
+static const uint32_t __string_268_enum[] = {6, S('\'', 'e'), S('n', 'u'), S('m', '\'')};
+static const uint32_t __string_269_export[] = {8, S('\'', 'e'), S('x', 'p'), S('o', 'r'), S('t', '\'')};
+static const uint32_t __string_270_extends[] = {9, S('\'', 'e'), S('x', 't'), S('e', 'n'), S('d', 's'), S('\'', 0)};
+static const uint32_t __string_271_extern[] = {8, S('\'', 'e'), S('x', 't'), S('e', 'r'), S('n', '\'')};
+static const uint32_t __string_272_false[] = {7, S('\'', 'f'), S('a', 'l'), S('s', 'e'), S('\'', 0)};
+static const uint32_t __string_273_function[] = {10, S('\'', 'f'), S('u', 'n'), S('c', 't'), S('i', 'o'), S('n', '\'')};
+static const uint32_t __string_274_if[] = {4, S('\'', 'i'), S('f', '\'')};
+static const uint32_t __string_275_implements[] = {12, S('\'', 'i'), S('m', 'p'), S('l', 'e'), S('m', 'e'), S('n', 't'), S('s', '\'')};
+static const uint32_t __string_276_import[] = {8, S('\'', 'i'), S('m', 'p'), S('o', 'r'), S('t', '\'')};
+static const uint32_t __string_277_interface[] = {11, S('\'', 'i'), S('n', 't'), S('e', 'r'), S('f', 'a'), S('c', 'e'), S('\'', 0)};
+static const uint32_t __string_278_let[] = {5, S('\'', 'l'), S('e', 't'), S('\'', 0)};
+static const uint32_t __string_279_new[] = {5, S('\'', 'n'), S('e', 'w'), S('\'', 0)};
+static const uint32_t __string_280_null[] = {6, S('\'', 'n'), S('u', 'l'), S('l', '\'')};
+static const uint32_t __string_281_operator[] = {10, S('\'', 'o'), S('p', 'e'), S('r', 'a'), S('t', 'o'), S('r', '\'')};
+static const uint32_t __string_282_private[] = {9, S('\'', 'p'), S('r', 'i'), S('v', 'a'), S('t', 'e'), S('\'', 0)};
+static const uint32_t __string_283_protected[] = {11, S('\'', 'p'), S('r', 'o'), S('t', 'e'), S('c', 't'), S('e', 'd'), S('\'', 0)};
+static const uint32_t __string_284_public[] = {8, S('\'', 'p'), S('u', 'b'), S('l', 'i'), S('c', '\'')};
+static const uint32_t __string_285_return[] = {8, S('\'', 'r'), S('e', 't'), S('u', 'r'), S('n', '\'')};
+static const uint32_t __string_286_sizeof[] = {8, S('\'', 's'), S('i', 'z'), S('e', 'o'), S('f', '\'')};
+static const uint32_t __string_287_static[] = {8, S('\'', 's'), S('t', 'a'), S('t', 'i'), S('c', '\'')};
+static const uint32_t __string_288_this[] = {6, S('\'', 't'), S('h', 'i'), S('s', '\'')};
+static const uint32_t __string_289_true[] = {6, S('\'', 't'), S('r', 'u'), S('e', '\'')};
+static const uint32_t __string_290_unsafe[] = {8, S('\'', 'u'), S('n', 's'), S('a', 'f'), S('e', '\'')};
+static const uint32_t __string_291_var[] = {5, S('\'', 'v'), S('a', 'r'), S('\'', 0)};
+static const uint32_t __string_292_while[] = {7, S('\'', 'w'), S('h', 'i'), S('l', 'e'), S('\'', 0)};
+static const uint32_t __string_293_define[] = {9, S('\'', '#'), S('d', 'e'), S('f', 'i'), S('n', 'e'), S('\'', 0)};
+static const uint32_t __string_294_elif[] = {7, S('\'', '#'), S('e', 'l'), S('i', 'f'), S('\'', 0)};
+static const uint32_t __string_295_else[] = {7, S('\'', '#'), S('e', 'l'), S('s', 'e'), S('\'', 0)};
+static const uint32_t __string_296_endif[] = {8, S('\'', '#'), S('e', 'n'), S('d', 'i'), S('f', '\'')};
+static const uint32_t __string_297_error[] = {8, S('\'', '#'), S('e', 'r'), S('r', 'o'), S('r', '\'')};
+static const uint32_t __string_298_if[] = {5, S('\'', '#'), S('i', 'f'), S('\'', 0)};
+static const uint32_t __string_299_newline[] = {7, S('n', 'e'), S('w', 'l'), S('i', 'n'), S('e', 0)};
+static const uint32_t __string_300_undef[] = {8, S('\'', '#'), S('u', 'n'), S('d', 'e'), S('f', '\'')};
+static const uint32_t __string_301_warning[] = {10, S('\'', '#'), S('w', 'a'), S('r', 'n'), S('i', 'n'), S('g', '\'')};
+static const uint32_t __string_302_as[] = {2, S('a', 's')};
+static const uint32_t __string_303_if[] = {2, S('i', 'f')};
+static const uint32_t __string_304_let[] = {3, S('l', 'e'), S('t', 0)};
+static const uint32_t __string_305_new[] = {3, S('n', 'e'), S('w', 0)};
+static const uint32_t __string_306_var[] = {3, S('v', 'a'), S('r', 0)};
+static const uint32_t __string_307_else[] = {4, S('e', 'l'), S('s', 'e')};
+static const uint32_t __string_308_enum[] = {4, S('e', 'n'), S('u', 'm')};
+static const uint32_t __string_309_null[] = {4, S('n', 'u'), S('l', 'l')};
+static const uint32_t __string_310_this[] = {4, S('t', 'h'), S('i', 's')};
+static const uint32_t __string_311_true[] = {4, S('t', 'r'), S('u', 'e')};
+static const uint32_t __string_312_break[] = {5, S('b', 'r'), S('e', 'a'), S('k', 0)};
+static const uint32_t __string_313_class[] = {5, S('c', 'l'), S('a', 's'), S('s', 0)};
+static const uint32_t __string_314_const[] = {5, S('c', 'o'), S('n', 's'), S('t', 0)};
+static const uint32_t __string_315_false[] = {5, S('f', 'a'), S('l', 's'), S('e', 0)};
+static const uint32_t __string_316_while[] = {5, S('w', 'h'), S('i', 'l'), S('e', 0)};
+static const uint32_t __string_317_export[] = {6, S('e', 'x'), S('p', 'o'), S('r', 't')};
+static const uint32_t __string_318_extern[] = {6, S('e', 'x'), S('t', 'e'), S('r', 'n')};
+static const uint32_t __string_319_import[] = {6, S('i', 'm'), S('p', 'o'), S('r', 't')};
+static const uint32_t __string_320_public[] = {6, S('p', 'u'), S('b', 'l'), S('i', 'c')};
+static const uint32_t __string_321_return[] = {6, S('r', 'e'), S('t', 'u'), S('r', 'n')};
+static const uint32_t __string_322_sizeof[] = {6, S('s', 'i'), S('z', 'e'), S('o', 'f')};
+static const uint32_t __string_323_static[] = {6, S('s', 't'), S('a', 't'), S('i', 'c')};
+static const uint32_t __string_324_unsafe[] = {6, S('u', 'n'), S('s', 'a'), S('f', 'e')};
+static const uint32_t __string_325_alignof[] = {7, S('a', 'l'), S('i', 'g'), S('n', 'o'), S('f', 0)};
+static const uint32_t __string_326_declare[] = {7, S('d', 'e'), S('c', 'l'), S('a', 'r'), S('e', 0)};
+static const uint32_t __string_327_extends[] = {7, S('e', 'x'), S('t', 'e'), S('n', 'd'), S('s', 0)};
+static const uint32_t __string_328_private[] = {7, S('p', 'r'), S('i', 'v'), S('a', 't'), S('e', 0)};
+static const uint32_t __string_329_continue[] = {8, S('c', 'o'), S('n', 't'), S('i', 'n'), S('u', 'e')};
+static const uint32_t __string_330_function[] = {8, S('f', 'u'), S('n', 'c'), S('t', 'i'), S('o', 'n')};
+static const uint32_t __string_331_implements[] = {10, S('i', 'm'), S('p', 'l'), S('e', 'm'), S('e', 'n'), S('t', 's')};
+static const uint32_t __string_332_interface[] = {9, S('i', 'n'), S('t', 'e'), S('r', 'f'), S('a', 'c'), S('e', 0)};
+static const uint32_t __string_333_protected[] = {9, S('p', 'r'), S('o', 't'), S('e', 'c'), S('t', 'e'), S('d', 0)};
+static const uint32_t __string_334_Invalid_integer_literal[] = {26, S('I', 'n'), S('v', 'a'), S('l', 'i'), S('d', ' '), S('i', 'n'), S('t', 'e'), S('g', 'e'), S('r', ' '), S('l', 'i'), S('t', 'e'), S('r',
   'a'), S('l', ':'), S(' ', '\'')};
-static const uint32_t __string_329_Unterminated_character_literal[] = {30, S('U', 'n'), S('t', 'e'), S('r', 'm'), S('i', 'n'), S('a', 't'), S('e', 'd'), S(' ', 'c'), S('h', 'a'), S('r', 'a'), S('c', 't'), S('e',
+static const uint32_t __string_335_Unterminated_character_literal[] = {30, S('U', 'n'), S('t', 'e'), S('r', 'm'), S('i', 'n'), S('a', 't'), S('e', 'd'), S(' ', 'c'), S('h', 'a'), S('r', 'a'), S('c', 't'), S('e',
   'r'), S(' ', 'l'), S('i', 't'), S('e', 'r'), S('a', 'l')};
-static const uint32_t __string_330_Unterminated_template_literal[] = {29, S('U', 'n'), S('t', 'e'), S('r', 'm'), S('i', 'n'), S('a', 't'), S('e', 'd'), S(' ', 't'), S('e', 'm'), S('p', 'l'), S('a', 't'), S('e',
+static const uint32_t __string_336_Unterminated_template_literal[] = {29, S('U', 'n'), S('t', 'e'), S('r', 'm'), S('i', 'n'), S('a', 't'), S('e', 'd'), S(' ', 't'), S('e', 'm'), S('p', 'l'), S('a', 't'), S('e',
   ' '), S('l', 'i'), S('t', 'e'), S('r', 'a'), S('l', 0)};
-static const uint32_t __string_331_Unterminated_string_literal[] = {27, S('U', 'n'), S('t', 'e'), S('r', 'm'), S('i', 'n'), S('a', 't'), S('e', 'd'), S(' ', 's'), S('t', 'r'), S('i', 'n'), S('g', ' '), S('l',
+static const uint32_t __string_337_Unterminated_string_literal[] = {27, S('U', 'n'), S('t', 'e'), S('r', 'm'), S('i', 'n'), S('a', 't'), S('e', 'd'), S(' ', 's'), S('t', 'r'), S('i', 'n'), S('g', ' '), S('l',
   'i'), S('t', 'e'), S('r', 'a'), S('l', 0)};
-static const uint32_t __string_332_Unterminated_multi_line_comment[] = {31, S('U', 'n'), S('t', 'e'), S('r', 'm'), S('i', 'n'), S('a', 't'), S('e', 'd'), S(' ', 'm'), S('u', 'l'), S('t', 'i'), S('-', 'l'), S('i',
+static const uint32_t __string_338_Unterminated_multi_line_comment[] = {31, S('U', 'n'), S('t', 'e'), S('r', 'm'), S('i', 'n'), S('a', 't'), S('e', 'd'), S(' ', 'm'), S('u', 'l'), S('t', 'i'), S('-', 'l'), S('i',
   'n'), S('e', ' '), S('c', 'o'), S('m', 'm'), S('e', 'n'), S('t', 0)};
-static const uint32_t __string_333_Use_instead_of[] = {25, S('U', 's'), S('e', ' '), S('\'', '!'), S('=', '\''), S(' ', 'i'), S('n', 's'), S('t', 'e'), S('a', 'd'), S(' ', 'o'), S('f', ' '), S('\'',
+static const uint32_t __string_339_Use_instead_of[] = {25, S('U', 's'), S('e', ' '), S('\'', '!'), S('=', '\''), S(' ', 'i'), S('n', 's'), S('t', 'e'), S('a', 'd'), S(' ', 'o'), S('f', ' '), S('\'',
   '!'), S('=', '='), S('\'', 0)};
-static const uint32_t __string_334_Use_instead_of[] = {25, S('U', 's'), S('e', ' '), S('\'', '='), S('=', '\''), S(' ', 'i'), S('n', 's'), S('t', 'e'), S('a', 'd'), S(' ', 'o'), S('f', ' '), S('\'',
+static const uint32_t __string_340_Use_instead_of[] = {25, S('U', 's'), S('e', ' '), S('\'', '='), S('=', '\''), S(' ', 'i'), S('n', 's'), S('t', 'e'), S('a', 'd'), S(' ', 'o'), S('f', ' '), S('\'',
   '='), S('=', '='), S('\'', 0)};
-static const uint32_t __string_335_define[] = {7, S('#', 'd'), S('e', 'f'), S('i', 'n'), S('e', 0)};
-static const uint32_t __string_336_elif[] = {5, S('#', 'e'), S('l', 'i'), S('f', 0)};
-static const uint32_t __string_337_else[] = {5, S('#', 'e'), S('l', 's'), S('e', 0)};
-static const uint32_t __string_338_endif[] = {6, S('#', 'e'), S('n', 'd'), S('i', 'f')};
-static const uint32_t __string_339_error[] = {6, S('#', 'e'), S('r', 'r'), S('o', 'r')};
-static const uint32_t __string_340_if[] = {3, S('#', 'i'), S('f', 0)};
-static const uint32_t __string_341_undef[] = {6, S('#', 'u'), S('n', 'd'), S('e', 'f')};
-static const uint32_t __string_342_warning[] = {8, S('#', 'w'), S('a', 'r'), S('n', 'i'), S('n', 'g')};
-static const uint32_t __string_343[] = {1, S('#', 0)};
-static const uint32_t __string_344_Invalid_preprocessor_token[] = {28, S('I', 'n'), S('v', 'a'), S('l', 'i'), S('d', ' '), S('p', 'r'), S('e', 'p'), S('r', 'o'), S('c', 'e'), S('s', 's'), S('o', 'r'), S(' ',
+static const uint32_t __string_341_define[] = {7, S('#', 'd'), S('e', 'f'), S('i', 'n'), S('e', 0)};
+static const uint32_t __string_342_elif[] = {5, S('#', 'e'), S('l', 'i'), S('f', 0)};
+static const uint32_t __string_343_else[] = {5, S('#', 'e'), S('l', 's'), S('e', 0)};
+static const uint32_t __string_344_endif[] = {6, S('#', 'e'), S('n', 'd'), S('i', 'f')};
+static const uint32_t __string_345_error[] = {6, S('#', 'e'), S('r', 'r'), S('o', 'r')};
+static const uint32_t __string_346_if[] = {3, S('#', 'i'), S('f', 0)};
+static const uint32_t __string_347_undef[] = {6, S('#', 'u'), S('n', 'd'), S('e', 'f')};
+static const uint32_t __string_348_warning[] = {8, S('#', 'w'), S('a', 'r'), S('n', 'i'), S('n', 'g')};
+static const uint32_t __string_349[] = {1, S('#', 0)};
+static const uint32_t __string_350_Invalid_preprocessor_token[] = {28, S('I', 'n'), S('v', 'a'), S('l', 'i'), S('d', ' '), S('p', 'r'), S('e', 'p'), S('r', 'o'), S('c', 'e'), S('s', 's'), S('o', 'r'), S(' ',
   't'), S('o', 'k'), S('e', 'n'), S(' ', '\'')};
-static const uint32_t __string_345_ifdef[] = {6, S('#', 'i'), S('f', 'd'), S('e', 'f')};
-static const uint32_t __string_346_did_you_mean_if[] = {21, S(',', ' '), S('d', 'i'), S('d', ' '), S('y', 'o'), S('u', ' '), S('m', 'e'), S('a', 'n'), S(' ', '\''), S('#', 'i'), S('f', '\''), S('?', 0)};
-static const uint32_t __string_347_elsif[] = {6, S('#', 'e'), S('l', 's'), S('i', 'f')};
-static const uint32_t __string_348_elseif[] = {7, S('#', 'e'), S('l', 's'), S('e', 'i'), S('f', 0)};
-static const uint32_t __string_349_did_you_mean_elif[] = {23, S(',', ' '), S('d', 'i'), S('d', ' '), S('y', 'o'), S('u', ' '), S('m', 'e'), S('a', 'n'), S(' ', '\''), S('#', 'e'), S('l', 'i'), S('f',
+static const uint32_t __string_351_ifdef[] = {6, S('#', 'i'), S('f', 'd'), S('e', 'f')};
+static const uint32_t __string_352_did_you_mean_if[] = {21, S(',', ' '), S('d', 'i'), S('d', ' '), S('y', 'o'), S('u', ' '), S('m', 'e'), S('a', 'n'), S(' ', '\''), S('#', 'i'), S('f', '\''), S('?', 0)};
+static const uint32_t __string_353_elsif[] = {6, S('#', 'e'), S('l', 's'), S('i', 'f')};
+static const uint32_t __string_354_elseif[] = {7, S('#', 'e'), S('l', 's'), S('e', 'i'), S('f', 0)};
+static const uint32_t __string_355_did_you_mean_elif[] = {23, S(',', ' '), S('d', 'i'), S('d', ' '), S('y', 'o'), S('u', ' '), S('m', 'e'), S('a', 'n'), S(' ', '\''), S('#', 'e'), S('l', 'i'), S('f',
   '\''), S('?', 0)};
-static const uint32_t __string_350_end[] = {4, S('#', 'e'), S('n', 'd')};
-static const uint32_t __string_351_did_you_mean_endif[] = {24, S(',', ' '), S('d', 'i'), S('d', ' '), S('y', 'o'), S('u', ' '), S('m', 'e'), S('a', 'n'), S(' ', '\''), S('#', 'e'), S('n', 'd'), S('i',
+static const uint32_t __string_356_end[] = {4, S('#', 'e'), S('n', 'd')};
+static const uint32_t __string_357_did_you_mean_endif[] = {24, S(',', ' '), S('d', 'i'), S('d', ' '), S('y', 'o'), S('u', ' '), S('m', 'e'), S('a', 'n'), S(' ', '\''), S('#', 'e'), S('n', 'd'), S('i',
   'f'), S('\'', '?')};
-static const uint32_t __string_352_Expected_newline_before[] = {24, S('E', 'x'), S('p', 'e'), S('c', 't'), S('e', 'd'), S(' ', 'n'), S('e', 'w'), S('l', 'i'), S('n', 'e'), S(' ', 'b'), S('e', 'f'), S('o',
+static const uint32_t __string_358_Expected_newline_before[] = {24, S('E', 'x'), S('p', 'e'), S('c', 't'), S('e', 'd'), S(' ', 'n'), S('e', 'w'), S('l', 'i'), S('n', 'e'), S(' ', 'b'), S('e', 'f'), S('o',
   'r'), S('e', ' ')};
-static const uint32_t __string_353_Syntax_error[] = {15, S('S', 'y'), S('n', 't'), S('a', 'x'), S(' ', 'e'), S('r', 'r'), S('o', 'r'), S(':', ' '), S('\'', 0)};
-static const uint32_t __string_354_if_WASM_These_will_be_fi[] = {12604, S('\n', '#'), S('i', 'f'), S(' ', 'W'), S('A', 'S'), S('M', '\n'), S('\n', ' '), S(' ', '/'), S('/', ' '), S('T', 'h'), S('e', 's'), S('e',
+static const uint32_t __string_359_Syntax_error[] = {15, S('S', 'y'), S('n', 't'), S('a', 'x'), S(' ', 'e'), S('r', 'r'), S('o', 'r'), S(':', ' '), S('\'', 0)};
+static const uint32_t __string_360_if_WASM_These_will_be_fi[] = {12604, S('\n', '#'), S('i', 'f'), S(' ', 'W'), S('A', 'S'), S('M', '\n'), S('\n', ' '), S(' ', '/'), S('/', ' '), S('T', 'h'), S('e', 's'), S('e',
   ' '), S('w', 'i'), S('l', 'l'), S(' ', 'b'), S('e', ' '), S('f', 'i'), S('l', 'l'), S('e', 'd'), S(' ', 'i'), S('n', ' '), S('b', 'y'), S(' ', 't'), S('h', 'e'), S(' ', 'W'), S('e', 'b'), S('A', 's'), S('s',
   'e'), S('m', 'b'), S('l', 'y'), S(' ', 'c'), S('o', 'd'), S('e', ' '), S('g', 'e'), S('n', 'e'), S('r', 'a'), S('t', 'o'), S('r', '\n'), S(' ', ' '), S('u', 'n'), S('s', 'a'), S('f', 'e'), S(' ', 'v'), S('a',
   'r'), S(' ', 'c'), S('u', 'r'), S('r', 'e'), S('n', 't'), S('H', 'e'), S('a', 'p'), S('P', 'o'), S('i', 'n'), S('t', 'e'), S('r', ':'), S(' ', '*'), S('b', 'y'), S('t', 'e'), S(' ', '='), S(' ', 'n'), S('u',
@@ -854,310 +861,312 @@ static const uint32_t __string_354_if_WASM_These_will_be_fi[] = {12604, S('\n', 
   'g'), S('s', ' '), S('a', 'r'), S('e', ' '), S('n', 'u'), S('l', 'l'), S('-', 't'), S('e', 'r'), S('m', 'i'), S('n', 'a'), S('t', 'e'), S('d', '\n'), S(' ', ' '), S(' ', ' '), S('*', 'n'), S('e', 'x'), S('t',
   ' '), S('=', ' '), S('\'', '\\'), S('0', '\''), S(';', '\n'), S('\n', ' '), S(' ', ' '), S(' ', 'r'), S('e', 't'), S('u', 'r'), S('n', ' '), S('u', 't'), S('f', '8'), S(';', '\n'), S(' ', ' '), S('}', '\n'), S('\n',
   '#'), S('e', 'n'), S('d', 'i'), S('f', '\n')};
-static const uint32_t __string_355[] = {2, S(':', ' ')};
-static const uint32_t __string_356_error[] = {7, S('e', 'r'), S('r', 'o'), S('r', ':'), S(' ', 0)};
-static const uint32_t __string_357_warning[] = {9, S('w', 'a'), S('r', 'n'), S('i', 'n'), S('g', ':'), S(' ', 0)};
-static const uint32_t __string_358[] = {1, S('%', 0)};
-static const uint32_t __string_359[] = {1, S('&', 0)};
-static const uint32_t __string_360[] = {1, S('*', 0)};
-static const uint32_t __string_361[] = {2, S('*', '*')};
-static const uint32_t __string_362[] = {1, S('/', 0)};
-static const uint32_t __string_363[] = {1, S('<', 0)};
-static const uint32_t __string_364[] = {2, S('<', '<')};
-static const uint32_t __string_365[] = {2, S('=', '=')};
-static const uint32_t __string_366[] = {1, S('>', 0)};
-static const uint32_t __string_367[] = {2, S('>', '>')};
-static const uint32_t __string_368[] = {2, S('[', ']')};
-static const uint32_t __string_369[] = {1, S('^', 0)};
-static const uint32_t __string_370[] = {1, S('|', 0)};
-static const uint32_t __string_371[] = {3, S('[', ']'), S('=', 0)};
-static const uint32_t __string_372_Unexpected[] = {11, S('U', 'n'), S('e', 'x'), S('p', 'e'), S('c', 't'), S('e', 'd'), S(' ', 0)};
-static const uint32_t __string_373_Expected[] = {9, S('E', 'x'), S('p', 'e'), S('c', 't'), S('e', 'd'), S(' ', 0)};
-static const uint32_t __string_374_Expected[] = {9, S('E', 'x'), S('p', 'e'), S('c', 't'), S('e', 'd'), S(' ', 0)};
-static const uint32_t __string_375_but_found[] = {11, S(' ', 'b'), S('u', 't'), S(' ', 'f'), S('o', 'u'), S('n', 'd'), S(' ', 0)};
-static const uint32_t __string_376_Invalid_escape_code[] = {21, S('I', 'n'), S('v', 'a'), S('l', 'i'), S('d', ' '), S('e', 's'), S('c', 'a'), S('p', 'e'), S(' ', 'c'), S('o', 'd'), S('e', ' '), S('\'', 0)};
-static const uint32_t __string_377_Invalid_character_literal_strin[] = {53, S('I', 'n'), S('v', 'a'), S('l', 'i'), S('d', ' '), S('c', 'h'), S('a', 'r'), S('a', 'c'), S('t', 'e'), S('r', ' '), S('l', 'i'), S('t',
+static const uint32_t __string_361[] = {2, S(':', ' ')};
+static const uint32_t __string_362_error[] = {7, S('e', 'r'), S('r', 'o'), S('r', ':'), S(' ', 0)};
+static const uint32_t __string_363_warning[] = {9, S('w', 'a'), S('r', 'n'), S('i', 'n'), S('g', ':'), S(' ', 0)};
+static const uint32_t __string_364[] = {1, S('%', 0)};
+static const uint32_t __string_365[] = {1, S('&', 0)};
+static const uint32_t __string_366[] = {1, S('*', 0)};
+static const uint32_t __string_367[] = {2, S('*', '*')};
+static const uint32_t __string_368[] = {1, S('/', 0)};
+static const uint32_t __string_369[] = {1, S('<', 0)};
+static const uint32_t __string_370[] = {2, S('<', '<')};
+static const uint32_t __string_371[] = {2, S('=', '=')};
+static const uint32_t __string_372[] = {1, S('>', 0)};
+static const uint32_t __string_373[] = {2, S('>', '>')};
+static const uint32_t __string_374[] = {2, S('[', ']')};
+static const uint32_t __string_375[] = {1, S('^', 0)};
+static const uint32_t __string_376[] = {1, S('|', 0)};
+static const uint32_t __string_377[] = {3, S('[', ']'), S('=', 0)};
+static const uint32_t __string_378_Unexpected[] = {11, S('U', 'n'), S('e', 'x'), S('p', 'e'), S('c', 't'), S('e', 'd'), S(' ', 0)};
+static const uint32_t __string_379_Expected[] = {9, S('E', 'x'), S('p', 'e'), S('c', 't'), S('e', 'd'), S(' ', 0)};
+static const uint32_t __string_380_Expected[] = {9, S('E', 'x'), S('p', 'e'), S('c', 't'), S('e', 'd'), S(' ', 0)};
+static const uint32_t __string_381_but_found[] = {11, S(' ', 'b'), S('u', 't'), S(' ', 'f'), S('o', 'u'), S('n', 'd'), S(' ', 0)};
+static const uint32_t __string_382_Invalid_escape_code[] = {21, S('I', 'n'), S('v', 'a'), S('l', 'i'), S('d', ' '), S('e', 's'), S('c', 'a'), S('p', 'e'), S(' ', 'c'), S('o', 'd'), S('e', ' '), S('\'', 0)};
+static const uint32_t __string_383_Invalid_character_literal_strin[] = {53, S('I', 'n'), S('v', 'a'), S('l', 'i'), S('d', ' '), S('c', 'h'), S('a', 'r'), S('a', 'c'), S('t', 'e'), S('r', ' '), S('l', 'i'), S('t',
   'e'), S('r', 'a'), S('l', ' '), S('(', 's'), S('t', 'r'), S('i', 'n'), S('g', 's'), S(' ', 'u'), S('s', 'e'), S(' ', 'd'), S('o', 'u'), S('b', 'l'), S('e', ' '), S('q', 'u'), S('o', 't'), S('e', 's'), S(')', 0)};
-static const uint32_t __string_378_operator[] = {8, S('o', 'p'), S('e', 'r'), S('a', 't'), S('o', 'r')};
-static const uint32_t __string_379_get[] = {3, S('g', 'e'), S('t', 0)};
-static const uint32_t __string_380_set[] = {3, S('s', 'e'), S('t', 0)};
-static const uint32_t __string_381_Instance_functions_don_t_need_th[] = {52, S('I', 'n'), S('s', 't'), S('a', 'n'), S('c', 'e'), S(' ', 'f'), S('u', 'n'), S('c', 't'), S('i', 'o'), S('n', 's'), S(' ', 'd'), S('o',
+static const uint32_t __string_384_operator[] = {8, S('o', 'p'), S('e', 'r'), S('a', 't'), S('o', 'r')};
+static const uint32_t __string_385_get[] = {3, S('g', 'e'), S('t', 0)};
+static const uint32_t __string_386_set[] = {3, S('s', 'e'), S('t', 0)};
+static const uint32_t __string_387_Instance_functions_don_t_need_th[] = {52, S('I', 'n'), S('s', 't'), S('a', 'n'), S('c', 'e'), S(' ', 'f'), S('u', 'n'), S('c', 't'), S('i', 'o'), S('n', 's'), S(' ', 'd'), S('o',
   'n'), S('\'', 't'), S(' ', 'n'), S('e', 'e'), S('d', ' '), S('t', 'h'), S('e', ' '), S('\'', 'f'), S('u', 'n'), S('c', 't'), S('i', 'o'), S('n', '\''), S(' ', 'k'), S('e', 'y'), S('w', 'o'), S('r', 'd')};
-static const uint32_t __string_382_Instance_variables_don_t_need_th[] = {35, S('I', 'n'), S('s', 't'), S('a', 'n'), S('c', 'e'), S(' ', 'v'), S('a', 'r'), S('i', 'a'), S('b', 'l'), S('e', 's'), S(' ', 'd'), S('o',
+static const uint32_t __string_388_Instance_variables_don_t_need_th[] = {35, S('I', 'n'), S('s', 't'), S('a', 'n'), S('c', 'e'), S(' ', 'v'), S('a', 'r'), S('i', 'a'), S('b', 'l'), S('e', 's'), S(' ', 'd'), S('o',
   'n'), S('\'', 't'), S(' ', 'n'), S('e', 'e'), S('d', ' '), S('t', 'h'), S('e', ' '), S('\'', 0)};
-static const uint32_t __string_383_keyword[] = {9, S('\'', ' '), S('k', 'e'), S('y', 'w'), S('o', 'r'), S('d', 0)};
-static const uint32_t __string_384[] = {3, S('[', ']'), S('=', 0)};
-static const uint32_t __string_385[] = {2, S('[', ']')};
-static const uint32_t __string_386_The_operator[] = {14, S('T', 'h'), S('e', ' '), S('o', 'p'), S('e', 'r'), S('a', 't'), S('o', 'r'), S(' ', '\'')};
-static const uint32_t __string_387_cannot_be_implemented[] = {23, S('\'', ' '), S('c', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'b'), S('e', ' '), S('i', 'm'), S('p', 'l'), S('e', 'm'), S('e', 'n'), S('t',
+static const uint32_t __string_389_keyword[] = {9, S('\'', ' '), S('k', 'e'), S('y', 'w'), S('o', 'r'), S('d', 0)};
+static const uint32_t __string_390_Decorators_must_preceed_a_functi[] = {34, S('D', 'e'), S('c', 'o'), S('r', 'a'), S('t', 'o'), S('r', 's'), S(' ', 'm'), S('u', 's'), S('t', ' '), S('p', 'r'), S('e', 'c'), S('e',
+  'e'), S('d', ' '), S('a', ' '), S('f', 'u'), S('n', 'c'), S('t', 'i'), S('o', 'n')};
+static const uint32_t __string_391[] = {3, S('[', ']'), S('=', 0)};
+static const uint32_t __string_392[] = {2, S('[', ']')};
+static const uint32_t __string_393_The_operator[] = {14, S('T', 'h'), S('e', ' '), S('o', 'p'), S('e', 'r'), S('a', 't'), S('o', 'r'), S(' ', '\'')};
+static const uint32_t __string_394_cannot_be_implemented[] = {23, S('\'', ' '), S('c', 'a'), S('n', 'n'), S('o', 't'), S(' ', 'b'), S('e', ' '), S('i', 'm'), S('p', 'l'), S('e', 'm'), S('e', 'n'), S('t',
   'e'), S('d', 0)};
-static const uint32_t __string_388_it_is_automatically_derived_fr[] = {40, S(' ', '('), S('i', 't'), S(' ', 'i'), S('s', ' '), S('a', 'u'), S('t', 'o'), S('m', 'a'), S('t', 'i'), S('c', 'a'), S('l', 'l'), S('y',
+static const uint32_t __string_395_it_is_automatically_derived_fr[] = {40, S(' ', '('), S('i', 't'), S(' ', 'i'), S('s', ' '), S('a', 'u'), S('t', 'o'), S('m', 'a'), S('t', 'i'), S('c', 'a'), S('l', 'l'), S('y',
   ' '), S('d', 'e'), S('r', 'i'), S('v', 'e'), S('d', ' '), S('f', 'r'), S('o', 'm'), S(' ', '\''), S('=', '='), S('\'', ')')};
-static const uint32_t __string_389_it_is_automatically_derived_fr[] = {39, S(' ', '('), S('i', 't'), S(' ', 'i'), S('s', ' '), S('a', 'u'), S('t', 'o'), S('m', 'a'), S('t', 'i'), S('c', 'a'), S('l', 'l'), S('y',
+static const uint32_t __string_396_it_is_automatically_derived_fr[] = {39, S(' ', '('), S('i', 't'), S(' ', 'i'), S('s', ' '), S('a', 'u'), S('t', 'o'), S('m', 'a'), S('t', 'i'), S('c', 'a'), S('l', 'l'), S('y',
   ' '), S('d', 'e'), S('r', 'i'), S('v', 'e'), S('d', ' '), S('f', 'r'), S('o', 'm'), S(' ', '\''), S('>', '\''), S(')', 0)};
-static const uint32_t __string_390_it_is_automatically_derived_fr[] = {39, S(' ', '('), S('i', 't'), S(' ', 'i'), S('s', ' '), S('a', 'u'), S('t', 'o'), S('m', 'a'), S('t', 'i'), S('c', 'a'), S('l', 'l'), S('y',
+static const uint32_t __string_397_it_is_automatically_derived_fr[] = {39, S(' ', '('), S('i', 't'), S(' ', 'i'), S('s', ' '), S('a', 'u'), S('t', 'o'), S('m', 'a'), S('t', 'i'), S('c', 'a'), S('l', 'l'), S('y',
   ' '), S('d', 'e'), S('r', 'i'), S('v', 'e'), S('d', ' '), S('f', 'r'), S('o', 'm'), S(' ', '\''), S('<', '\''), S(')', 0)};
-static const uint32_t __string_391[] = {0};
-static const uint32_t __string_392_Inline_initialization_of_instanc[] = {64, S('I', 'n'), S('l', 'i'), S('n', 'e'), S(' ', 'i'), S('n', 'i'), S('t', 'i'), S('a', 'l'), S('i', 'z'), S('a', 't'), S('i', 'o'), S('n',
+static const uint32_t __string_398[] = {0};
+static const uint32_t __string_399_Inline_initialization_of_instanc[] = {64, S('I', 'n'), S('l', 'i'), S('n', 'e'), S(' ', 'i'), S('n', 'i'), S('t', 'i'), S('a', 'l'), S('i', 'z'), S('a', 't'), S('i', 'o'), S('n',
   ' '), S('o', 'f'), S(' ', 'i'), S('n', 's'), S('t', 'a'), S('n', 'c'), S('e', ' '), S('v', 'a'), S('r', 'i'), S('a', 'b'), S('l', 'e'), S('s', ' '), S('i', 's'), S(' ', 'n'), S('o', 't'), S(' ', 's'), S('u',
   'p'), S('p', 'o'), S('r', 't'), S('e', 'd'), S(' ', 'y'), S('e', 't')};
-static const uint32_t __string_393_Use_the_0o_prefix_for_octal_in[] = {38, S('U', 's'), S('e', ' '), S('t', 'h'), S('e', ' '), S('\'', '0'), S('o', '\''), S(' ', 'p'), S('r', 'e'), S('f', 'i'), S('x', ' '), S('f',
+static const uint32_t __string_400_Use_the_0o_prefix_for_octal_in[] = {38, S('U', 's'), S('e', ' '), S('t', 'h'), S('e', ' '), S('\'', '0'), S('o', '\''), S(' ', 'p'), S('r', 'e'), S('f', 'i'), S('x', ' '), S('f',
   'o'), S('r', ' '), S('o', 'c'), S('t', 'a'), S('l', ' '), S('i', 'n'), S('t', 'e'), S('g', 'e'), S('r', 's')};
-static const uint32_t __string_394_Integer_literal_is_too_big_to_fi[] = {44, S('I', 'n'), S('t', 'e'), S('g', 'e'), S('r', ' '), S('l', 'i'), S('t', 'e'), S('r', 'a'), S('l', ' '), S('i', 's'), S(' ', 't'), S('o',
+static const uint32_t __string_401_Integer_literal_is_too_big_to_fi[] = {44, S('I', 'n'), S('t', 'e'), S('g', 'e'), S('r', ' '), S('l', 'i'), S('t', 'e'), S('r', 'a'), S('l', ' '), S('i', 's'), S(' ', 't'), S('o',
   'o'), S(' ', 'b'), S('i', 'g'), S(' ', 't'), S('o', ' '), S('f', 'i'), S('t', ' '), S('i', 'n'), S(' ', '3'), S('2', ' '), S('b', 'i'), S('t', 's')};
-static const uint32_t __string_395_Unexpected[] = {11, S('U', 'n'), S('e', 'x'), S('p', 'e'), S('c', 't'), S('e', 'd'), S(' ', 0)};
-static const uint32_t __string_396_Expected[] = {9, S('E', 'x'), S('p', 'e'), S('c', 't'), S('e', 'd'), S(' ', 0)};
-static const uint32_t __string_397_but_found[] = {11, S(' ', 'b'), S('u', 't'), S(' ', 'f'), S('o', 'u'), S('n', 'd'), S(' ', 0)};
-static const uint32_t __string_398_0[] = {1, S('0', 0)};
-static const uint32_t __string_399_Use_undef_to_turn_a_preproces[] = {44, S('U', 's'), S('e', ' '), S('\'', '#'), S('u', 'n'), S('d', 'e'), S('f', '\''), S(' ', 't'), S('o', ' '), S('t', 'u'), S('r', 'n'), S(' ',
+static const uint32_t __string_402_Unexpected[] = {11, S('U', 'n'), S('e', 'x'), S('p', 'e'), S('c', 't'), S('e', 'd'), S(' ', 0)};
+static const uint32_t __string_403_Expected[] = {9, S('E', 'x'), S('p', 'e'), S('c', 't'), S('e', 'd'), S(' ', 0)};
+static const uint32_t __string_404_but_found[] = {11, S(' ', 'b'), S('u', 't'), S(' ', 'f'), S('o', 'u'), S('n', 'd'), S(' ', 0)};
+static const uint32_t __string_405_0[] = {1, S('0', 0)};
+static const uint32_t __string_406_Use_undef_to_turn_a_preproces[] = {44, S('U', 's'), S('e', ' '), S('\'', '#'), S('u', 'n'), S('d', 'e'), S('f', '\''), S(' ', 't'), S('o', ' '), S('t', 'u'), S('r', 'n'), S(' ',
   'a'), S(' ', 'p'), S('r', 'e'), S('p', 'r'), S('o', 'c'), S('e', 's'), S('s', 'o'), S('r', ' '), S('f', 'l'), S('a', 'g'), S(' ', 'o'), S('f', 'f')};
-static const uint32_t __string_400_All_define_and_undef_direc[] = {68, S('A', 'l'), S('l', ' '), S('\'', '#'), S('d', 'e'), S('f', 'i'), S('n', 'e'), S('\'', ' '), S('a', 'n'), S('d', ' '), S('\'', '#'), S('u',
+static const uint32_t __string_407_All_define_and_undef_direc[] = {68, S('A', 'l'), S('l', ' '), S('\'', '#'), S('d', 'e'), S('f', 'i'), S('n', 'e'), S('\'', ' '), S('a', 'n'), S('d', ' '), S('\'', '#'), S('u',
   'n'), S('d', 'e'), S('f', '\''), S(' ', 'd'), S('i', 'r'), S('e', 'c'), S('t', 'i'), S('v', 'e'), S('s', ' '), S('m', 'u'), S('s', 't'), S(' ', 'b'), S('e', ' '), S('a', 't'), S(' ', 't'), S('h', 'e'), S(' ',
   't'), S('o', 'p'), S(' ', 'o'), S('f', ' '), S('t', 'h'), S('e', ' '), S('f', 'i'), S('l', 'e')};
-static const uint32_t __string_401_defined[] = {7, S('d', 'e'), S('f', 'i'), S('n', 'e'), S('d', 0)};
-static const uint32_t __string_402_There_is_no_defined_operator[] = {30, S('T', 'h'), S('e', 'r'), S('e', ' '), S('i', 's'), S(' ', 'n'), S('o', ' '), S('\'', 'd'), S('e', 'f'), S('i', 'n'), S('e', 'd'), S('\'',
+static const uint32_t __string_408_defined[] = {7, S('d', 'e'), S('f', 'i'), S('n', 'e'), S('d', 0)};
+static const uint32_t __string_409_There_is_no_defined_operator[] = {30, S('T', 'h'), S('e', 'r'), S('e', ' '), S('i', 's'), S(' ', 'n'), S('o', ' '), S('\'', 'd'), S('e', 'f'), S('i', 'n'), S('e', 'd'), S('\'',
   ' '), S('o', 'p'), S('e', 'r'), S('a', 't'), S('o', 'r')};
-static const uint32_t __string_403_just_use[] = {12, S(' ', '('), S('j', 'u'), S('s', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\'')};
-static const uint32_t __string_404_instead[] = {10, S('\'', ' '), S('i', 'n'), S('s', 't'), S('e', 'a'), S('d', ')')};
-static const uint32_t __string_405_0[] = {1, S('0', 0)};
-static const uint32_t __string_406_Unexpected_integer_did_you_mean[] = {34, S('U', 'n'), S('e', 'x'), S('p', 'e'), S('c', 't'), S('e', 'd'), S(' ', 'i'), S('n', 't'), S('e', 'g'), S('e', 'r'), S(' ', '('), S('d',
+static const uint32_t __string_410_just_use[] = {12, S(' ', '('), S('j', 'u'), S('s', 't'), S(' ', 'u'), S('s', 'e'), S(' ', '\'')};
+static const uint32_t __string_411_instead[] = {10, S('\'', ' '), S('i', 'n'), S('s', 't'), S('e', 'a'), S('d', ')')};
+static const uint32_t __string_412_0[] = {1, S('0', 0)};
+static const uint32_t __string_413_Unexpected_integer_did_you_mean[] = {34, S('U', 'n'), S('e', 'x'), S('p', 'e'), S('c', 't'), S('e', 'd'), S(' ', 'i'), S('n', 't'), S('e', 'g'), S('e', 'r'), S(' ', '('), S('d',
   'i'), S('d', ' '), S('y', 'o'), S('u', ' '), S('m', 'e'), S('a', 'n'), S(' ', '\'')};
-static const uint32_t __string_407_true[] = {4, S('t', 'r'), S('u', 'e')};
-static const uint32_t __string_408_false[] = {5, S('f', 'a'), S('l', 's'), S('e', 0)};
-static const uint32_t __string_409[] = {3, S('\'', ')'), S('?', 0)};
-static const uint32_t __string_410_Duplicate_symbol[] = {18, S('D', 'u'), S('p', 'l'), S('i', 'c'), S('a', 't'), S('e', ' '), S('s', 'y'), S('m', 'b'), S('o', 'l'), S(' ', '\'')};
-static const uint32_t __string_411[] = {1, S('\'', 0)};
-static const uint32_t __string_412[] = {2, S('\\', '"')};
-static const uint32_t __string_413_0[] = {2, S('\\', '0')};
-static const uint32_t __string_414_t[] = {2, S('\\', 't')};
-static const uint32_t __string_415_r[] = {2, S('\\', 'r')};
-static const uint32_t __string_416_n[] = {2, S('\\', 'n')};
-static const uint32_t __string_417[] = {2, S('\\', '\\')};
-static const uint32_t __string_418[] = {2, S(' ', ' ')};
-static const uint32_t __string_419[] = {2, S('{', '\n')};
-static const uint32_t __string_420[] = {2, S(',', ' ')};
-static const uint32_t __string_421_NULL[] = {4, S('N', 'U'), S('L', 'L')};
-static const uint32_t __string_422___string_[] = {9, S('_', '_'), S('s', 't'), S('r', 'i'), S('n', 'g'), S('_', 0)};
-static const uint32_t __string_423_ifdef_THINSCRIPT_BIG_ENDIAN[] = {120, S('\n', '#'), S('i', 'f'), S('d', 'e'), S('f', ' '), S('T', 'H'), S('I', 'N'), S('S', 'C'), S('R', 'I'), S('P', 'T'), S('_', 'B'), S('I',
+static const uint32_t __string_414_true[] = {4, S('t', 'r'), S('u', 'e')};
+static const uint32_t __string_415_false[] = {5, S('f', 'a'), S('l', 's'), S('e', 0)};
+static const uint32_t __string_416[] = {3, S('\'', ')'), S('?', 0)};
+static const uint32_t __string_417_Duplicate_symbol[] = {18, S('D', 'u'), S('p', 'l'), S('i', 'c'), S('a', 't'), S('e', ' '), S('s', 'y'), S('m', 'b'), S('o', 'l'), S(' ', '\'')};
+static const uint32_t __string_418[] = {1, S('\'', 0)};
+static const uint32_t __string_419[] = {2, S('\\', '"')};
+static const uint32_t __string_420_0[] = {2, S('\\', '0')};
+static const uint32_t __string_421_t[] = {2, S('\\', 't')};
+static const uint32_t __string_422_r[] = {2, S('\\', 'r')};
+static const uint32_t __string_423_n[] = {2, S('\\', 'n')};
+static const uint32_t __string_424[] = {2, S('\\', '\\')};
+static const uint32_t __string_425[] = {2, S(' ', ' ')};
+static const uint32_t __string_426[] = {2, S('{', '\n')};
+static const uint32_t __string_427[] = {2, S(',', ' ')};
+static const uint32_t __string_428_NULL[] = {4, S('N', 'U'), S('L', 'L')};
+static const uint32_t __string_429___string_[] = {9, S('_', '_'), S('s', 't'), S('r', 'i'), S('n', 'g'), S('_', 0)};
+static const uint32_t __string_430_ifdef_THINSCRIPT_BIG_ENDIAN[] = {120, S('\n', '#'), S('i', 'f'), S('d', 'e'), S('f', ' '), S('T', 'H'), S('I', 'N'), S('S', 'C'), S('R', 'I'), S('P', 'T'), S('_', 'B'), S('I',
   'G'), S('_', 'E'), S('N', 'D'), S('I', 'A'), S('N', '\n'), S(' ', ' '), S('#', 'd'), S('e', 'f'), S('i', 'n'), S('e', ' '), S('S', '('), S('a', ','), S(' ', 'b'), S(')', ' '), S('(', '('), S('(', 'a'), S(')',
   ' '), S('<', '<'), S(' ', '1'), S('6', ')'), S(' ', '|'), S(' ', '('), S('b', ')'), S(')', '\n'), S('#', 'e'), S('l', 's'), S('e', '\n'), S(' ', ' '), S('#', 'd'), S('e', 'f'), S('i', 'n'), S('e', ' '), S('S',
   '('), S('a', ','), S(' ', 'b'), S(')', ' '), S('(', '('), S('a', ')'), S(' ', '|'), S(' ', '('), S('(', 'b'), S(')', ' '), S('<', '<'), S(' ', '1'), S('6', ')'), S(')', '\n'), S('#', 'e'), S('n', 'd'), S('i',
   'f'), S('\n', '\n')};
-static const uint32_t __string_424_static_const_uint32_t[] = {22, S('s', 't'), S('a', 't'), S('i', 'c'), S(' ', 'c'), S('o', 'n'), S('s', 't'), S(' ', 'u'), S('i', 'n'), S('t', '3'), S('2', '_'), S('t',
+static const uint32_t __string_431_static_const_uint32_t[] = {22, S('s', 't'), S('a', 't'), S('i', 'c'), S(' ', 'c'), S('o', 'n'), S('s', 't'), S(' ', 'u'), S('i', 'n'), S('t', '3'), S('2', '_'), S('t',
   ' ')};
-static const uint32_t __string_425[] = {6, S('[', ']'), S(' ', '='), S(' ', '{')};
-static const uint32_t __string_426_S[] = {4, S(',', ' '), S('S', '(')};
-static const uint32_t __string_427[] = {4, S(',', '\n'), S(' ', ' ')};
-static const uint32_t __string_428[] = {2, S(',', ' ')};
-static const uint32_t __string_429_0[] = {4, S(',', ' '), S('0', ')')};
-static const uint32_t __string_430[] = {3, S('}', ';'), S('\n', 0)};
-static const uint32_t __string_431_const_uint16_t[] = {18, S('(', 'c'), S('o', 'n'), S('s', 't'), S(' ', 'u'), S('i', 'n'), S('t', '1'), S('6', '_'), S('t', ' '), S('*', ')')};
-static const uint32_t __string_432[] = {2, S('-', '>')};
-static const uint32_t __string_433[] = {1, S('.', 0)};
-static const uint32_t __string_434[] = {3, S(' ', '?'), S(' ', 0)};
-static const uint32_t __string_435[] = {3, S(' ', ':'), S(' ', 0)};
-static const uint32_t __string_436[] = {2, S(',', ' ')};
-static const uint32_t __string_437_calloc_1_sizeof[] = {17, S('c', 'a'), S('l', 'l'), S('o', 'c'), S('(', '1'), S(',', ' '), S('s', 'i'), S('z', 'e'), S('o', 'f'), S('(', 0)};
-static const uint32_t __string_438[] = {2, S(')', ')')};
-static const uint32_t __string_439[] = {1, S('~', 0)};
-static const uint32_t __string_440[] = {1, S('*', 0)};
-static const uint32_t __string_441[] = {1, S('-', 0)};
-static const uint32_t __string_442[] = {1, S('!', 0)};
-static const uint32_t __string_443[] = {1, S('+', 0)};
-static const uint32_t __string_444[] = {2, S('-', '-')};
-static const uint32_t __string_445[] = {2, S('+', '+')};
-static const uint32_t __string_446[] = {2, S('-', '-')};
-static const uint32_t __string_447[] = {2, S('+', '+')};
-static const uint32_t __string_448[] = {3, S(' ', '+'), S(' ', 0)};
-static const uint32_t __string_449[] = {3, S(' ', '='), S(' ', 0)};
-static const uint32_t __string_450[] = {3, S(' ', '&'), S(' ', 0)};
-static const uint32_t __string_451[] = {3, S(' ', '|'), S(' ', 0)};
-static const uint32_t __string_452[] = {3, S(' ', '^'), S(' ', 0)};
-static const uint32_t __string_453[] = {3, S(' ', '/'), S(' ', 0)};
-static const uint32_t __string_454[] = {4, S(' ', '='), S('=', ' ')};
-static const uint32_t __string_455[] = {3, S(' ', '>'), S(' ', 0)};
-static const uint32_t __string_456[] = {4, S(' ', '>'), S('=', ' ')};
-static const uint32_t __string_457[] = {3, S(' ', '<'), S(' ', 0)};
-static const uint32_t __string_458[] = {4, S(' ', '<'), S('=', ' ')};
-static const uint32_t __string_459[] = {4, S(' ', '&'), S('&', ' ')};
-static const uint32_t __string_460[] = {4, S(' ', '|'), S('|', ' ')};
-static const uint32_t __string_461[] = {3, S(' ', '*'), S(' ', 0)};
-static const uint32_t __string_462[] = {4, S(' ', '!'), S('=', ' ')};
-static const uint32_t __string_463[] = {3, S(' ', '%'), S(' ', 0)};
-static const uint32_t __string_464[] = {4, S(' ', '<'), S('<', ' ')};
-static const uint32_t __string_465[] = {4, S(' ', '>'), S('>', ' ')};
-static const uint32_t __string_466[] = {3, S(' ', '-'), S(' ', 0)};
-static const uint32_t __string_467_struct[] = {7, S('s', 't'), S('r', 'u'), S('c', 't'), S(' ', 0)};
-static const uint32_t __string_468_uint8_t[] = {7, S('u', 'i'), S('n', 't'), S('8', '_'), S('t', 0)};
-static const uint32_t __string_469_int8_t[] = {6, S('i', 'n'), S('t', '8'), S('_', 't')};
-static const uint32_t __string_470_int32_t[] = {7, S('i', 'n'), S('t', '3'), S('2', '_'), S('t', 0)};
-static const uint32_t __string_471_int16_t[] = {7, S('i', 'n'), S('t', '1'), S('6', '_'), S('t', 0)};
-static const uint32_t __string_472_const_uint16_t[] = {14, S('c', 'o'), S('n', 's'), S('t', ' '), S('u', 'i'), S('n', 't'), S('1', '6'), S('_', 't')};
-static const uint32_t __string_473_uint32_t[] = {8, S('u', 'i'), S('n', 't'), S('3', '2'), S('_', 't')};
-static const uint32_t __string_474_uint16_t[] = {8, S('u', 'i'), S('n', 't'), S('1', '6'), S('_', 't')};
-static const uint32_t __string_475[] = {2, S(' ', '*')};
-static const uint32_t __string_476_if[] = {4, S('i', 'f'), S(' ', '(')};
-static const uint32_t __string_477[] = {2, S(')', ' ')};
-static const uint32_t __string_478[] = {2, S('\n', '\n')};
-static const uint32_t __string_479_else[] = {5, S('e', 'l'), S('s', 'e'), S(' ', 0)};
-static const uint32_t __string_480_while[] = {7, S('w', 'h'), S('i', 'l'), S('e', ' '), S('(', 0)};
-static const uint32_t __string_481[] = {2, S(')', ' ')};
-static const uint32_t __string_482_break[] = {7, S('b', 'r'), S('e', 'a'), S('k', ';'), S('\n', 0)};
-static const uint32_t __string_483_continue[] = {10, S('c', 'o'), S('n', 't'), S('i', 'n'), S('u', 'e'), S(';', '\n')};
-static const uint32_t __string_484[] = {2, S(';', '\n')};
-static const uint32_t __string_485_return[] = {7, S('r', 'e'), S('t', 'u'), S('r', 'n'), S(' ', 0)};
-static const uint32_t __string_486[] = {2, S(';', '\n')};
-static const uint32_t __string_487_return[] = {8, S('r', 'e'), S('t', 'u'), S('r', 'n'), S(';', '\n')};
-static const uint32_t __string_488[] = {3, S(' ', '='), S(' ', 0)};
-static const uint32_t __string_489[] = {2, S(';', '\n')};
-static const uint32_t __string_490_include_stdint_h[] = {20, S('#', 'i'), S('n', 'c'), S('l', 'u'), S('d', 'e'), S(' ', '<'), S('s', 't'), S('d', 'i'), S('n', 't'), S('.', 'h'), S('>', '\n')};
-static const uint32_t __string_491_include[] = {10, S('#', 'i'), S('n', 'c'), S('l', 'u'), S('d', 'e'), S(' ', '"')};
-static const uint32_t __string_492[] = {2, S('"', '\n')};
-static const uint32_t __string_493_include_stdlib_h[] = {20, S('#', 'i'), S('n', 'c'), S('l', 'u'), S('d', 'e'), S(' ', '<'), S('s', 't'), S('d', 'l'), S('i', 'b'), S('.', 'h'), S('>', '\n')};
-static const uint32_t __string_494_include_string_h[] = {20, S('#', 'i'), S('n', 'c'), S('l', 'u'), S('d', 'e'), S(' ', '<'), S('s', 't'), S('r', 'i'), S('n', 'g'), S('.', 'h'), S('>', '\n')};
-static const uint32_t __string_495_struct[] = {7, S('s', 't'), S('r', 'u'), S('c', 't'), S(' ', 0)};
+static const uint32_t __string_432[] = {6, S('[', ']'), S(' ', '='), S(' ', '{')};
+static const uint32_t __string_433_S[] = {4, S(',', ' '), S('S', '(')};
+static const uint32_t __string_434[] = {4, S(',', '\n'), S(' ', ' ')};
+static const uint32_t __string_435[] = {2, S(',', ' ')};
+static const uint32_t __string_436_0[] = {4, S(',', ' '), S('0', ')')};
+static const uint32_t __string_437[] = {3, S('}', ';'), S('\n', 0)};
+static const uint32_t __string_438_const_uint16_t[] = {18, S('(', 'c'), S('o', 'n'), S('s', 't'), S(' ', 'u'), S('i', 'n'), S('t', '1'), S('6', '_'), S('t', ' '), S('*', ')')};
+static const uint32_t __string_439[] = {2, S('-', '>')};
+static const uint32_t __string_440[] = {1, S('.', 0)};
+static const uint32_t __string_441[] = {3, S(' ', '?'), S(' ', 0)};
+static const uint32_t __string_442[] = {3, S(' ', ':'), S(' ', 0)};
+static const uint32_t __string_443[] = {2, S(',', ' ')};
+static const uint32_t __string_444_calloc_1_sizeof[] = {17, S('c', 'a'), S('l', 'l'), S('o', 'c'), S('(', '1'), S(',', ' '), S('s', 'i'), S('z', 'e'), S('o', 'f'), S('(', 0)};
+static const uint32_t __string_445[] = {2, S(')', ')')};
+static const uint32_t __string_446[] = {1, S('~', 0)};
+static const uint32_t __string_447[] = {1, S('*', 0)};
+static const uint32_t __string_448[] = {1, S('-', 0)};
+static const uint32_t __string_449[] = {1, S('!', 0)};
+static const uint32_t __string_450[] = {1, S('+', 0)};
+static const uint32_t __string_451[] = {2, S('-', '-')};
+static const uint32_t __string_452[] = {2, S('+', '+')};
+static const uint32_t __string_453[] = {2, S('-', '-')};
+static const uint32_t __string_454[] = {2, S('+', '+')};
+static const uint32_t __string_455[] = {3, S(' ', '+'), S(' ', 0)};
+static const uint32_t __string_456[] = {3, S(' ', '='), S(' ', 0)};
+static const uint32_t __string_457[] = {3, S(' ', '&'), S(' ', 0)};
+static const uint32_t __string_458[] = {3, S(' ', '|'), S(' ', 0)};
+static const uint32_t __string_459[] = {3, S(' ', '^'), S(' ', 0)};
+static const uint32_t __string_460[] = {3, S(' ', '/'), S(' ', 0)};
+static const uint32_t __string_461[] = {4, S(' ', '='), S('=', ' ')};
+static const uint32_t __string_462[] = {3, S(' ', '>'), S(' ', 0)};
+static const uint32_t __string_463[] = {4, S(' ', '>'), S('=', ' ')};
+static const uint32_t __string_464[] = {3, S(' ', '<'), S(' ', 0)};
+static const uint32_t __string_465[] = {4, S(' ', '<'), S('=', ' ')};
+static const uint32_t __string_466[] = {4, S(' ', '&'), S('&', ' ')};
+static const uint32_t __string_467[] = {4, S(' ', '|'), S('|', ' ')};
+static const uint32_t __string_468[] = {3, S(' ', '*'), S(' ', 0)};
+static const uint32_t __string_469[] = {4, S(' ', '!'), S('=', ' ')};
+static const uint32_t __string_470[] = {3, S(' ', '%'), S(' ', 0)};
+static const uint32_t __string_471[] = {4, S(' ', '<'), S('<', ' ')};
+static const uint32_t __string_472[] = {4, S(' ', '>'), S('>', ' ')};
+static const uint32_t __string_473[] = {3, S(' ', '-'), S(' ', 0)};
+static const uint32_t __string_474_struct[] = {7, S('s', 't'), S('r', 'u'), S('c', 't'), S(' ', 0)};
+static const uint32_t __string_475_uint8_t[] = {7, S('u', 'i'), S('n', 't'), S('8', '_'), S('t', 0)};
+static const uint32_t __string_476_int8_t[] = {6, S('i', 'n'), S('t', '8'), S('_', 't')};
+static const uint32_t __string_477_int32_t[] = {7, S('i', 'n'), S('t', '3'), S('2', '_'), S('t', 0)};
+static const uint32_t __string_478_int16_t[] = {7, S('i', 'n'), S('t', '1'), S('6', '_'), S('t', 0)};
+static const uint32_t __string_479_const_uint16_t[] = {14, S('c', 'o'), S('n', 's'), S('t', ' '), S('u', 'i'), S('n', 't'), S('1', '6'), S('_', 't')};
+static const uint32_t __string_480_uint32_t[] = {8, S('u', 'i'), S('n', 't'), S('3', '2'), S('_', 't')};
+static const uint32_t __string_481_uint16_t[] = {8, S('u', 'i'), S('n', 't'), S('1', '6'), S('_', 't')};
+static const uint32_t __string_482[] = {2, S(' ', '*')};
+static const uint32_t __string_483_if[] = {4, S('i', 'f'), S(' ', '(')};
+static const uint32_t __string_484[] = {2, S(')', ' ')};
+static const uint32_t __string_485[] = {2, S('\n', '\n')};
+static const uint32_t __string_486_else[] = {5, S('e', 'l'), S('s', 'e'), S(' ', 0)};
+static const uint32_t __string_487_while[] = {7, S('w', 'h'), S('i', 'l'), S('e', ' '), S('(', 0)};
+static const uint32_t __string_488[] = {2, S(')', ' ')};
+static const uint32_t __string_489_break[] = {7, S('b', 'r'), S('e', 'a'), S('k', ';'), S('\n', 0)};
+static const uint32_t __string_490_continue[] = {10, S('c', 'o'), S('n', 't'), S('i', 'n'), S('u', 'e'), S(';', '\n')};
+static const uint32_t __string_491[] = {2, S(';', '\n')};
+static const uint32_t __string_492_return[] = {7, S('r', 'e'), S('t', 'u'), S('r', 'n'), S(' ', 0)};
+static const uint32_t __string_493[] = {2, S(';', '\n')};
+static const uint32_t __string_494_return[] = {8, S('r', 'e'), S('t', 'u'), S('r', 'n'), S(';', '\n')};
+static const uint32_t __string_495[] = {3, S(' ', '='), S(' ', 0)};
 static const uint32_t __string_496[] = {2, S(';', '\n')};
-static const uint32_t __string_497_struct[] = {7, S('s', 't'), S('r', 'u'), S('c', 't'), S(' ', 0)};
-static const uint32_t __string_498[] = {3, S(' ', '{'), S('\n', 0)};
-static const uint32_t __string_499[] = {2, S(';', '\n')};
-static const uint32_t __string_500[] = {3, S('}', ';'), S('\n', 0)};
-static const uint32_t __string_501_enum[] = {7, S('e', 'n'), S('u', 'm'), S(' ', '{'), S('\n', 0)};
-static const uint32_t __string_502__[] = {1, S('_', 0)};
-static const uint32_t __string_503[] = {3, S(' ', '='), S(' ', 0)};
-static const uint32_t __string_504[] = {2, S(',', '\n')};
-static const uint32_t __string_505[] = {1, S('\n', 0)};
-static const uint32_t __string_506[] = {3, S('}', ';'), S('\n', 0)};
-static const uint32_t __string_507_malloc[] = {6, S('m', 'a'), S('l', 'l'), S('o', 'c')};
-static const uint32_t __string_508_memcpy[] = {6, S('m', 'e'), S('m', 'c'), S('p', 'y')};
-static const uint32_t __string_509_memcmp[] = {6, S('m', 'e'), S('m', 'c'), S('m', 'p')};
-static const uint32_t __string_510_static[] = {7, S('s', 't'), S('a', 't'), S('i', 'c'), S(' ', 0)};
-static const uint32_t __string_511___this[] = {6, S('_', '_'), S('t', 'h'), S('i', 's')};
-static const uint32_t __string_512[] = {2, S(',', ' ')};
-static const uint32_t __string_513[] = {3, S(')', ';'), S('\n', 0)};
-static const uint32_t __string_514_static[] = {7, S('s', 't'), S('a', 't'), S('i', 'c'), S(' ', 0)};
-static const uint32_t __string_515[] = {3, S(' ', '='), S(' ', 0)};
-static const uint32_t __string_516[] = {2, S(';', '\n')};
+static const uint32_t __string_497_include_stdint_h[] = {20, S('#', 'i'), S('n', 'c'), S('l', 'u'), S('d', 'e'), S(' ', '<'), S('s', 't'), S('d', 'i'), S('n', 't'), S('.', 'h'), S('>', '\n')};
+static const uint32_t __string_498_include[] = {10, S('#', 'i'), S('n', 'c'), S('l', 'u'), S('d', 'e'), S(' ', '"')};
+static const uint32_t __string_499[] = {2, S('"', '\n')};
+static const uint32_t __string_500_include_stdlib_h[] = {20, S('#', 'i'), S('n', 'c'), S('l', 'u'), S('d', 'e'), S(' ', '<'), S('s', 't'), S('d', 'l'), S('i', 'b'), S('.', 'h'), S('>', '\n')};
+static const uint32_t __string_501_include_string_h[] = {20, S('#', 'i'), S('n', 'c'), S('l', 'u'), S('d', 'e'), S(' ', '<'), S('s', 't'), S('r', 'i'), S('n', 'g'), S('.', 'h'), S('>', '\n')};
+static const uint32_t __string_502_struct[] = {7, S('s', 't'), S('r', 'u'), S('c', 't'), S(' ', 0)};
+static const uint32_t __string_503[] = {2, S(';', '\n')};
+static const uint32_t __string_504_struct[] = {7, S('s', 't'), S('r', 'u'), S('c', 't'), S(' ', 0)};
+static const uint32_t __string_505[] = {3, S(' ', '{'), S('\n', 0)};
+static const uint32_t __string_506[] = {2, S(';', '\n')};
+static const uint32_t __string_507[] = {3, S('}', ';'), S('\n', 0)};
+static const uint32_t __string_508_enum[] = {7, S('e', 'n'), S('u', 'm'), S(' ', '{'), S('\n', 0)};
+static const uint32_t __string_509__[] = {1, S('_', 0)};
+static const uint32_t __string_510[] = {3, S(' ', '='), S(' ', 0)};
+static const uint32_t __string_511[] = {2, S(',', '\n')};
+static const uint32_t __string_512[] = {1, S('\n', 0)};
+static const uint32_t __string_513[] = {3, S('}', ';'), S('\n', 0)};
+static const uint32_t __string_514_malloc[] = {6, S('m', 'a'), S('l', 'l'), S('o', 'c')};
+static const uint32_t __string_515_memcpy[] = {6, S('m', 'e'), S('m', 'c'), S('p', 'y')};
+static const uint32_t __string_516_memcmp[] = {6, S('m', 'e'), S('m', 'c'), S('m', 'p')};
 static const uint32_t __string_517_static[] = {7, S('s', 't'), S('a', 't'), S('i', 'c'), S(' ', 0)};
-static const uint32_t __string_518[] = {2, S(',', ' ')};
-static const uint32_t __string_519[] = {2, S(')', ' ')};
-static const uint32_t __string_520_undef_S[] = {10, S('\n', '#'), S('u', 'n'), S('d', 'e'), S('f', ' '), S('S', '\n')};
-static const uint32_t __string_521_0[] = {4, S('\'', '\\'), S('0', '\'')};
-static const uint32_t __string_522_r[] = {4, S('\'', '\\'), S('r', '\'')};
-static const uint32_t __string_523_n[] = {4, S('\'', '\\'), S('n', '\'')};
-static const uint32_t __string_524_t[] = {4, S('\'', '\\'), S('t', '\'')};
-static const uint32_t __string_525_h[] = {2, S('.', 'h')};
-static const uint32_t __string_526[] = {2, S(' ', ' ')};
-static const uint32_t __string_527[] = {2, S('{', '\n')};
-static const uint32_t __string_528_0[] = {6, S(' ', '>'), S('>', '>'), S(' ', '0')};
-static const uint32_t __string_529_0[] = {4, S(' ', '|'), S(' ', '0')};
-static const uint32_t __string_530_0[] = {6, S(' ', '>'), S('>', '>'), S(' ', '0')};
-static const uint32_t __string_531_0[] = {4, S(' ', '|'), S(' ', '0')};
-static const uint32_t __string_532[] = {2, S(',', ' ')};
-static const uint32_t __string_533___imports[] = {10, S('_', '_'), S('i', 'm'), S('p', 'o'), S('r', 't'), S('s', '.')};
-static const uint32_t __string_534_null[] = {4, S('n', 'u'), S('l', 'l')};
-static const uint32_t __string_535_true[] = {4, S('t', 'r'), S('u', 'e')};
-static const uint32_t __string_536_false[] = {5, S('f', 'a'), S('l', 's'), S('e', 0)};
-static const uint32_t __string_537[] = {4, S(' ', '<'), S('<', ' ')};
-static const uint32_t __string_538[] = {4, S(' ', '>'), S('>', ' ')};
-static const uint32_t __string_539[] = {3, S(' ', '&'), S(' ', 0)};
-static const uint32_t __string_540_0[] = {4, S(' ', '|'), S(' ', '0')};
-static const uint32_t __string_541_0[] = {6, S(' ', '>'), S('>', '>'), S(' ', '0')};
-static const uint32_t __string_542[] = {3, S(' ', '?'), S(' ', 0)};
-static const uint32_t __string_543[] = {3, S(' ', ':'), S(' ', 0)};
-static const uint32_t __string_544_new[] = {4, S('n', 'e'), S('w', ' ')};
-static const uint32_t __string_545[] = {2, S('(', ')')};
-static const uint32_t __string_546[] = {1, S('!', 0)};
-static const uint32_t __string_547[] = {1, S('~', 0)};
-static const uint32_t __string_548[] = {1, S('-', 0)};
-static const uint32_t __string_549[] = {1, S('+', 0)};
-static const uint32_t __string_550[] = {2, S('+', '+')};
-static const uint32_t __string_551[] = {2, S('-', '-')};
-static const uint32_t __string_552[] = {2, S('+', '+')};
-static const uint32_t __string_553[] = {2, S('-', '-')};
-static const uint32_t __string_554[] = {3, S(' ', '+'), S(' ', 0)};
-static const uint32_t __string_555[] = {3, S(' ', '='), S(' ', 0)};
-static const uint32_t __string_556[] = {3, S(' ', '&'), S(' ', 0)};
-static const uint32_t __string_557[] = {3, S(' ', '|'), S(' ', 0)};
-static const uint32_t __string_558[] = {3, S(' ', '^'), S(' ', 0)};
-static const uint32_t __string_559[] = {3, S(' ', '/'), S(' ', 0)};
-static const uint32_t __string_560[] = {5, S(' ', '='), S('=', '='), S(' ', 0)};
-static const uint32_t __string_561[] = {3, S(' ', '>'), S(' ', 0)};
-static const uint32_t __string_562[] = {4, S(' ', '>'), S('=', ' ')};
-static const uint32_t __string_563[] = {3, S(' ', '<'), S(' ', 0)};
-static const uint32_t __string_564[] = {4, S(' ', '<'), S('=', ' ')};
-static const uint32_t __string_565[] = {4, S(' ', '&'), S('&', ' ')};
-static const uint32_t __string_566[] = {4, S(' ', '|'), S('|', ' ')};
-static const uint32_t __string_567[] = {5, S(' ', '!'), S('=', '='), S(' ', 0)};
-static const uint32_t __string_568[] = {3, S(' ', '%'), S(' ', 0)};
-static const uint32_t __string_569[] = {4, S(' ', '<'), S('<', ' ')};
-static const uint32_t __string_570[] = {5, S(' ', '>'), S('>', '>'), S(' ', 0)};
-static const uint32_t __string_571[] = {4, S(' ', '>'), S('>', ' ')};
-static const uint32_t __string_572[] = {3, S(' ', '-'), S(' ', 0)};
-static const uint32_t __string_573___imul[] = {7, S('_', '_'), S('i', 'm'), S('u', 'l'), S('(', 0)};
-static const uint32_t __string_574[] = {2, S(',', ' ')};
-static const uint32_t __string_575_0[] = {6, S(' ', '>'), S('>', '>'), S(' ', '0')};
-static const uint32_t __string_576_prototype[] = {11, S('.', 'p'), S('r', 'o'), S('t', 'o'), S('t', 'y'), S('p', 'e'), S('.', 0)};
-static const uint32_t __string_577_function[] = {11, S(' ', '='), S(' ', 'f'), S('u', 'n'), S('c', 't'), S('i', 'o'), S('n', 0)};
-static const uint32_t __string_578_var[] = {4, S('v', 'a'), S('r', ' ')};
-static const uint32_t __string_579___exports[] = {13, S(' ', '='), S(' ', '_'), S('_', 'e'), S('x', 'p'), S('o', 'r'), S('t', 's'), S('.', 0)};
-static const uint32_t __string_580_function[] = {11, S(' ', '='), S(' ', 'f'), S('u', 'n'), S('c', 't'), S('i', 'o'), S('n', 0)};
-static const uint32_t __string_581_function[] = {9, S('f', 'u'), S('n', 'c'), S('t', 'i'), S('o', 'n'), S(' ', 0)};
-static const uint32_t __string_582[] = {2, S(',', ' ')};
-static const uint32_t __string_583[] = {2, S(')', ' ')};
-static const uint32_t __string_584[] = {2, S(';', '\n')};
-static const uint32_t __string_585[] = {1, S('\n', 0)};
-static const uint32_t __string_586_if[] = {4, S('i', 'f'), S(' ', '(')};
-static const uint32_t __string_587[] = {2, S(')', ' ')};
-static const uint32_t __string_588[] = {2, S('\n', '\n')};
-static const uint32_t __string_589_else[] = {5, S('e', 'l'), S('s', 'e'), S(' ', 0)};
-static const uint32_t __string_590_while[] = {7, S('w', 'h'), S('i', 'l'), S('e', ' '), S('(', 0)};
-static const uint32_t __string_591[] = {2, S(')', ' ')};
-static const uint32_t __string_592_break[] = {7, S('b', 'r'), S('e', 'a'), S('k', ';'), S('\n', 0)};
-static const uint32_t __string_593_continue[] = {10, S('c', 'o'), S('n', 't'), S('i', 'n'), S('u', 'e'), S(';', '\n')};
-static const uint32_t __string_594[] = {2, S(';', '\n')};
-static const uint32_t __string_595_return[] = {7, S('r', 'e'), S('t', 'u'), S('r', 'n'), S(' ', 0)};
-static const uint32_t __string_596[] = {2, S(';', '\n')};
-static const uint32_t __string_597_return[] = {8, S('r', 'e'), S('t', 'u'), S('r', 'n'), S(';', '\n')};
-static const uint32_t __string_598_var[] = {4, S('v', 'a'), S('r', ' ')};
-static const uint32_t __string_599[] = {2, S(',', ' ')};
-static const uint32_t __string_600[] = {3, S(' ', '='), S(' ', 0)};
+static const uint32_t __string_518___this[] = {6, S('_', '_'), S('t', 'h'), S('i', 's')};
+static const uint32_t __string_519[] = {2, S(',', ' ')};
+static const uint32_t __string_520[] = {3, S(')', ';'), S('\n', 0)};
+static const uint32_t __string_521_static[] = {7, S('s', 't'), S('a', 't'), S('i', 'c'), S(' ', 0)};
+static const uint32_t __string_522[] = {3, S(' ', '='), S(' ', 0)};
+static const uint32_t __string_523[] = {2, S(';', '\n')};
+static const uint32_t __string_524_static[] = {7, S('s', 't'), S('a', 't'), S('i', 'c'), S(' ', 0)};
+static const uint32_t __string_525[] = {2, S(',', ' ')};
+static const uint32_t __string_526[] = {2, S(')', ' ')};
+static const uint32_t __string_527_undef_S[] = {10, S('\n', '#'), S('u', 'n'), S('d', 'e'), S('f', ' '), S('S', '\n')};
+static const uint32_t __string_528_0[] = {4, S('\'', '\\'), S('0', '\'')};
+static const uint32_t __string_529_r[] = {4, S('\'', '\\'), S('r', '\'')};
+static const uint32_t __string_530_n[] = {4, S('\'', '\\'), S('n', '\'')};
+static const uint32_t __string_531_t[] = {4, S('\'', '\\'), S('t', '\'')};
+static const uint32_t __string_532_h[] = {2, S('.', 'h')};
+static const uint32_t __string_533[] = {2, S(' ', ' ')};
+static const uint32_t __string_534[] = {2, S('{', '\n')};
+static const uint32_t __string_535_0[] = {6, S(' ', '>'), S('>', '>'), S(' ', '0')};
+static const uint32_t __string_536_0[] = {4, S(' ', '|'), S(' ', '0')};
+static const uint32_t __string_537_0[] = {6, S(' ', '>'), S('>', '>'), S(' ', '0')};
+static const uint32_t __string_538_0[] = {4, S(' ', '|'), S(' ', '0')};
+static const uint32_t __string_539[] = {2, S(',', ' ')};
+static const uint32_t __string_540___imports[] = {10, S('_', '_'), S('i', 'm'), S('p', 'o'), S('r', 't'), S('s', '.')};
+static const uint32_t __string_541_null[] = {4, S('n', 'u'), S('l', 'l')};
+static const uint32_t __string_542_true[] = {4, S('t', 'r'), S('u', 'e')};
+static const uint32_t __string_543_false[] = {5, S('f', 'a'), S('l', 's'), S('e', 0)};
+static const uint32_t __string_544[] = {4, S(' ', '<'), S('<', ' ')};
+static const uint32_t __string_545[] = {4, S(' ', '>'), S('>', ' ')};
+static const uint32_t __string_546[] = {3, S(' ', '&'), S(' ', 0)};
+static const uint32_t __string_547_0[] = {4, S(' ', '|'), S(' ', '0')};
+static const uint32_t __string_548_0[] = {6, S(' ', '>'), S('>', '>'), S(' ', '0')};
+static const uint32_t __string_549[] = {3, S(' ', '?'), S(' ', 0)};
+static const uint32_t __string_550[] = {3, S(' ', ':'), S(' ', 0)};
+static const uint32_t __string_551_new[] = {4, S('n', 'e'), S('w', ' ')};
+static const uint32_t __string_552[] = {2, S('(', ')')};
+static const uint32_t __string_553[] = {1, S('!', 0)};
+static const uint32_t __string_554[] = {1, S('~', 0)};
+static const uint32_t __string_555[] = {1, S('-', 0)};
+static const uint32_t __string_556[] = {1, S('+', 0)};
+static const uint32_t __string_557[] = {2, S('+', '+')};
+static const uint32_t __string_558[] = {2, S('-', '-')};
+static const uint32_t __string_559[] = {2, S('+', '+')};
+static const uint32_t __string_560[] = {2, S('-', '-')};
+static const uint32_t __string_561[] = {3, S(' ', '+'), S(' ', 0)};
+static const uint32_t __string_562[] = {3, S(' ', '='), S(' ', 0)};
+static const uint32_t __string_563[] = {3, S(' ', '&'), S(' ', 0)};
+static const uint32_t __string_564[] = {3, S(' ', '|'), S(' ', 0)};
+static const uint32_t __string_565[] = {3, S(' ', '^'), S(' ', 0)};
+static const uint32_t __string_566[] = {3, S(' ', '/'), S(' ', 0)};
+static const uint32_t __string_567[] = {5, S(' ', '='), S('=', '='), S(' ', 0)};
+static const uint32_t __string_568[] = {3, S(' ', '>'), S(' ', 0)};
+static const uint32_t __string_569[] = {4, S(' ', '>'), S('=', ' ')};
+static const uint32_t __string_570[] = {3, S(' ', '<'), S(' ', 0)};
+static const uint32_t __string_571[] = {4, S(' ', '<'), S('=', ' ')};
+static const uint32_t __string_572[] = {4, S(' ', '&'), S('&', ' ')};
+static const uint32_t __string_573[] = {4, S(' ', '|'), S('|', ' ')};
+static const uint32_t __string_574[] = {5, S(' ', '!'), S('=', '='), S(' ', 0)};
+static const uint32_t __string_575[] = {3, S(' ', '%'), S(' ', 0)};
+static const uint32_t __string_576[] = {4, S(' ', '<'), S('<', ' ')};
+static const uint32_t __string_577[] = {5, S(' ', '>'), S('>', '>'), S(' ', 0)};
+static const uint32_t __string_578[] = {4, S(' ', '>'), S('>', ' ')};
+static const uint32_t __string_579[] = {3, S(' ', '-'), S(' ', 0)};
+static const uint32_t __string_580___imul[] = {7, S('_', '_'), S('i', 'm'), S('u', 'l'), S('(', 0)};
+static const uint32_t __string_581[] = {2, S(',', ' ')};
+static const uint32_t __string_582_0[] = {6, S(' ', '>'), S('>', '>'), S(' ', '0')};
+static const uint32_t __string_583_prototype[] = {11, S('.', 'p'), S('r', 'o'), S('t', 'o'), S('t', 'y'), S('p', 'e'), S('.', 0)};
+static const uint32_t __string_584_function[] = {11, S(' ', '='), S(' ', 'f'), S('u', 'n'), S('c', 't'), S('i', 'o'), S('n', 0)};
+static const uint32_t __string_585_var[] = {4, S('v', 'a'), S('r', ' ')};
+static const uint32_t __string_586___exports[] = {13, S(' ', '='), S(' ', '_'), S('_', 'e'), S('x', 'p'), S('o', 'r'), S('t', 's'), S('.', 0)};
+static const uint32_t __string_587_function[] = {11, S(' ', '='), S(' ', 'f'), S('u', 'n'), S('c', 't'), S('i', 'o'), S('n', 0)};
+static const uint32_t __string_588_function[] = {9, S('f', 'u'), S('n', 'c'), S('t', 'i'), S('o', 'n'), S(' ', 0)};
+static const uint32_t __string_589[] = {2, S(',', ' ')};
+static const uint32_t __string_590[] = {2, S(')', ' ')};
+static const uint32_t __string_591[] = {2, S(';', '\n')};
+static const uint32_t __string_592[] = {1, S('\n', 0)};
+static const uint32_t __string_593_if[] = {4, S('i', 'f'), S(' ', '(')};
+static const uint32_t __string_594[] = {2, S(')', ' ')};
+static const uint32_t __string_595[] = {2, S('\n', '\n')};
+static const uint32_t __string_596_else[] = {5, S('e', 'l'), S('s', 'e'), S(' ', 0)};
+static const uint32_t __string_597_while[] = {7, S('w', 'h'), S('i', 'l'), S('e', ' '), S('(', 0)};
+static const uint32_t __string_598[] = {2, S(')', ' ')};
+static const uint32_t __string_599_break[] = {7, S('b', 'r'), S('e', 'a'), S('k', ';'), S('\n', 0)};
+static const uint32_t __string_600_continue[] = {10, S('c', 'o'), S('n', 't'), S('i', 'n'), S('u', 'e'), S(';', '\n')};
 static const uint32_t __string_601[] = {2, S(';', '\n')};
-static const uint32_t __string_602_function[] = {9, S('f', 'u'), S('n', 'c'), S('t', 'i'), S('o', 'n'), S(' ', 0)};
-static const uint32_t __string_603[] = {5, S('(', ')'), S(' ', '{'), S('\n', 0)};
-static const uint32_t __string_604_this[] = {5, S('t', 'h'), S('i', 's'), S('.', 0)};
-static const uint32_t __string_605[] = {3, S(' ', '='), S(' ', 0)};
-static const uint32_t __string_606[] = {2, S(';', '\n')};
-static const uint32_t __string_607[] = {2, S('}', '\n')};
-static const uint32_t __string_608___exports[] = {10, S('_', '_'), S('e', 'x'), S('p', 'o'), S('r', 't'), S('s', '.')};
-static const uint32_t __string_609[] = {5, S(' ', '='), S(' ', '{'), S('\n', 0)};
-static const uint32_t __string_610[] = {2, S(':', ' ')};
-static const uint32_t __string_611[] = {2, S(',', '\n')};
-static const uint32_t __string_612[] = {1, S('\n', 0)};
-static const uint32_t __string_613[] = {3, S('}', ';'), S('\n', 0)};
-static const uint32_t __string_614_function___imports___exports[] = {34, S('(', 'f'), S('u', 'n'), S('c', 't'), S('i', 'o'), S('n', '('), S('_', '_'), S('i', 'm'), S('p', 'o'), S('r', 't'), S('s', ','), S(' ',
+static const uint32_t __string_602_return[] = {7, S('r', 'e'), S('t', 'u'), S('r', 'n'), S(' ', 0)};
+static const uint32_t __string_603[] = {2, S(';', '\n')};
+static const uint32_t __string_604_return[] = {8, S('r', 'e'), S('t', 'u'), S('r', 'n'), S(';', '\n')};
+static const uint32_t __string_605_var[] = {4, S('v', 'a'), S('r', ' ')};
+static const uint32_t __string_606[] = {3, S(' ', '='), S(' ', 0)};
+static const uint32_t __string_607[] = {2, S(',', ' ')};
+static const uint32_t __string_608[] = {2, S(';', '\n')};
+static const uint32_t __string_609_function[] = {9, S('f', 'u'), S('n', 'c'), S('t', 'i'), S('o', 'n'), S(' ', 0)};
+static const uint32_t __string_610[] = {5, S('(', ')'), S(' ', '{'), S('\n', 0)};
+static const uint32_t __string_611_this[] = {5, S('t', 'h'), S('i', 's'), S('.', 0)};
+static const uint32_t __string_612[] = {3, S(' ', '='), S(' ', 0)};
+static const uint32_t __string_613[] = {2, S(';', '\n')};
+static const uint32_t __string_614[] = {2, S('}', '\n')};
+static const uint32_t __string_615___exports[] = {10, S('_', '_'), S('e', 'x'), S('p', 'o'), S('r', 't'), S('s', '.')};
+static const uint32_t __string_616[] = {5, S(' ', '='), S(' ', '{'), S('\n', 0)};
+static const uint32_t __string_617[] = {2, S(':', ' ')};
+static const uint32_t __string_618[] = {2, S(',', '\n')};
+static const uint32_t __string_619[] = {1, S('\n', 0)};
+static const uint32_t __string_620[] = {3, S('}', ';'), S('\n', 0)};
+static const uint32_t __string_621_function___imports___exports[] = {34, S('(', 'f'), S('u', 'n'), S('c', 't'), S('i', 'o'), S('n', '('), S('_', '_'), S('i', 'm'), S('p', 'o'), S('r', 't'), S('s', ','), S(' ',
   '_'), S('_', 'e'), S('x', 'p'), S('o', 'r'), S('t', 's'), S(')', ' '), S('{', '\n')};
-static const uint32_t __string_615_var___imul_Math_imul_functi[] = {43, S('v', 'a'), S('r', ' '), S('_', '_'), S('i', 'm'), S('u', 'l'), S(' ', '='), S(' ', 'M'), S('a', 't'), S('h', '.'), S('i', 'm'), S('u',
+static const uint32_t __string_622_var___imul_Math_imul_functi[] = {43, S('v', 'a'), S('r', ' '), S('_', '_'), S('i', 'm'), S('u', 'l'), S(' ', '='), S(' ', 'M'), S('a', 't'), S('h', '.'), S('i', 'm'), S('u',
   'l'), S(' ', '|'), S('|', ' '), S('f', 'u'), S('n', 'c'), S('t', 'i'), S('o', 'n'), S('(', 'a'), S(',', ' '), S('b', ')'), S(' ', '{'), S('\n', 0)};
-static const uint32_t __string_616_return_a_b_16_16[] = {53, S('r', 'e'), S('t', 'u'), S('r', 'n'), S(' ', '('), S('a', ' '), S('*', ' '), S('(', 'b'), S(' ', '>'), S('>', '>'), S(' ', '1'), S('6',
+static const uint32_t __string_623_return_a_b_16_16[] = {53, S('r', 'e'), S('t', 'u'), S('r', 'n'), S(' ', '('), S('a', ' '), S('*', ' '), S('(', 'b'), S(' ', '>'), S('>', '>'), S(' ', '1'), S('6',
   ')'), S(' ', '<'), S('<', ' '), S('1', '6'), S(')', ' '), S('+', ' '), S('a', ' '), S('*', ' '), S('(', 'b'), S(' ', '&'), S(' ', '6'), S('5', '5'), S('3', '5'), S(')', ' '), S('|', ' '), S('0', ';'), S('\n', 0)};
-static const uint32_t __string_617[] = {3, S('}', ';'), S('\n', 0)};
-static const uint32_t __string_618[] = {3, S('}', '('), S('\n', 0)};
-static const uint32_t __string_619_typeof_global_undefined[] = {47, S('t', 'y'), S('p', 'e'), S('o', 'f'), S(' ', 'g'), S('l', 'o'), S('b', 'a'), S('l', ' '), S('!', '='), S('=', ' '), S('\'', 'u'), S('n',
+static const uint32_t __string_624[] = {3, S('}', ';'), S('\n', 0)};
+static const uint32_t __string_625[] = {3, S('}', '('), S('\n', 0)};
+static const uint32_t __string_626_typeof_global_undefined[] = {47, S('t', 'y'), S('p', 'e'), S('o', 'f'), S(' ', 'g'), S('l', 'o'), S('b', 'a'), S('l', ' '), S('!', '='), S('=', ' '), S('\'', 'u'), S('n',
   'd'), S('e', 'f'), S('i', 'n'), S('e', 'd'), S('\'', ' '), S('?', ' '), S('g', 'l'), S('o', 'b'), S('a', 'l'), S(' ', ':'), S(' ', 't'), S('h', 'i'), S('s', ','), S('\n', 0)};
-static const uint32_t __string_620_typeof_exports_undefined[] = {48, S('t', 'y'), S('p', 'e'), S('o', 'f'), S(' ', 'e'), S('x', 'p'), S('o', 'r'), S('t', 's'), S(' ', '!'), S('=', '='), S(' ', '\''), S('u',
+static const uint32_t __string_627_typeof_exports_undefined[] = {48, S('t', 'y'), S('p', 'e'), S('o', 'f'), S(' ', 'e'), S('x', 'p'), S('o', 'r'), S('t', 's'), S(' ', '!'), S('=', '='), S(' ', '\''), S('u',
   'n'), S('d', 'e'), S('f', 'i'), S('n', 'e'), S('d', '\''), S(' ', '?'), S(' ', 'e'), S('x', 'p'), S('o', 'r'), S('t', 's'), S(' ', ':'), S(' ', 't'), S('h', 'i'), S('s', '\n')};
-static const uint32_t __string_621[] = {4, S(')', ')'), S(';', '\n')};
-static const uint32_t __string_622_malloc[] = {6, S('m', 'a'), S('l', 'l'), S('o', 'c')};
-static const uint32_t __string_623_free[] = {4, S('f', 'r'), S('e', 'e')};
-static const uint32_t __string_624_dylink[] = {6, S('d', 'y'), S('l', 'i'), S('n', 'k')};
-static const uint32_t __string_625_name[] = {4, S('n', 'a'), S('m', 'e')};
-static const uint32_t __string_626_myModuleName[] = {12, S('m', 'y'), S('M', 'o'), S('d', 'u'), S('l', 'e'), S('N', 'a'), S('m', 'e')};
-static const uint32_t __string_627[] = {1, S('.', 0)};
-static const uint32_t __string_628_this[] = {4, S('t', 'h'), S('i', 's')};
-static const uint32_t __string_629_memory[] = {6, S('m', 'e'), S('m', 'o'), S('r', 'y')};
-static const uint32_t __string_630_currentHeapPointer[] = {18, S('c', 'u'), S('r', 'r'), S('e', 'n'), S('t', 'H'), S('e', 'a'), S('p', 'P'), S('o', 'i'), S('n', 't'), S('e', 'r')};
-static const uint32_t __string_631_originalHeapPointer[] = {19, S('o', 'r'), S('i', 'g'), S('i', 'n'), S('a', 'l'), S('H', 'e'), S('a', 'p'), S('P', 'o'), S('i', 'n'), S('t', 'e'), S('r', 0)};
-static const uint32_t __string_632_global[] = {6, S('g', 'l'), S('o', 'b'), S('a', 'l')};
+static const uint32_t __string_628[] = {4, S(')', ')'), S(';', '\n')};
+static const uint32_t __string_629_malloc[] = {6, S('m', 'a'), S('l', 'l'), S('o', 'c')};
+static const uint32_t __string_630_free[] = {4, S('f', 'r'), S('e', 'e')};
+static const uint32_t __string_631_dylink[] = {6, S('d', 'y'), S('l', 'i'), S('n', 'k')};
+static const uint32_t __string_632_name[] = {4, S('n', 'a'), S('m', 'e')};
+static const uint32_t __string_633_myModuleName[] = {12, S('m', 'y'), S('M', 'o'), S('d', 'u'), S('l', 'e'), S('N', 'a'), S('m', 'e')};
+static const uint32_t __string_634[] = {1, S('.', 0)};
+static const uint32_t __string_635_this[] = {4, S('t', 'h'), S('i', 's')};
+static const uint32_t __string_636_memory[] = {6, S('m', 'e'), S('m', 'o'), S('r', 'y')};
+static const uint32_t __string_637_currentHeapPointer[] = {18, S('c', 'u'), S('r', 'r'), S('e', 'n'), S('t', 'H'), S('e', 'a'), S('p', 'P'), S('o', 'i'), S('n', 't'), S('e', 'r')};
+static const uint32_t __string_638_originalHeapPointer[] = {19, S('o', 'r'), S('i', 'g'), S('i', 'n'), S('a', 'l'), S('H', 'e'), S('a', 'p'), S('P', 'o'), S('i', 'n'), S('t', 'e'), S('r', 0)};
+static const uint32_t __string_639_global[] = {6, S('g', 'l'), S('o', 'b'), S('a', 'l')};
 
 #undef S
 
@@ -1503,6 +1512,7 @@ static void Compiler_createGlobals(struct Compiler *__this);
 static struct Source *Compiler_addInput(struct Compiler *__this, const uint16_t *name, const uint16_t *contents);
 static uint8_t Compiler_finish(struct Compiler *__this);
 static const uint16_t *replaceFileExtension(const uint16_t *path, const uint16_t *extension);
+static void metadata(struct Node *node, struct CheckContext *context, struct Node *decorator);
 void assert(uint8_t truth);
 void Profiler_begin();
 void Profiler_end(const uint16_t *text);
@@ -1629,6 +1639,8 @@ static struct Node *createExtends(struct Node *type);
 static struct Node *createImplements();
 static struct Node *createParameter(const uint16_t *name);
 static struct Node *createVariable(const uint16_t *name, struct Node *type, struct Node *value);
+static struct Node *createDecorator(const uint16_t *name);
+static struct Node *createDecorators();
 static struct Node *createFunction(const uint16_t *name);
 static struct Node *createUnary(int32_t kind, struct Node *value);
 static struct Node *createBinary(int32_t kind, struct Node *left, struct Node *right);
@@ -1662,7 +1674,7 @@ static struct Node *ParserContext_parseEmpty(struct ParserContext *__this);
 static struct Node *ParserContext_parseEnum(struct ParserContext *__this, struct NodeFlag *firstFlag);
 static struct Node *ParserContext_parseParameters(struct ParserContext *__this);
 static struct Node *ParserContext_parseClass(struct ParserContext *__this, struct NodeFlag *firstFlag);
-static struct Node *ParserContext_parseFunction(struct ParserContext *__this, struct NodeFlag *firstFlag, struct Node *parent);
+static struct Node *ParserContext_parseFunction(struct ParserContext *__this, struct NodeFlag *firstFlag, struct Node *decorators, struct Node *parent);
 static struct Node *ParserContext_parseVariables(struct ParserContext *__this, struct NodeFlag *firstFlag, struct Node *parent);
 static struct Node *ParserContext_parseLoopJump(struct ParserContext *__this, int32_t kind);
 static struct NodeFlag *ParserContext_parseFlags(struct ParserContext *__this);
@@ -1670,6 +1682,8 @@ static struct Node *ParserContext_parseUnsafe(struct ParserContext *__this);
 static struct Node *ParserContext_parseStatement(struct ParserContext *__this, int32_t mode);
 static uint8_t ParserContext_parseStatements(struct ParserContext *__this, struct Node *parent);
 static uint8_t ParserContext_parseInt(struct ParserContext *__this, struct Range *range, struct Node *node);
+static struct Node *ParserContext_parseDecorator(struct ParserContext *__this);
+static struct Node *ParserContext_parseDecorators(struct ParserContext *__this);
 static struct Node *parse(struct Token *firstToken, struct Log *log);
 static uint8_t Preprocessor_peek(struct Preprocessor *__this, int32_t kind);
 static uint8_t Preprocessor_eat(struct Preprocessor *__this, int32_t kind);
@@ -2433,15 +2447,15 @@ static void initialize(struct CheckContext *context, struct Node *node, struct S
   if (node->parent != NULL) {
     int32_t parentKind = node->parent->kind;
 
-    if (kind != 6 && kind != 19 && (kind != 15 || parentKind != 9) && (parentKind == 1) != (kind == 9 || kind == 13 || kind == 15 || kind == 10)) {
+    if (kind != 6 && kind != 21 && (kind != 17 || parentKind != 11) && (parentKind == 1) != (kind == 11 || kind == 15 || kind == 17 || kind == 12)) {
       Log_error(context->log, node->range, (const uint16_t *)__string_30_This_statement_is_not_allowed_he);
     }
   }
 
-  if (kind == 9 || kind == 13) {
+  if (kind == 11 || kind == 15) {
     assert(node->symbol == NULL);
     struct Symbol *symbol = calloc(1, sizeof(struct Symbol));
-    symbol->kind = kind == 9 ? 0 : 1;
+    symbol->kind = kind == 11 ? 0 : 1;
     symbol->name = node->stringValue;
     symbol->resolvedType = calloc(1, sizeof(struct Type));
     symbol->resolvedType->symbol = symbol;
@@ -2452,10 +2466,10 @@ static void initialize(struct CheckContext *context, struct Node *node, struct S
     parentScope = symbol->scope;
   }
 
-  else if (kind == 15) {
+  else if (kind == 17) {
     assert(node->symbol == NULL);
     struct Symbol *symbol = calloc(1, sizeof(struct Symbol));
-    symbol->kind = node->parent->kind == 9 ? 4 : 5;
+    symbol->kind = node->parent->kind == 11 ? 4 : 5;
     symbol->name = node->stringValue;
 
     if (Node_isOperator(node)) {
@@ -2486,20 +2500,50 @@ static void initialize(struct CheckContext *context, struct Node *node, struct S
       initializeSymbol(context, parent);
       Node_insertChildBefore(node, Node_functionFirstArgument(node), createVariable((const uint16_t *)__string_73_this, createType(parent->resolvedType), NULL));
     }
+
+    struct Node *decorators = node->firstChild;
+
+    while (decorators != NULL) {
+      if (decorators->kind == 8) {
+        break;
+      }
+
+      decorators = decorators->nextSibling;
+    }
+
+    if (decorators != NULL) {
+      struct Node *decorator = decorators->firstChild;
+
+      while (decorator != NULL) {
+        const uint16_t *name = decorator->stringValue;
+
+        if (string_op_equals(decorator->stringValue, (const uint16_t *)__string_74_metadata)) {
+          metadata(node, context, decorator);
+        }
+
+        else {
+          Log_error(context->log, node->range, (const uint16_t *)__string_75_There_is_no_such_decorator);
+        }
+
+        decorator = decorator->nextSibling;
+      }
+
+      Node_remove(decorators);
+    }
   }
 
   else if (kind == 6) {
     assert(node->symbol == NULL);
     struct Symbol *symbol = calloc(1, sizeof(struct Symbol));
-    symbol->kind = node->parent->kind == 9 ? 9 : node->parent->kind == 15 ? 6 : node->parent->kind == 10 || node->parent->kind == 13 ? 7 : node->parent->kind == 19 && node->parent->parent->kind == 1 ? 8 : 10;
+    symbol->kind = node->parent->kind == 11 ? 9 : node->parent->kind == 17 ? 6 : node->parent->kind == 12 || node->parent->kind == 15 ? 7 : node->parent->kind == 21 && node->parent->parent->kind == 1 ? 8 : 10;
     symbol->name = node->stringValue;
     symbol->scope = parentScope;
     linkSymbolToNode(symbol, node);
     Scope_define(parentScope, context->log, symbol, 0);
   }
 
-  else if (kind == 7) {
-    if (node->parent->kind != 15) {
+  else if (kind == 9) {
+    if (node->parent->kind != 17) {
       struct Scope *scope = calloc(1, sizeof(struct Scope));
       scope->parent = parentScope;
       parentScope = scope;
@@ -2516,14 +2560,14 @@ static void initialize(struct CheckContext *context, struct Node *node, struct S
   }
 
   if (kind == 1 && mode == 1) {
-    context->boolType = Scope_findLocal(parentScope, (const uint16_t *)__string_74_bool, 0)->resolvedType;
-    context->byteType = Scope_findLocal(parentScope, (const uint16_t *)__string_75_byte, 0)->resolvedType;
-    context->intType = Scope_findLocal(parentScope, (const uint16_t *)__string_76_int, 0)->resolvedType;
-    context->sbyteType = Scope_findLocal(parentScope, (const uint16_t *)__string_77_sbyte, 0)->resolvedType;
-    context->shortType = Scope_findLocal(parentScope, (const uint16_t *)__string_78_short, 0)->resolvedType;
-    context->stringType = Scope_findLocal(parentScope, (const uint16_t *)__string_79_string, 0)->resolvedType;
-    context->uintType = Scope_findLocal(parentScope, (const uint16_t *)__string_80_uint, 0)->resolvedType;
-    context->ushortType = Scope_findLocal(parentScope, (const uint16_t *)__string_81_ushort, 0)->resolvedType;
+    context->boolType = Scope_findLocal(parentScope, (const uint16_t *)__string_76_bool, 0)->resolvedType;
+    context->byteType = Scope_findLocal(parentScope, (const uint16_t *)__string_77_byte, 0)->resolvedType;
+    context->intType = Scope_findLocal(parentScope, (const uint16_t *)__string_78_int, 0)->resolvedType;
+    context->sbyteType = Scope_findLocal(parentScope, (const uint16_t *)__string_79_sbyte, 0)->resolvedType;
+    context->shortType = Scope_findLocal(parentScope, (const uint16_t *)__string_80_short, 0)->resolvedType;
+    context->stringType = Scope_findLocal(parentScope, (const uint16_t *)__string_81_string, 0)->resolvedType;
+    context->uintType = Scope_findLocal(parentScope, (const uint16_t *)__string_82_uint, 0)->resolvedType;
+    context->ushortType = Scope_findLocal(parentScope, (const uint16_t *)__string_83_ushort, 0)->resolvedType;
     prepareNativeType(context->boolType, 1, 0);
     prepareNativeType(context->byteType, 1, 48);
     prepareNativeType(context->intType, 4, 32);
@@ -2571,22 +2615,22 @@ static void initializeSymbol(struct CheckContext *context, struct Symbol *symbol
   assert(symbol->state == 0);
   symbol->state = 1;
   struct Node *node = symbol->node;
-  forbidFlag(context, node, 2, (const uint16_t *)__string_82_Unsupported_flag_export);
-  forbidFlag(context, node, 128, (const uint16_t *)__string_83_Unsupported_flag_protected);
-  forbidFlag(context, node, 1024, (const uint16_t *)__string_84_Unsupported_flag_static);
+  forbidFlag(context, node, 2, (const uint16_t *)__string_84_Unsupported_flag_export);
+  forbidFlag(context, node, 128, (const uint16_t *)__string_85_Unsupported_flag_protected);
+  forbidFlag(context, node, 1024, (const uint16_t *)__string_86_Unsupported_flag_static);
 
   if (symbol->kind == 0 || symbol->kind == 3) {
-    forbidFlag(context, node, 8, (const uint16_t *)__string_85_Cannot_use_get_on_a_class);
-    forbidFlag(context, node, 512, (const uint16_t *)__string_86_Cannot_use_set_on_a_class);
-    forbidFlag(context, node, 256, (const uint16_t *)__string_87_Cannot_use_public_on_a_class);
-    forbidFlag(context, node, 64, (const uint16_t *)__string_88_Cannot_use_private_on_a_class);
+    forbidFlag(context, node, 8, (const uint16_t *)__string_87_Cannot_use_get_on_a_class);
+    forbidFlag(context, node, 512, (const uint16_t *)__string_88_Cannot_use_set_on_a_class);
+    forbidFlag(context, node, 256, (const uint16_t *)__string_89_Cannot_use_public_on_a_class);
+    forbidFlag(context, node, 64, (const uint16_t *)__string_90_Cannot_use_private_on_a_class);
   }
 
   else if (symbol->kind == 1) {
-    forbidFlag(context, node, 8, (const uint16_t *)__string_89_Cannot_use_get_on_an_enum);
-    forbidFlag(context, node, 512, (const uint16_t *)__string_90_Cannot_use_set_on_an_enum);
-    forbidFlag(context, node, 256, (const uint16_t *)__string_91_Cannot_use_public_on_an_enum);
-    forbidFlag(context, node, 64, (const uint16_t *)__string_92_Cannot_use_private_on_an_enum);
+    forbidFlag(context, node, 8, (const uint16_t *)__string_91_Cannot_use_get_on_an_enum);
+    forbidFlag(context, node, 512, (const uint16_t *)__string_92_Cannot_use_set_on_an_enum);
+    forbidFlag(context, node, 256, (const uint16_t *)__string_93_Cannot_use_public_on_an_enum);
+    forbidFlag(context, node, 64, (const uint16_t *)__string_94_Cannot_use_private_on_an_enum);
     symbol->resolvedType = calloc(1, sizeof(struct Type));
     symbol->resolvedType->symbol = symbol;
     struct Symbol *underlyingSymbol = Type_underlyingType(symbol->resolvedType, context)->symbol;
@@ -2617,49 +2661,49 @@ static void initializeSymbol(struct CheckContext *context, struct Symbol *symbol
     }
 
     if (symbol->kind != 4) {
-      forbidFlag(context, node, 8, (const uint16_t *)__string_93_Cannot_use_get_here);
-      forbidFlag(context, node, 512, (const uint16_t *)__string_94_Cannot_use_set_here);
-      forbidFlag(context, node, 256, (const uint16_t *)__string_95_Cannot_use_public_here);
-      forbidFlag(context, node, 64, (const uint16_t *)__string_96_Cannot_use_private_here);
+      forbidFlag(context, node, 8, (const uint16_t *)__string_95_Cannot_use_get_here);
+      forbidFlag(context, node, 512, (const uint16_t *)__string_96_Cannot_use_set_here);
+      forbidFlag(context, node, 256, (const uint16_t *)__string_97_Cannot_use_public_here);
+      forbidFlag(context, node, 64, (const uint16_t *)__string_98_Cannot_use_private_here);
     }
 
     else if (Node_isGet(node)) {
-      forbidFlag(context, node, 512, (const uint16_t *)__string_97_Cannot_use_both_get_and_set);
+      forbidFlag(context, node, 512, (const uint16_t *)__string_99_Cannot_use_both_get_and_set);
 
       if (argumentCount != 1) {
-        Log_error(context->log, symbol->range, (const uint16_t *)__string_98_Getters_must_not_have_any_argume);
+        Log_error(context->log, symbol->range, (const uint16_t *)__string_100_Getters_must_not_have_any_argume);
       }
     }
 
     else if (Node_isSet(node)) {
-      symbol->rename = StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_99_set_), symbol->name));
+      symbol->rename = StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_101_set_), symbol->name));
 
       if (argumentCount != 2) {
-        Log_error(context->log, symbol->range, (const uint16_t *)__string_100_Setters_must_have_exactly_one_ar);
+        Log_error(context->log, symbol->range, (const uint16_t *)__string_102_Setters_must_have_exactly_one_ar);
       }
     }
 
     else if (Node_isOperator(node)) {
-      if (string_op_equals(symbol->name, (const uint16_t *)__string_101) || string_op_equals(symbol->name, (const uint16_t *)__string_102) || string_op_equals(symbol->name, (const uint16_t *)__string_103)) {
+      if (string_op_equals(symbol->name, (const uint16_t *)__string_103) || string_op_equals(symbol->name, (const uint16_t *)__string_104) || string_op_equals(symbol->name, (const uint16_t *)__string_105)) {
         if (argumentCount != 1) {
-          Log_error(context->log, symbol->range, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_104_Operator), symbol->name), (const uint16_t *)__string_105_must_not_have_any_arguments)));
+          Log_error(context->log, symbol->range, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_106_Operator), symbol->name), (const uint16_t *)__string_107_must_not_have_any_arguments)));
         }
       }
 
-      else if (string_op_equals(symbol->name, (const uint16_t *)__string_106) || string_op_equals(symbol->name, (const uint16_t *)__string_107)) {
+      else if (string_op_equals(symbol->name, (const uint16_t *)__string_108) || string_op_equals(symbol->name, (const uint16_t *)__string_109)) {
         if (argumentCount > 2) {
-          Log_error(context->log, symbol->range, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_108_Operator), symbol->name), (const uint16_t *)__string_109_must_have_at_most_one_argument)));
+          Log_error(context->log, symbol->range, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_110_Operator), symbol->name), (const uint16_t *)__string_111_must_have_at_most_one_argument)));
         }
       }
 
-      else if (string_op_equals(symbol->name, (const uint16_t *)__string_110)) {
+      else if (string_op_equals(symbol->name, (const uint16_t *)__string_112)) {
         if (argumentCount < 2) {
-          Log_error(context->log, symbol->range, (const uint16_t *)__string_111_Operator_must_have_at_leas);
+          Log_error(context->log, symbol->range, (const uint16_t *)__string_113_Operator_must_have_at_leas);
         }
       }
 
       else if (argumentCount != 2) {
-        Log_error(context->log, symbol->range, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_112_Operator), symbol->name), (const uint16_t *)__string_113_must_have_exactly_one_argument)));
+        Log_error(context->log, symbol->range, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_114_Operator), symbol->name), (const uint16_t *)__string_115_must_have_exactly_one_argument)));
       }
     }
 
@@ -2669,8 +2713,8 @@ static void initializeSymbol(struct CheckContext *context, struct Symbol *symbol
     if (symbol->kind == 4) {
       struct Symbol *parent = Symbol_parent(symbol);
       uint8_t shouldConvertInstanceToGlobal = 0;
-      forbidFlag(context, node, 4, (const uint16_t *)__string_114_Cannot_use_extern_on_an_instan);
-      forbidFlag(context, node, 1, (const uint16_t *)__string_115_Cannot_use_declare_on_an_insta);
+      forbidFlag(context, node, 4, (const uint16_t *)__string_116_Cannot_use_extern_on_an_instan);
+      forbidFlag(context, node, 1, (const uint16_t *)__string_117_Cannot_use_declare_on_an_insta);
 
       if (Node_isDeclare(parent->node)) {
         if (body == NULL) {
@@ -2684,7 +2728,7 @@ static void initializeSymbol(struct CheckContext *context, struct Symbol *symbol
 
       else {
         if (body == NULL) {
-          Log_error(context->log, node->lastChild->range, (const uint16_t *)__string_116_Must_implement_this_function);
+          Log_error(context->log, node->lastChild->range, (const uint16_t *)__string_118_Must_implement_this_function);
         }
 
         if (Node_isExtern(parent->node)) {
@@ -2697,34 +2741,34 @@ static void initializeSymbol(struct CheckContext *context, struct Symbol *symbol
         symbol->flags = symbol->flags | 1;
         symbol->rename = StringBuilder_finish(StringBuilder_append(StringBuilder_appendChar(StringBuilder_append(StringBuilder_new(), parent->name), 95), !string_op_equals(symbol->rename, NULL) ? symbol->rename : symbol->name));
         struct Node *argument = Node_functionFirstArgument(node);
-        assert(string_op_equals(argument->symbol->name, (const uint16_t *)__string_117_this));
-        argument->symbol->rename = (const uint16_t *)__string_118___this;
+        assert(string_op_equals(argument->symbol->name, (const uint16_t *)__string_119_this));
+        argument->symbol->rename = (const uint16_t *)__string_120___this;
       }
     }
 
     else if (body == NULL) {
-      forbidFlag(context, node, 4, (const uint16_t *)__string_119_Cannot_use_extern_on_an_unimpl);
-      requireFlag(context, node, 1, (const uint16_t *)__string_120_Declared_functions_must_be_prefi);
+      forbidFlag(context, node, 4, (const uint16_t *)__string_121_Cannot_use_extern_on_an_unimpl);
+      requireFlag(context, node, 1, (const uint16_t *)__string_122_Declared_functions_must_be_prefi);
     }
 
     else {
-      forbidFlag(context, node, 1, (const uint16_t *)__string_121_Cannot_use_declare_on_a_functi);
+      forbidFlag(context, node, 1, (const uint16_t *)__string_123_Cannot_use_declare_on_a_functi);
     }
 
     context->isUnsafeAllowed = oldUnsafeAllowed;
   }
 
   else if (isVariable(symbol->kind)) {
-    forbidFlag(context, node, 8, (const uint16_t *)__string_122_Cannot_use_get_on_a_variable);
-    forbidFlag(context, node, 512, (const uint16_t *)__string_123_Cannot_use_set_on_a_variable);
+    forbidFlag(context, node, 8, (const uint16_t *)__string_124_Cannot_use_get_on_a_variable);
+    forbidFlag(context, node, 512, (const uint16_t *)__string_125_Cannot_use_set_on_a_variable);
     struct Node *type = Node_variableType(node);
     struct Node *value = Node_variableValue(node);
     uint8_t oldUnsafeAllowed = context->isUnsafeAllowed;
     context->isUnsafeAllowed = context->isUnsafeAllowed || Node_isUnsafe(node);
 
     if (symbol->kind != 9) {
-      forbidFlag(context, node, 256, (const uint16_t *)__string_124_Cannot_use_public_here);
-      forbidFlag(context, node, 64, (const uint16_t *)__string_125_Cannot_use_private_here);
+      forbidFlag(context, node, 256, (const uint16_t *)__string_126_Cannot_use_public_here);
+      forbidFlag(context, node, 64, (const uint16_t *)__string_127_Cannot_use_private_here);
     }
 
     if (type != NULL) {
@@ -2738,12 +2782,12 @@ static void initializeSymbol(struct CheckContext *context, struct Symbol *symbol
     }
 
     else {
-      Log_error(context->log, node->internalRange, (const uint16_t *)__string_126_Cannot_create_untyped_variables);
+      Log_error(context->log, node->internalRange, (const uint16_t *)__string_128_Cannot_create_untyped_variables);
       symbol->resolvedType = context->errorType;
     }
 
     if (symbol->resolvedType == context->voidType || symbol->resolvedType == context->nullType) {
-      Log_error(context->log, node->internalRange, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_127_Cannot_create_a_variable_with_ty), Type_toString(symbol->resolvedType)), 39)));
+      Log_error(context->log, node->internalRange, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_129_Cannot_create_a_variable_with_ty), Type_toString(symbol->resolvedType)), 39)));
       symbol->resolvedType = context->errorType;
     }
 
@@ -2752,12 +2796,12 @@ static void initializeSymbol(struct CheckContext *context, struct Symbol *symbol
         resolveAsExpression(context, value, symbol->scope);
         checkConversion(context, value, Symbol_resolvedTypeUnderlyingIfEnumValue(symbol, context), 0);
 
-        if (value->kind == 28 || value->kind == 22) {
+        if (value->kind == 30 || value->kind == 24) {
           symbol->offset = value->intValue;
         }
 
         else if (value->resolvedType != context->errorType) {
-          Log_error(context->log, value->range, (const uint16_t *)__string_128_Invalid_constant_initializer);
+          Log_error(context->log, value->range, (const uint16_t *)__string_130_Invalid_constant_initializer);
           symbol->resolvedType = context->errorType;
         }
       }
@@ -2775,7 +2819,7 @@ static void initializeSymbol(struct CheckContext *context, struct Symbol *symbol
       }
 
       else {
-        Log_error(context->log, node->internalRange, (const uint16_t *)__string_129_Constants_must_be_initialized);
+        Log_error(context->log, node->internalRange, (const uint16_t *)__string_131_Constants_must_be_initialized);
       }
     }
 
@@ -2786,7 +2830,7 @@ static void initializeSymbol(struct CheckContext *context, struct Symbol *symbol
         struct Symbol *shadowed = Scope_findLocal(scope, symbol->name, 0);
 
         if (shadowed != NULL) {
-          Log_error(context->log, node->internalRange, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_130_The_symbol), symbol->name), (const uint16_t *)__string_131_shadows_another_symbol_with_th)));
+          Log_error(context->log, node->internalRange, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_132_The_symbol), symbol->name), (const uint16_t *)__string_133_shadows_another_symbol_with_th)));
 
           break;
         }
@@ -2836,12 +2880,12 @@ static void resolveAsExpression(struct CheckContext *context, struct Node *node,
 
   if (node->resolvedType != context->errorType) {
     if (Node_isType(node)) {
-      Log_error(context->log, node->range, (const uint16_t *)__string_132_Expected_expression_but_found_ty);
+      Log_error(context->log, node->range, (const uint16_t *)__string_134_Expected_expression_but_found_ty);
       node->resolvedType = context->errorType;
     }
 
-    else if (node->resolvedType == context->voidType && node->parent->kind != 14) {
-      Log_error(context->log, node->range, (const uint16_t *)__string_133_This_expression_does_not_return);
+    else if (node->resolvedType == context->voidType && node->parent->kind != 16) {
+      Log_error(context->log, node->range, (const uint16_t *)__string_135_This_expression_does_not_return);
       node->resolvedType = context->errorType;
     }
   }
@@ -2853,7 +2897,7 @@ static void resolveAsType(struct CheckContext *context, struct Node *node, struc
   assert(node->resolvedType != NULL);
 
   if (node->resolvedType != context->errorType && !Node_isType(node)) {
-    Log_error(context->log, node->range, (const uint16_t *)__string_134_Expected_type_but_found_expressi);
+    Log_error(context->log, node->range, (const uint16_t *)__string_136_Expected_type_but_found_expressi);
     node->resolvedType = context->errorType;
   }
 }
@@ -2885,7 +2929,7 @@ static uint8_t canConvert(struct CheckContext *context, struct Node *node, struc
       return 1;
     }
 
-    if (kind == 1 || from->symbol->byteSize < to->symbol->byteSize || (node->kind == 28 && (Type_isUnsigned(to) ? node->intValue >= 0 && (uint32_t)node->intValue <= mask : node->intValue >= (int32_t)~mask >> 1 && node->intValue <= (int32_t)(mask >> 1)))) {
+    if (kind == 1 || from->symbol->byteSize < to->symbol->byteSize || (node->kind == 30 && (Type_isUnsigned(to) ? node->intValue >= 0 && (uint32_t)node->intValue <= mask : node->intValue >= (int32_t)~mask >> 1 && node->intValue <= (int32_t)(mask >> 1)))) {
       return 1;
     }
   }
@@ -2895,7 +2939,7 @@ static uint8_t canConvert(struct CheckContext *context, struct Node *node, struc
 
 static void checkConversion(struct CheckContext *context, struct Node *node, struct Type *to, int32_t kind) {
   if (!canConvert(context, node, to, kind)) {
-    Log_error(context->log, node->range, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_135_Cannot_convert_from_type), Type_toString(node->resolvedType)), (const uint16_t *)__string_136_to_type), Type_toString(to)), kind == 0 && canConvert(context, node, to, 1) ? (const uint16_t *)__string_137_without_a_cast : (const uint16_t *)__string_138)));
+    Log_error(context->log, node->range, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_137_Cannot_convert_from_type), Type_toString(node->resolvedType)), (const uint16_t *)__string_138_to_type), Type_toString(to)), kind == 0 && canConvert(context, node, to, 1) ? (const uint16_t *)__string_139_without_a_cast : (const uint16_t *)__string_140)));
     node->resolvedType = context->errorType;
   }
 }
@@ -2903,8 +2947,8 @@ static void checkConversion(struct CheckContext *context, struct Node *node, str
 static void checkStorage(struct CheckContext *context, struct Node *target) {
   assert(isExpression(target));
 
-  if (target->resolvedType != context->errorType && target->kind != 27 && target->kind != 39 && ((target->kind != 29 && target->kind != 25) || (target->symbol != NULL && (!isVariable(target->symbol->kind) || target->symbol->kind == 7)))) {
-    Log_error(context->log, target->range, (const uint16_t *)__string_139_Cannot_store_to_this_location);
+  if (target->resolvedType != context->errorType && target->kind != 29 && target->kind != 41 && ((target->kind != 31 && target->kind != 27) || (target->symbol != NULL && (!isVariable(target->symbol->kind) || target->symbol->kind == 7)))) {
+    Log_error(context->log, target->range, (const uint16_t *)__string_141_Cannot_store_to_this_location);
     target->resolvedType = context->errorType;
   }
 }
@@ -2927,13 +2971,13 @@ static void simplifyBinary(struct Node *node) {
   struct Node *left = Node_binaryLeft(node);
   struct Node *right = Node_binaryRight(node);
 
-  if ((node->kind == 48 || node->kind == 62 || node->kind == 50 || node->kind == 51 || node->kind == 52) && left->kind == 28 && right->kind != 28) {
+  if ((node->kind == 50 || node->kind == 64 || node->kind == 52 || node->kind == 53 || node->kind == 54) && left->kind == 30 && right->kind != 30) {
     Node_appendChild(node, Node_remove(left));
     left = Node_binaryLeft(node);
     right = Node_binaryRight(node);
   }
 
-  if ((node->kind == 62 || ((node->kind == 53 || node->kind == 64) && Type_isUnsigned(node->resolvedType))) && right->kind == 28 && isPositivePowerOf2(right->intValue)) {
+  if ((node->kind == 64 || ((node->kind == 55 || node->kind == 66) && Type_isUnsigned(node->resolvedType))) && right->kind == 30 && isPositivePowerOf2(right->intValue)) {
     int32_t shift = -1;
     int32_t value = right->intValue;
 
@@ -2942,18 +2986,18 @@ static void simplifyBinary(struct Node *node) {
       shift = shift + 1;
     }
 
-    if (node->kind == 62) {
-      node->kind = 65;
+    if (node->kind == 64) {
+      node->kind = 67;
       right->intValue = shift;
     }
 
-    else if (node->kind == 53) {
-      node->kind = 66;
+    else if (node->kind == 55) {
+      node->kind = 68;
       right->intValue = shift;
     }
 
-    else if (node->kind == 64) {
-      node->kind = 50;
+    else if (node->kind == 66) {
+      node->kind = 52;
       right->intValue = right->intValue - 1;
     }
 
@@ -2962,13 +3006,13 @@ static void simplifyBinary(struct Node *node) {
     }
   }
 
-  else if (node->kind == 48 && right->kind == 40) {
-    node->kind = 67;
+  else if (node->kind == 50 && right->kind == 42) {
+    node->kind = 69;
     Node_replaceWith(right, Node_remove(Node_unaryValue(right)));
   }
 
-  else if (node->kind == 48 && Node_isNegativeInteger(right)) {
-    node->kind = 67;
+  else if (node->kind == 50 && Node_isNegativeInteger(right)) {
+    node->kind = 69;
     right->intValue = -right->intValue;
   }
 }
@@ -2984,7 +3028,7 @@ static uint8_t binaryHasUnsignedArguments(struct Node *node) {
 
 static uint8_t isSymbolAccessAllowed(struct CheckContext *context, struct Symbol *symbol, struct Node *node, struct Range *range) {
   if (Symbol_isUnsafe(symbol) && !context->isUnsafeAllowed) {
-    Log_error(context->log, range, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_140_Cannot_use_symbol), symbol->name), (const uint16_t *)__string_141_outside_an_unsafe_block)));
+    Log_error(context->log, range, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_142_Cannot_use_symbol), symbol->name), (const uint16_t *)__string_143_outside_an_unsafe_block)));
 
     return 0;
   }
@@ -2993,7 +3037,7 @@ static uint8_t isSymbolAccessAllowed(struct CheckContext *context, struct Symbol
     struct Symbol *parent = Symbol_parent(symbol);
 
     if (parent != NULL && context->enclosingClass != parent) {
-      Log_error(context->log, range, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_142_Cannot_access_private_symbol), symbol->name), (const uint16_t *)__string_143_here)));
+      Log_error(context->log, range, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_144_Cannot_access_private_symbol), symbol->name), (const uint16_t *)__string_145_here)));
 
       return 0;
     }
@@ -3001,11 +3045,11 @@ static uint8_t isSymbolAccessAllowed(struct CheckContext *context, struct Symbol
 
   if (isFunction(symbol->kind) && (Symbol_isSetter(symbol) ? !Node_isAssignTarget(node) : !Node_isCallValue(node))) {
     if (Symbol_isSetter(symbol)) {
-      Log_error(context->log, range, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_144_Cannot_use_setter), symbol->name), (const uint16_t *)__string_145_here)));
+      Log_error(context->log, range, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_146_Cannot_use_setter), symbol->name), (const uint16_t *)__string_147_here)));
     }
 
     else {
-      Log_error(context->log, range, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_146_Must_call_function), symbol->name), 39)));
+      Log_error(context->log, range, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_148_Must_call_function), symbol->name), 39)));
     }
 
     return 0;
@@ -3028,7 +3072,7 @@ static void resolve(struct CheckContext *context, struct Node *node, struct Scop
     resolveChildren(context, node, parentScope);
   }
 
-  else if (kind == 9) {
+  else if (kind == 11) {
     struct Symbol *oldEnclosingClass = context->enclosingClass;
     initializeSymbol(context, node->symbol);
     context->enclosingClass = node->symbol;
@@ -3041,12 +3085,12 @@ static void resolve(struct CheckContext *context, struct Node *node, struct Scop
     context->enclosingClass = oldEnclosingClass;
   }
 
-  else if (kind == 13) {
+  else if (kind == 15) {
     initializeSymbol(context, node->symbol);
     resolveChildren(context, node, node->scope);
   }
 
-  else if (kind == 15) {
+  else if (kind == 17) {
     struct Node *body = Node_functionBody(node);
     initializeSymbol(context, node->symbol);
 
@@ -3072,8 +3116,8 @@ static void resolve(struct CheckContext *context, struct Node *node, struct Scop
       resolveAsExpression(context, value, parentScope);
       checkConversion(context, value, Symbol_resolvedTypeUnderlyingIfEnumValue(symbol, context), 0);
 
-      if (symbol->kind == 8 && value->kind != 28 && value->kind != 22 && value->kind != 31) {
-        Log_error(context->log, value->range, (const uint16_t *)__string_147_Global_initializers_must_be_comp);
+      if (symbol->kind == 8 && value->kind != 30 && value->kind != 24 && value->kind != 33) {
+        Log_error(context->log, value->range, (const uint16_t *)__string_149_Global_initializers_must_be_comp);
       }
     }
 
@@ -3090,12 +3134,12 @@ static void resolve(struct CheckContext *context, struct Node *node, struct Scop
     context->isUnsafeAllowed = oldUnsafeAllowed;
   }
 
-  else if (kind == 8 || kind == 11) {
+  else if (kind == 10 || kind == 13) {
     uint8_t found = 0;
     struct Node *n = node;
 
     while (n != NULL) {
-      if (n->kind == 20) {
+      if (n->kind == 22) {
         found = 1;
 
         break;
@@ -3105,11 +3149,11 @@ static void resolve(struct CheckContext *context, struct Node *node, struct Scop
     }
 
     if (!found) {
-      Log_error(context->log, node->range, (const uint16_t *)__string_148_Cannot_use_this_statement_outsid);
+      Log_error(context->log, node->range, (const uint16_t *)__string_150_Cannot_use_this_statement_outsid);
     }
   }
 
-  else if (kind == 7) {
+  else if (kind == 9) {
     uint8_t oldUnsafeAllowed = context->isUnsafeAllowed;
 
     if (Node_isUnsafe(node)) {
@@ -3120,41 +3164,41 @@ static void resolve(struct CheckContext *context, struct Node *node, struct Scop
     context->isUnsafeAllowed = oldUnsafeAllowed;
   }
 
-  else if (kind == 10 || kind == 19) {
+  else if (kind == 12 || kind == 21) {
     resolveChildren(context, node, parentScope);
   }
 
-  else if (kind == 28) {
+  else if (kind == 30) {
     node->resolvedType = node->intValue < 0 && !Node_isPositive(node) ? context->uintType : context->intType;
   }
 
-  else if (kind == 34) {
+  else if (kind == 36) {
     node->resolvedType = context->stringType;
   }
 
-  else if (kind == 22) {
+  else if (kind == 24) {
     node->resolvedType = context->boolType;
   }
 
-  else if (kind == 31) {
+  else if (kind == 33) {
     node->resolvedType = context->nullType;
   }
 
-  else if (kind == 27) {
+  else if (kind == 29) {
     resolveChildrenAsExpressions(context, node, parentScope);
     struct Node *target = Node_indexTarget(node);
     struct Type *type = target->resolvedType;
 
     if (type != context->errorType) {
-      struct Symbol *symbol = Type_hasInstanceMembers(type) ? Type_findMember(type, (const uint16_t *)__string_149, 0) : NULL;
+      struct Symbol *symbol = Type_hasInstanceMembers(type) ? Type_findMember(type, (const uint16_t *)__string_151, 0) : NULL;
 
       if (symbol == NULL) {
-        Log_error(context->log, node->internalRange, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_150_Cannot_index_into_type), Type_toString(target->resolvedType)), 39)));
+        Log_error(context->log, node->internalRange, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_152_Cannot_index_into_type), Type_toString(target->resolvedType)), 39)));
       }
 
       else {
         assert(symbol->kind == 4 || (symbol->kind == 5 && Symbol_shouldConvertInstanceToGlobal(symbol)));
-        node->kind = 23;
+        node->kind = 25;
         Node_remove(target);
         Node_insertChildBefore(node, node->firstChild, createMemberReference(target, symbol));
         node->resolvedType = NULL;
@@ -3163,7 +3207,7 @@ static void resolve(struct CheckContext *context, struct Node *node, struct Scop
     }
   }
 
-  else if (kind == 21) {
+  else if (kind == 23) {
     struct Node *alignOfType = Node_alignOfType(node);
     resolveAsType(context, alignOfType, parentScope);
     node->resolvedType = context->intType;
@@ -3173,7 +3217,7 @@ static void resolve(struct CheckContext *context, struct Node *node, struct Scop
     }
   }
 
-  else if (kind == 33) {
+  else if (kind == 35) {
     struct Node *sizeOfType = Node_sizeOfType(node);
     resolveAsType(context, sizeOfType, parentScope);
     node->resolvedType = context->intType;
@@ -3183,11 +3227,11 @@ static void resolve(struct CheckContext *context, struct Node *node, struct Scop
     }
   }
 
-  else if (kind == 35) {
-    struct Symbol *symbol = Scope_findNested(parentScope, (const uint16_t *)__string_151_this, 0, 0);
+  else if (kind == 37) {
+    struct Symbol *symbol = Scope_findNested(parentScope, (const uint16_t *)__string_153_this, 0, 0);
 
     if (symbol == NULL) {
-      Log_error(context->log, node->range, (const uint16_t *)__string_152_Cannot_use_this_here);
+      Log_error(context->log, node->range, (const uint16_t *)__string_154_Cannot_use_this_here);
     }
 
     else {
@@ -3195,35 +3239,35 @@ static void resolve(struct CheckContext *context, struct Node *node, struct Scop
     }
   }
 
-  else if (kind == 32) {
+  else if (kind == 34) {
     node->resolvedType = context->errorType;
   }
 
-  else if (kind == 29) {
+  else if (kind == 31) {
     const uint16_t *name = node->stringValue;
     struct Symbol *symbol = Scope_findNested(parentScope, name, 0, 0);
 
     if (symbol == NULL) {
-      struct StringBuilder *builder = StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_153_No_symbol_named), name), (const uint16_t *)__string_154_here);
+      struct StringBuilder *builder = StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_155_No_symbol_named), name), (const uint16_t *)__string_156_here);
       symbol = Scope_findNested(parentScope, name, 0, 1);
 
       if (symbol != NULL) {
-        StringBuilder_append(StringBuilder_append(StringBuilder_append(builder, (const uint16_t *)__string_155_did_you_mean_this), symbol->name), (const uint16_t *)__string_156);
+        StringBuilder_append(StringBuilder_append(StringBuilder_append(builder, (const uint16_t *)__string_157_did_you_mean_this), symbol->name), (const uint16_t *)__string_158);
       }
 
-      else if (string_op_equals(name, (const uint16_t *)__string_157_number)) {
-        StringBuilder_append(builder, (const uint16_t *)__string_158_did_you_mean_int);
+      else if (string_op_equals(name, (const uint16_t *)__string_159_number)) {
+        StringBuilder_append(builder, (const uint16_t *)__string_160_did_you_mean_int);
       }
 
-      else if (string_op_equals(name, (const uint16_t *)__string_159_boolean)) {
-        StringBuilder_append(builder, (const uint16_t *)__string_160_did_you_mean_bool);
+      else if (string_op_equals(name, (const uint16_t *)__string_161_boolean)) {
+        StringBuilder_append(builder, (const uint16_t *)__string_162_did_you_mean_bool);
       }
 
       Log_error(context->log, node->range, StringBuilder_finish(builder));
     }
 
     else if (symbol->state == 1) {
-      Log_error(context->log, node->range, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_161_Cyclic_reference_to_symbol), name), (const uint16_t *)__string_162_here)));
+      Log_error(context->log, node->range, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_163_Cyclic_reference_to_symbol), name), (const uint16_t *)__string_164_here)));
     }
 
     else if (isSymbolAccessAllowed(context, symbol, node, node->range)) {
@@ -3243,7 +3287,7 @@ static void resolve(struct CheckContext *context, struct Node *node, struct Scop
     }
   }
 
-  else if (kind == 24) {
+  else if (kind == 26) {
     struct Node *castValue = Node_castValue(node);
     struct Node *castType = Node_castType(node);
     resolveAsExpression(context, castValue, parentScope);
@@ -3252,14 +3296,14 @@ static void resolve(struct CheckContext *context, struct Node *node, struct Scop
     checkConversion(context, castValue, castedType, 1);
     node->resolvedType = castedType;
 
-    if (castValue->kind == 28 && Type_isInteger(castedType)) {
+    if (castValue->kind == 30 && Type_isInteger(castedType)) {
       int32_t result = castValue->intValue;
       int32_t shift = 32 - Type_integerBitCount(castedType, context);
       Node_becomeIntegerConstant(node, Type_isUnsigned(castedType) ? (int32_t)Type_integerBitMask(castedType, context) & result : result << shift >> shift);
     }
   }
 
-  else if (kind == 25) {
+  else if (kind == 27) {
     struct Node *target = Node_dotTarget(node);
     resolve(context, target, parentScope);
 
@@ -3271,11 +3315,11 @@ static void resolve(struct CheckContext *context, struct Node *node, struct Scop
           struct Symbol *symbol = Type_findMember(target->resolvedType, name, Node_isAssignTarget(node) ? 6 : 5);
 
           if (symbol == NULL) {
-            Log_error(context->log, node->internalRange, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_163_No_member_named), name), (const uint16_t *)__string_164_on_type), Type_toString(target->resolvedType)), 39)));
+            Log_error(context->log, node->internalRange, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_165_No_member_named), name), (const uint16_t *)__string_166_on_type), Type_toString(target->resolvedType)), 39)));
           }
 
           else if (Symbol_isGetter(symbol)) {
-            node->kind = 23;
+            node->kind = 25;
             Node_appendChild(node, createMemberReference(Node_remove(target), symbol));
             node->resolvedType = NULL;
             resolveAsExpression(context, node, parentScope);
@@ -3296,12 +3340,12 @@ static void resolve(struct CheckContext *context, struct Node *node, struct Scop
       }
 
       else {
-        Log_error(context->log, node->internalRange, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_165_The_type), Type_toString(target->resolvedType)), (const uint16_t *)__string_166_has_no_members)));
+        Log_error(context->log, node->internalRange, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_167_The_type), Type_toString(target->resolvedType)), (const uint16_t *)__string_168_has_no_members)));
       }
     }
   }
 
-  else if (kind == 23) {
+  else if (kind == 25) {
     struct Node *value = Node_callValue(node);
     resolveAsExpression(context, value, parentScope);
 
@@ -3309,7 +3353,7 @@ static void resolve(struct CheckContext *context, struct Node *node, struct Scop
       struct Symbol *symbol = value->symbol;
 
       if (symbol == NULL || !isFunction(symbol->kind)) {
-        Log_error(context->log, value->range, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_167_Cannot_call_value_of_type), Type_toString(value->resolvedType)), 39)));
+        Log_error(context->log, value->range, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_169_Cannot_call_value_of_type), Type_toString(value->resolvedType)), 39)));
       }
 
       else {
@@ -3335,7 +3379,7 @@ static void resolve(struct CheckContext *context, struct Node *node, struct Scop
         }
 
         if (argumentVariable != returnType) {
-          Log_error(context->log, node->internalRange, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_168_Not_enough_arguments_for_functio), symbol->name), 39)));
+          Log_error(context->log, node->internalRange, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_170_Not_enough_arguments_for_functio), symbol->name), 39)));
         }
 
         else if (argumentValue != NULL) {
@@ -3344,7 +3388,7 @@ static void resolve(struct CheckContext *context, struct Node *node, struct Scop
             argumentValue = argumentValue->nextSibling;
           }
 
-          Log_error(context->log, node->internalRange, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_169_Too_many_arguments_for_function), symbol->name), 39)));
+          Log_error(context->log, node->internalRange, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_171_Too_many_arguments_for_function), symbol->name), 39)));
         }
 
         node->resolvedType = returnType->resolvedType;
@@ -3352,7 +3396,7 @@ static void resolve(struct CheckContext *context, struct Node *node, struct Scop
     }
   }
 
-  else if (kind == 17) {
+  else if (kind == 19) {
     struct Node *value = Node_returnValue(node);
 
     if (value != NULL) {
@@ -3364,26 +3408,26 @@ static void resolve(struct CheckContext *context, struct Node *node, struct Scop
         }
 
         else {
-          Log_error(context->log, value->range, (const uint16_t *)__string_170_Unexpected_return_value_in_funct);
+          Log_error(context->log, value->range, (const uint16_t *)__string_172_Unexpected_return_value_in_funct);
         }
       }
     }
 
     else if (context->currentReturnType != NULL && context->currentReturnType != context->voidType) {
-      Log_error(context->log, node->range, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_171_Expected_return_value_in_functio), Type_toString(context->currentReturnType)), 39)));
+      Log_error(context->log, node->range, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_173_Expected_return_value_in_functio), Type_toString(context->currentReturnType)), 39)));
     }
   }
 
-  else if (kind == 12) {
+  else if (kind == 14) {
   }
 
   else if (kind == 5) {
-    Log_error(context->log, node->range, (const uint16_t *)__string_172_Generics_are_not_implemented_yet);
+    Log_error(context->log, node->range, (const uint16_t *)__string_174_Generics_are_not_implemented_yet);
   }
 
   else if (kind == 0) {
     resolveAsType(context, Node_extendsType(node), parentScope);
-    Log_error(context->log, node->range, (const uint16_t *)__string_173_Subclassing_is_not_implemented_y);
+    Log_error(context->log, node->range, (const uint16_t *)__string_175_Subclassing_is_not_implemented_y);
   }
 
   else if (kind == 3) {
@@ -3394,14 +3438,14 @@ static void resolve(struct CheckContext *context, struct Node *node, struct Scop
       child = child->nextSibling;
     }
 
-    Log_error(context->log, node->range, (const uint16_t *)__string_174_Interfaces_are_not_implemented_y);
+    Log_error(context->log, node->range, (const uint16_t *)__string_176_Interfaces_are_not_implemented_y);
   }
 
-  else if (kind == 14) {
+  else if (kind == 16) {
     resolveAsExpression(context, Node_expressionValue(node), parentScope);
   }
 
-  else if (kind == 20) {
+  else if (kind == 22) {
     struct Node *value = Node_whileValue(node);
     struct Node *body = Node_whileBody(node);
     resolveAsExpression(context, value, parentScope);
@@ -3409,7 +3453,7 @@ static void resolve(struct CheckContext *context, struct Node *node, struct Scop
     resolve(context, body, parentScope);
   }
 
-  else if (kind == 16) {
+  else if (kind == 18) {
     struct Node *value = Node_ifValue(node);
     struct Node *yes = Node_ifTrue(node);
     struct Node *no = Node_ifFalse(node);
@@ -3422,7 +3466,7 @@ static void resolve(struct CheckContext *context, struct Node *node, struct Scop
     }
   }
 
-  else if (kind == 26) {
+  else if (kind == 28) {
     struct Node *value = Node_hookValue(node);
     struct Node *yes = Node_hookTrue(node);
     struct Node *no = Node_hookFalse(node);
@@ -3433,31 +3477,31 @@ static void resolve(struct CheckContext *context, struct Node *node, struct Scop
     struct Type *commonType = (yes->resolvedType == context->nullType ? no : yes)->resolvedType;
 
     if (yes->resolvedType != commonType && (yes->resolvedType != context->nullType || !Type_isReference(commonType)) && no->resolvedType != commonType && (no->resolvedType != context->nullType || !Type_isReference(commonType))) {
-      Log_error(context->log, spanRanges(yes->range, no->range), StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_175_Type), Type_toString(yes->resolvedType)), (const uint16_t *)__string_176_is_not_the_same_as_type), Type_toString(no->resolvedType)), 39)));
+      Log_error(context->log, spanRanges(yes->range, no->range), StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_177_Type), Type_toString(yes->resolvedType)), (const uint16_t *)__string_178_is_not_the_same_as_type), Type_toString(no->resolvedType)), 39)));
     }
 
     node->resolvedType = commonType;
   }
 
-  else if (kind == 49) {
+  else if (kind == 51) {
     struct Node *left = Node_binaryLeft(node);
     struct Node *right = Node_binaryRight(node);
 
-    if (left->kind == 27) {
+    if (left->kind == 29) {
       resolveChildrenAsExpressions(context, left, parentScope);
       struct Node *target = Node_indexTarget(left);
       struct Type *type = target->resolvedType;
 
       if (type != context->errorType) {
-        struct Symbol *symbol = Type_hasInstanceMembers(type) ? Type_findMember(type, (const uint16_t *)__string_177, 0) : NULL;
+        struct Symbol *symbol = Type_hasInstanceMembers(type) ? Type_findMember(type, (const uint16_t *)__string_179, 0) : NULL;
 
         if (symbol == NULL) {
-          Log_error(context->log, left->internalRange, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_178_Cannot_index_into_type), Type_toString(target->resolvedType)), 39)));
+          Log_error(context->log, left->internalRange, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_180_Cannot_index_into_type), Type_toString(target->resolvedType)), 39)));
         }
 
         else {
           assert(symbol->kind == 4);
-          node->kind = 23;
+          node->kind = 25;
           Node_remove(target);
           Node_remove(left);
 
@@ -3478,7 +3522,7 @@ static void resolve(struct CheckContext *context, struct Node *node, struct Scop
     resolveAsExpression(context, left, parentScope);
 
     if (left->symbol != NULL && Symbol_isSetter(left->symbol)) {
-      node->kind = 23;
+      node->kind = 25;
       node->internalRange = left->internalRange;
       node->resolvedType = NULL;
       resolveAsExpression(context, node, parentScope);
@@ -3492,13 +3536,13 @@ static void resolve(struct CheckContext *context, struct Node *node, struct Scop
     node->resolvedType = left->resolvedType;
   }
 
-  else if (kind == 30) {
+  else if (kind == 32) {
     struct Node *newType = Node_newType(node);
     resolveAsType(context, newType, parentScope);
 
     if (newType->resolvedType != context->errorType) {
       if (!Type_isClass(newType->resolvedType)) {
-        Log_error(context->log, newType->range, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_179_Cannot_construct_type), Type_toString(newType->resolvedType)), 39)));
+        Log_error(context->log, newType->range, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_181_Cannot_construct_type), Type_toString(newType->resolvedType)), 39)));
       }
 
       else {
@@ -3507,20 +3551,20 @@ static void resolve(struct CheckContext *context, struct Node *node, struct Scop
     }
 
     if (newType->nextSibling != NULL) {
-      Log_error(context->log, node->internalRange, (const uint16_t *)__string_180_Constructors_with_arguments_are);
+      Log_error(context->log, node->internalRange, (const uint16_t *)__string_182_Constructors_with_arguments_are);
     }
   }
 
-  else if (kind == 42) {
+  else if (kind == 44) {
     struct Node *value = Node_unaryValue(node);
     resolveAsType(context, value, parentScope);
 
     if (context->target == 2) {
-      Log_error(context->log, node->internalRange, (const uint16_t *)__string_181_Cannot_use_pointers_when_compili);
+      Log_error(context->log, node->internalRange, (const uint16_t *)__string_183_Cannot_use_pointers_when_compili);
     }
 
     else if (!context->isUnsafeAllowed) {
-      Log_error(context->log, node->internalRange, (const uint16_t *)__string_182_Cannot_use_pointers_outside_an);
+      Log_error(context->log, node->internalRange, (const uint16_t *)__string_184_Cannot_use_pointers_outside_an);
     }
 
     else {
@@ -3528,7 +3572,7 @@ static void resolve(struct CheckContext *context, struct Node *node, struct Scop
 
       if (type != context->errorType) {
         if (!Type_isInteger(type) && type->pointerTo == NULL) {
-          Log_error(context->log, node->internalRange, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_183_Cannot_create_a_pointer_to_non_i), Type_toString(type)), 39)));
+          Log_error(context->log, node->internalRange, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_185_Cannot_create_a_pointer_to_non_i), Type_toString(type)), 39)));
         }
 
         else {
@@ -3538,14 +3582,14 @@ static void resolve(struct CheckContext *context, struct Node *node, struct Scop
     }
   }
 
-  else if (kind == 39) {
+  else if (kind == 41) {
     struct Node *value = Node_unaryValue(node);
     resolveAsExpression(context, value, parentScope);
     struct Type *type = value->resolvedType;
 
     if (type != context->errorType) {
       if (type->pointerTo == NULL) {
-        Log_error(context->log, node->internalRange, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_184_Cannot_dereference_type), Type_toString(type)), 39)));
+        Log_error(context->log, node->internalRange, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_186_Cannot_dereference_type), Type_toString(type)), 39)));
       }
 
       else {
@@ -3554,17 +3598,17 @@ static void resolve(struct CheckContext *context, struct Node *node, struct Scop
     }
   }
 
-  else if (kind == 37) {
+  else if (kind == 39) {
     struct Node *value = Node_unaryValue(node);
     resolveAsExpression(context, value, parentScope);
-    Log_error(context->log, node->internalRange, (const uint16_t *)__string_185_The_address_of_operator_is_not_s);
+    Log_error(context->log, node->internalRange, (const uint16_t *)__string_187_The_address_of_operator_is_not_s);
   }
 
   else if (isUnary(kind)) {
     struct Node *value = Node_unaryValue(node);
     resolveAsExpression(context, value, parentScope);
 
-    if (kind == 41) {
+    if (kind == 43) {
       checkConversion(context, value, context->boolType, 0);
       node->resolvedType = context->boolType;
     }
@@ -3579,15 +3623,15 @@ static void resolve(struct CheckContext *context, struct Node *node, struct Scop
         node->resolvedType = context->intType;
       }
 
-      if (value->kind == 28) {
+      if (value->kind == 30) {
         int32_t input = value->intValue;
         int32_t output = input;
 
-        if (kind == 38) {
+        if (kind == 40) {
           output = ~input;
         }
 
-        else if (kind == 40) {
+        else if (kind == 42) {
           output = -input;
         }
 
@@ -3601,13 +3645,13 @@ static void resolve(struct CheckContext *context, struct Node *node, struct Scop
 
       if (symbol != NULL) {
         Node_appendChild(node, Node_withInternalRange(Node_withRange(createMemberReference(Node_remove(value), symbol), node->range), node->internalRange));
-        node->kind = 23;
+        node->kind = 25;
         node->resolvedType = NULL;
         resolveAsExpression(context, node, parentScope);
       }
 
       else {
-        Log_error(context->log, node->internalRange, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_186_Cannot_use_unary_operator), name), (const uint16_t *)__string_187_with_type), Type_toString(value->resolvedType)), 39)));
+        Log_error(context->log, node->internalRange, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_188_Cannot_use_unary_operator), name), (const uint16_t *)__string_189_with_type), Type_toString(value->resolvedType)), 39)));
       }
     }
   }
@@ -3620,26 +3664,26 @@ static void resolve(struct CheckContext *context, struct Node *node, struct Scop
     struct Type *leftType = left->resolvedType;
     struct Type *rightType = right->resolvedType;
 
-    if (kind == 61 || kind == 60) {
+    if (kind == 63 || kind == 62) {
       checkConversion(context, left, context->boolType, 0);
       checkConversion(context, right, context->boolType, 0);
       node->resolvedType = context->boolType;
     }
 
-    else if (kind == 48 && leftType->pointerTo != NULL && Type_isInteger(rightType)) {
+    else if (kind == 50 && leftType->pointerTo != NULL && Type_isInteger(rightType)) {
       node->resolvedType = leftType;
     }
 
-    else if ((kind == 58 || kind == 59 || kind == 56 || kind == 57) && (leftType->pointerTo != NULL || rightType->pointerTo != NULL)) {
+    else if ((kind == 60 || kind == 61 || kind == 58 || kind == 59) && (leftType->pointerTo != NULL || rightType->pointerTo != NULL)) {
       node->resolvedType = context->boolType;
 
       if (leftType != rightType) {
-        Log_error(context->log, node->internalRange, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_188_Cannot_compare_type), Type_toString(leftType)), (const uint16_t *)__string_189_with_type), Type_toString(rightType)), 39)));
+        Log_error(context->log, node->internalRange, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_190_Cannot_compare_type), Type_toString(leftType)), (const uint16_t *)__string_191_with_type), Type_toString(rightType)), 39)));
       }
     }
 
-    else if (Type_isInteger(leftType) && kind != 54 && kind != 63) {
-      if (kind == 48 || kind == 67 || kind == 62 || kind == 53 || kind == 64 || kind == 50 || kind == 51 || kind == 52 || kind == 65 || kind == 66) {
+    else if (Type_isInteger(leftType) && kind != 56 && kind != 65) {
+      if (kind == 50 || kind == 69 || kind == 64 || kind == 55 || kind == 66 || kind == 52 || kind == 53 || kind == 54 || kind == 67 || kind == 68) {
         uint8_t isUnsigned = binaryHasUnsignedArguments(node);
         struct Type *commonType = isUnsigned ? context->uintType : context->intType;
 
@@ -3651,48 +3695,48 @@ static void resolve(struct CheckContext *context, struct Node *node, struct Scop
         checkConversion(context, right, commonType, 0);
         node->resolvedType = commonType;
 
-        if (left->kind == 28 && right->kind == 28) {
+        if (left->kind == 30 && right->kind == 30) {
           int32_t inputLeft = left->intValue;
           int32_t inputRight = right->intValue;
           int32_t output = 0;
 
-          if (kind == 48) {
+          if (kind == 50) {
             output = inputLeft + inputRight;
           }
 
-          else if (kind == 50) {
+          else if (kind == 52) {
             output = inputLeft & inputRight;
           }
 
-          else if (kind == 51) {
+          else if (kind == 53) {
             output = inputLeft | inputRight;
           }
 
-          else if (kind == 52) {
+          else if (kind == 54) {
             output = inputLeft ^ inputRight;
           }
 
-          else if (kind == 53) {
+          else if (kind == 55) {
             output = inputLeft / inputRight;
           }
 
-          else if (kind == 62) {
+          else if (kind == 64) {
             output = inputLeft * inputRight;
           }
 
-          else if (kind == 64) {
+          else if (kind == 66) {
             output = inputLeft % inputRight;
           }
 
-          else if (kind == 65) {
+          else if (kind == 67) {
             output = inputLeft << inputRight;
           }
 
-          else if (kind == 66) {
+          else if (kind == 68) {
             output = isUnsigned ? (int32_t)((uint32_t)inputLeft >> (uint32_t)inputRight) : inputLeft >> inputRight;
           }
 
-          else if (kind == 67) {
+          else if (kind == 69) {
             output = inputLeft - inputRight;
           }
 
@@ -3708,7 +3752,7 @@ static void resolve(struct CheckContext *context, struct Node *node, struct Scop
         }
       }
 
-      else if (kind == 58 || kind == 59 || kind == 56 || kind == 57) {
+      else if (kind == 60 || kind == 61 || kind == 58 || kind == 59) {
         struct Type *expectedType = binaryHasUnsignedArguments(node) ? context->uintType : context->intType;
 
         if (expectedType == context->uintType) {
@@ -3724,45 +3768,45 @@ static void resolve(struct CheckContext *context, struct Node *node, struct Scop
       }
 
       else {
-        Log_error(context->log, node->internalRange, (const uint16_t *)__string_190_This_operator_is_not_currently_s);
+        Log_error(context->log, node->internalRange, (const uint16_t *)__string_192_This_operator_is_not_currently_s);
       }
     }
 
     else if (leftType != context->errorType) {
       const uint16_t *name = Range_toString(node->internalRange);
-      struct Symbol *symbol = Type_findMember(leftType, kind == 63 ? (const uint16_t *)__string_191 : kind == 59 ? (const uint16_t *)__string_192 : kind == 57 ? (const uint16_t *)__string_193 : name, 4);
+      struct Symbol *symbol = Type_findMember(leftType, kind == 65 ? (const uint16_t *)__string_193 : kind == 61 ? (const uint16_t *)__string_194 : kind == 59 ? (const uint16_t *)__string_195 : name, 4);
 
       if (symbol != NULL) {
         left = Node_withInternalRange(Node_withRange(createMemberReference(Node_remove(left), symbol), node->range), node->internalRange);
         Node_remove(right);
 
-        if (kind == 63 || kind == 59 || kind == 57) {
+        if (kind == 65 || kind == 61 || kind == 59) {
           struct Node *call = createCall(left);
           Node_appendChild(call, right);
-          node->kind = 41;
+          node->kind = 43;
           Node_appendChild(node, Node_withInternalRange(Node_withRange(call, node->range), node->range));
         }
 
         else {
           Node_appendChild(node, left);
           Node_appendChild(node, right);
-          node->kind = 23;
+          node->kind = 25;
         }
 
         node->resolvedType = NULL;
         resolveAsExpression(context, node, parentScope);
       }
 
-      else if (kind == 54 || kind == 63) {
+      else if (kind == 56 || kind == 65) {
         node->resolvedType = context->boolType;
 
         if (leftType != context->errorType && rightType != context->errorType && leftType != rightType && !canConvert(context, right, leftType, 0) && !canConvert(context, left, rightType, 0)) {
-          Log_error(context->log, node->internalRange, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_194_Cannot_compare_type), Type_toString(leftType)), (const uint16_t *)__string_195_with_type), Type_toString(rightType)), 39)));
+          Log_error(context->log, node->internalRange, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_196_Cannot_compare_type), Type_toString(leftType)), (const uint16_t *)__string_197_with_type), Type_toString(rightType)), 39)));
         }
       }
 
       else {
-        Log_error(context->log, node->internalRange, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_196_Cannot_use_binary_operator), name), (const uint16_t *)__string_197_with_type), Type_toString(leftType)), 39)));
+        Log_error(context->log, node->internalRange, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_198_Cannot_use_binary_operator), name), (const uint16_t *)__string_199_with_type), Type_toString(leftType)), 39)));
       }
     }
   }
@@ -3778,20 +3822,20 @@ static void Compiler_initialize(struct Compiler *__this, int32_t target, const u
   __this->preprocessor = calloc(1, sizeof(struct Preprocessor));
   __this->target = target;
   __this->outputName = outputName;
-  __this->librarySource = Compiler_addInput(__this, (const uint16_t *)__string_198_native, library());
+  __this->librarySource = Compiler_addInput(__this, (const uint16_t *)__string_200_native, library());
   __this->librarySource->isLibrary = 1;
   Compiler_createGlobals(__this);
 
   if (target == 1) {
-    Preprocessor_define(__this->preprocessor, (const uint16_t *)__string_199_C, 1);
+    Preprocessor_define(__this->preprocessor, (const uint16_t *)__string_201_C, 1);
   }
 
   else if (target == 2) {
-    Preprocessor_define(__this->preprocessor, (const uint16_t *)__string_200_JS, 1);
+    Preprocessor_define(__this->preprocessor, (const uint16_t *)__string_202_JS, 1);
   }
 
   else if (target == 3) {
-    Preprocessor_define(__this->preprocessor, (const uint16_t *)__string_201_WASM, 1);
+    Preprocessor_define(__this->preprocessor, (const uint16_t *)__string_203_WASM, 1);
   }
 }
 
@@ -3804,9 +3848,9 @@ static void Compiler_createGlobals(struct Compiler *__this) {
   global->kind = 2;
   struct Scope *scope = calloc(1, sizeof(struct Scope));
   global->scope = scope;
-  context->errorType = Scope_defineNativeType(scope, context->log, (const uint16_t *)__string_202_error);
-  context->nullType = Scope_defineNativeType(scope, context->log, (const uint16_t *)__string_203_null);
-  context->voidType = Scope_defineNativeType(scope, context->log, (const uint16_t *)__string_204_void);
+  context->errorType = Scope_defineNativeType(scope, context->log, (const uint16_t *)__string_204_error);
+  context->nullType = Scope_defineNativeType(scope, context->log, (const uint16_t *)__string_205_null);
+  context->voidType = Scope_defineNativeType(scope, context->log, (const uint16_t *)__string_206_void);
   __this->context = context;
   __this->global = global;
 }
@@ -3838,7 +3882,7 @@ static uint8_t Compiler_finish(struct Compiler *__this) {
     source = source->next;
   }
 
-  Profiler_end((const uint16_t *)__string_205_lexing);
+  Profiler_end((const uint16_t *)__string_207_lexing);
   Profiler_begin();
   source = __this->firstSource;
 
@@ -3847,7 +3891,7 @@ static uint8_t Compiler_finish(struct Compiler *__this) {
     source = source->next;
   }
 
-  Profiler_end((const uint16_t *)__string_206_preprocessing);
+  Profiler_end((const uint16_t *)__string_208_preprocessing);
   Profiler_begin();
   source = __this->firstSource;
 
@@ -3859,7 +3903,7 @@ static uint8_t Compiler_finish(struct Compiler *__this) {
     source = source->next;
   }
 
-  Profiler_end((const uint16_t *)__string_207_parsing);
+  Profiler_end((const uint16_t *)__string_209_parsing);
   Profiler_begin();
   struct Node *global = __this->global;
   struct CheckContext *context = __this->context;
@@ -3899,7 +3943,7 @@ static uint8_t Compiler_finish(struct Compiler *__this) {
     resolve(context, global, global->scope);
   }
 
-  Profiler_end((const uint16_t *)__string_208_checking);
+  Profiler_end((const uint16_t *)__string_210_checking);
 
   if (Log_hasErrors(__this->log)) {
     return 0;
@@ -3907,7 +3951,7 @@ static uint8_t Compiler_finish(struct Compiler *__this) {
 
   Profiler_begin();
   treeShaking(global);
-  Profiler_end((const uint16_t *)__string_209_shaking);
+  Profiler_end((const uint16_t *)__string_211_shaking);
   Profiler_begin();
 
   if (__this->target == 1) {
@@ -3922,22 +3966,41 @@ static uint8_t Compiler_finish(struct Compiler *__this) {
     wasmEmit(__this);
   }
 
-  Profiler_end((const uint16_t *)__string_210_emitting);
+  Profiler_end((const uint16_t *)__string_212_emitting);
 
   return 1;
 }
 
 static const uint16_t *replaceFileExtension(const uint16_t *path, const uint16_t *extension) {
   struct StringBuilder *builder = StringBuilder_new();
-  int32_t dot = string_lastIndexOf(path, (const uint16_t *)__string_211);
-  int32_t forward = string_lastIndexOf(path, (const uint16_t *)__string_212);
-  int32_t backward = string_lastIndexOf(path, (const uint16_t *)__string_213);
+  int32_t dot = string_lastIndexOf(path, (const uint16_t *)__string_213);
+  int32_t forward = string_lastIndexOf(path, (const uint16_t *)__string_214);
+  int32_t backward = string_lastIndexOf(path, (const uint16_t *)__string_215);
 
   if (dot > 0 && dot > forward && dot > backward) {
     path = string_slice(path, 0, dot);
   }
 
   return StringBuilder_finish(StringBuilder_append(StringBuilder_append(builder, path), extension));
+}
+
+static void metadata(struct Node *node, struct CheckContext *context, struct Node *decorator) {
+  assert(node->kind == 17);
+  struct Node *body = Node_functionBody(node);
+
+  if (body == NULL || Node_childCount(body) == 0) {
+    return;
+  }
+
+  struct Range *range = node->range;
+  struct Source *source = range->source;
+  struct LineColumn *index = Source_indexToLineColumn(source, range->start);
+  struct Node *variables = createVariables();
+  Node_appendChild(variables, createVariable((const uint16_t *)__string_216___name, NULL, createString(node->symbol->name)));
+  Node_appendChild(variables, createVariable((const uint16_t *)__string_217___file, NULL, createString(source->name)));
+  Node_appendChild(variables, createVariable((const uint16_t *)__string_218___line, NULL, createInt(index->line)));
+  Node_appendChild(variables, createVariable((const uint16_t *)__string_219___column, NULL, createInt(index->column)));
+  Node_insertChildBefore(body, body->firstChild, variables);
 }
 
 static uint8_t isPositivePowerOf2(int32_t value) {
@@ -3968,331 +4031,331 @@ static void splitToken(struct Token *first, int32_t firstKind, int32_t secondKin
 
 static const uint16_t *tokenToString(int32_t token) {
   if (token == 0) {
-    return (const uint16_t *)__string_214_end_of_file;
+    return (const uint16_t *)__string_220_end_of_file;
   }
 
   if (token == 1) {
-    return (const uint16_t *)__string_215_character_literal;
+    return (const uint16_t *)__string_221_character_literal;
   }
 
   if (token == 2) {
-    return (const uint16_t *)__string_216_identifier;
+    return (const uint16_t *)__string_222_identifier;
   }
 
   if (token == 3) {
-    return (const uint16_t *)__string_217_integer_literal;
+    return (const uint16_t *)__string_223_integer_literal;
   }
 
   if (token == 4) {
-    return (const uint16_t *)__string_218_string_literal;
+    return (const uint16_t *)__string_224_string_literal;
   }
 
   if (token == 5) {
-    return (const uint16_t *)__string_219;
-  }
-
-  if (token == 6) {
-    return (const uint16_t *)__string_220;
-  }
-
-  if (token == 7) {
-    return (const uint16_t *)__string_221;
-  }
-
-  if (token == 8) {
-    return (const uint16_t *)__string_222;
-  }
-
-  if (token == 9) {
-    return (const uint16_t *)__string_223;
-  }
-
-  if (token == 10) {
-    return (const uint16_t *)__string_224;
-  }
-
-  if (token == 11) {
     return (const uint16_t *)__string_225;
   }
 
-  if (token == 12) {
+  if (token == 6) {
     return (const uint16_t *)__string_226;
   }
 
-  if (token == 13) {
+  if (token == 7) {
     return (const uint16_t *)__string_227;
   }
 
-  if (token == 14) {
+  if (token == 8) {
     return (const uint16_t *)__string_228;
   }
 
-  if (token == 15) {
+  if (token == 9) {
     return (const uint16_t *)__string_229;
   }
 
-  if (token == 16) {
+  if (token == 10) {
     return (const uint16_t *)__string_230;
   }
 
-  if (token == 17) {
+  if (token == 11) {
     return (const uint16_t *)__string_231;
   }
 
-  if (token == 18) {
+  if (token == 12) {
     return (const uint16_t *)__string_232;
   }
 
-  if (token == 19) {
+  if (token == 13) {
     return (const uint16_t *)__string_233;
   }
 
-  if (token == 20) {
+  if (token == 14) {
     return (const uint16_t *)__string_234;
   }
 
-  if (token == 21) {
+  if (token == 15) {
     return (const uint16_t *)__string_235;
   }
 
-  if (token == 22) {
+  if (token == 16) {
     return (const uint16_t *)__string_236;
   }
 
-  if (token == 23) {
+  if (token == 17) {
     return (const uint16_t *)__string_237;
   }
 
-  if (token == 24) {
+  if (token == 18) {
     return (const uint16_t *)__string_238;
   }
 
-  if (token == 25) {
+  if (token == 19) {
     return (const uint16_t *)__string_239;
   }
 
-  if (token == 26) {
+  if (token == 20) {
     return (const uint16_t *)__string_240;
   }
 
-  if (token == 27) {
+  if (token == 21) {
     return (const uint16_t *)__string_241;
   }
 
-  if (token == 28) {
+  if (token == 22) {
     return (const uint16_t *)__string_242;
   }
 
-  if (token == 29) {
+  if (token == 23) {
     return (const uint16_t *)__string_243;
   }
 
-  if (token == 30) {
+  if (token == 24) {
     return (const uint16_t *)__string_244;
   }
 
-  if (token == 31) {
+  if (token == 25) {
     return (const uint16_t *)__string_245;
   }
 
-  if (token == 32) {
+  if (token == 26) {
     return (const uint16_t *)__string_246;
   }
 
-  if (token == 33) {
+  if (token == 27) {
     return (const uint16_t *)__string_247;
   }
 
-  if (token == 34) {
+  if (token == 28) {
     return (const uint16_t *)__string_248;
   }
 
-  if (token == 35) {
+  if (token == 29) {
     return (const uint16_t *)__string_249;
   }
 
-  if (token == 36) {
+  if (token == 30) {
     return (const uint16_t *)__string_250;
   }
 
-  if (token == 37) {
+  if (token == 31) {
     return (const uint16_t *)__string_251;
   }
 
-  if (token == 38) {
+  if (token == 32) {
     return (const uint16_t *)__string_252;
   }
 
-  if (token == 39) {
+  if (token == 33) {
     return (const uint16_t *)__string_253;
   }
 
+  if (token == 34) {
+    return (const uint16_t *)__string_254;
+  }
+
+  if (token == 35) {
+    return (const uint16_t *)__string_255;
+  }
+
+  if (token == 36) {
+    return (const uint16_t *)__string_256;
+  }
+
+  if (token == 37) {
+    return (const uint16_t *)__string_257;
+  }
+
+  if (token == 38) {
+    return (const uint16_t *)__string_258;
+  }
+
+  if (token == 39) {
+    return (const uint16_t *)__string_259;
+  }
+
   if (token == 40) {
-    return (const uint16_t *)__string_254_alignof;
+    return (const uint16_t *)__string_260_alignof;
   }
 
   if (token == 41) {
-    return (const uint16_t *)__string_255_as;
+    return (const uint16_t *)__string_261_as;
   }
 
   if (token == 42) {
-    return (const uint16_t *)__string_256_break;
+    return (const uint16_t *)__string_262_break;
   }
 
   if (token == 43) {
-    return (const uint16_t *)__string_257_class;
+    return (const uint16_t *)__string_263_class;
   }
 
   if (token == 44) {
-    return (const uint16_t *)__string_258_const;
+    return (const uint16_t *)__string_264_const;
   }
 
   if (token == 45) {
-    return (const uint16_t *)__string_259_continue;
+    return (const uint16_t *)__string_265_continue;
   }
 
   if (token == 46) {
-    return (const uint16_t *)__string_260_declare;
+    return (const uint16_t *)__string_266_declare;
   }
 
   if (token == 47) {
-    return (const uint16_t *)__string_261_else;
+    return (const uint16_t *)__string_267_else;
   }
 
   if (token == 48) {
-    return (const uint16_t *)__string_262_enum;
+    return (const uint16_t *)__string_268_enum;
   }
 
   if (token == 49) {
-    return (const uint16_t *)__string_263_export;
+    return (const uint16_t *)__string_269_export;
   }
 
   if (token == 50) {
-    return (const uint16_t *)__string_264_extends;
+    return (const uint16_t *)__string_270_extends;
   }
 
   if (token == 51) {
-    return (const uint16_t *)__string_265_extern;
+    return (const uint16_t *)__string_271_extern;
   }
 
   if (token == 52) {
-    return (const uint16_t *)__string_266_false;
+    return (const uint16_t *)__string_272_false;
   }
 
   if (token == 53) {
-    return (const uint16_t *)__string_267_function;
+    return (const uint16_t *)__string_273_function;
   }
 
   if (token == 54) {
-    return (const uint16_t *)__string_268_if;
+    return (const uint16_t *)__string_274_if;
   }
 
   if (token == 55) {
-    return (const uint16_t *)__string_269_implements;
+    return (const uint16_t *)__string_275_implements;
   }
 
   if (token == 56) {
-    return (const uint16_t *)__string_270_import;
+    return (const uint16_t *)__string_276_import;
   }
 
   if (token == 57) {
-    return (const uint16_t *)__string_271_interface;
+    return (const uint16_t *)__string_277_interface;
   }
 
   if (token == 58) {
-    return (const uint16_t *)__string_272_let;
+    return (const uint16_t *)__string_278_let;
   }
 
   if (token == 59) {
-    return (const uint16_t *)__string_273_new;
+    return (const uint16_t *)__string_279_new;
   }
 
   if (token == 60) {
-    return (const uint16_t *)__string_274_null;
+    return (const uint16_t *)__string_280_null;
   }
 
   if (token == 61) {
-    return (const uint16_t *)__string_275_operator;
+    return (const uint16_t *)__string_281_operator;
   }
 
   if (token == 62) {
-    return (const uint16_t *)__string_276_private;
+    return (const uint16_t *)__string_282_private;
   }
 
   if (token == 63) {
-    return (const uint16_t *)__string_277_protected;
+    return (const uint16_t *)__string_283_protected;
   }
 
   if (token == 64) {
-    return (const uint16_t *)__string_278_public;
+    return (const uint16_t *)__string_284_public;
   }
 
   if (token == 65) {
-    return (const uint16_t *)__string_279_return;
+    return (const uint16_t *)__string_285_return;
   }
 
   if (token == 66) {
-    return (const uint16_t *)__string_280_sizeof;
+    return (const uint16_t *)__string_286_sizeof;
   }
 
   if (token == 67) {
-    return (const uint16_t *)__string_281_static;
+    return (const uint16_t *)__string_287_static;
   }
 
   if (token == 68) {
-    return (const uint16_t *)__string_282_this;
+    return (const uint16_t *)__string_288_this;
   }
 
   if (token == 69) {
-    return (const uint16_t *)__string_283_true;
+    return (const uint16_t *)__string_289_true;
   }
 
   if (token == 70) {
-    return (const uint16_t *)__string_284_unsafe;
+    return (const uint16_t *)__string_290_unsafe;
   }
 
   if (token == 71) {
-    return (const uint16_t *)__string_285_var;
+    return (const uint16_t *)__string_291_var;
   }
 
   if (token == 72) {
-    return (const uint16_t *)__string_286_while;
+    return (const uint16_t *)__string_292_while;
   }
 
   if (token == 73) {
-    return (const uint16_t *)__string_287_define;
+    return (const uint16_t *)__string_293_define;
   }
 
   if (token == 74) {
-    return (const uint16_t *)__string_288_elif;
+    return (const uint16_t *)__string_294_elif;
   }
 
   if (token == 75) {
-    return (const uint16_t *)__string_289_else;
+    return (const uint16_t *)__string_295_else;
   }
 
   if (token == 76) {
-    return (const uint16_t *)__string_290_endif;
+    return (const uint16_t *)__string_296_endif;
   }
 
   if (token == 77) {
-    return (const uint16_t *)__string_291_error;
+    return (const uint16_t *)__string_297_error;
   }
 
   if (token == 78) {
-    return (const uint16_t *)__string_292_if;
+    return (const uint16_t *)__string_298_if;
   }
 
   if (token == 80) {
-    return (const uint16_t *)__string_293_newline;
+    return (const uint16_t *)__string_299_newline;
   }
 
   if (token == 81) {
-    return (const uint16_t *)__string_294_undef;
+    return (const uint16_t *)__string_300_undef;
   }
 
   if (token == 82) {
-    return (const uint16_t *)__string_295_warning;
+    return (const uint16_t *)__string_301_warning;
   }
 
   assert(0);
@@ -4362,142 +4425,142 @@ static struct Token *tokenize(struct Source *source, struct Log *log) {
         const uint16_t *text = string_slice(contents, start, i);
 
         if (length == 2) {
-          if (string_op_equals(text, (const uint16_t *)__string_296_as)) {
+          if (string_op_equals(text, (const uint16_t *)__string_302_as)) {
             kind = 41;
           }
 
-          else if (string_op_equals(text, (const uint16_t *)__string_297_if)) {
+          else if (string_op_equals(text, (const uint16_t *)__string_303_if)) {
             kind = 54;
           }
         }
 
         else if (length == 3) {
-          if (string_op_equals(text, (const uint16_t *)__string_298_let)) {
+          if (string_op_equals(text, (const uint16_t *)__string_304_let)) {
             kind = 58;
           }
 
-          else if (string_op_equals(text, (const uint16_t *)__string_299_new)) {
+          else if (string_op_equals(text, (const uint16_t *)__string_305_new)) {
             kind = 59;
           }
 
-          else if (string_op_equals(text, (const uint16_t *)__string_300_var)) {
+          else if (string_op_equals(text, (const uint16_t *)__string_306_var)) {
             kind = 71;
           }
         }
 
         else if (length == 4) {
-          if (string_op_equals(text, (const uint16_t *)__string_301_else)) {
+          if (string_op_equals(text, (const uint16_t *)__string_307_else)) {
             kind = 47;
           }
 
-          else if (string_op_equals(text, (const uint16_t *)__string_302_enum)) {
+          else if (string_op_equals(text, (const uint16_t *)__string_308_enum)) {
             kind = 48;
           }
 
-          else if (string_op_equals(text, (const uint16_t *)__string_303_null)) {
+          else if (string_op_equals(text, (const uint16_t *)__string_309_null)) {
             kind = 60;
           }
 
-          else if (string_op_equals(text, (const uint16_t *)__string_304_this)) {
+          else if (string_op_equals(text, (const uint16_t *)__string_310_this)) {
             kind = 68;
           }
 
-          else if (string_op_equals(text, (const uint16_t *)__string_305_true)) {
+          else if (string_op_equals(text, (const uint16_t *)__string_311_true)) {
             kind = 69;
           }
         }
 
         else if (length == 5) {
-          if (string_op_equals(text, (const uint16_t *)__string_306_break)) {
+          if (string_op_equals(text, (const uint16_t *)__string_312_break)) {
             kind = 42;
           }
 
-          else if (string_op_equals(text, (const uint16_t *)__string_307_class)) {
+          else if (string_op_equals(text, (const uint16_t *)__string_313_class)) {
             kind = 43;
           }
 
-          else if (string_op_equals(text, (const uint16_t *)__string_308_const)) {
+          else if (string_op_equals(text, (const uint16_t *)__string_314_const)) {
             kind = 44;
           }
 
-          else if (string_op_equals(text, (const uint16_t *)__string_309_false)) {
+          else if (string_op_equals(text, (const uint16_t *)__string_315_false)) {
             kind = 52;
           }
 
-          else if (string_op_equals(text, (const uint16_t *)__string_310_while)) {
+          else if (string_op_equals(text, (const uint16_t *)__string_316_while)) {
             kind = 72;
           }
         }
 
         else if (length == 6) {
-          if (string_op_equals(text, (const uint16_t *)__string_311_export)) {
+          if (string_op_equals(text, (const uint16_t *)__string_317_export)) {
             kind = 49;
           }
 
-          else if (string_op_equals(text, (const uint16_t *)__string_312_extern)) {
+          else if (string_op_equals(text, (const uint16_t *)__string_318_extern)) {
             kind = 51;
           }
 
-          else if (string_op_equals(text, (const uint16_t *)__string_313_import)) {
+          else if (string_op_equals(text, (const uint16_t *)__string_319_import)) {
             kind = 56;
           }
 
-          else if (string_op_equals(text, (const uint16_t *)__string_314_public)) {
+          else if (string_op_equals(text, (const uint16_t *)__string_320_public)) {
             kind = 64;
           }
 
-          else if (string_op_equals(text, (const uint16_t *)__string_315_return)) {
+          else if (string_op_equals(text, (const uint16_t *)__string_321_return)) {
             kind = 65;
           }
 
-          else if (string_op_equals(text, (const uint16_t *)__string_316_sizeof)) {
+          else if (string_op_equals(text, (const uint16_t *)__string_322_sizeof)) {
             kind = 66;
           }
 
-          else if (string_op_equals(text, (const uint16_t *)__string_317_static)) {
+          else if (string_op_equals(text, (const uint16_t *)__string_323_static)) {
             kind = 67;
           }
 
-          else if (string_op_equals(text, (const uint16_t *)__string_318_unsafe)) {
+          else if (string_op_equals(text, (const uint16_t *)__string_324_unsafe)) {
             kind = 70;
           }
         }
 
         else if (length == 7) {
-          if (string_op_equals(text, (const uint16_t *)__string_319_alignof)) {
+          if (string_op_equals(text, (const uint16_t *)__string_325_alignof)) {
             kind = 40;
           }
 
-          else if (string_op_equals(text, (const uint16_t *)__string_320_declare)) {
+          else if (string_op_equals(text, (const uint16_t *)__string_326_declare)) {
             kind = 46;
           }
 
-          else if (string_op_equals(text, (const uint16_t *)__string_321_extends)) {
+          else if (string_op_equals(text, (const uint16_t *)__string_327_extends)) {
             kind = 50;
           }
 
-          else if (string_op_equals(text, (const uint16_t *)__string_322_private)) {
+          else if (string_op_equals(text, (const uint16_t *)__string_328_private)) {
             kind = 62;
           }
         }
 
-        else if (string_op_equals(text, (const uint16_t *)__string_323_continue)) {
+        else if (string_op_equals(text, (const uint16_t *)__string_329_continue)) {
           kind = 45;
         }
 
-        else if (string_op_equals(text, (const uint16_t *)__string_324_function)) {
+        else if (string_op_equals(text, (const uint16_t *)__string_330_function)) {
           kind = 53;
         }
 
-        else if (string_op_equals(text, (const uint16_t *)__string_325_implements)) {
+        else if (string_op_equals(text, (const uint16_t *)__string_331_implements)) {
           kind = 55;
         }
 
-        else if (string_op_equals(text, (const uint16_t *)__string_326_interface)) {
+        else if (string_op_equals(text, (const uint16_t *)__string_332_interface)) {
           kind = 57;
         }
 
-        else if (string_op_equals(text, (const uint16_t *)__string_327_protected)) {
+        else if (string_op_equals(text, (const uint16_t *)__string_333_protected)) {
           kind = 63;
         }
       }
@@ -4545,7 +4608,7 @@ static struct Token *tokenize(struct Source *source, struct Log *log) {
             i = i + 1;
           }
 
-          Log_error(log, createRange(source, start, i), StringBuilder_finish(StringBuilder_appendChar(StringBuilder_appendSlice(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_328_Invalid_integer_literal), contents, start, i), 39)));
+          Log_error(log, createRange(source, start, i), StringBuilder_finish(StringBuilder_appendChar(StringBuilder_appendSlice(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_334_Invalid_integer_literal), contents, start, i), 39)));
 
           return NULL;
         }
@@ -4576,7 +4639,7 @@ static struct Token *tokenize(struct Source *source, struct Log *log) {
       }
 
       if (kind == 0) {
-        Log_error(log, createRange(source, start, i), c == 39 ? (const uint16_t *)__string_329_Unterminated_character_literal : c == 96 ? (const uint16_t *)__string_330_Unterminated_template_literal : (const uint16_t *)__string_331_Unterminated_string_literal);
+        Log_error(log, createRange(source, start, i), c == 39 ? (const uint16_t *)__string_335_Unterminated_character_literal : c == 96 ? (const uint16_t *)__string_336_Unterminated_template_literal : (const uint16_t *)__string_337_Unterminated_string_literal);
 
         return NULL;
       }
@@ -4678,7 +4741,7 @@ static struct Token *tokenize(struct Source *source, struct Log *log) {
         }
 
         if (!foundEnd) {
-          Log_error(log, createRange(source, start, start + 2), (const uint16_t *)__string_332_Unterminated_multi_line_comment);
+          Log_error(log, createRange(source, start, start + 2), (const uint16_t *)__string_338_Unterminated_multi_line_comment);
 
           return NULL;
         }
@@ -4696,7 +4759,7 @@ static struct Token *tokenize(struct Source *source, struct Log *log) {
 
         if (i < limit && string_op_get(contents, i) == 61) {
           i = i + 1;
-          Log_error(log, createRange(source, start, i), (const uint16_t *)__string_333_Use_instead_of);
+          Log_error(log, createRange(source, start, i), (const uint16_t *)__string_339_Use_instead_of);
         }
       }
     }
@@ -4710,7 +4773,7 @@ static struct Token *tokenize(struct Source *source, struct Log *log) {
 
         if (i < limit && string_op_get(contents, i) == 61) {
           i = i + 1;
-          Log_error(log, createRange(source, start, i), (const uint16_t *)__string_334_Use_instead_of);
+          Log_error(log, createRange(source, start, i), (const uint16_t *)__string_340_Use_instead_of);
         }
       }
     }
@@ -4794,39 +4857,39 @@ static struct Token *tokenize(struct Source *source, struct Log *log) {
 
       const uint16_t *text = string_slice(contents, start, i);
 
-      if (string_op_equals(text, (const uint16_t *)__string_335_define)) {
+      if (string_op_equals(text, (const uint16_t *)__string_341_define)) {
         kind = 73;
       }
 
-      else if (string_op_equals(text, (const uint16_t *)__string_336_elif)) {
+      else if (string_op_equals(text, (const uint16_t *)__string_342_elif)) {
         kind = 74;
       }
 
-      else if (string_op_equals(text, (const uint16_t *)__string_337_else)) {
+      else if (string_op_equals(text, (const uint16_t *)__string_343_else)) {
         kind = 75;
       }
 
-      else if (string_op_equals(text, (const uint16_t *)__string_338_endif)) {
+      else if (string_op_equals(text, (const uint16_t *)__string_344_endif)) {
         kind = 76;
       }
 
-      else if (string_op_equals(text, (const uint16_t *)__string_339_error)) {
+      else if (string_op_equals(text, (const uint16_t *)__string_345_error)) {
         kind = 77;
       }
 
-      else if (string_op_equals(text, (const uint16_t *)__string_340_if)) {
+      else if (string_op_equals(text, (const uint16_t *)__string_346_if)) {
         kind = 78;
       }
 
-      else if (string_op_equals(text, (const uint16_t *)__string_341_undef)) {
+      else if (string_op_equals(text, (const uint16_t *)__string_347_undef)) {
         kind = 81;
       }
 
-      else if (string_op_equals(text, (const uint16_t *)__string_342_warning)) {
+      else if (string_op_equals(text, (const uint16_t *)__string_348_warning)) {
         kind = 82;
       }
 
-      else if (start == 0 && string_op_equals(text, (const uint16_t *)__string_343) && i < limit && string_op_get(contents, i) == 33) {
+      else if (start == 0 && string_op_equals(text, (const uint16_t *)__string_349) && i < limit && string_op_get(contents, i) == 33) {
         while (i < limit && string_op_get(contents, i) != 10) {
           i = i + 1;
         }
@@ -4835,20 +4898,20 @@ static struct Token *tokenize(struct Source *source, struct Log *log) {
       }
 
       else {
-        struct StringBuilder *builder = StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_344_Invalid_preprocessor_token), text), 39);
+        struct StringBuilder *builder = StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_350_Invalid_preprocessor_token), text), 39);
 
-        if (string_op_equals(text, (const uint16_t *)__string_345_ifdef)) {
-          StringBuilder_append(builder, (const uint16_t *)__string_346_did_you_mean_if);
+        if (string_op_equals(text, (const uint16_t *)__string_351_ifdef)) {
+          StringBuilder_append(builder, (const uint16_t *)__string_352_did_you_mean_if);
           kind = 78;
         }
 
-        else if (string_op_equals(text, (const uint16_t *)__string_347_elsif) || string_op_equals(text, (const uint16_t *)__string_348_elseif)) {
-          StringBuilder_append(builder, (const uint16_t *)__string_349_did_you_mean_elif);
+        else if (string_op_equals(text, (const uint16_t *)__string_353_elsif) || string_op_equals(text, (const uint16_t *)__string_354_elseif)) {
+          StringBuilder_append(builder, (const uint16_t *)__string_355_did_you_mean_elif);
           kind = 74;
         }
 
-        else if (string_op_equals(text, (const uint16_t *)__string_350_end)) {
-          StringBuilder_append(builder, (const uint16_t *)__string_351_did_you_mean_endif);
+        else if (string_op_equals(text, (const uint16_t *)__string_356_end)) {
+          StringBuilder_append(builder, (const uint16_t *)__string_357_did_you_mean_endif);
           kind = 76;
         }
 
@@ -4868,7 +4931,7 @@ static struct Token *tokenize(struct Source *source, struct Log *log) {
         }
 
         if (j < end) {
-          Log_error(log, createRange(source, start, i), StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_352_Expected_newline_before), tokenToString(kind))));
+          Log_error(log, createRange(source, start, i), StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_358_Expected_newline_before), tokenToString(kind))));
         }
       }
 
@@ -4876,10 +4939,14 @@ static struct Token *tokenize(struct Source *source, struct Log *log) {
       wantNewline = 1;
     }
 
+    else if (c == 64) {
+      kind = 83;
+    }
+
     struct Range *range = createRange(source, start, i);
 
     if (kind == 0) {
-      Log_error(log, range, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_appendSlice(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_353_Syntax_error), contents, start, start + 1), 39)));
+      Log_error(log, range, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_appendSlice(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_359_Syntax_error), contents, start, start + 1), 39)));
 
       return NULL;
     }
@@ -4925,7 +4992,7 @@ static struct Token *tokenize(struct Source *source, struct Log *log) {
 }
 
 static const uint16_t *library() {
-  return (const uint16_t *)__string_354_if_WASM_These_will_be_fi;
+  return (const uint16_t *)__string_360_if_WASM_These_will_be_fi;
 }
 
 static struct LineColumn *Source_indexToLineColumn(struct Source *__this, int32_t index) {
@@ -5005,11 +5072,11 @@ static struct Range *spanRanges(struct Range *left, struct Range *right) {
 }
 
 static void Diagnostic_appendSourceName(struct Diagnostic *__this, struct StringBuilder *builder, struct LineColumn *location) {
-  StringBuilder_append(StringBuilder_append(StringBuilder_appendChar(StringBuilder_append(StringBuilder_appendChar(StringBuilder_append(builder, __this->range->source->name), 58), int_toString(location->line + 1)), 58), int_toString(location->column + 1)), (const uint16_t *)__string_355);
+  StringBuilder_append(StringBuilder_append(StringBuilder_appendChar(StringBuilder_append(StringBuilder_appendChar(StringBuilder_append(builder, __this->range->source->name), 58), int_toString(location->line + 1)), 58), int_toString(location->column + 1)), (const uint16_t *)__string_361);
 }
 
 static void Diagnostic_appendKind(struct Diagnostic *__this, struct StringBuilder *builder) {
-  StringBuilder_append(builder, __this->kind == 0 ? (const uint16_t *)__string_356_error : (const uint16_t *)__string_357_warning);
+  StringBuilder_append(builder, __this->kind == 0 ? (const uint16_t *)__string_362_error : (const uint16_t *)__string_363_warning);
 }
 
 static void Diagnostic_appendMessage(struct Diagnostic *__this, struct StringBuilder *builder) {
@@ -5105,51 +5172,51 @@ static uint8_t Log_hasErrors(struct Log *__this) {
 }
 
 static uint8_t isUnary(int32_t kind) {
-  return kind >= 37 && kind <= 47;
+  return kind >= 39 && kind <= 49;
 }
 
 static uint8_t isUnaryPostfix(int32_t kind) {
-  return kind >= 44 && kind <= 45;
+  return kind >= 46 && kind <= 47;
 }
 
 static uint8_t isBinary(int32_t kind) {
-  return kind >= 48 && kind <= 67;
+  return kind >= 50 && kind <= 69;
 }
 
 static int32_t invertedBinaryKind(int32_t kind) {
-  if (kind == 54) {
-    return 63;
-  }
-
-  if (kind == 63) {
-    return 54;
-  }
-
   if (kind == 56) {
-    return 59;
+    return 65;
   }
 
-  if (kind == 57) {
-    return 58;
+  if (kind == 65) {
+    return 56;
   }
 
   if (kind == 58) {
-    return 57;
+    return 61;
   }
 
   if (kind == 59) {
-    return 56;
+    return 60;
+  }
+
+  if (kind == 60) {
+    return 59;
+  }
+
+  if (kind == 61) {
+    return 58;
   }
 
   return kind;
 }
 
 static uint8_t isExpression(struct Node *node) {
-  return node->kind >= 21 && node->kind <= 67;
+  return node->kind >= 23 && node->kind <= 69;
 }
 
 static uint8_t isCompactNodeKind(int32_t kind) {
-  return kind == 10 || kind == 14 || kind == 19;
+  return kind == 12 || kind == 16 || kind == 21;
 }
 
 static struct NodeFlag *appendFlag(struct NodeFlag *first, int32_t flag, struct Range *range) {
@@ -5211,7 +5278,7 @@ static void Node_become(struct Node *__this, struct Node *node) {
 }
 
 static void Node_becomeSymbolReference(struct Node *__this, struct Symbol *symbol) {
-  __this->kind = 29;
+  __this->kind = 31;
   __this->symbol = symbol;
   __this->stringValue = symbol->name;
   __this->resolvedType = symbol->resolvedType;
@@ -5219,25 +5286,25 @@ static void Node_becomeSymbolReference(struct Node *__this, struct Symbol *symbo
 }
 
 static void Node_becomeIntegerConstant(struct Node *__this, int32_t value) {
-  __this->kind = 28;
+  __this->kind = 30;
   __this->symbol = NULL;
   __this->intValue = value;
   Node_removeChildren(__this);
 }
 
 static void Node_becomeBooleanConstant(struct Node *__this, uint8_t value) {
-  __this->kind = 22;
+  __this->kind = 24;
   __this->symbol = NULL;
   __this->intValue = value ? 1 : 0;
   Node_removeChildren(__this);
 }
 
 static uint8_t Node_isNegativeInteger(struct Node *__this) {
-  return __this->kind == 28 && __this->intValue < 0;
+  return __this->kind == 30 && __this->intValue < 0;
 }
 
 static uint8_t Node_isNonNegativeInteger(struct Node *__this) {
-  return __this->kind == 28 && __this->intValue >= 0;
+  return __this->kind == 30 && __this->intValue >= 0;
 }
 
 static uint8_t Node_isDeclare(struct Node *__this) {
@@ -5413,15 +5480,15 @@ static void Node_replaceWith(struct Node *__this, struct Node *node) {
 }
 
 static uint8_t Node_isType(struct Node *__this) {
-  return __this->kind == 36 || __this->kind == 42 || (__this->symbol != NULL && isType(__this->symbol->kind));
+  return __this->kind == 38 || __this->kind == 44 || (__this->symbol != NULL && isType(__this->symbol->kind));
 }
 
 static uint8_t Node_isCallValue(struct Node *__this) {
-  return __this->parent->kind == 23 && __this == Node_callValue(__this->parent);
+  return __this->parent->kind == 25 && __this == Node_callValue(__this->parent);
 }
 
 static uint8_t Node_isAssignTarget(struct Node *__this) {
-  return __this->parent->kind == 49 && __this == Node_binaryLeft(__this->parent);
+  return __this->parent->kind == 51 && __this == Node_binaryLeft(__this->parent);
 }
 
 static struct Node *Node_withRange(struct Node *__this, struct Range *range) {
@@ -5437,12 +5504,15 @@ static struct Node *Node_withInternalRange(struct Node *__this, struct Range *ra
 }
 
 static struct Node *Node_functionFirstArgument(struct Node *__this) {
-  assert(__this->kind == 15);
+  assert(__this->kind == 17);
   assert(Node_childCount(__this) >= 2);
   struct Node *child = __this->firstChild;
+  int32_t whileCount = 0;
 
-  if (child->kind == 5) {
+  while (child->kind == 5 || child->kind == 8) {
+    assert(whileCount < 2);
     child = child->nextSibling;
+    whileCount = whileCount + 1;
   }
 
   return child;
@@ -5462,7 +5532,7 @@ static int32_t Node_functionArgumentCount(struct Node *__this) {
 }
 
 static struct Node *Node_functionFirstArgumentIgnoringThis(struct Node *__this) {
-  assert(__this->kind == 15);
+  assert(__this->kind == 17);
   assert(Node_childCount(__this) >= 2);
   assert(__this->symbol != NULL);
   struct Node *child = Node_functionFirstArgument(__this);
@@ -5475,7 +5545,7 @@ static struct Node *Node_functionFirstArgumentIgnoringThis(struct Node *__this) 
 }
 
 static struct Node *Node_functionReturnType(struct Node *__this) {
-  assert(__this->kind == 15);
+  assert(__this->kind == 17);
   assert(Node_childCount(__this) >= 2);
   assert(isExpression(__this->lastChild->previousSibling));
 
@@ -5483,16 +5553,16 @@ static struct Node *Node_functionReturnType(struct Node *__this) {
 }
 
 static struct Node *Node_functionBody(struct Node *__this) {
-  assert(__this->kind == 15);
+  assert(__this->kind == 17);
   assert(Node_childCount(__this) >= 2);
-  assert(__this->lastChild->kind == 7 || __this->lastChild->kind == 12);
+  assert(__this->lastChild->kind == 9 || __this->lastChild->kind == 14);
   struct Node *body = __this->lastChild;
 
-  return body->kind == 7 ? body : NULL;
+  return body->kind == 9 ? body : NULL;
 }
 
 static struct Node *Node_newType(struct Node *__this) {
-  assert(__this->kind == 30);
+  assert(__this->kind == 32);
   assert(Node_childCount(__this) >= 1);
   assert(isExpression(__this->firstChild));
 
@@ -5500,7 +5570,7 @@ static struct Node *Node_newType(struct Node *__this) {
 }
 
 static struct Node *Node_callValue(struct Node *__this) {
-  assert(__this->kind == 23);
+  assert(__this->kind == 25);
   assert(Node_childCount(__this) >= 1);
   assert(isExpression(__this->firstChild));
 
@@ -5508,7 +5578,7 @@ static struct Node *Node_callValue(struct Node *__this) {
 }
 
 static struct Node *Node_castValue(struct Node *__this) {
-  assert(__this->kind == 24);
+  assert(__this->kind == 26);
   assert(Node_childCount(__this) == 2);
   assert(isExpression(__this->firstChild));
 
@@ -5516,7 +5586,7 @@ static struct Node *Node_castValue(struct Node *__this) {
 }
 
 static struct Node *Node_castType(struct Node *__this) {
-  assert(__this->kind == 24);
+  assert(__this->kind == 26);
   assert(Node_childCount(__this) == 2);
   assert(isExpression(__this->lastChild));
 
@@ -5524,7 +5594,7 @@ static struct Node *Node_castType(struct Node *__this) {
 }
 
 static struct Node *Node_alignOfType(struct Node *__this) {
-  assert(__this->kind == 21);
+  assert(__this->kind == 23);
   assert(Node_childCount(__this) == 1);
   assert(isExpression(__this->firstChild));
 
@@ -5532,7 +5602,7 @@ static struct Node *Node_alignOfType(struct Node *__this) {
 }
 
 static struct Node *Node_sizeOfType(struct Node *__this) {
-  assert(__this->kind == 33);
+  assert(__this->kind == 35);
   assert(Node_childCount(__this) == 1);
   assert(isExpression(__this->firstChild));
 
@@ -5540,7 +5610,7 @@ static struct Node *Node_sizeOfType(struct Node *__this) {
 }
 
 static struct Node *Node_dotTarget(struct Node *__this) {
-  assert(__this->kind == 25);
+  assert(__this->kind == 27);
   assert(Node_childCount(__this) == 1);
   assert(isExpression(__this->firstChild));
 
@@ -5548,7 +5618,7 @@ static struct Node *Node_dotTarget(struct Node *__this) {
 }
 
 static struct Node *Node_returnValue(struct Node *__this) {
-  assert(__this->kind == 17);
+  assert(__this->kind == 19);
   assert(Node_childCount(__this) <= 1);
   assert(__this->firstChild == NULL || isExpression(__this->firstChild));
 
@@ -5566,10 +5636,10 @@ static struct Node *Node_extendsType(struct Node *__this) {
 static struct Node *Node_variableType(struct Node *__this) {
   assert(__this->kind == 6);
   assert(Node_childCount(__this) <= 2);
-  assert(isExpression(__this->firstChild) || __this->firstChild->kind == 12);
+  assert(isExpression(__this->firstChild) || __this->firstChild->kind == 14);
   struct Node *type = __this->firstChild;
 
-  return type->kind != 12 ? type : NULL;
+  return type->kind != 14 ? type : NULL;
 }
 
 static struct Node *Node_variableValue(struct Node *__this) {
@@ -5581,7 +5651,7 @@ static struct Node *Node_variableValue(struct Node *__this) {
 }
 
 static struct Node *Node_expressionValue(struct Node *__this) {
-  assert(__this->kind == 14);
+  assert(__this->kind == 16);
   assert(Node_childCount(__this) == 1);
   assert(isExpression(__this->firstChild));
 
@@ -5613,7 +5683,7 @@ static struct Node *Node_unaryValue(struct Node *__this) {
 }
 
 static struct Node *Node_whileValue(struct Node *__this) {
-  assert(__this->kind == 20);
+  assert(__this->kind == 22);
   assert(Node_childCount(__this) == 2);
   assert(isExpression(__this->firstChild));
 
@@ -5621,15 +5691,15 @@ static struct Node *Node_whileValue(struct Node *__this) {
 }
 
 static struct Node *Node_whileBody(struct Node *__this) {
-  assert(__this->kind == 20);
+  assert(__this->kind == 22);
   assert(Node_childCount(__this) == 2);
-  assert(__this->lastChild->kind == 7);
+  assert(__this->lastChild->kind == 9);
 
   return __this->lastChild;
 }
 
 static struct Node *Node_hookValue(struct Node *__this) {
-  assert(__this->kind == 26);
+  assert(__this->kind == 28);
   assert(Node_childCount(__this) == 3);
   assert(isExpression(__this->firstChild));
 
@@ -5637,7 +5707,7 @@ static struct Node *Node_hookValue(struct Node *__this) {
 }
 
 static struct Node *Node_hookTrue(struct Node *__this) {
-  assert(__this->kind == 26);
+  assert(__this->kind == 28);
   assert(Node_childCount(__this) == 3);
   assert(isExpression(__this->firstChild->nextSibling));
 
@@ -5645,7 +5715,7 @@ static struct Node *Node_hookTrue(struct Node *__this) {
 }
 
 static struct Node *Node_hookFalse(struct Node *__this) {
-  assert(__this->kind == 26);
+  assert(__this->kind == 28);
   assert(Node_childCount(__this) == 3);
   assert(isExpression(__this->lastChild));
 
@@ -5653,7 +5723,7 @@ static struct Node *Node_hookFalse(struct Node *__this) {
 }
 
 static struct Node *Node_indexTarget(struct Node *__this) {
-  assert(__this->kind == 27);
+  assert(__this->kind == 29);
   assert(Node_childCount(__this) >= 1);
   assert(isExpression(__this->firstChild));
 
@@ -5661,7 +5731,7 @@ static struct Node *Node_indexTarget(struct Node *__this) {
 }
 
 static struct Node *Node_ifValue(struct Node *__this) {
-  assert(__this->kind == 16);
+  assert(__this->kind == 18);
   assert(Node_childCount(__this) == 2 || Node_childCount(__this) == 3);
   assert(isExpression(__this->firstChild));
 
@@ -5669,85 +5739,85 @@ static struct Node *Node_ifValue(struct Node *__this) {
 }
 
 static struct Node *Node_ifTrue(struct Node *__this) {
-  assert(__this->kind == 16);
+  assert(__this->kind == 18);
   assert(Node_childCount(__this) == 2 || Node_childCount(__this) == 3);
-  assert(__this->firstChild->nextSibling->kind == 7);
+  assert(__this->firstChild->nextSibling->kind == 9);
 
   return __this->firstChild->nextSibling;
 }
 
 static struct Node *Node_ifFalse(struct Node *__this) {
-  assert(__this->kind == 16);
+  assert(__this->kind == 18);
   assert(Node_childCount(__this) == 2 || Node_childCount(__this) == 3);
-  assert(__this->firstChild->nextSibling->nextSibling == NULL || __this->firstChild->nextSibling->nextSibling->kind == 7);
+  assert(__this->firstChild->nextSibling->nextSibling == NULL || __this->firstChild->nextSibling->nextSibling->kind == 9);
 
   return __this->firstChild->nextSibling->nextSibling;
 }
 
 static uint8_t Node_expandCallIntoOperatorTree(struct Node *__this) {
-  if (__this->kind != 23) {
+  if (__this->kind != 25) {
     return 0;
   }
 
   struct Node *value = Node_callValue(__this);
   struct Symbol *symbol = value->symbol;
 
-  if (value->kind == 25 && Node_isOperator(symbol->node) && Node_isDeclare(symbol->node)) {
-    int32_t binaryKind = 31;
+  if (value->kind == 27 && Node_isOperator(symbol->node) && Node_isDeclare(symbol->node)) {
+    int32_t binaryKind = 33;
 
-    if (string_op_equals(symbol->name, (const uint16_t *)__string_358)) {
-      binaryKind = 64;
-    }
-
-    else if (string_op_equals(symbol->name, (const uint16_t *)__string_359)) {
-      binaryKind = 50;
-    }
-
-    else if (string_op_equals(symbol->name, (const uint16_t *)__string_360)) {
-      binaryKind = 62;
-    }
-
-    else if (string_op_equals(symbol->name, (const uint16_t *)__string_361)) {
-      binaryKind = 55;
-    }
-
-    else if (string_op_equals(symbol->name, (const uint16_t *)__string_362)) {
-      binaryKind = 53;
-    }
-
-    else if (string_op_equals(symbol->name, (const uint16_t *)__string_363)) {
-      binaryKind = 58;
-    }
-
-    else if (string_op_equals(symbol->name, (const uint16_t *)__string_364)) {
-      binaryKind = 65;
-    }
-
-    else if (string_op_equals(symbol->name, (const uint16_t *)__string_365)) {
-      binaryKind = 54;
-    }
-
-    else if (string_op_equals(symbol->name, (const uint16_t *)__string_366)) {
-      binaryKind = 56;
-    }
-
-    else if (string_op_equals(symbol->name, (const uint16_t *)__string_367)) {
+    if (string_op_equals(symbol->name, (const uint16_t *)__string_364)) {
       binaryKind = 66;
     }
 
-    else if (string_op_equals(symbol->name, (const uint16_t *)__string_368)) {
-      binaryKind = 27;
-    }
-
-    else if (string_op_equals(symbol->name, (const uint16_t *)__string_369)) {
+    else if (string_op_equals(symbol->name, (const uint16_t *)__string_365)) {
       binaryKind = 52;
     }
 
-    else if (string_op_equals(symbol->name, (const uint16_t *)__string_370)) {
-      binaryKind = 51;
+    else if (string_op_equals(symbol->name, (const uint16_t *)__string_366)) {
+      binaryKind = 64;
     }
 
-    if (binaryKind != 31) {
+    else if (string_op_equals(symbol->name, (const uint16_t *)__string_367)) {
+      binaryKind = 57;
+    }
+
+    else if (string_op_equals(symbol->name, (const uint16_t *)__string_368)) {
+      binaryKind = 55;
+    }
+
+    else if (string_op_equals(symbol->name, (const uint16_t *)__string_369)) {
+      binaryKind = 60;
+    }
+
+    else if (string_op_equals(symbol->name, (const uint16_t *)__string_370)) {
+      binaryKind = 67;
+    }
+
+    else if (string_op_equals(symbol->name, (const uint16_t *)__string_371)) {
+      binaryKind = 56;
+    }
+
+    else if (string_op_equals(symbol->name, (const uint16_t *)__string_372)) {
+      binaryKind = 58;
+    }
+
+    else if (string_op_equals(symbol->name, (const uint16_t *)__string_373)) {
+      binaryKind = 68;
+    }
+
+    else if (string_op_equals(symbol->name, (const uint16_t *)__string_374)) {
+      binaryKind = 29;
+    }
+
+    else if (string_op_equals(symbol->name, (const uint16_t *)__string_375)) {
+      binaryKind = 54;
+    }
+
+    else if (string_op_equals(symbol->name, (const uint16_t *)__string_376)) {
+      binaryKind = 53;
+    }
+
+    if (binaryKind != 33) {
       __this->kind = binaryKind;
       Node_remove(value);
       Node_insertChildBefore(__this, __this->firstChild, Node_remove(Node_dotTarget(value)));
@@ -5755,8 +5825,8 @@ static uint8_t Node_expandCallIntoOperatorTree(struct Node *__this) {
       return 1;
     }
 
-    else if (string_op_equals(symbol->name, (const uint16_t *)__string_371)) {
-      __this->kind = 49;
+    else if (string_op_equals(symbol->name, (const uint16_t *)__string_377)) {
+      __this->kind = 51;
       struct Node *target = createIndex(Node_remove(Node_dotTarget(Node_remove(value))));
       Node_appendChild(target, Node_remove(__this->firstChild));
       Node_insertChildBefore(__this, __this->firstChild, target);
@@ -5771,7 +5841,7 @@ static uint8_t Node_expandCallIntoOperatorTree(struct Node *__this) {
 static struct Node *createNew(struct Node *type) {
   assert(isExpression(type));
   struct Node *node = calloc(1, sizeof(struct Node));
-  node->kind = 30;
+  node->kind = 32;
   Node_appendChild(node, type);
 
   return node;
@@ -5782,7 +5852,7 @@ static struct Node *createHook(struct Node *test, struct Node *primary, struct N
   assert(isExpression(primary));
   assert(isExpression(secondary));
   struct Node *node = calloc(1, sizeof(struct Node));
-  node->kind = 26;
+  node->kind = 28;
   Node_appendChild(node, test);
   Node_appendChild(node, primary);
   Node_appendChild(node, secondary);
@@ -5793,7 +5863,7 @@ static struct Node *createHook(struct Node *test, struct Node *primary, struct N
 static struct Node *createIndex(struct Node *target) {
   assert(isExpression(target));
   struct Node *node = calloc(1, sizeof(struct Node));
-  node->kind = 27;
+  node->kind = 29;
   Node_appendChild(node, target);
 
   return node;
@@ -5801,28 +5871,19 @@ static struct Node *createIndex(struct Node *target) {
 
 static struct Node *createNull() {
   struct Node *node = calloc(1, sizeof(struct Node));
-  node->kind = 31;
+  node->kind = 33;
 
   return node;
 }
 
 static struct Node *createThis() {
   struct Node *node = calloc(1, sizeof(struct Node));
-  node->kind = 35;
+  node->kind = 37;
 
   return node;
 }
 
 static struct Node *createAddressOf(struct Node *value) {
-  assert(isExpression(value));
-  struct Node *node = calloc(1, sizeof(struct Node));
-  node->kind = 37;
-  Node_appendChild(node, value);
-
-  return node;
-}
-
-static struct Node *createDereference(struct Node *value) {
   assert(isExpression(value));
   struct Node *node = calloc(1, sizeof(struct Node));
   node->kind = 39;
@@ -5831,10 +5892,19 @@ static struct Node *createDereference(struct Node *value) {
   return node;
 }
 
+static struct Node *createDereference(struct Node *value) {
+  assert(isExpression(value));
+  struct Node *node = calloc(1, sizeof(struct Node));
+  node->kind = 41;
+  Node_appendChild(node, value);
+
+  return node;
+}
+
 static struct Node *createAlignOf(struct Node *type) {
   assert(isExpression(type));
   struct Node *node = calloc(1, sizeof(struct Node));
-  node->kind = 21;
+  node->kind = 23;
   Node_appendChild(node, type);
 
   return node;
@@ -5843,7 +5913,7 @@ static struct Node *createAlignOf(struct Node *type) {
 static struct Node *createSizeOf(struct Node *type) {
   assert(isExpression(type));
   struct Node *node = calloc(1, sizeof(struct Node));
-  node->kind = 33;
+  node->kind = 35;
   Node_appendChild(node, type);
 
   return node;
@@ -5851,7 +5921,7 @@ static struct Node *createSizeOf(struct Node *type) {
 
 static struct Node *createBool(uint8_t value) {
   struct Node *node = calloc(1, sizeof(struct Node));
-  node->kind = 22;
+  node->kind = 24;
   node->intValue = value ? 1 : 0;
 
   return node;
@@ -5859,7 +5929,7 @@ static struct Node *createBool(uint8_t value) {
 
 static struct Node *createInt(int32_t value) {
   struct Node *node = calloc(1, sizeof(struct Node));
-  node->kind = 28;
+  node->kind = 30;
   node->intValue = value;
 
   return node;
@@ -5867,7 +5937,7 @@ static struct Node *createInt(int32_t value) {
 
 static struct Node *createString(const uint16_t *value) {
   struct Node *node = calloc(1, sizeof(struct Node));
-  node->kind = 34;
+  node->kind = 36;
   node->stringValue = value;
 
   return node;
@@ -5875,7 +5945,7 @@ static struct Node *createString(const uint16_t *value) {
 
 static struct Node *createName(const uint16_t *value) {
   struct Node *node = calloc(1, sizeof(struct Node));
-  node->kind = 29;
+  node->kind = 31;
   node->stringValue = value;
 
   return node;
@@ -5884,7 +5954,7 @@ static struct Node *createName(const uint16_t *value) {
 static struct Node *createType(struct Type *type) {
   assert(type != NULL);
   struct Node *node = calloc(1, sizeof(struct Node));
-  node->kind = 36;
+  node->kind = 38;
   node->resolvedType = type;
 
   return node;
@@ -5892,7 +5962,7 @@ static struct Node *createType(struct Type *type) {
 
 static struct Node *createEmpty() {
   struct Node *node = calloc(1, sizeof(struct Node));
-  node->kind = 12;
+  node->kind = 14;
 
   return node;
 }
@@ -5900,7 +5970,7 @@ static struct Node *createEmpty() {
 static struct Node *createExpression(struct Node *value) {
   assert(isExpression(value));
   struct Node *node = calloc(1, sizeof(struct Node));
-  node->kind = 14;
+  node->kind = 16;
   Node_appendChild(node, value);
 
   return node;
@@ -5908,14 +5978,14 @@ static struct Node *createExpression(struct Node *value) {
 
 static struct Node *createBlock() {
   struct Node *node = calloc(1, sizeof(struct Node));
-  node->kind = 7;
+  node->kind = 9;
 
   return node;
 }
 
 static struct Node *createClass(const uint16_t *name) {
   struct Node *node = calloc(1, sizeof(struct Node));
-  node->kind = 9;
+  node->kind = 11;
   node->stringValue = name;
 
   return node;
@@ -5923,7 +5993,7 @@ static struct Node *createClass(const uint16_t *name) {
 
 static struct Node *createEnum(const uint16_t *name) {
   struct Node *node = calloc(1, sizeof(struct Node));
-  node->kind = 13;
+  node->kind = 15;
   node->stringValue = name;
 
   return node;
@@ -5931,10 +6001,10 @@ static struct Node *createEnum(const uint16_t *name) {
 
 static struct Node *createIf(struct Node *value, struct Node *trueBranch, struct Node *falseBranch) {
   assert(isExpression(value));
-  assert(trueBranch->kind == 7);
-  assert(falseBranch == NULL || falseBranch->kind == 7);
+  assert(trueBranch->kind == 9);
+  assert(falseBranch == NULL || falseBranch->kind == 9);
   struct Node *node = calloc(1, sizeof(struct Node));
-  node->kind = 16;
+  node->kind = 18;
   Node_appendChild(node, value);
   Node_appendChild(node, trueBranch);
 
@@ -5947,9 +6017,9 @@ static struct Node *createIf(struct Node *value, struct Node *trueBranch, struct
 
 static struct Node *createWhile(struct Node *value, struct Node *body) {
   assert(isExpression(value));
-  assert(body->kind == 7);
+  assert(body->kind == 9);
   struct Node *node = calloc(1, sizeof(struct Node));
-  node->kind = 20;
+  node->kind = 22;
   Node_appendChild(node, value);
   Node_appendChild(node, body);
 
@@ -5959,7 +6029,7 @@ static struct Node *createWhile(struct Node *value, struct Node *body) {
 static struct Node *createReturn(struct Node *value) {
   assert(value == NULL || isExpression(value));
   struct Node *node = calloc(1, sizeof(struct Node));
-  node->kind = 17;
+  node->kind = 19;
 
   if (value != NULL) {
     Node_appendChild(node, value);
@@ -5970,14 +6040,14 @@ static struct Node *createReturn(struct Node *value) {
 
 static struct Node *createVariables() {
   struct Node *node = calloc(1, sizeof(struct Node));
-  node->kind = 19;
+  node->kind = 21;
 
   return node;
 }
 
 static struct Node *createConstants() {
   struct Node *node = calloc(1, sizeof(struct Node));
-  node->kind = 10;
+  node->kind = 12;
 
   return node;
 }
@@ -6028,9 +6098,24 @@ static struct Node *createVariable(const uint16_t *name, struct Node *type, stru
   return node;
 }
 
+static struct Node *createDecorator(const uint16_t *name) {
+  struct Node *node = calloc(1, sizeof(struct Node));
+  node->kind = 7;
+  node->stringValue = name;
+
+  return node;
+}
+
+static struct Node *createDecorators() {
+  struct Node *node = calloc(1, sizeof(struct Node));
+  node->kind = 8;
+
+  return node;
+}
+
 static struct Node *createFunction(const uint16_t *name) {
   struct Node *node = calloc(1, sizeof(struct Node));
-  node->kind = 15;
+  node->kind = 17;
   node->stringValue = name;
 
   return node;
@@ -6061,7 +6146,7 @@ static struct Node *createBinary(int32_t kind, struct Node *left, struct Node *r
 static struct Node *createCall(struct Node *value) {
   assert(isExpression(value));
   struct Node *node = calloc(1, sizeof(struct Node));
-  node->kind = 23;
+  node->kind = 25;
   Node_appendChild(node, value);
 
   return node;
@@ -6071,7 +6156,7 @@ static struct Node *createCast(struct Node *value, struct Node *type) {
   assert(isExpression(value));
   assert(isExpression(type));
   struct Node *node = calloc(1, sizeof(struct Node));
-  node->kind = 24;
+  node->kind = 26;
   Node_appendChild(node, value);
   Node_appendChild(node, type);
 
@@ -6081,7 +6166,7 @@ static struct Node *createCast(struct Node *value, struct Node *type) {
 static struct Node *createDot(struct Node *value, const uint16_t *name) {
   assert(isExpression(value));
   struct Node *node = calloc(1, sizeof(struct Node));
-  node->kind = 25;
+  node->kind = 27;
   node->stringValue = name;
   Node_appendChild(node, value);
 
@@ -6106,7 +6191,7 @@ static struct Node *createMemberReference(struct Node *value, struct Symbol *sym
 
 static struct Node *createParseError() {
   struct Node *node = calloc(1, sizeof(struct Node));
-  node->kind = 32;
+  node->kind = 34;
 
   return node;
 }
@@ -6139,7 +6224,7 @@ static void ParserContext_advance(struct ParserContext *__this) {
 static void ParserContext_unexpectedToken(struct ParserContext *__this) {
   if (__this->lastError != __this->current) {
     __this->lastError = __this->current;
-    Log_error(__this->log, __this->current->range, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_372_Unexpected), tokenToString(__this->current->kind))));
+    Log_error(__this->log, __this->current->range, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_378_Unexpected), tokenToString(__this->current->kind))));
   }
 }
 
@@ -6151,11 +6236,11 @@ static uint8_t ParserContext_expect(struct ParserContext *__this, int32_t kind) 
       struct Range *currentLine = Range_enclosingLine(__this->current->range);
 
       if (kind != 2 && !Range_equals(previousLine, currentLine)) {
-        Log_error(__this->log, Range_rangeAtEnd(previousLine), StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_373_Expected), tokenToString(kind))));
+        Log_error(__this->log, Range_rangeAtEnd(previousLine), StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_379_Expected), tokenToString(kind))));
       }
 
       else {
-        Log_error(__this->log, __this->current->range, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_374_Expected), tokenToString(kind)), (const uint16_t *)__string_375_but_found), tokenToString(__this->current->kind))));
+        Log_error(__this->log, __this->current->range, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_380_Expected), tokenToString(kind)), (const uint16_t *)__string_381_but_found), tokenToString(__this->current->kind))));
       }
     }
 
@@ -6247,7 +6332,7 @@ static const uint16_t *ParserContext_parseQuotedString(struct ParserContext *__t
 
       else {
         struct Range *escape = createRange(range->source, range->start + end - 1, range->start + end + 1);
-        Log_error(__this->log, escape, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_376_Invalid_escape_code), Range_toString(escape)), 39)));
+        Log_error(__this->log, escape, StringBuilder_finish(StringBuilder_appendChar(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_382_Invalid_escape_code), Range_toString(escape)), 39)));
 
         return NULL;
       }
@@ -6273,7 +6358,7 @@ static struct Node *ParserContext_parsePrefix(struct ParserContext *__this, int3
   }
 
   if (ParserContext_peek(__this, 27)) {
-    return ParserContext_parseUnaryPrefix(__this, mode == 1 ? 42 : 39, mode);
+    return ParserContext_parseUnaryPrefix(__this, mode == 1 ? 44 : 41, mode);
   }
 
   if (mode == 0) {
@@ -6295,7 +6380,7 @@ static struct Node *ParserContext_parsePrefix(struct ParserContext *__this, int3
       ParserContext_advance(__this);
 
       if (string_length(text) != 1) {
-        Log_error(__this->log, token->range, (const uint16_t *)__string_377_Invalid_character_literal_strin);
+        Log_error(__this->log, token->range, (const uint16_t *)__string_383_Invalid_character_literal_strin);
 
         return Node_withRange(createParseError(), token->range);
       }
@@ -6387,31 +6472,31 @@ static struct Node *ParserContext_parsePrefix(struct ParserContext *__this, int3
     }
 
     if (ParserContext_peek(__this, 6)) {
-      return ParserContext_parseUnaryPrefix(__this, 37, 0);
+      return ParserContext_parseUnaryPrefix(__this, 39, 0);
     }
 
     if (ParserContext_peek(__this, 11)) {
-      return ParserContext_parseUnaryPrefix(__this, 38, 0);
-    }
-
-    if (ParserContext_peek(__this, 25)) {
       return ParserContext_parseUnaryPrefix(__this, 40, 0);
     }
 
+    if (ParserContext_peek(__this, 25)) {
+      return ParserContext_parseUnaryPrefix(__this, 42, 0);
+    }
+
     if (ParserContext_peek(__this, 26)) {
-      return ParserContext_parseUnaryPrefix(__this, 46, 0);
+      return ParserContext_parseUnaryPrefix(__this, 48, 0);
     }
 
     if (ParserContext_peek(__this, 28)) {
-      return ParserContext_parseUnaryPrefix(__this, 41, 0);
-    }
-
-    if (ParserContext_peek(__this, 30)) {
       return ParserContext_parseUnaryPrefix(__this, 43, 0);
     }
 
+    if (ParserContext_peek(__this, 30)) {
+      return ParserContext_parseUnaryPrefix(__this, 45, 0);
+    }
+
     if (ParserContext_peek(__this, 31)) {
-      return ParserContext_parseUnaryPrefix(__this, 47, 0);
+      return ParserContext_parseUnaryPrefix(__this, 49, 0);
     }
   }
 
@@ -6441,91 +6526,91 @@ static struct Node *ParserContext_parseInfix(struct ParserContext *__this, int32
 
   if (mode == 0) {
     if (ParserContext_peek(__this, 5)) {
-      return ParserContext_parseBinary(__this, 49, node, precedence, 1);
+      return ParserContext_parseBinary(__this, 51, node, precedence, 1);
     }
 
     if (ParserContext_peek(__this, 6)) {
-      return ParserContext_parseBinary(__this, 50, node, precedence, 6);
+      return ParserContext_parseBinary(__this, 52, node, precedence, 6);
     }
 
     if (ParserContext_peek(__this, 7)) {
-      return ParserContext_parseBinary(__this, 51, node, precedence, 4);
+      return ParserContext_parseBinary(__this, 53, node, precedence, 4);
     }
 
     if (ParserContext_peek(__this, 8)) {
-      return ParserContext_parseBinary(__this, 52, node, precedence, 5);
+      return ParserContext_parseBinary(__this, 54, node, precedence, 5);
     }
 
     if (ParserContext_peek(__this, 12)) {
-      return ParserContext_parseBinary(__this, 53, node, precedence, 11);
+      return ParserContext_parseBinary(__this, 55, node, precedence, 11);
     }
 
     if (ParserContext_peek(__this, 14)) {
-      return ParserContext_parseBinary(__this, 54, node, precedence, 7);
+      return ParserContext_parseBinary(__this, 56, node, precedence, 7);
     }
 
     if (ParserContext_peek(__this, 15)) {
-      return ParserContext_parseBinary(__this, 55, node, precedence, 12);
+      return ParserContext_parseBinary(__this, 57, node, precedence, 12);
     }
 
     if (ParserContext_peek(__this, 16)) {
-      return ParserContext_parseBinary(__this, 56, node, precedence, 8);
-    }
-
-    if (ParserContext_peek(__this, 17)) {
-      return ParserContext_parseBinary(__this, 57, node, precedence, 8);
-    }
-
-    if (ParserContext_peek(__this, 21)) {
       return ParserContext_parseBinary(__this, 58, node, precedence, 8);
     }
 
-    if (ParserContext_peek(__this, 22)) {
+    if (ParserContext_peek(__this, 17)) {
       return ParserContext_parseBinary(__this, 59, node, precedence, 8);
     }
 
+    if (ParserContext_peek(__this, 21)) {
+      return ParserContext_parseBinary(__this, 60, node, precedence, 8);
+    }
+
+    if (ParserContext_peek(__this, 22)) {
+      return ParserContext_parseBinary(__this, 61, node, precedence, 8);
+    }
+
     if (ParserContext_peek(__this, 23)) {
-      return ParserContext_parseBinary(__this, 60, node, precedence, 3);
+      return ParserContext_parseBinary(__this, 62, node, precedence, 3);
     }
 
     if (ParserContext_peek(__this, 24)) {
-      return ParserContext_parseBinary(__this, 61, node, precedence, 2);
+      return ParserContext_parseBinary(__this, 63, node, precedence, 2);
     }
 
     if (ParserContext_peek(__this, 25)) {
-      return ParserContext_parseBinary(__this, 67, node, precedence, 10);
+      return ParserContext_parseBinary(__this, 69, node, precedence, 10);
     }
 
     if (ParserContext_peek(__this, 27)) {
-      return ParserContext_parseBinary(__this, 62, node, precedence, 11);
-    }
-
-    if (ParserContext_peek(__this, 29)) {
-      return ParserContext_parseBinary(__this, 63, node, precedence, 7);
-    }
-
-    if (ParserContext_peek(__this, 30)) {
-      return ParserContext_parseBinary(__this, 48, node, precedence, 10);
-    }
-
-    if (ParserContext_peek(__this, 33)) {
       return ParserContext_parseBinary(__this, 64, node, precedence, 11);
     }
 
+    if (ParserContext_peek(__this, 29)) {
+      return ParserContext_parseBinary(__this, 65, node, precedence, 7);
+    }
+
+    if (ParserContext_peek(__this, 30)) {
+      return ParserContext_parseBinary(__this, 50, node, precedence, 10);
+    }
+
+    if (ParserContext_peek(__this, 33)) {
+      return ParserContext_parseBinary(__this, 66, node, precedence, 11);
+    }
+
     if (ParserContext_peek(__this, 38)) {
-      return ParserContext_parseBinary(__this, 65, node, precedence, 9);
+      return ParserContext_parseBinary(__this, 67, node, precedence, 9);
     }
 
     if (ParserContext_peek(__this, 39)) {
-      return ParserContext_parseBinary(__this, 66, node, precedence, 9);
+      return ParserContext_parseBinary(__this, 68, node, precedence, 9);
     }
 
     if (ParserContext_peek(__this, 31)) {
-      return ParserContext_parseUnaryPostfix(__this, 45, node, precedence);
+      return ParserContext_parseUnaryPostfix(__this, 47, node, precedence);
     }
 
     if (ParserContext_peek(__this, 26)) {
-      return ParserContext_parseUnaryPostfix(__this, 44, node, precedence);
+      return ParserContext_parseUnaryPostfix(__this, 46, node, precedence);
     }
 
     if (ParserContext_peek(__this, 41) && precedence < 13) {
@@ -6568,7 +6653,7 @@ static struct Node *ParserContext_parseInfix(struct ParserContext *__this, int32
 
 static struct Node *ParserContext_parseArgumentList(struct ParserContext *__this, struct Range *start, struct Node *node) {
   struct Range *open = __this->current->range;
-  uint8_t isIndex = node->kind == 27;
+  uint8_t isIndex = node->kind == 29;
   int32_t left = isIndex ? 19 : 20;
   int32_t right = isIndex ? 35 : 36;
 
@@ -6717,7 +6802,7 @@ static struct Node *ParserContext_parseBody(struct ParserContext *__this) {
     return NULL;
   }
 
-  if (node->kind == 7) {
+  if (node->kind == 9) {
     return node;
   }
 
@@ -6948,6 +7033,16 @@ static struct Node *ParserContext_parseClass(struct ParserContext *__this, struc
   }
 
   while (!ParserContext_peek(__this, 0) && !ParserContext_peek(__this, 34)) {
+    struct Node *childDecorators = NULL;
+
+    if (ParserContext_peek(__this, 83)) {
+      childDecorators = ParserContext_parseDecorators(__this);
+
+      if (childDecorators == NULL) {
+        return NULL;
+      }
+    }
+
     struct NodeFlag *childFlags = ParserContext_parseFlags(__this);
     struct Token *childName = __this->current;
     int32_t oldKind = childName->kind;
@@ -6963,11 +7058,11 @@ static struct Node *ParserContext_parseClass(struct ParserContext *__this, struc
 
     const uint16_t *text = Range_toString(childName->range);
 
-    if (string_op_equals(text, (const uint16_t *)__string_378_operator) && !ParserContext_peek(__this, 20) && !ParserContext_peek(__this, 2)) {
+    if (string_op_equals(text, (const uint16_t *)__string_384_operator) && !ParserContext_peek(__this, 20) && !ParserContext_peek(__this, 2)) {
       childName->kind = 61;
       __this->current = childName;
 
-      if (ParserContext_parseFunction(__this, childFlags, node) == NULL) {
+      if (ParserContext_parseFunction(__this, childFlags, childDecorators, node) == NULL) {
         return NULL;
       }
 
@@ -6975,8 +7070,8 @@ static struct Node *ParserContext_parseClass(struct ParserContext *__this, struc
     }
 
     else if (ParserContext_peek(__this, 2)) {
-      uint8_t isGet = string_op_equals(text, (const uint16_t *)__string_379_get);
-      uint8_t isSet = string_op_equals(text, (const uint16_t *)__string_380_set);
+      uint8_t isGet = string_op_equals(text, (const uint16_t *)__string_385_get);
+      uint8_t isSet = string_op_equals(text, (const uint16_t *)__string_386_set);
 
       if (isGet || isSet) {
         childFlags = appendFlag(childFlags, isGet ? 8 : 512, childName->range);
@@ -6985,13 +7080,13 @@ static struct Node *ParserContext_parseClass(struct ParserContext *__this, struc
       }
 
       else if (oldKind == 53) {
-        Log_error(__this->log, childName->range, (const uint16_t *)__string_381_Instance_functions_don_t_need_th);
+        Log_error(__this->log, childName->range, (const uint16_t *)__string_387_Instance_functions_don_t_need_th);
         childName = __this->current;
         ParserContext_advance(__this);
       }
 
       else if (oldKind == 44 || oldKind == 58 || oldKind == 71) {
-        Log_error(__this->log, childName->range, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_382_Instance_variables_don_t_need_th), Range_toString(childName->range)), (const uint16_t *)__string_383_keyword)));
+        Log_error(__this->log, childName->range, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_388_Instance_variables_don_t_need_th), Range_toString(childName->range)), (const uint16_t *)__string_389_keyword)));
         childName = __this->current;
         ParserContext_advance(__this);
       }
@@ -7000,12 +7095,16 @@ static struct Node *ParserContext_parseClass(struct ParserContext *__this, struc
     if (ParserContext_peek(__this, 20) || ParserContext_peek(__this, 21)) {
       __this->current = childName;
 
-      if (ParserContext_parseFunction(__this, childFlags, node) == NULL) {
+      if (ParserContext_parseFunction(__this, childFlags, childDecorators, node) == NULL) {
         return NULL;
       }
     }
 
     else {
+      if (childDecorators != NULL) {
+        Log_error(__this->log, spanRanges(childDecorators->range, childName->range), (const uint16_t *)__string_390_Decorators_must_preceed_a_functi);
+      }
+
       __this->current = childName;
 
       if (ParserContext_parseVariables(__this, childFlags, node) == NULL) {
@@ -7023,7 +7122,7 @@ static struct Node *ParserContext_parseClass(struct ParserContext *__this, struc
   return Node_withInternalRange(Node_withRange(node, spanRanges(token->range, close->range)), name->range);
 }
 
-static struct Node *ParserContext_parseFunction(struct ParserContext *__this, struct NodeFlag *firstFlag, struct Node *parent) {
+static struct Node *ParserContext_parseFunction(struct ParserContext *__this, struct NodeFlag *firstFlag, struct Node *decorators, struct Node *parent) {
   uint8_t isOperator = 0;
   struct Token *token = __this->current;
   struct Range *nameRange = NULL;
@@ -7039,13 +7138,13 @@ static struct Node *ParserContext_parseFunction(struct ParserContext *__this, st
 
       if (ParserContext_peek(__this, 5)) {
         nameRange = spanRanges(token->range, __this->current->range);
-        name = (const uint16_t *)__string_384;
+        name = (const uint16_t *)__string_391;
         ParserContext_advance(__this);
       }
 
       else {
         nameRange = spanRanges(token->range, end->range);
-        name = (const uint16_t *)__string_385;
+        name = (const uint16_t *)__string_392;
       }
 
       isOperator = 1;
@@ -7060,7 +7159,7 @@ static struct Node *ParserContext_parseFunction(struct ParserContext *__this, st
     else if (ParserContext_eat(__this, 5) || ParserContext_eat(__this, 17) || ParserContext_eat(__this, 22) || ParserContext_eat(__this, 23) || ParserContext_eat(__this, 24) || ParserContext_eat(__this, 28) || ParserContext_eat(__this, 29)) {
       nameRange = end->range;
       name = Range_toString(nameRange);
-      Log_error(__this->log, nameRange, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_386_The_operator), name), (const uint16_t *)__string_387_cannot_be_implemented), end->kind == 29 ? (const uint16_t *)__string_388_it_is_automatically_derived_fr : end->kind == 22 ? (const uint16_t *)__string_389_it_is_automatically_derived_fr : end->kind == 17 ? (const uint16_t *)__string_390_it_is_automatically_derived_fr : (const uint16_t *)__string_391)));
+      Log_error(__this->log, nameRange, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_393_The_operator), name), (const uint16_t *)__string_394_cannot_be_implemented), end->kind == 29 ? (const uint16_t *)__string_395_it_is_automatically_derived_fr : end->kind == 22 ? (const uint16_t *)__string_396_it_is_automatically_derived_fr : end->kind == 17 ? (const uint16_t *)__string_397_it_is_automatically_derived_fr : (const uint16_t *)__string_398)));
     }
 
     else {
@@ -7099,6 +7198,10 @@ static struct Node *ParserContext_parseFunction(struct ParserContext *__this, st
     }
 
     Node_appendChild(node, parameters);
+  }
+
+  if (decorators != NULL) {
+    Node_appendChild(node, decorators);
   }
 
   if (!ParserContext_expect(__this, 20)) {
@@ -7239,7 +7342,7 @@ static struct Node *ParserContext_parseVariables(struct ParserContext *__this, s
       }
 
       if (parent != NULL) {
-        Log_error(__this->log, value->range, (const uint16_t *)__string_392_Inline_initialization_of_instanc);
+        Log_error(__this->log, value->range, (const uint16_t *)__string_399_Inline_initialization_of_instanc);
       }
     }
 
@@ -7345,7 +7448,27 @@ static struct Node *ParserContext_parseUnsafe(struct ParserContext *__this) {
 }
 
 static struct Node *ParserContext_parseStatement(struct ParserContext *__this, int32_t mode) {
+  struct Node *decorators = NULL;
+
+  if (ParserContext_peek(__this, 83)) {
+    decorators = ParserContext_parseDecorators(__this);
+
+    if (decorators == NULL) {
+      return NULL;
+    }
+  }
+
   struct NodeFlag *firstFlag = mode == 1 ? ParserContext_parseFlags(__this) : NULL;
+
+  if (ParserContext_peek(__this, 53)) {
+    return ParserContext_parseFunction(__this, firstFlag, decorators, NULL);
+  }
+
+  if (decorators != NULL) {
+    ParserContext_unexpectedToken(__this);
+
+    return NULL;
+  }
 
   if (ParserContext_peek(__this, 70) && firstFlag == NULL) {
     return ParserContext_parseUnsafe(__this);
@@ -7353,10 +7476,6 @@ static struct Node *ParserContext_parseStatement(struct ParserContext *__this, i
 
   if (ParserContext_peek(__this, 44) || ParserContext_peek(__this, 58) || ParserContext_peek(__this, 71)) {
     return ParserContext_parseVariables(__this, firstFlag, NULL);
-  }
-
-  if (ParserContext_peek(__this, 53)) {
-    return ParserContext_parseFunction(__this, firstFlag, NULL);
   }
 
   if (ParserContext_peek(__this, 43)) {
@@ -7378,11 +7497,11 @@ static struct Node *ParserContext_parseStatement(struct ParserContext *__this, i
   }
 
   if (ParserContext_peek(__this, 42)) {
-    return ParserContext_parseLoopJump(__this, 8);
+    return ParserContext_parseLoopJump(__this, 10);
   }
 
   if (ParserContext_peek(__this, 45)) {
-    return ParserContext_parseLoopJump(__this, 11);
+    return ParserContext_parseLoopJump(__this, 13);
   }
 
   if (ParserContext_peek(__this, 54)) {
@@ -7451,7 +7570,7 @@ static uint8_t ParserContext_parseInt(struct ParserContext *__this, struct Range
     }
 
     else {
-      Log_error(__this->log, range, (const uint16_t *)__string_393_Use_the_0o_prefix_for_octal_in);
+      Log_error(__this->log, range, (const uint16_t *)__string_400_Use_the_0o_prefix_for_octal_in);
 
       return 0;
     }
@@ -7467,7 +7586,7 @@ static uint8_t ParserContext_parseInt(struct ParserContext *__this, struct Range
     uint32_t baseValue = value * base;
 
     if (baseValue / base != value || baseValue > 4294967295 - digit) {
-      Log_error(__this->log, range, (const uint16_t *)__string_394_Integer_literal_is_too_big_to_fi);
+      Log_error(__this->log, range, (const uint16_t *)__string_401_Integer_literal_is_too_big_to_fi);
 
       return 0;
     }
@@ -7480,6 +7599,47 @@ static uint8_t ParserContext_parseInt(struct ParserContext *__this, struct Range
   node->flags = 32;
 
   return 1;
+}
+
+static struct Node *ParserContext_parseDecorator(struct ParserContext *__this) {
+  assert(__this->current->kind == 83);
+  struct Range *magicRange = __this->current->range;
+  ParserContext_advance(__this);
+  struct Token *name = __this->current;
+
+  if (!ParserContext_expect(__this, 2)) {
+    return NULL;
+  }
+
+  struct Node *node = createDecorator(Range_toString(name->range));
+
+  if (ParserContext_peek(__this, 20)) {
+    ParserContext_parseArgumentList(__this, __this->current->range, node);
+  }
+
+  return Node_withRange(node, spanRanges(magicRange, __this->current->range));
+}
+
+static struct Node *ParserContext_parseDecorators(struct ParserContext *__this) {
+  assert(__this->current->kind == 83);
+  struct Range *firstMagicRange = __this->current->range;
+  struct Node *decorators = createDecorators();
+
+  while (1) {
+    struct Node *decorator = ParserContext_parseDecorator(__this);
+
+    if (decorator == NULL) {
+      return NULL;
+    }
+
+    Node_appendChild(decorators, decorator);
+
+    if (!ParserContext_peek(__this, 83)) {
+      break;
+    }
+  }
+
+  return Node_withRange(decorators, spanRanges(firstMagicRange, __this->previous->range));
 }
 
 static struct Node *parse(struct Token *firstToken, struct Log *log) {
@@ -7518,12 +7678,12 @@ static void Preprocessor_advance(struct Preprocessor *__this) {
 }
 
 static void Preprocessor_unexpectedToken(struct Preprocessor *__this) {
-  Log_error(__this->log, __this->current->range, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_395_Unexpected), tokenToString(__this->current->kind))));
+  Log_error(__this->log, __this->current->range, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_402_Unexpected), tokenToString(__this->current->kind))));
 }
 
 static uint8_t Preprocessor_expect(struct Preprocessor *__this, int32_t kind) {
   if (!Preprocessor_peek(__this, kind)) {
-    Log_error(__this->log, __this->current->range, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_396_Expected), tokenToString(kind)), (const uint16_t *)__string_397_but_found), tokenToString(__this->current->kind))));
+    Log_error(__this->log, __this->current->range, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_403_Expected), tokenToString(kind)), (const uint16_t *)__string_404_but_found), tokenToString(__this->current->kind))));
 
     return 0;
   }
@@ -7595,8 +7755,8 @@ static uint8_t Preprocessor_scan(struct Preprocessor *__this, uint8_t isParentLi
         Preprocessor_define(__this, Range_toString(__this->previous->range), current->kind == 73);
       }
 
-      if (Preprocessor_eat(__this, 52) || (Preprocessor_eat(__this, 3) && string_op_equals(Range_toString(__this->previous->range), (const uint16_t *)__string_398_0))) {
-        Log_error(__this->log, __this->previous->range, (const uint16_t *)__string_399_Use_undef_to_turn_a_preproces);
+      if (Preprocessor_eat(__this, 52) || (Preprocessor_eat(__this, 3) && string_op_equals(Range_toString(__this->previous->range), (const uint16_t *)__string_405_0))) {
+        Log_error(__this->log, __this->previous->range, (const uint16_t *)__string_406_Use_undef_to_turn_a_preproces);
       }
 
       if (!Preprocessor_peek(__this, 0) && !Preprocessor_expect(__this, 80)) {
@@ -7606,7 +7766,7 @@ static uint8_t Preprocessor_scan(struct Preprocessor *__this, uint8_t isParentLi
       }
 
       if (!__this->isDefineAndUndefAllowed) {
-        Log_error(__this->log, spanRanges(current->range, __this->previous->range), (const uint16_t *)__string_400_All_define_and_undef_direc);
+        Log_error(__this->log, spanRanges(current->range, __this->previous->range), (const uint16_t *)__string_407_All_define_and_undef_direc);
       }
 
       Preprocessor_removeTokensFrom(__this, previous);
@@ -7710,7 +7870,7 @@ static int32_t Preprocessor_parsePrefix(struct Preprocessor *__this) {
   if (Preprocessor_eat(__this, 2)) {
     const uint16_t *name = Range_toString(__this->previous->range);
 
-    if (Preprocessor_peek(__this, 20) && string_op_equals(name, (const uint16_t *)__string_401_defined)) {
+    if (Preprocessor_peek(__this, 20) && string_op_equals(name, (const uint16_t *)__string_408_defined)) {
       isDefinedOperator = 1;
     }
 
@@ -7740,10 +7900,10 @@ static int32_t Preprocessor_parsePrefix(struct Preprocessor *__this) {
     }
 
     if (isDefinedOperator) {
-      struct StringBuilder *builder = StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_402_There_is_no_defined_operator);
+      struct StringBuilder *builder = StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_409_There_is_no_defined_operator);
 
       if (first->kind == 2 && __this->previous == first->next) {
-        StringBuilder_append(StringBuilder_append(StringBuilder_append(builder, (const uint16_t *)__string_403_just_use), Range_toString(first->range)), (const uint16_t *)__string_404_instead);
+        StringBuilder_append(StringBuilder_append(StringBuilder_append(builder, (const uint16_t *)__string_410_just_use), Range_toString(first->range)), (const uint16_t *)__string_411_instead);
       }
 
       Log_error(__this->log, spanRanges(start->range, __this->previous->range), StringBuilder_finish(builder));
@@ -7753,8 +7913,8 @@ static int32_t Preprocessor_parsePrefix(struct Preprocessor *__this) {
   }
 
   if (Preprocessor_eat(__this, 3)) {
-    uint8_t isTrue = !string_op_equals(Range_toString(__this->previous->range), (const uint16_t *)__string_405_0);
-    Log_error(__this->log, __this->previous->range, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_406_Unexpected_integer_did_you_mean), isTrue ? (const uint16_t *)__string_407_true : (const uint16_t *)__string_408_false), (const uint16_t *)__string_409)));
+    uint8_t isTrue = !string_op_equals(Range_toString(__this->previous->range), (const uint16_t *)__string_412_0);
+    Log_error(__this->log, __this->previous->range, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_413_Unexpected_integer_did_you_mean), isTrue ? (const uint16_t *)__string_414_true : (const uint16_t *)__string_415_false), (const uint16_t *)__string_416)));
 
     return isTrue ? 1 : 0;
   }
@@ -7882,7 +8042,7 @@ static uint8_t Scope_define(struct Scope *__this, struct Log *log, struct Symbol
   struct Symbol *existing = Scope_findLocal(__this, symbol->name, hint);
 
   if (existing != NULL) {
-    Log_error(log, symbol->range, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_410_Duplicate_symbol), symbol->name), (const uint16_t *)__string_411)));
+    Log_error(log, symbol->range, StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), (const uint16_t *)__string_417_Duplicate_symbol), symbol->name), (const uint16_t *)__string_418)));
 
     return 0;
   }
@@ -7924,7 +8084,7 @@ static void treeShakingMarkAllUsed(struct Node *node) {
     }
   }
 
-  if (node->kind == 30) {
+  if (node->kind == 32) {
     struct Type *type = Node_newType(node)->resolvedType;
 
     if (type->symbol != NULL) {
@@ -7941,11 +8101,11 @@ static void treeShakingMarkAllUsed(struct Node *node) {
 }
 
 static void treeShakingSearchForUsed(struct Node *node) {
-  if (node->kind == 15 && Node_isExtern(node)) {
+  if (node->kind == 17 && Node_isExtern(node)) {
     treeShakingMarkAllUsed(node);
   }
 
-  else if (node->kind == 2 || node->kind == 9) {
+  else if (node->kind == 2 || node->kind == 11) {
     struct Node *child = node->firstChild;
 
     while (child != NULL) {
@@ -7953,18 +8113,18 @@ static void treeShakingSearchForUsed(struct Node *node) {
       child = child->nextSibling;
     }
 
-    if (node->kind == 9 && Node_isExtern(node)) {
+    if (node->kind == 11 && Node_isExtern(node)) {
       node->symbol->flags = node->symbol->flags | 64;
     }
   }
 }
 
 static void treeShakingRemoveUnused(struct Node *node) {
-  if (node->kind == 15 && !Symbol_isUsed(node->symbol) && node->range->source->isLibrary) {
+  if (node->kind == 17 && !Symbol_isUsed(node->symbol) && node->range->source->isLibrary) {
     Node_remove(node);
   }
 
-  else if (node->kind == 2 || node->kind == 9) {
+  else if (node->kind == 2 || node->kind == 11) {
     struct Node *child = node->firstChild;
 
     while (child != NULL) {
@@ -7973,7 +8133,7 @@ static void treeShakingRemoveUnused(struct Node *node) {
       child = next;
     }
 
-    if (node->kind == 9 && !Symbol_isUsed(node->symbol) && !Node_isDeclare(node) && node->range->source->isLibrary) {
+    if (node->kind == 11 && !Symbol_isUsed(node->symbol) && !Node_isDeclare(node) && node->range->source->isLibrary) {
       Node_remove(node);
     }
   }
@@ -8010,27 +8170,27 @@ static void StringBuilder_appendQuoted(struct StringBuilder *sb, const uint16_t 
     uint16_t c = string_op_get(text, end);
 
     if (c == 34) {
-      StringBuilder_append(StringBuilder_appendSlice(sb, text, start, end), (const uint16_t *)__string_412);
+      StringBuilder_append(StringBuilder_appendSlice(sb, text, start, end), (const uint16_t *)__string_419);
     }
 
     else if (c == 0) {
-      StringBuilder_append(StringBuilder_appendSlice(sb, text, start, end), (const uint16_t *)__string_413_0);
+      StringBuilder_append(StringBuilder_appendSlice(sb, text, start, end), (const uint16_t *)__string_420_0);
     }
 
     else if (c == 9) {
-      StringBuilder_append(StringBuilder_appendSlice(sb, text, start, end), (const uint16_t *)__string_414_t);
+      StringBuilder_append(StringBuilder_appendSlice(sb, text, start, end), (const uint16_t *)__string_421_t);
     }
 
     else if (c == 13) {
-      StringBuilder_append(StringBuilder_appendSlice(sb, text, start, end), (const uint16_t *)__string_415_r);
+      StringBuilder_append(StringBuilder_appendSlice(sb, text, start, end), (const uint16_t *)__string_422_r);
     }
 
     else if (c == 10) {
-      StringBuilder_append(StringBuilder_appendSlice(sb, text, start, end), (const uint16_t *)__string_416_n);
+      StringBuilder_append(StringBuilder_appendSlice(sb, text, start, end), (const uint16_t *)__string_423_n);
     }
 
     else if (c == 92) {
-      StringBuilder_append(StringBuilder_appendSlice(sb, text, start, end), (const uint16_t *)__string_417);
+      StringBuilder_append(StringBuilder_appendSlice(sb, text, start, end), (const uint16_t *)__string_424);
     }
 
     else {
@@ -8110,7 +8270,7 @@ static uint8_t isVariable(int32_t kind) {
 }
 
 static uint8_t Symbol_isEnumValue(struct Symbol *__this) {
-  return __this->node->parent->kind == 13;
+  return __this->node->parent->kind == 15;
 }
 
 static uint8_t Symbol_isUnsafe(struct Symbol *__this) {
@@ -8144,7 +8304,7 @@ static uint8_t Symbol_isUsed(struct Symbol *__this) {
 static struct Symbol *Symbol_parent(struct Symbol *__this) {
   struct Node *parent = __this->node->parent;
 
-  return parent->kind == 9 ? parent->symbol : NULL;
+  return parent->kind == 11 ? parent->symbol : NULL;
 }
 
 static struct Type *Symbol_resolvedTypeUnderlyingIfEnumValue(struct Symbol *__this, struct CheckContext *context) {
@@ -8195,7 +8355,7 @@ static void CResult_emitIndent(struct CResult *__this) {
   int32_t i = __this->indent;
 
   while (i > 0) {
-    StringBuilder_append(__this->code, (const uint16_t *)__string_418);
+    StringBuilder_append(__this->code, (const uint16_t *)__string_425);
     i = i - 1;
   }
 }
@@ -8221,7 +8381,7 @@ static void CResult_emitStatements(struct CResult *__this, struct Node *node) {
 
 static void CResult_emitBlock(struct CResult *__this, struct Node *node) {
   __this->previousNode = NULL;
-  StringBuilder_append(__this->code, (const uint16_t *)__string_419);
+  StringBuilder_append(__this->code, (const uint16_t *)__string_426);
   __this->indent = __this->indent + 1;
   CResult_emitStatements(__this, node->firstChild);
   __this->indent = __this->indent - 1;
@@ -8256,12 +8416,12 @@ static void CResult_emitUnary(struct CResult *__this, struct Node *node, int32_t
 
 static void CResult_emitBinary(struct CResult *__this, struct Node *node, int32_t parentPrecedence, const uint16_t *operator, int32_t operatorPrecedence) {
   int32_t kind = node->kind;
-  uint8_t isRightAssociative = kind == 49;
+  uint8_t isRightAssociative = kind == 51;
   uint8_t needsParentheses = parentPrecedence > operatorPrecedence;
   int32_t parentKind = node->parent->kind;
   struct StringBuilder *code = __this->code;
 
-  if ((parentKind == 61 && kind == 60) || (parentKind == 51 && kind == 50) || ((parentKind == 54 || parentKind == 63) && (kind == 54 || kind == 63)) || ((kind == 48 || kind == 67) && (parentKind == 50 || parentKind == 51 || parentKind == 52 || parentKind == 65 || parentKind == 66))) {
+  if ((parentKind == 63 && kind == 62) || (parentKind == 53 && kind == 52) || ((parentKind == 56 || parentKind == 65) && (kind == 56 || kind == 65)) || ((kind == 50 || kind == 69) && (parentKind == 52 || parentKind == 53 || parentKind == 54 || parentKind == 67 || parentKind == 68))) {
     needsParentheses = 1;
   }
 
@@ -8284,7 +8444,7 @@ static void CResult_emitCommaSeparatedExpressions(struct CResult *__this, struct
     start = start->nextSibling;
 
     if (start != stop) {
-      StringBuilder_append(__this->code, (const uint16_t *)__string_420);
+      StringBuilder_append(__this->code, (const uint16_t *)__string_427);
     }
   }
 }
@@ -8301,33 +8461,33 @@ static void CResult_emitExpression(struct CResult *__this, struct Node *node, in
   struct StringBuilder *code = __this->code;
   assert(node->resolvedType != NULL);
 
-  if (node->kind == 29) {
+  if (node->kind == 31) {
     CResult_emitSymbolName(__this, node->symbol);
   }
 
-  else if (node->kind == 31) {
-    StringBuilder_append(code, (const uint16_t *)__string_421_NULL);
+  else if (node->kind == 33) {
+    StringBuilder_append(code, (const uint16_t *)__string_428_NULL);
   }
 
-  else if (node->kind == 22) {
+  else if (node->kind == 24) {
     StringBuilder_appendChar(code, node->intValue != 0 ? 49 : 48);
   }
 
-  else if (node->kind == 28) {
+  else if (node->kind == 30) {
     StringBuilder_append(code, Type_isUnsigned(node->resolvedType) ? uint_toString((uint32_t)node->intValue) : int_toString(node->intValue));
   }
 
-  else if (node->kind == 34) {
+  else if (node->kind == 36) {
     int32_t id = __this->nextStringLiteral;
     struct StringBuilder *builder = StringBuilder_new();
-    StringBuilder_append(StringBuilder_append(builder, (const uint16_t *)__string_422___string_), int_toString(id));
+    StringBuilder_append(StringBuilder_append(builder, (const uint16_t *)__string_429___string_), int_toString(id));
     const uint16_t *value = node->stringValue;
     struct StringBuilder *codePrefix = __this->codePrefix;
     int32_t length = string_length(value);
     int32_t i = 0;
 
     if (!__this->hasStrings) {
-      StringBuilder_append(codePrefix, (const uint16_t *)__string_423_ifdef_THINSCRIPT_BIG_ENDIAN);
+      StringBuilder_append(codePrefix, (const uint16_t *)__string_430_ifdef_THINSCRIPT_BIG_ENDIAN);
       __this->hasStrings = 1;
     }
 
@@ -8354,32 +8514,32 @@ static void CResult_emitExpression(struct CResult *__this, struct Node *node, in
     }
 
     const uint16_t *name = StringBuilder_finish(builder);
-    StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_append(codePrefix, (const uint16_t *)__string_424_static_const_uint32_t), name), (const uint16_t *)__string_425), int_toString(length));
+    StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_append(codePrefix, (const uint16_t *)__string_431_static_const_uint32_t), name), (const uint16_t *)__string_432), int_toString(length));
     i = 0;
 
     while (i < length) {
-      StringBuilder_append(codePrefix, (const uint16_t *)__string_426_S);
+      StringBuilder_append(codePrefix, (const uint16_t *)__string_433_S);
       cEmitCharacter(codePrefix, string_op_get(value, i));
 
       if (i + 1 < length) {
-        StringBuilder_append(codePrefix, i % 32 == 20 ? (const uint16_t *)__string_427 : (const uint16_t *)__string_428);
+        StringBuilder_append(codePrefix, i % 32 == 20 ? (const uint16_t *)__string_434 : (const uint16_t *)__string_435);
         cEmitCharacter(codePrefix, string_op_get(value, i + 1));
         StringBuilder_appendChar(codePrefix, 41);
       }
 
       else {
-        StringBuilder_append(codePrefix, (const uint16_t *)__string_429_0);
+        StringBuilder_append(codePrefix, (const uint16_t *)__string_436_0);
       }
 
       i = i + 2;
     }
 
-    StringBuilder_append(codePrefix, (const uint16_t *)__string_430);
+    StringBuilder_append(codePrefix, (const uint16_t *)__string_437);
     __this->nextStringLiteral = __this->nextStringLiteral + 1;
-    StringBuilder_append(StringBuilder_append(code, (const uint16_t *)__string_431_const_uint16_t), name);
+    StringBuilder_append(StringBuilder_append(code, (const uint16_t *)__string_438_const_uint16_t), name);
   }
 
-  else if (node->kind == 24) {
+  else if (node->kind == 26) {
     if (parentPrecedence > 13) {
       StringBuilder_appendChar(code, 40);
     }
@@ -8394,22 +8554,22 @@ static void CResult_emitExpression(struct CResult *__this, struct Node *node, in
     }
   }
 
-  else if (node->kind == 25) {
+  else if (node->kind == 27) {
     struct Node *target = Node_dotTarget(node);
     CResult_emitExpression(__this, target, 15);
-    StringBuilder_append(code, Type_isReference(target->resolvedType) ? (const uint16_t *)__string_432 : (const uint16_t *)__string_433);
+    StringBuilder_append(code, Type_isReference(target->resolvedType) ? (const uint16_t *)__string_439 : (const uint16_t *)__string_440);
     CResult_emitSymbolName(__this, node->symbol);
   }
 
-  else if (node->kind == 26) {
+  else if (node->kind == 28) {
     if (parentPrecedence > 1) {
       StringBuilder_appendChar(code, 40);
     }
 
     CResult_emitExpression(__this, Node_hookValue(node), 2);
-    StringBuilder_append(code, (const uint16_t *)__string_434);
+    StringBuilder_append(code, (const uint16_t *)__string_441);
     CResult_emitExpression(__this, Node_hookTrue(node), 1);
-    StringBuilder_append(code, (const uint16_t *)__string_435);
+    StringBuilder_append(code, (const uint16_t *)__string_442);
     CResult_emitExpression(__this, Node_hookFalse(node), 1);
 
     if (parentPrecedence > 1) {
@@ -8417,16 +8577,16 @@ static void CResult_emitExpression(struct CResult *__this, struct Node *node, in
     }
   }
 
-  else if (node->kind == 23) {
+  else if (node->kind == 25) {
     struct Node *callValue = Node_callValue(node);
     CResult_emitSymbolName(__this, callValue->symbol);
     StringBuilder_appendChar(code, 40);
 
-    if (callValue->kind == 25) {
+    if (callValue->kind == 27) {
       CResult_emitExpression(__this, Node_dotTarget(callValue), 0);
 
       if (callValue->nextSibling != NULL) {
-        StringBuilder_append(code, (const uint16_t *)__string_436);
+        StringBuilder_append(code, (const uint16_t *)__string_443);
       }
     }
 
@@ -8434,122 +8594,122 @@ static void CResult_emitExpression(struct CResult *__this, struct Node *node, in
     StringBuilder_appendChar(code, 41);
   }
 
-  else if (node->kind == 30) {
-    StringBuilder_append(code, (const uint16_t *)__string_437_calloc_1_sizeof);
+  else if (node->kind == 32) {
+    StringBuilder_append(code, (const uint16_t *)__string_444_calloc_1_sizeof);
     CResult_emitType(__this, node->resolvedType, 2);
-    StringBuilder_append(code, (const uint16_t *)__string_438);
-  }
-
-  else if (node->kind == 38) {
-    CResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_439);
-  }
-
-  else if (node->kind == 39) {
-    CResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_440);
+    StringBuilder_append(code, (const uint16_t *)__string_445);
   }
 
   else if (node->kind == 40) {
-    CResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_441);
-  }
-
-  else if (node->kind == 41) {
-    CResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_442);
-  }
-
-  else if (node->kind == 43) {
-    CResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_443);
-  }
-
-  else if (node->kind == 44) {
-    CResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_444);
-  }
-
-  else if (node->kind == 45) {
-    CResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_445);
-  }
-
-  else if (node->kind == 46) {
     CResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_446);
   }
 
-  else if (node->kind == 47) {
+  else if (node->kind == 41) {
     CResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_447);
   }
 
+  else if (node->kind == 42) {
+    CResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_448);
+  }
+
+  else if (node->kind == 43) {
+    CResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_449);
+  }
+
+  else if (node->kind == 45) {
+    CResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_450);
+  }
+
+  else if (node->kind == 46) {
+    CResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_451);
+  }
+
+  else if (node->kind == 47) {
+    CResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_452);
+  }
+
   else if (node->kind == 48) {
-    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_448, 10);
+    CResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_453);
   }
 
   else if (node->kind == 49) {
-    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_449, 1);
+    CResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_454);
   }
 
   else if (node->kind == 50) {
-    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_450, 6);
+    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_455, 10);
   }
 
   else if (node->kind == 51) {
-    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_451, 4);
+    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_456, 1);
   }
 
   else if (node->kind == 52) {
-    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_452, 5);
+    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_457, 6);
   }
 
   else if (node->kind == 53) {
-    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_453, 11);
+    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_458, 4);
   }
 
   else if (node->kind == 54) {
-    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_454, 7);
+    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_459, 5);
+  }
+
+  else if (node->kind == 55) {
+    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_460, 11);
   }
 
   else if (node->kind == 56) {
-    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_455, 8);
-  }
-
-  else if (node->kind == 57) {
-    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_456, 8);
+    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_461, 7);
   }
 
   else if (node->kind == 58) {
-    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_457, 8);
+    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_462, 8);
   }
 
   else if (node->kind == 59) {
-    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_458, 8);
+    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_463, 8);
   }
 
   else if (node->kind == 60) {
-    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_459, 3);
+    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_464, 8);
   }
 
   else if (node->kind == 61) {
-    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_460, 2);
+    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_465, 8);
   }
 
   else if (node->kind == 62) {
-    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_461, 11);
+    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_466, 3);
   }
 
   else if (node->kind == 63) {
-    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_462, 7);
+    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_467, 2);
   }
 
   else if (node->kind == 64) {
-    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_463, 11);
+    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_468, 11);
   }
 
   else if (node->kind == 65) {
-    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_464, 9);
+    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_469, 7);
   }
 
   else if (node->kind == 66) {
-    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_465, 9);
+    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_470, 11);
   }
 
   else if (node->kind == 67) {
-    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_466, 10);
+    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_471, 9);
+  }
+
+  else if (node->kind == 68) {
+    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_472, 9);
+  }
+
+  else if (node->kind == 69) {
+    CResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_473, 10);
   }
 
   else {
@@ -8558,7 +8718,7 @@ static void CResult_emitExpression(struct CResult *__this, struct Node *node, in
 }
 
 static uint8_t CResult_shouldEmitClass(struct CResult *__this, struct Node *node) {
-  assert(node->kind == 9);
+  assert(node->kind == 11);
 
   return node->symbol->kind == 0 && node->symbol != __this->context->stringType->symbol;
 }
@@ -8579,35 +8739,35 @@ static void CResult_emitType(struct CResult *__this, struct Type *originalType, 
   }
 
   if (Type_isClass(type)) {
-    StringBuilder_append(code, (const uint16_t *)__string_467_struct);
+    StringBuilder_append(code, (const uint16_t *)__string_474_struct);
   }
 
   if (type == context->boolType || type == context->byteType) {
-    StringBuilder_append(code, (const uint16_t *)__string_468_uint8_t);
+    StringBuilder_append(code, (const uint16_t *)__string_475_uint8_t);
   }
 
   else if (type == context->sbyteType) {
-    StringBuilder_append(code, (const uint16_t *)__string_469_int8_t);
+    StringBuilder_append(code, (const uint16_t *)__string_476_int8_t);
   }
 
   else if (type == context->intType) {
-    StringBuilder_append(code, (const uint16_t *)__string_470_int32_t);
+    StringBuilder_append(code, (const uint16_t *)__string_477_int32_t);
   }
 
   else if (type == context->shortType) {
-    StringBuilder_append(code, (const uint16_t *)__string_471_int16_t);
+    StringBuilder_append(code, (const uint16_t *)__string_478_int16_t);
   }
 
   else if (type == context->stringType) {
-    StringBuilder_append(code, (const uint16_t *)__string_472_const_uint16_t);
+    StringBuilder_append(code, (const uint16_t *)__string_479_const_uint16_t);
   }
 
   else if (type == context->uintType) {
-    StringBuilder_append(code, (const uint16_t *)__string_473_uint32_t);
+    StringBuilder_append(code, (const uint16_t *)__string_480_uint32_t);
   }
 
   else if (type == context->ushortType) {
-    StringBuilder_append(code, (const uint16_t *)__string_474_uint16_t);
+    StringBuilder_append(code, (const uint16_t *)__string_481_uint16_t);
   }
 
   else {
@@ -8625,7 +8785,7 @@ static void CResult_emitType(struct CResult *__this, struct Type *originalType, 
 
   else if (mode != 2) {
     if (Type_isReference(type)) {
-      StringBuilder_append(code, (const uint16_t *)__string_475);
+      StringBuilder_append(code, (const uint16_t *)__string_482);
     }
 
     else if (mode == 1) {
@@ -8637,14 +8797,14 @@ static void CResult_emitType(struct CResult *__this, struct Type *originalType, 
 static void CResult_emitStatement(struct CResult *__this, struct Node *node) {
   struct StringBuilder *code = __this->code;
 
-  if (node->kind == 16) {
+  if (node->kind == 18) {
     CResult_emitNewlineBefore(__this, node);
     CResult_emitIndent(__this);
 
     while (1) {
-      StringBuilder_append(code, (const uint16_t *)__string_476_if);
+      StringBuilder_append(code, (const uint16_t *)__string_483_if);
       CResult_emitExpression(__this, Node_ifValue(node), 0);
-      StringBuilder_append(code, (const uint16_t *)__string_477);
+      StringBuilder_append(code, (const uint16_t *)__string_484);
       CResult_emitBlock(__this, Node_ifTrue(node));
       struct Node *no = Node_ifFalse(node);
 
@@ -8654,11 +8814,11 @@ static void CResult_emitStatement(struct CResult *__this, struct Node *node) {
         break;
       }
 
-      StringBuilder_append(code, (const uint16_t *)__string_478);
+      StringBuilder_append(code, (const uint16_t *)__string_485);
       CResult_emitIndent(__this);
-      StringBuilder_append(code, (const uint16_t *)__string_479_else);
+      StringBuilder_append(code, (const uint16_t *)__string_486_else);
 
-      if (no->firstChild == NULL || no->firstChild != no->lastChild || no->firstChild->kind != 16) {
+      if (no->firstChild == NULL || no->firstChild != no->lastChild || no->firstChild->kind != 18) {
         CResult_emitBlock(__this, no);
         StringBuilder_appendChar(code, 10);
 
@@ -8671,62 +8831,62 @@ static void CResult_emitStatement(struct CResult *__this, struct Node *node) {
     CResult_emitNewlineAfter(__this, node);
   }
 
-  else if (node->kind == 20) {
+  else if (node->kind == 22) {
     CResult_emitNewlineBefore(__this, node);
     CResult_emitIndent(__this);
-    StringBuilder_append(code, (const uint16_t *)__string_480_while);
+    StringBuilder_append(code, (const uint16_t *)__string_487_while);
     CResult_emitExpression(__this, Node_whileValue(node), 0);
-    StringBuilder_append(code, (const uint16_t *)__string_481);
+    StringBuilder_append(code, (const uint16_t *)__string_488);
     CResult_emitBlock(__this, Node_whileBody(node));
     StringBuilder_appendChar(code, 10);
     CResult_emitNewlineAfter(__this, node);
   }
 
-  else if (node->kind == 8) {
+  else if (node->kind == 10) {
     CResult_emitNewlineBefore(__this, node);
     CResult_emitIndent(__this);
-    StringBuilder_append(code, (const uint16_t *)__string_482_break);
+    StringBuilder_append(code, (const uint16_t *)__string_489_break);
     CResult_emitNewlineAfter(__this, node);
   }
 
-  else if (node->kind == 11) {
+  else if (node->kind == 13) {
     CResult_emitNewlineBefore(__this, node);
     CResult_emitIndent(__this);
-    StringBuilder_append(code, (const uint16_t *)__string_483_continue);
+    StringBuilder_append(code, (const uint16_t *)__string_490_continue);
+    CResult_emitNewlineAfter(__this, node);
+  }
+
+  else if (node->kind == 16) {
+    CResult_emitNewlineBefore(__this, node);
+    CResult_emitIndent(__this);
+    CResult_emitExpression(__this, Node_expressionValue(node), 0);
+    StringBuilder_append(code, (const uint16_t *)__string_491);
     CResult_emitNewlineAfter(__this, node);
   }
 
   else if (node->kind == 14) {
-    CResult_emitNewlineBefore(__this, node);
-    CResult_emitIndent(__this);
-    CResult_emitExpression(__this, Node_expressionValue(node), 0);
-    StringBuilder_append(code, (const uint16_t *)__string_484);
-    CResult_emitNewlineAfter(__this, node);
   }
 
-  else if (node->kind == 12) {
-  }
-
-  else if (node->kind == 17) {
+  else if (node->kind == 19) {
     struct Node *value = Node_returnValue(node);
     CResult_emitNewlineBefore(__this, node);
     CResult_emitIndent(__this);
 
     if (value != NULL) {
-      StringBuilder_append(code, (const uint16_t *)__string_485_return);
+      StringBuilder_append(code, (const uint16_t *)__string_492_return);
       CResult_emitExpression(__this, value, 0);
-      StringBuilder_append(code, (const uint16_t *)__string_486);
+      StringBuilder_append(code, (const uint16_t *)__string_493);
     }
 
     else {
-      StringBuilder_append(code, (const uint16_t *)__string_487_return);
+      StringBuilder_append(code, (const uint16_t *)__string_494_return);
     }
 
     CResult_emitNewlineAfter(__this, node);
   }
 
-  else if (node->kind == 7) {
-    if (node->parent->kind == 7) {
+  else if (node->kind == 9) {
+    if (node->parent->kind == 9) {
       CResult_emitStatements(__this, node->firstChild);
     }
 
@@ -8739,7 +8899,7 @@ static void CResult_emitStatement(struct CResult *__this, struct Node *node) {
     }
   }
 
-  else if (node->kind == 19) {
+  else if (node->kind == 21) {
     CResult_emitNewlineBefore(__this, node);
     struct Node *child = node->firstChild;
 
@@ -8749,16 +8909,16 @@ static void CResult_emitStatement(struct CResult *__this, struct Node *node) {
       CResult_emitType(__this, child->symbol->resolvedType, 1);
       CResult_emitSymbolName(__this, child->symbol);
       assert(value != NULL);
-      StringBuilder_append(code, (const uint16_t *)__string_488);
+      StringBuilder_append(code, (const uint16_t *)__string_495);
       CResult_emitExpression(__this, value, 0);
-      StringBuilder_append(code, (const uint16_t *)__string_489);
+      StringBuilder_append(code, (const uint16_t *)__string_496);
       child = child->nextSibling;
     }
 
     CResult_emitNewlineAfter(__this, node);
   }
 
-  else if (node->kind == 10 || node->kind == 13) {
+  else if (node->kind == 12 || node->kind == 15) {
   }
 
   else {
@@ -8768,13 +8928,13 @@ static void CResult_emitStatement(struct CResult *__this, struct Node *node) {
 
 static void CResult_emitIncludes(struct CResult *__this, struct StringBuilder *code, int32_t mode) {
   if (mode == 0) {
-    StringBuilder_append(code, (const uint16_t *)__string_490_include_stdint_h);
+    StringBuilder_append(code, (const uint16_t *)__string_497_include_stdint_h);
   }
 
   else {
-    StringBuilder_append(StringBuilder_append(StringBuilder_append(code, (const uint16_t *)__string_491_include), __this->headerName), (const uint16_t *)__string_492);
-    StringBuilder_append(code, (const uint16_t *)__string_493_include_stdlib_h);
-    StringBuilder_append(code, (const uint16_t *)__string_494_include_string_h);
+    StringBuilder_append(StringBuilder_append(StringBuilder_append(code, (const uint16_t *)__string_498_include), __this->headerName), (const uint16_t *)__string_499);
+    StringBuilder_append(code, (const uint16_t *)__string_500_include_stdlib_h);
+    StringBuilder_append(code, (const uint16_t *)__string_501_include_string_h);
   }
 }
 
@@ -8782,10 +8942,10 @@ static void CResult_emitTypeDeclarations(struct CResult *__this, struct Node *no
   struct StringBuilder *code = __this->code;
 
   while (node != NULL) {
-    if (node->kind == 9) {
+    if (node->kind == 11) {
       if (CResult_shouldEmitClass(__this, node) && (Node_isDeclareOrExtern(node) ? mode == 0 : mode == 1)) {
         CResult_emitNewlineBefore(__this, node);
-        StringBuilder_append(StringBuilder_append(StringBuilder_append(code, (const uint16_t *)__string_495_struct), node->symbol->name), (const uint16_t *)__string_496);
+        StringBuilder_append(StringBuilder_append(StringBuilder_append(code, (const uint16_t *)__string_502_struct), node->symbol->name), (const uint16_t *)__string_503);
       }
     }
 
@@ -8797,12 +8957,12 @@ static void CResult_emitTypeDefinitions(struct CResult *__this, struct Node *nod
   struct StringBuilder *code = __this->code;
 
   while (node != NULL) {
-    if (node->kind == 9) {
+    if (node->kind == 11) {
       if (CResult_shouldEmitClass(__this, node) && mode != 0) {
         CResult_emitNewlineBefore(__this, node);
-        StringBuilder_append(code, (const uint16_t *)__string_497_struct);
+        StringBuilder_append(code, (const uint16_t *)__string_504_struct);
         CResult_emitSymbolName(__this, node->symbol);
-        StringBuilder_append(code, (const uint16_t *)__string_498);
+        StringBuilder_append(code, (const uint16_t *)__string_505);
         __this->indent = __this->indent + 1;
         struct Node *child = node->firstChild;
 
@@ -8811,22 +8971,22 @@ static void CResult_emitTypeDefinitions(struct CResult *__this, struct Node *nod
             CResult_emitIndent(__this);
             CResult_emitType(__this, child->symbol->resolvedType, 1);
             CResult_emitSymbolName(__this, child->symbol);
-            StringBuilder_append(code, (const uint16_t *)__string_499);
+            StringBuilder_append(code, (const uint16_t *)__string_506);
           }
 
           child = child->nextSibling;
         }
 
         __this->indent = __this->indent - 1;
-        StringBuilder_append(code, (const uint16_t *)__string_500);
+        StringBuilder_append(code, (const uint16_t *)__string_507);
         CResult_emitNewlineAfter(__this, node);
       }
     }
 
-    else if (node->kind == 13) {
+    else if (node->kind == 15) {
       if (mode == 0 && Node_isExtern(node)) {
         CResult_emitNewlineBefore(__this, node);
-        StringBuilder_append(code, (const uint16_t *)__string_501_enum);
+        StringBuilder_append(code, (const uint16_t *)__string_508_enum);
         __this->indent = __this->indent + 1;
         struct Node *child = node->firstChild;
 
@@ -8834,17 +8994,17 @@ static void CResult_emitTypeDefinitions(struct CResult *__this, struct Node *nod
           assert(child->kind == 6);
           CResult_emitIndent(__this);
           CResult_emitSymbolName(__this, node->symbol);
-          StringBuilder_append(code, (const uint16_t *)__string_502__);
+          StringBuilder_append(code, (const uint16_t *)__string_509__);
           CResult_emitSymbolName(__this, child->symbol);
-          StringBuilder_append(code, (const uint16_t *)__string_503);
+          StringBuilder_append(code, (const uint16_t *)__string_510);
           StringBuilder_append(code, int_toString(child->symbol->offset));
           child = child->nextSibling;
-          StringBuilder_append(code, child != NULL ? (const uint16_t *)__string_504 : (const uint16_t *)__string_505);
+          StringBuilder_append(code, child != NULL ? (const uint16_t *)__string_511 : (const uint16_t *)__string_512);
         }
 
         __this->indent = __this->indent - 1;
         CResult_emitIndent(__this);
-        StringBuilder_append(code, (const uint16_t *)__string_506);
+        StringBuilder_append(code, (const uint16_t *)__string_513);
         CResult_emitNewlineAfter(__this, node);
       }
     }
@@ -8854,14 +9014,14 @@ static void CResult_emitTypeDefinitions(struct CResult *__this, struct Node *nod
 }
 
 static uint8_t CResult_shouldEmitFunction(struct CResult *__this, struct Symbol *symbol) {
-  return symbol->kind != 5 || (!string_op_equals(symbol->name, (const uint16_t *)__string_507_malloc) && !string_op_equals(symbol->name, (const uint16_t *)__string_508_memcpy) && !string_op_equals(symbol->name, (const uint16_t *)__string_509_memcmp));
+  return symbol->kind != 5 || (!string_op_equals(symbol->name, (const uint16_t *)__string_514_malloc) && !string_op_equals(symbol->name, (const uint16_t *)__string_515_memcpy) && !string_op_equals(symbol->name, (const uint16_t *)__string_516_memcmp));
 }
 
 static void CResult_emitFunctionDeclarations(struct CResult *__this, struct Node *node, int32_t mode) {
   struct StringBuilder *code = __this->code;
 
   while (node != NULL) {
-    if (node->kind == 15 && (mode != 0 || Node_isDeclareOrExtern(node))) {
+    if (node->kind == 17 && (mode != 0 || Node_isDeclareOrExtern(node))) {
       struct Symbol *symbol = node->symbol;
 
       if (CResult_shouldEmitFunction(__this, symbol)) {
@@ -8870,7 +9030,7 @@ static void CResult_emitFunctionDeclarations(struct CResult *__this, struct Node
         CResult_emitNewlineBefore(__this, node);
 
         if (!Node_isDeclareOrExtern(node)) {
-          StringBuilder_append(code, (const uint16_t *)__string_510_static);
+          StringBuilder_append(code, (const uint16_t *)__string_517_static);
         }
 
         CResult_emitType(__this, returnType->resolvedType, 1);
@@ -8878,7 +9038,7 @@ static void CResult_emitFunctionDeclarations(struct CResult *__this, struct Node
         StringBuilder_appendChar(code, 40);
 
         if (symbol->kind == 4) {
-          child->symbol->rename = (const uint16_t *)__string_511___this;
+          child->symbol->rename = (const uint16_t *)__string_518___this;
         }
 
         while (child != returnType) {
@@ -8888,15 +9048,15 @@ static void CResult_emitFunctionDeclarations(struct CResult *__this, struct Node
           child = child->nextSibling;
 
           if (child != returnType) {
-            StringBuilder_append(code, (const uint16_t *)__string_512);
+            StringBuilder_append(code, (const uint16_t *)__string_519);
           }
         }
 
-        StringBuilder_append(code, (const uint16_t *)__string_513);
+        StringBuilder_append(code, (const uint16_t *)__string_520);
       }
     }
 
-    else if (node->kind == 9) {
+    else if (node->kind == 11) {
       CResult_emitFunctionDeclarations(__this, node->firstChild, mode);
     }
 
@@ -8913,17 +9073,17 @@ static void CResult_emitGlobalVariables(struct CResult *__this, struct Node *nod
       CResult_emitNewlineBefore(__this, node);
 
       if (!Node_isDeclareOrExtern(node)) {
-        StringBuilder_append(code, (const uint16_t *)__string_514_static);
+        StringBuilder_append(code, (const uint16_t *)__string_521_static);
       }
 
       CResult_emitType(__this, node->symbol->resolvedType, 1);
       CResult_emitSymbolName(__this, node->symbol);
-      StringBuilder_append(code, (const uint16_t *)__string_515);
+      StringBuilder_append(code, (const uint16_t *)__string_522);
       CResult_emitExpression(__this, value, 0);
-      StringBuilder_append(code, (const uint16_t *)__string_516);
+      StringBuilder_append(code, (const uint16_t *)__string_523);
     }
 
-    else if (node->kind == 19) {
+    else if (node->kind == 21) {
       CResult_emitGlobalVariables(__this, node->firstChild, mode);
     }
 
@@ -8935,7 +9095,7 @@ static void CResult_emitFunctionDefinitions(struct CResult *__this, struct Node 
   struct StringBuilder *code = __this->code;
 
   while (node != NULL) {
-    if (node->kind == 15) {
+    if (node->kind == 17) {
       struct Node *body = Node_functionBody(node);
       struct Symbol *symbol = node->symbol;
 
@@ -8945,7 +9105,7 @@ static void CResult_emitFunctionDefinitions(struct CResult *__this, struct Node 
         CResult_emitNewlineBefore(__this, node);
 
         if (!Node_isDeclareOrExtern(node)) {
-          StringBuilder_append(code, (const uint16_t *)__string_517_static);
+          StringBuilder_append(code, (const uint16_t *)__string_524_static);
         }
 
         CResult_emitType(__this, returnType->resolvedType, 1);
@@ -8959,18 +9119,18 @@ static void CResult_emitFunctionDefinitions(struct CResult *__this, struct Node 
           child = child->nextSibling;
 
           if (child != returnType) {
-            StringBuilder_append(code, (const uint16_t *)__string_518);
+            StringBuilder_append(code, (const uint16_t *)__string_525);
           }
         }
 
-        StringBuilder_append(code, (const uint16_t *)__string_519);
+        StringBuilder_append(code, (const uint16_t *)__string_526);
         CResult_emitBlock(__this, Node_functionBody(node));
         StringBuilder_appendChar(code, 10);
         CResult_emitNewlineAfter(__this, node);
       }
     }
 
-    else if (node->kind == 9) {
+    else if (node->kind == 11) {
       CResult_emitFunctionDefinitions(__this, node->firstChild);
     }
 
@@ -8980,7 +9140,7 @@ static void CResult_emitFunctionDefinitions(struct CResult *__this, struct Node 
 
 static void CResult_finishImplementation(struct CResult *__this) {
   if (__this->hasStrings) {
-    StringBuilder_append(__this->codePrefix, (const uint16_t *)__string_520_undef_S);
+    StringBuilder_append(__this->codePrefix, (const uint16_t *)__string_527_undef_S);
   }
 }
 
@@ -8997,19 +9157,19 @@ static void cEmitCharacter(struct StringBuilder *builder, uint16_t c) {
   }
 
   else if (c == 0) {
-    StringBuilder_append(builder, (const uint16_t *)__string_521_0);
+    StringBuilder_append(builder, (const uint16_t *)__string_528_0);
   }
 
   else if (c == 13) {
-    StringBuilder_append(builder, (const uint16_t *)__string_522_r);
+    StringBuilder_append(builder, (const uint16_t *)__string_529_r);
   }
 
   else if (c == 10) {
-    StringBuilder_append(builder, (const uint16_t *)__string_523_n);
+    StringBuilder_append(builder, (const uint16_t *)__string_530_n);
   }
 
   else if (c == 9) {
-    StringBuilder_append(builder, (const uint16_t *)__string_524_t);
+    StringBuilder_append(builder, (const uint16_t *)__string_531_t);
   }
 
   else {
@@ -9026,7 +9186,7 @@ static void cEmit(struct Compiler *compiler) {
   result->context = compiler->context;
   result->code = temporaryCode;
   result->codePrefix = implementationCode;
-  result->headerName = replaceFileExtension(compiler->outputName, (const uint16_t *)__string_525_h);
+  result->headerName = replaceFileExtension(compiler->outputName, (const uint16_t *)__string_532_h);
 
   if (child != NULL) {
     CResult_emitIncludes(result, implementationCode, 1);
@@ -9063,7 +9223,7 @@ static void JsResult_emitIndent(struct JsResult *__this) {
   int32_t i = __this->indent;
 
   while (i > 0) {
-    StringBuilder_append(__this->code, (const uint16_t *)__string_526);
+    StringBuilder_append(__this->code, (const uint16_t *)__string_533);
     i = i - 1;
   }
 }
@@ -9089,7 +9249,7 @@ static void JsResult_emitStatements(struct JsResult *__this, struct Node *node) 
 
 static void JsResult_emitBlock(struct JsResult *__this, struct Node *node) {
   __this->previousNode = NULL;
-  StringBuilder_append(__this->code, (const uint16_t *)__string_527);
+  StringBuilder_append(__this->code, (const uint16_t *)__string_534);
   __this->indent = __this->indent + 1;
   JsResult_emitStatements(__this, node->firstChild);
   __this->indent = __this->indent - 1;
@@ -9100,7 +9260,7 @@ static void JsResult_emitBlock(struct JsResult *__this, struct Node *node) {
 
 static void JsResult_emitUnary(struct JsResult *__this, struct Node *node, int32_t parentPrecedence, const uint16_t *operator) {
   uint8_t isPostfix = isUnaryPostfix(node->kind);
-  uint8_t shouldCastToInt = node->kind == 40 && !jsKindCastsOperandsToInt(node->parent->kind);
+  uint8_t shouldCastToInt = node->kind == 42 && !jsKindCastsOperandsToInt(node->parent->kind);
   uint8_t isUnsigned = Node_isUnsignedOperator(node);
   int32_t operatorPrecedence = shouldCastToInt ? isUnsigned ? 9 : 4 : isPostfix ? 14 : 13;
   struct StringBuilder *code = __this->code;
@@ -9120,7 +9280,7 @@ static void JsResult_emitUnary(struct JsResult *__this, struct Node *node, int32
   }
 
   if (shouldCastToInt) {
-    StringBuilder_append(code, isUnsigned ? (const uint16_t *)__string_528_0 : (const uint16_t *)__string_529_0);
+    StringBuilder_append(code, isUnsigned ? (const uint16_t *)__string_535_0 : (const uint16_t *)__string_536_0);
   }
 
   if (parentPrecedence > operatorPrecedence) {
@@ -9129,7 +9289,7 @@ static void JsResult_emitUnary(struct JsResult *__this, struct Node *node, int32
 }
 
 static void JsResult_emitBinary(struct JsResult *__this, struct Node *node, int32_t parentPrecedence, const uint16_t *operator, int32_t operatorPrecedence, int32_t mode) {
-  uint8_t isRightAssociative = node->kind == 49;
+  uint8_t isRightAssociative = node->kind == 51;
   uint8_t isUnsigned = Node_isUnsignedOperator(node);
   struct StringBuilder *code = __this->code;
   uint8_t shouldCastToInt = mode == 1 && (isUnsigned || !jsKindCastsOperandsToInt(node->parent->kind));
@@ -9152,7 +9312,7 @@ static void JsResult_emitBinary(struct JsResult *__this, struct Node *node, int3
   }
 
   if (shouldCastToInt) {
-    StringBuilder_append(code, isUnsigned ? (const uint16_t *)__string_530_0 : (const uint16_t *)__string_531_0);
+    StringBuilder_append(code, isUnsigned ? (const uint16_t *)__string_537_0 : (const uint16_t *)__string_538_0);
   }
 
   if (parentPrecedence > selfPrecedence) {
@@ -9166,7 +9326,7 @@ static void JsResult_emitCommaSeparatedExpressions(struct JsResult *__this, stru
     start = start->nextSibling;
 
     if (start != stop) {
-      StringBuilder_append(__this->code, (const uint16_t *)__string_532);
+      StringBuilder_append(__this->code, (const uint16_t *)__string_539);
     }
   }
 }
@@ -9174,25 +9334,25 @@ static void JsResult_emitCommaSeparatedExpressions(struct JsResult *__this, stru
 static void JsResult_emitExpression(struct JsResult *__this, struct Node *node, int32_t parentPrecedence) {
   struct StringBuilder *code = __this->code;
 
-  if (node->kind == 29) {
+  if (node->kind == 31) {
     struct Symbol *symbol = node->symbol;
 
     if (symbol->kind == 5 && Node_isDeclare(symbol->node)) {
-      StringBuilder_append(code, (const uint16_t *)__string_533___imports);
+      StringBuilder_append(code, (const uint16_t *)__string_540___imports);
     }
 
     JsResult_emitSymbolName(__this, symbol);
   }
 
-  else if (node->kind == 31) {
-    StringBuilder_append(code, (const uint16_t *)__string_534_null);
+  else if (node->kind == 33) {
+    StringBuilder_append(code, (const uint16_t *)__string_541_null);
   }
 
-  else if (node->kind == 22) {
-    StringBuilder_append(code, node->intValue != 0 ? (const uint16_t *)__string_535_true : (const uint16_t *)__string_536_false);
+  else if (node->kind == 24) {
+    StringBuilder_append(code, node->intValue != 0 ? (const uint16_t *)__string_542_true : (const uint16_t *)__string_543_false);
   }
 
-  else if (node->kind == 28) {
+  else if (node->kind == 30) {
     if (parentPrecedence == 15) {
       StringBuilder_appendChar(code, 40);
     }
@@ -9204,11 +9364,11 @@ static void JsResult_emitExpression(struct JsResult *__this, struct Node *node, 
     }
   }
 
-  else if (node->kind == 34) {
+  else if (node->kind == 36) {
     StringBuilder_appendQuoted(code, node->stringValue);
   }
 
-  else if (node->kind == 24) {
+  else if (node->kind == 26) {
     struct CheckContext *context = __this->context;
     struct Node *value = Node_castValue(node);
     struct Type *from = Type_underlyingType(value->resolvedType, context);
@@ -9227,9 +9387,9 @@ static void JsResult_emitExpression(struct JsResult *__this, struct Node *node, 
 
       const uint16_t *shift = int_toString(32 - (typeSize << 3));
       JsResult_emitExpression(__this, value, 9);
-      StringBuilder_append(code, (const uint16_t *)__string_537);
+      StringBuilder_append(code, (const uint16_t *)__string_544);
       StringBuilder_append(code, shift);
-      StringBuilder_append(code, (const uint16_t *)__string_538);
+      StringBuilder_append(code, (const uint16_t *)__string_545);
       StringBuilder_append(code, shift);
 
       if (parentPrecedence > 9) {
@@ -9243,7 +9403,7 @@ static void JsResult_emitExpression(struct JsResult *__this, struct Node *node, 
       }
 
       JsResult_emitExpression(__this, value, 6);
-      StringBuilder_append(code, (const uint16_t *)__string_539);
+      StringBuilder_append(code, (const uint16_t *)__string_546);
       StringBuilder_append(code, uint_toString(Type_integerBitMask(type, context)));
 
       if (parentPrecedence > 6) {
@@ -9257,7 +9417,7 @@ static void JsResult_emitExpression(struct JsResult *__this, struct Node *node, 
       }
 
       JsResult_emitExpression(__this, value, 4);
-      StringBuilder_append(code, (const uint16_t *)__string_540_0);
+      StringBuilder_append(code, (const uint16_t *)__string_547_0);
 
       if (parentPrecedence > 4) {
         StringBuilder_appendChar(code, 41);
@@ -9270,7 +9430,7 @@ static void JsResult_emitExpression(struct JsResult *__this, struct Node *node, 
       }
 
       JsResult_emitExpression(__this, value, 9);
-      StringBuilder_append(code, (const uint16_t *)__string_541_0);
+      StringBuilder_append(code, (const uint16_t *)__string_548_0);
 
       if (parentPrecedence > 9) {
         StringBuilder_appendChar(code, 41);
@@ -9282,21 +9442,21 @@ static void JsResult_emitExpression(struct JsResult *__this, struct Node *node, 
     }
   }
 
-  else if (node->kind == 25) {
+  else if (node->kind == 27) {
     JsResult_emitExpression(__this, Node_dotTarget(node), 15);
     StringBuilder_appendChar(code, 46);
     JsResult_emitSymbolName(__this, node->symbol);
   }
 
-  else if (node->kind == 26) {
+  else if (node->kind == 28) {
     if (parentPrecedence > 1) {
       StringBuilder_appendChar(code, 40);
     }
 
     JsResult_emitExpression(__this, Node_hookValue(node), 2);
-    StringBuilder_append(code, (const uint16_t *)__string_542);
+    StringBuilder_append(code, (const uint16_t *)__string_549);
     JsResult_emitExpression(__this, Node_hookTrue(node), 1);
-    StringBuilder_append(code, (const uint16_t *)__string_543);
+    StringBuilder_append(code, (const uint16_t *)__string_550);
     JsResult_emitExpression(__this, Node_hookFalse(node), 1);
 
     if (parentPrecedence > 1) {
@@ -9304,7 +9464,7 @@ static void JsResult_emitExpression(struct JsResult *__this, struct Node *node, 
     }
   }
 
-  else if (node->kind == 27) {
+  else if (node->kind == 29) {
     struct Node *value = Node_indexTarget(node);
     JsResult_emitExpression(__this, value, 14);
     StringBuilder_appendChar(code, 91);
@@ -9312,7 +9472,7 @@ static void JsResult_emitExpression(struct JsResult *__this, struct Node *node, 
     StringBuilder_appendChar(code, 93);
   }
 
-  else if (node->kind == 23) {
+  else if (node->kind == 25) {
     if (Node_expandCallIntoOperatorTree(node)) {
       JsResult_emitExpression(__this, node, parentPrecedence);
     }
@@ -9329,13 +9489,13 @@ static void JsResult_emitExpression(struct JsResult *__this, struct Node *node, 
     }
   }
 
-  else if (node->kind == 30) {
-    StringBuilder_append(code, (const uint16_t *)__string_544_new);
+  else if (node->kind == 32) {
+    StringBuilder_append(code, (const uint16_t *)__string_551_new);
     JsResult_emitExpression(__this, Node_newType(node), 14);
-    StringBuilder_append(code, (const uint16_t *)__string_545);
+    StringBuilder_append(code, (const uint16_t *)__string_552);
   }
 
-  else if (node->kind == 41) {
+  else if (node->kind == 43) {
     struct Node *value = Node_unaryValue(node);
     Node_expandCallIntoOperatorTree(value);
     int32_t invertedKind = invertedBinaryKind(value->kind);
@@ -9346,111 +9506,111 @@ static void JsResult_emitExpression(struct JsResult *__this, struct Node *node, 
     }
 
     else {
-      JsResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_546);
+      JsResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_553);
     }
   }
 
-  else if (node->kind == 38) {
-    JsResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_547);
-  }
-
   else if (node->kind == 40) {
-    JsResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_548);
+    JsResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_554);
   }
 
-  else if (node->kind == 43) {
-    JsResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_549);
-  }
-
-  else if (node->kind == 47) {
-    JsResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_550);
-  }
-
-  else if (node->kind == 46) {
-    JsResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_551);
+  else if (node->kind == 42) {
+    JsResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_555);
   }
 
   else if (node->kind == 45) {
-    JsResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_552);
-  }
-
-  else if (node->kind == 44) {
-    JsResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_553);
-  }
-
-  else if (node->kind == 48) {
-    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_554, 10, 1);
+    JsResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_556);
   }
 
   else if (node->kind == 49) {
-    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_555, 1, 0);
+    JsResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_557);
+  }
+
+  else if (node->kind == 48) {
+    JsResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_558);
+  }
+
+  else if (node->kind == 47) {
+    JsResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_559);
+  }
+
+  else if (node->kind == 46) {
+    JsResult_emitUnary(__this, node, parentPrecedence, (const uint16_t *)__string_560);
   }
 
   else if (node->kind == 50) {
-    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_556, 6, 0);
+    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_561, 10, 1);
   }
 
   else if (node->kind == 51) {
-    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_557, 4, 0);
+    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_562, 1, 0);
   }
 
   else if (node->kind == 52) {
-    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_558, 5, 0);
+    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_563, 6, 0);
   }
 
   else if (node->kind == 53) {
-    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_559, 11, 1);
+    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_564, 4, 0);
   }
 
   else if (node->kind == 54) {
-    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_560, 7, 0);
+    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_565, 5, 0);
+  }
+
+  else if (node->kind == 55) {
+    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_566, 11, 1);
   }
 
   else if (node->kind == 56) {
-    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_561, 8, 0);
-  }
-
-  else if (node->kind == 57) {
-    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_562, 8, 0);
-  }
-
-  else if (node->kind == 58) {
-    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_563, 8, 0);
-  }
-
-  else if (node->kind == 59) {
-    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_564, 8, 0);
-  }
-
-  else if (node->kind == 60) {
-    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_565, 3, 0);
-  }
-
-  else if (node->kind == 61) {
-    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_566, 2, 0);
-  }
-
-  else if (node->kind == 63) {
     JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_567, 7, 0);
   }
 
-  else if (node->kind == 64) {
-    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_568, 11, 1);
+  else if (node->kind == 58) {
+    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_568, 8, 0);
   }
 
-  else if (node->kind == 65) {
-    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_569, 9, 0);
+  else if (node->kind == 59) {
+    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_569, 8, 0);
   }
 
-  else if (node->kind == 66) {
-    JsResult_emitBinary(__this, node, parentPrecedence, Node_isUnsignedOperator(node) ? (const uint16_t *)__string_570 : (const uint16_t *)__string_571, 9, 0);
+  else if (node->kind == 60) {
+    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_570, 8, 0);
   }
 
-  else if (node->kind == 67) {
-    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_572, 10, 1);
+  else if (node->kind == 61) {
+    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_571, 8, 0);
   }
 
   else if (node->kind == 62) {
+    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_572, 3, 0);
+  }
+
+  else if (node->kind == 63) {
+    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_573, 2, 0);
+  }
+
+  else if (node->kind == 65) {
+    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_574, 7, 0);
+  }
+
+  else if (node->kind == 66) {
+    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_575, 11, 1);
+  }
+
+  else if (node->kind == 67) {
+    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_576, 9, 0);
+  }
+
+  else if (node->kind == 68) {
+    JsResult_emitBinary(__this, node, parentPrecedence, Node_isUnsignedOperator(node) ? (const uint16_t *)__string_577 : (const uint16_t *)__string_578, 9, 0);
+  }
+
+  else if (node->kind == 69) {
+    JsResult_emitBinary(__this, node, parentPrecedence, (const uint16_t *)__string_579, 10, 1);
+  }
+
+  else if (node->kind == 64) {
     struct Node *left = Node_binaryLeft(node);
     struct Node *right = Node_binaryRight(node);
     uint8_t isUnsigned = Node_isUnsignedOperator(node);
@@ -9459,15 +9619,15 @@ static void JsResult_emitExpression(struct JsResult *__this, struct Node *node, 
       StringBuilder_appendChar(code, 40);
     }
 
-    StringBuilder_append(code, (const uint16_t *)__string_573___imul);
+    StringBuilder_append(code, (const uint16_t *)__string_580___imul);
     JsResult_emitExpression(__this, left, 0);
-    StringBuilder_append(code, (const uint16_t *)__string_574);
+    StringBuilder_append(code, (const uint16_t *)__string_581);
     JsResult_emitExpression(__this, right, 0);
     StringBuilder_appendChar(code, 41);
     __this->foundMultiply = 1;
 
     if (isUnsigned) {
-      StringBuilder_append(code, (const uint16_t *)__string_575_0);
+      StringBuilder_append(code, (const uint16_t *)__string_582_0);
 
       if (parentPrecedence > 9) {
         StringBuilder_appendChar(code, 41);
@@ -9487,7 +9647,7 @@ static void JsResult_emitSymbolName(struct JsResult *__this, struct Symbol *symb
 static void JsResult_emitStatement(struct JsResult *__this, struct Node *node) {
   struct StringBuilder *code = __this->code;
 
-  if (node->kind == 15) {
+  if (node->kind == 17) {
     struct Node *body = Node_functionBody(node);
 
     if (body == NULL) {
@@ -9501,23 +9661,23 @@ static void JsResult_emitStatement(struct JsResult *__this, struct Node *node) {
 
     if (symbol->kind == 4) {
       JsResult_emitSymbolName(__this, Symbol_parent(symbol));
-      StringBuilder_append(code, (const uint16_t *)__string_576_prototype);
+      StringBuilder_append(code, (const uint16_t *)__string_583_prototype);
       JsResult_emitSymbolName(__this, symbol);
-      StringBuilder_append(code, (const uint16_t *)__string_577_function);
+      StringBuilder_append(code, (const uint16_t *)__string_584_function);
       needsSemicolon = 1;
     }
 
     else if (Node_isExtern(node)) {
-      StringBuilder_append(code, (const uint16_t *)__string_578_var);
+      StringBuilder_append(code, (const uint16_t *)__string_585_var);
       JsResult_emitSymbolName(__this, symbol);
-      StringBuilder_append(code, (const uint16_t *)__string_579___exports);
+      StringBuilder_append(code, (const uint16_t *)__string_586___exports);
       JsResult_emitSymbolName(__this, symbol);
-      StringBuilder_append(code, (const uint16_t *)__string_580_function);
+      StringBuilder_append(code, (const uint16_t *)__string_587_function);
       needsSemicolon = 1;
     }
 
     else {
-      StringBuilder_append(code, (const uint16_t *)__string_581_function);
+      StringBuilder_append(code, (const uint16_t *)__string_588_function);
       JsResult_emitSymbolName(__this, symbol);
     }
 
@@ -9531,24 +9691,24 @@ static void JsResult_emitStatement(struct JsResult *__this, struct Node *node) {
       child = child->nextSibling;
 
       if (child != returnType) {
-        StringBuilder_append(code, (const uint16_t *)__string_582);
+        StringBuilder_append(code, (const uint16_t *)__string_589);
       }
     }
 
-    StringBuilder_append(code, (const uint16_t *)__string_583);
+    StringBuilder_append(code, (const uint16_t *)__string_590);
     JsResult_emitBlock(__this, Node_functionBody(node));
-    StringBuilder_append(code, needsSemicolon ? (const uint16_t *)__string_584 : (const uint16_t *)__string_585);
+    StringBuilder_append(code, needsSemicolon ? (const uint16_t *)__string_591 : (const uint16_t *)__string_592);
     JsResult_emitNewlineAfter(__this, node);
   }
 
-  else if (node->kind == 16) {
+  else if (node->kind == 18) {
     JsResult_emitNewlineBefore(__this, node);
     JsResult_emitIndent(__this);
 
     while (1) {
-      StringBuilder_append(code, (const uint16_t *)__string_586_if);
+      StringBuilder_append(code, (const uint16_t *)__string_593_if);
       JsResult_emitExpression(__this, Node_ifValue(node), 0);
-      StringBuilder_append(code, (const uint16_t *)__string_587);
+      StringBuilder_append(code, (const uint16_t *)__string_594);
       JsResult_emitBlock(__this, Node_ifTrue(node));
       struct Node *no = Node_ifFalse(node);
 
@@ -9558,11 +9718,11 @@ static void JsResult_emitStatement(struct JsResult *__this, struct Node *node) {
         break;
       }
 
-      StringBuilder_append(code, (const uint16_t *)__string_588);
+      StringBuilder_append(code, (const uint16_t *)__string_595);
       JsResult_emitIndent(__this);
-      StringBuilder_append(code, (const uint16_t *)__string_589_else);
+      StringBuilder_append(code, (const uint16_t *)__string_596_else);
 
-      if (no->firstChild == NULL || no->firstChild != no->lastChild || no->firstChild->kind != 16) {
+      if (no->firstChild == NULL || no->firstChild != no->lastChild || no->firstChild->kind != 18) {
         JsResult_emitBlock(__this, no);
         StringBuilder_appendChar(code, 10);
 
@@ -9575,62 +9735,62 @@ static void JsResult_emitStatement(struct JsResult *__this, struct Node *node) {
     JsResult_emitNewlineAfter(__this, node);
   }
 
-  else if (node->kind == 20) {
+  else if (node->kind == 22) {
     JsResult_emitNewlineBefore(__this, node);
     JsResult_emitIndent(__this);
-    StringBuilder_append(code, (const uint16_t *)__string_590_while);
+    StringBuilder_append(code, (const uint16_t *)__string_597_while);
     JsResult_emitExpression(__this, Node_whileValue(node), 0);
-    StringBuilder_append(code, (const uint16_t *)__string_591);
+    StringBuilder_append(code, (const uint16_t *)__string_598);
     JsResult_emitBlock(__this, Node_whileBody(node));
     StringBuilder_appendChar(code, 10);
     JsResult_emitNewlineAfter(__this, node);
   }
 
-  else if (node->kind == 8) {
+  else if (node->kind == 10) {
     JsResult_emitNewlineBefore(__this, node);
     JsResult_emitIndent(__this);
-    StringBuilder_append(code, (const uint16_t *)__string_592_break);
+    StringBuilder_append(code, (const uint16_t *)__string_599_break);
     JsResult_emitNewlineAfter(__this, node);
   }
 
-  else if (node->kind == 11) {
+  else if (node->kind == 13) {
     JsResult_emitNewlineBefore(__this, node);
     JsResult_emitIndent(__this);
-    StringBuilder_append(code, (const uint16_t *)__string_593_continue);
+    StringBuilder_append(code, (const uint16_t *)__string_600_continue);
+    JsResult_emitNewlineAfter(__this, node);
+  }
+
+  else if (node->kind == 16) {
+    JsResult_emitNewlineBefore(__this, node);
+    JsResult_emitIndent(__this);
+    JsResult_emitExpression(__this, Node_expressionValue(node), 0);
+    StringBuilder_append(code, (const uint16_t *)__string_601);
     JsResult_emitNewlineAfter(__this, node);
   }
 
   else if (node->kind == 14) {
-    JsResult_emitNewlineBefore(__this, node);
-    JsResult_emitIndent(__this);
-    JsResult_emitExpression(__this, Node_expressionValue(node), 0);
-    StringBuilder_append(code, (const uint16_t *)__string_594);
-    JsResult_emitNewlineAfter(__this, node);
   }
 
-  else if (node->kind == 12) {
-  }
-
-  else if (node->kind == 17) {
+  else if (node->kind == 19) {
     struct Node *value = Node_returnValue(node);
     JsResult_emitNewlineBefore(__this, node);
     JsResult_emitIndent(__this);
 
     if (value != NULL) {
-      StringBuilder_append(code, (const uint16_t *)__string_595_return);
+      StringBuilder_append(code, (const uint16_t *)__string_602_return);
       JsResult_emitExpression(__this, value, 0);
-      StringBuilder_append(code, (const uint16_t *)__string_596);
+      StringBuilder_append(code, (const uint16_t *)__string_603);
     }
 
     else {
-      StringBuilder_append(code, (const uint16_t *)__string_597_return);
+      StringBuilder_append(code, (const uint16_t *)__string_604_return);
     }
 
     JsResult_emitNewlineAfter(__this, node);
   }
 
-  else if (node->kind == 7) {
-    if (node->parent->kind == 7) {
+  else if (node->kind == 9) {
+    if (node->parent->kind == 9) {
       JsResult_emitStatements(__this, node->firstChild);
     }
 
@@ -9643,48 +9803,47 @@ static void JsResult_emitStatement(struct JsResult *__this, struct Node *node) {
     }
   }
 
-  else if (node->kind == 19) {
+  else if (node->kind == 21) {
     JsResult_emitNewlineBefore(__this, node);
     JsResult_emitIndent(__this);
-    StringBuilder_append(code, (const uint16_t *)__string_598_var);
+    StringBuilder_append(code, (const uint16_t *)__string_605_var);
     struct Node *child = node->firstChild;
 
     while (child != NULL) {
       struct Node *value = Node_variableValue(child);
       JsResult_emitSymbolName(__this, child->symbol);
+      assert(value != NULL);
+      StringBuilder_append(code, (const uint16_t *)__string_606);
+      JsResult_emitExpression(__this, value, 0);
       child = child->nextSibling;
 
       if (child != NULL) {
-        StringBuilder_append(code, (const uint16_t *)__string_599);
+        StringBuilder_append(code, (const uint16_t *)__string_607);
       }
-
-      assert(value != NULL);
-      StringBuilder_append(code, (const uint16_t *)__string_600);
-      JsResult_emitExpression(__this, value, 0);
     }
 
-    StringBuilder_append(code, (const uint16_t *)__string_601);
+    StringBuilder_append(code, (const uint16_t *)__string_608);
     JsResult_emitNewlineAfter(__this, node);
   }
 
-  else if (node->kind == 9) {
+  else if (node->kind == 11) {
     if (!Node_isDeclare(node)) {
       JsResult_emitNewlineBefore(__this, node);
       JsResult_emitIndent(__this);
-      StringBuilder_append(code, (const uint16_t *)__string_602_function);
+      StringBuilder_append(code, (const uint16_t *)__string_609_function);
       JsResult_emitSymbolName(__this, node->symbol);
-      StringBuilder_append(code, (const uint16_t *)__string_603);
+      StringBuilder_append(code, (const uint16_t *)__string_610);
       __this->indent = __this->indent + 1;
       struct Node *argument = node->firstChild;
 
       while (argument != NULL) {
         if (argument->kind == 6) {
           JsResult_emitIndent(__this);
-          StringBuilder_append(code, (const uint16_t *)__string_604_this);
+          StringBuilder_append(code, (const uint16_t *)__string_611_this);
           JsResult_emitSymbolName(__this, argument->symbol);
-          StringBuilder_append(code, (const uint16_t *)__string_605);
+          StringBuilder_append(code, (const uint16_t *)__string_612);
           JsResult_emitExpression(__this, Node_variableValue(argument), 0);
-          StringBuilder_append(code, (const uint16_t *)__string_606);
+          StringBuilder_append(code, (const uint16_t *)__string_613);
         }
 
         argument = argument->nextSibling;
@@ -9692,14 +9851,14 @@ static void JsResult_emitStatement(struct JsResult *__this, struct Node *node) {
 
       __this->indent = __this->indent - 1;
       JsResult_emitIndent(__this);
-      StringBuilder_append(code, (const uint16_t *)__string_607);
+      StringBuilder_append(code, (const uint16_t *)__string_614);
       JsResult_emitNewlineAfter(__this, node);
     }
 
     struct Node *child = node->firstChild;
 
     while (child != NULL) {
-      if (child->kind == 15) {
+      if (child->kind == 17) {
         JsResult_emitStatement(__this, child);
       }
 
@@ -9707,13 +9866,13 @@ static void JsResult_emitStatement(struct JsResult *__this, struct Node *node) {
     }
   }
 
-  else if (node->kind == 13) {
+  else if (node->kind == 15) {
     if (Node_isExtern(node)) {
       JsResult_emitNewlineBefore(__this, node);
       JsResult_emitIndent(__this);
-      StringBuilder_append(code, (const uint16_t *)__string_608___exports);
+      StringBuilder_append(code, (const uint16_t *)__string_615___exports);
       JsResult_emitSymbolName(__this, node->symbol);
-      StringBuilder_append(code, (const uint16_t *)__string_609);
+      StringBuilder_append(code, (const uint16_t *)__string_616);
       __this->indent = __this->indent + 1;
       struct Node *child = node->firstChild;
 
@@ -9721,20 +9880,20 @@ static void JsResult_emitStatement(struct JsResult *__this, struct Node *node) {
         assert(child->kind == 6);
         JsResult_emitIndent(__this);
         JsResult_emitSymbolName(__this, child->symbol);
-        StringBuilder_append(code, (const uint16_t *)__string_610);
+        StringBuilder_append(code, (const uint16_t *)__string_617);
         StringBuilder_append(code, int_toString(child->symbol->offset));
         child = child->nextSibling;
-        StringBuilder_append(code, child != NULL ? (const uint16_t *)__string_611 : (const uint16_t *)__string_612);
+        StringBuilder_append(code, child != NULL ? (const uint16_t *)__string_618 : (const uint16_t *)__string_619);
       }
 
       __this->indent = __this->indent - 1;
       JsResult_emitIndent(__this);
-      StringBuilder_append(code, (const uint16_t *)__string_613);
+      StringBuilder_append(code, (const uint16_t *)__string_620);
       JsResult_emitNewlineAfter(__this, node);
     }
   }
 
-  else if (node->kind == 10) {
+  else if (node->kind == 12) {
   }
 
   else {
@@ -9743,7 +9902,7 @@ static void JsResult_emitStatement(struct JsResult *__this, struct Node *node) {
 }
 
 static uint8_t jsKindCastsOperandsToInt(int32_t kind) {
-  return kind == 65 || kind == 66 || kind == 51 || kind == 50 || kind == 52;
+  return kind == 67 || kind == 68 || kind == 53 || kind == 52 || kind == 54;
 }
 
 static void jsEmit(struct Compiler *compiler) {
@@ -9751,28 +9910,28 @@ static void jsEmit(struct Compiler *compiler) {
   struct JsResult *result = calloc(1, sizeof(struct JsResult));
   result->context = compiler->context;
   result->code = code;
-  StringBuilder_append(code, (const uint16_t *)__string_614_function___imports___exports);
+  StringBuilder_append(code, (const uint16_t *)__string_621_function___imports___exports);
   result->indent = 1;
   JsResult_emitStatements(result, compiler->global->firstChild);
 
   if (result->foundMultiply) {
     StringBuilder_appendChar(code, 10);
     JsResult_emitIndent(result);
-    StringBuilder_append(code, (const uint16_t *)__string_615_var___imul_Math_imul_functi);
+    StringBuilder_append(code, (const uint16_t *)__string_622_var___imul_Math_imul_functi);
     result->indent = 2;
     JsResult_emitIndent(result);
-    StringBuilder_append(code, (const uint16_t *)__string_616_return_a_b_16_16);
+    StringBuilder_append(code, (const uint16_t *)__string_623_return_a_b_16_16);
     result->indent = 1;
     JsResult_emitIndent(result);
-    StringBuilder_append(code, (const uint16_t *)__string_617);
+    StringBuilder_append(code, (const uint16_t *)__string_624);
   }
 
-  StringBuilder_append(code, (const uint16_t *)__string_618);
+  StringBuilder_append(code, (const uint16_t *)__string_625);
   JsResult_emitIndent(result);
-  StringBuilder_append(code, (const uint16_t *)__string_619_typeof_global_undefined);
+  StringBuilder_append(code, (const uint16_t *)__string_626_typeof_global_undefined);
   JsResult_emitIndent(result);
-  StringBuilder_append(code, (const uint16_t *)__string_620_typeof_exports_undefined);
-  StringBuilder_append(code, (const uint16_t *)__string_621);
+  StringBuilder_append(code, (const uint16_t *)__string_627_typeof_exports_undefined);
+  StringBuilder_append(code, (const uint16_t *)__string_628);
   compiler->outputJS = StringBuilder_finish(code);
 }
 
@@ -9843,12 +10002,12 @@ static struct WasmFunction *WasmModule_allocateFunction(struct WasmModule *__thi
   __this->functionCount = __this->functionCount + 1;
 
   if (symbol->kind == 5) {
-    if (string_op_equals(symbol->name, (const uint16_t *)__string_622_malloc)) {
+    if (string_op_equals(symbol->name, (const uint16_t *)__string_629_malloc)) {
       assert(__this->mallocFunction == NULL);
       __this->mallocFunction = fn;
     }
 
-    else if (string_op_equals(symbol->name, (const uint16_t *)__string_623_free)) {
+    else if (string_op_equals(symbol->name, (const uint16_t *)__string_630_free)) {
       assert(__this->freeFunction == NULL);
       __this->freeFunction = fn;
     }
@@ -9925,16 +10084,16 @@ static void WasmModule_finishSection(struct WasmModule *__this, struct ByteArray
 
 static void WasmModule_emitDylinkSection(struct WasmModule *__this, struct ByteArray *array) {
   assert(ByteArray_length(array) == 8);
-  WasmModule_beginSection(__this, array, 0, (const uint16_t *)__string_624_dylink);
+  WasmModule_beginSection(__this, array, 0, (const uint16_t *)__string_631_dylink);
   wasmWriteVarUnsigned(array, ByteArray_length(__this->memoryInitializer));
   wasmWriteVarUnsigned(array, 0);
   WasmModule_finishSection(__this, array);
 }
 
 static void WasmModule_emitNameSection(struct WasmModule *__this, struct ByteArray *array) {
-  WasmModule_beginSection(__this, array, 0, (const uint16_t *)__string_625_name);
+  WasmModule_beginSection(__this, array, 0, (const uint16_t *)__string_632_name);
   wasmWriteVarUnsigned(array, 0);
-  wasmWriteLengthPrefixedUTF8(array, (const uint16_t *)__string_626_myModuleName);
+  wasmWriteLengthPrefixedUTF8(array, (const uint16_t *)__string_633_myModuleName);
   wasmWriteVarUnsigned(array, 1);
   int32_t nameLengthOffset = ByteArray_length(array);
   wasmWriteVarUnsigned(array, -1);
@@ -9945,7 +10104,7 @@ static void WasmModule_emitNameSection(struct WasmModule *__this, struct ByteArr
     const uint16_t *name = fn->symbol->name;
 
     if (fn->symbol->kind == 4) {
-      name = StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), Symbol_parent(fn->symbol)->name), (const uint16_t *)__string_627), name));
+      name = StringBuilder_finish(StringBuilder_append(StringBuilder_append(StringBuilder_append(StringBuilder_new(), Symbol_parent(fn->symbol)->name), (const uint16_t *)__string_634), name));
     }
 
     wasmWriteVarUnsigned(array, WasmModule_getFunctionCallIndex(__this, fn->symbol));
@@ -9987,7 +10146,7 @@ static void WasmModule_emitNameSection(struct WasmModule *__this, struct ByteArr
 
         if (isInstance) {
           wasmWriteVarUnsigned(array, index);
-          wasmWriteLengthPrefixedUTF8(array, (const uint16_t *)__string_628_this);
+          wasmWriteLengthPrefixedUTF8(array, (const uint16_t *)__string_635_this);
           index = index + 1;
         }
 
@@ -10148,7 +10307,7 @@ static void WasmModule_emitExportSection(struct WasmModule *__this, struct ByteA
 
   WasmModule_beginSection(__this, array, 7, NULL);
   wasmWriteVarUnsigned(array, exportedCount + 1);
-  wasmWriteLengthPrefixedUTF8(array, (const uint16_t *)__string_629_memory);
+  wasmWriteLengthPrefixedUTF8(array, (const uint16_t *)__string_636_memory);
   wasmWriteVarUnsigned(array, 2);
   wasmWriteVarUnsigned(array, 0);
   int32_t i = __this->importCount;
@@ -10218,7 +10377,7 @@ static void WasmModule_emitCodeSection(struct WasmModule *__this, struct ByteArr
     struct Type *returnType = Node_functionReturnType(fn->symbol->node)->resolvedType;
 
     if (returnType != __this->context->voidType) {
-      if (lastChild != NULL && lastChild->kind == 17) {
+      if (lastChild != NULL && lastChild->kind == 19) {
         assert(ByteArray_get(array, ByteArray_length(array) - 1) == 15);
         ByteArray_set(array, ByteArray_length(array) - 1, 11);
       }
@@ -10265,7 +10424,7 @@ static void WasmModule_emitDataSection(struct WasmModule *__this, struct ByteArr
 }
 
 static void WasmModule_prepareToEmit(struct WasmModule *__this, struct Node *node) {
-  if (node->kind == 34) {
+  if (node->kind == 36) {
     const uint16_t *text = node->stringValue;
     int32_t length = string_length(text);
     int32_t offset = CheckContext_allocateGlobalVariableOffset(__this->context, (length << 1) + 4, 4);
@@ -10301,19 +10460,19 @@ static void WasmModule_prepareToEmit(struct WasmModule *__this, struct Node *nod
         assert(0);
       }
 
-      if (string_op_equals(symbol->name, (const uint16_t *)__string_630_currentHeapPointer)) {
+      if (string_op_equals(symbol->name, (const uint16_t *)__string_637_currentHeapPointer)) {
         assert(__this->currentHeapPointer == -1);
         __this->currentHeapPointer = symbol->offset;
       }
 
-      else if (string_op_equals(symbol->name, (const uint16_t *)__string_631_originalHeapPointer)) {
+      else if (string_op_equals(symbol->name, (const uint16_t *)__string_638_originalHeapPointer)) {
         assert(__this->originalHeapPointer == -1);
         __this->originalHeapPointer = symbol->offset;
       }
     }
   }
 
-  else if (node->kind == 15) {
+  else if (node->kind == 17) {
     struct Node *returnType = Node_functionReturnType(node);
     struct WasmSharedOffset *shared = calloc(1, sizeof(struct WasmSharedOffset));
     struct WasmWrappedType *argumentTypesFirst = NULL;
@@ -10341,7 +10500,7 @@ static void WasmModule_prepareToEmit(struct WasmModule *__this, struct Node *nod
     struct Symbol *symbol = node->symbol;
 
     if (body == NULL) {
-      const uint16_t *moduleName = symbol->kind == 4 ? Symbol_parent(symbol)->name : (const uint16_t *)__string_632_global;
+      const uint16_t *moduleName = symbol->kind == 4 ? Symbol_parent(symbol)->name : (const uint16_t *)__string_639_global;
       symbol->offset = __this->importCount;
       WasmModule_allocateImport(__this, signatureIndex, moduleName, symbol->name);
       node = node->nextSibling;
@@ -10437,7 +10596,7 @@ static void WasmModule_emitStoreToMemory(struct WasmModule *__this, struct ByteA
 static int32_t WasmModule_emitNode(struct WasmModule *__this, struct ByteArray *array, struct Node *node) {
   assert(!isExpression(node) || node->resolvedType != NULL);
 
-  if (node->kind == 7) {
+  if (node->kind == 9) {
     struct Node *child = node->firstChild;
 
     if (wasmIsGratuitousBlock(node)) {
@@ -10459,18 +10618,18 @@ static int32_t WasmModule_emitNode(struct WasmModule *__this, struct ByteArray *
     }
   }
 
-  else if (node->kind == 20) {
+  else if (node->kind == 22) {
     struct Node *value = Node_whileValue(node);
     struct Node *body = Node_whileBody(node);
 
-    if (value->kind == 22 && value->intValue == 0) {
+    if (value->kind == 24 && value->intValue == 0) {
       return 0;
     }
 
     WasmModule_emit1S(__this, array, 2, -64);
     WasmModule_emit1S(__this, array, 3, -64);
 
-    if (value->kind != 22) {
+    if (value->kind != 24) {
       WasmModule_emitNode(__this, array, value);
       WasmModule_emit(__this, array, 69);
       WasmModule_emit1U(__this, array, 13, 1);
@@ -10493,12 +10652,12 @@ static int32_t WasmModule_emitNode(struct WasmModule *__this, struct ByteArray *
     WasmModule_emit(__this, array, 11);
   }
 
-  else if (node->kind == 8 || node->kind == 11) {
+  else if (node->kind == 10 || node->kind == 13) {
     int32_t label = 0;
     struct Node *parent = node->parent;
 
-    while (parent->kind != 20) {
-      if ((parent->kind == 7 && !wasmIsGratuitousBlock(parent)) || wasmIsImplicitBlock(parent)) {
+    while (parent->kind != 22) {
+      if ((parent->kind == 9 && !wasmIsGratuitousBlock(parent)) || wasmIsImplicitBlock(parent)) {
         label = label + 1;
       }
 
@@ -10507,19 +10666,19 @@ static int32_t WasmModule_emitNode(struct WasmModule *__this, struct ByteArray *
     }
 
     assert(label > 0);
-    WasmModule_emit1U(__this, array, 12, label - (node->kind == 8 ? 0 : 1));
+    WasmModule_emit1U(__this, array, 12, label - (node->kind == 10 ? 0 : 1));
     WasmModule_emit(__this, array, 0);
   }
 
-  else if (node->kind == 12) {
+  else if (node->kind == 14) {
     return 0;
   }
 
-  else if (node->kind == 14) {
+  else if (node->kind == 16) {
     WasmModule_emitNode(__this, array, Node_expressionValue(node));
   }
 
-  else if (node->kind == 17) {
+  else if (node->kind == 19) {
     struct Node *value = Node_returnValue(node);
 
     if (value != NULL) {
@@ -10529,7 +10688,7 @@ static int32_t WasmModule_emitNode(struct WasmModule *__this, struct ByteArray *
     WasmModule_emit(__this, array, 15);
   }
 
-  else if (node->kind == 19) {
+  else if (node->kind == 21) {
     int32_t count = 0;
     struct Node *child = node->firstChild;
 
@@ -10542,7 +10701,7 @@ static int32_t WasmModule_emitNode(struct WasmModule *__this, struct ByteArray *
     return count;
   }
 
-  else if (node->kind == 16) {
+  else if (node->kind == 18) {
     struct Node *ifTrue = Node_ifTrue(node);
     struct Node *ifFalse = Node_ifFalse(node);
     WasmModule_emitNode(__this, array, Node_ifValue(node));
@@ -10557,7 +10716,7 @@ static int32_t WasmModule_emitNode(struct WasmModule *__this, struct ByteArray *
     WasmModule_emit(__this, array, 11);
   }
 
-  else if (node->kind == 26) {
+  else if (node->kind == 28) {
     struct Node *trueNode = Node_hookTrue(node);
     struct Node *falseNode = Node_hookFalse(node);
     WasmModule_emitNode(__this, array, Node_hookValue(node));
@@ -10588,7 +10747,7 @@ static int32_t WasmModule_emitNode(struct WasmModule *__this, struct ByteArray *
     }
   }
 
-  else if (node->kind == 29) {
+  else if (node->kind == 31) {
     struct Symbol *symbol = node->symbol;
 
     if (symbol->kind == 6 || symbol->kind == 10) {
@@ -10604,23 +10763,23 @@ static int32_t WasmModule_emitNode(struct WasmModule *__this, struct ByteArray *
     }
   }
 
-  else if (node->kind == 39) {
+  else if (node->kind == 41) {
     WasmModule_emitLoadFromMemory(__this, array, Type_underlyingType(node->resolvedType, __this->context), Node_unaryValue(node), 0);
   }
 
-  else if (node->kind == 31) {
+  else if (node->kind == 33) {
     WasmModule_emit1S(__this, array, 65, 0);
   }
 
-  else if (node->kind == 28 || node->kind == 22) {
+  else if (node->kind == 30 || node->kind == 24) {
     WasmModule_emit1S(__this, array, 65, node->intValue);
   }
 
-  else if (node->kind == 34) {
+  else if (node->kind == 36) {
     WasmModule_emit1S(__this, array, 65, node->intValue + 4);
   }
 
-  else if (node->kind == 23) {
+  else if (node->kind == 25) {
     struct Node *value = Node_callValue(node);
     struct Symbol *symbol = value->symbol;
     assert(isFunction(symbol->kind));
@@ -10641,12 +10800,12 @@ static int32_t WasmModule_emitNode(struct WasmModule *__this, struct ByteArray *
 
     WasmModule_emit1U(__this, array, 16, WasmModule_getFunctionCallIndex(__this, symbol));
 
-    if (node->parent->kind == 14 && returnType->resolvedType != __this->context->voidType) {
+    if (node->parent->kind == 16 && returnType->resolvedType != __this->context->voidType) {
       WasmModule_emit(__this, array, 26);
     }
   }
 
-  else if (node->kind == 30) {
+  else if (node->kind == 32) {
     struct Node *newType = Node_newType(node);
     int32_t size = Type_allocationSizeOf(newType->resolvedType, __this->context);
     assert(size > 0);
@@ -10654,28 +10813,28 @@ static int32_t WasmModule_emitNode(struct WasmModule *__this, struct ByteArray *
     WasmModule_emit1U(__this, array, 16, WasmModule_getFunctionCallIndex(__this, __this->mallocFunction->symbol));
   }
 
-  else if (node->kind == 43) {
+  else if (node->kind == 45) {
     WasmModule_emitNode(__this, array, Node_unaryValue(node));
   }
 
-  else if (node->kind == 40) {
+  else if (node->kind == 42) {
     WasmModule_emit1S(__this, array, 65, 0);
     WasmModule_emitNode(__this, array, Node_unaryValue(node));
     WasmModule_emit(__this, array, 107);
   }
 
-  else if (node->kind == 38) {
+  else if (node->kind == 40) {
     WasmModule_emit1S(__this, array, 65, -1);
     WasmModule_emitNode(__this, array, Node_unaryValue(node));
     WasmModule_emit(__this, array, 115);
   }
 
-  else if (node->kind == 41) {
+  else if (node->kind == 43) {
     WasmModule_emitNode(__this, array, Node_unaryValue(node));
     WasmModule_emit(__this, array, 69);
   }
 
-  else if (node->kind == 24) {
+  else if (node->kind == 26) {
     struct Node *value = Node_castValue(node);
     struct CheckContext *context = __this->context;
     struct Type *from = Type_underlyingType(value->resolvedType, context);
@@ -10707,7 +10866,7 @@ static int32_t WasmModule_emitNode(struct WasmModule *__this, struct ByteArray *
     }
   }
 
-  else if (node->kind == 25) {
+  else if (node->kind == 27) {
     struct Symbol *symbol = node->symbol;
 
     if (symbol->kind == 9) {
@@ -10719,13 +10878,13 @@ static int32_t WasmModule_emitNode(struct WasmModule *__this, struct ByteArray *
     }
   }
 
-  else if (node->kind == 49) {
+  else if (node->kind == 51) {
     struct Node *left = Node_binaryLeft(node);
     struct Node *right = Node_binaryRight(node);
     struct Symbol *symbol = left->symbol;
-    assert(node->parent->kind == 14);
+    assert(node->parent->kind == 16);
 
-    if (left->kind == 39) {
+    if (left->kind == 41) {
       WasmModule_emitStoreToMemory(__this, array, Type_underlyingType(left->resolvedType, __this->context), Node_unaryValue(left), 0, right);
     }
 
@@ -10747,7 +10906,7 @@ static int32_t WasmModule_emitNode(struct WasmModule *__this, struct ByteArray *
     }
   }
 
-  else if (node->kind == 60) {
+  else if (node->kind == 62) {
     WasmModule_emitNode(__this, array, Node_binaryLeft(node));
     WasmModule_emit1S(__this, array, 4, -1);
     WasmModule_emitNode(__this, array, Node_binaryRight(node));
@@ -10756,7 +10915,7 @@ static int32_t WasmModule_emitNode(struct WasmModule *__this, struct ByteArray *
     WasmModule_emit(__this, array, 11);
   }
 
-  else if (node->kind == 61) {
+  else if (node->kind == 63) {
     WasmModule_emitNode(__this, array, Node_binaryLeft(node));
     WasmModule_emit1S(__this, array, 4, -1);
     WasmModule_emit1S(__this, array, 65, 1);
@@ -10768,7 +10927,7 @@ static int32_t WasmModule_emitNode(struct WasmModule *__this, struct ByteArray *
   else {
     uint8_t isUnsigned = Node_isUnsignedOperator(node);
 
-    if (node->kind == 48) {
+    if (node->kind == 50) {
       struct Node *left = Node_binaryLeft(node);
       struct Node *right = Node_binaryRight(node);
       WasmModule_emitNode(__this, array, left);
@@ -10782,7 +10941,7 @@ static int32_t WasmModule_emitNode(struct WasmModule *__this, struct ByteArray *
         int32_t size = Type_allocationSizeOf(left->resolvedType->pointerTo, __this->context);
 
         if (size == 2) {
-          if (right->kind == 28) {
+          if (right->kind == 30) {
             WasmModule_emit1S(__this, array, 65, right->intValue << 1);
           }
 
@@ -10794,7 +10953,7 @@ static int32_t WasmModule_emitNode(struct WasmModule *__this, struct ByteArray *
         }
 
         else if (size == 4) {
-          if (right->kind == 28) {
+          if (right->kind == 30) {
             WasmModule_emit1S(__this, array, 65, right->intValue << 2);
           }
 
@@ -10813,63 +10972,63 @@ static int32_t WasmModule_emitNode(struct WasmModule *__this, struct ByteArray *
       WasmModule_emit(__this, array, 106);
     }
 
-    else if (node->kind == 50) {
+    else if (node->kind == 52) {
       WasmModule_emitBinaryExpression(__this, array, node, 113);
     }
 
-    else if (node->kind == 51) {
+    else if (node->kind == 53) {
       WasmModule_emitBinaryExpression(__this, array, node, 114);
     }
 
-    else if (node->kind == 52) {
+    else if (node->kind == 54) {
       WasmModule_emitBinaryExpression(__this, array, node, 115);
     }
 
-    else if (node->kind == 54) {
+    else if (node->kind == 56) {
       WasmModule_emitBinaryExpression(__this, array, node, 70);
     }
 
-    else if (node->kind == 62) {
+    else if (node->kind == 64) {
       WasmModule_emitBinaryExpression(__this, array, node, 108);
     }
 
-    else if (node->kind == 63) {
+    else if (node->kind == 65) {
       WasmModule_emitBinaryExpression(__this, array, node, 71);
     }
 
-    else if (node->kind == 65) {
+    else if (node->kind == 67) {
       WasmModule_emitBinaryExpression(__this, array, node, 116);
     }
 
-    else if (node->kind == 67) {
+    else if (node->kind == 69) {
       WasmModule_emitBinaryExpression(__this, array, node, 107);
     }
 
-    else if (node->kind == 53) {
+    else if (node->kind == 55) {
       WasmModule_emitBinaryExpression(__this, array, node, isUnsigned ? 110 : 109);
     }
 
-    else if (node->kind == 56) {
+    else if (node->kind == 58) {
       WasmModule_emitBinaryExpression(__this, array, node, isUnsigned ? 75 : 74);
     }
 
-    else if (node->kind == 57) {
+    else if (node->kind == 59) {
       WasmModule_emitBinaryExpression(__this, array, node, isUnsigned ? 79 : 78);
     }
 
-    else if (node->kind == 58) {
+    else if (node->kind == 60) {
       WasmModule_emitBinaryExpression(__this, array, node, isUnsigned ? 73 : 72);
     }
 
-    else if (node->kind == 59) {
+    else if (node->kind == 61) {
       WasmModule_emitBinaryExpression(__this, array, node, isUnsigned ? 77 : 76);
     }
 
-    else if (node->kind == 64) {
+    else if (node->kind == 66) {
       WasmModule_emitBinaryExpression(__this, array, node, isUnsigned ? 112 : 111);
     }
 
-    else if (node->kind == 66) {
+    else if (node->kind == 68) {
       WasmModule_emitBinaryExpression(__this, array, node, isUnsigned ? 118 : 117);
     }
 
@@ -11069,11 +11228,11 @@ static struct WasmWrappedType *wasmWrapType(int32_t id) {
 }
 
 static uint8_t wasmIsGratuitousBlock(struct Node *node) {
-  return node->kind == 7 && Node_childCount(node) == 1;
+  return node->kind == 9 && Node_childCount(node) == 1;
 }
 
 static uint8_t wasmIsImplicitBlock(struct Node *node) {
-  return node->kind == 16;
+  return node->kind == 18;
 }
 
 static void wasmAssignLocalVariableOffsets(struct Node *node, struct WasmSharedOffset *shared, struct WasmFunction *fn) {
