@@ -312,6 +312,7 @@
     this.enclosingClass = null;
     this.currentReturnType = null;
     this.nextGlobalVariableOffset = 0;
+    this.isDebug = false;
     this.boolType = null;
     this.sbyteType = null;
     this.errorType = null;
@@ -424,6 +425,10 @@
 
           if (decorator.stringValue === "metadata") {
             metadata(node, context, decorator);
+          }
+
+          else if (decorator.stringValue === "debug") {
+            debug(node, context, decorator);
           }
 
           else {
@@ -1824,6 +1829,7 @@
       source = source.next;
     }
 
+    this.context.isDebug = this.preprocessor.isDefined("NODEBUG") === false;
     __imports.Profiler_end("parsing");
     __imports.Profiler_begin();
     var global = this.global;
@@ -1903,6 +1909,34 @@
     }
 
     return builder.append(path).append(extension).finish();
+  }
+
+  function debug(node, context, decorator) {
+    __imports.assert(node.kind === 17);
+
+    if (node.functionReturnType().stringValue !== "void") {
+      context.log.error(decorator.range, "This decorator cannot be used with functions specifying a return value");
+
+      return;
+    }
+
+    if (context.isDebug) {
+      return;
+    }
+
+    var body = node.functionBody();
+
+    if (body === null || body.childCount() === 0) {
+      return;
+    }
+
+    var child = body.firstChild;
+
+    while (child !== null) {
+      var next = child.nextSibling;
+      child.remove();
+      child = next;
+    }
   }
 
   function metadata(node, context, decorator) {

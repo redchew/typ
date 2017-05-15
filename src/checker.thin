@@ -6,6 +6,7 @@ class CheckContext {
   enclosingClass: Symbol;
   currentReturnType: Type;
   nextGlobalVariableOffset: int;
+  isDebug: bool;
 
   // Native types
   boolType: Type;
@@ -143,6 +144,7 @@ function initialize(context: CheckContext, node: Node, parentScope: Scope, mode:
       while (decorator != null) {
         var name = decorator.stringValue;
         if (decorator.stringValue == "metadata") metadata(node, context, decorator);
+        else if (decorator.stringValue == "debug") debug(node, context, decorator);
         else context.log.error(node.range, "There is no such decorator");
         decorator = decorator.nextSibling;
       }

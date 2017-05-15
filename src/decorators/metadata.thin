@@ -1,12 +1,10 @@
+// Injects basic metadata into the decorated function.
+
 function metadata(node: Node, context: CheckContext, decorator: Node): void {
   assert(node.kind == NodeKind.FUNCTION);
 
-  // This is an example of what decorators could do. However, without a way to extend the
-  // compiler with custom decorators (i.e. imports and function pointers), this feature
-  // won't be of much value, yet.
-
   var body = node.functionBody();
-  if (body == null || body.childCount() == 0) { // No need to instrument empty functions
+  if (body == null || body.childCount() == 0) { // No need to instrument imports or empty functions
     return;
   }
 

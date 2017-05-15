@@ -104,6 +104,7 @@ class Compiler {
       }
       source = source.next;
     }
+    this.context.isDebug = this.preprocessor.isDefined("NODEBUG") == false;
 
     Profiler_end("parsing");
     Profiler_begin();

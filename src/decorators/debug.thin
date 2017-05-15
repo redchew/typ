@@ -1,0 +1,27 @@
+// Eliminates functions when compiling with the NODEBUG preprocessor flag.
+// TODO: Add a compiler optimization that removes empty functions and their respective calls.
+
+function debug(node: Node, context: CheckContext, decorator: Node): void {
+  assert(node.kind == NodeKind.FUNCTION);
+
+  // Recover from invalid use
+  if (node.functionReturnType().stringValue != "void") {
+    context.log.error(decorator.range, "This decorator cannot be used with functions specifying a return value");
+    return;
+  }
+
+  if (context.isDebug) return;
+
+  var body = node.functionBody();
+  if (body == null || body.childCount() == 0) { // Import or already empty
+    return;
+  }
+
+  // Clear the body
+  var child = body.firstChild;
+  while (child != null) {
+    var next = child.nextSibling;;
+    child.remove();
+    child = next;
+  }
+}
