@@ -90,7 +90,11 @@ Container for classes. Has flags.
 
 ### CONSTANTS
 
+Like `VARIABLES` but holding constants.
+
 ### CONSTANT
+
+Like `VARIABLE` but for constants. TODO: Investigate why this is a statement while `VARIABLE` is not.
 
 ### CONTINUE
 
@@ -149,6 +153,8 @@ Variable declaration with the variable's name in `stringValue`.
 ## Expressions : `<EXPRESSION>`
 
 ### ALIGN_OF
+
+`alignof value` returning the alignment of a type. Not yet supported.
 
 ### BOOL
 
@@ -211,6 +217,8 @@ Produced by the parser when there are errors. TODO: Investigate why this occasio
 
 ### SIZE_OF
 
+`sizeof value` operator behaving like C's `sizeof(value)`. Partially supported.
+
 ### STRING
 
 Literal string value present in `stringValue`.
@@ -231,13 +239,23 @@ Container for unary expressions where `kind` specifies one of the following unar
 
 ### ADDRESS_OF
 
+`&value`
+
 ### COMPLEMENT
+
+`~value`
 
 ### DEREFERENCE
 
+`*value`
+
 ### NEGATIVE
 
+`-value`
+
 ### NOT
+
+`!value`
 
 ### POINTER_TYPE
 
@@ -245,13 +263,23 @@ Like `TYPE`, but referencing the underlying pointer type, i.e. of a `NAME`.
 
 ### POSITIVE
 
+`+value`
+
 ### POSTFIX_DECREMENT
+
+`value--`
 
 ### POSTFIX_INCREMENT
 
+`value++`
+
 ### PREFIX_DECREMENT
 
+`--value`
+
 ### PREFIX_INCREMENT
+
+`++value`
 
 ## Binary expressions :  `<EXPRESSION>` & `<BINARY_EXPRESSION>`
 
@@ -262,40 +290,80 @@ Container for binary expressions composed of a left and a right hand side where 
 
 ### ADD
 
+`left + right`
+
 ### ASSIGN
+
+`left = right`
 
 ### BITWISE_AND
 
+`left & right`
+
 ### BITWISE_OR
+
+`left | right`
 
 ### BITWISE_XOR
 
+`left ^ right`
+
 ### DIVIDE
+
+`left / right`
 
 ### EQUAL
 
+`left == right`
+
 ### EXPONENT
+
+`left ** right`
 
 ### GREATER_THAN
 
+`left > right`
+
 ### GREATER_THAN_EQUAL
+
+`left >= right`
 
 ### LESS_THAN
 
+`left < right`
+
 ### LESS_THAN_EQUAL
+
+`left <= right`
 
 ### LOGICAL_AND
 
+`left && right`
+
 ### LOGICAL_OR
+
+`left || right`
 
 ### MULTIPLY
 
+`left * right`
+
 ### NOT_EQUAL
+
+`left != right`
 
 ### REMAINDER
 
+`left % right`
+
 ### SHIFT_LEFT
+
+`left << right`
 
 ### SHIFT_RIGHT
 
+`left >> right`
+
 ### SUBTRACT
+
+`left - right`
