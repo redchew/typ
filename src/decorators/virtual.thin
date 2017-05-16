@@ -1,7 +1,11 @@
-// Annotates a declared function as virtual, meaning that it doesn't actually exist within the current target
-// and must be replaced by a stub.
-
-function decorator_virtual(node: Node, context: CheckContext, decorator: Node): void {
+/**
+ * Annotates a declared function as virtual, meaning that it doesn't actually exist within the
+ * current target and must be replaced by a stub.
+ * @param node The node being decorated
+ * @param context Current checker context
+ * @param decorator The respective decorator node
+ */
+function decorateVirtual(node: Node, context: CheckContext, decorator: Node): void {
   assert(node.kind == NodeKind.FUNCTION || node.kind == NodeKind.CLASS);
 
   if (!node.isDeclare()) {

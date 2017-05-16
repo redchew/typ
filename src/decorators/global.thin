@@ -1,7 +1,10 @@
-// Annotates a function or class as being part of the global scope.
-
-function decorator_global(node: Node, context: CheckContext, decorator: Node): void {
+/**
+ * Annotates a function or class as being a part of the global scope.
+ * Reserved for future use.
+ * @param node The node being decorated
+ * @param context Current checker context
+ * @param decorator The respective decorator node
+ */
+function decorateGlobal(node: Node, context: CheckContext, decorator: Node): void {
   assert(node.kind == NodeKind.FUNCTION || node.kind == NodeKind.CLASS);
-
-  // Reserved for future use.
 }

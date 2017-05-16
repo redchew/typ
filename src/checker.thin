@@ -124,12 +124,12 @@ function initialize(context: CheckContext, node: Node, parentScope: Scope, mode:
       var decorator = decorators.decoratorsFirstDecorator();
       while (decorator != null) {
         var name = decorator.decoratorName();
-        if (name.stringValue == "builtin") decorator_builtin(node, context, decorator);
-        else if (name.stringValue == "debug") decorator_debug(node, context, decorator);
-        else if (name.stringValue == "global") decorator_global(node, context, decorator);
-        else if (name.stringValue == "header") decorator_header(node, context, decorator);
-        else if (name.stringValue == "metadata") decorator_metadata(node, context, decorator);
-        else if (name.stringValue == "virtual") decorator_virtual(node, context, decorator);
+        if (name.stringValue == "builtin") decorateBuiltin(node, context, decorator);
+        else if (name.stringValue == "debug") decorateDebug(node, context, decorator);
+        else if (name.stringValue == "global") decorateGlobal(node, context, decorator);
+        else if (name.stringValue == "header") decorateHeader(node, context, decorator);
+        else if (name.stringValue == "metadata") decorateMetadata(node, context, decorator);
+        else if (name.stringValue == "virtual") decorateVirtual(node, context, decorator);
         else context.log.error(node.range, "Illegal decorator");
         decorator = decorator.nextSibling;
       }

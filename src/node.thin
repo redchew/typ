@@ -132,6 +132,7 @@ const NODE_FLAG_STATIC = 1 << 10;
 const NODE_FLAG_UNSAFE = 1 << 11;
 const NODE_FLAG_UNSIGNED_OPERATOR = 1 << 12;
 const NODE_FLAG_CONSTRUCTOR = 1 << 13;
+const NODE_FLAG_BUILTIN = 1 << 14;
 
 class NodeFlag {
   flag: int;
@@ -638,7 +639,7 @@ class Node {
     assert(isExpression(this.firstChild));
     return this.firstChild;
   }
-  
+
   decoratorsFirstDecorator(): Node {
     assert(this.kind == NodeKind.DECORATORS);
     assert(this.childCount() >= 1);

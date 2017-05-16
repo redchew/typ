@@ -1,7 +1,11 @@
-// Eliminates functions when compiling with the NODEBUG preprocessor flag.
-// TODO: Add a compiler optimization that removes empty functions and their respective calls.
-
-function decorator_debug(node: Node, context: CheckContext, decorator: Node): void {
+/**
+ * Eliminates debugging-only functions when compiling with the `NODEBUG` preprocessor flag.
+ * Note that such functions must not exhibit side effects.
+ * @param node The node being decorated
+ * @param context Current checker context
+ * @param decorator The respective decorator node
+ */
+function decorateDebug(node: Node, context: CheckContext, decorator: Node): void {
   assert(node.kind == NodeKind.FUNCTION);
 
   // Recover from invalid use
@@ -24,4 +28,6 @@ function decorator_debug(node: Node, context: CheckContext, decorator: Node): vo
     child.remove();
     child = next;
   }
+
+  // TODO: Add a compiler optimization that removes empty functions and their respective calls.
 }

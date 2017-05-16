@@ -1,6 +1,11 @@
-// Annotates that a function requires a specific native header.
-
-function decorator_header(node: Node, context: CheckContext, decorator: Node): void {
+/**
+ * Annotates that a function requires a target specific header.
+ * Optional flags can be used to specify the build pass / type a header belongs to.
+ * @param node The node being decorated
+ * @param context Current checker context
+ * @param decorator The respective decorator node
+ */
+function decorateHeader(node: Node, context: CheckContext, decorator: Node): void {
   assert(node.kind == NodeKind.FUNCTION);
 
   var name: string;
