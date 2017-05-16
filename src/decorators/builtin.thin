@@ -1,0 +1,8 @@
+// Annotates a function or class as a builtin. This annotation can only be used
+// in the standard library.
+
+function decorator_builtin(node: Node, context: CheckContext, decorator: Node): void {
+  assert(node.kind == NodeKind.FUNCTION || node.kind == NodeKind.CLASS);
+
+  // Reserved for future use.
+}

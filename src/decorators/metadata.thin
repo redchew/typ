@@ -1,6 +1,6 @@
 // Injects basic metadata into the decorated function.
 
-function metadata(node: Node, context: CheckContext, decorator: Node): void {
+function decorator_metadata(node: Node, context: CheckContext, decorator: Node): void {
   assert(node.kind == NodeKind.FUNCTION);
 
   var body = node.functionBody();

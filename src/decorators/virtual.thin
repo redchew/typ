@@ -1,0 +1,21 @@
+// Annotates a declared function as virtual, meaning that it doesn't actually exist within the current target
+// and must be replaced by a stub.
+
+function decorator_virtual(node: Node, context: CheckContext, decorator: Node): void {
+  assert(node.kind == NodeKind.FUNCTION || node.kind == NodeKind.CLASS);
+
+  if (!node.isDeclare()) {
+    context.log.error(node.range, "@virtual functions cannot have an implementation");
+    return;
+  }
+
+  var returnType = node.functionReturnType();
+  if (returnType.stringValue != "void") {
+    context.log.error(returnType.range, "@virtual functions cannot specify a return type other than 'void'");
+    return;
+  }
+
+  assert(node.lastChild.kind == NodeKind.EMPTY);
+  node.lastChild.kind = NodeKind.BLOCK;
+  node.flags = node.flags ^ NODE_FLAG_DECLARE;
+}

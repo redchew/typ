@@ -1,12 +1,12 @@
 // Eliminates functions when compiling with the NODEBUG preprocessor flag.
 // TODO: Add a compiler optimization that removes empty functions and their respective calls.
 
-function debug(node: Node, context: CheckContext, decorator: Node): void {
+function decorator_debug(node: Node, context: CheckContext, decorator: Node): void {
   assert(node.kind == NodeKind.FUNCTION);
 
   // Recover from invalid use
   if (node.functionReturnType().stringValue != "void") {
-    context.log.error(decorator.decoratorName().range, "This decorator cannot be used with functions specifying a return value");
+    context.log.error(decorator.decoratorName().range, "@debug cannot be used with functions specifying a return value");
     return;
   }
 

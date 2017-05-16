@@ -79,6 +79,29 @@ function initialize(context: CheckContext, node: Node, parentScope: Scope, mode:
   // Function
   else if (kind == NodeKind.FUNCTION) {
     assert(node.symbol == null);
+
+    // Decorators modify functions at compile time before being resolved
+    var decorators = node.firstChild;
+    while (decorators != null) {
+      if (decorators.kind == NodeKind.DECORATORS) break;
+      decorators = decorators.nextSibling;
+    }
+    if (decorators != null) {
+      var decorator = decorators.decoratorsFirstDecorator();
+      while (decorator != null) {
+        var name = decorator.decoratorName();
+        if (name.stringValue == "builtin") decorator_builtin(node, context, decorator);
+        else if (name.stringValue == "debug") decorator_debug(node, context, decorator);
+        else if (name.stringValue == "global") decorator_global(node, context, decorator);
+        else if (name.stringValue == "header") decorator_header(node, context, decorator);
+        else if (name.stringValue == "metadata") decorator_metadata(node, context, decorator);
+        else if (name.stringValue == "virtual") decorator_virtual(node, context, decorator);
+        else context.log.error(node.range, "Illegal decorator");
+        decorator = decorator.nextSibling;
+      }
+      decorators.remove();
+    }
+
     var symbol = new Symbol();
     symbol.kind =
       node.parent.kind == NodeKind.CLASS ? SymbolKind.FUNCTION_INSTANCE :
@@ -130,25 +153,6 @@ function initialize(context: CheckContext, node: Node, parentScope: Scope, mode:
       var parent = symbol.parent();
       initializeSymbol(context, parent);
       node.insertChildBefore(node.functionFirstArgument(), createVariable("this", createType(parent.resolvedType), null));
-    }
-
-    // Decorators can be used to modify functions on compile time
-    // TODO: These are currently hard coded, don't resolve names to symbols and don't use arguments.
-    var decorators = node.firstChild;
-    while (decorators != null) {
-      if (decorators.kind == NodeKind.DECORATORS) break;
-      decorators = decorators.nextSibling;
-    }
-    if (decorators != null) {
-      var decorator = decorators.decoratorsFirstDecorator();
-      while (decorator != null) {
-        var name = decorator.decoratorName();
-        if (name.stringValue == "metadata") metadata(node, context, decorator);
-        else if (name.stringValue == "debug") debug(node, context, decorator);
-        else context.log.error(node.range, "There is no such decorator");
-        decorator = decorator.nextSibling;
-      }
-      decorators.remove();
     }
   }
 
