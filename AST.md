@@ -241,7 +241,7 @@ Container for unary expressions where `kind` specifies one of the following unar
 
 ### POINTER_TYPE
 
-Like `TYPE`, but referencing underlying pointer type, i.e. of a `NAME`.
+Like `TYPE`, but referencing the underlying pointer type, i.e. of a `NAME`.
 
 ### POSITIVE
 
