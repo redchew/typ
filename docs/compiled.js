@@ -1,4 +1,8 @@
 (function(__imports, __exports) {
+
+
+
+
   function string_op_get(__this, index) {
     return __this.charCodeAt(index);
   }
@@ -59,10 +63,10 @@
     __imports.Terminal_setColor(0);
   }
 
-  function CommandLineArgument() {
-    this.text = null;
-    this.next = null;
-  }
+  function CommandLineArgument() {}
+
+  CommandLineArgument.prototype.text = null;
+  CommandLineArgument.prototype.next = null;
 
   var firstArgument = null;
   var lastArgument = null;
@@ -244,6 +248,8 @@
     array.append(value >> 24 & 255);
   }
 
+  Uint8Array.prototype.length = 0;
+
   function ByteArray_setString(array, index, text) {
     var length = text.length;
     __imports.assert(index >= 0 && (index + (length << 1) | 0) <= array.length());
@@ -259,10 +265,10 @@
     }
   }
 
-  function ByteArray() {
-    this._data = null;
-    this._length = 0;
-  }
+  function ByteArray() {}
+
+  ByteArray.prototype._data = null;
+  ByteArray.prototype._length = 0;
 
   ByteArray.prototype.length = function() {
     return this._length;
@@ -304,27 +310,28 @@
     this._length = length;
   };
 
-  function CheckContext() {
-    this.log = null;
-    this.target = 0;
-    this.pointerByteSize = 0;
-    this.isUnsafeAllowed = false;
-    this.enclosingClass = null;
-    this.currentReturnType = null;
-    this.nextGlobalVariableOffset = 0;
-    this.isDebug = false;
-    this.boolType = null;
-    this.sbyteType = null;
-    this.errorType = null;
-    this.intType = null;
-    this.nullType = null;
-    this.shortType = null;
-    this.stringType = null;
-    this.byteType = null;
-    this.uintType = null;
-    this.ushortType = null;
-    this.voidType = null;
-  }
+  function CheckContext() {}
+
+  CheckContext.prototype.log = null;
+  CheckContext.prototype.target = 0;
+  CheckContext.prototype.pointerByteSize = 0;
+  CheckContext.prototype.isUnsafeAllowed = false;
+  CheckContext.prototype.enclosingClass = null;
+  CheckContext.prototype.currentFunction = null;
+  CheckContext.prototype.currentReturnType = null;
+  CheckContext.prototype.nextGlobalVariableOffset = 0;
+  CheckContext.prototype.isDebug = false;
+  CheckContext.prototype.boolType = null;
+  CheckContext.prototype.sbyteType = null;
+  CheckContext.prototype.errorType = null;
+  CheckContext.prototype.intType = null;
+  CheckContext.prototype.nullType = null;
+  CheckContext.prototype.shortType = null;
+  CheckContext.prototype.stringType = null;
+  CheckContext.prototype.byteType = null;
+  CheckContext.prototype.uintType = null;
+  CheckContext.prototype.ushortType = null;
+  CheckContext.prototype.voidType = null;
 
   CheckContext.prototype.allocateGlobalVariableOffset = function(sizeOf, alignmentOf) {
     var offset = alignToNextMultipleOf(this.nextGlobalVariableOffset, alignmentOf);
@@ -418,16 +425,16 @@
       }
 
       if (decorators !== null) {
-        var decorator = decorators.firstChild;
+        var decorator = decorators.decoratorsFirstDecorator();
 
         while (decorator !== null) {
-          var name = decorator.stringValue;
+          var name = decorator.decoratorName();
 
-          if (decorator.stringValue === "metadata") {
+          if (name.stringValue === "metadata") {
             metadata(node, context, decorator);
           }
 
-          else if (decorator.stringValue === "debug") {
+          else if (name.stringValue === "debug") {
             debug(node, context, decorator);
           }
 
@@ -1005,11 +1012,14 @@
       initializeSymbol(context, node.symbol);
 
       if (body !== null) {
+        var oldFunction = context.currentFunction;
         var oldReturnType = context.currentReturnType;
         var oldUnsafeAllowed = context.isUnsafeAllowed;
+        context.currentFunction = node;
         context.currentReturnType = node.functionReturnType().resolvedType;
         context.isUnsafeAllowed = node.isUnsafe();
         resolveChildren(context, body, node.scope);
+        context.currentFunction = oldFunction;
         context.currentReturnType = oldReturnType;
         context.isUnsafeAllowed = oldUnsafeAllowed;
       }
@@ -1309,7 +1319,11 @@
     else if (kind === 19) {
       var value = node.returnValue();
 
-      if (value !== null) {
+      if (context.currentFunction.isConstructor()) {
+        context.log.error(node.range, "Constructors cannot return a value");
+      }
+
+      else if (value !== null) {
         resolveAsExpression(context, value, parentScope);
 
         if (context.currentReturnType !== null) {
@@ -1341,7 +1355,7 @@
     }
 
     else if (kind === 3) {
-      var child = node.firstChild;
+      var child = node.implementsFirstType();
 
       while (child !== null) {
         resolveAsType(context, child, parentScope);
@@ -1451,17 +1465,41 @@
       resolveAsType(context, newType, parentScope);
 
       if (newType.resolvedType !== context.errorType) {
-        if (!newType.resolvedType.isClass()) {
+        if (!newType.resolvedType.isClass() || newType.resolvedType.symbol.kind === 3) {
           context.log.error(newType.range, StringBuilder_new().append("Cannot construct type '").append(newType.resolvedType.toString()).appendChar(39).finish());
         }
 
         else {
           node.resolvedType = newType.resolvedType;
-        }
-      }
+          var argumentValue = node.newFirstArgument();
+          var ctor = newType.symbol.node.classConstructor();
 
-      if (newType.nextSibling !== null) {
-        context.log.error(node.internalRange, "Constructors with arguments are not supported yet");
+          if (ctor !== null) {
+            var argumentVariable = ctor.functionFirstArgumentIgnoringThis();
+            var returnType = ctor.functionReturnType();
+            __imports.assert(newType.resolvedType === returnType.resolvedType);
+
+            while (argumentVariable !== returnType && argumentValue !== null) {
+              resolveAsExpression(context, argumentValue, parentScope);
+              checkConversion(context, argumentValue, argumentVariable.symbol.resolvedType, 0);
+              argumentVariable = argumentVariable.nextSibling;
+              argumentValue = argumentValue.nextSibling;
+            }
+
+            if (argumentVariable !== returnType) {
+              context.log.error(node.internalRange, StringBuilder_new().append("Not enough arguments for constructor '").append(newType.symbol.name).appendChar(39).finish());
+            }
+          }
+
+          if (argumentValue !== null) {
+            while (argumentValue !== null) {
+              resolveAsExpression(context, argumentValue, parentScope);
+              argumentValue = argumentValue.nextSibling;
+            }
+
+            context.log.error(node.internalRange, StringBuilder_new().append("Too many arguments for constructor '").append(newType.symbol.name).appendChar(39).finish());
+          }
+        }
       }
     }
 
@@ -1726,21 +1764,21 @@
     }
   }
 
-  function Compiler() {
-    this.log = null;
-    this.global = null;
-    this.firstSource = null;
-    this.lastSource = null;
-    this.preprocessor = null;
-    this.target = 0;
-    this.context = null;
-    this.librarySource = null;
-    this.outputName = null;
-    this.outputWASM = null;
-    this.outputJS = null;
-    this.outputC = null;
-    this.outputH = null;
-  }
+  function Compiler() {}
+
+  Compiler.prototype.log = null;
+  Compiler.prototype.global = null;
+  Compiler.prototype.firstSource = null;
+  Compiler.prototype.lastSource = null;
+  Compiler.prototype.preprocessor = null;
+  Compiler.prototype.target = 0;
+  Compiler.prototype.context = null;
+  Compiler.prototype.librarySource = null;
+  Compiler.prototype.outputName = null;
+  Compiler.prototype.outputWASM = null;
+  Compiler.prototype.outputJS = null;
+  Compiler.prototype.outputC = null;
+  Compiler.prototype.outputH = null;
 
   Compiler.prototype.initialize = function(target, outputName) {
     __imports.assert(this.log === null);
@@ -1915,7 +1953,7 @@
     __imports.assert(node.kind === 17);
 
     if (node.functionReturnType().stringValue !== "void") {
-      context.log.error(decorator.range, "This decorator cannot be used with functions specifying a return value");
+      context.log.error(decorator.decoratorName().range, "This decorator cannot be used with functions specifying a return value");
 
       return;
     }
@@ -1972,11 +2010,11 @@
     return kind >= 40 && kind <= 72;
   }
 
-  function Token() {
-    this.kind = 0;
-    this.range = null;
-    this.next = null;
-  }
+  function Token() {}
+
+  Token.prototype.kind = 0;
+  Token.prototype.range = null;
+  Token.prototype.next = null;
 
   function splitToken(first, firstKind, secondKind) {
     var range = first.range;
@@ -2956,19 +2994,19 @@
     return "\n#if WASM\n\n  // These will be filled in by the WebAssembly code generator\n  unsafe var currentHeapPointer: *byte = null;\n  unsafe var originalHeapPointer: *byte = null;\n\n  extern unsafe function malloc(sizeOf: uint): *byte {\n    // Align all allocations to 8 bytes\n    var offset = ((currentHeapPointer as uint + 7) & ~7 as uint) as *byte;\n    sizeOf = (sizeOf + 7) & ~7 as uint;\n\n    // Use a simple bump allocator for now\n    var limit = offset + sizeOf;\n    currentHeapPointer = limit;\n\n    // Make sure the memory starts off at zero\n    var ptr = offset;\n    while (ptr < limit) {\n      *(ptr as *int) = 0;\n      ptr = ptr + 4;\n    }\n\n    return offset;\n  }\n\n  extern unsafe function free(ptr: *byte): void { /* TODO */ }\n\n  unsafe function memcpy(target: *byte, source: *byte, length: uint): void {\n    // No-op if either of the inputs are null\n    if (source == null || target == null) {\n      return;\n    }\n\n    // Optimized aligned copy\n    if (length >= 16 && (source as uint) % 4 == (target as uint) % 4) {\n      // Pick off the beginning\n      while ((target as uint) % 4 != 0) {\n        *target = *source;\n        target = target + 1;\n        source = source + 1;\n        length = length - 1;\n      }\n\n      // Pick off the end\n      while (length % 4 != 0) {\n        length = length - 1;\n        *(target + length) = *(source + length);\n      }\n\n      // Zip over the middle\n      var end = target + length;\n      while (target < end) {\n        *(target as *int) = *(source as *int);\n        target = target + 4;\n        source = source + 4;\n      }\n    }\n\n    // Slow unaligned copy\n    else {\n      var end = target + length;\n      while (target < end) {\n        *target = *source;\n        target = target + 1;\n        source = source + 1;\n      }\n    }\n  }\n\n  unsafe function memcmp(a: *byte, b: *byte, length: uint): int {\n    // No-op if either of the inputs are null\n    if (a == null || b == null) {\n      return 0;\n    }\n\n    // Return the first non-zero difference\n    while (length > 0) {\n      var delta = *a as int - *b as int;\n      if (delta != 0) {\n        return delta;\n      }\n      a = a + 1;\n      b = b + 1;\n      length = length - 1;\n    }\n\n    // Both inputs are identical\n    return 0;\n  }\n\n#elif C\n\n  declare unsafe function malloc(sizeOf: uint): *byte;\n  declare unsafe function free(ptr: *byte): void;\n  declare unsafe function memcpy(target: *byte, source: *byte, length: uint): void;\n  declare unsafe function memcmp(a: *byte, b: *byte, length: uint): int;\n\n#endif\n\n#if WASM || C\n\n  declare class bool {\n    toString(): string {\n      return this ? \"true\" : \"false\";\n    }\n  }\n\n  declare class sbyte {\n    toString(): string {\n      return (this as int).toString();\n    }\n  }\n\n  declare class byte {\n    toString(): string {\n      return (this as uint).toString();\n    }\n  }\n\n  declare class short {\n    toString(): string {\n      return (this as int).toString();\n    }\n  }\n\n  declare class ushort {\n    toString(): string {\n      return (this as uint).toString();\n    }\n  }\n\n  declare class int {\n    toString(): string {\n      // Special-case this to keep the rest of the code simple\n      if (this == -2147483648) {\n        return \"-2147483648\";\n      }\n\n      // Treat this like an unsigned integer prefixed by '-' if it's negative\n      return internalIntToString((this < 0 ? -this : this) as uint, this < 0);\n    }\n  }\n\n  declare class uint {\n    toString(): string {\n      return internalIntToString(this, false);\n    }\n  }\n\n  function internalIntToString(value: uint, sign: bool): string {\n    // Avoid allocation for common cases\n    if (value == 0) return \"0\";\n    if (value == 1) return sign ? \"-1\" : \"1\";\n\n    unsafe {\n      // Determine how many digits we need\n      var length = ((sign ? 1 : 0) + (\n        value >= 100000000 ?\n          value >= 1000000000 ? 10 : 9 :\n        value >= 10000 ?\n          value >= 1000000 ?\n            value >= 10000000 ? 8 : 7 :\n            value >= 100000 ? 6 : 5 :\n          value >= 100 ?\n            value >= 1000 ? 4 : 3 :\n            value >= 10 ? 2 : 1)) as uint;\n\n      var ptr = string_new(length) as *byte;\n      var end = ptr + 4 + length * 2;\n\n      if (sign) {\n        *((ptr + 4) as *ushort) = '-';\n      }\n\n      while (value != 0) {\n        end = end + -2;\n        *(end as *ushort) = (value % 10 + '0') as ushort;\n        value = value / 10;\n      }\n\n      return ptr as string;\n    }\n  }\n\n  function string_new(length: uint): string {\n    unsafe {\n      var ptr = malloc(4 + length * 2);\n      *(ptr as *uint) = length;\n      return ptr as string;\n    }\n  }\n\n  declare class string {\n    charAt(index: int): string {\n      return this.slice(index, index + 1);\n    }\n\n    charCodeAt(index: int): ushort {\n      return this[index];\n    }\n\n    get length(): int {\n      unsafe {\n        return *(this as *int);\n      }\n    }\n\n    operator [] (index: int): ushort {\n      if (index as uint < this.length as uint) {\n        unsafe {\n          return *((this as *byte + 4 + index * 2) as *ushort);\n        }\n      }\n      return 0;\n    }\n\n    operator == (other: string): bool {\n      unsafe {\n        if (this as *byte == other as *byte) return true;\n        if (this as *byte == null || other as *byte == null) return false;\n        var length = this.length;\n        if (length != other.length) return false;\n        return memcmp(this as *byte + 4, other as *byte + 4, length as uint * 2) == 0;\n      }\n    }\n\n    slice(start: int, end: int): string {\n      var length = this.length;\n\n      if (start < 0) start = start + length;\n      if (end < 0) end = end + length;\n\n      if (start < 0) start = 0;\n      else if (start > length) start = length;\n\n      if (end < start) end = start;\n      else if (end > length) end = length;\n\n      unsafe {\n        var range = (end - start) as uint;\n        var ptr = string_new(range);\n        memcpy(ptr as *byte + 4, this as *byte + 4 + start * 2, range * 2);\n        return ptr;\n      }\n    }\n\n    startsWith(text: string): bool {\n      var textLength = text.length;\n      if (this.length < textLength) return false;\n      unsafe {\n        return memcmp(this as *byte + 4, text as *byte + 4, textLength as uint * 2) == 0;\n      }\n    }\n\n    endsWith(text: string): bool {\n      var thisLength = this.length;\n      var textLength = text.length;\n      if (thisLength < textLength) return false;\n      unsafe {\n        return memcmp(this as *byte + 4 + (thisLength - textLength) * 2, text as *byte + 4, textLength as uint * 2) == 0;\n      }\n    }\n\n    indexOf(text: string): int {\n      var thisLength = this.length;\n      var textLength = text.length;\n      if (thisLength >= textLength) {\n        var i = 0;\n        while (i < thisLength - textLength) {\n          unsafe {\n            if (memcmp(this as *byte + 4 + i * 2, text as *byte + 4, textLength as uint * 2) == 0) {\n              return i;\n            }\n          }\n          i = i + 1;\n        }\n      }\n      return -1;\n    }\n\n    lastIndexOf(text: string): int {\n      var thisLength = this.length;\n      var textLength = text.length;\n      if (thisLength >= textLength) {\n        var i = thisLength - textLength;\n        while (i >= 0) {\n          unsafe {\n            if (memcmp(this as *byte + 4 + i * 2, text as *byte + 4, textLength as uint * 2) == 0) {\n              return i;\n            }\n          }\n          i = i - 1;\n        }\n      }\n      return -1;\n    }\n  }\n\n#else\n\n  declare class bool {\n    toString(): string;\n  }\n\n  declare class sbyte {\n    toString(): string;\n  }\n\n  declare class byte {\n    toString(): string;\n  }\n\n  declare class short {\n    toString(): string;\n  }\n\n  declare class ushort {\n    toString(): string;\n  }\n\n  declare class int {\n    toString(): string;\n  }\n\n  declare class uint {\n    toString(): string;\n  }\n\n  declare class string {\n    charAt(index: int): string;\n    charCodeAt(index: int): ushort;\n    get length(): int;\n    indexOf(text: string): int;\n    lastIndexOf(text: string): int;\n    operator == (other: string): bool;\n    operator [] (index: int): ushort { return this.charCodeAt(index); }\n    slice(start: int, end: int): string;\n\n    #if JS\n      startsWith(text: string): bool { return this.slice(0, text.length) == text; }\n      endsWith(text: string): bool { return this.slice(-text.length, this.length) == text; }\n    #else\n      startsWith(text: string): bool;\n      endsWith(text: string): bool;\n    #endif\n  }\n\n#endif\n\n#if C\n\n  extern unsafe function cstring_to_utf16(utf8: *byte): string {\n    if (utf8 == null) {\n      return null;\n    }\n\n    var utf16_length: uint = 0;\n    var a: byte, b: byte, c: byte, d: byte;\n\n    // Measure text\n    var i: uint = 0;\n    while ((a = *(utf8 + i)) != '\\0') {\n      i = i + 1;\n      var codePoint: uint;\n\n      // Decode UTF-8\n      if ((b = *(utf8 + i)) != '\\0' && a >= 0xC0) {\n        i = i + 1;\n        if ((c = *(utf8 + i)) != '\\0' && a >= 0xE0) {\n          i = i + 1;\n          if ((d = *(utf8 + i)) != '\\0' && a >= 0xF0) {\n            i = i + 1;\n            codePoint = ((a & 0x07) << 18) | ((b & 0x3F) << 12) | ((c & 0x3F) << 6) | (d & 0x3F);\n          } else {\n            codePoint = ((a & 0x0F) << 12) | ((b & 0x3F) << 6) | (c & 0x3F);\n          }\n        } else {\n          codePoint = ((a & 0x1F) << 6) | (b & 0x3F);\n        }\n      } else {\n        codePoint = a;\n      }\n\n      // Encode UTF-16\n      utf16_length = utf16_length + (codePoint < 0x10000 ? 1 : 2) as uint;\n    }\n\n    var output = string_new(utf16_length);\n    var utf16 = output as *ushort + 2;\n\n    // Convert text\n    i = 0;\n    while ((a = *(utf8 + i)) != '\\0') {\n      i = i + 1;\n      var codePoint: uint;\n\n      // Decode UTF-8\n      if ((b = *(utf8 + i)) != '\\0' && a >= 0xC0) {\n        i = i + 1;\n        if ((c = *(utf8 + i)) != '\\0' && a >= 0xE0) {\n          i = i + 1;\n          if ((d = *(utf8 + i)) != '\\0' && a >= 0xF0) {\n            i = i + 1;\n            codePoint = ((a & 0x07) << 18) | ((b & 0x3F) << 12) | ((c & 0x3F) << 6) | (d & 0x3F);\n          } else {\n            codePoint = ((a & 0x0F) << 12) | ((b & 0x3F) << 6) | (c & 0x3F);\n          }\n        } else {\n          codePoint = ((a & 0x1F) << 6) | (b & 0x3F);\n        }\n      } else {\n        codePoint = a;\n      }\n\n      // Encode UTF-16\n      if (codePoint < 0x10000) {\n        *utf16 = codePoint as ushort;\n      } else {\n        *utf16 = ((codePoint >> 10) + (0xD800 - (0x10000 >> 10))) as ushort;\n        utf16 = utf16 + 1;\n        *utf16 = ((codePoint & 0x3FF) + 0xDC00) as ushort;\n      }\n      utf16 = utf16 + 1;\n    }\n\n    return output;\n  }\n\n  extern unsafe function utf16_to_cstring(input: string): *byte {\n    if (input as *uint == null) {\n      return null;\n    }\n\n    var utf16_length = *(input as *uint);\n    var utf8_length: uint = 0;\n    var utf16 = input as *ushort + 2;\n\n    // Measure text\n    var i: uint = 0;\n    while (i < utf16_length) {\n      var codePoint: uint;\n\n      // Decode UTF-16\n      var a = *(utf16 + i);\n      i = i + 1;\n      if (i < utf16_length && a >= 0xD800 && a <= 0xDBFF) {\n        var b = *(utf16 + i);\n        i = i + 1;\n        codePoint = (a << 10) + b + (0x10000 - (0xD800 << 10) - 0xDC00) as uint;\n      } else {\n        codePoint = a;\n      }\n\n      // Encode UTF-8\n      utf8_length = utf8_length + (\n        codePoint < 0x80 ? 1 :\n        codePoint < 0x800 ? 2 :\n        codePoint < 0x10000 ? 3 :\n        4) as uint;\n    }\n\n    var utf8 = malloc(utf8_length + 1);\n    var next = utf8;\n\n    // Convert text\n    i = 0;\n    while (i < utf16_length) {\n      var codePoint: uint;\n\n      // Decode UTF-16\n      var a = *(utf16 + i);\n      i = i + 1;\n      if (i < utf16_length && a >= 0xD800 && a <= 0xDBFF) {\n        var b = *(utf16 + i);\n        i = i + 1;\n        codePoint = (a << 10) + b + (0x10000 - (0xD800 << 10) - 0xDC00) as uint;\n      } else {\n        codePoint = a;\n      }\n\n      // Encode UTF-8\n      if (codePoint < 0x80) {\n        *next = codePoint as byte;\n      } else {\n        if (codePoint < 0x800) {\n          *next = (((codePoint >> 6) & 0x1F) | 0xC0) as byte;\n        } else {\n          if (codePoint < 0x10000) {\n            *next = (((codePoint >> 12) & 0x0F) | 0xE0) as byte;\n          } else {\n            *next = (((codePoint >> 18) & 0x07) | 0xF0) as byte;\n            next = next + 1;\n            *next = (((codePoint >> 12) & 0x3F) | 0x80) as byte;\n          }\n          next = next + 1;\n          *next = (((codePoint >> 6) & 0x3F) | 0x80) as byte;\n        }\n        next = next + 1;\n        *next = ((codePoint & 0x3F) | 0x80) as byte;\n      }\n      next = next + 1;\n    }\n\n    // C strings are null-terminated\n    *next = '\\0';\n\n    return utf8;\n  }\n\n#endif\n";
   }
 
-  function LineColumn() {
-    this.line = 0;
-    this.column = 0;
-  }
+  function LineColumn() {}
 
-  function Source() {
-    this.name = null;
-    this.contents = null;
-    this.next = null;
-    this.isLibrary = false;
-    this.firstToken = null;
-    this.file = null;
-  }
+  LineColumn.prototype.line = 0;
+  LineColumn.prototype.column = 0;
+
+  function Source() {}
+
+  Source.prototype.name = null;
+  Source.prototype.contents = null;
+  Source.prototype.next = null;
+  Source.prototype.isLibrary = false;
+  Source.prototype.firstToken = null;
+  Source.prototype.file = null;
 
   Source.prototype.indexToLineColumn = function(index) {
     var contents = this.contents;
@@ -2998,11 +3036,11 @@
     return location;
   };
 
-  function Range() {
-    this.source = null;
-    this.start = 0;
-    this.end = 0;
-  }
+  function Range() {}
+
+  Range.prototype.source = null;
+  Range.prototype.start = 0;
+  Range.prototype.end = 0;
 
   Range.prototype.toString = function() {
     return this.source.contents.slice(this.start, this.end);
@@ -3052,12 +3090,12 @@
     return createRange(left.source, left.start, right.end);
   }
 
-  function Diagnostic() {
-    this.range = null;
-    this.message = null;
-    this.kind = 0;
-    this.next = null;
-  }
+  function Diagnostic() {}
+
+  Diagnostic.prototype.range = null;
+  Diagnostic.prototype.message = null;
+  Diagnostic.prototype.kind = 0;
+  Diagnostic.prototype.next = null;
 
   Diagnostic.prototype.appendSourceName = function(builder, location) {
     builder.append(this.range.source.name).appendChar(58).append((location.line + 1 | 0).toString()).appendChar(58).append((location.column + 1 | 0).toString()).append(": ");
@@ -3102,10 +3140,10 @@
     builder.appendChar(10);
   };
 
-  function Log() {
-    this.first = null;
-    this.last = null;
-  }
+  function Log() {}
+
+  Log.prototype.first = null;
+  Log.prototype.last = null;
 
   Log.prototype.error = function(range, message) {
     this.append(range, message, 0);
@@ -3204,6 +3242,10 @@
     return kind;
   }
 
+  function isStatement(node) {
+    return node.kind >= 9 && node.kind <= 22;
+  }
+
   function isExpression(node) {
     return node.kind >= 23 && node.kind <= 69;
   }
@@ -3212,11 +3254,11 @@
     return kind === 12 || kind === 16 || kind === 21;
   }
 
-  function NodeFlag() {
-    this.flag = 0;
-    this.range = null;
-    this.next = null;
-  }
+  function NodeFlag() {}
+
+  NodeFlag.prototype.flag = 0;
+  NodeFlag.prototype.range = null;
+  NodeFlag.prototype.next = null;
 
   function appendFlag(first, flag, range) {
     var link = new NodeFlag();
@@ -3261,23 +3303,23 @@
     return null;
   }
 
-  function Node() {
-    this.kind = 0;
-    this.flags = 0;
-    this.firstFlag = null;
-    this.range = null;
-    this.internalRange = null;
-    this.parent = null;
-    this.firstChild = null;
-    this.lastChild = null;
-    this.previousSibling = null;
-    this.nextSibling = null;
-    this.intValue = 0;
-    this.stringValue = null;
-    this.resolvedType = null;
-    this.symbol = null;
-    this.scope = null;
-  }
+  function Node() {}
+
+  Node.prototype.kind = 0;
+  Node.prototype.flags = 0;
+  Node.prototype.firstFlag = null;
+  Node.prototype.range = null;
+  Node.prototype.internalRange = null;
+  Node.prototype.parent = null;
+  Node.prototype.firstChild = null;
+  Node.prototype.lastChild = null;
+  Node.prototype.previousSibling = null;
+  Node.prototype.nextSibling = null;
+  Node.prototype.intValue = 0;
+  Node.prototype.stringValue = null;
+  Node.prototype.resolvedType = null;
+  Node.prototype.symbol = null;
+  Node.prototype.scope = null;
 
   Node.prototype.become = function(node) {
     __imports.assert(node !== this);
@@ -3356,12 +3398,20 @@
     return (this.flags & 64) !== 0;
   };
 
+  Node.prototype.isStatic = function() {
+    return (this.flags & 1024) !== 0;
+  };
+
   Node.prototype.isUnsafe = function() {
     return (this.flags & 2048) !== 0;
   };
 
   Node.prototype.isUnsignedOperator = function() {
     return (this.flags & 4096) !== 0;
+  };
+
+  Node.prototype.isConstructor = function() {
+    return (this.flags & 8192) !== 0;
   };
 
   Node.prototype.childCount = function() {
@@ -3520,6 +3570,13 @@
     return this;
   };
 
+  Node.prototype.fileFirstStatement = function() {
+    __imports.assert(this.kind === 1);
+    __imports.assert(this.firstChild === null || isStatement(this.firstChild));
+
+    return this.firstChild;
+  };
+
   Node.prototype.functionFirstArgument = function() {
     __imports.assert(this.kind === 17);
     __imports.assert(this.childCount() >= 2);
@@ -3578,6 +3635,86 @@
     return body.kind === 9 ? body : null;
   };
 
+  Node.prototype.blockFirstStatement = function() {
+    __imports.assert(this.kind === 9);
+    __imports.assert(this.childCount() >= 1);
+    __imports.assert(this.firstChild !== null && isStatement(this.firstChild));
+
+    return this.firstChild;
+  };
+
+  Node.prototype.classExtends = function() {
+    __imports.assert(this.kind === 11);
+    var child = this.firstChild;
+    var firstMember = this.classFirstMember();
+
+    while (child !== null) {
+      if (child === firstMember) {
+        return null;
+      }
+
+      if (child.kind === 0) {
+        break;
+      }
+
+      child = child.nextSibling;
+    }
+
+    return child;
+  };
+
+  Node.prototype.classImplements = function() {
+    __imports.assert(this.kind === 11);
+    var child = this.firstChild;
+    var firstMember = this.classFirstMember();
+
+    while (child !== null) {
+      if (child === firstMember) {
+        return null;
+      }
+
+      if (child.kind === 3) {
+        break;
+      }
+
+      child = child.nextSibling;
+    }
+
+    return child;
+  };
+
+  Node.prototype.classFirstMember = function() {
+    __imports.assert(this.kind === 11);
+    var child = this.firstChild;
+
+    while (child !== null) {
+      if (child.kind === 17 || child.kind === 6) {
+        break;
+      }
+
+      child = child.nextSibling;
+    }
+
+    return child;
+  };
+
+  Node.prototype.classConstructor = function() {
+    __imports.assert(this.kind === 11);
+    var child = this.classFirstMember();
+
+    while (child !== null) {
+      if ((child.flags & 8192) !== 0) {
+        __imports.assert(child.kind === 17);
+
+        break;
+      }
+
+      child = child.nextSibling;
+    }
+
+    return child;
+  };
+
   Node.prototype.newType = function() {
     __imports.assert(this.kind === 32);
     __imports.assert(this.childCount() >= 1);
@@ -3586,12 +3723,30 @@
     return this.firstChild;
   };
 
+  Node.prototype.newFirstArgument = function() {
+    __imports.assert(this.kind === 32);
+    __imports.assert(this.childCount() >= 1);
+    __imports.assert(isExpression(this.firstChild));
+    __imports.assert(this.firstChild.nextSibling === null || isExpression(this.firstChild.nextSibling));
+
+    return this.firstChild.nextSibling;
+  };
+
   Node.prototype.callValue = function() {
     __imports.assert(this.kind === 25);
     __imports.assert(this.childCount() >= 1);
     __imports.assert(isExpression(this.firstChild));
 
     return this.firstChild;
+  };
+
+  Node.prototype.callFirstArgument = function() {
+    __imports.assert(this.kind === 25);
+    __imports.assert(this.childCount() >= 1);
+    __imports.assert(isExpression(this.firstChild));
+    __imports.assert(this.firstChild.nextSibling === null || isExpression(this.firstChild.nextSibling));
+
+    return this.firstChild.nextSibling;
   };
 
   Node.prototype.castValue = function() {
@@ -3648,6 +3803,55 @@
     __imports.assert(isExpression(this.firstChild));
 
     return this.firstChild;
+  };
+
+  Node.prototype.implementsFirstType = function() {
+    __imports.assert(this.kind === 0);
+    __imports.assert(this.childCount() >= 1);
+    __imports.assert(isExpression(this.firstChild));
+
+    return this.firstChild;
+  };
+
+  Node.prototype.parametersFirstParameter = function() {
+    __imports.assert(this.kind === 5);
+    __imports.assert(this.childCount() >= 1);
+    __imports.assert(isExpression(this.firstChild));
+
+    return this.firstChild;
+  };
+
+  Node.prototype.parameterType = function() {
+    __imports.assert(this.kind === 4);
+    __imports.assert(this.childCount() === 1);
+    __imports.assert(isExpression(this.firstChild));
+
+    return this.firstChild;
+  };
+
+  Node.prototype.decoratorsFirstDecorator = function() {
+    __imports.assert(this.kind === 8);
+    __imports.assert(this.childCount() >= 1);
+    __imports.assert(this.firstChild.kind === 7);
+
+    return this.firstChild;
+  };
+
+  Node.prototype.decoratorName = function() {
+    __imports.assert(this.kind === 7);
+    __imports.assert(this.childCount() >= 1);
+    __imports.assert(isExpression(this.firstChild));
+
+    return this.firstChild;
+  };
+
+  Node.prototype.decoratorFirstArgument = function() {
+    __imports.assert(this.kind === 7);
+    __imports.assert(this.childCount() >= 1);
+    __imports.assert(isExpression(this.firstChild));
+    __imports.assert(this.firstChild.nextSibling === null || isExpression(this.firstChild.nextSibling));
+
+    return this.firstChild.nextSibling;
   };
 
   Node.prototype.variableType = function() {
@@ -4008,6 +4212,18 @@
     return node;
   }
 
+  function createClassConstructor(parent) {
+    __imports.assert(parent.kind === 11);
+    var node = new Node();
+    node.kind = 17;
+    node.stringValue = "constructor";
+    node.flags = node.flags | 8192;
+    node.appendChild(createVariables());
+    node.appendChild(createName(parent.stringValue));
+
+    return node;
+  }
+
   function createEnum(name) {
     var node = new Node();
     node.kind = 15;
@@ -4116,9 +4332,11 @@
   }
 
   function createDecorator(name) {
+    __imports.assert(name !== null && name.kind === 31);
     var node = new Node();
     node.kind = 7;
-    node.stringValue = name;
+    node.stringValue = name.stringValue;
+    node.appendChild(name);
 
     return node;
   }
@@ -4217,12 +4435,12 @@
     return precedence === 1 || precedence === 12;
   }
 
-  function ParserContext() {
-    this.previous = null;
-    this.current = null;
-    this.log = null;
-    this.lastError = null;
-  }
+  function ParserContext() {}
+
+  ParserContext.prototype.previous = null;
+  ParserContext.prototype.current = null;
+  ParserContext.prototype.log = null;
+  ParserContext.prototype.lastError = null;
 
   ParserContext.prototype.peek = function(kind) {
     return this.current.kind === kind;
@@ -5214,11 +5432,34 @@
       node.flags = node.flags | 16;
     }
 
+    var isConstructor = false;
+
+    if (parent !== null && parent.kind === 11 && name === "constructor") {
+      var ctor = parent.classConstructor();
+
+      if (ctor !== null) {
+        this.log.error(nameRange, "A class cannot declare multiple constructors");
+        this.log.error(ctor.range, "Previous constructor declared here");
+      }
+
+      if ((node.flags & 1024) !== 0) {
+        this.log.error(nameRange, "Constructors cannot be declared static");
+      }
+
+      node.flags = node.flags | 8192;
+      isConstructor = true;
+    }
+
     if (this.peek(21)) {
       var parameters = this.parseParameters();
 
       if (parameters === null) {
         return null;
+      }
+
+      if (isConstructor) {
+        this.log.error(nameRange, "Constructors cannot specify type parameters (their type parameters are automatically derived from the respective class)");
+        parameters = createParseError();
       }
 
       node.appendChild(parameters);
@@ -5281,10 +5522,23 @@
 
     var returnType = null;
 
-    if (this.expect(9)) {
+    if (isConstructor) {
+      returnType = createName(parent.stringValue).withRange(nameRange);
+    }
+
+    if (this.peek(9)) {
+      var colonRange = this.current.range;
+      this.advance();
       returnType = this.parseType();
 
-      if (returnType === null) {
+      if (isConstructor) {
+        if (returnType !== null) {
+          this.log.error(spanRanges(colonRange, returnType.range), "Constructors cannot specify a return type");
+          returnType = createParseError();
+        }
+      }
+
+      else if (returnType === null) {
         if (this.peek(37) || this.peek(18)) {
           returnType = createParseError();
         }
@@ -5296,7 +5550,9 @@
     }
 
     else if (this.peek(37) || this.peek(18)) {
-      returnType = createParseError();
+      if (!isConstructor) {
+        returnType = createParseError();
+      }
     }
 
     else {
@@ -5635,7 +5891,7 @@
       return null;
     }
 
-    var node = createDecorator(name.range.toString());
+    var node = createDecorator(createName(name.range.toString()).withRange(name.range));
 
     if (this.peek(20)) {
       this.parseArgumentList(this.current.range, node);
@@ -5680,19 +5936,19 @@
     return file;
   }
 
-  function PreprocessorFlag() {
-    this.isDefined = false;
-    this.name = null;
-    this.next = null;
-  }
+  function PreprocessorFlag() {}
 
-  function Preprocessor() {
-    this.firstFlag = null;
-    this.isDefineAndUndefAllowed = false;
-    this.previous = null;
-    this.current = null;
-    this.log = null;
-  }
+  PreprocessorFlag.prototype.isDefined = false;
+  PreprocessorFlag.prototype.name = null;
+  PreprocessorFlag.prototype.next = null;
+
+  function Preprocessor() {}
+
+  Preprocessor.prototype.firstFlag = null;
+  Preprocessor.prototype.isDefineAndUndefAllowed = false;
+  Preprocessor.prototype.previous = null;
+  Preprocessor.prototype.current = null;
+  Preprocessor.prototype.log = null;
 
   Preprocessor.prototype.peek = function(kind) {
     return this.current.kind === kind;
@@ -6037,12 +6293,12 @@
     return value;
   };
 
-  function Scope() {
-    this.parent = null;
-    this.symbol = null;
-    this.firstSymbol = null;
-    this.lastSymbol = null;
-  }
+  function Scope() {}
+
+  Scope.prototype.parent = null;
+  Scope.prototype.symbol = null;
+  Scope.prototype.firstSymbol = null;
+  Scope.prototype.lastSymbol = null;
 
   Scope.prototype.findLocal = function(name, hint) {
     var symbol = this.firstSymbol;
@@ -6253,10 +6509,10 @@
     sb.appendSlice(text, start, end).appendChar(34);
   }
 
-  function StringBuilder() {
-    this.next = null;
-    this._text = null;
-  }
+  function StringBuilder() {}
+
+  StringBuilder.prototype.next = null;
+  StringBuilder.prototype._text = null;
 
   StringBuilder.prototype.clear = function() {
     this._text = "";
@@ -6305,21 +6561,21 @@
     return kind >= 6 && kind <= 10;
   }
 
-  function Symbol() {
-    this.kind = 0;
-    this.name = null;
-    this.node = null;
-    this.range = null;
-    this.scope = null;
-    this.resolvedType = null;
-    this.next = null;
-    this.state = 0;
-    this.flags = 0;
-    this.byteSize = 0;
-    this.maxAlignment = 0;
-    this.rename = null;
-    this.offset = 0;
-  }
+  function Symbol() {}
+
+  Symbol.prototype.kind = 0;
+  Symbol.prototype.name = null;
+  Symbol.prototype.node = null;
+  Symbol.prototype.range = null;
+  Symbol.prototype.scope = null;
+  Symbol.prototype.resolvedType = null;
+  Symbol.prototype.next = null;
+  Symbol.prototype.state = 0;
+  Symbol.prototype.flags = 0;
+  Symbol.prototype.byteSize = 0;
+  Symbol.prototype.maxAlignment = 0;
+  Symbol.prototype.rename = null;
+  Symbol.prototype.offset = 0;
 
   Symbol.prototype.isEnumValue = function() {
     return this.node.parent.kind === 15;
@@ -6403,16 +6659,16 @@
     this.maxAlignment = maxAlignment;
   };
 
-  function CResult() {
-    this.context = null;
-    this.code = null;
-    this.codePrefix = null;
-    this.headerName = null;
-    this.indent = 0;
-    this.hasStrings = false;
-    this.previousNode = null;
-    this.nextStringLiteral = 0;
-  }
+  function CResult() {}
+
+  CResult.prototype.context = null;
+  CResult.prototype.code = null;
+  CResult.prototype.codePrefix = null;
+  CResult.prototype.headerName = null;
+  CResult.prototype.indent = 0;
+  CResult.prototype.hasStrings = false;
+  CResult.prototype.previousNode = null;
+  CResult.prototype.nextStringLiteral = 0;
 
   CResult.prototype.emitIndent = function() {
     var i = this.indent;
@@ -6653,14 +6909,17 @@
         }
       }
 
-      this.emitCommaSeparatedExpressions(callValue.nextSibling, null);
+      this.emitCommaSeparatedExpressions(node.callFirstArgument(), null);
       code.appendChar(41);
     }
 
     else if (node.kind === 32) {
-      code.append("calloc(1, sizeof(");
-      this.emitType(node.resolvedType, 2);
-      code.append("))");
+      var newType = node.newType();
+      var ctor = newType.symbol.node.classConstructor();
+      this.emitSymbolName(newType.symbol);
+      code.append("_constructor(");
+      this.emitCommaSeparatedExpressions(node.newFirstArgument(), null);
+      code.append(")");
     }
 
     else if (node.kind === 40) {
@@ -6787,6 +7046,7 @@
   };
 
   CResult.prototype.emitType = function(originalType, mode) {
+    __imports.assert(originalType !== null);
     var context = this.context;
     var code = this.code;
     var type = originalType;
@@ -7077,49 +7337,21 @@
   };
 
   CResult.prototype.shouldEmitFunction = function(symbol) {
-    return symbol.kind !== 5 || symbol.name !== "malloc" && symbol.name !== "memcpy" && symbol.name !== "memcmp";
+    return symbol.kind !== 5 || symbol.name !== "malloc" && symbol.name !== "free" && symbol.name !== "memcpy" && symbol.name !== "memcmp";
   };
 
   CResult.prototype.emitFunctionDeclarations = function(node, mode) {
     var code = this.code;
 
     while (node !== null) {
-      if (node.kind === 17 && (mode !== 0 || node.isDeclareOrExtern())) {
-        var symbol = node.symbol;
-
-        if (this.shouldEmitFunction(symbol)) {
-          var returnType = node.functionReturnType();
-          var child = node.functionFirstArgument();
-          this.emitNewlineBefore(node);
-
-          if (!node.isDeclareOrExtern()) {
-            code.append("static ");
-          }
-
-          this.emitType(returnType.resolvedType, 1);
-          this.emitSymbolName(symbol);
-          code.appendChar(40);
-
-          if (symbol.kind === 4) {
-            child.symbol.rename = "__this";
-          }
-
-          while (child !== returnType) {
-            __imports.assert(child.kind === 6);
-            this.emitType(child.symbol.resolvedType, 1);
-            this.emitSymbolName(child.symbol);
-            child = child.nextSibling;
-
-            if (child !== returnType) {
-              code.append(", ");
-            }
-          }
-
-          code.append(");\n");
+      if (node.kind === 17) {
+        if (this.shouldEmitFunction(node.symbol) && (mode !== 0 || node.isDeclareOrExtern())) {
+          this.emitFunction(node, true);
         }
       }
 
       else if (node.kind === 11) {
+        this.emitConstructor(node, true);
         this.emitFunctionDeclarations(node.firstChild, mode);
       }
 
@@ -7159,46 +7391,134 @@
 
     while (node !== null) {
       if (node.kind === 17) {
-        var body = node.functionBody();
-        var symbol = node.symbol;
-
-        if (body !== null && this.shouldEmitFunction(symbol)) {
-          var returnType = node.functionReturnType();
-          var child = node.firstChild;
-          this.emitNewlineBefore(node);
-
-          if (!node.isDeclareOrExtern()) {
-            code.append("static ");
-          }
-
-          this.emitType(returnType.resolvedType, 1);
-          this.emitSymbolName(symbol);
-          code.appendChar(40);
-
-          while (child !== returnType) {
-            __imports.assert(child.kind === 6);
-            this.emitType(child.symbol.resolvedType, 1);
-            this.emitSymbolName(child.symbol);
-            child = child.nextSibling;
-
-            if (child !== returnType) {
-              code.append(", ");
-            }
-          }
-
-          code.append(") ");
-          this.emitBlock(node.functionBody());
-          code.appendChar(10);
-          this.emitNewlineAfter(node);
+        if (this.shouldEmitFunction(node.symbol) && node.functionBody() !== null && !node.isConstructor()) {
+          this.emitFunction(node, false);
         }
       }
 
       else if (node.kind === 11) {
+        this.emitConstructor(node, false);
         this.emitFunctionDefinitions(node.firstChild);
       }
 
       node = node.nextSibling;
     }
+  };
+
+  CResult.prototype.emitFunction = function(node, isDeclaration) {
+    __imports.assert(node.kind === 17);
+    var code = this.code;
+    var symbol = node.symbol;
+    var returnType = node.functionReturnType();
+    var child = node.functionFirstArgument();
+    this.emitNewlineBefore(node);
+
+    if (!node.isDeclareOrExtern()) {
+      code.append("static ");
+    }
+
+    this.emitType(returnType.resolvedType, 1);
+    this.emitSymbolName(symbol);
+    code.appendChar(40);
+
+    if (symbol.kind === 4) {
+      child.symbol.rename = "__this";
+
+      if (node.isConstructor()) {
+        child = child.nextSibling;
+      }
+    }
+
+    while (child !== returnType) {
+      __imports.assert(child.kind === 6);
+      this.emitType(child.symbol.resolvedType, 1);
+      this.emitSymbolName(child.symbol);
+      child = child.nextSibling;
+
+      if (child !== returnType) {
+        code.append(", ");
+      }
+    }
+
+    if (isDeclaration) {
+      code.append(");\n");
+    }
+
+    else {
+      code.append(") ");
+      this.emitBlock(node.functionBody());
+      code.appendChar(10);
+      this.emitNewlineAfter(node);
+    }
+  };
+
+  CResult.prototype.emitConstructor = function(node, isDeclaration) {
+    __imports.assert(node.kind === 11);
+    var classType = node.symbol.resolvedType;
+
+    if (classType.symbol.kind === 3) {
+      return;
+    }
+
+    var code = this.code;
+    var ctor = node.classConstructor();
+    code.append("\n");
+
+    if (ctor === null || !node.isDeclareOrExtern()) {
+      code.append("static ");
+    }
+
+    this.emitType(classType, 0);
+    this.emitSymbolName(node.symbol);
+    code.append("_constructor(");
+
+    if (ctor !== null) {
+      var child = ctor.functionFirstArgumentIgnoringThis();
+      var returnType = ctor.functionReturnType();
+
+      while (child !== returnType) {
+        __imports.assert(child.kind === 6);
+        this.emitType(child.symbol.resolvedType, 1);
+        this.emitSymbolName(child.symbol);
+        child = child.nextSibling;
+
+        if (child !== returnType) {
+          code.append(", ");
+        }
+      }
+    }
+
+    if (isDeclaration) {
+      code.append(");\n");
+
+      return;
+    }
+
+    code.append(") {\n");
+    this.indent = this.indent + 1 | 0;
+    this.emitIndent();
+
+    if (ctor !== null) {
+      this.emitType(classType, 0);
+      code.append(" __this = calloc(1, sizeof(");
+      this.emitType(classType, 2);
+      code.append("));\n");
+      this.previousNode = null;
+      this.emitStatements(ctor.functionBody().firstChild);
+      this.previousNode = null;
+      this.emitIndent();
+      code.append("return __this;\n");
+    }
+
+    else {
+      code.append("return calloc(1, sizeof(");
+      this.emitType(classType, 2);
+      code.append("));\n");
+    }
+
+    this.indent = this.indent - 1 | 0;
+    code.append("}\n");
+    this.emitNewlineAfter(node);
   };
 
   CResult.prototype.finishImplementation = function() {
@@ -7282,13 +7602,13 @@
     compiler.outputH = headerCode.finish();
   }
 
-  function JsResult() {
-    this.context = null;
-    this.code = null;
-    this.indent = 0;
-    this.foundMultiply = false;
-    this.previousNode = null;
-  }
+  function JsResult() {}
+
+  JsResult.prototype.context = null;
+  JsResult.prototype.code = null;
+  JsResult.prototype.indent = 0;
+  JsResult.prototype.foundMultiply = false;
+  JsResult.prototype.previousNode = null;
 
   JsResult.prototype.emitIndent = function() {
     var i = this.indent;
@@ -7563,7 +7883,9 @@
     else if (node.kind === 32) {
       code.append("new ");
       this.emitExpression(node.newType(), 14);
-      code.append("()");
+      code.append("(");
+      this.emitCommaSeparatedExpressions(node.newFirstArgument(), null);
+      code.append(")");
     }
 
     else if (node.kind === 43) {
@@ -7719,6 +8041,10 @@
     var code = this.code;
 
     if (node.kind === 17) {
+      if (node.isConstructor()) {
+        return;
+      }
+
       var body = node.functionBody();
 
       if (body === null) {
@@ -7898,32 +8224,62 @@
     }
 
     else if (node.kind === 11) {
+      var argument = null;
+
       if (!node.isDeclare()) {
         this.emitNewlineBefore(node);
         this.emitIndent();
         code.append("function ");
         this.emitSymbolName(node.symbol);
-        code.append("() {\n");
-        this.indent = this.indent + 1 | 0;
-        var argument = node.firstChild;
+        code.append("(");
+        var ctor = node.classConstructor();
 
-        while (argument !== null) {
-          if (argument.kind === 6) {
-            this.emitIndent();
-            code.append("this.");
+        if (ctor !== null) {
+          var returnType = ctor.functionReturnType();
+          argument = ctor.functionFirstArgumentIgnoringThis();
+
+          while (argument !== returnType) {
+            __imports.assert(argument.kind === 6);
             this.emitSymbolName(argument.symbol);
-            code.append(" = ");
-            this.emitExpression(argument.variableValue(), 0);
-            code.append(";\n");
-          }
+            argument = argument.nextSibling;
 
-          argument = argument.nextSibling;
+            if (argument !== returnType) {
+              code.append(", ");
+            }
+          }
         }
 
-        this.indent = this.indent - 1 | 0;
-        this.emitIndent();
-        code.append("}\n");
+        code.append(") ");
+
+        if (ctor !== null) {
+          this.emitBlock(ctor.functionBody());
+        }
+
+        else {
+          code.append("{}\n");
+        }
+
         this.emitNewlineAfter(node);
+      }
+
+      argument = node.firstChild;
+
+      if (argument !== null) {
+        code.append("\n");
+      }
+
+      while (argument !== null) {
+        if (argument.kind === 6) {
+          this.emitIndent();
+          this.emitSymbolName(node.symbol);
+          code.append(".prototype.");
+          this.emitSymbolName(argument.symbol);
+          code.append(" = ");
+          this.emitExpression(argument.variableValue(), 0);
+          code.append(";\n");
+        }
+
+        argument = argument.nextSibling;
       }
 
       var child = node.firstChild;
@@ -8006,67 +8362,67 @@
     compiler.outputJS = code.finish();
   }
 
-  function WasmWrappedType() {
-    this.id = 0;
-    this.next = null;
-  }
+  function WasmWrappedType() {}
 
-  function WasmSignature() {
-    this.argumentTypes = null;
-    this.returnType = null;
-    this.next = null;
-  }
+  WasmWrappedType.prototype.id = 0;
+  WasmWrappedType.prototype.next = null;
 
-  function WasmGlobal() {
-    this.symbol = null;
-    this.next = null;
-  }
+  function WasmSignature() {}
 
-  function WasmLocal() {
-    this.symbol = null;
-    this.next = null;
-  }
+  WasmSignature.prototype.argumentTypes = null;
+  WasmSignature.prototype.returnType = null;
+  WasmSignature.prototype.next = null;
 
-  function WasmFunction() {
-    this.symbol = null;
-    this.signatureIndex = 0;
-    this.isExported = false;
-    this.firstLocal = null;
-    this.lastLocal = null;
-    this.localCount = 0;
-    this.next = null;
-  }
+  function WasmGlobal() {}
 
-  function WasmImport() {
-    this.signatureIndex = 0;
-    this.module = null;
-    this.name = null;
-    this.next = null;
-  }
+  WasmGlobal.prototype.symbol = null;
+  WasmGlobal.prototype.next = null;
 
-  function WasmModule() {
-    this.compiler = null;
-    this.firstImport = null;
-    this.lastImport = null;
-    this.importCount = 0;
-    this.globalCount = 0;
-    this.firstGlobal = null;
-    this.lastGlobal = null;
-    this.firstFunction = null;
-    this.lastFunction = null;
-    this.functionCount = 0;
-    this.firstSignature = null;
-    this.lastSignature = null;
-    this.signatureCount = 0;
-    this.memoryInitializer = null;
-    this.currentHeapPointer = 0;
-    this.originalHeapPointer = 0;
-    this.mallocFunction = null;
-    this.freeFunction = null;
-    this.startFunction = null;
-    this.context = null;
-    this.sectionPayloadOffset = 0;
-  }
+  function WasmLocal() {}
+
+  WasmLocal.prototype.symbol = null;
+  WasmLocal.prototype.next = null;
+
+  function WasmFunction() {}
+
+  WasmFunction.prototype.symbol = null;
+  WasmFunction.prototype.signatureIndex = 0;
+  WasmFunction.prototype.isExported = false;
+  WasmFunction.prototype.firstLocal = null;
+  WasmFunction.prototype.lastLocal = null;
+  WasmFunction.prototype.localCount = 0;
+  WasmFunction.prototype.next = null;
+
+  function WasmImport() {}
+
+  WasmImport.prototype.signatureIndex = 0;
+  WasmImport.prototype.module = null;
+  WasmImport.prototype.name = null;
+  WasmImport.prototype.next = null;
+
+  function WasmModule() {}
+
+  WasmModule.prototype.compiler = null;
+  WasmModule.prototype.firstImport = null;
+  WasmModule.prototype.lastImport = null;
+  WasmModule.prototype.importCount = 0;
+  WasmModule.prototype.globalCount = 0;
+  WasmModule.prototype.firstGlobal = null;
+  WasmModule.prototype.lastGlobal = null;
+  WasmModule.prototype.firstFunction = null;
+  WasmModule.prototype.lastFunction = null;
+  WasmModule.prototype.functionCount = 0;
+  WasmModule.prototype.firstSignature = null;
+  WasmModule.prototype.lastSignature = null;
+  WasmModule.prototype.signatureCount = 0;
+  WasmModule.prototype.memoryInitializer = null;
+  WasmModule.prototype.currentHeapPointer = 0;
+  WasmModule.prototype.originalHeapPointer = 0;
+  WasmModule.prototype.mallocFunction = null;
+  WasmModule.prototype.freeFunction = null;
+  WasmModule.prototype.startFunction = null;
+  WasmModule.prototype.context = null;
+  WasmModule.prototype.sectionPayloadOffset = 0;
 
   WasmModule.prototype.growMemoryInitializer = function() {
     var array = this.memoryInitializer;
@@ -8944,6 +9300,19 @@
       __imports.assert(size > 0);
       this.emit1S(array, 65, size);
       this.emit1U(array, 16, this.getFunctionCallIndex(this.mallocFunction.symbol));
+      var ctor = newType.symbol.node.classConstructor();
+
+      if (ctor !== null) {
+        __imports.assert((node.childCount() - 1 | 0) === (ctor.functionArgumentCount() - 1 | 0));
+        var argument = node.newFirstArgument();
+
+        while (argument !== null) {
+          this.emitNode(array, argument);
+          argument = argument.nextSibling;
+        }
+
+        this.emit1U(array, 16, this.getFunctionCallIndex(ctor.symbol));
+      }
     }
 
     else if (node.kind === 45) {
@@ -9368,10 +9737,10 @@
     return node.kind === 18;
   }
 
-  function WasmSharedOffset() {
-    this.nextLocalOffset = 0;
-    this.localCount = 0;
-  }
+  function WasmSharedOffset() {}
+
+  WasmSharedOffset.prototype.nextLocalOffset = 0;
+  WasmSharedOffset.prototype.localCount = 0;
 
   function wasmAssignLocalVariableOffsets(node, shared, fn) {
     if (node.kind === 6) {
@@ -9418,12 +9787,12 @@
     module.emitModule(compiler.outputWASM);
   }
 
-  function Type() {
-    this.symbol = null;
-    this.pointerTo = null;
-    this.cachedToString = null;
-    this.cachedPointerType = null;
-  }
+  function Type() {}
+
+  Type.prototype.symbol = null;
+  Type.prototype.pointerTo = null;
+  Type.prototype.cachedToString = null;
+  Type.prototype.cachedPointerType = null;
 
   Type.prototype.isClass = function() {
     return this.symbol !== null && this.symbol.kind === 0;
