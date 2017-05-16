@@ -645,7 +645,7 @@ class CResult {
 
     if (symbol.kind == SymbolKind.FUNCTION_INSTANCE) {
       child.symbol.rename = "__this";
-      
+
       // Constructors use 'this' but it isn't an argument
       if (node.isConstructor()) {
         child = child.nextSibling;
@@ -775,7 +775,7 @@ function cEmit(compiler: Compiler): void {
   result.context = compiler.context;
   result.code = temporaryCode;
   result.codePrefix = implementationCode;
-  result.headerName = replaceFileExtension(compiler.outputName, ".h");
+  result.headerName = basenameWithExtension(compiler.outputName, ".h");
 
   if (child != null) {
     // Emit implementation

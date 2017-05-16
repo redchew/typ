@@ -177,7 +177,6 @@ class Compiler {
 }
 
 function replaceFileExtension(path: string, extension: string): string {
-  var builder = StringBuilder_new();
   var dot = path.lastIndexOf(".");
   var forward = path.lastIndexOf("/");
   var backward = path.lastIndexOf("\\");
@@ -187,5 +186,15 @@ function replaceFileExtension(path: string, extension: string): string {
     path = path.slice(0, dot);
   }
 
-  return builder.append(path).append(extension).finish();
+  return StringBuilder_new().append(path).append(extension).finish();
+}
+
+function basenameWithExtension(path: string, extension: string): string {
+  var dot = path.lastIndexOf(".");
+  var forward = path.lastIndexOf("/");
+  var backward = path.lastIndexOf("\\");
+
+  path = path.slice((dot > forward && forward > backward ? forward : backward) + 1, dot);
+
+  return StringBuilder_new().append(path).append(extension).finish();
 }
