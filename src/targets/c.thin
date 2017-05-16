@@ -477,6 +477,7 @@ class CResult {
 
     var header = this.context.firstHeader;
     var hasStdint = false;
+    var hasStddef = false;
     while (header != null) {
       if (
         ((header.flags & HeaderFlags.HEADER) != 0 && mode == SourceMode.HEADER) ||
@@ -484,11 +485,15 @@ class CResult {
       ) {
         code.append("#include ").append(header.name).append("\n");
         if (mode == SourceMode.HEADER && header.name == "<stdint.h>") hasStdint = true;
+        if (mode == SourceMode.SOURCE && header.name == "<stddef.h>") hasStddef = true;
       }
       header = header.next;
     }
     if (mode == SourceMode.HEADER && !hasStdint) {
       code.append("#include <stdint.h>\n"); // Always needs int32_t etc.
+    }
+    if (mode == SourceMode.SOURCE && !hasStddef) {
+      code.append("#include <stddef.h>\n"); // Always needs NULL
     }
   }
 
