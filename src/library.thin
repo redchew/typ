@@ -92,10 +92,20 @@ function library(): string {
 
 #elif C
 
+  @header("<string.h>", HeaderFlags.SOURCE)
   declare unsafe function malloc(sizeOf: uint): *byte;
+
+  @header("<string.h>", HeaderFlags.SOURCE)
   declare unsafe function free(ptr: *byte): void;
+
+  @header("<string.h>", HeaderFlags.SOURCE)
   declare unsafe function memcpy(target: *byte, source: *byte, length: uint): void;
+
+  @header("<string.h>", HeaderFlags.SOURCE)
   declare unsafe function memcmp(a: *byte, b: *byte, length: uint): int;
+
+  @header("<stdlib.h>", HeaderFlags.SOURCE)
+  declare unsafe function calloc(num: uint, size: uint): *byte;
 
 #endif
 

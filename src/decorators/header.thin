@@ -3,5 +3,30 @@
 function decorator_header(node: Node, context: CheckContext, decorator: Node): void {
   assert(node.kind == NodeKind.FUNCTION);
 
-  // Reserved for future use.
+  var name: string;
+  var flags = 0;
+
+  var argument = decorator.decoratorFirstArgument();
+  if (argument == null || argument.kind != NodeKind.STRING) {
+    context.log.error(decorator.range, "@header annotations must specify a header name as the first argument");
+    return;
+  }
+  name = argument.stringValue;
+
+  argument = argument.nextSibling;
+  while (argument != null) {
+    if (argument.kind != NodeKind.DOT || argument.dotTarget().stringValue != "HeaderFlags") {
+      context.log.error(argument.range, "If specified, additional arguments to the @header annotation must be HeaderFlags");
+      return;
+    }
+    if (argument.stringValue == "HEADER") flags = flags | HeaderFlags.HEADER;
+    else if (argument.stringValue == "SOURCE") flags = flags | HeaderFlags.SOURCE;
+    else {
+      context.log.error(argument.range, "Illegal HeaderFlags");
+      return;
+    }
+    argument = argument.nextSibling;
+  }
+
+  context.addHeader(name, flags);
 }

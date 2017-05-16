@@ -4,5 +4,5 @@
 function decorator_builtin(node: Node, context: CheckContext, decorator: Node): void {
   assert(node.kind == NodeKind.FUNCTION || node.kind == NodeKind.CLASS);
 
-  // Reserved for future use.
+  node.flags = node.flags | NODE_FLAG_BUILTIN;
 }

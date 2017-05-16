@@ -6,7 +6,7 @@ enum TypeMode {
 
 enum SourceMode {
   HEADER,
-  IMPLEMENTATION,
+  SOURCE,
 }
 
 class CResult {
@@ -471,14 +471,24 @@ class CResult {
   }
 
   emitIncludes(code: StringBuilder, mode: SourceMode): void {
-    if (mode == SourceMode.HEADER) {
-      code.append("#include <stdint.h>\n"); // Need "int32_t" and friends
+    if (mode == SourceMode.SOURCE) {
+      code.append("#include \"").append(this.headerName).append("\"\n");
     }
 
-    else {
-      code.append("#include \"").append(this.headerName).append("\"\n");
-      code.append("#include <stdlib.h>\n"); // Need "NULL" and "calloc"
-      code.append("#include <string.h>\n"); // Need "memcpy" and "memcmp"
+    var header = this.context.firstHeader;
+    var hasStdint = false;
+    while (header != null) {
+      if (
+        ((header.flags & HeaderFlags.HEADER) != 0 && mode == SourceMode.HEADER) ||
+        ((header.flags & HeaderFlags.SOURCE) != 0 && mode == SourceMode.SOURCE)
+      ) {
+        code.append("#include ").append(header.name).append("\n");
+        if (mode == SourceMode.HEADER && header.name == "<stdint.h>") hasStdint = true;
+      }
+      header = header.next;
+    }
+    if (mode == SourceMode.HEADER && !hasStdint) {
+      code.append("#include <stdint.h>\n"); // Always needs int32_t etc.
     }
   }
 
@@ -487,7 +497,7 @@ class CResult {
 
     while (node != null) {
       if (node.kind == NodeKind.CLASS) {
-        if (this.shouldEmitClass(node) && (node.isDeclareOrExtern() ? mode == SourceMode.HEADER : mode == SourceMode.IMPLEMENTATION)) {
+        if (this.shouldEmitClass(node) && (node.isDeclareOrExtern() ? mode == SourceMode.HEADER : mode == SourceMode.SOURCE)) {
           this.emitNewlineBefore(node);
           code.append("struct ").append(node.symbol.name).append(";\n");
         }
@@ -779,19 +789,19 @@ function cEmit(compiler: Compiler): void {
 
   if (child != null) {
     // Emit implementation
-    result.emitIncludes(implementationCode, SourceMode.IMPLEMENTATION);
+    result.emitIncludes(implementationCode, SourceMode.SOURCE);
     result.emitNewlineAfter(child);
 
-    result.emitTypeDeclarations(child, SourceMode.IMPLEMENTATION);
+    result.emitTypeDeclarations(child, SourceMode.SOURCE);
     result.emitNewlineAfter(child);
 
-    result.emitTypeDefinitions(child, SourceMode.IMPLEMENTATION);
+    result.emitTypeDefinitions(child, SourceMode.SOURCE);
     result.emitNewlineAfter(child);
 
-    result.emitFunctionDeclarations(child, SourceMode.IMPLEMENTATION);
+    result.emitFunctionDeclarations(child, SourceMode.SOURCE);
     result.emitNewlineAfter(child);
 
-    result.emitGlobalVariables(child, SourceMode.IMPLEMENTATION);
+    result.emitGlobalVariables(child, SourceMode.SOURCE);
     result.emitNewlineAfter(child);
 
     result.emitFunctionDefinitions(child);

@@ -1,3 +1,14 @@
+enum HeaderFlags {
+  HEADER = 1 << 0,
+  SOURCE = 1 << 1
+}
+
+class Header {
+  name: string;
+  flags: HeaderFlags;
+  next: Header;
+}
+
 class CheckContext {
   log: Log;
   target: CompileTarget;
@@ -22,10 +33,33 @@ class CheckContext {
   ushortType: Type;
   voidType: Type;
 
+  // Target specific headers
+  firstHeader: Header;
+  lastHeader: Header;
+
   allocateGlobalVariableOffset(sizeOf: int, alignmentOf: int): int {
     var offset = alignToNextMultipleOf(this.nextGlobalVariableOffset, alignmentOf);
     this.nextGlobalVariableOffset = offset + sizeOf;
     return offset;
+  }
+
+  addHeader(name: string, flags: int): void {
+    var current = this.firstHeader;
+    while (current != null) {
+      if (current.name == name) {
+        current.flags = (current.flags | flags) as HeaderFlags;
+        return;
+      }
+      current = current.next;
+    }
+
+    var header = new Header();
+    header.name = name;
+    header.flags = flags as HeaderFlags;
+
+    if (this.firstHeader == null) this.firstHeader = header;
+    else this.lastHeader.next = header;
+    this.lastHeader = header;
   }
 }
 
