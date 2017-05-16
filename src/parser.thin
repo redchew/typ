@@ -1336,7 +1336,7 @@ class ParserContext {
       return null;
     }
 
-    var node = createDecorator(name.range.toString());
+    var node = createDecorator(createName(name.range.toString()).withRange(name.range));
 
     // Arguments are optional
     if (this.peek(TokenKind.LEFT_PARENTHESIS)) {

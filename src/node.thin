@@ -102,6 +102,10 @@ function invertedBinaryKind(kind: NodeKind): NodeKind {
   return kind;
 }
 
+function isStatement(node: Node): bool {
+  return node.kind >= NodeKind.BLOCK && node.kind <= NodeKind.WHILE;
+}
+
 function isExpression(node: Node): bool {
   return node.kind >= NodeKind.ALIGN_OF && node.kind <= NodeKind.SUBTRACT;
 }
@@ -425,6 +429,12 @@ class Node {
     return this;
   }
 
+  fileFirstStatement(): Node {
+    assert(this.kind == NodeKind.FILE);
+    assert(this.firstChild == null || isStatement(this.firstChild));
+    return this.firstChild;
+  }
+
   functionFirstArgument(): Node {
     assert(this.kind == NodeKind.FUNCTION);
     assert(this.childCount() >= 2);
@@ -475,11 +485,55 @@ class Node {
     return body.kind == NodeKind.BLOCK ? body : null;
   }
 
-  classConstructor(): Node {
+  blockFirstStatement(): Node {
+    assert(this.kind == NodeKind.BLOCK);
+    assert(this.childCount() >= 1);
+    assert(this.firstChild != null && isStatement(this.firstChild));
+    return this.firstChild;
+  }
+
+  classExtends(): Node {
+    assert(this.kind == NodeKind.CLASS);
+    var child = this.firstChild;
+    var firstMember = this.classFirstMember();
+    while (child != null) {
+      if (child == firstMember) return null;
+      if (child.kind == NodeKind.EXTENDS) break;
+      child = child.nextSibling;
+    }
+    return child;
+  }
+
+  classImplements(): Node {
+    assert(this.kind == NodeKind.CLASS);
+    var child = this.firstChild;
+    var firstMember = this.classFirstMember();
+    while (child != null) {
+      if (child == firstMember) return null;
+      if (child.kind == NodeKind.IMPLEMENTS) break;
+      child = child.nextSibling;
+    }
+    return child;
+  }
+
+  classFirstMember(): Node {
     assert(this.kind == NodeKind.CLASS);
     var child = this.firstChild;
     while (child != null) {
-      if ((child.flags & NODE_FLAG_CONSTRUCTOR) != 0) break;
+      if (child.kind == NodeKind.FUNCTION || child.kind == NodeKind.VARIABLE) break;
+      child = child.nextSibling;
+    }
+    return child;
+  }
+
+  classConstructor(): Node {
+    assert(this.kind == NodeKind.CLASS);
+    var child = this.classFirstMember();
+    while (child != null) {
+      if ((child.flags & NODE_FLAG_CONSTRUCTOR) != 0){
+        assert(child.kind == NodeKind.FUNCTION);
+        break;
+      }
       child = child.nextSibling;
     }
     return child;
@@ -562,6 +616,49 @@ class Node {
     assert(this.childCount() == 1);
     assert(isExpression(this.firstChild));
     return this.firstChild;
+  }
+
+  implementsFirstType(): Node {
+    assert(this.kind == NodeKind.EXTENDS);
+    assert(this.childCount() >= 1);
+    assert(isExpression(this.firstChild));
+    return this.firstChild;
+  }
+
+  parametersFirstParameter(): Node {
+    assert(this.kind == NodeKind.PARAMETERS);
+    assert(this.childCount() >= 1);
+    assert(isExpression(this.firstChild));
+    return this.firstChild;
+  }
+
+  parameterType(): Node {
+    assert(this.kind == NodeKind.PARAMETER);
+    assert(this.childCount() == 1);
+    assert(isExpression(this.firstChild));
+    return this.firstChild;
+  }
+  
+  decoratorsFirstDecorator(): Node {
+    assert(this.kind == NodeKind.DECORATORS);
+    assert(this.childCount() >= 1);
+    assert(this.firstChild.kind == NodeKind.DECORATOR);
+    return this.firstChild;
+  }
+
+  decoratorName(): Node {
+    assert(this.kind == NodeKind.DECORATOR);
+    assert(this.childCount() >= 1);
+    assert(isExpression(this.firstChild));
+    return this.firstChild;
+  }
+
+  decoratorFirstArgument(): Node {
+    assert(this.kind == NodeKind.DECORATOR);
+    assert(this.childCount() >= 1);
+    assert(isExpression(this.firstChild));
+    assert(this.firstChild.nextSibling == null || isExpression(this.firstChild.nextSibling));
+    return this.firstChild.nextSibling;
   }
 
   variableType(): Node {
@@ -957,10 +1054,12 @@ function createVariable(name: string, type: Node, value: Node): Node {
   return node;
 }
 
-function createDecorator(name: string): Node {
+function createDecorator(name: Node): Node {
+  assert(name != null && name.kind == NodeKind.NAME);
   var node = new Node();
   node.kind = NodeKind.DECORATOR;
-  node.stringValue = name;
+  node.stringValue = name.stringValue;
+  node.appendChild(name);
   return node;
 }
 

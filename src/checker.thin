@@ -133,19 +133,18 @@ function initialize(context: CheckContext, node: Node, parentScope: Scope, mode:
     }
 
     // Decorators can be used to modify functions on compile time
+    // TODO: These are currently hard coded, don't resolve names to symbols and don't use arguments.
     var decorators = node.firstChild;
     while (decorators != null) {
-      if (decorators.kind == NodeKind.DECORATORS) {
-        break;
-      }
+      if (decorators.kind == NodeKind.DECORATORS) break;
       decorators = decorators.nextSibling;
     }
     if (decorators != null) {
-      var decorator = decorators.firstChild;
+      var decorator = decorators.decoratorsFirstDecorator();
       while (decorator != null) {
-        var name = decorator.stringValue;
-        if (decorator.stringValue == "metadata") metadata(node, context, decorator);
-        else if (decorator.stringValue == "debug") debug(node, context, decorator);
+        var name = decorator.decoratorName();
+        if (name.stringValue == "metadata") metadata(node, context, decorator);
+        else if (name.stringValue == "debug") debug(node, context, decorator);
         else context.log.error(node.range, "There is no such decorator");
         decorator = decorator.nextSibling;
       }
@@ -771,6 +770,7 @@ function resolve(context: CheckContext, node: Node, parentScope: Scope): void {
   var kind = node.kind;
   assert(kind == NodeKind.FILE || parentScope != null);
 
+  // Already resolved
   if (node.resolvedType != null) {
     return;
   }
@@ -1187,7 +1187,7 @@ function resolve(context: CheckContext, node: Node, parentScope: Scope): void {
   }
 
   else if (kind == NodeKind.IMPLEMENTS) {
-    var child = node.firstChild;
+    var child = node.implementsFirstType();
     while (child != null) {
       resolveAsType(context, child, parentScope);
       child = child.nextSibling;
