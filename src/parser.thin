@@ -35,13 +35,9 @@ class ParserContext {
   previous: Token;
   current: Token;
   log: Log;
+  lastError: Token; // Used to suppress subsequent errors for the same token
 
-  // This is used to suppress subsequent errors for the same token
-  lastError: Token;
-
-  peek(kind: TokenKind): bool {
-    return this.current.kind == kind;
-  }
+  peek(kind: TokenKind): bool => this.current.kind == kind;
 
   eat(kind: TokenKind): bool {
     if (this.peek(kind)) {
@@ -448,9 +444,7 @@ class ParserContext {
     return node;
   }
 
-  parseType(): Node {
-    return this.parseExpression(Precedence.UNARY_POSTFIX, ParseKind.TYPE);
-  }
+  parseType(): Node => this.parseExpression(Precedence.UNARY_POSTFIX, ParseKind.TYPE);
 
   parseIf(): Node {
     var token = this.current;

@@ -23,9 +23,7 @@ class Preprocessor {
   current: Token;
   log: Log;
 
-  peek(kind: TokenKind): bool {
-    return this.current.kind == kind;
-  }
+  peek(kind: TokenKind): bool => this.current.kind == kind;
 
   eat(kind: TokenKind): bool {
     if (this.peek(kind)) {

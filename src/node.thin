@@ -233,61 +233,33 @@ class Node {
     this.removeChildren();
   }
 
-  isNegativeInteger(): bool {
-    return this.kind == NodeKind.INT && this.intValue < 0;
-  }
+  isNegativeInteger(): bool => this.kind == NodeKind.INT && this.intValue < 0;
 
-  isNonNegativeInteger(): bool {
-    return this.kind == NodeKind.INT && this.intValue >= 0;
-  }
+  isNonNegativeInteger(): bool => this.kind == NodeKind.INT && this.intValue >= 0;
 
-  isDeclare(): bool {
-    return (this.flags & NODE_FLAG_DECLARE) != 0;
-  }
+  isDeclare(): bool => (this.flags & NODE_FLAG_DECLARE) != 0;
 
-  isExtern(): bool {
-    return (this.flags & NODE_FLAG_EXTERN) != 0;
-  }
+  isExtern(): bool => (this.flags & NODE_FLAG_EXTERN) != 0;
 
-  isDeclareOrExtern(): bool {
-    return (this.flags & (NODE_FLAG_DECLARE | NODE_FLAG_EXTERN)) != 0;
-  }
+  isDeclareOrExtern(): bool => (this.flags & (NODE_FLAG_DECLARE | NODE_FLAG_EXTERN)) != 0;
 
-  isGet(): bool {
-    return (this.flags & NODE_FLAG_GET) != 0;
-  }
+  isGet(): bool => (this.flags & NODE_FLAG_GET) != 0;
 
-  isSet(): bool {
-    return (this.flags & NODE_FLAG_SET) != 0;
-  }
+  isSet(): bool => (this.flags & NODE_FLAG_SET) != 0;
 
-  isOperator(): bool {
-    return (this.flags & NODE_FLAG_OPERATOR) != 0;
-  }
+  isOperator(): bool => (this.flags & NODE_FLAG_OPERATOR) != 0;
 
-  isPositive(): bool {
-    return (this.flags & NODE_FLAG_POSITIVE) != 0;
-  }
+  isPositive(): bool => (this.flags & NODE_FLAG_POSITIVE) != 0;
 
-  isPrivate(): bool {
-    return (this.flags & NODE_FLAG_PRIVATE) != 0;
-  }
+  isPrivate(): bool => (this.flags & NODE_FLAG_PRIVATE) != 0;
 
-  isStatic(): bool {
-    return (this.flags & NODE_FLAG_STATIC) != 0;
-  }
+  isStatic(): bool => (this.flags & NODE_FLAG_STATIC) != 0;
 
-  isUnsafe(): bool {
-    return (this.flags & NODE_FLAG_UNSAFE) != 0;
-  }
+  isUnsafe(): bool => (this.flags & NODE_FLAG_UNSAFE) != 0;
 
-  isUnsignedOperator(): bool {
-    return (this.flags & NODE_FLAG_UNSIGNED_OPERATOR) != 0;
-  }
+  isUnsignedOperator(): bool => (this.flags & NODE_FLAG_UNSIGNED_OPERATOR) != 0;
 
-  isConstructor(): bool {
-    return (this.flags & NODE_FLAG_CONSTRUCTOR) != 0;
-  }
+  isConstructor(): bool => (this.flags & NODE_FLAG_CONSTRUCTOR) != 0;
 
   childCount(): int {
     var count = 0;
@@ -408,17 +380,11 @@ class Node {
     this.nextSibling = null;
   }
 
-  isType(): bool {
-    return this.kind == NodeKind.TYPE || this.kind == NodeKind.POINTER_TYPE || this.symbol != null && isType(this.symbol.kind);
-  }
+  isType(): bool => this.kind == NodeKind.TYPE || this.kind == NodeKind.POINTER_TYPE || this.symbol != null && isType(this.symbol.kind);
 
-  isCallValue(): bool {
-    return this.parent.kind == NodeKind.CALL && this == this.parent.callValue();
-  }
+  isCallValue(): bool => this.parent.kind == NodeKind.CALL && this == this.parent.callValue();
 
-  isAssignTarget(): bool {
-    return this.parent.kind == NodeKind.ASSIGN && this == this.parent.binaryLeft();
-  }
+  isAssignTarget(): bool => this.parent.kind == NodeKind.ASSIGN && this == this.parent.binaryLeft();
 
   withRange(range: Range): Node {
     this.range = range;
