@@ -92,7 +92,7 @@ enum TokenKind {
   PREPROCESSOR_WARNING,
 
   // Decorators
-  DECORATOR_MAGIC,
+  DECORATOR_MAGIC
 }
 
 function isKeyword(kind: TokenKind): bool {
@@ -244,6 +244,7 @@ function tokenize(source: Source, log: Log): Token {
   var contents = source.contents;
   var limit = contents.length;
   var needsPreprocessor = false;
+  var isPreprocessorDirective = false;
   var wantNewline = false;
   var i = 0;
 
@@ -442,23 +443,30 @@ function tokenize(source: Source, log: Log): Token {
       }
     }
 
-    // / or // or /*
+    // / or // or /* or //#
     else if (c == '/') {
       kind = TokenKind.DIVIDE;
 
-      // Single-line comments
+      // Single-line comments or comment-style preprocessor directives
       if (i < limit && contents[i] == '/') {
         i = i + 1;
 
-        while (i < limit && contents[i] != '\n') {
-          i = i + 1;
+        if (i + 1 < limit && contents[i] == '!' && contents[i + 1] == '#') {
+          start = i + 1;
+          i = i + 2;
+          isPreprocessorDirective = true;
         }
 
-        continue;
+        else {
+          while (i < limit && contents[i] != '\n') {
+            i = i + 1;
+          }
+          continue;
+        }
       }
 
       // Multi-line comments
-      if (i < limit && contents[i] == '*') {
+      else if (i < limit && contents[i] == '*') {
         i = i + 1;
         var foundEnd = false;
 
@@ -594,6 +602,26 @@ function tokenize(source: Source, log: Log): Token {
     }
 
     else if (c == '#') {
+
+      // Allow a shebang at the start of the file
+      if (start == 0 && i < limit && contents[i] == '!') {
+        while (i < limit && contents[i] != '\n') {
+          i = i + 1;
+        }
+        continue;
+      }
+
+      isPreprocessorDirective = true;
+    }
+
+    else if (c == '@') {
+      kind = TokenKind.DECORATOR_MAGIC;
+    }
+
+    // Previous cases signal this
+    if (isPreprocessorDirective) {
+      isPreprocessorDirective = false;
+
       while (i < limit && (isAlpha(contents[i]) || isNumber(contents[i]))) {
         i = i + 1;
       }
@@ -608,15 +636,6 @@ function tokenize(source: Source, log: Log): Token {
       else if (text == "#if") kind = TokenKind.PREPROCESSOR_IF;
       else if (text == "#undef") kind = TokenKind.PREPROCESSOR_UNDEF;
       else if (text == "#warning") kind = TokenKind.PREPROCESSOR_WARNING;
-
-      // Allow a shebang at the start of the file
-      else if (start == 0 && text == "#" && i < limit && contents[i] == '!') {
-        while (i < limit && contents[i] != '\n') {
-          i = i + 1;
-        }
-        continue;
-      }
-
       else {
         var builder = StringBuilder_new().append("Invalid preprocessor token '").append(text).appendChar('\'');
 
@@ -661,11 +680,6 @@ function tokenize(source: Source, log: Log): Token {
 
       needsPreprocessor = true;
       wantNewline = true;
-
-    }
-
-    else if (c == '@') {
-      kind = TokenKind.DECORATOR_MAGIC;
     }
 
     var range = createRange(source, start, i);
