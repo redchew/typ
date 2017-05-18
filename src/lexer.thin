@@ -382,6 +382,12 @@ function tokenize(source: Source, log: Log): Token {
 
     // Character or string
     else if (c == '"' || c == '\'' || c == '`') {
+
+      var isTemplateBlock = c == '`' && i + 1 < limit && contents[i] == '`' && contents[i + 1] == '`';
+      if (isTemplateBlock) {
+        i = i + 2;
+      }
+
       while (i < limit) {
         var next = contents[i];
 
@@ -392,6 +398,7 @@ function tokenize(source: Source, log: Log): Token {
 
         // Only allow newlines in template literals
         else if (next == '\n' && c != '`') {
+          // isTemplateBlock is false here
           break;
         }
 
@@ -401,10 +408,44 @@ function tokenize(source: Source, log: Log): Token {
 
           // End the string with a matching quote character
           if (next == c) {
+
             kind = c == '\'' ? TokenKind.CHARACTER : TokenKind.STRING;
+
+            if (isTemplateBlock) {
+
+              // Handled specifically
+              if (i + 1 < limit && contents[i] == '`' && contents[i + 1] == '`') {
+
+                var actualToken = new Token();
+                actualToken.kind = TokenKind.STRING;
+                actualToken.range = createRange(source, start + 2, i);
+
+                if (first == null) first = actualToken;
+                else last.next = actualToken;
+                last = actualToken;
+
+                i = i + 2;
+                break;
+              }
+
+              else {
+                log.error(createRange(source, start, i), "Unterminated template block");
+                return null;
+              }
+            }
+
+            else {
+              kind = c == '\'' ? TokenKind.CHARACTER : TokenKind.STRING;
+              isTemplateBlock = false;
+            }
+
             break;
           }
         }
+      }
+
+      if (isTemplateBlock) {
+        continue;
       }
 
       // It's an error if we didn't find a matching quote character

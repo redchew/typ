@@ -37,7 +37,7 @@ function StringBuilder_appendQuoted(sb: StringBuilder, text: string): void {
   sb.appendSlice(text, start, end).appendChar('"');
 }
 
-#if JS ////////////////////////////////////////////////////////////////////////////////
+#if JS
 
   declare function StringBuilder_appendChar(a: string, b: ushort): string;
   declare function StringBuilder_append(a: string, b: string): string;
@@ -78,7 +78,7 @@ function StringBuilder_appendQuoted(sb: StringBuilder, text: string): void {
     }
   }
 
-#elif WASM || C ////////////////////////////////////////////////////////////////////////////////
+#elif WASM || C
 
   class StringBuilder {
     next: StringBuilder;
@@ -135,7 +135,7 @@ function StringBuilder_appendQuoted(sb: StringBuilder, text: string): void {
     }
   }
 
-#else ////////////////////////////////////////////////////////////////////////////////
+#else
 
   declare class StringBuilder {
     next: StringBuilder;

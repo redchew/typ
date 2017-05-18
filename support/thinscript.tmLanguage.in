@@ -190,7 +190,7 @@
     <dict>
 
       <key>match</key>
-      <string>\b(?:(unsafe)\s+)?(var|let|const)\s+(${identifier})\b</string>
+      <string>\b(?:(unsafe)\s+)?(var|let|const)\s+(${identifier})\s*(?:\:\s*(\*?${identifier}))?</string>
 
       <key>captures</key>
       <dict>
@@ -210,7 +210,13 @@
         <key>3</key>
         <dict>
           <key>name</key>
-          <string>variable.thin</string>
+          <string>variable.local.thin</string>
+        </dict>
+
+        <key>4</key>
+        <dict>
+          <key>name</key>
+          <string>entity.name.type.thin</string>
         </dict>
 
       </dict>
@@ -559,11 +565,6 @@
 
         <dict>
           <key>include</key>
-          <string>#name</string>
-        </dict>
-
-        <dict>
-          <key>include</key>
           <string>#block</string>
         </dict>
 
@@ -640,7 +641,7 @@
     <dict>
 
       <key>match</key>
-      <string>\b(${identifier})\b\s*(?=[;=\:])</string>
+      <string>(?!\.)\b(${identifier})\b\s*(?=[;=\:])</string>
 
       <key>captures</key>
       <dict>
@@ -744,7 +745,23 @@
 
         <dict>
           <key>match</key>
-          <string>\b(?:(new)\s+)*(${identifier})\s*\(</string>
+          <string>\b(${identifier})\s*\(</string>
+
+          <key>captures</key>
+          <dict>
+
+            <key>1</key>
+            <dict>
+              <key>name</key>
+              <string>entity.name.function.thin</string>
+            </dict>
+
+          </dict>
+        </dict>
+
+        <dict>
+          <key>match</key>
+          <string>\b(new)\s+(${identifier})\s*\(</string>
 
           <key>captures</key>
           <dict>
@@ -758,7 +775,7 @@
             <key>2</key>
             <dict>
               <key>name</key>
-              <string>entity.name.function.thin</string>
+              <string>entity.name.type.thin</string>
             </dict>
 
           </dict>
@@ -766,9 +783,23 @@
 
         <dict>
           <key>name</key>
-          <string>variable.thin</string>
+          <string>variable.object.thin</string>
           <key>match</key>
-          <string>\b(${identifier})\b</string>
+          <string>\b(${identifier})\b(?=\.)</string>
+        </dict>
+
+        <dict>
+          <key>match</key>
+          <string>\b(?:\.${identifier}|(${identifier}))\b(?!\()</string>
+
+          <key>captures</key>
+          <dict>
+            <key>1</key>
+            <dict>
+              <key>name</key>
+              <string>variable.local.thin</string>
+            </dict>
+          </dict>
         </dict>
 
       </array>
@@ -824,53 +855,61 @@
 
         <dict>
           <key>name</key>
-          <string>constant.numeric.thin</string>
+          <string>constant.numeric.character.thin</string>
 
           <key>begin</key>
           <string>'</string>
 
           <key>end</key>
-          <string>(?:.|\\(?:\\|[abefnprtv'"?]|[0-3]\d{,2}|[4-7]\d?|x[a-fA-F0-9]{,2}|u[a-fA-F0-9]{,4}|U[a-fA-F0-9]{,8}))'</string>
+          <string>'</string>
 
           <key>patterns</key>
           <array>
             <dict>
-              <key>match</key>
-              <string>.</string>
-              <key>name</key>
-              <string>invalid.illegal.single-char.thin</string>
+              <key>include</key>
+              <string>#string-escaped-char</string>
             </dict>
           </array>
         </dict>
 
         <dict>
 
-          <key>begin</key>
-          <string>(`)</string>
+          <key>name</key>
+          <string>string.quoted.thin</string>
 
-          <key>beginCaptures</key>
-          <dict>
-            <key>1</key>
-            <string>string.quoted.thin</string>
-          </dict>
+          <key>begin</key>
+          <string>```</string>
 
           <key>end</key>
-          <string>(`)</string>
-
-          <key>endCaptures</key>
-          <dict>
-            <key>1</key>
-            <string>string.quoted.thin</string>
-          </dict>
+          <string>```</string>
 
           <key>patterns</key>
           <array>
-
             <dict>
               <key>include</key>
               <string>#toplevel</string>
             </dict>
+          </array>
 
+        </dict>
+
+        <dict>
+
+          <key>name</key>
+          <string>string.quoted.thin</string>
+
+          <key>begin</key>
+          <string>`</string>
+
+          <key>end</key>
+          <string>`</string>
+
+          <key>patterns</key>
+          <array>
+            <dict>
+              <key>include</key>
+              <string>#string-escaped-char</string>
+            </dict>
           </array>
 
         </dict>

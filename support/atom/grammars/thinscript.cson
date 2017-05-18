@@ -81,14 +81,16 @@ repository:
 			"2":
 				name: "variable.preprocessor.thin"
 	variable:
-		match: "\\b(?:(unsafe)\\s+)?(var|let|const)\\s+([A-Za-z$_][\\w$]*)\\b"
+		match: "\\b(?:(unsafe)\\s+)?(var|let|const)\\s+([A-Za-z$_][\\w$]*)\\s*(?:\\:\\s*(\\*?[A-Za-z$_][\\w$]*))?"
 		captures:
 			"1":
 				name: "token.warn-token.unsafe.thin"
 			"2":
 				name: "keyword.thin"
 			"3":
-				name: "variable.thin"
+				name: "variable.local.thin"
+			"4":
+				name: "entity.name.type.thin"
 	casts:
 		patterns: [
 			{
@@ -214,9 +216,6 @@ repository:
 				include: "#type"
 			}
 			{
-				include: "#name"
-			}
-			{
 				include: "#block"
 			}
 		]
@@ -243,7 +242,7 @@ repository:
 			"1":
 				name: "entity.name.type.thin"
 	name:
-		match: "\\b([A-Za-z$_][\\w$]*)\\b\\s*(?=[;=\\:])"
+		match: "(?!\\.)\\b([A-Za-z$_][\\w$]*)\\b\\s*(?=[;=\\:])"
 		captures:
 			"1":
 				name: "variable.thin"
@@ -286,16 +285,28 @@ repository:
 						name: "token.debug-token.assertion.thin"
 			}
 			{
-				match: "\\b(?:(new)\\s+)*([A-Za-z$_][\\w$]*)\\s*\\("
+				match: "\\b([A-Za-z$_][\\w$]*)\\s*\\("
+				captures:
+					"1":
+						name: "entity.name.function.thin"
+			}
+			{
+				match: "\\b(new)\\s+([A-Za-z$_][\\w$]*)\\s*\\("
 				captures:
 					"1":
 						name: "keyword.thin"
 					"2":
-						name: "entity.name.function.thin"
+						name: "entity.name.type.thin"
 			}
 			{
-				name: "variable.thin"
-				match: "\\b([A-Za-z$_][\\w$]*)\\b"
+				name: "variable.object.thin"
+				match: "\\b([A-Za-z$_][\\w$]*)\\b(?=\\.)"
+			}
+			{
+				match: "\\b(?:\\.[A-Za-z$_][\\w$]*|([A-Za-z$_][\\w$]*))\\b(?!\\()"
+				captures:
+					"1":
+						name: "variable.local.thin"
 			}
 		]
 	constants:
@@ -323,26 +334,32 @@ repository:
 				]
 			}
 			{
-				name: "constant.numeric.thin"
+				name: "constant.numeric.character.thin"
 				begin: "'"
-				end: "(?:.|\\\\(?:\\\\|[abefnprtv'\"?]|[0-3]\\d{,2}|[4-7]\\d?|x[a-fA-F0-9]{,2}|u[a-fA-F0-9]{,4}|U[a-fA-F0-9]{,8}))'"
+				end: "'"
 				patterns: [
 					{
-						match: "."
-						name: "invalid.illegal.single-char.thin"
+						include: "#string-escaped-char"
 					}
 				]
 			}
 			{
-				begin: "(`)"
-				beginCaptures:
-					"1": "string.quoted.thin"
-				end: "(`)"
-				endCaptures:
-					"1": "string.quoted.thin"
+				name: "string.quoted.thin"
+				begin: "```"
+				end: "```"
 				patterns: [
 					{
 						include: "#toplevel"
+					}
+				]
+			}
+			{
+				name: "string.quoted.thin"
+				begin: "`"
+				end: "`"
+				patterns: [
+					{
+						include: "#string-escaped-char"
 					}
 				]
 			}

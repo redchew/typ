@@ -1,5 +1,5 @@
 function library(): string {
-  return `
+  return ```
 #if WASM
 
   // These will be filled in by the WebAssembly code generator
@@ -514,11 +514,11 @@ function library(): string {
     }
 
     // C strings are null-terminated
-    *next = '\0';
+    *next = '\\0';
 
     return utf8;
   }
 
 #endif
-`;
+```;
 }

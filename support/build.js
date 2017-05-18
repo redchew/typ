@@ -22,9 +22,10 @@ var strings = {
 };
 var language = Function.apply(null, Object.keys(strings).concat("return `" + template + "`")).apply(null, Object.keys(strings).map(key => strings[key]));
 var languageParsed = plist.parse(language);
+var languageBuilt = plist.build(languageParsed);
 
-write("sublime/thinscript.tmLanguage", language);
-write("vscode/thinscript.tmLanguage", language);
+write("sublime/thinscript.tmLanguage", languageBuilt);
+write("vscode/thinscript.tmLanguage", languageBuilt);
 write("atom/grammars/thinscript.cson", cson.createCSONString(languageParsed));
 
 ////////////////////////////////////////// Snippets /////////////////////////////////////////////
