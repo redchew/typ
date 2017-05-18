@@ -1,163 +1,163 @@
 ".source.thin":
-	"#define":
-		prefix: "#define"
-		body: "#define"
-	"#elif":
-		prefix: "#elif"
-		body: "#elif"
-	"#else":
-		prefix: "#else"
-		body: "#else"
-	"#endif":
-		prefix: "#endif"
-		body: "#endif"
-	"#if":
-		prefix: "#if"
-		body: "#if"
-	"#undef":
-		prefix: "#undef"
-		body: "#undef"
-	alignof:
-		prefix: "alignof"
-		body: "alignof"
-	as:
-		prefix: "as"
-		body: "as"
-	bool:
-		prefix: "bool"
-		body: "bool"
-	break:
-		prefix: "break"
-		body: "break"
-	byte:
-		prefix: "byte"
-		body: "byte"
-	charCodeAt:
-		prefix: "charCodeAt"
-		body: "charCodeAt"
-	class:
-		prefix: "class"
-		body: "class"
-	const:
-		prefix: "const"
-		body: "const"
-	constructor:
-		prefix: "constructor"
-		body: "constructor"
-	continue:
-		prefix: "continue"
-		body: "continue"
-	declare:
-		prefix: "declare"
-		body: "declare"
-	else:
-		prefix: "else"
-		body: "else"
-	enum:
-		prefix: "enum"
-		body: "enum"
-	export:
-		prefix: "export"
-		body: "export"
-	extends:
-		prefix: "extends"
-		body: "extends"
-	extern:
-		prefix: "extern"
-		body: "extern"
-	false:
-		prefix: "false"
-		body: "false"
-	fromCharCode:
-		prefix: "fromCharCode"
-		body: "fromCharCode"
-	function:
-		prefix: "function"
-		body: "function"
-	if:
-		prefix: "if"
-		body: "if"
-	implements:
-		prefix: "implements"
-		body: "implements"
-	import:
-		prefix: "import"
-		body: "import"
-	indexOf:
-		prefix: "indexOf"
-		body: "indexOf"
-	instanceof:
-		prefix: "instanceof"
-		body: "instanceof"
-	int:
-		prefix: "int"
-		body: "int"
-	interface:
-		prefix: "interface"
-		body: "interface"
-	length:
-		prefix: "length"
-		body: "length"
-	let:
-		prefix: "let"
-		body: "let"
-	new:
-		prefix: "new"
-		body: "new"
-	null:
-		prefix: "null"
-		body: "null"
-	operator:
-		prefix: "operator"
-		body: "operator"
-	private:
-		prefix: "private"
-		body: "private"
-	protected:
-		prefix: "protected"
-		body: "protected"
-	public:
-		prefix: "public"
-		body: "public"
-	return:
-		prefix: "return"
-		body: "return"
-	sbyte:
-		prefix: "sbyte"
-		body: "sbyte"
-	short:
-		prefix: "short"
-		body: "short"
-	sizeof:
-		prefix: "sizeof"
-		body: "sizeof"
-	static:
-		prefix: "static"
-		body: "static"
-	string:
-		prefix: "string"
-		body: "string"
-	this:
-		prefix: "this"
-		body: "this"
-	toString:
-		prefix: "toString"
-		body: "toString"
-	true:
-		prefix: "true"
-		body: "true"
-	uint:
-		prefix: "uint"
-		body: "uint"
-	unsafe:
-		prefix: "unsafe"
-		body: "unsafe"
-	ushort:
-		prefix: "ushort"
-		body: "ushort"
-	var:
-		prefix: "var"
-		body: "var"
-	while:
-		prefix: "while"
-		body: "while"
+  "#define":
+    prefix: "#define"
+    body: "#define"
+  "#elif":
+    prefix: "#elif"
+    body: "#elif"
+  "#else":
+    prefix: "#else"
+    body: "#else"
+  "#endif":
+    prefix: "#endif"
+    body: "#endif"
+  "#if":
+    prefix: "#if"
+    body: "#if"
+  "#undef":
+    prefix: "#undef"
+    body: "#undef"
+  alignof:
+    prefix: "alignof"
+    body: "alignof"
+  as:
+    prefix: "as"
+    body: "as"
+  bool:
+    prefix: "bool"
+    body: "bool"
+  break:
+    prefix: "break"
+    body: "break"
+  byte:
+    prefix: "byte"
+    body: "byte"
+  charCodeAt:
+    prefix: "charCodeAt"
+    body: "charCodeAt"
+  class:
+    prefix: "class"
+    body: "class"
+  const:
+    prefix: "const"
+    body: "const"
+  constructor:
+    prefix: "constructor"
+    body: "constructor"
+  continue:
+    prefix: "continue"
+    body: "continue"
+  declare:
+    prefix: "declare"
+    body: "declare"
+  else:
+    prefix: "else"
+    body: "else"
+  enum:
+    prefix: "enum"
+    body: "enum"
+  export:
+    prefix: "export"
+    body: "export"
+  extends:
+    prefix: "extends"
+    body: "extends"
+  extern:
+    prefix: "extern"
+    body: "extern"
+  false:
+    prefix: "false"
+    body: "false"
+  fromCharCode:
+    prefix: "fromCharCode"
+    body: "fromCharCode"
+  function:
+    prefix: "function"
+    body: "function"
+  if:
+    prefix: "if"
+    body: "if"
+  implements:
+    prefix: "implements"
+    body: "implements"
+  import:
+    prefix: "import"
+    body: "import"
+  indexOf:
+    prefix: "indexOf"
+    body: "indexOf"
+  instanceof:
+    prefix: "instanceof"
+    body: "instanceof"
+  int:
+    prefix: "int"
+    body: "int"
+  interface:
+    prefix: "interface"
+    body: "interface"
+  length:
+    prefix: "length"
+    body: "length"
+  let:
+    prefix: "let"
+    body: "let"
+  new:
+    prefix: "new"
+    body: "new"
+  null:
+    prefix: "null"
+    body: "null"
+  operator:
+    prefix: "operator"
+    body: "operator"
+  private:
+    prefix: "private"
+    body: "private"
+  protected:
+    prefix: "protected"
+    body: "protected"
+  public:
+    prefix: "public"
+    body: "public"
+  return:
+    prefix: "return"
+    body: "return"
+  sbyte:
+    prefix: "sbyte"
+    body: "sbyte"
+  short:
+    prefix: "short"
+    body: "short"
+  sizeof:
+    prefix: "sizeof"
+    body: "sizeof"
+  static:
+    prefix: "static"
+    body: "static"
+  string:
+    prefix: "string"
+    body: "string"
+  this:
+    prefix: "this"
+    body: "this"
+  toString:
+    prefix: "toString"
+    body: "toString"
+  true:
+    prefix: "true"
+    body: "true"
+  uint:
+    prefix: "uint"
+    body: "uint"
+  unsafe:
+    prefix: "unsafe"
+    body: "unsafe"
+  ushort:
+    prefix: "ushort"
+    body: "ushort"
+  var:
+    prefix: "var"
+    body: "var"
+  while:
+    prefix: "while"
+    body: "while"

@@ -26,7 +26,7 @@ var languageBuilt = plist.build(languageParsed);
 
 write("sublime/thinscript.tmLanguage", languageBuilt);
 write("vscode/thinscript.tmLanguage", languageBuilt);
-write("atom/grammars/thinscript.cson", cson.createCSONString(languageParsed));
+write("atom/grammars/thinscript.cson", cson.createCSONString(languageParsed, { indent: 2 }));
 
 ////////////////////////////////////////// Snippets /////////////////////////////////////////////
 
@@ -49,7 +49,7 @@ completions.forEach(key => completionsJson[key] = {
   "prefix": key,
   "body": key
 } );
-write("atom/snippets/thinscript-atom.cson", cson.createCSONString({ ".source.thin": completionsJson }));
+write("atom/snippets/thinscript-atom.cson", cson.createCSONString({ ".source.thin": completionsJson }, { indent: 2 }));
 
 // VSCode
 write("vscode/snippets.json", JSON.stringify(completionsJson, null, 2));

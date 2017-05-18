@@ -1,391 +1,391 @@
 scopeName: "source.thin"
 fileTypes: [
-	"thin"
+  "thin"
 ]
 name: "thinscript"
 foldingStartMarker: "\\{\\s*$"
 foldingStopMarker: "^\\s*\\}"
 firstLineMatch: "^#!/.*\\bthin\\b"
 patterns: [
-	{
-		include: "#toplevel"
-	}
+  {
+    include: "#toplevel"
+  }
 ]
 repository:
-	toplevel:
-		patterns: [
-			{
-				include: "#comments"
-			}
-			{
-				include: "#preprocessor"
-			}
-			{
-				include: "#block"
-			}
-			{
-				include: "#variable"
-			}
-			{
-				include: "#casts"
-			}
-			{
-				include: "#decorator"
-			}
-			{
-				include: "#function"
-			}
-			{
-				include: "#enum"
-			}
-			{
-				include: "#class"
-			}
-			{
-				name: "keyword.control.thin"
-				match: "\\b(export|import|extern|declare)\\b"
-			}
-			{
-				name: "keyword.thin"
-				match: "\\b(function|class|interface|extends|implements|var|let|const)\\b"
-			}
-			{
-				include: "#constants"
-			}
-		]
-	comments:
-		patterns: [
-			{
-				name: "comment.thin"
-				match: "//(?!\\!#).*$"
-			}
-			{
-				name: "comment.thin"
-				begin: "/\\*"
-				end: "\\*/"
-				patterns: [
-					{
-						match: "^\\s*\\*\\s*(@[\\w_]+)\\b"
-						captures:
-							"1":
-								name: "keyword.other.thin"
-					}
-				]
-			}
-		]
-	preprocessor:
-		match: "^\\s*((?://!)?#(?:define|undef|ifdef|if|elif|else|endif|warning|error))\\b([^$]*)$"
-		captures:
-			"1":
-				name: "token.debug-token.preprocessor.thin"
-			"2":
-				name: "variable.preprocessor.thin"
-	variable:
-		match: "\\b(?:(unsafe)\\s+)?(var|let|const)\\s+([A-Za-z$_][\\w$]*)\\s*(?:\\:\\s*(\\*?[A-Za-z$_][\\w$]*))?"
-		captures:
-			"1":
-				name: "token.warn-token.unsafe.thin"
-			"2":
-				name: "keyword.thin"
-			"3":
-				name: "variable.local.thin"
-			"4":
-				name: "entity.name.type.thin"
-	casts:
-		patterns: [
-			{
-				match: "\\b(as|sizeof|alignof)\\s+(\\*?[A-Za-z$_][\\w$]*)\\b"
-				captures:
-					"1":
-						name: "keyword.control.thin"
-					"2":
-						name: "entity.name.type.thin"
-			}
-		]
-	function:
-		begin: "\\b(?:(extern|export|declare)\\s+)?(?:(unsafe)\\s+)?(function)\\b(?:\\s+([A-Za-z$_][\\w$]*)\\b)?\\s*\\("
-		end: "\\)\\s*\\:\\s*(\\*?[A-Za-z$_][\\w$]*)\\b"
-		beginCaptures:
-			"1":
-				name: "keyword.control.thin"
-			"2":
-				name: "token.warn-token.unsafe.thin"
-			"3":
-				name: "keyword.thin"
-			"4":
-				name: "entity.name.function.thin"
-		endCaptures:
-			"1":
-				name: "entity.name.type.thin"
-		patterns: [
-			{
-				include: "#type"
-			}
-			{
-				include: "#name"
-			}
-		]
-	enum:
-		begin: "\\b(enum)\\s+([A-Za-z$_][\\w$]*)\\s*\\{"
-		end: "\\}"
-		beginCaptures:
-			"1":
-				name: "keyword.thin"
-			"2":
-				name: "entity.name.type.thin"
-		patterns: [
-			{
-				include: "#comments"
-			}
-			{
-				name: "constant.numeric.thin"
-				match: "\\b([A-Za-z$_][\\w$]*)\\b"
-			}
-			{
-				include: "#constants"
-			}
-		]
-	class:
-		begin: "\\b(?:(export|declare)\\s+)?(?:(public|private|protected)\\s+)?(class|interface)\\b(?:\\s+([A-Za-z$_][\\w$]*)\\b)\\s*\\{"
-		end: "\\}"
-		beginCaptures:
-			"1":
-				name: "keyword.control.thin"
-			"2":
-				name: "keyword.thin"
-			"3":
-				name: "keyword.thin"
-			"4":
-				name: "entity.name.class.thin"
-		patterns: [
-			{
-				include: "#comments"
-			}
-			{
-				begin: "\\b(?:(unsafe)\\s+)?(operator)\\s+(%|&|\\*\\*?|\\+\\+?|\\-\\-?|\\/|<<?|==?|>>?|\\[\\]=?|\\^|\\||~)\\s*\\("
-				end: "\\)(?:\\s*\\:\\s*(\\*?[A-Za-z$_][\\w$]*)\\b)?"
-				beginCaptures:
-					"1":
-						name: "token.warn-token.unsafe.thin"
-					"2":
-						name: "keyword.thin"
-					"3":
-						name: "entity.name.function.thin"
-				endCaptures:
-					"1":
-						name: "entity.name.type.thin"
-				patterns: [
-					{
-						include: "#type"
-					}
-					{
-						include: "#name"
-					}
-					{
-						include: "#constants"
-					}
-				]
-			}
-			{
-				begin: "\\b(?:(public|private|protected)\\s+)?(?:(static)\\s+)?(?:(unsafe)\\s+)?(?:(get|set)\\s+)?([A-Za-z$_][\\w$]*)\\b\\s*\\("
-				end: "\\)(?:\\s*\\:\\s*(\\*?[A-Za-z$_][\\w$]*)\\b)?"
-				beginCaptures:
-					"1":
-						name: "keyword.thin"
-					"2":
-						name: "keyword.thin"
-					"3":
-						name: "token.warn-token.unsafe.thin"
-					"4":
-						name: "keyword.thin"
-					"5":
-						name: "entity.name.function.thin"
-				endCaptures:
-					"1":
-						name: "entity.name.type.thin"
-				patterns: [
-					{
-						include: "#type"
-					}
-					{
-						include: "#name"
-					}
-				]
-			}
-			{
-				include: "#type"
-			}
-			{
-				include: "#block"
-			}
-			{
-				include: "#arrow"
-			}
-		]
-	decorator:
-		begin: "^\\s*(@[A-Za-z$_][\\w$]*)\\s*(?:\\()?"
-		end: "\\)?\\s*$"
-		beginCaptures:
-			"1":
-				name: "token.debug-token.decorator.thin"
-		patterns: [
-			{
-				include: "#type"
-			}
-			{
-				include: "#name"
-			}
-			{
-				include: "#constants"
-			}
-		]
-	type:
-		match: "\\:\\s*(\\*?[A-Za-z$_][\\w$]*)\\b"
-		captures:
-			"1":
-				name: "entity.name.type.thin"
-	name:
-		match: "(?!\\.)\\b([A-Za-z$_][\\w$]*)\\b\\s*(?=[;=\\:])"
-		captures:
-			"1":
-				name: "variable.thin"
-	block:
-		begin: "(?:\\b(unsafe)\\s+)?\\{"
-		beginCaptures:
-			"1":
-				name: "token.warn-token.unsafe.thin"
-		end: "\\}"
-		patterns: [
-			{
-				include: "#code"
-			}
-		]
-	arrow:
-		begin: "(=>)"
-		beginCaptures:
-			"1":
-				name: "keyword.control.thin"
-		end: "\\s*;"
-		patterns: [
-			{
-				include: "#code"
-			}
-		]
-	code:
-		patterns: [
-			{
-				include: "#comments"
-			}
-			{
-				include: "#block"
-			}
-			{
-				name: "keyword.control.thin"
-				match: "\\b(if|else|while|break|continue|return)\\b"
-			}
-			{
-				include: "#variable"
-			}
-			{
-				include: "#casts"
-			}
-			{
-				include: "#constants"
-			}
-			{
-				match: "\\b(assert(?:[A-Za-z$_][\\w$]*)?)\\s*\\("
-				captures:
-					"1":
-						name: "token.debug-token.assertion.thin"
-			}
-			{
-				match: "\\b([A-Za-z$_][\\w$]*)\\s*\\("
-				captures:
-					"1":
-						name: "entity.name.function.thin"
-			}
-			{
-				match: "\\b(new)\\s+([A-Za-z$_][\\w$]*)\\s*\\("
-				captures:
-					"1":
-						name: "keyword.thin"
-					"2":
-						name: "entity.name.type.thin"
-			}
-			{
-				name: "variable.object.thin"
-				match: "\\b([A-Za-z$_][\\w$]*)\\b(?=\\.)"
-			}
-			{
-				match: "\\b(?:\\.[A-Za-z$_][\\w$]*|([A-Za-z$_][\\w$]*))\\b(?!\\()"
-				captures:
-					"1":
-						name: "variable.local.thin"
-			}
-		]
-	constants:
-		patterns: [
-			{
-				name: "constant.language.thin"
-				match: "\\b(?:false|null|true|this)\\b"
-			}
-			{
-				name: "constant.numeric.thin"
-				match: "\\b\\d+\\b"
-			}
-			{
-				name: "constant.numeric.thin"
-				match: "\\b0x[0-9A-Fa-f]+\\b"
-			}
-			{
-				name: "string.quoted.double.thin"
-				begin: "\""
-				end: "\""
-				patterns: [
-					{
-						include: "#string-escaped-char"
-					}
-				]
-			}
-			{
-				name: "constant.numeric.character.thin"
-				begin: "'"
-				end: "'"
-				patterns: [
-					{
-						include: "#string-escaped-char"
-					}
-				]
-			}
-			{
-				name: "string.quoted.thin"
-				begin: "```"
-				end: "```"
-				patterns: [
-					{
-						include: "#toplevel"
-					}
-				]
-			}
-			{
-				name: "string.quoted.thin"
-				begin: "`"
-				end: "`"
-				patterns: [
-					{
-						include: "#string-escaped-char"
-					}
-				]
-			}
-		]
-	"string-escaped-char":
-		patterns: [
-			{
-				match: "\\\\(\\\\|[abefnprtv'\"?]|[0-3]\\d{,2}|[4-7]\\d?|x[a-fA-F0-9]{,2}|u[a-fA-F0-9]{,4}|U[a-fA-F0-9]{,8})"
-				name: "constant.character.escape.thin"
-			}
-			{
-				match: "\\\\."
-				name: "invalid.illegal.escape.thin"
-			}
-		]
+  toplevel:
+    patterns: [
+      {
+        include: "#comments"
+      }
+      {
+        include: "#preprocessor"
+      }
+      {
+        include: "#block"
+      }
+      {
+        include: "#variable"
+      }
+      {
+        include: "#casts"
+      }
+      {
+        include: "#decorator"
+      }
+      {
+        include: "#function"
+      }
+      {
+        include: "#enum"
+      }
+      {
+        include: "#class"
+      }
+      {
+        name: "keyword.control.thin"
+        match: "\\b(export|import|extern|declare)\\b"
+      }
+      {
+        name: "keyword.thin"
+        match: "\\b(function|class|interface|extends|implements|var|let|const)\\b"
+      }
+      {
+        include: "#constants"
+      }
+    ]
+  comments:
+    patterns: [
+      {
+        name: "comment.thin"
+        match: "//(?!\\!#).*$"
+      }
+      {
+        name: "comment.thin"
+        begin: "/\\*"
+        end: "\\*/"
+        patterns: [
+          {
+            match: "^\\s*\\*\\s*(@[\\w_]+)\\b"
+            captures:
+              "1":
+                name: "keyword.other.thin"
+          }
+        ]
+      }
+    ]
+  preprocessor:
+    match: "^\\s*((?://!)?#(?:define|undef|ifdef|if|elif|else|endif|warning|error))\\b([^$]*)$"
+    captures:
+      "1":
+        name: "token.debug-token.preprocessor.thin"
+      "2":
+        name: "variable.preprocessor.thin"
+  variable:
+    match: "\\b(?:(unsafe)\\s+)?(var|let|const)\\s+([A-Za-z$_][\\w$]*)\\s*(?:\\:\\s*(\\*?[A-Za-z$_][\\w$]*))?"
+    captures:
+      "1":
+        name: "token.warn-token.unsafe.thin"
+      "2":
+        name: "keyword.thin"
+      "3":
+        name: "variable.local.thin"
+      "4":
+        name: "entity.name.type.thin"
+  casts:
+    patterns: [
+      {
+        match: "\\b(as|sizeof|alignof)\\s+(\\*?[A-Za-z$_][\\w$]*)\\b"
+        captures:
+          "1":
+            name: "keyword.control.thin"
+          "2":
+            name: "entity.name.type.thin"
+      }
+    ]
+  function:
+    begin: "\\b(?:(extern|export|declare)\\s+)?(?:(unsafe)\\s+)?(function)\\b(?:\\s+([A-Za-z$_][\\w$]*)\\b)?\\s*\\("
+    end: "\\)\\s*\\:\\s*(\\*?[A-Za-z$_][\\w$]*)\\b"
+    beginCaptures:
+      "1":
+        name: "keyword.control.thin"
+      "2":
+        name: "token.warn-token.unsafe.thin"
+      "3":
+        name: "keyword.thin"
+      "4":
+        name: "entity.name.function.thin"
+    endCaptures:
+      "1":
+        name: "entity.name.type.thin"
+    patterns: [
+      {
+        include: "#type"
+      }
+      {
+        include: "#name"
+      }
+    ]
+  enum:
+    begin: "\\b(enum)\\s+([A-Za-z$_][\\w$]*)\\s*\\{"
+    end: "\\}"
+    beginCaptures:
+      "1":
+        name: "keyword.thin"
+      "2":
+        name: "entity.name.type.thin"
+    patterns: [
+      {
+        include: "#comments"
+      }
+      {
+        name: "constant.numeric.thin"
+        match: "\\b([A-Za-z$_][\\w$]*)\\b"
+      }
+      {
+        include: "#constants"
+      }
+    ]
+  class:
+    begin: "\\b(?:(export|declare)\\s+)?(?:(public|private|protected)\\s+)?(class|interface)\\b(?:\\s+([A-Za-z$_][\\w$]*)\\b)\\s*\\{"
+    end: "\\}"
+    beginCaptures:
+      "1":
+        name: "keyword.control.thin"
+      "2":
+        name: "keyword.thin"
+      "3":
+        name: "keyword.thin"
+      "4":
+        name: "entity.name.class.thin"
+    patterns: [
+      {
+        include: "#comments"
+      }
+      {
+        begin: "\\b(?:(unsafe)\\s+)?(operator)\\s+(%|&|\\*\\*?|\\+\\+?|\\-\\-?|\\/|<<?|==?|>>?|\\[\\]=?|\\^|\\||~)\\s*\\("
+        end: "\\)(?:\\s*\\:\\s*(\\*?[A-Za-z$_][\\w$]*)\\b)?"
+        beginCaptures:
+          "1":
+            name: "token.warn-token.unsafe.thin"
+          "2":
+            name: "keyword.thin"
+          "3":
+            name: "entity.name.function.thin"
+        endCaptures:
+          "1":
+            name: "entity.name.type.thin"
+        patterns: [
+          {
+            include: "#type"
+          }
+          {
+            include: "#name"
+          }
+          {
+            include: "#constants"
+          }
+        ]
+      }
+      {
+        begin: "\\b(?:(public|private|protected)\\s+)?(?:(static)\\s+)?(?:(unsafe)\\s+)?(?:(get|set)\\s+)?([A-Za-z$_][\\w$]*)\\b\\s*\\("
+        end: "\\)(?:\\s*\\:\\s*(\\*?[A-Za-z$_][\\w$]*)\\b)?"
+        beginCaptures:
+          "1":
+            name: "keyword.thin"
+          "2":
+            name: "keyword.thin"
+          "3":
+            name: "token.warn-token.unsafe.thin"
+          "4":
+            name: "keyword.thin"
+          "5":
+            name: "entity.name.function.thin"
+        endCaptures:
+          "1":
+            name: "entity.name.type.thin"
+        patterns: [
+          {
+            include: "#type"
+          }
+          {
+            include: "#name"
+          }
+        ]
+      }
+      {
+        include: "#type"
+      }
+      {
+        include: "#block"
+      }
+      {
+        include: "#arrow"
+      }
+    ]
+  decorator:
+    begin: "^\\s*(@[A-Za-z$_][\\w$]*)\\s*(?:\\()?"
+    end: "\\)?\\s*$"
+    beginCaptures:
+      "1":
+        name: "token.debug-token.decorator.thin"
+    patterns: [
+      {
+        include: "#type"
+      }
+      {
+        include: "#name"
+      }
+      {
+        include: "#constants"
+      }
+    ]
+  type:
+    match: "\\:\\s*(\\*?[A-Za-z$_][\\w$]*)\\b"
+    captures:
+      "1":
+        name: "entity.name.type.thin"
+  name:
+    match: "(?!\\.)\\b([A-Za-z$_][\\w$]*)\\b\\s*(?=[;=\\:])"
+    captures:
+      "1":
+        name: "variable.thin"
+  block:
+    begin: "(?:\\b(unsafe)\\s+)?\\{"
+    beginCaptures:
+      "1":
+        name: "token.warn-token.unsafe.thin"
+    end: "\\}"
+    patterns: [
+      {
+        include: "#code"
+      }
+    ]
+  arrow:
+    begin: "(=>)"
+    beginCaptures:
+      "1":
+        name: "keyword.control.thin"
+    end: "\\s*;"
+    patterns: [
+      {
+        include: "#code"
+      }
+    ]
+  code:
+    patterns: [
+      {
+        include: "#comments"
+      }
+      {
+        include: "#block"
+      }
+      {
+        name: "keyword.control.thin"
+        match: "\\b(if|else|while|break|continue|return)\\b"
+      }
+      {
+        include: "#variable"
+      }
+      {
+        include: "#casts"
+      }
+      {
+        include: "#constants"
+      }
+      {
+        match: "\\b(assert(?:[A-Za-z$_][\\w$]*)?)\\s*\\("
+        captures:
+          "1":
+            name: "token.debug-token.assertion.thin"
+      }
+      {
+        match: "\\b([A-Za-z$_][\\w$]*)\\s*\\("
+        captures:
+          "1":
+            name: "entity.name.function.thin"
+      }
+      {
+        match: "\\b(new)\\s+([A-Za-z$_][\\w$]*)\\s*\\("
+        captures:
+          "1":
+            name: "keyword.thin"
+          "2":
+            name: "entity.name.type.thin"
+      }
+      {
+        name: "variable.object.thin"
+        match: "\\b([A-Za-z$_][\\w$]*)\\b(?=\\.)"
+      }
+      {
+        match: "\\b(?:\\.[A-Za-z$_][\\w$]*|([A-Za-z$_][\\w$]*))\\b(?!\\()"
+        captures:
+          "1":
+            name: "variable.local.thin"
+      }
+    ]
+  constants:
+    patterns: [
+      {
+        name: "constant.language.thin"
+        match: "\\b(?:false|null|true|this)\\b"
+      }
+      {
+        name: "constant.numeric.thin"
+        match: "\\b\\d+\\b"
+      }
+      {
+        name: "constant.numeric.thin"
+        match: "\\b0x[0-9A-Fa-f]+\\b"
+      }
+      {
+        name: "string.quoted.double.thin"
+        begin: "\""
+        end: "\""
+        patterns: [
+          {
+            include: "#string-escaped-char"
+          }
+        ]
+      }
+      {
+        name: "constant.numeric.character.thin"
+        begin: "'"
+        end: "'"
+        patterns: [
+          {
+            include: "#string-escaped-char"
+          }
+        ]
+      }
+      {
+        name: "string.quoted.thin"
+        begin: "```"
+        end: "```"
+        patterns: [
+          {
+            include: "#toplevel"
+          }
+        ]
+      }
+      {
+        name: "string.quoted.thin"
+        begin: "`"
+        end: "`"
+        patterns: [
+          {
+            include: "#string-escaped-char"
+          }
+        ]
+      }
+    ]
+  "string-escaped-char":
+    patterns: [
+      {
+        match: "\\\\(\\\\|[abefnprtv'\"?]|[0-3]\\d{,2}|[4-7]\\d?|x[a-fA-F0-9]{,2}|u[a-fA-F0-9]{,4}|U[a-fA-F0-9]{,8})"
+        name: "constant.character.escape.thin"
+      }
+      {
+        match: "\\\\."
+        name: "invalid.illegal.escape.thin"
+      }
+    ]
