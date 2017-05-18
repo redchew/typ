@@ -1,0 +1,1 @@
+This folder contains language support utilities for thinscript. Feel free to extend!

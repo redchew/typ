@@ -1,0 +1,32 @@
+{
+  "name": "thinscript",
+  "displayName": "thinscript-vscode",
+  "description": "Visual Studio Code support for thinscript.",
+  "version": "0.0.1",
+  "publisher": "dcode",
+  "engines": {
+    "vscode": "^1.12.0"
+  },
+  "categories": [
+    "Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "thinscript",
+      "aliases": ["ThinScript"],
+      "extensions": [".thin"],
+      "configuration": "./config.json"
+    }],
+    "snippets": [
+      {
+        "language": "thinscript",
+        "path": "./snippets.json"
+      }
+    ],
+    "grammars": [{
+      "language": "thinscript",
+      "scopeName": "source.thin",
+      "path": "./thinscript.tmLanguage"
+    }]
+  }
+}
