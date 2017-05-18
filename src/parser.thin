@@ -542,6 +542,25 @@ class ParserContext {
     return block.withRange(node.range);
   }
 
+  parseArrow(): Node {
+    var open = this.current;
+    this.advance();
+
+    var expression = this.parseExpression(Precedence.LOWEST, ParseKind.EXPRESSION);
+    if (expression == null) {
+      return null;
+    }
+
+    var close = this.current;
+    if (!this.expect(TokenKind.SEMICOLON)) {
+      return null;
+    }
+
+    var block = createBlock().withRange(spanRanges(open.range, close.range));
+    block.appendChild(createReturn(expression).withRange(open.range));
+    return block;
+  }
+
   parseBlock(): Node {
     var open = this.current;
     if (!this.expect(TokenKind.LEFT_BRACE)) {
@@ -853,6 +872,7 @@ class ParserContext {
     var token = this.current;
     var nameRange: Range;
     var name: string;
+    var hasFunctionKeyword = false;
 
     // Support custom operators
     if (parent != null && this.eat(TokenKind.OPERATOR)) {
@@ -934,6 +954,7 @@ class ParserContext {
       if (parent == null) {
         assert(token.kind == TokenKind.FUNCTION);
         this.advance();
+        hasFunctionKeyword = true;
       }
 
       // Remember where the name is for the symbol later
@@ -1039,7 +1060,7 @@ class ParserContext {
       return null;
     }
 
-    var returnType: Node;
+    var returnType: Node = null;
 
     // Constructors implicitly return an instance of the class
     if (isConstructor) {
@@ -1073,7 +1094,7 @@ class ParserContext {
 
     // Recover from a missing colon
     else if (this.peek(TokenKind.SEMICOLON) || this.peek(TokenKind.LEFT_BRACE)) {
-      if (!isConstructor) {
+      if (returnType == null) {
         returnType = createParseError();
       }
     }
@@ -1093,7 +1114,15 @@ class ParserContext {
 
     // Normal functions
     else {
-      block = this.parseBlock();
+      if (this.peek(TokenKind.ARROW)) {
+        if (hasFunctionKeyword)
+          this.log.error(this.current.range, "Top level functions cannot be arrow functions");
+        else if (isConstructor)
+          this.log.error(this.current.range, "Constructors cannot be arrow functions");
+        block = this.parseArrow();
+      } else {
+        block = this.parseBlock();
+      }
       if (block == null) {
         return null;
       }

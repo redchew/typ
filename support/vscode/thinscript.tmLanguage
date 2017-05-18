@@ -312,7 +312,7 @@
             <key>begin</key>
             <string>\b(?:(unsafe)\s+)?(operator)\s+(%|&amp;|\*\*?|\+\+?|\-\-?|\/|&lt;&lt;?|==?|&gt;&gt;?|\[\]=?|\^|\||~)\s*\(</string>
             <key>end</key>
-            <string>\)\s*\:\s*(\*?[A-Za-z$_][\w$]*)\b</string>
+            <string>\)(?:\s*\:\s*(\*?[A-Za-z$_][\w$]*)\b)?</string>
             <key>beginCaptures</key>
             <dict>
               <key>1</key>
@@ -359,7 +359,7 @@
             <key>begin</key>
             <string>\b(?:(public|private|protected)\s+)?(?:(static)\s+)?(?:(unsafe)\s+)?(?:(get|set)\s+)?([A-Za-z$_][\w$]*)\b\s*\(</string>
             <key>end</key>
-            <string>\)\s*\:\s*(\*?[A-Za-z$_][\w$]*)\b</string>
+            <string>\)(?:\s*\:\s*(\*?[A-Za-z$_][\w$]*)\b)?</string>
             <key>beginCaptures</key>
             <dict>
               <key>1</key>
@@ -415,6 +415,10 @@
           <dict>
             <key>include</key>
             <string>#block</string>
+          </dict>
+          <dict>
+            <key>include</key>
+            <string>#arrow</string>
           </dict>
         </array>
       </dict>
@@ -488,6 +492,28 @@
         </dict>
         <key>end</key>
         <string>\}</string>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>include</key>
+            <string>#code</string>
+          </dict>
+        </array>
+      </dict>
+      <key>arrow</key>
+      <dict>
+        <key>begin</key>
+        <string>(=&gt;)</string>
+        <key>beginCaptures</key>
+        <dict>
+          <key>1</key>
+          <dict>
+            <key>name</key>
+            <string>keyword.control.thin</string>
+          </dict>
+        </dict>
+        <key>end</key>
+        <string>\s*;</string>
         <key>patterns</key>
         <array>
           <dict>

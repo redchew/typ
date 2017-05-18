@@ -163,7 +163,7 @@ repository:
 			}
 			{
 				begin: "\\b(?:(unsafe)\\s+)?(operator)\\s+(%|&|\\*\\*?|\\+\\+?|\\-\\-?|\\/|<<?|==?|>>?|\\[\\]=?|\\^|\\||~)\\s*\\("
-				end: "\\)\\s*\\:\\s*(\\*?[A-Za-z$_][\\w$]*)\\b"
+				end: "\\)(?:\\s*\\:\\s*(\\*?[A-Za-z$_][\\w$]*)\\b)?"
 				beginCaptures:
 					"1":
 						name: "token.warn-token.unsafe.thin"
@@ -188,7 +188,7 @@ repository:
 			}
 			{
 				begin: "\\b(?:(public|private|protected)\\s+)?(?:(static)\\s+)?(?:(unsafe)\\s+)?(?:(get|set)\\s+)?([A-Za-z$_][\\w$]*)\\b\\s*\\("
-				end: "\\)\\s*\\:\\s*(\\*?[A-Za-z$_][\\w$]*)\\b"
+				end: "\\)(?:\\s*\\:\\s*(\\*?[A-Za-z$_][\\w$]*)\\b)?"
 				beginCaptures:
 					"1":
 						name: "keyword.thin"
@@ -217,6 +217,9 @@ repository:
 			}
 			{
 				include: "#block"
+			}
+			{
+				include: "#arrow"
 			}
 		]
 	decorator:
@@ -252,6 +255,17 @@ repository:
 			"1":
 				name: "token.warn-token.unsafe.thin"
 		end: "\\}"
+		patterns: [
+			{
+				include: "#code"
+			}
+		]
+	arrow:
+		begin: "(=>)"
+		beginCaptures:
+			"1":
+				name: "keyword.control.thin"
+		end: "\\s*;"
 		patterns: [
 			{
 				include: "#code"

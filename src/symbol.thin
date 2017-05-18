@@ -72,37 +72,21 @@ class Symbol {
   //
   offset: int;
 
-  isEnumValue(): bool {
-    return this.node.parent.kind == NodeKind.ENUM;
-  }
+  isEnumValue(): bool => this.node.parent.kind == NodeKind.ENUM;
 
-  isUnsafe(): bool {
-    return this.node != null && this.node.isUnsafe();
-  }
+  isUnsafe(): bool => this.node != null && this.node.isUnsafe();
 
-  isGetter(): bool {
-    return this.node.isGet();
-  }
+  isGetter(): bool => this.node.isGet();
 
-  isSetter(): bool {
-    return this.node.isSet();
-  }
+  isSetter(): bool => this.node.isSet();
 
-  isBinaryOperator(): bool {
-    return (this.flags & SYMBOL_FLAG_IS_BINARY_OPERATOR) != 0;
-  }
+  isBinaryOperator(): bool => (this.flags & SYMBOL_FLAG_IS_BINARY_OPERATOR) != 0;
 
-  isUnaryOperator(): bool {
-    return (this.flags & SYMBOL_FLAG_IS_UNARY_OPERATOR) != 0;
-  }
+  isUnaryOperator(): bool => (this.flags & SYMBOL_FLAG_IS_UNARY_OPERATOR) != 0;
 
-  shouldConvertInstanceToGlobal(): bool {
-    return (this.flags & SYMBOL_FLAG_CONVERT_INSTANCE_TO_GLOBAL) != 0;
-  }
+  isUsed(): bool => (this.flags & SYMBOL_FLAG_USED) != 0;
 
-  isUsed(): bool {
-    return (this.flags & SYMBOL_FLAG_USED) != 0;
-  }
+  shouldConvertInstanceToGlobal(): bool => (this.flags & SYMBOL_FLAG_CONVERT_INSTANCE_TO_GLOBAL) != 0;
 
   parent(): Symbol {
     var parent = this.node.parent;

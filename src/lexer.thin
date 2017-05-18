@@ -43,6 +43,7 @@ enum TokenKind {
   SEMICOLON,
   SHIFT_LEFT,
   SHIFT_RIGHT,
+  ARROW,
 
   // Keywords
   ALIGNOF,
@@ -164,6 +165,7 @@ function tokenToString(token: TokenKind): string {
   if (token == TokenKind.SEMICOLON) return "';'";
   if (token == TokenKind.SHIFT_LEFT) return "'<<'";
   if (token == TokenKind.SHIFT_RIGHT) return "'>>'";
+  if (token == TokenKind.ARROW) return "'=>'";
 
   // Keywords
   if (token == TokenKind.ALIGNOF) return "'alignof'";
@@ -383,8 +385,8 @@ function tokenize(source: Source, log: Log): Token {
     // Character or string
     else if (c == '"' || c == '\'' || c == '`') {
 
-      var isTemplateBlock = c == '`' && i + 1 < limit && contents[i] == '`' && contents[i + 1] == '`';
-      if (isTemplateBlock) {
+      var isCodeBlock = c == '`' && i + 1 < limit && contents[i] == '`' && contents[i + 1] == '`';
+      if (isCodeBlock) {
         i = i + 2;
       }
 
@@ -398,7 +400,7 @@ function tokenize(source: Source, log: Log): Token {
 
         // Only allow newlines in template literals
         else if (next == '\n' && c != '`') {
-          // isTemplateBlock is false here
+          // isCodeBlock is false here
           break;
         }
 
@@ -411,7 +413,7 @@ function tokenize(source: Source, log: Log): Token {
 
             kind = c == '\'' ? TokenKind.CHARACTER : TokenKind.STRING;
 
-            if (isTemplateBlock) {
+            if (isCodeBlock) {
 
               // Handled specifically
               if (i + 1 < limit && contents[i] == '`' && contents[i + 1] == '`') {
@@ -436,7 +438,7 @@ function tokenize(source: Source, log: Log): Token {
 
             else {
               kind = c == '\'' ? TokenKind.CHARACTER : TokenKind.STRING;
-              isTemplateBlock = false;
+              isCodeBlock = false;
             }
 
             break;
@@ -444,7 +446,7 @@ function tokenize(source: Source, log: Log): Token {
         }
       }
 
-      if (isTemplateBlock) {
+      if (isCodeBlock) {
         continue;
       }
 
@@ -548,18 +550,26 @@ function tokenize(source: Source, log: Log): Token {
       }
     }
 
-    // = or ==
+    // = or == or =>
     else if (c == '=') {
       kind = TokenKind.ASSIGN;
 
-      if (i < limit && contents[i] == '=') {
-        kind = TokenKind.EQUAL;
-        i = i + 1;
+      if (i < limit) {
 
-        // Recover from ===
-        if (i < limit && contents[i] == '=') {
+        if (contents[i] == '=') {
+          kind = TokenKind.EQUAL;
           i = i + 1;
-          log.error(createRange(source, start, i), "Use '==' instead of '==='");
+
+          // Recover from ===
+          if (i < limit && contents[i] == '=') {
+            i = i + 1;
+            log.error(createRange(source, start, i), "Use '==' instead of '==='");
+          }
+        }
+
+        else if (contents[i] == '>') {
+          kind = TokenKind.ARROW;
+          i = i + 1;
         }
       }
     }

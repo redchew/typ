@@ -9,53 +9,29 @@ class Type {
   private cachedToString: string;
   private cachedPointerType: Type;
 
-  isClass(): bool {
-    return this.symbol != null && this.symbol.kind == SymbolKind.TYPE_CLASS;
-  }
+  isClass(): bool => this.symbol != null && this.symbol.kind == SymbolKind.TYPE_CLASS;
 
-  isEnum(): bool {
-    return this.symbol != null && this.symbol.kind == SymbolKind.TYPE_ENUM;
-  }
+  isEnum(): bool => this.symbol != null && this.symbol.kind == SymbolKind.TYPE_ENUM;
 
-  isInteger(): bool {
-    return this.symbol != null && (this.symbol.flags & SYMBOL_FLAG_NATIVE_INTEGER) != 0 || this.isEnum();
-  }
+  isInteger(): bool => this.symbol != null && (this.symbol.flags & SYMBOL_FLAG_NATIVE_INTEGER) != 0 || this.isEnum();
 
-  isUnsigned(): bool {
-    return this.symbol != null && (this.symbol.flags & SYMBOL_FLAG_IS_UNSIGNED) != 0;
-  }
+  isUnsigned(): bool => this.symbol != null && (this.symbol.flags & SYMBOL_FLAG_IS_UNSIGNED) != 0;
 
-  isReference(): bool {
-    return this.pointerTo != null || this.symbol != null && (this.symbol.flags & SYMBOL_FLAG_IS_REFERENCE) != 0;
-  }
+  isReference(): bool => this.pointerTo != null || this.symbol != null && (this.symbol.flags & SYMBOL_FLAG_IS_REFERENCE) != 0;
 
-  underlyingType(context: CheckContext): Type {
-    return this.isEnum() ? context.intType : this.pointerTo != null ? context.uintType : this;
-  }
+  underlyingType(context: CheckContext): Type => this.isEnum() ? context.intType : this.pointerTo != null ? context.uintType : this;
 
-  integerBitCount(context: CheckContext): int {
-    return this.symbol != null ? this.symbol.byteSize * 8 : 0;
-  }
+  integerBitCount(context: CheckContext): int => this.symbol != null ? this.symbol.byteSize * 8 : 0;
 
-  integerBitMask(context: CheckContext): uint {
-    return ~0 as uint >> (32 - this.integerBitCount(context)) as uint;
-  }
+  integerBitMask(context: CheckContext): uint => ~0 as uint >> (32 - this.integerBitCount(context)) as uint;
 
-  allocationSizeOf(context: CheckContext): int {
-    return this.symbol == null ? context.pointerByteSize : this.symbol.byteSize;
-  }
+  allocationSizeOf(context: CheckContext): int => this.symbol == null ? context.pointerByteSize : this.symbol.byteSize;
 
-  allocationAlignmentOf(context: CheckContext): int {
-    return this.allocationSizeOf(context); // This is true right now
-  }
+  allocationAlignmentOf(context: CheckContext): int => this.allocationSizeOf(context); // This is true right now
 
-  variableSizeOf(context: CheckContext): int {
-    return this.isReference() ? context.pointerByteSize : this.symbol.byteSize;
-  }
+  variableSizeOf(context: CheckContext): int => this.isReference() ? context.pointerByteSize : this.symbol.byteSize;
 
-  variableAlignmentOf(context: CheckContext): int {
-    return this.variableSizeOf(context); // This is true right now
-  }
+  variableAlignmentOf(context: CheckContext): int => this.variableSizeOf(context); // This is true right now
 
   pointerType(): Type {
     var type = this.cachedPointerType;
