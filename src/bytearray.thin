@@ -17,7 +17,7 @@ function ByteArray_append32(array: ByteArray, value: int): void {
   array.append((value >> 24) as byte);
 }
 
-#if JS ////////////////////////////////////////////////////////////////////////////////
+#if JS
 
   declare function Uint8Array_new(length: int): Uint8Array;
 
@@ -84,7 +84,7 @@ function ByteArray_append32(array: ByteArray, value: int): void {
   }
 
 
-#elif WASM || C ////////////////////////////////////////////////////////////////////////////////
+#elif WASM || C
 
   function ByteArray_setString(array: ByteArray, index: int, text: string): void {
     var length = text.length;
@@ -148,7 +148,7 @@ function ByteArray_append32(array: ByteArray, value: int): void {
     }
   }
 
-#else ////////////////////////////////////////////////////////////////////////////////
+#else
 
   declare function ByteArray_setString(array: ByteArray, index: int, text: string): void;
 

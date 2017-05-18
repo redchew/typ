@@ -3,16 +3,16 @@
 <plist version="1.0">
 <dict>
 
-	<key>scopeName</key>
-	<string>source.thin</string>
+  <key>scopeName</key>
+  <string>source.thin</string>
 
-	<key>fileTypes</key>
-	<array>
-		<string>thin</string>
-	</array>
+  <key>fileTypes</key>
+  <array>
+    <string>thin</string>
+  </array>
 
-	<key>name</key>
-	<string>thinscript</string>
+  <key>name</key>
+  <string>thinscript</string>
 
   <key>foldingStartMarker</key>
   <string>\{\s*$</string>
@@ -23,17 +23,17 @@
   <key>firstLineMatch</key>
   <string>^#!/.*\bthin\b</string>
 
-	<key>patterns</key>
-	<array>
+  <key>patterns</key>
+  <array>
 
     <dict>
       <key>include</key>
       <string>#toplevel</string>
     </dict>
 
-	</array>
+  </array>
 
-	<key>repository</key>
+  <key>repository</key>
   <dict>
 
     <!-- Top level -->
@@ -657,11 +657,11 @@
 
     <!-- Code -->
 
-		<key>block</key>
-		<dict>
+    <key>block</key>
+    <dict>
 
-			<key>begin</key>
-			<string>(?:\b(unsafe)\s+)?\{</string>
+      <key>begin</key>
+      <string>(?:\b(unsafe)\s+)?\{</string>
 
       <key>beginCaptures</key>
       <dict>
@@ -674,22 +674,22 @@
 
       </dict>
 
-			<key>end</key>
-			<string>\}</string>
+      <key>end</key>
+      <string>\}</string>
 
-			<key>patterns</key>
-			<array>
+      <key>patterns</key>
+      <array>
 
         <dict>
           <key>include</key>
           <string>#code</string>
         </dict>
 
-			</array>
-		</dict>
+      </array>
+    </dict>
 
-		<key>code</key>
-		<dict>
+    <key>code</key>
+    <dict>
 
       <key>patterns</key>
       <array>
@@ -772,7 +772,7 @@
         </dict>
 
       </array>
-		</dict>
+    </dict>
 
     <!-- Constants -->
 
@@ -781,36 +781,36 @@
       <key>patterns</key>
       <array>
 
-				<dict>
-					<key>name</key>
-					<string>constant.language.thin</string>
-					<key>match</key>
-					<string>\b(?:false|null|true|this)\b</string>
-				</dict>
+        <dict>
+          <key>name</key>
+          <string>constant.language.thin</string>
+          <key>match</key>
+          <string>\b(?:false|null|true|this)\b</string>
+        </dict>
 
         <dict>
-					<key>name</key>
-					<string>constant.numeric.thin</string>
-					<key>match</key>
-					<string>\b\d+\b</string>
-				</dict>
+          <key>name</key>
+          <string>constant.numeric.thin</string>
+          <key>match</key>
+          <string>\b\d+\b</string>
+        </dict>
 
         <dict>
-					<key>name</key>
-					<string>constant.numeric.thin</string>
-					<key>match</key>
-					<string>\b0x[0-9A-Fa-f]+\b</string>
-				</dict>
+          <key>name</key>
+          <string>constant.numeric.thin</string>
+          <key>match</key>
+          <string>\b0x[0-9A-Fa-f]+\b</string>
+        </dict>
 
         <dict>
           <key>name</key>
           <string>string.quoted.double.thin</string>
 
-					<key>begin</key>
-					<string>"</string>
+          <key>begin</key>
+          <string>"</string>
 
-					<key>end</key>
-					<string>"</string>
+          <key>end</key>
+          <string>"</string>
 
           <key>patterns</key>
           <array>
@@ -845,8 +845,8 @@
 
         <dict>
 
-					<key>begin</key>
-					<string>(`)</string>
+          <key>begin</key>
+          <string>(`)</string>
 
           <key>beginCaptures</key>
           <dict>
@@ -854,8 +854,8 @@
             <string>string.quoted.thin</string>
           </dict>
 
-					<key>end</key>
-					<string>(`)</string>
+          <key>end</key>
+          <string>(`)</string>
 
           <key>endCaptures</key>
           <dict>
