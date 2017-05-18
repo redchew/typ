@@ -1,0 +1,13 @@
+{
+  "name": "thinscript-atom",
+  "description": "Atom support for thinscript.",
+  "version": "0.0.1",
+  "keywords": [
+    "language",
+    "grammar",
+    "thinscript"
+  ],
+  "engines": {
+    "atom": ">=1.0.0"
+  }
+}

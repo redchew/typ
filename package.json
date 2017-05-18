@@ -4,5 +4,9 @@
   "description": "A low-level programming language inspired by TypeScript",
   "bin": {
     "thinc": "lib/thinc"
+  },
+  "devDependencies": {
+    "cson": "^4.1.0",
+    "plist": "^2.1.0"
   }
 }
