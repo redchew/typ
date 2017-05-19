@@ -16,8 +16,6 @@ var strings = {
   "category": {
     "preprocessor": "token.debug-token.preprocessor.thin",
     "unsafe": "token.warn-token.unsafe.thin",
-    "assertion": "token.debug-token.assertion.thin",
-    "decorator": "token.debug-token.decorator.thin"
   }
 };
 var language = Function.apply(null, Object.keys(strings).concat("return `" + template + "`")).apply(null, Object.keys(strings).map(key => strings[key]));

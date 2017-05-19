@@ -15,7 +15,7 @@ repository:
   toplevel:
     patterns: [
       {
-        include: "#comments"
+        include: "#comment"
       }
       {
         include: "#preprocessor"
@@ -27,7 +27,7 @@ repository:
         include: "#variable"
       }
       {
-        include: "#casts"
+        include: "#cast"
       }
       {
         include: "#decorator"
@@ -50,10 +50,10 @@ repository:
         match: "\\b(function|class|interface|extends|implements|var|let|const)\\b"
       }
       {
-        include: "#constants"
+        include: "#literal"
       }
     ]
-  comments:
+  comment:
     patterns: [
       {
         name: "comment.thin"
@@ -74,12 +74,16 @@ repository:
       }
     ]
   preprocessor:
-    match: "^\\s*((?://!)?#(?:define|undef|ifdef|if|elif|else|endif|warning|error))\\b([^$]*)$"
-    captures:
+    begin: "^\\s*((?://!)?#(?:define|undef|ifdef|if|elif|else|endif|warning|error))\\b"
+    end: "$"
+    beginCaptures:
       "1":
         name: "token.debug-token.preprocessor.thin"
-      "2":
-        name: "variable.preprocessor.thin"
+    patterns: [
+      {
+        include: "#code"
+      }
+    ]
   variable:
     match: "\\b(?:(unsafe)\\s+)?(var|let|const)\\s+([A-Za-z$_][\\w$]*)\\s*(?:\\:\\s*(\\*?[A-Za-z$_][\\w$]*))?"
     captures:
@@ -91,27 +95,27 @@ repository:
         name: "variable.local.thin"
       "4":
         name: "entity.name.type.thin"
-  casts:
+  cast:
     patterns: [
       {
-        match: "\\b(as|sizeof|alignof)\\s+(\\*?[A-Za-z$_][\\w$]*)\\b"
+        match: "\\b(as)\\s+(\\*?[A-Za-z$_][\\w$]*)\\b"
         captures:
           "1":
-            name: "keyword.control.thin"
+            name: "keyword.control.cast.thin"
           "2":
             name: "entity.name.type.thin"
       }
     ]
   function:
-    begin: "\\b(?:(extern|export|declare)\\s+)?(?:(unsafe)\\s+)?(function)\\b(?:\\s+([A-Za-z$_][\\w$]*)\\b)?\\s*\\("
+    begin: "\\b(?:(extern|declare)\\s+)?(?:(unsafe)\\s+)?(function)\\b(?:\\s+([A-Za-z$_][\\w$]*)\\b)?\\s*\\("
     end: "\\)\\s*\\:\\s*(\\*?[A-Za-z$_][\\w$]*)\\b"
     beginCaptures:
       "1":
-        name: "keyword.control.thin"
+        name: "storage.modifier.thin"
       "2":
         name: "token.warn-token.unsafe.thin"
       "3":
-        name: "keyword.thin"
+        name: "storage.type.function.thin"
       "4":
         name: "entity.name.function.thin"
     endCaptures:
@@ -119,10 +123,7 @@ repository:
         name: "entity.name.type.thin"
     patterns: [
       {
-        include: "#type"
-      }
-      {
-        include: "#name"
+        include: "#parameter"
       }
     ]
   enum:
@@ -130,37 +131,36 @@ repository:
     end: "\\}"
     beginCaptures:
       "1":
-        name: "keyword.thin"
+        name: "storage.type.enum.thin"
       "2":
-        name: "entity.name.type.thin"
+        name: "entity.name.type.enum.thin"
     patterns: [
       {
-        include: "#comments"
+        include: "#comment"
       }
       {
         name: "constant.numeric.thin"
         match: "\\b([A-Za-z$_][\\w$]*)\\b"
       }
       {
-        include: "#constants"
+        include: "#literal"
       }
     ]
   class:
-    begin: "\\b(?:(export|declare)\\s+)?(?:(public|private|protected)\\s+)?(class|interface)\\b(?:\\s+([A-Za-z$_][\\w$]*)\\b)\\s*\\{"
+    begin: "\\b(?:(export)\\s+)?(?:(extern|declare)\\s+)?(?:(public|private|protected)\\s+)?(class|interface)\\b(?:\\s+([A-Za-z$_][\\w$]*)\\b)\\s*\\{"
     end: "\\}"
     beginCaptures:
       "1":
-        name: "keyword.control.thin"
+        name: "keyword.control.export.thin"
       "2":
-        name: "keyword.thin"
+        name: "storage.modifier.thin"
       "3":
-        name: "keyword.thin"
+        name: "storage.modifier.thin"
       "4":
+        name: "storage.type.class.thin"
+      "5":
         name: "entity.name.class.thin"
     patterns: [
-      {
-        include: "#comments"
-      }
       {
         begin: "\\b(?:(unsafe)\\s+)?(operator)\\s+(%|&|\\*\\*?|\\+\\+?|\\-\\-?|\\/|<<?|==?|>>?|\\[\\]=?|\\^|\\||~)\\s*\\("
         end: "\\)(?:\\s*\\:\\s*(\\*?[A-Za-z$_][\\w$]*)\\b)?"
@@ -179,10 +179,7 @@ repository:
             include: "#type"
           }
           {
-            include: "#name"
-          }
-          {
-            include: "#constants"
+            include: "#parameter"
           }
         ]
       }
@@ -205,12 +202,31 @@ repository:
             name: "entity.name.type.thin"
         patterns: [
           {
-            include: "#type"
-          }
-          {
-            include: "#name"
+            include: "#parameter"
           }
         ]
+      }
+      {
+        begin: "\\b(?:(public|private|protected)\\s+)?(?:(static)\\s+)?(?:(unsafe)\\s+)?([A-Za-z$_][\\w$]*)\\s*(?=[:;])"
+        beginCaptures:
+          "1":
+            name: "storage.modifier.thin"
+          "2":
+            name: "storage.modifier.thin"
+          "3":
+            name: "token.warn-token.unsafe.thin"
+          "4":
+            name: "variable.property.thin"
+        end: "(?=[:;])"
+      }
+      {
+        include: "#comment"
+      }
+      {
+        include: "#preprocessor"
+      }
+      {
+        include: "#decorator"
       }
       {
         include: "#type"
@@ -223,20 +239,16 @@ repository:
       }
     ]
   decorator:
-    begin: "^\\s*(@[A-Za-z$_][\\w$]*)\\s*(?:\\()?"
+    begin: "^\\s*(@)([A-Za-z$_][\\w$]*)\\s*(?:\\()?"
     end: "\\)?\\s*$"
     beginCaptures:
       "1":
-        name: "token.debug-token.decorator.thin"
+        name: "punctuation.decorator.thin"
+      "2":
+        name: "entity.name.function.thin"
     patterns: [
       {
-        include: "#type"
-      }
-      {
-        include: "#name"
-      }
-      {
-        include: "#constants"
+        include: "#parameter"
       }
     ]
   type:
@@ -254,7 +266,7 @@ repository:
     beginCaptures:
       "1":
         name: "token.warn-token.unsafe.thin"
-    end: "\\}"
+    end: "}"
     patterns: [
       {
         include: "#code"
@@ -271,10 +283,31 @@ repository:
         include: "#code"
       }
     ]
+  parameter:
+    patterns: [
+      {
+        include: "#comment"
+      }
+      {
+        include: "#preprocessor"
+      }
+      {
+        include: "#type"
+      }
+      {
+        include: "#name"
+      }
+      {
+        include: "#literal"
+      }
+    ]
   code:
     patterns: [
       {
-        include: "#comments"
+        include: "#comment"
+      }
+      {
+        include: "#preprocessor"
       }
       {
         include: "#block"
@@ -287,16 +320,10 @@ repository:
         include: "#variable"
       }
       {
-        include: "#casts"
+        include: "#cast"
       }
       {
-        include: "#constants"
-      }
-      {
-        match: "\\b(assert(?:[A-Za-z$_][\\w$]*)?)\\s*\\("
-        captures:
-          "1":
-            name: "token.debug-token.assertion.thin"
+        include: "#literal"
       }
       {
         match: "\\b([A-Za-z$_][\\w$]*)\\s*\\("
@@ -314,16 +341,18 @@ repository:
       }
       {
         name: "variable.object.thin"
-        match: "\\b([A-Za-z$_][\\w$]*)\\b(?=\\.)"
+        match: "\\b([A-Za-z$_][\\w$]*)\\b(?=\\s*\\.)"
       }
       {
-        match: "\\b(?:\\.[A-Za-z$_][\\w$]*|([A-Za-z$_][\\w$]*))\\b(?!\\()"
+        match: "\\b(?:\\.\\s*([A-Za-z$_][\\w$]*)|([A-Za-z$_][\\w$]*))\\b(?!\\()"
         captures:
           "1":
-            name: "variable.local.thin"
+            name: "variable.property.thin"
+          "2":
+            name: "variable.thin"
       }
     ]
-  constants:
+  literal:
     patterns: [
       {
         name: "constant.language.thin"
@@ -331,7 +360,7 @@ repository:
       }
       {
         name: "constant.numeric.thin"
-        match: "\\b\\d+\\b"
+        match: "\\b[0-9]+\\b"
       }
       {
         name: "constant.numeric.thin"
@@ -348,7 +377,7 @@ repository:
         ]
       }
       {
-        name: "constant.numeric.character.thin"
+        name: "string.quoted.single.thin"
         begin: "'"
         end: "'"
         patterns: [
@@ -358,7 +387,7 @@ repository:
         ]
       }
       {
-        name: "string.quoted.thin"
+        name: "string.quoted.code.thin"
         begin: "```"
         end: "```"
         patterns: [
@@ -368,7 +397,7 @@ repository:
         ]
       }
       {
-        name: "string.quoted.thin"
+        name: "string.quoted.block.thin"
         begin: "`"
         end: "`"
         patterns: [

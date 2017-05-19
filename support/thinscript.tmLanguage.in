@@ -46,7 +46,7 @@
 
         <dict>
           <key>include</key>
-          <string>#comments</string>
+          <string>#comment</string>
         </dict>
 
         <dict>
@@ -66,7 +66,7 @@
 
         <dict>
           <key>include</key>
-          <string>#casts</string>
+          <string>#cast</string>
         </dict>
 
         <dict>
@@ -105,7 +105,7 @@
 
         <dict>
           <key>include</key>
-          <string>#constants</string>
+          <string>#literal</string>
         </dict>
 
       </array>
@@ -113,7 +113,7 @@
 
     <!-- Comments -->
 
-    <key>comments</key>
+    <key>comment</key>
     <dict>
       <key>patterns</key>
       <array>
@@ -163,10 +163,13 @@
     <key>preprocessor</key>
     <dict>
 
-      <key>match</key>
-      <string>^\s*((?://!)?#(?:define|undef|ifdef|if|elif|else|endif|warning|error))\b([^$]*)$</string>
+      <key>begin</key>
+      <string>^\s*((?://!)?#(?:define|undef|ifdef|if|elif|else|endif|warning|error))\b</string>
 
-      <key>captures</key>
+      <key>end</key>
+      <string>$</string>
+
+      <key>beginCaptures</key>
       <dict>
 
         <key>1</key>
@@ -175,13 +178,17 @@
           <string>${category.preprocessor}</string>
         </dict>
 
-        <key>2</key>
+      </dict>
+
+      <key>patterns</key>
+      <array>
+
         <dict>
-          <key>name</key>
-          <string>variable.preprocessor.thin</string>
+          <key>include</key>
+          <string>#code</string>
         </dict>
 
-      </dict>
+      </array>
     </dict>
 
     <!-- Variables -->
@@ -224,7 +231,7 @@
 
     <!-- Casts -->
 
-    <key>casts</key>
+    <key>cast</key>
     <dict>
 
       <key>patterns</key>
@@ -232,7 +239,7 @@
 
         <dict>
           <key>match</key>
-          <string>\b(as|sizeof|alignof)\s+(\*?${identifier})\b</string>
+          <string>\b(as)\s+(\*?${identifier})\b</string>
 
           <key>captures</key>
           <dict>
@@ -240,7 +247,7 @@
             <key>1</key>
             <dict>
               <key>name</key>
-              <string>keyword.control.thin</string>
+              <string>keyword.control.cast.thin</string>
             </dict>
 
             <key>2</key>
@@ -261,7 +268,7 @@
     <dict>
 
       <key>begin</key>
-      <string>\b(?:(extern|export|declare)\s+)?(?:(unsafe)\s+)?(function)\b(?:\s+(${identifier})\b)?\s*\(</string>
+      <string>\b(?:(extern|declare)\s+)?(?:(unsafe)\s+)?(function)\b(?:\s+(${identifier})\b)?\s*\(</string>
 
       <key>end</key>
       <string>\)\s*\:\s*(\*?${identifier})\b</string>
@@ -272,7 +279,7 @@
         <key>1</key>
         <dict>
           <key>name</key>
-          <string>keyword.control.thin</string>
+          <string>storage.modifier.thin</string>
         </dict>
 
         <key>2</key>
@@ -284,7 +291,7 @@
         <key>3</key>
         <dict>
           <key>name</key>
-          <string>keyword.thin</string>
+          <string>storage.type.function.thin</string>
         </dict>
 
         <key>4</key>
@@ -311,12 +318,7 @@
 
         <dict>
           <key>include</key>
-          <string>#type</string>
-        </dict>
-
-        <dict>
-          <key>include</key>
-          <string>#name</string>
+          <string>#parameter</string>
         </dict>
 
       </array>
@@ -340,13 +342,13 @@
         <key>1</key>
         <dict>
           <key>name</key>
-          <string>keyword.thin</string>
+          <string>storage.type.enum.thin</string>
         </dict>
 
         <key>2</key>
         <dict>
           <key>name</key>
-          <string>entity.name.type.thin</string>
+          <string>entity.name.type.enum.thin</string>
         </dict>
 
       </dict>
@@ -356,7 +358,7 @@
 
         <dict>
           <key>include</key>
-          <string>#comments</string>
+          <string>#comment</string>
         </dict>
 
         <dict>
@@ -368,7 +370,7 @@
 
         <dict>
           <key>include</key>
-          <string>#constants</string>
+          <string>#literal</string>
         </dict>
 
       </array>
@@ -381,7 +383,7 @@
     <dict>
 
       <key>begin</key>
-      <string>\b(?:(export|declare)\s+)?(?:(public|private|protected)\s+)?(class|interface)\b(?:\s+(${identifier})\b)\s*\{</string>
+      <string>\b(?:(export)\s+)?(?:(extern|declare)\s+)?(?:(public|private|protected)\s+)?(class|interface)\b(?:\s+(${identifier})\b)\s*\{</string>
 
       <key>end</key>
       <string>\}</string>
@@ -392,22 +394,28 @@
         <key>1</key>
         <dict>
           <key>name</key>
-          <string>keyword.control.thin</string>
+          <string>keyword.control.export.thin</string>
         </dict>
 
         <key>2</key>
         <dict>
           <key>name</key>
-          <string>keyword.thin</string>
+          <string>storage.modifier.thin</string>
         </dict>
 
         <key>3</key>
         <dict>
           <key>name</key>
-          <string>keyword.thin</string>
+          <string>storage.modifier.thin</string>
         </dict>
 
         <key>4</key>
+        <dict>
+          <key>name</key>
+          <string>storage.type.class.thin</string>
+        </dict>
+
+        <key>5</key>
         <dict>
           <key>name</key>
           <string>entity.name.class.thin</string>
@@ -417,11 +425,6 @@
 
       <key>patterns</key>
       <array>
-
-        <dict>
-          <key>include</key>
-          <string>#comments</string>
-        </dict>
 
         <dict>
 
@@ -475,12 +478,7 @@
 
             <dict>
               <key>include</key>
-              <string>#name</string>
-            </dict>
-
-            <dict>
-              <key>include</key>
-              <string>#constants</string>
+              <string>#parameter</string>
             </dict>
 
           </array>
@@ -546,16 +544,65 @@
 
             <dict>
               <key>include</key>
-              <string>#type</string>
-            </dict>
-
-            <dict>
-              <key>include</key>
-              <string>#name</string>
+              <string>#parameter</string>
             </dict>
 
           </array>
 
+        </dict>
+
+        <dict>
+
+          <key>begin</key>
+          <string>\b(?:(public|private|protected)\s+)?(?:(static)\s+)?(?:(unsafe)\s+)?(${identifier})\s*(?=[:;])</string>
+
+          <key>beginCaptures</key>
+          <dict>
+
+            <key>1</key>
+            <dict>
+              <key>name</key>
+              <string>storage.modifier.thin</string>
+            </dict>
+
+            <key>2</key>
+            <dict>
+              <key>name</key>
+              <string>storage.modifier.thin</string>
+            </dict>
+
+            <key>3</key>
+            <dict>
+              <key>name</key>
+              <string>${category.unsafe}</string>
+            </dict>
+
+            <key>4</key>
+            <dict>
+              <key>name</key>
+              <string>variable.property.thin</string>
+            </dict>
+
+          </dict>
+
+          <key>end</key>
+          <string>(?=[:;])</string>
+
+        </dict>
+
+        <dict>
+          <key>include</key>
+          <string>#comment</string>
+        </dict>
+
+        <dict>
+          <key>include</key>
+          <string>#preprocessor</string>
+        </dict>
+
+        <dict>
+          <key>include</key>
+          <string>#decorator</string>
         </dict>
 
         <dict>
@@ -583,7 +630,7 @@
     <dict>
 
       <key>begin</key>
-      <string>^\s*(@${identifier})\s*(?:\()?</string>
+      <string>^\s*(@)(${identifier})\s*(?:\()?</string>
 
       <key>end</key>
       <string>\)?\s*$</string>
@@ -594,7 +641,13 @@
         <key>1</key>
         <dict>
           <key>name</key>
-          <string>${category.decorator}</string>
+          <string>punctuation.decorator.thin</string>
+        </dict>
+
+        <key>2</key>
+        <dict>
+          <key>name</key>
+          <string>entity.name.function.thin</string>
         </dict>
 
       </dict>
@@ -604,17 +657,7 @@
 
         <dict>
           <key>include</key>
-          <string>#type</string>
-        </dict>
-
-        <dict>
-          <key>include</key>
-          <string>#name</string>
-        </dict>
-
-        <dict>
-          <key>include</key>
-          <string>#constants</string>
+          <string>#parameter</string>
         </dict>
 
       </array>
@@ -681,7 +724,7 @@
       </dict>
 
       <key>end</key>
-      <string>\}</string>
+      <string>}</string>
 
       <key>patterns</key>
       <array>
@@ -723,6 +766,40 @@
         </dict>
 
       </array>
+    </dict>
+
+    <key>parameter</key>
+    <dict>
+
+      <key>patterns</key>
+      <array>
+
+        <dict>
+          <key>include</key>
+          <string>#comment</string>
+        </dict>
+
+        <dict>
+          <key>include</key>
+          <string>#preprocessor</string>
+        </dict>
+
+        <dict>
+          <key>include</key>
+          <string>#type</string>
+        </dict>
+
+        <dict>
+          <key>include</key>
+          <string>#name</string>
+        </dict>
+
+        <dict>
+          <key>include</key>
+          <string>#literal</string>
+        </dict>
+
+      </array>
 
     </dict>
 
@@ -734,7 +811,12 @@
 
         <dict>
           <key>include</key>
-          <string>#comments</string>
+          <string>#comment</string>
+        </dict>
+
+        <dict>
+          <key>include</key>
+          <string>#preprocessor</string>
         </dict>
 
         <dict>
@@ -756,28 +838,12 @@
 
         <dict>
           <key>include</key>
-          <string>#casts</string>
+          <string>#cast</string>
         </dict>
 
         <dict>
           <key>include</key>
-          <string>#constants</string>
-        </dict>
-
-        <dict>
-          <key>match</key>
-          <string>\b(assert(?:${identifier})?)\s*\(</string>
-
-          <key>captures</key>
-          <dict>
-
-            <key>1</key>
-            <dict>
-              <key>name</key>
-              <string>${category.assertion}</string>
-            </dict>
-
-          </dict>
+          <string>#literal</string>
         </dict>
 
         <dict>
@@ -822,29 +888,37 @@
           <key>name</key>
           <string>variable.object.thin</string>
           <key>match</key>
-          <string>\b(${identifier})\b(?=\.)</string>
+          <string>\b(${identifier})\b(?=\s*\.)</string>
         </dict>
 
         <dict>
           <key>match</key>
-          <string>\b(?:\.${identifier}|(${identifier}))\b(?!\()</string>
+          <string>\b(?:\.\s*(${identifier})|(${identifier}))\b(?!\()</string>
 
           <key>captures</key>
           <dict>
+
             <key>1</key>
             <dict>
               <key>name</key>
-              <string>variable.local.thin</string>
+              <string>variable.property.thin</string>
             </dict>
+
+            <key>2</key>
+            <dict>
+              <key>name</key>
+              <string>variable.thin</string>
+            </dict>
+
           </dict>
         </dict>
 
       </array>
     </dict>
 
-    <!-- Constants -->
+    <!-- Literals -->
 
-    <key>constants</key>
+    <key>literal</key>
     <dict>
       <key>patterns</key>
       <array>
@@ -860,7 +934,7 @@
           <key>name</key>
           <string>constant.numeric.thin</string>
           <key>match</key>
-          <string>\b\d+\b</string>
+          <string>\b[0-9]+\b</string>
         </dict>
 
         <dict>
@@ -892,7 +966,7 @@
 
         <dict>
           <key>name</key>
-          <string>constant.numeric.character.thin</string>
+          <string>string.quoted.single.thin</string>
 
           <key>begin</key>
           <string>'</string>
@@ -912,7 +986,7 @@
         <dict>
 
           <key>name</key>
-          <string>string.quoted.thin</string>
+          <string>string.quoted.code.thin</string>
 
           <key>begin</key>
           <string>```</string>
@@ -933,7 +1007,7 @@
         <dict>
 
           <key>name</key>
-          <string>string.quoted.thin</string>
+          <string>string.quoted.block.thin</string>
 
           <key>begin</key>
           <string>`</string>
