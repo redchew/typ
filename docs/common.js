@@ -151,7 +151,7 @@ function loadWebAssembly(callback) {
 function compileWebAssembly(code, callback) {
   var stdlib = loadStdlibForWebAssembly();
   WebAssembly.instantiate(code, { global: stdlib })
-    .then(function(module) {
+    .then(function postInstantiate(module) {
       var exports = module.instance.exports;
       console.log(module);
       var memory = exports.memory;
@@ -160,7 +160,7 @@ function compileWebAssembly(code, callback) {
       stdlib.chars = new Uint16Array(memory.buffer);
       stdlib.ints = new Int32Array(memory.buffer);
 
-      callback(function(sources, target, name) {
+      callback(function postCompile(sources, target, name) {
         var output = name;
         switch (target) {
           case 'C': output += '.c'; break;
@@ -217,7 +217,7 @@ function compileJavaScript(code, defines) {
   var exports = {};
   new Function('global', 'exports', code)(stdlib, exports);
 
-  return function(sources, target, name) {
+  return function postCompile(sources, target, name) {
     var output = name;
     switch (target) {
       case 'C': output += '.c'; break;

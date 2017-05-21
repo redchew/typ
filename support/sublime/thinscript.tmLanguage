@@ -104,13 +104,40 @@
             <array>
               <dict>
                 <key>match</key>
-                <string>^\s*\*\s*(@[\w_]+)\b</string>
+                <string>^\s*\*\s*((@)param)\s+([A-Za-z$_][\w$]*)\b</string>
                 <key>captures</key>
                 <dict>
                   <key>1</key>
                   <dict>
                     <key>name</key>
-                    <string>keyword.other.thin</string>
+                    <string>storage.type.class.jsdoc</string>
+                  </dict>
+                  <key>2</key>
+                  <dict>
+                    <key>name</key>
+                    <string>punctuation.definition.block.tag.jsdoc</string>
+                  </dict>
+                  <key>3</key>
+                  <dict>
+                    <key>name</key>
+                    <string>variable.other.jsdoc</string>
+                  </dict>
+                </dict>
+              </dict>
+              <dict>
+                <key>match</key>
+                <string>^\s*\*\s*((@)returns)\b</string>
+                <key>captures</key>
+                <dict>
+                  <key>1</key>
+                  <dict>
+                    <key>name</key>
+                    <string>storage.type.class.jsdoc</string>
+                  </dict>
+                  <key>2</key>
+                  <dict>
+                    <key>name</key>
+                    <string>punctuation.definition.block.tag.jsdoc</string>
                   </dict>
                 </dict>
               </dict>

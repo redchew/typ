@@ -65,10 +65,22 @@ repository:
         end: "\\*/"
         patterns: [
           {
-            match: "^\\s*\\*\\s*(@[\\w_]+)\\b"
+            match: "^\\s*\\*\\s*((@)param)\\s+([A-Za-z$_][\\w$]*)\\b"
             captures:
               "1":
-                name: "keyword.other.thin"
+                name: "storage.type.class.jsdoc"
+              "2":
+                name: "punctuation.definition.block.tag.jsdoc"
+              "3":
+                name: "variable.other.jsdoc"
+          }
+          {
+            match: "^\\s*\\*\\s*((@)returns)\\b"
+            captures:
+              "1":
+                name: "storage.type.class.jsdoc"
+              "2":
+                name: "punctuation.definition.block.tag.jsdoc"
           }
         ]
       }

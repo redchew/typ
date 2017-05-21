@@ -417,56 +417,6 @@
 
     else if (kind === 17) {
       __imports.assert(node.symbol === null);
-      var decorators = node.firstChild;
-
-      while (decorators !== null) {
-        if (decorators.kind === 8) {
-          break;
-        }
-
-        decorators = decorators.nextSibling;
-      }
-
-      if (decorators !== null) {
-        var decorator = decorators.decoratorsFirstDecorator();
-
-        while (decorator !== null) {
-          var name = decorator.decoratorName();
-
-          if (name.stringValue === "builtin") {
-            decorateBuiltin(node, context, decorator);
-          }
-
-          else if (name.stringValue === "debug") {
-            decorateDebug(node, context, decorator);
-          }
-
-          else if (name.stringValue === "global") {
-            decorateGlobal(node, context, decorator);
-          }
-
-          else if (name.stringValue === "header") {
-            decorateHeader(node, context, decorator);
-          }
-
-          else if (name.stringValue === "metadata") {
-            decorateMetadata(node, context, decorator);
-          }
-
-          else if (name.stringValue === "virtual") {
-            decorateVirtual(node, context, decorator);
-          }
-
-          else {
-            context.log.error(node.range, "Illegal decorator");
-          }
-
-          decorator = decorator.nextSibling;
-        }
-
-        decorators.remove();
-      }
-
       var symbol = new Symbol();
       symbol.kind = node.parent.kind === 11 ? 4 : 5;
       symbol.name = node.stringValue;
@@ -1919,12 +1869,32 @@
       source = source.next;
     }
 
-    this.context.isDebug = this.preprocessor.isDefined("NODEBUG") === false;
     __imports.Profiler_end("parsing");
     __imports.Profiler_begin();
     var global = this.global;
     var context = this.context;
     var fullResolve = true;
+    context.isDebug = this.preprocessor.isDefined("NODEBUG") === false;
+    source = this.firstSource;
+
+    while (source !== null) {
+      var file = source.file;
+
+      if (file !== null) {
+        var child = source.file.firstChild;
+
+        while (child !== null) {
+          var current = child;
+          child = child.nextSibling;
+          decorate(current, context);
+        }
+      }
+
+      source = source.next;
+    }
+
+    __imports.Profiler_end("decorating");
+    __imports.Profiler_begin();
     source = this.firstSource;
 
     while (source !== null) {
@@ -2009,41 +1979,73 @@
     return StringBuilder_new().append(path).append(extension).finish();
   }
 
-  function decorateBuiltin(node, context, decorator) {
-    __imports.assert(node.kind === 17 || node.kind === 11);
-    node.flags = node.flags | 16384;
-  }
+  function decorate(node, context) {
+    __imports.assert(node !== null && context !== null);
+    var child = null;
+    var current = null;
 
-  function decorateDebug(node, context, decorator) {
-    __imports.assert(node.kind === 17);
+    if (node.kind === 11) {
+      child = node.firstChild;
 
-    if (node.functionReturnType().stringValue !== "void") {
-      context.log.error(decorator.decoratorName().range, "@debug cannot be used with functions specifying a return value");
+      while (child !== null) {
+        current = child;
+        child = child.nextSibling;
 
+        if (current.kind === 17) {
+          decorate(current, context);
+        }
+      }
+    }
+
+    else if (node.kind !== 17) {
       return;
     }
 
-    if (context.isDebug) {
-      return;
-    }
-
-    var body = node.functionBody();
-
-    if (body === null || body.childCount() === 0) {
-      return;
-    }
-
-    var child = body.firstChild;
+    child = node.firstChild;
 
     while (child !== null) {
-      var next = child.nextSibling;
-      child.remove();
-      child = next;
+      if (child.kind === 8) {
+        current = child;
+        child = child.nextSibling;
+        var decorator = current.decoratorsFirstDecorator();
+
+        while (decorator !== null) {
+          var name = decorator.decoratorName().stringValue;
+
+          if (name === "global") {
+            decorateGlobal(node, context, decorator);
+          }
+
+          else if (name === "header") {
+            decorateHeader(node, context, decorator);
+          }
+
+          else if (name === "metadata") {
+            decorateMetadata(node, context, decorator);
+          }
+
+          else {
+            context.log.error(node.range, "Unsupported decorator");
+          }
+
+          decorator = decorator.nextSibling;
+        }
+
+        current.remove();
+      }
+
+      else {
+        child = child.nextSibling;
+      }
     }
   }
 
   function decorateGlobal(node, context, decorator) {
-    __imports.assert(node.kind === 17 || node.kind === 11);
+    if (node.kind !== 17 && node.kind !== 11) {
+      context.log.error(decorator.range, "@global requires a class or function");
+
+      return;
+    }
   }
 
   function decorateHeader(node, context, decorator) {
@@ -2105,46 +2107,6 @@
     variables.appendChild(createVariable("__line", null, createInt(index.line)));
     variables.appendChild(createVariable("__column", null, createInt(index.column)));
     body.insertChildBefore(body.firstChild, variables);
-  }
-
-  function decorateRename(node, context, decorator) {
-    __imports.assert(node.kind === 17 || node.kind === 11);
-    var argument = decorator.decoratorFirstArgument();
-
-    if (argument === null || argument.kind !== 36) {
-      context.log.error(decorator.range, "@rename annotations must specify a new name as the first argument");
-
-      return;
-    }
-
-    var name = node.stringValue;
-    var newName = argument.stringValue;
-
-    if (newName === name) {
-      return;
-    }
-  }
-
-  function decorateVirtual(node, context, decorator) {
-    __imports.assert(node.kind === 17 || node.kind === 11);
-
-    if (!node.isDeclare()) {
-      context.log.error(node.range, "@virtual functions cannot have an implementation");
-
-      return;
-    }
-
-    var returnType = node.functionReturnType();
-
-    if (returnType.stringValue !== "void") {
-      context.log.error(returnType.range, "@virtual functions cannot specify a return type other than 'void'");
-
-      return;
-    }
-
-    __imports.assert(node.lastChild.kind === 14);
-    node.lastChild.kind = 9;
-    node.flags = node.flags ^ 1;
   }
 
   function isPositivePowerOf2(value) {
@@ -3800,12 +3762,9 @@
     __imports.assert(this.kind === 17);
     __imports.assert(this.childCount() >= 2);
     var child = this.firstChild;
-    var whileCount = 0;
 
     while (child.kind === 5 || child.kind === 8) {
-      __imports.assert(whileCount < 2);
       child = child.nextSibling;
-      whileCount = whileCount + 1 | 0;
     }
 
     return child;
@@ -5436,7 +5395,7 @@
     return node.withRange(spanRanges(open.range, close.range));
   };
 
-  ParserContext.prototype.parseClass = function(firstFlag) {
+  ParserContext.prototype.parseClass = function(firstFlag, decorators) {
     var token = this.current;
     __imports.assert(token.kind === 44);
     this.advance();
@@ -5458,6 +5417,10 @@
       }
 
       node.appendChild(parameters);
+    }
+
+    if (decorators !== null) {
+      node.appendChild(decorators);
     }
 
     var extendsToken = this.current;
@@ -5996,8 +5959,16 @@
 
     var firstFlag = mode === 1 ? this.parseFlags() : null;
 
+    if (this.peek(71) && firstFlag === null) {
+      return this.parseUnsafe();
+    }
+
     if (this.peek(54)) {
       return this.parseFunction(firstFlag, decorators, null);
+    }
+
+    if (this.peek(44)) {
+      return this.parseClass(firstFlag, decorators);
     }
 
     if (decorators !== null) {
@@ -6006,16 +5977,8 @@
       return null;
     }
 
-    if (this.peek(71) && firstFlag === null) {
-      return this.parseUnsafe();
-    }
-
     if (this.peek(45) || this.peek(59) || this.peek(72)) {
       return this.parseVariables(firstFlag, null);
-    }
-
-    if (this.peek(44)) {
-      return this.parseClass(firstFlag);
     }
 
     if (this.peek(49)) {
@@ -6628,6 +6591,20 @@
 
     return symbol.resolvedType;
   };
+
+  function printScope(scope) {
+    var symbol = scope.firstSymbol;
+    var sb = StringBuilder_new();
+    sb.append("{\n");
+
+    while (symbol !== null) {
+      sb.append("  ").append(symbol.name).append("\n");
+      symbol = symbol.next;
+    }
+
+    sb.append("}\n");
+    __imports.Terminal_write(sb.finish());
+  }
 
   function treeShakingMarkAllUsed(node) {
     var symbol = node.symbol;

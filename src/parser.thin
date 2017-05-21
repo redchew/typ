@@ -686,7 +686,7 @@ class ParserContext {
     return node.withRange(spanRanges(open.range, close.range));
   }
 
-  parseClass(firstFlag: NodeFlag): Node {
+  parseClass(firstFlag: NodeFlag, decorators: Node): Node {
     var token = this.current;
     assert(token.kind == TokenKind.CLASS);
     this.advance();
@@ -707,6 +707,11 @@ class ParserContext {
         return null;
       }
       node.appendChild(parameters);
+    }
+
+    // Decorators
+    if (decorators != null) {
+      node.appendChild(decorators);
     }
 
     // "extends" clause
@@ -1252,17 +1257,17 @@ class ParserContext {
 
     var firstFlag = mode == StatementMode.FILE ? this.parseFlags() : null;
 
+    if (this.peek(TokenKind.UNSAFE) && firstFlag == null) return this.parseUnsafe();
     if (this.peek(TokenKind.FUNCTION)) return this.parseFunction(firstFlag, decorators, null);
+    if (this.peek(TokenKind.CLASS)) return this.parseClass(firstFlag, decorators);
 
-    // Decorators need to be attached to a function
+    // Decorators need to be attached to a function or class
     if (decorators != null) {
       this.unexpectedToken();
       return null;
     }
 
-    if (this.peek(TokenKind.UNSAFE) && firstFlag == null) return this.parseUnsafe();
     if (this.peek(TokenKind.CONST) || this.peek(TokenKind.LET) || this.peek(TokenKind.VAR)) return this.parseVariables(firstFlag, null);
-    if (this.peek(TokenKind.CLASS)) return this.parseClass(firstFlag);
     if (this.peek(TokenKind.ENUM)) return this.parseEnum(firstFlag);
 
     // Definition modifiers need to be attached to a definition

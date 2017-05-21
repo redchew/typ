@@ -85,3 +85,21 @@ class Scope {
     return symbol.resolvedType;
   }
 }
+
+#if !NODEBUG
+
+function printScope(scope: Scope): void {
+  var symbol = scope.firstSymbol;
+  var sb = StringBuilder_new();
+  sb.append("{\n");
+  while (symbol != null) {
+    sb.append("  ")
+      .append(symbol.name)
+      .append("\n");
+    symbol = symbol.next;
+  }
+  sb.append("}\n");
+  Terminal_write(sb.finish());
+}
+
+#endif

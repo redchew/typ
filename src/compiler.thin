@@ -104,7 +104,6 @@ class Compiler {
       }
       source = source.next;
     }
-    this.context.isDebug = this.preprocessor.isDefined("NODEBUG") == false;
 
     Profiler_end("parsing");
     Profiler_begin();
@@ -112,6 +111,27 @@ class Compiler {
     var global = this.global;
     var context = this.context;
     var fullResolve = true;
+
+    context.isDebug = this.preprocessor.isDefined("NODEBUG") == false;
+
+    source = this.firstSource;
+    while (source != null) {
+      var file = source.file;
+
+      if (file != null) {
+        var child = source.file.firstChild;
+        while (child != null) {
+          var current = child;
+          child = child.nextSibling;
+          decorate(current, context);
+        }
+      }
+
+      source = source.next;
+    }
+
+    Profiler_end("decorating");
+    Profiler_begin();
 
     source = this.firstSource;
     while (source != null) {

@@ -105,13 +105,13 @@ var sources = [];
 var compiled = fs.readFileSync(__dirname + '/docs/compiled.js', 'utf8');
 
 console.log('compiling...');
-var compiled = compile(compiled, sources);
+compiled = compile(compiled, sources);
 
 console.log('compiling again...');
-var compiled = compile(compiled.js, sources);
+compiled = compile(compiled.js, sources);
 
-console.log('compiling again...');
-var compiled = compile(compiled.js, sources);
+console.log('compiling once more...');
+compiled = compile(compiled.js, sources);
 
 fs.writeFileSync(__dirname + '/out/compiled.c', compiled.c);
 fs.writeFileSync(__dirname + '/out/compiled.h', compiled.h);

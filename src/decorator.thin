@@ -1,0 +1,47 @@
+function decorate(node: Node, context: CheckContext): void {
+  assert(node != null && context != null);
+
+  // Takes special care of nodes being moved around
+  var child: Node;
+  var current: Node;
+
+  if (node.kind == NodeKind.CLASS) {
+    child = node.firstChild;
+    while (child != null) {
+      current = child; // here
+      child = child.nextSibling;
+      if (current.kind == NodeKind.FUNCTION) {
+        decorate(current, context);
+      }
+    }
+  }
+
+  else if (node.kind != NodeKind.FUNCTION) {
+    return;
+  }
+
+  child = node.firstChild;
+  while (child != null) {
+
+    if (child.kind == NodeKind.DECORATORS) {
+      current = child; // and here
+      child = child.nextSibling;
+
+      var decorator = current.decoratorsFirstDecorator();
+      while (decorator != null) {
+        var name = decorator.decoratorName().stringValue;
+        if (name == "global") decorateGlobal(node, context, decorator);
+        else if (name == "header") decorateHeader(node, context, decorator);
+        else if (name == "metadata") decorateMetadata(node, context, decorator);
+        else context.log.error(node.range, "Unsupported decorator");
+        decorator = decorator.nextSibling;
+      }
+
+      current.remove();
+    }
+
+    else {
+      child = child.nextSibling;
+    }
+  }
+}
