@@ -574,7 +574,7 @@ class CResult {
   }
 
   shouldEmitFunction(symbol: Symbol): bool {
-    return symbol.kind != SymbolKind.FUNCTION_GLOBAL || symbol.name != "malloc" && symbol.name != "free" && symbol.name != "memcpy" && symbol.name != "memcmp";
+    return symbol.kind != SymbolKind.FUNCTION_GLOBAL || !symbol.node.hasDecorator("header");
   }
 
   emitFunctionDeclarations(node: Node, mode: SourceMode): void {
@@ -748,7 +748,9 @@ class CResult {
     }
 
     else {
-      code.append("return calloc(1, sizeof(");
+      code.append("return (");
+      this.emitType(classType, TypeMode.NORMAL);
+      code.append(") calloc(1, sizeof(");
       this.emitType(classType, TypeMode.BARE);
       code.append("));\n");
     }

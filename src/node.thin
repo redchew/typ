@@ -403,11 +403,10 @@ class Node {
 
   functionFirstArgument(): Node {
     assert(this.kind == NodeKind.FUNCTION);
-    assert(this.childCount() >= 2);
+    assert(this.childCount() >= 2); // [parameters], [decorators], arguments..., returnType, body
     var child = this.firstChild;
-    while (child.kind == NodeKind.PARAMETERS || child.kind == NodeKind.DECORATORS) {
-      child = child.nextSibling;
-    }
+    if (child.kind == NodeKind.PARAMETERS) child = child.nextSibling;
+    if (child.kind == NodeKind.DECORATORS) child = child.nextSibling;
     return child;
   }
 
@@ -602,11 +601,26 @@ class Node {
     return this.firstChild;
   }
 
-  decoratorsFirstDecorator(): Node {
-    assert(this.kind == NodeKind.DECORATORS);
-    assert(this.childCount() >= 1);
-    assert(this.firstChild.kind == NodeKind.DECORATOR);
-    return this.firstChild;
+  decorators(): Node {
+    assert(this.kind == NodeKind.FUNCTION || this.kind == NodeKind.CLASS);
+    var child = this.firstChild;
+    if (child != null) {
+      if (child.kind == NodeKind.DECORATORS) return child;
+      child = child.nextSibling;
+      if (child != null && child.kind == NodeKind.DECORATORS) return child;
+    }
+    return null;
+  }
+
+  hasDecorator(name: string): bool {
+    var decorators = this.decorators(); // asserts kind
+    if (decorators == null) return false;
+    var child = decorators.firstChild;
+    while (child != null) {
+      if (child.stringValue == name) return true;
+      child = child.nextSibling;
+    }
+    return false;
   }
 
   decoratorName(): Node {

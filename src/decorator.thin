@@ -20,28 +20,18 @@ function decorate(node: Node, context: CheckContext): void {
     return;
   }
 
-  child = node.firstChild;
-  while (child != null) {
+  var decorators = node.decorators();
+  if (decorators != null) {
+    child = decorators.firstChild;
 
-    if (child.kind == NodeKind.DECORATORS) {
+    while (child != null) {
       current = child; // and here
       child = child.nextSibling;
-
-      var decorator = current.decoratorsFirstDecorator();
-      while (decorator != null) {
-        var name = decorator.decoratorName().stringValue;
-        if (name == "global") decorateGlobal(node, context, decorator);
-        else if (name == "header") decorateHeader(node, context, decorator);
-        else if (name == "metadata") decorateMetadata(node, context, decorator);
-        else context.log.error(node.range, "Unsupported decorator");
-        decorator = decorator.nextSibling;
-      }
-
-      current.remove();
-    }
-
-    else {
-      child = child.nextSibling;
+      var name = current.decoratorName().stringValue;
+      if (name == "global") decorateGlobal(node, context, current);
+      else if (name == "header") decorateHeader(node, context, current);
+      else if (name == "metadata") decorateMetadata(node, context, current);
+      else context.log.error(node.range, "Unsupported decorator");
     }
   }
 }
