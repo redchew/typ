@@ -83,7 +83,7 @@ function ByteArray_append32(array: ByteArray, value: int): void {
     }
   }
 
-#elif WASM || C
+#elif C_LIKE
 
   function ByteArray_setString(array: ByteArray, index: int, text: string): void {
     var length = text.length;

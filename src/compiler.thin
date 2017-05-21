@@ -30,16 +30,21 @@ class Compiler {
     this.librarySource.isLibrary = true;
     this.createGlobals();
 
-    if (target == CompileTarget.C) {
-      this.preprocessor.define("C", true);
-    }
-
-    else if (target == CompileTarget.JAVASCRIPT) {
+    if (target == CompileTarget.JAVASCRIPT) {
       this.preprocessor.define("JS", true);
     }
 
-    else if (target == CompileTarget.WEBASSEMBLY) {
-      this.preprocessor.define("WASM", true);
+    else {
+      this.preprocessor.define("C_LIKE", true);
+
+      if (target == CompileTarget.C) {
+        this.preprocessor.define("C", true);
+      }
+
+      else if (target == CompileTarget.WEBASSEMBLY) {
+        this.preprocessor.define("WASM", true);
+      }
+
     }
   }
 
@@ -173,7 +178,7 @@ class Compiler {
 
     Profiler_begin();
 
-    treeShaking(global);
+    // treeShaking(global);
 
     Profiler_end("shaking");
     Profiler_begin();

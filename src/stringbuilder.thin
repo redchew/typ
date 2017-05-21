@@ -78,7 +78,7 @@ function StringBuilder_appendQuoted(sb: StringBuilder, text: string): void {
     }
   }
 
-#elif WASM || C
+#elif C_LIKE
 
   class StringBuilder {
     next: StringBuilder;

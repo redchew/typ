@@ -109,7 +109,7 @@ function library(): string {
 
 #endif
 
-#if WASM || C
+#if C_LIKE
 
   declare class bool {
     toString(): string {
