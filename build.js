@@ -31,7 +31,7 @@ function compileNativeUnix() {
   try {
     var command = [
       'cc',
-      '../lib/thinc.c',
+      '../bin/thinc.c',
       '../out/compiled.c',
       '-o', 'thinc',
       '-Wall',
@@ -74,7 +74,7 @@ function compileNativeWindows() {
     var folder = process.env['VS' + version + 'COMNTOOLS'];
     var child = child_process.spawn('cmd.exe', [], { cwd: __dirname + "/out", stdio: ['pipe', process.stdout, process.stderr] });
     child.stdin.write('"' + folder + '/../../VC/bin/vcvars32.bat"\n');
-    child.stdin.write('cl.exe /O2 ../lib/thinc.c ../out/compiled.c /Fe"thinc.exe"\n');
+    child.stdin.write('cl.exe /O2 ../bin/thinc.c ../out/compiled.c /Fe"thinc.exe"\n');
     child.stdin.end();
     child.on('close', function(code) {
       if (code !== 0 || !fs.existsSync(__dirname + '/out/thinc.exe')) {

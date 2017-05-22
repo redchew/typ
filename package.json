@@ -3,7 +3,7 @@
   "version": "0.0.2",
   "description": "A low-level programming language inspired by TypeScript",
   "bin": {
-    "thinc": "lib/thinc"
+    "thinc": "bin/thinc"
   },
   "devDependencies": {
     "cson": "^4.1.0",

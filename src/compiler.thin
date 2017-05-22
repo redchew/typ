@@ -178,7 +178,7 @@ class Compiler {
 
     Profiler_begin();
 
-    // treeShaking(global);
+    treeShaking(global);
 
     Profiler_end("shaking");
     Profiler_begin();

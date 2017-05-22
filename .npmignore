@@ -4,7 +4,7 @@
 .vscode/
 docs/**/*
 build.js
-lib/thinc.c
+bin/thinc.c
 node_modules/
 out/
 sandbox/
