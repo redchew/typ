@@ -55,9 +55,9 @@ Variable declaration or definition that can also be a child of the compact `VARI
 
 ### DECORATORS
 
-Optional child container of `FUNCTION` holding one or more `DECORATOR` definitions. Rudimentary support.
+Optional child container of `FUNCTION` or `CLASS` holding one or more `DECORATOR` definitions. Rudimentary support.
 
-* **decoratorsFirstDecorator()**: `DECORATOR`
+* **decorators()**: `DECORATORS`
 
 ### DECORATOR
 
@@ -102,7 +102,7 @@ Literal `continue`.
 
 ### EMPTY
 
-Supplement for an empty `BLOCK`. TODO: Investigate if actually necessary.
+Supplement for an empty `BLOCK` or omitted type `NAME`.
 
 ### ENUM
 

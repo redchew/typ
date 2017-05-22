@@ -8,9 +8,7 @@ function decorateMetadata(node: Node, context: CheckContext, decorator: Node): v
   assert(node.kind == NodeKind.FUNCTION);
 
   var body = node.functionBody();
-  if (body == null || body.childCount() == 0) { // No need to instrument imports or empty functions
-    return;
-  }
+  if (body == null || body.childCount() == 0) return; // No need to instrument imports or empty functions
 
   var range = node.range;
   var source = range.source;

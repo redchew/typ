@@ -8,7 +8,9 @@ enum TokenKind {
   STRING,
 
   // Punctuation
+  ARROW,
   ASSIGN,
+  AT,
   BITWISE_AND,
   BITWISE_OR,
   BITWISE_XOR,
@@ -43,7 +45,6 @@ enum TokenKind {
   SEMICOLON,
   SHIFT_LEFT,
   SHIFT_RIGHT,
-  ARROW,
 
   // Keywords
   ALIGNOF,
@@ -90,10 +91,7 @@ enum TokenKind {
   PREPROCESSOR_NEEDED,
   PREPROCESSOR_NEWLINE,
   PREPROCESSOR_UNDEF,
-  PREPROCESSOR_WARNING,
-
-  // Decorators
-  DECORATOR_MAGIC
+  PREPROCESSOR_WARNING
 }
 
 function isKeyword(kind: TokenKind): bool {
@@ -666,7 +664,7 @@ function tokenize(source: Source, log: Log): Token {
     }
 
     else if (c == '@') {
-      kind = TokenKind.DECORATOR_MAGIC;
+      kind = TokenKind.AT;
     }
 
     // Previous cases signal this

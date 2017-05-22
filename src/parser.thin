@@ -765,7 +765,7 @@ class ParserContext {
 
     while (!this.peek(TokenKind.END_OF_FILE) && !this.peek(TokenKind.RIGHT_BRACE)) {
       var childDecorators: Node = null;
-      if (this.peek(TokenKind.DECORATOR_MAGIC)) {
+      if (this.peek(TokenKind.AT)) {
         childDecorators = this.parseDecorators();
         if (childDecorators == null) {
           return null;
@@ -1248,7 +1248,7 @@ class ParserContext {
   parseStatement(mode: StatementMode): Node {
     var decorators: Node;
 
-    if (this.peek(TokenKind.DECORATOR_MAGIC)) {
+    if (this.peek(TokenKind.AT)) {
       decorators = this.parseDecorators();
       if (decorators == null) {
         return null;
@@ -1353,7 +1353,7 @@ class ParserContext {
   }
 
   parseDecorator(): Node {
-    assert(this.current.kind == TokenKind.DECORATOR_MAGIC);
+    assert(this.current.kind == TokenKind.AT);
 
     // Remember where the magic is for the symbol later
     var magicRange = this.current.range;
@@ -1375,7 +1375,7 @@ class ParserContext {
   }
 
   parseDecorators(): Node {
-    assert(this.current.kind == TokenKind.DECORATOR_MAGIC);
+    assert(this.current.kind == TokenKind.AT);
 
     var firstMagicRange = this.current.range;
 
@@ -1386,7 +1386,7 @@ class ParserContext {
         return null;
       }
       decorators.appendChild(decorator);
-      if (!this.peek(TokenKind.DECORATOR_MAGIC)) {
+      if (!this.peek(TokenKind.AT)) {
         break;
       }
     }

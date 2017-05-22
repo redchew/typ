@@ -3,6 +3,10 @@
 
 
 
+
+
+
+
   function string_op_get(__this, index) {
     return __this.charCodeAt(index);
   }
@@ -1554,6 +1558,9 @@
       context.log.error(node.internalRange, "The address-of operator is not supported");
     }
 
+    else if (kind === 8 || kind === 7) {
+    }
+
     else if (isUnary(kind)) {
       var value = node.unaryValue();
       resolveAsExpression(context, value, parentScope);
@@ -1792,16 +1799,20 @@
     this.librarySource.isLibrary = true;
     this.createGlobals();
 
-    if (target === 1) {
-      this.preprocessor.define("C", true);
-    }
-
-    else if (target === 2) {
+    if (target === 2) {
       this.preprocessor.define("JS", true);
     }
 
-    else if (target === 3) {
-      this.preprocessor.define("WASM", true);
+    else {
+      this.preprocessor.define("C_LIKE", true);
+
+      if (target === 1) {
+        this.preprocessor.define("C", true);
+      }
+
+      else if (target === 3) {
+        this.preprocessor.define("WASM", true);
+      }
     }
   };
 
@@ -1937,7 +1948,6 @@
     }
 
     __imports.Profiler_begin();
-    treeShaking(global);
     __imports.Profiler_end("shaking");
     __imports.Profiler_begin();
 
@@ -2001,41 +2011,31 @@
       return;
     }
 
-    child = node.firstChild;
+    var decorators = node.decorators();
 
-    while (child !== null) {
-      if (child.kind === 8) {
+    if (decorators !== null) {
+      child = decorators.firstChild;
+
+      while (child !== null) {
         current = child;
         child = child.nextSibling;
-        var decorator = current.decoratorsFirstDecorator();
+        var name = current.decoratorName().stringValue;
 
-        while (decorator !== null) {
-          var name = decorator.decoratorName().stringValue;
-
-          if (name === "global") {
-            decorateGlobal(node, context, decorator);
-          }
-
-          else if (name === "header") {
-            decorateHeader(node, context, decorator);
-          }
-
-          else if (name === "metadata") {
-            decorateMetadata(node, context, decorator);
-          }
-
-          else {
-            context.log.error(node.range, "Unsupported decorator");
-          }
-
-          decorator = decorator.nextSibling;
+        if (name === "global") {
+          decorateGlobal(node, context, current);
         }
 
-        current.remove();
-      }
+        else if (name === "header") {
+          decorateHeader(node, context, current);
+        }
 
-      else {
-        child = child.nextSibling;
+        else if (name === "metadata") {
+          decorateMetadata(node, context, current);
+        }
+
+        else {
+          context.log.error(node.range, "Unsupported decorator");
+        }
       }
     }
   }
@@ -2120,7 +2120,7 @@
   }
 
   function isKeyword(kind) {
-    return kind >= 41 && kind <= 73;
+    return kind >= 42 && kind <= 74;
   }
 
   function Token() {}
@@ -2162,315 +2162,315 @@
       return "string literal";
     }
 
-    if (token === 5) {
+    if (token === 6) {
       return "'='";
     }
 
-    if (token === 6) {
+    if (token === 8) {
       return "'&'";
     }
 
-    if (token === 7) {
+    if (token === 9) {
       return "'|'";
     }
 
-    if (token === 8) {
+    if (token === 10) {
       return "'^'";
     }
 
-    if (token === 9) {
+    if (token === 11) {
       return "':'";
     }
 
-    if (token === 10) {
+    if (token === 12) {
       return "','";
     }
 
-    if (token === 11) {
+    if (token === 13) {
       return "'~'";
     }
 
-    if (token === 12) {
+    if (token === 14) {
       return "'/'";
     }
 
-    if (token === 13) {
+    if (token === 15) {
       return "'.'";
     }
 
-    if (token === 14) {
+    if (token === 16) {
       return "'=='";
     }
 
-    if (token === 15) {
+    if (token === 17) {
       return "'**'";
     }
 
-    if (token === 16) {
+    if (token === 18) {
       return "'>'";
     }
 
-    if (token === 17) {
+    if (token === 19) {
       return "'>='";
     }
 
-    if (token === 18) {
+    if (token === 20) {
       return "'{'";
     }
 
-    if (token === 19) {
+    if (token === 21) {
       return "'['";
     }
 
-    if (token === 20) {
+    if (token === 22) {
       return "'('";
     }
 
-    if (token === 21) {
+    if (token === 23) {
       return "'<'";
     }
 
-    if (token === 22) {
+    if (token === 24) {
       return "'<='";
     }
 
-    if (token === 23) {
+    if (token === 25) {
       return "'&&'";
     }
 
-    if (token === 24) {
+    if (token === 26) {
       return "'||'";
     }
 
-    if (token === 25) {
+    if (token === 27) {
       return "'-'";
     }
 
-    if (token === 26) {
+    if (token === 28) {
       return "'--'";
     }
 
-    if (token === 27) {
+    if (token === 29) {
       return "'*'";
     }
 
-    if (token === 28) {
+    if (token === 30) {
       return "'!'";
     }
 
-    if (token === 29) {
+    if (token === 31) {
       return "'!='";
     }
 
-    if (token === 30) {
+    if (token === 32) {
       return "'+'";
     }
 
-    if (token === 31) {
+    if (token === 33) {
       return "'++'";
     }
 
-    if (token === 32) {
+    if (token === 34) {
       return "'?'";
     }
 
-    if (token === 33) {
+    if (token === 35) {
       return "'%'";
     }
 
-    if (token === 34) {
+    if (token === 36) {
       return "'}'";
     }
 
-    if (token === 35) {
+    if (token === 37) {
       return "']'";
     }
 
-    if (token === 36) {
+    if (token === 38) {
       return "')'";
     }
 
-    if (token === 37) {
+    if (token === 39) {
       return "';'";
     }
 
-    if (token === 38) {
+    if (token === 40) {
       return "'<<'";
     }
 
-    if (token === 39) {
+    if (token === 41) {
       return "'>>'";
     }
 
-    if (token === 40) {
+    if (token === 5) {
       return "'=>'";
     }
 
-    if (token === 41) {
+    if (token === 42) {
       return "'alignof'";
     }
 
-    if (token === 42) {
+    if (token === 43) {
       return "'as'";
     }
 
-    if (token === 43) {
+    if (token === 44) {
       return "'break'";
     }
 
-    if (token === 44) {
+    if (token === 45) {
       return "'class'";
     }
 
-    if (token === 45) {
+    if (token === 46) {
       return "'const'";
     }
 
-    if (token === 46) {
+    if (token === 47) {
       return "'continue'";
     }
 
-    if (token === 47) {
+    if (token === 48) {
       return "'declare'";
     }
 
-    if (token === 48) {
+    if (token === 49) {
       return "'else'";
     }
 
-    if (token === 49) {
+    if (token === 50) {
       return "'enum'";
     }
 
-    if (token === 50) {
+    if (token === 51) {
       return "'export'";
     }
 
-    if (token === 51) {
+    if (token === 52) {
       return "'extends'";
     }
 
-    if (token === 52) {
+    if (token === 53) {
       return "'extern'";
     }
 
-    if (token === 53) {
+    if (token === 54) {
       return "'false'";
     }
 
-    if (token === 54) {
+    if (token === 55) {
       return "'function'";
     }
 
-    if (token === 55) {
+    if (token === 56) {
       return "'if'";
     }
 
-    if (token === 56) {
+    if (token === 57) {
       return "'implements'";
     }
 
-    if (token === 57) {
+    if (token === 58) {
       return "'import'";
     }
 
-    if (token === 58) {
+    if (token === 59) {
       return "'interface'";
     }
 
-    if (token === 59) {
+    if (token === 60) {
       return "'let'";
     }
 
-    if (token === 60) {
+    if (token === 61) {
       return "'new'";
     }
 
-    if (token === 61) {
+    if (token === 62) {
       return "'null'";
     }
 
-    if (token === 62) {
+    if (token === 63) {
       return "'operator'";
     }
 
-    if (token === 63) {
+    if (token === 64) {
       return "'private'";
     }
 
-    if (token === 64) {
+    if (token === 65) {
       return "'protected'";
     }
 
-    if (token === 65) {
+    if (token === 66) {
       return "'public'";
     }
 
-    if (token === 66) {
+    if (token === 67) {
       return "'return'";
     }
 
-    if (token === 67) {
+    if (token === 68) {
       return "'sizeof'";
     }
 
-    if (token === 68) {
+    if (token === 69) {
       return "'static'";
     }
 
-    if (token === 69) {
+    if (token === 70) {
       return "'this'";
     }
 
-    if (token === 70) {
+    if (token === 71) {
       return "'true'";
     }
 
-    if (token === 71) {
+    if (token === 72) {
       return "'unsafe'";
     }
 
-    if (token === 72) {
+    if (token === 73) {
       return "'var'";
     }
 
-    if (token === 73) {
+    if (token === 74) {
       return "'while'";
     }
 
-    if (token === 74) {
+    if (token === 75) {
       return "'#define'";
     }
 
-    if (token === 75) {
+    if (token === 76) {
       return "'#elif'";
     }
 
-    if (token === 76) {
+    if (token === 77) {
       return "'#else'";
     }
 
-    if (token === 77) {
+    if (token === 78) {
       return "'#endif'";
     }
 
-    if (token === 78) {
+    if (token === 79) {
       return "'#error'";
     }
 
-    if (token === 79) {
+    if (token === 80) {
       return "'#if'";
     }
 
-    if (token === 81) {
+    if (token === 82) {
       return "newline";
     }
 
-    if (token === 82) {
+    if (token === 83) {
       return "'#undef'";
     }
 
-    if (token === 83) {
+    if (token === 84) {
       return "'#warning'";
     }
 
@@ -2525,7 +2525,7 @@
           continue;
         }
 
-        kind = 81;
+        kind = 82;
         wantNewline = false;
       }
 
@@ -2543,142 +2543,142 @@
 
           if (length === 2) {
             if (text === "as") {
-              kind = 42;
+              kind = 43;
             }
 
             else if (text === "if") {
-              kind = 55;
+              kind = 56;
             }
           }
 
           else if (length === 3) {
             if (text === "let") {
-              kind = 59;
-            }
-
-            else if (text === "new") {
               kind = 60;
             }
 
+            else if (text === "new") {
+              kind = 61;
+            }
+
             else if (text === "var") {
-              kind = 72;
+              kind = 73;
             }
           }
 
           else if (length === 4) {
             if (text === "else") {
-              kind = 48;
-            }
-
-            else if (text === "enum") {
               kind = 49;
             }
 
+            else if (text === "enum") {
+              kind = 50;
+            }
+
             else if (text === "null") {
-              kind = 61;
+              kind = 62;
             }
 
             else if (text === "this") {
-              kind = 69;
+              kind = 70;
             }
 
             else if (text === "true") {
-              kind = 70;
+              kind = 71;
             }
           }
 
           else if (length === 5) {
             if (text === "break") {
-              kind = 43;
-            }
-
-            else if (text === "class") {
               kind = 44;
             }
 
-            else if (text === "const") {
+            else if (text === "class") {
               kind = 45;
             }
 
+            else if (text === "const") {
+              kind = 46;
+            }
+
             else if (text === "false") {
-              kind = 53;
+              kind = 54;
             }
 
             else if (text === "while") {
-              kind = 73;
+              kind = 74;
             }
           }
 
           else if (length === 6) {
             if (text === "export") {
-              kind = 50;
+              kind = 51;
             }
 
             else if (text === "extern") {
-              kind = 52;
+              kind = 53;
             }
 
             else if (text === "import") {
-              kind = 57;
+              kind = 58;
             }
 
             else if (text === "public") {
-              kind = 65;
-            }
-
-            else if (text === "return") {
               kind = 66;
             }
 
-            else if (text === "sizeof") {
+            else if (text === "return") {
               kind = 67;
             }
 
-            else if (text === "static") {
+            else if (text === "sizeof") {
               kind = 68;
             }
 
+            else if (text === "static") {
+              kind = 69;
+            }
+
             else if (text === "unsafe") {
-              kind = 71;
+              kind = 72;
             }
           }
 
           else if (length === 7) {
             if (text === "alignof") {
-              kind = 41;
+              kind = 42;
             }
 
             else if (text === "declare") {
-              kind = 47;
+              kind = 48;
             }
 
             else if (text === "extends") {
-              kind = 51;
+              kind = 52;
             }
 
             else if (text === "private") {
-              kind = 63;
+              kind = 64;
             }
           }
 
           else if (text === "continue") {
-            kind = 46;
+            kind = 47;
           }
 
           else if (text === "function") {
-            kind = 54;
+            kind = 55;
           }
 
           else if (text === "implements") {
-            kind = 56;
+            kind = 57;
           }
 
           else if (text === "interface") {
-            kind = 58;
+            kind = 59;
           }
 
           else if (text === "protected") {
-            kind = 64;
+            kind = 65;
           }
         }
       }
@@ -2805,72 +2805,72 @@
       }
 
       else if (c === 37) {
-        kind = 33;
-      }
-
-      else if (c === 40) {
-        kind = 20;
-      }
-
-      else if (c === 41) {
-        kind = 36;
-      }
-
-      else if (c === 44) {
-        kind = 10;
-      }
-
-      else if (c === 46) {
-        kind = 13;
-      }
-
-      else if (c === 58) {
-        kind = 9;
-      }
-
-      else if (c === 59) {
-        kind = 37;
-      }
-
-      else if (c === 63) {
-        kind = 32;
-      }
-
-      else if (c === 91) {
-        kind = 19;
-      }
-
-      else if (c === 93) {
         kind = 35;
       }
 
-      else if (c === 94) {
-        kind = 8;
+      else if (c === 40) {
+        kind = 22;
       }
 
-      else if (c === 123) {
-        kind = 18;
+      else if (c === 41) {
+        kind = 38;
       }
 
-      else if (c === 125) {
-        kind = 34;
+      else if (c === 44) {
+        kind = 12;
       }
 
-      else if (c === 126) {
+      else if (c === 46) {
+        kind = 15;
+      }
+
+      else if (c === 58) {
         kind = 11;
       }
 
+      else if (c === 59) {
+        kind = 39;
+      }
+
+      else if (c === 63) {
+        kind = 34;
+      }
+
+      else if (c === 91) {
+        kind = 21;
+      }
+
+      else if (c === 93) {
+        kind = 37;
+      }
+
+      else if (c === 94) {
+        kind = 10;
+      }
+
+      else if (c === 123) {
+        kind = 20;
+      }
+
+      else if (c === 125) {
+        kind = 36;
+      }
+
+      else if (c === 126) {
+        kind = 13;
+      }
+
       else if (c === 42) {
-        kind = 27;
+        kind = 29;
 
         if (i < limit && string_op_get(contents, i) === 42) {
-          kind = 15;
+          kind = 17;
           i = i + 1 | 0;
         }
       }
 
       else if (c === 47) {
-        kind = 12;
+        kind = 14;
 
         if (i < limit && string_op_get(contents, i) === 47) {
           i = i + 1 | 0;
@@ -2918,10 +2918,10 @@
       }
 
       else if (c === 33) {
-        kind = 28;
+        kind = 30;
 
         if (i < limit && string_op_get(contents, i) === 61) {
-          kind = 29;
+          kind = 31;
           i = i + 1 | 0;
 
           if (i < limit && string_op_get(contents, i) === 61) {
@@ -2932,11 +2932,11 @@
       }
 
       else if (c === 61) {
-        kind = 5;
+        kind = 6;
 
         if (i < limit) {
           if (string_op_get(contents, i) === 61) {
-            kind = 14;
+            kind = 16;
             i = i + 1 | 0;
 
             if (i < limit && string_op_get(contents, i) === 61) {
@@ -2946,79 +2946,79 @@
           }
 
           else if (string_op_get(contents, i) === 62) {
-            kind = 40;
+            kind = 5;
             i = i + 1 | 0;
           }
         }
       }
 
       else if (c === 43) {
-        kind = 30;
+        kind = 32;
 
         if (i < limit && string_op_get(contents, i) === 43) {
-          kind = 31;
+          kind = 33;
           i = i + 1 | 0;
         }
       }
 
       else if (c === 45) {
-        kind = 25;
+        kind = 27;
 
         if (i < limit && string_op_get(contents, i) === 45) {
-          kind = 26;
+          kind = 28;
           i = i + 1 | 0;
         }
       }
 
       else if (c === 38) {
-        kind = 6;
+        kind = 8;
 
         if (i < limit && string_op_get(contents, i) === 38) {
-          kind = 23;
+          kind = 25;
           i = i + 1 | 0;
         }
       }
 
       else if (c === 124) {
-        kind = 7;
+        kind = 9;
 
         if (i < limit && string_op_get(contents, i) === 124) {
-          kind = 24;
+          kind = 26;
           i = i + 1 | 0;
         }
       }
 
       else if (c === 60) {
-        kind = 21;
+        kind = 23;
 
         if (i < limit) {
           c = string_op_get(contents, i);
 
           if (c === 60) {
-            kind = 38;
+            kind = 40;
             i = i + 1 | 0;
           }
 
           else if (c === 61) {
-            kind = 22;
+            kind = 24;
             i = i + 1 | 0;
           }
         }
       }
 
       else if (c === 62) {
-        kind = 16;
+        kind = 18;
 
         if (i < limit) {
           c = string_op_get(contents, i);
 
           if (c === 62) {
-            kind = 39;
+            kind = 41;
             i = i + 1 | 0;
           }
 
           else if (c === 61) {
-            kind = 17;
+            kind = 19;
             i = i + 1 | 0;
           }
         }
@@ -3037,7 +3037,7 @@
       }
 
       else if (c === 64) {
-        kind = 84;
+        kind = 7;
       }
 
       if (isPreprocessorDirective) {
@@ -3050,35 +3050,35 @@
         var text = contents.slice(start, i);
 
         if (text === "#define") {
-          kind = 74;
-        }
-
-        else if (text === "#elif") {
           kind = 75;
         }
 
-        else if (text === "#else") {
+        else if (text === "#elif") {
           kind = 76;
         }
 
-        else if (text === "#endif") {
+        else if (text === "#else") {
           kind = 77;
         }
 
-        else if (text === "#error") {
+        else if (text === "#endif") {
           kind = 78;
         }
 
-        else if (text === "#if") {
+        else if (text === "#error") {
           kind = 79;
         }
 
+        else if (text === "#if") {
+          kind = 80;
+        }
+
         else if (text === "#undef") {
-          kind = 82;
+          kind = 83;
         }
 
         else if (text === "#warning") {
-          kind = 83;
+          kind = 84;
         }
 
         else {
@@ -3086,23 +3086,23 @@
 
           if (text === "#ifdef") {
             builder.append(", did you mean '#if'?");
-            kind = 79;
+            kind = 80;
           }
 
           else if (text === "#elsif" || text === "#elseif") {
             builder.append(", did you mean '#elif'?");
-            kind = 75;
+            kind = 76;
           }
 
           else if (text === "#end") {
             builder.append(", did you mean '#endif'?");
-            kind = 77;
+            kind = 78;
           }
 
           log.error(createRange(source, start, i), builder.finish());
         }
 
-        if (last !== null && last.kind !== 81) {
+        if (last !== null && last.kind !== 82) {
           var end = last.range.end;
           var j = i - 1 | 0;
 
@@ -3162,7 +3162,7 @@
 
     if (needsPreprocessor) {
       var token = new Token();
-      token.kind = 80;
+      token.kind = 81;
       token.next = first;
 
       return token;
@@ -3172,7 +3172,7 @@
   }
 
   function library() {
-    return "\n#if WASM\n\n  // These will be filled in by the WebAssembly code generator\n  unsafe var currentHeapPointer: *byte = null;\n  unsafe var originalHeapPointer: *byte = null;\n\n  extern unsafe function malloc(sizeOf: uint): *byte {\n    // Align all allocations to 8 bytes\n    var offset = ((currentHeapPointer as uint + 7) & ~7 as uint) as *byte;\n    sizeOf = (sizeOf + 7) & ~7 as uint;\n\n    // Use a simple bump allocator for now\n    var limit = offset + sizeOf;\n    currentHeapPointer = limit;\n\n    // Make sure the memory starts off at zero\n    var ptr = offset;\n    while (ptr < limit) {\n      *(ptr as *int) = 0;\n      ptr = ptr + 4;\n    }\n\n    return offset;\n  }\n\n  extern unsafe function free(ptr: *byte): void { /* TODO */ }\n\n  unsafe function memcpy(target: *byte, source: *byte, length: uint): void {\n    // No-op if either of the inputs are null\n    if (source == null || target == null) {\n      return;\n    }\n\n    // Optimized aligned copy\n    if (length >= 16 && (source as uint) % 4 == (target as uint) % 4) {\n      // Pick off the beginning\n      while ((target as uint) % 4 != 0) {\n        *target = *source;\n        target = target + 1;\n        source = source + 1;\n        length = length - 1;\n      }\n\n      // Pick off the end\n      while (length % 4 != 0) {\n        length = length - 1;\n        *(target + length) = *(source + length);\n      }\n\n      // Zip over the middle\n      var end = target + length;\n      while (target < end) {\n        *(target as *int) = *(source as *int);\n        target = target + 4;\n        source = source + 4;\n      }\n    }\n\n    // Slow unaligned copy\n    else {\n      var end = target + length;\n      while (target < end) {\n        *target = *source;\n        target = target + 1;\n        source = source + 1;\n      }\n    }\n  }\n\n  unsafe function memcmp(a: *byte, b: *byte, length: uint): int {\n    // No-op if either of the inputs are null\n    if (a == null || b == null) {\n      return 0;\n    }\n\n    // Return the first non-zero difference\n    while (length > 0) {\n      var delta = *a as int - *b as int;\n      if (delta != 0) {\n        return delta;\n      }\n      a = a + 1;\n      b = b + 1;\n      length = length - 1;\n    }\n\n    // Both inputs are identical\n    return 0;\n  }\n\n#elif C\n\n  @header(\"<string.h>\", HeaderFlags.SOURCE)\n  declare unsafe function malloc(sizeOf: uint): *byte;\n\n  @header(\"<string.h>\", HeaderFlags.SOURCE)\n  declare unsafe function free(ptr: *byte): void;\n\n  @header(\"<string.h>\", HeaderFlags.SOURCE)\n  declare unsafe function memcpy(target: *byte, source: *byte, length: uint): void;\n\n  @header(\"<string.h>\", HeaderFlags.SOURCE)\n  declare unsafe function memcmp(a: *byte, b: *byte, length: uint): int;\n\n  @header(\"<stdlib.h>\", HeaderFlags.SOURCE)\n  declare unsafe function calloc(num: uint, size: uint): *byte;\n\n#endif\n\n#if WASM || C\n\n  declare class bool {\n    toString(): string {\n      return this ? \"true\" : \"false\";\n    }\n  }\n\n  declare class sbyte {\n    toString(): string {\n      return (this as int).toString();\n    }\n  }\n\n  declare class byte {\n    toString(): string {\n      return (this as uint).toString();\n    }\n  }\n\n  declare class short {\n    toString(): string {\n      return (this as int).toString();\n    }\n  }\n\n  declare class ushort {\n    toString(): string {\n      return (this as uint).toString();\n    }\n  }\n\n  declare class int {\n    toString(): string {\n      // Special-case this to keep the rest of the code simple\n      if (this == -2147483648) {\n        return \"-2147483648\";\n      }\n\n      // Treat this like an unsigned integer prefixed by '-' if it's negative\n      return internalIntToString((this < 0 ? -this : this) as uint, this < 0);\n    }\n  }\n\n  declare class uint {\n    toString(): string {\n      return internalIntToString(this, false);\n    }\n  }\n\n  function internalIntToString(value: uint, sign: bool): string {\n    // Avoid allocation for common cases\n    if (value == 0) return \"0\";\n    if (value == 1) return sign ? \"-1\" : \"1\";\n\n    unsafe {\n      // Determine how many digits we need\n      var length = ((sign ? 1 : 0) + (\n        value >= 100000000 ?\n          value >= 1000000000 ? 10 : 9 :\n        value >= 10000 ?\n          value >= 1000000 ?\n            value >= 10000000 ? 8 : 7 :\n            value >= 100000 ? 6 : 5 :\n          value >= 100 ?\n            value >= 1000 ? 4 : 3 :\n            value >= 10 ? 2 : 1)) as uint;\n\n      var ptr = string_new(length) as *byte;\n      var end = ptr + 4 + length * 2;\n\n      if (sign) {\n        *((ptr + 4) as *ushort) = '-';\n      }\n\n      while (value != 0) {\n        end = end + -2;\n        *(end as *ushort) = (value % 10 + '0') as ushort;\n        value = value / 10;\n      }\n\n      return ptr as string;\n    }\n  }\n\n  function string_new(length: uint): string {\n    unsafe {\n      var ptr = malloc(4 + length * 2);\n      *(ptr as *uint) = length;\n      return ptr as string;\n    }\n  }\n\n  declare class string {\n    charAt(index: int): string {\n      return this.slice(index, index + 1);\n    }\n\n    charCodeAt(index: int): ushort {\n      return this[index];\n    }\n\n    get length(): int {\n      unsafe {\n        return *(this as *int);\n      }\n    }\n\n    operator [] (index: int): ushort {\n      if (index as uint < this.length as uint) {\n        unsafe {\n          return *((this as *byte + 4 + index * 2) as *ushort);\n        }\n      }\n      return 0;\n    }\n\n    operator == (other: string): bool {\n      unsafe {\n        if (this as *byte == other as *byte) return true;\n        if (this as *byte == null || other as *byte == null) return false;\n        var length = this.length;\n        if (length != other.length) return false;\n        return memcmp(this as *byte + 4, other as *byte + 4, length as uint * 2) == 0;\n      }\n    }\n\n    slice(start: int, end: int): string {\n      var length = this.length;\n\n      if (start < 0) start = start + length;\n      if (end < 0) end = end + length;\n\n      if (start < 0) start = 0;\n      else if (start > length) start = length;\n\n      if (end < start) end = start;\n      else if (end > length) end = length;\n\n      unsafe {\n        var range = (end - start) as uint;\n        var ptr = string_new(range);\n        memcpy(ptr as *byte + 4, this as *byte + 4 + start * 2, range * 2);\n        return ptr;\n      }\n    }\n\n    startsWith(text: string): bool {\n      var textLength = text.length;\n      if (this.length < textLength) return false;\n      unsafe {\n        return memcmp(this as *byte + 4, text as *byte + 4, textLength as uint * 2) == 0;\n      }\n    }\n\n    endsWith(text: string): bool {\n      var thisLength = this.length;\n      var textLength = text.length;\n      if (thisLength < textLength) return false;\n      unsafe {\n        return memcmp(this as *byte + 4 + (thisLength - textLength) * 2, text as *byte + 4, textLength as uint * 2) == 0;\n      }\n    }\n\n    indexOf(text: string): int {\n      var thisLength = this.length;\n      var textLength = text.length;\n      if (thisLength >= textLength) {\n        var i = 0;\n        while (i < thisLength - textLength) {\n          unsafe {\n            if (memcmp(this as *byte + 4 + i * 2, text as *byte + 4, textLength as uint * 2) == 0) {\n              return i;\n            }\n          }\n          i = i + 1;\n        }\n      }\n      return -1;\n    }\n\n    lastIndexOf(text: string): int {\n      var thisLength = this.length;\n      var textLength = text.length;\n      if (thisLength >= textLength) {\n        var i = thisLength - textLength;\n        while (i >= 0) {\n          unsafe {\n            if (memcmp(this as *byte + 4 + i * 2, text as *byte + 4, textLength as uint * 2) == 0) {\n              return i;\n            }\n          }\n          i = i - 1;\n        }\n      }\n      return -1;\n    }\n  }\n\n#else\n\n  declare class bool {\n    toString(): string;\n  }\n\n  declare class sbyte {\n    toString(): string;\n  }\n\n  declare class byte {\n    toString(): string;\n  }\n\n  declare class short {\n    toString(): string;\n  }\n\n  declare class ushort {\n    toString(): string;\n  }\n\n  declare class int {\n    toString(): string;\n  }\n\n  declare class uint {\n    toString(): string;\n  }\n\n  declare class string {\n    charAt(index: int): string;\n    charCodeAt(index: int): ushort;\n    get length(): int;\n    indexOf(text: string): int;\n    lastIndexOf(text: string): int;\n    operator == (other: string): bool;\n    operator [] (index: int): ushort { return this.charCodeAt(index); }\n    slice(start: int, end: int): string;\n\n    #if JS\n      startsWith(text: string): bool { return this.slice(0, text.length) == text; }\n      endsWith(text: string): bool { return this.slice(-text.length, this.length) == text; }\n    #else\n      startsWith(text: string): bool;\n      endsWith(text: string): bool;\n    #endif\n  }\n\n#endif\n\n#if C\n\n  extern unsafe function cstring_to_utf16(utf8: *byte): string {\n    if (utf8 == null) {\n      return null;\n    }\n\n    var utf16_length: uint = 0;\n    var a: byte, b: byte, c: byte, d: byte;\n\n    // Measure text\n    var i: uint = 0;\n    while ((a = *(utf8 + i)) != '\\0') {\n      i = i + 1;\n      var codePoint: uint;\n\n      // Decode UTF-8\n      if ((b = *(utf8 + i)) != '\\0' && a >= 0xC0) {\n        i = i + 1;\n        if ((c = *(utf8 + i)) != '\\0' && a >= 0xE0) {\n          i = i + 1;\n          if ((d = *(utf8 + i)) != '\\0' && a >= 0xF0) {\n            i = i + 1;\n            codePoint = ((a & 0x07) << 18) | ((b & 0x3F) << 12) | ((c & 0x3F) << 6) | (d & 0x3F);\n          } else {\n            codePoint = ((a & 0x0F) << 12) | ((b & 0x3F) << 6) | (c & 0x3F);\n          }\n        } else {\n          codePoint = ((a & 0x1F) << 6) | (b & 0x3F);\n        }\n      } else {\n        codePoint = a;\n      }\n\n      // Encode UTF-16\n      utf16_length = utf16_length + (codePoint < 0x10000 ? 1 : 2) as uint;\n    }\n\n    var output = string_new(utf16_length);\n    var utf16 = output as *ushort + 2;\n\n    // Convert text\n    i = 0;\n    while ((a = *(utf8 + i)) != '\\0') {\n      i = i + 1;\n      var codePoint: uint;\n\n      // Decode UTF-8\n      if ((b = *(utf8 + i)) != '\\0' && a >= 0xC0) {\n        i = i + 1;\n        if ((c = *(utf8 + i)) != '\\0' && a >= 0xE0) {\n          i = i + 1;\n          if ((d = *(utf8 + i)) != '\\0' && a >= 0xF0) {\n            i = i + 1;\n            codePoint = ((a & 0x07) << 18) | ((b & 0x3F) << 12) | ((c & 0x3F) << 6) | (d & 0x3F);\n          } else {\n            codePoint = ((a & 0x0F) << 12) | ((b & 0x3F) << 6) | (c & 0x3F);\n          }\n        } else {\n          codePoint = ((a & 0x1F) << 6) | (b & 0x3F);\n        }\n      } else {\n        codePoint = a;\n      }\n\n      // Encode UTF-16\n      if (codePoint < 0x10000) {\n        *utf16 = codePoint as ushort;\n      } else {\n        *utf16 = ((codePoint >> 10) + (0xD800 - (0x10000 >> 10))) as ushort;\n        utf16 = utf16 + 1;\n        *utf16 = ((codePoint & 0x3FF) + 0xDC00) as ushort;\n      }\n      utf16 = utf16 + 1;\n    }\n\n    return output;\n  }\n\n  extern unsafe function utf16_to_cstring(input: string): *byte {\n    if (input as *uint == null) {\n      return null;\n    }\n\n    var utf16_length = *(input as *uint);\n    var utf8_length: uint = 0;\n    var utf16 = input as *ushort + 2;\n\n    // Measure text\n    var i: uint = 0;\n    while (i < utf16_length) {\n      var codePoint: uint;\n\n      // Decode UTF-16\n      var a = *(utf16 + i);\n      i = i + 1;\n      if (i < utf16_length && a >= 0xD800 && a <= 0xDBFF) {\n        var b = *(utf16 + i);\n        i = i + 1;\n        codePoint = (a << 10) + b + (0x10000 - (0xD800 << 10) - 0xDC00) as uint;\n      } else {\n        codePoint = a;\n      }\n\n      // Encode UTF-8\n      utf8_length = utf8_length + (\n        codePoint < 0x80 ? 1 :\n        codePoint < 0x800 ? 2 :\n        codePoint < 0x10000 ? 3 :\n        4) as uint;\n    }\n\n    var utf8 = malloc(utf8_length + 1);\n    var next = utf8;\n\n    // Convert text\n    i = 0;\n    while (i < utf16_length) {\n      var codePoint: uint;\n\n      // Decode UTF-16\n      var a = *(utf16 + i);\n      i = i + 1;\n      if (i < utf16_length && a >= 0xD800 && a <= 0xDBFF) {\n        var b = *(utf16 + i);\n        i = i + 1;\n        codePoint = (a << 10) + b + (0x10000 - (0xD800 << 10) - 0xDC00) as uint;\n      } else {\n        codePoint = a;\n      }\n\n      // Encode UTF-8\n      if (codePoint < 0x80) {\n        *next = codePoint as byte;\n      } else {\n        if (codePoint < 0x800) {\n          *next = (((codePoint >> 6) & 0x1F) | 0xC0) as byte;\n        } else {\n          if (codePoint < 0x10000) {\n            *next = (((codePoint >> 12) & 0x0F) | 0xE0) as byte;\n          } else {\n            *next = (((codePoint >> 18) & 0x07) | 0xF0) as byte;\n            next = next + 1;\n            *next = (((codePoint >> 12) & 0x3F) | 0x80) as byte;\n          }\n          next = next + 1;\n          *next = (((codePoint >> 6) & 0x3F) | 0x80) as byte;\n        }\n        next = next + 1;\n        *next = ((codePoint & 0x3F) | 0x80) as byte;\n      }\n      next = next + 1;\n    }\n\n    // C strings are null-terminated\n    *next = '\\0';\n\n    return utf8;\n  }\n\n#endif\n";
+    return "\n#if WASM\n\n  // These will be filled in by the WebAssembly code generator\n  unsafe var currentHeapPointer: *byte = null;\n  unsafe var originalHeapPointer: *byte = null;\n\n  extern unsafe function malloc(sizeOf: uint): *byte {\n    // Align all allocations to 8 bytes\n    var offset = ((currentHeapPointer as uint + 7) & ~7 as uint) as *byte;\n    sizeOf = (sizeOf + 7) & ~7 as uint;\n\n    // Use a simple bump allocator for now\n    var limit = offset + sizeOf;\n    currentHeapPointer = limit;\n\n    // Make sure the memory starts off at zero\n    var ptr = offset;\n    while (ptr < limit) {\n      *(ptr as *int) = 0;\n      ptr = ptr + 4;\n    }\n\n    return offset;\n  }\n\n  extern unsafe function free(ptr: *byte): void { /* TODO */ }\n\n  unsafe function memcpy(target: *byte, source: *byte, length: uint): void {\n    // No-op if either of the inputs are null\n    if (source == null || target == null) {\n      return;\n    }\n\n    // Optimized aligned copy\n    if (length >= 16 && (source as uint) % 4 == (target as uint) % 4) {\n      // Pick off the beginning\n      while ((target as uint) % 4 != 0) {\n        *target = *source;\n        target = target + 1;\n        source = source + 1;\n        length = length - 1;\n      }\n\n      // Pick off the end\n      while (length % 4 != 0) {\n        length = length - 1;\n        *(target + length) = *(source + length);\n      }\n\n      // Zip over the middle\n      var end = target + length;\n      while (target < end) {\n        *(target as *int) = *(source as *int);\n        target = target + 4;\n        source = source + 4;\n      }\n    }\n\n    // Slow unaligned copy\n    else {\n      var end = target + length;\n      while (target < end) {\n        *target = *source;\n        target = target + 1;\n        source = source + 1;\n      }\n    }\n  }\n\n  unsafe function memcmp(a: *byte, b: *byte, length: uint): int {\n    // No-op if either of the inputs are null\n    if (a == null || b == null) {\n      return 0;\n    }\n\n    // Return the first non-zero difference\n    while (length > 0) {\n      var delta = *a as int - *b as int;\n      if (delta != 0) {\n        return delta;\n      }\n      a = a + 1;\n      b = b + 1;\n      length = length - 1;\n    }\n\n    // Both inputs are identical\n    return 0;\n  }\n\n#elif C\n\n  @header(\"<string.h>\", HeaderFlags.SOURCE)\n  declare unsafe function malloc(sizeOf: uint): *byte;\n\n  @header(\"<string.h>\", HeaderFlags.SOURCE)\n  declare unsafe function free(ptr: *byte): void;\n\n  @header(\"<string.h>\", HeaderFlags.SOURCE)\n  declare unsafe function memcpy(target: *byte, source: *byte, length: uint): void;\n\n  @header(\"<string.h>\", HeaderFlags.SOURCE)\n  declare unsafe function memcmp(a: *byte, b: *byte, length: uint): int;\n\n  @header(\"<stdlib.h>\", HeaderFlags.SOURCE)\n  declare unsafe function calloc(num: uint, size: uint): *byte;\n\n#endif\n\n#if C_LIKE\n\n  declare class bool {\n    toString(): string {\n      return this ? \"true\" : \"false\";\n    }\n  }\n\n  declare class sbyte {\n    toString(): string {\n      return (this as int).toString();\n    }\n  }\n\n  declare class byte {\n    toString(): string {\n      return (this as uint).toString();\n    }\n  }\n\n  declare class short {\n    toString(): string {\n      return (this as int).toString();\n    }\n  }\n\n  declare class ushort {\n    toString(): string {\n      return (this as uint).toString();\n    }\n  }\n\n  declare class int {\n    toString(): string {\n      // Special-case this to keep the rest of the code simple\n      if (this == -2147483648) {\n        return \"-2147483648\";\n      }\n\n      // Treat this like an unsigned integer prefixed by '-' if it's negative\n      return internalIntToString((this < 0 ? -this : this) as uint, this < 0);\n    }\n  }\n\n  declare class uint {\n    toString(): string {\n      return internalIntToString(this, false);\n    }\n  }\n\n  function internalIntToString(value: uint, sign: bool): string {\n    // Avoid allocation for common cases\n    if (value == 0) return \"0\";\n    if (value == 1) return sign ? \"-1\" : \"1\";\n\n    unsafe {\n      // Determine how many digits we need\n      var length = ((sign ? 1 : 0) + (\n        value >= 100000000 ?\n          value >= 1000000000 ? 10 : 9 :\n        value >= 10000 ?\n          value >= 1000000 ?\n            value >= 10000000 ? 8 : 7 :\n            value >= 100000 ? 6 : 5 :\n          value >= 100 ?\n            value >= 1000 ? 4 : 3 :\n            value >= 10 ? 2 : 1)) as uint;\n\n      var ptr = string_new(length) as *byte;\n      var end = ptr + 4 + length * 2;\n\n      if (sign) {\n        *((ptr + 4) as *ushort) = '-';\n      }\n\n      while (value != 0) {\n        end = end + -2;\n        *(end as *ushort) = (value % 10 + '0') as ushort;\n        value = value / 10;\n      }\n\n      return ptr as string;\n    }\n  }\n\n  function string_new(length: uint): string {\n    unsafe {\n      var ptr = malloc(4 + length * 2);\n      *(ptr as *uint) = length;\n      return ptr as string;\n    }\n  }\n\n  declare class string {\n    charAt(index: int): string {\n      return this.slice(index, index + 1);\n    }\n\n    charCodeAt(index: int): ushort {\n      return this[index];\n    }\n\n    get length(): int {\n      unsafe {\n        return *(this as *int);\n      }\n    }\n\n    operator [] (index: int): ushort {\n      if (index as uint < this.length as uint) {\n        unsafe {\n          return *((this as *byte + 4 + index * 2) as *ushort);\n        }\n      }\n      return 0;\n    }\n\n    operator == (other: string): bool {\n      unsafe {\n        if (this as *byte == other as *byte) return true;\n        if (this as *byte == null || other as *byte == null) return false;\n        var length = this.length;\n        if (length != other.length) return false;\n        return memcmp(this as *byte + 4, other as *byte + 4, length as uint * 2) == 0;\n      }\n    }\n\n    slice(start: int, end: int): string {\n      var length = this.length;\n\n      if (start < 0) start = start + length;\n      if (end < 0) end = end + length;\n\n      if (start < 0) start = 0;\n      else if (start > length) start = length;\n\n      if (end < start) end = start;\n      else if (end > length) end = length;\n\n      unsafe {\n        var range = (end - start) as uint;\n        var ptr = string_new(range);\n        memcpy(ptr as *byte + 4, this as *byte + 4 + start * 2, range * 2);\n        return ptr;\n      }\n    }\n\n    startsWith(text: string): bool {\n      var textLength = text.length;\n      if (this.length < textLength) return false;\n      unsafe {\n        return memcmp(this as *byte + 4, text as *byte + 4, textLength as uint * 2) == 0;\n      }\n    }\n\n    endsWith(text: string): bool {\n      var thisLength = this.length;\n      var textLength = text.length;\n      if (thisLength < textLength) return false;\n      unsafe {\n        return memcmp(this as *byte + 4 + (thisLength - textLength) * 2, text as *byte + 4, textLength as uint * 2) == 0;\n      }\n    }\n\n    indexOf(text: string): int {\n      var thisLength = this.length;\n      var textLength = text.length;\n      if (thisLength >= textLength) {\n        var i = 0;\n        while (i < thisLength - textLength) {\n          unsafe {\n            if (memcmp(this as *byte + 4 + i * 2, text as *byte + 4, textLength as uint * 2) == 0) {\n              return i;\n            }\n          }\n          i = i + 1;\n        }\n      }\n      return -1;\n    }\n\n    lastIndexOf(text: string): int {\n      var thisLength = this.length;\n      var textLength = text.length;\n      if (thisLength >= textLength) {\n        var i = thisLength - textLength;\n        while (i >= 0) {\n          unsafe {\n            if (memcmp(this as *byte + 4 + i * 2, text as *byte + 4, textLength as uint * 2) == 0) {\n              return i;\n            }\n          }\n          i = i - 1;\n        }\n      }\n      return -1;\n    }\n  }\n\n#else\n\n  declare class bool {\n    toString(): string;\n  }\n\n  declare class sbyte {\n    toString(): string;\n  }\n\n  declare class byte {\n    toString(): string;\n  }\n\n  declare class short {\n    toString(): string;\n  }\n\n  declare class ushort {\n    toString(): string;\n  }\n\n  declare class int {\n    toString(): string;\n  }\n\n  declare class uint {\n    toString(): string;\n  }\n\n  declare class string {\n    charAt(index: int): string;\n    charCodeAt(index: int): ushort;\n    get length(): int;\n    indexOf(text: string): int;\n    lastIndexOf(text: string): int;\n    operator == (other: string): bool;\n    operator [] (index: int): ushort { return this.charCodeAt(index); }\n    slice(start: int, end: int): string;\n\n    #if JS\n      startsWith(text: string): bool { return this.slice(0, text.length) == text; }\n      endsWith(text: string): bool { return this.slice(-text.length, this.length) == text; }\n    #else\n      startsWith(text: string): bool;\n      endsWith(text: string): bool;\n    #endif\n  }\n\n#endif\n\n#if C\n\n  extern unsafe function cstring_to_utf16(utf8: *byte): string {\n    if (utf8 == null) {\n      return null;\n    }\n\n    var utf16_length: uint = 0;\n    var a: byte, b: byte, c: byte, d: byte;\n\n    // Measure text\n    var i: uint = 0;\n    while ((a = *(utf8 + i)) != '\\0') {\n      i = i + 1;\n      var codePoint: uint;\n\n      // Decode UTF-8\n      if ((b = *(utf8 + i)) != '\\0' && a >= 0xC0) {\n        i = i + 1;\n        if ((c = *(utf8 + i)) != '\\0' && a >= 0xE0) {\n          i = i + 1;\n          if ((d = *(utf8 + i)) != '\\0' && a >= 0xF0) {\n            i = i + 1;\n            codePoint = ((a & 0x07) << 18) | ((b & 0x3F) << 12) | ((c & 0x3F) << 6) | (d & 0x3F);\n          } else {\n            codePoint = ((a & 0x0F) << 12) | ((b & 0x3F) << 6) | (c & 0x3F);\n          }\n        } else {\n          codePoint = ((a & 0x1F) << 6) | (b & 0x3F);\n        }\n      } else {\n        codePoint = a;\n      }\n\n      // Encode UTF-16\n      utf16_length = utf16_length + (codePoint < 0x10000 ? 1 : 2) as uint;\n    }\n\n    var output = string_new(utf16_length);\n    var utf16 = output as *ushort + 2;\n\n    // Convert text\n    i = 0;\n    while ((a = *(utf8 + i)) != '\\0') {\n      i = i + 1;\n      var codePoint: uint;\n\n      // Decode UTF-8\n      if ((b = *(utf8 + i)) != '\\0' && a >= 0xC0) {\n        i = i + 1;\n        if ((c = *(utf8 + i)) != '\\0' && a >= 0xE0) {\n          i = i + 1;\n          if ((d = *(utf8 + i)) != '\\0' && a >= 0xF0) {\n            i = i + 1;\n            codePoint = ((a & 0x07) << 18) | ((b & 0x3F) << 12) | ((c & 0x3F) << 6) | (d & 0x3F);\n          } else {\n            codePoint = ((a & 0x0F) << 12) | ((b & 0x3F) << 6) | (c & 0x3F);\n          }\n        } else {\n          codePoint = ((a & 0x1F) << 6) | (b & 0x3F);\n        }\n      } else {\n        codePoint = a;\n      }\n\n      // Encode UTF-16\n      if (codePoint < 0x10000) {\n        *utf16 = codePoint as ushort;\n      } else {\n        *utf16 = ((codePoint >> 10) + (0xD800 - (0x10000 >> 10))) as ushort;\n        utf16 = utf16 + 1;\n        *utf16 = ((codePoint & 0x3FF) + 0xDC00) as ushort;\n      }\n      utf16 = utf16 + 1;\n    }\n\n    return output;\n  }\n\n  extern unsafe function utf16_to_cstring(input: string): *byte {\n    if (input as *uint == null) {\n      return null;\n    }\n\n    var utf16_length = *(input as *uint);\n    var utf8_length: uint = 0;\n    var utf16 = input as *ushort + 2;\n\n    // Measure text\n    var i: uint = 0;\n    while (i < utf16_length) {\n      var codePoint: uint;\n\n      // Decode UTF-16\n      var a = *(utf16 + i);\n      i = i + 1;\n      if (i < utf16_length && a >= 0xD800 && a <= 0xDBFF) {\n        var b = *(utf16 + i);\n        i = i + 1;\n        codePoint = (a << 10) + b + (0x10000 - (0xD800 << 10) - 0xDC00) as uint;\n      } else {\n        codePoint = a;\n      }\n\n      // Encode UTF-8\n      utf8_length = utf8_length + (\n        codePoint < 0x80 ? 1 :\n        codePoint < 0x800 ? 2 :\n        codePoint < 0x10000 ? 3 :\n        4) as uint;\n    }\n\n    var utf8 = malloc(utf8_length + 1);\n    var next = utf8;\n\n    // Convert text\n    i = 0;\n    while (i < utf16_length) {\n      var codePoint: uint;\n\n      // Decode UTF-16\n      var a = *(utf16 + i);\n      i = i + 1;\n      if (i < utf16_length && a >= 0xD800 && a <= 0xDBFF) {\n        var b = *(utf16 + i);\n        i = i + 1;\n        codePoint = (a << 10) + b + (0x10000 - (0xD800 << 10) - 0xDC00) as uint;\n      } else {\n        codePoint = a;\n      }\n\n      // Encode UTF-8\n      if (codePoint < 0x80) {\n        *next = codePoint as byte;\n      } else {\n        if (codePoint < 0x800) {\n          *next = (((codePoint >> 6) & 0x1F) | 0xC0) as byte;\n        } else {\n          if (codePoint < 0x10000) {\n            *next = (((codePoint >> 12) & 0x0F) | 0xE0) as byte;\n          } else {\n            *next = (((codePoint >> 18) & 0x07) | 0xF0) as byte;\n            next = next + 1;\n            *next = (((codePoint >> 12) & 0x3F) | 0x80) as byte;\n          }\n          next = next + 1;\n          *next = (((codePoint >> 6) & 0x3F) | 0x80) as byte;\n        }\n        next = next + 1;\n        *next = ((codePoint & 0x3F) | 0x80) as byte;\n      }\n      next = next + 1;\n    }\n\n    // C strings are null-terminated\n    *next = '\\0';\n\n    return utf8;\n  }\n\n#endif\n";
   }
 
   function LineColumn() {}
@@ -3763,7 +3763,11 @@
     __imports.assert(this.childCount() >= 2);
     var child = this.firstChild;
 
-    while (child.kind === 5 || child.kind === 8) {
+    if (child.kind === 5) {
+      child = child.nextSibling;
+    }
+
+    if (child.kind === 8) {
       child = child.nextSibling;
     }
 
@@ -3881,9 +3885,7 @@
     var child = this.classFirstMember();
 
     while (child !== null) {
-      if ((child.flags & 8192) !== 0) {
-        __imports.assert(child.kind === 17);
-
+      if (child.kind === 17 && (child.flags & 8192) !== 0) {
         break;
       }
 
@@ -4007,12 +4009,43 @@
     return this.firstChild;
   };
 
-  Node.prototype.decoratorsFirstDecorator = function() {
-    __imports.assert(this.kind === 8);
-    __imports.assert(this.childCount() >= 1);
-    __imports.assert(this.firstChild.kind === 7);
+  Node.prototype.decorators = function() {
+    __imports.assert(this.kind === 17 || this.kind === 11);
+    var child = this.firstChild;
 
-    return this.firstChild;
+    if (child !== null) {
+      if (child.kind === 8) {
+        return child;
+      }
+
+      child = child.nextSibling;
+
+      if (child !== null && child.kind === 8) {
+        return child;
+      }
+    }
+
+    return null;
+  };
+
+  Node.prototype.hasDecorator = function(name) {
+    var decorators = this.decorators();
+
+    if (decorators === null) {
+      return false;
+    }
+
+    var child = decorators.firstChild;
+
+    while (child !== null) {
+      if (child.stringValue === name) {
+        return true;
+      }
+
+      child = child.nextSibling;
+    }
+
+    return false;
   };
 
   Node.prototype.decoratorName = function() {
@@ -4773,20 +4806,20 @@
       return createName(token.range.toString()).withRange(token.range);
     }
 
-    if (this.peek(15)) {
-      splitToken(this.current, 27, 27);
+    if (this.peek(17)) {
+      splitToken(this.current, 29, 29);
     }
 
-    if (this.peek(27)) {
+    if (this.peek(29)) {
       return this.parseUnaryPrefix(mode === 1 ? 44 : 41, mode);
     }
 
     if (mode === 0) {
-      if (this.eat(61)) {
+      if (this.eat(62)) {
         return createNull().withRange(token.range);
       }
 
-      if (this.eat(69)) {
+      if (this.eat(70)) {
         return createThis().withRange(token.range);
       }
 
@@ -4832,15 +4865,15 @@
         return value.withRange(token.range);
       }
 
-      if (this.eat(70)) {
+      if (this.eat(71)) {
         return createBool(true).withRange(token.range);
       }
 
-      if (this.eat(53)) {
+      if (this.eat(54)) {
         return createBool(false).withRange(token.range);
       }
 
-      if (this.eat(60)) {
+      if (this.eat(61)) {
         var type = this.parseType();
 
         if (type === null) {
@@ -4850,72 +4883,72 @@
         return this.parseArgumentList(token.range, createNew(type));
       }
 
-      if (this.eat(41)) {
-        if (!this.expect(20)) {
+      if (this.eat(42)) {
+        if (!this.expect(22)) {
           return null;
         }
 
         var type = this.parseType();
         var close = this.current;
 
-        if (type === null || !this.expect(36)) {
+        if (type === null || !this.expect(38)) {
           return null;
         }
 
         return createAlignOf(type).withRange(spanRanges(token.range, close.range));
       }
 
-      if (this.eat(67)) {
-        if (!this.expect(20)) {
+      if (this.eat(68)) {
+        if (!this.expect(22)) {
           return null;
         }
 
         var type = this.parseType();
         var close = this.current;
 
-        if (type === null || !this.expect(36)) {
+        if (type === null || !this.expect(38)) {
           return null;
         }
 
         return createSizeOf(type).withRange(spanRanges(token.range, close.range));
       }
 
-      if (this.eat(20)) {
+      if (this.eat(22)) {
         var value = this.parseExpression(0, 0);
         var close = this.current;
 
-        if (value === null || !this.expect(36)) {
+        if (value === null || !this.expect(38)) {
           return null;
         }
 
         return value.withRange(spanRanges(token.range, close.range));
       }
 
-      if (this.peek(6)) {
+      if (this.peek(8)) {
         return this.parseUnaryPrefix(39, 0);
       }
 
-      if (this.peek(11)) {
+      if (this.peek(13)) {
         return this.parseUnaryPrefix(40, 0);
       }
 
-      if (this.peek(25)) {
+      if (this.peek(27)) {
         return this.parseUnaryPrefix(42, 0);
       }
 
-      if (this.peek(26)) {
+      if (this.peek(28)) {
         return this.parseUnaryPrefix(48, 0);
       }
 
-      if (this.peek(28)) {
+      if (this.peek(30)) {
         return this.parseUnaryPrefix(43, 0);
       }
 
-      if (this.peek(30)) {
+      if (this.peek(32)) {
         return this.parseUnaryPrefix(45, 0);
       }
 
-      if (this.peek(31)) {
+      if (this.peek(33)) {
         return this.parseUnaryPrefix(49, 0);
       }
     }
@@ -4928,7 +4961,7 @@
   ParserContext.prototype.parseInfix = function(precedence, node, mode) {
     var token = this.current.range;
 
-    if (this.peek(13) && precedence < 15) {
+    if (this.peek(15) && precedence < 15) {
       this.advance();
       var name = this.current;
       var range = name.range;
@@ -4945,95 +4978,95 @@
     }
 
     if (mode === 0) {
-      if (this.peek(5)) {
+      if (this.peek(6)) {
         return this.parseBinary(51, node, precedence, 1);
       }
 
-      if (this.peek(6)) {
+      if (this.peek(8)) {
         return this.parseBinary(52, node, precedence, 6);
       }
 
-      if (this.peek(7)) {
+      if (this.peek(9)) {
         return this.parseBinary(53, node, precedence, 4);
       }
 
-      if (this.peek(8)) {
+      if (this.peek(10)) {
         return this.parseBinary(54, node, precedence, 5);
       }
 
-      if (this.peek(12)) {
+      if (this.peek(14)) {
         return this.parseBinary(55, node, precedence, 11);
       }
 
-      if (this.peek(14)) {
+      if (this.peek(16)) {
         return this.parseBinary(56, node, precedence, 7);
       }
 
-      if (this.peek(15)) {
+      if (this.peek(17)) {
         return this.parseBinary(57, node, precedence, 12);
       }
 
-      if (this.peek(16)) {
+      if (this.peek(18)) {
         return this.parseBinary(58, node, precedence, 8);
       }
 
-      if (this.peek(17)) {
+      if (this.peek(19)) {
         return this.parseBinary(59, node, precedence, 8);
       }
 
-      if (this.peek(21)) {
+      if (this.peek(23)) {
         return this.parseBinary(60, node, precedence, 8);
       }
 
-      if (this.peek(22)) {
+      if (this.peek(24)) {
         return this.parseBinary(61, node, precedence, 8);
       }
 
-      if (this.peek(23)) {
+      if (this.peek(25)) {
         return this.parseBinary(62, node, precedence, 3);
       }
 
-      if (this.peek(24)) {
+      if (this.peek(26)) {
         return this.parseBinary(63, node, precedence, 2);
       }
 
-      if (this.peek(25)) {
+      if (this.peek(27)) {
         return this.parseBinary(69, node, precedence, 10);
       }
 
-      if (this.peek(27)) {
+      if (this.peek(29)) {
         return this.parseBinary(64, node, precedence, 11);
       }
 
-      if (this.peek(29)) {
+      if (this.peek(31)) {
         return this.parseBinary(65, node, precedence, 7);
       }
 
-      if (this.peek(30)) {
+      if (this.peek(32)) {
         return this.parseBinary(50, node, precedence, 10);
       }
 
-      if (this.peek(33)) {
+      if (this.peek(35)) {
         return this.parseBinary(66, node, precedence, 11);
       }
 
-      if (this.peek(38)) {
+      if (this.peek(40)) {
         return this.parseBinary(67, node, precedence, 9);
       }
 
-      if (this.peek(39)) {
+      if (this.peek(41)) {
         return this.parseBinary(68, node, precedence, 9);
       }
 
-      if (this.peek(31)) {
+      if (this.peek(33)) {
         return this.parseUnaryPostfix(47, node, precedence);
       }
 
-      if (this.peek(26)) {
+      if (this.peek(28)) {
         return this.parseUnaryPostfix(46, node, precedence);
       }
 
-      if (this.peek(42) && precedence < 13) {
+      if (this.peek(43) && precedence < 13) {
         this.advance();
         var type = this.parseType();
 
@@ -5044,17 +5077,17 @@
         return createCast(node, type).withRange(spanRanges(node.range, type.range)).withInternalRange(token);
       }
 
-      var isIndex = this.peek(19);
+      var isIndex = this.peek(21);
 
-      if ((isIndex || this.peek(20)) && precedence < 14) {
+      if ((isIndex || this.peek(22)) && precedence < 14) {
         return this.parseArgumentList(node.range, isIndex ? createIndex(node) : createCall(node));
       }
 
-      if (this.peek(32) && precedence < 1) {
+      if (this.peek(34) && precedence < 1) {
         this.advance();
         var middle = this.parseExpression(0, 0);
 
-        if (middle === null || !this.expect(9)) {
+        if (middle === null || !this.expect(11)) {
           return null;
         }
 
@@ -5074,8 +5107,8 @@
   ParserContext.prototype.parseArgumentList = function(start, node) {
     var open = this.current.range;
     var isIndex = node.kind === 29;
-    var left = isIndex ? 19 : 20;
-    var right = isIndex ? 35 : 36;
+    var left = isIndex ? 21 : 22;
+    var right = isIndex ? 37 : 38;
 
     if (!this.expect(left)) {
       return null;
@@ -5091,7 +5124,7 @@
 
         node.appendChild(value);
 
-        if (!this.eat(10)) {
+        if (!this.eat(12)) {
           break;
         }
       }
@@ -5139,16 +5172,16 @@
 
   ParserContext.prototype.parseIf = function() {
     var token = this.current;
-    __imports.assert(token.kind === 55);
+    __imports.assert(token.kind === 56);
     this.advance();
 
-    if (!this.expect(20)) {
+    if (!this.expect(22)) {
       return null;
     }
 
     var value = null;
 
-    if (this.peek(36)) {
+    if (this.peek(38)) {
       this.unexpectedToken();
       this.advance();
       value = createParseError();
@@ -5157,7 +5190,7 @@
     else {
       value = this.parseExpression(0, 0);
 
-      if (value === null || !this.expect(36)) {
+      if (value === null || !this.expect(38)) {
         return null;
       }
     }
@@ -5170,7 +5203,7 @@
 
     var falseBranch = null;
 
-    if (this.eat(48)) {
+    if (this.eat(49)) {
       falseBranch = this.parseBody();
 
       if (falseBranch === null) {
@@ -5183,16 +5216,16 @@
 
   ParserContext.prototype.parseWhile = function() {
     var token = this.current;
-    __imports.assert(token.kind === 73);
+    __imports.assert(token.kind === 74);
     this.advance();
 
-    if (!this.expect(20)) {
+    if (!this.expect(22)) {
       return null;
     }
 
     var value = null;
 
-    if (this.peek(36)) {
+    if (this.peek(38)) {
       this.unexpectedToken();
       this.advance();
       value = createParseError();
@@ -5201,7 +5234,7 @@
     else {
       value = this.parseExpression(0, 0);
 
-      if (value === null || !this.expect(36)) {
+      if (value === null || !this.expect(38)) {
         return null;
       }
     }
@@ -5243,7 +5276,7 @@
 
     var close = this.current;
 
-    if (!this.expect(37)) {
+    if (!this.expect(39)) {
       return null;
     }
 
@@ -5256,7 +5289,7 @@
   ParserContext.prototype.parseBlock = function() {
     var open = this.current;
 
-    if (!this.expect(18)) {
+    if (!this.expect(20)) {
       return null;
     }
 
@@ -5268,7 +5301,7 @@
 
     var close = this.current;
 
-    if (!this.expect(34)) {
+    if (!this.expect(36)) {
       return null;
     }
 
@@ -5277,11 +5310,11 @@
 
   ParserContext.prototype.parseReturn = function() {
     var token = this.current;
-    __imports.assert(token.kind === 66);
+    __imports.assert(token.kind === 67);
     this.advance();
     var value = null;
 
-    if (!this.peek(37)) {
+    if (!this.peek(39)) {
       value = this.parseExpression(0, 0);
 
       if (value === null) {
@@ -5290,7 +5323,7 @@
     }
 
     var semicolon = this.current;
-    this.expect(37);
+    this.expect(39);
 
     return createReturn(value).withRange(spanRanges(token.range, semicolon.range));
   };
@@ -5304,11 +5337,11 @@
 
   ParserContext.prototype.parseEnum = function(firstFlag) {
     var token = this.current;
-    __imports.assert(token.kind === 49);
+    __imports.assert(token.kind === 50);
     this.advance();
     var name = this.current;
 
-    if (!this.expect(2) || !this.expect(18)) {
+    if (!this.expect(2) || !this.expect(20)) {
       return null;
     }
 
@@ -5317,7 +5350,7 @@
     node.firstFlag = firstFlag;
     node.flags = allFlags(firstFlag);
 
-    while (!this.peek(0) && !this.peek(34)) {
+    while (!this.peek(0) && !this.peek(36)) {
       var member = this.current.range;
       var value = null;
 
@@ -5325,7 +5358,7 @@
         return null;
       }
 
-      if (this.eat(5)) {
+      if (this.eat(6)) {
         value = this.parseExpression(0, 0);
 
         if (value === null) {
@@ -5336,23 +5369,23 @@
       var variable = createVariable(member.toString(), createName(text), value);
       node.appendChild(variable.withRange(value !== null ? spanRanges(member, value.range) : member).withInternalRange(member));
 
-      if (this.peek(37)) {
-        this.expect(10);
+      if (this.peek(39)) {
+        this.expect(12);
         this.advance();
       }
 
       else if (this.peek(2)) {
-        this.expect(10);
+        this.expect(12);
       }
 
-      else if (!this.eat(10)) {
+      else if (!this.eat(12)) {
         break;
       }
     }
 
     var close = this.current;
 
-    if (!this.expect(34)) {
+    if (!this.expect(36)) {
       return null;
     }
 
@@ -5363,7 +5396,7 @@
     var node = createParameters();
     var open = this.current;
     var close = null;
-    __imports.assert(open.kind === 21);
+    __imports.assert(open.kind === 23);
     this.advance();
 
     while (true) {
@@ -5372,7 +5405,7 @@
       if (!this.expect(2)) {
         close = this.current;
 
-        if (this.eat(16)) {
+        if (this.eat(18)) {
           break;
         }
 
@@ -5381,10 +5414,10 @@
 
       node.appendChild(createParameter(name.range.toString()).withRange(name.range));
 
-      if (!this.eat(10)) {
+      if (!this.eat(12)) {
         close = this.current;
 
-        if (!this.expect(16)) {
+        if (!this.expect(18)) {
           return null;
         }
 
@@ -5397,7 +5430,7 @@
 
   ParserContext.prototype.parseClass = function(firstFlag, decorators) {
     var token = this.current;
-    __imports.assert(token.kind === 44);
+    __imports.assert(token.kind === 45);
     this.advance();
     var name = this.current;
 
@@ -5409,7 +5442,7 @@
     node.firstFlag = firstFlag;
     node.flags = allFlags(firstFlag);
 
-    if (this.peek(21)) {
+    if (this.peek(23)) {
       var parameters = this.parseParameters();
 
       if (parameters === null) {
@@ -5425,10 +5458,10 @@
 
     var extendsToken = this.current;
 
-    if (this.eat(51)) {
+    if (this.eat(52)) {
       var type = null;
 
-      if (this.peek(18) || this.peek(56)) {
+      if (this.peek(20) || this.peek(57)) {
         this.unexpectedToken();
         type = createParseError();
       }
@@ -5446,12 +5479,12 @@
 
     var implementsToken = this.current;
 
-    if (this.eat(56)) {
+    if (this.eat(57)) {
       var list = createImplements();
       var type = null;
 
       while (true) {
-        if (this.peek(18)) {
+        if (this.peek(20)) {
           this.unexpectedToken();
 
           break;
@@ -5465,7 +5498,7 @@
 
         list.appendChild(type);
 
-        if (!this.eat(10)) {
+        if (!this.eat(12)) {
           break;
         }
       }
@@ -5473,14 +5506,14 @@
       node.appendChild(list.withRange(type !== null ? spanRanges(implementsToken.range, type.range) : implementsToken.range));
     }
 
-    if (!this.expect(18)) {
+    if (!this.expect(20)) {
       return null;
     }
 
-    while (!this.peek(0) && !this.peek(34)) {
+    while (!this.peek(0) && !this.peek(36)) {
       var childDecorators = null;
 
-      if (this.peek(84)) {
+      if (this.peek(7)) {
         childDecorators = this.parseDecorators();
 
         if (childDecorators === null) {
@@ -5503,8 +5536,8 @@
 
       var text = childName.range.toString();
 
-      if (text === "operator" && !this.peek(20) && !this.peek(2)) {
-        childName.kind = 62;
+      if (text === "operator" && !this.peek(22) && !this.peek(2)) {
+        childName.kind = 63;
         this.current = childName;
 
         if (this.parseFunction(childFlags, childDecorators, node) === null) {
@@ -5524,20 +5557,20 @@
           this.advance();
         }
 
-        else if (oldKind === 54) {
+        else if (oldKind === 55) {
           this.log.error(childName.range, "Instance functions don't need the 'function' keyword");
           childName = this.current;
           this.advance();
         }
 
-        else if (oldKind === 45 || oldKind === 59 || oldKind === 72) {
+        else if (oldKind === 46 || oldKind === 60 || oldKind === 73) {
           this.log.error(childName.range, StringBuilder_new().append("Instance variables don't need the '").append(childName.range.toString()).append("' keyword").finish());
           childName = this.current;
           this.advance();
         }
       }
 
-      if (this.peek(20) || this.peek(21)) {
+      if (this.peek(22) || this.peek(23)) {
         this.current = childName;
 
         if (this.parseFunction(childFlags, childDecorators, node) === null) {
@@ -5560,7 +5593,7 @@
 
     var close = this.current;
 
-    if (!this.expect(34)) {
+    if (!this.expect(36)) {
       return null;
     }
 
@@ -5574,15 +5607,15 @@
     var name = null;
     var hasFunctionKeyword = false;
 
-    if (parent !== null && this.eat(62)) {
+    if (parent !== null && this.eat(63)) {
       var end = this.current;
 
-      if (this.eat(19)) {
-        if (!this.expect(35)) {
+      if (this.eat(21)) {
+        if (!this.expect(37)) {
           return null;
         }
 
-        if (this.peek(5)) {
+        if (this.peek(6)) {
           nameRange = spanRanges(token.range, this.current.range);
           name = "[]=";
           this.advance();
@@ -5596,16 +5629,16 @@
         isOperator = true;
       }
 
-      else if (this.eat(6) || this.eat(7) || this.eat(8) || this.eat(11) || this.eat(12) || this.eat(14) || this.eat(15) || this.eat(21) || this.eat(16) || this.eat(25) || this.eat(26) || this.eat(27) || this.eat(30) || this.eat(31) || this.eat(33) || this.eat(38) || this.eat(39)) {
+      else if (this.eat(8) || this.eat(9) || this.eat(10) || this.eat(13) || this.eat(14) || this.eat(16) || this.eat(17) || this.eat(23) || this.eat(18) || this.eat(27) || this.eat(28) || this.eat(29) || this.eat(32) || this.eat(33) || this.eat(35) || this.eat(40) || this.eat(41)) {
         nameRange = end.range;
         name = nameRange.toString();
         isOperator = true;
       }
 
-      else if (this.eat(5) || this.eat(17) || this.eat(22) || this.eat(23) || this.eat(24) || this.eat(28) || this.eat(29)) {
+      else if (this.eat(6) || this.eat(19) || this.eat(24) || this.eat(25) || this.eat(26) || this.eat(30) || this.eat(31)) {
         nameRange = end.range;
         name = nameRange.toString();
-        this.log.error(nameRange, StringBuilder_new().append("The operator '").append(name).append("' cannot be implemented").append(end.kind === 29 ? " (it is automatically derived from '==')" : end.kind === 22 ? " (it is automatically derived from '>')" : end.kind === 17 ? " (it is automatically derived from '<')" : "").finish());
+        this.log.error(nameRange, StringBuilder_new().append("The operator '").append(name).append("' cannot be implemented").append(end.kind === 31 ? " (it is automatically derived from '==')" : end.kind === 24 ? " (it is automatically derived from '>')" : end.kind === 19 ? " (it is automatically derived from '<')" : "").finish());
       }
 
       else {
@@ -5615,7 +5648,7 @@
 
     else {
       if (parent === null) {
-        __imports.assert(token.kind === 54);
+        __imports.assert(token.kind === 55);
         this.advance();
         hasFunctionKeyword = true;
       }
@@ -5655,7 +5688,7 @@
       isConstructor = true;
     }
 
-    if (this.peek(21)) {
+    if (this.peek(23)) {
       var parameters = this.parseParameters();
 
       if (parameters === null) {
@@ -5674,11 +5707,11 @@
       node.appendChild(decorators);
     }
 
-    if (!this.expect(20)) {
+    if (!this.expect(22)) {
       return null;
     }
 
-    if (!this.peek(36)) {
+    if (!this.peek(38)) {
       while (true) {
         var firstArgumentFlag = this.parseFlags();
         var argument = this.current;
@@ -5690,14 +5723,14 @@
         var type = null;
         var range = argument.range;
 
-        if (this.expect(9)) {
+        if (this.expect(11)) {
           type = this.parseType();
 
           if (type !== null) {
             range = spanRanges(range, type.range);
           }
 
-          else if (this.peek(10) || this.peek(36)) {
+          else if (this.peek(12) || this.peek(38)) {
             type = createParseError();
           }
 
@@ -5706,7 +5739,7 @@
           }
         }
 
-        else if (this.peek(10) || this.peek(36)) {
+        else if (this.peek(12) || this.peek(38)) {
           type = createParseError();
         }
 
@@ -5715,13 +5748,13 @@
         variable.flags = allFlags(firstArgumentFlag);
         node.appendChild(variable.withRange(range).withInternalRange(argument.range));
 
-        if (!this.eat(10)) {
+        if (!this.eat(12)) {
           break;
         }
       }
     }
 
-    if (!this.expect(36)) {
+    if (!this.expect(38)) {
       return null;
     }
 
@@ -5731,7 +5764,7 @@
       returnType = createName(parent.stringValue).withRange(nameRange);
     }
 
-    if (this.peek(9)) {
+    if (this.peek(11)) {
       var colonRange = this.current.range;
       this.advance();
       returnType = this.parseType();
@@ -5744,7 +5777,7 @@
       }
 
       else if (returnType === null) {
-        if (this.peek(37) || this.peek(18)) {
+        if (this.peek(39) || this.peek(20)) {
           returnType = createParseError();
         }
 
@@ -5754,7 +5787,7 @@
       }
     }
 
-    else if (this.peek(37) || this.peek(18)) {
+    else if (this.peek(39) || this.peek(20)) {
       if (returnType === null) {
         returnType = createParseError();
       }
@@ -5768,12 +5801,12 @@
     var block = null;
     var semicolon = this.current;
 
-    if (this.eat(37)) {
+    if (this.eat(39)) {
       block = createEmpty().withRange(semicolon.range);
     }
 
     else {
-      if (this.peek(40)) {
+      if (this.peek(5)) {
         if (hasFunctionKeyword) {
           this.log.error(this.current.range, "Top level functions cannot be arrow functions");
         }
@@ -5807,11 +5840,11 @@
     var token = this.current;
 
     if (parent === null) {
-      __imports.assert(token.kind === 45 || token.kind === 59 || token.kind === 72);
+      __imports.assert(token.kind === 46 || token.kind === 60 || token.kind === 73);
       this.advance();
     }
 
-    var node = token.kind === 45 ? createConstants() : createVariables();
+    var node = token.kind === 46 ? createConstants() : createVariables();
     node.firstFlag = firstFlag;
 
     while (true) {
@@ -5823,7 +5856,7 @@
 
       var type = null;
 
-      if (this.eat(9)) {
+      if (this.eat(11)) {
         type = this.parseType();
 
         if (type === null) {
@@ -5833,7 +5866,7 @@
 
       var value = null;
 
-      if (this.eat(5)) {
+      if (this.eat(6)) {
         value = this.parseExpression(0, 0);
 
         if (value === null) {
@@ -5851,13 +5884,13 @@
       variable.flags = allFlags(firstFlag);
       (parent !== null ? parent : node).appendChild(variable.withRange(range).withInternalRange(name.range));
 
-      if (!this.eat(10)) {
+      if (!this.eat(12)) {
         break;
       }
     }
 
     var semicolon = this.current;
-    this.expect(37);
+    this.expect(39);
 
     return node.withRange(spanRanges(token.range, semicolon.range));
   };
@@ -5865,7 +5898,7 @@
   ParserContext.prototype.parseLoopJump = function(kind) {
     var token = this.current;
     this.advance();
-    this.expect(37);
+    this.expect(39);
     var node = new Node();
     node.kind = kind;
 
@@ -5880,35 +5913,35 @@
       var token = this.current;
       var flag = 0;
 
-      if (this.eat(47)) {
+      if (this.eat(48)) {
         flag = 1;
       }
 
-      else if (this.eat(50)) {
+      else if (this.eat(51)) {
         flag = 2;
       }
 
-      else if (this.eat(52)) {
+      else if (this.eat(53)) {
         flag = 4;
       }
 
-      else if (this.eat(63)) {
+      else if (this.eat(64)) {
         flag = 64;
       }
 
-      else if (this.eat(64)) {
+      else if (this.eat(65)) {
         flag = 128;
       }
 
-      else if (this.eat(65)) {
+      else if (this.eat(66)) {
         flag = 256;
       }
 
-      else if (this.eat(68)) {
+      else if (this.eat(69)) {
         flag = 1024;
       }
 
-      else if (this.eat(71)) {
+      else if (this.eat(72)) {
         flag = 2048;
       }
 
@@ -5949,7 +5982,7 @@
   ParserContext.prototype.parseStatement = function(mode) {
     var decorators = null;
 
-    if (this.peek(84)) {
+    if (this.peek(7)) {
       decorators = this.parseDecorators();
 
       if (decorators === null) {
@@ -5959,15 +5992,15 @@
 
     var firstFlag = mode === 1 ? this.parseFlags() : null;
 
-    if (this.peek(71) && firstFlag === null) {
+    if (this.peek(72) && firstFlag === null) {
       return this.parseUnsafe();
     }
 
-    if (this.peek(54)) {
+    if (this.peek(55)) {
       return this.parseFunction(firstFlag, decorators, null);
     }
 
-    if (this.peek(44)) {
+    if (this.peek(45)) {
       return this.parseClass(firstFlag, decorators);
     }
 
@@ -5977,11 +6010,11 @@
       return null;
     }
 
-    if (this.peek(45) || this.peek(59) || this.peek(72)) {
+    if (this.peek(46) || this.peek(60) || this.peek(73)) {
       return this.parseVariables(firstFlag, null);
     }
 
-    if (this.peek(49)) {
+    if (this.peek(50)) {
       return this.parseEnum(firstFlag);
     }
 
@@ -5991,31 +6024,31 @@
       return null;
     }
 
-    if (this.peek(18)) {
+    if (this.peek(20)) {
       return this.parseBlock();
     }
 
-    if (this.peek(43)) {
+    if (this.peek(44)) {
       return this.parseLoopJump(10);
     }
 
-    if (this.peek(46)) {
+    if (this.peek(47)) {
       return this.parseLoopJump(13);
     }
 
-    if (this.peek(55)) {
+    if (this.peek(56)) {
       return this.parseIf();
     }
 
-    if (this.peek(73)) {
+    if (this.peek(74)) {
       return this.parseWhile();
     }
 
-    if (this.peek(66)) {
+    if (this.peek(67)) {
       return this.parseReturn();
     }
 
-    if (this.peek(37)) {
+    if (this.peek(39)) {
       return this.parseEmpty();
     }
 
@@ -6026,13 +6059,13 @@
     }
 
     var semicolon = this.current;
-    this.expect(37);
+    this.expect(39);
 
     return createExpression(value).withRange(spanRanges(value.range, semicolon.range));
   };
 
   ParserContext.prototype.parseStatements = function(parent) {
-    while (!this.peek(0) && !this.peek(34)) {
+    while (!this.peek(0) && !this.peek(36)) {
       var child = this.parseStatement(parent.kind === 1 ? 1 : 0);
 
       if (child === null) {
@@ -6101,7 +6134,7 @@
   };
 
   ParserContext.prototype.parseDecorator = function() {
-    __imports.assert(this.current.kind === 84);
+    __imports.assert(this.current.kind === 7);
     var magicRange = this.current.range;
     this.advance();
     var name = this.current;
@@ -6112,7 +6145,7 @@
 
     var node = createDecorator(createName(name.range.toString()).withRange(name.range));
 
-    if (this.peek(20)) {
+    if (this.peek(22)) {
       this.parseArgumentList(this.current.range, node);
     }
 
@@ -6120,7 +6153,7 @@
   };
 
   ParserContext.prototype.parseDecorators = function() {
-    __imports.assert(this.current.kind === 84);
+    __imports.assert(this.current.kind === 7);
     var firstMagicRange = this.current.range;
     var decorators = createDecorators();
 
@@ -6133,7 +6166,7 @@
 
       decorators.appendChild(decorator);
 
-      if (!this.peek(84)) {
+      if (!this.peek(7)) {
         break;
       }
     }
@@ -6236,7 +6269,7 @@
   Preprocessor.prototype.run = function(source, log) {
     var firstToken = source.firstToken;
 
-    if (firstToken !== null && firstToken.kind === 80) {
+    if (firstToken !== null && firstToken.kind === 81) {
       var firstFlag = this.firstFlag;
       this.isDefineAndUndefAllowed = true;
       this.previous = firstToken;
@@ -6259,21 +6292,21 @@
   };
 
   Preprocessor.prototype.scan = function(isParentLive) {
-    while (!this.peek(0) && !this.peek(75) && !this.peek(76) && !this.peek(77)) {
+    while (!this.peek(0) && !this.peek(76) && !this.peek(77) && !this.peek(78)) {
       var previous = this.previous;
       var current = this.current;
 
-      if (this.eat(74) || this.eat(82)) {
+      if (this.eat(75) || this.eat(83)) {
         if (this.expect(2) && isParentLive) {
-          this.define(this.previous.range.toString(), current.kind === 74);
+          this.define(this.previous.range.toString(), current.kind === 75);
         }
 
-        if (this.eat(53) || this.eat(3) && this.previous.range.toString() === "0") {
+        if (this.eat(54) || this.eat(3) && this.previous.range.toString() === "0") {
           this.log.error(this.previous.range, "Use '#undef' to turn a preprocessor flag off");
         }
 
-        if (!this.peek(0) && !this.expect(81)) {
-          while (!this.eat(81) && !this.eat(0)) {
+        if (!this.peek(0) && !this.expect(82)) {
+          while (!this.eat(82) && !this.eat(0)) {
             this.advance();
           }
         }
@@ -6285,29 +6318,29 @@
         this.removeTokensFrom(previous);
       }
 
-      else if (this.eat(83) || this.eat(78)) {
+      else if (this.eat(84) || this.eat(79)) {
         var next = this.current;
 
-        while (!this.peek(81) && !this.peek(0)) {
+        while (!this.peek(82) && !this.peek(0)) {
           this.advance();
         }
 
         if (isParentLive) {
           var range = this.current === next ? current.range : spanRanges(next.range, this.previous.range);
-          this.log.append(range, range.toString(), current.kind === 83 ? 1 : 0);
+          this.log.append(range, range.toString(), current.kind === 84 ? 1 : 0);
         }
 
-        this.eat(81);
+        this.eat(82);
         this.removeTokensFrom(previous);
       }
 
-      else if (this.eat(79)) {
+      else if (this.eat(80)) {
         var isLive = isParentLive;
 
         while (true) {
           var condition = this.parseExpression(0);
 
-          if (condition === 2 || !this.expect(81)) {
+          if (condition === 2 || !this.expect(82)) {
             return false;
           }
 
@@ -6327,12 +6360,12 @@
 
           previous = this.previous;
 
-          if (this.eat(75)) {
+          if (this.eat(76)) {
             continue;
           }
 
-          if (this.eat(76)) {
-            if (!this.expect(81)) {
+          if (this.eat(77)) {
+            if (!this.expect(82)) {
               return false;
             }
 
@@ -6352,7 +6385,7 @@
 
         previous = this.previous;
 
-        if (!this.expect(77) || !this.peek(0) && !this.expect(81)) {
+        if (!this.expect(78) || !this.peek(0) && !this.expect(82)) {
           return false;
         }
 
@@ -6372,18 +6405,18 @@
     var isDefinedOperator = false;
     var start = this.current;
 
-    if (this.eat(70)) {
+    if (this.eat(71)) {
       return 1;
     }
 
-    if (this.eat(53)) {
+    if (this.eat(54)) {
       return 0;
     }
 
     if (this.eat(2)) {
       var name = this.previous.range.toString();
 
-      if (this.peek(20) && name === "defined") {
+      if (this.peek(22) && name === "defined") {
         isDefinedOperator = true;
       }
 
@@ -6394,7 +6427,7 @@
       }
     }
 
-    if (this.eat(28)) {
+    if (this.eat(30)) {
       var value = this.parseExpression(13);
 
       if (value === 2) {
@@ -6404,11 +6437,11 @@
       return value === 1 ? 0 : 1;
     }
 
-    if (this.eat(20)) {
+    if (this.eat(22)) {
       var first = this.current;
       var value = this.parseExpression(0);
 
-      if (value === 2 || !this.expect(36)) {
+      if (value === 2 || !this.expect(38)) {
         return 2;
       }
 
@@ -6440,17 +6473,17 @@
   Preprocessor.prototype.parseInfix = function(precedence, left) {
     var operator = this.current.kind;
 
-    if (precedence < 7 && (this.eat(14) || this.eat(29))) {
+    if (precedence < 7 && (this.eat(16) || this.eat(31))) {
       var right = this.parseExpression(7);
 
       if (right === 2) {
         return 2;
       }
 
-      return operator === 14 === (left === right) ? 1 : 0;
+      return operator === 16 === (left === right) ? 1 : 0;
     }
 
-    if (precedence < 3 && this.eat(23)) {
+    if (precedence < 3 && this.eat(25)) {
       var right = this.parseExpression(3);
 
       if (right === 2) {
@@ -6460,7 +6493,7 @@
       return left === 1 && right === 1 ? 1 : 0;
     }
 
-    if (precedence < 2 && this.eat(24)) {
+    if (precedence < 2 && this.eat(26)) {
       var right = this.parseExpression(2);
 
       if (right === 2) {
@@ -6470,10 +6503,10 @@
       return left === 1 || right === 1 ? 1 : 0;
     }
 
-    if (precedence === 0 && this.eat(32)) {
+    if (precedence === 0 && this.eat(34)) {
       var middle = this.parseExpression(0);
 
-      if (middle === 2 || !this.expect(9)) {
+      if (middle === 2 || !this.expect(11)) {
         return 2;
       }
 
@@ -7592,7 +7625,7 @@
   };
 
   CResult.prototype.shouldEmitFunction = function(symbol) {
-    return symbol.kind !== 5 || symbol.name !== "malloc" && symbol.name !== "free" && symbol.name !== "memcpy" && symbol.name !== "memcmp";
+    return symbol.kind !== 5 || !symbol.node.hasDecorator("header");
   };
 
   CResult.prototype.emitFunctionDeclarations = function(node, mode) {
@@ -7766,7 +7799,9 @@
     }
 
     else {
-      code.append("return calloc(1, sizeof(");
+      code.append("return (");
+      this.emitType(classType, 0);
+      code.append(") calloc(1, sizeof(");
       this.emitType(classType, 2);
       code.append("));\n");
     }

@@ -492,10 +492,7 @@ class Node {
     assert(this.kind == NodeKind.CLASS);
     var child = this.classFirstMember();
     while (child != null) {
-      if ((child.flags & NODE_FLAG_CONSTRUCTOR) != 0){
-        assert(child.kind == NodeKind.FUNCTION);
-        break;
-      }
+      if (child.kind == NodeKind.FUNCTION && (child.flags & NODE_FLAG_CONSTRUCTOR) != 0) break;
       child = child.nextSibling;
     }
     return child;

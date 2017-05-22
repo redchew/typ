@@ -1429,6 +1429,9 @@ function resolve(context: CheckContext, node: Node, parentScope: Scope): void {
     context.log.error(node.internalRange, "The address-of operator is not supported");
   }
 
+  else if (kind == NodeKind.DECORATORS || kind == NodeKind.DECORATOR) {
+  }
+
   else if (isUnary(kind)) {
     var value = node.unaryValue();
     resolveAsExpression(context, value, parentScope);
