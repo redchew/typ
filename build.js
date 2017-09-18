@@ -1,6 +1,8 @@
 var child_process = require('child_process');
 var fs = require('fs');
 
+fs.mkdir('./out');
+
 eval(fs.readFileSync('./docs/common.js', 'utf8'));
 
 // Always build all targets to catch errors in other targets

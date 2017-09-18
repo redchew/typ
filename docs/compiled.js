@@ -3,10 +3,6 @@
 
 
 
-
-
-
-
   function string_op_get(__this, index) {
     return __this.charCodeAt(index);
   }
@@ -1948,6 +1944,7 @@
     }
 
     __imports.Profiler_begin();
+    treeShaking(global);
     __imports.Profiler_end("shaking");
     __imports.Profiler_begin();
 
