@@ -1,0 +1,13 @@
+body {
+  font: 14px/150% sans-serif;
+  margin: 50px 0 50px 50px;
+}
+
+h2 {
+  margin-top: 50px;
+}
+
+#unsupported {
+  display: none;
+  text-align: center;
+}
